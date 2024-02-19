@@ -12,12 +12,28 @@
 -QFS Reaction mechanism
 -Problems involved in QFS mechanism (read more about it in Valerii's thesis..)
 -12C nucleus as test case
+-Further outlook on Fission via QFS
 
 
 3)Experimental Concept/Setup
 -Idea of inverse kinematics, kinematically complete measurements
 -R3B at GSI/FAIR
 -Detector Setup in S444 Experiment in 2020
+ *Sofia Setup -> for fission experiments
+	**Start & TOFW
+	**Tracking via MWPCs
+	**Ionisation Chamber TWIM (R3BMusic)
+ *CALIFA Detector
+
+4) Analysis Part
+-Cuts on incoming ions
+-Tracking/Time measurement -> here I have already quite some documentation
+-Charge Identification
+-CALIFA Clustering
+-Final Particle Identification
+-Cross Section Measuements
+
+5) Results & Discussion
 
 
 
