@@ -1,0 +1,266 @@
+\documentclass[12pt,twoside]{article}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+% Language setting
+% Replace `english' with e.g. `spanish' to change the document language
+
+% Set page size and margins
+% Replace `letterpaper' with `a4paper' for UK/EU standard size
+%\usepackage[a4paper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+\linespread{1.25}
+%\usepackage[a4paper]{geometry}
+% Useful packages
+\usepackage{fancyhdr}
+\usepackage{ngerman}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+%\usepackage{hyperref}
+\usepackage[version=4]{mhchem}
+\usepackage{titlesec}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{enumitem}
+\usepackage{multirow} 
+\usepackage{authblk}
+\usepackage{tabularx}
+\usepackage{sidecap}
+
+\newcommand{\RM}[1]{\MakeUppercase{\romannumeral #1}}
+\usepackage[all]{hypcap}
+\usepackage{fancybox}
+\usepackage{pdfpages}
+\usepackage{titlesec}
+\usepackage[nottoc]{tocbibind}
+\usepackage[capitalise]{cleveref}
+
+
+\title{Introduction}
+\author{Tobias}
+
+\begin{document}
+%\maketitle
+  \begin{titlepage}
+\thispagestyle{empty}
+
+\begin{center}
+  \includegraphics[width=0.25\textwidth]{../figures/TUMLogo_oZ_Outline_blau_CMYK-eps-converted-to.pdf}
+  
+  \vspace{1em}
+  \Large TUM School of Natural Sciences\\
+  \vspace{1em}
+  \large Technische Universität München\\
+   \vspace{0.5em}
+  %\large FACHBEREICH: DENSE AND STRANGE HADRONIC MATTER (E62)\\
+  \vspace{0.5em}
+  
+\end{center}
+
+{% Create the command for including the title page in the document
+  \centering % Center all text
+  \vspace*{\baselineskip} % White space at the top of the page
+  
+  % Thick+thin horizontal line
+%   \rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt} 
+%   \rule{\textwidth}{0.4pt}\\[\baselineskip]
+  
+  % Title
+%   {\Huge \textbf{\MakeUppercase{Pion Beam detector}} 
+%     \\[0.3\baselineskip] %
+%     \textbf{\MakeUppercase{for}} \\[0.3\baselineskip]
+%     \textbf{\MakeUppercase{the HADES Experiment}} \\[0.5\baselineskip] }
+	{\Large Title in Progress...  \\[0.3\baselineskip] with R3B    \\[0.3\baselineskip]
+	}
+
+  % Thin horizontal line
+%   \rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt}
+%   \rule{\textwidth}{1.6pt}\\[\baselineskip] % Thick horizontal line
+  
+  %\scshape % Small caps
+  
+  % SubTitle
+  {Tobias Jenegger}
+  
+  \vspace*{2\baselineskip} % Whitespace between location/year and editors
+
+	Vollständiger Abdruck der von der TUM School of Natural Sciences der Technischen
+	Universität München zur Erlangung des akademischen Grades eines
+
+	\vspace*{2ex}
+	Doktors der Naturwissenschaften (Dr. rer. nat.)
+	\vspace*{2ex}
+
+	genehmigten Dissertation.
+
+  \vspace*{\fill}
+
+% 	\begin{tabularx}{1.0\textwidth}{XX}
+% 	Vorsitzende:	&	Prof. Dr. Nora Brambilla \\
+% 	Prüfer der Dissertation:	&	1. Univ.-Prof. Dr. Laura Fabbietti \\
+% 							&	2. Prof. Dr. Lothar Oberauer \\
+% 	\end{tabularx}
+% 
+% 
+% 	\vspace*{\fill}
+% 
+% 	Die Dissertation wurde am xx.04.2016 bei der Technischen Universität München
+% 	eingereicht und durch die Fakultät für Physik am xx.04.2015 angenommen.
+
+  	\begin{tabularx}{1.0\textwidth}{XX}
+	Vorsitz:	&	TBA \\
+	Prüfer*innen der Dissertation:	&	1. TBA \\
+							        &	2. TBA \\
+							
+	\end{tabularx}
+
+
+	\vspace*{\fill}
+
+	Die Dissertation wurde am date bei der Technischen Universität München
+	eingereicht und durch die TUM School of Natural Sciences am date angenommen.
+
+  \vspace*{\fill}
+
+  \null
+  \vfill
+
+%   {\scshape 2016} \\[0.3\baselineskip] % Year published }
+}
+\end{titlepage}
+
+\newpage\null\thispagestyle{empty}\newpage
+
+\thispagestyle{empty}
+\newgeometry{%
+  top=1in,%
+  bottom=1in,%
+  left=1.0in,%
+  right=1.0in,%
+  hmarginratio=2:1%
+}
+\begin{center}
+  \includegraphics[width=0.3\textwidth]{../figures/TUMLogo_oZ_Outline_blau_CMYK-eps-converted-to.pdf}
+  
+  \vspace{3mm}
+  \huge TUM School of Natural Sciences
+  \vspace{3mm}  
+  
+\end{center}
+
+{% Create the command for including the title page in the document
+  \centering % Center all text
+  \vspace*{\baselineskip} % White space at the top of the page
+  
+  % Thick+thin horizontal line
+  \rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt} 
+  \rule{\textwidth}{0.4pt}\\[\baselineskip]
+  
+  % Title
+%   {\Huge \textbf{\MakeUppercase{Pion Beam detector}} 
+%     \\[0.3\baselineskip] %
+%     \textbf{\MakeUppercase{for}} \\[0.3\baselineskip]
+%     \textbf{\MakeUppercase{the HADES Experiment}} \\[0.5\baselineskip] }
+
+	{\Large Title in Progress...  \\[0.3\baselineskip] with R3B    \\[0.3\baselineskip]
+	}
+
+  % Thin horizontal line
+  \rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace{3.2pt}
+  \rule{\textwidth}{2pt}\\[\baselineskip] % Thick horizontal line
+  
+  %\scshape % Small caps
+  
+  % SubTitle
+  {\Huge Tobias Jenegger }
+  
+  \vspace*{2\baselineskip} % Whitespace between location/year and editors
+  
+  % Edited by \\[\baselineskip]
+  % 
+  % \begin{minipage}{0.8\textwidth}
+  % % \Large
+  % \makeatletter
+  % \@author
+  % \makeatother
+  % \end{minipage}
+  
+%   \vspace{15pt} % Whitespace between editor names and publisher logo
+  \vspace*{\fill}
+  
+  % {\Huge {\textbf{For internal use only}} }
+  
+  % \begin{figure*}[!h]
+  %  \hspace{0.15\textwidth}%
+  %  \includegraphics[width=0.5\textwidth,angle=15]{figures/ForInternalUseOnly}
+  % \end{figure*}
+  
+  
+%   \vspace{20pt} % Whitespace between editor names and publisher logo
+  \vspace*{\fill}
+  
+  
+  
+  \includegraphics[width=0.15\textwidth]{../figures/PH_CMYK-eps-converted-to.pdf}
+  \\[0.3\baselineskip] % Publisher logo
+  
+  \null
+  \vfill
+  
+  \vspace{1em}
+  \large Techinsche Universität München\\
+   \vspace{0.5em}
+  \large Fachbereich: Dense and Strange Hadronic Matter (E62)\\
+  \vspace{0.5em}
+  
+  {\scshape 2023} \\[0.3\baselineskip] % Year published }
+  
+}
+
+\newpage\null\thispagestyle{empty}\newpage
+
+\include{abstract}
+
+\newpage\null\thispagestyle{empty}\newpage
+
+\include{Zusammenfassung}
+
+\newpage\null\thispagestyle{empty}\newpage
+
+
+\restoregeometry
+\pagenumbering{roman}
+\setcounter{page}{1}
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+\pagestyle{headings}
+%\pagestyle{fancy}
+%\fancyfoot{}
+\include{Introduction}
+\newpage\null\thispagestyle{empty}\newpage
+\include{GlauberModel}
+\newpage\null\thispagestyle{empty}\newpage
+\include{ExperimentalSetup}
+\newpage
+\include{Analysis}
+\newpage\null\thispagestyle{empty}\newpage
+\include{Results}
+\newpage\null\thispagestyle{empty}\newpage
+\newpage\null\thispagestyle{empty}\newpage
+
+
+\appendix
+\include{Appendix}
+\newpage\null\thispagestyle{empty}\newpage
+\bibliographystyle{ieeetr}
+\bibliography{sample}
+\newpage\null\thispagestyle{empty}\newpage
+\listoffigures
+\newpage
+\listoftables
+\newpage\null\thispagestyle{empty}\newpage
+\include{Danksagung}
+\end{document}
