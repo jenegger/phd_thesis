@@ -1,0 +1,3 @@
+\babel@toc {english}{}
+\contentsline {section}{List of Figures}{8}{Doc-Start}
+\contentsline {section}{List of Tables}{9}{Doc-Start}
