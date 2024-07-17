@@ -1,4 +1,14 @@
-\babel@toc {english}{}
-\contentsline {section}{\numberline {1}this is a fun section}{1}{section.1}
-\contentsline {subsection}{\numberline {1.1}this is also quite fun}{1}{subsection.1.1}
-\contentsline {section}{\numberline {2}I should see this!!!}{2}{section.2}
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Astrophysical interest}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}EOS}{1}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Glauber Theory?}{1}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}QFS Theory in inverse kinematics}{1}{subsection.1.4}%
+\contentsline {section}{\numberline {2}Experiment}{1}{section.2}%
+\contentsline {subsection}{\numberline {2.1}GSI facility}{1}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}R3B Setup}{1}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}Detector Setup in S444 Commmissioning Experiment 2020}{1}{subsubsection.2.2.1}%
+\contentsline {section}{\numberline {3}Analysis}{1}{section.3}%
+\contentsline {subsection}{\numberline {3.1}qfs analyis}{1}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}reaction cross section Analysis}{1}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Results and Discussion}{1}{section.4}%
