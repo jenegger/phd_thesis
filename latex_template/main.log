@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2023.5.31)  4 SEP 2024 18:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2023.5.31)  5 SEP 2024 12:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1025,7 +1025,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--107
+Underfull \hbox (badness 10000) in paragraph at lines 102--109
 
  []
 
@@ -1033,18 +1033,15 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.107 
+l.109 
        [5]pdfTeX warning (ext4): destination with the same identifier (name{pag
 e.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.107 
+l.109 
        [6]) (./../writings/analysis.tex) (./../writings/results.tex)
-(./main.bbl
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.7}) has 
-been already used, duplicate ignored
+(./main.bblpdfTeX warning (ext4): destination with the same identifier (name{pa
+ge.7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.8 
@@ -1062,7 +1059,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 272.
 Here is how much of TeX's memory you used:
  21415 strings out of 492982
  386063 string characters out of 6134896
- 508023 words of memory out of 5000000
+ 510023 words of memory out of 5000000
  24694 multiletter control sequences out of 15000+600000
  547258 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1083,7 +1080,7 @@ uper/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></
 usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/font
 s/type1/public/cm-super/sfrm2488.pfb></usr/share/texmf/fonts/type1/public/cm-su
 per/sfsl1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on main.pdf (16 pages, 314828 bytes).
+Output written on main.pdf (16 pages, 316152 bytes).
 PDF statistics:
  300 PDF objects out of 1000 (max. 8388607)
  257 compressed objects within 3 object streams
