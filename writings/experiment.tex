@@ -163,12 +163,17 @@ To shield the plastic detector from daylight it is wrapped in mylar foil (300$\m
 The \textbf{G}SI \textbf{L}arge \textbf{A}cceptance zero degree superconducting \textbf{D}ipole magnet \textbf{GLAD} sits in the center of the R3B Setup in the cave C hall\ref{fig:GLAD}. With an adjustable field integral up to 5 Tm it has a high acceptance range in magnetic rigidity which is crucial for the identification of highly asymmetric reaction fragments. The homogeneous magnetic field in GLAD allows to achieve momentum resolutions $\Delta p$ /p of 10$^-3$ in combination with the dedicated tracking system.\newline
 The large opening angle of $\pm$ 80 mrad makes the GLAD magnet highly transmissive for evaporated or scattered neutrons in the reaction process which will be subsequentely detected in the NeuLAND detector.\newline
 The default bending angle of the beam with respect to the beam line was set to 18$^{\circ}$. Herefore the currents where adjusted according to the beam energy:\newline
+\newenvironment{tight_enumerate}{
 \begin{enumerate}
+  \setlength{\itemsep}{0pt}
+  \setlength{\parskip}{0pt}
+}{\end{enumerate}}
+\begin{tight_enumerate}
 \item 400 AMeV beam: 1444 Ampere
 \item 550 AMeV beam: 1778 Ampere
 \item 650 AMeV beam: 1957 Ampere
 \item 800 AMeV beam: 2223 Ampere
-\end{enumerate}
+\end{tight_enumerate}
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth,height=6cm,keepaspectratio=true]{Figures/glad_magnet.jpg}
@@ -179,6 +184,7 @@ The default bending angle of the beam with respect to the beam line was set to 1
 \end{figure}
 \subsubsection{CALIFA Calorimeter}
 \subsubsection{Sofia Time of Flight Wall}
+The Sofia Time of Flight Wall (or "Stop detector") is positioned at the very end of the experiment setup at approximately 6.6 m distance from the target position. It consists of a plane of 28 vertically aligned scintillator bars, each of dimension 32x600x5 mm. The scintillator plastics are numbered from 0 to 28 from left to right (when looking in beam direction). The time of flight of the ions between Start and ToFW can be measured by substracting the time measurement of  the Start detector from the ToFW. The combined resolution of the Start and TOFW detector is at 40 ps, for an averatime of flight of 30 ns\cite{martin2021fission}. %todo: sketch of the SOFIA ToFW maybe... do it on libreoffice... 
 \subsubsection{NeuLAND Detector}
 
 \subsubsection{Calibration of the Detector Systems}
