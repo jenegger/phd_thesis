@@ -47,8 +47,7 @@ In the R3B setup for the S444 experiment four MWPCs were installed:\newline
 \item MWPC3: after the GLAD magnet. The x position of this detector gives the information about the magnetic rigidity of the reaction fragment.  %todo: find out position relative to Sofia TOFW
 \end{enumerate}
 Despite having the same mode of operation, they slightly differ in their construction design and positional resolution. For the technical specifications of the individual MWPCs, see table \ref{table:mwpcs_tecs}.
-
-\begin{table}[h!]
+\begin{table}[h]
     \centering
     %\begin{tabular}{|l|l|}
     \begin{tabular}{cc}
@@ -183,9 +182,50 @@ The default bending angle of the beam with respect to the beam line was set to 1
     \label{fig:GLAD}
 \end{figure}
 \subsubsection{CALIFA Calorimeter}
+The \textbf{CAL}orimeter for \textbf{I}n \textbf{F}light detection of $\gamma$-rays and high energy charged p\textbf{A}rticles, CALIFA, is one of the main detector components of the R3B setup. Covering the full azimuthal range and having a polar angular acceptance from 7\textdegree up to 140\textdegree in the target region, its a key detector in the R3B setup. 
+The CALIFA calorimeter, with its 2528 CsI scintillation crystals in its final design, is a key detector
+in quasi-free-scattering experiments at R3B. Covering the full azimuthal range and having a polar
+angular acceptance from 22° up to 89° in the target region already now it allows to detect both the
+two coincident protons from the quasi-free-scattering process and emitted γ-rays from de-excitation
+of the remaining nucleus with high angular resolution and precise Doppler correction.
+\textbf{Geometry}
+
+\textbf{Energy and particle reconstruction with CsI scintillator crystals}
+
+\textbf{From scintillator light to electrical signal}
+
+\textbf{Signal Processing and readout system}
 \subsubsection{Sofia Time of Flight Wall}
-The Sofia Time of Flight Wall (or "Stop detector") is positioned at the very end of the experiment setup at approximately 6.6 m distance from the target position. It consists of a plane of 28 vertically aligned scintillator bars, each of dimension 32x600x5 mm. The scintillator plastics are numbered from 0 to 28 from left to right (when looking in beam direction). The time of flight of the ions between Start and ToFW can be measured by substracting the time measurement of  the Start detector from the ToFW. The combined resolution of the Start and TOFW detector is at 40 ps, for an averatime of flight of 30 ns\cite{martin2021fission}. %todo: sketch of the SOFIA ToFW maybe... do it on libreoffice... 
+The Sofia Time of Flight Wall (or "Stop detector") is positioned at the very end of the experiment setup at approximately 6.6 m distance from the target position. It consists of a plane of 28 vertically aligned scintillator bars, each of dimension 32x600x5 mm. The scintillator plastics are numbered from 0 to 28 from left to right (when looking in beam direction). The time of flight of the ions between Start and ToFW can be measured by substracting the time measurement of  the Start detector from the ToFW. The combined resolution of the Start and TOFW detector is at 40 ps, for an average time of flight of 30 ns\cite{martin2021fission}. For the technical specifications of the Sofia ToFW, see table \ref{table:sof_tofw_tecs} and reference \cite{bail2011time}.
+\begin{figure}
+\begin{floatrow}
+%\includegraphics[width=\textwidth,height=6cm,keepaspectratio=true]{Figures/sof_tofw.png}{
+% \caption{Sofia TofW}%
+% \label{fig:sof_tofw}
+%}
+\ffigbox{%
+  \includegraphics[width=\textwidth,height=6cm,keepaspectratio=true]{Figures/sof_tofw.png}%
+}{%
+  \caption{Sofia ToFW in Cave C, from \cite{martin2021fission}.}%
+}
+\capbtabbox{%
+  \begin{tabular}{cc}\hline 
+  Plastic & EJ-232, no quencher \\ 
+  Plastic dimensions & 5x32x600 mm$^3$ \\
+  Detector dimension & 5x900x600 mm$^3$ (28 plastics) \\ 
+  Photo-multiplier tubes &  Hamamatsu 6533 and 10580 \\
+  Total number of PMTs & 56 (two per plastic - top and bottom) \\ \hline 
+  \end{tabular}
+}{%
+  \caption{Sofia ToFW - Technical specifications}%
+  \label{table:sof_tofw_tecs}
+}
+\end{floatrow}
+\end{figure}
+
 \subsubsection{NeuLAND Detector}
+For the detection of knocked-out or evaporated neutrons the \textbf{N}ew \textbf{L}arge-\textbf{A}rea \textbf{N}eutron \textbf{D}etector (\textbf{NeuLAND}) is installed at zero degrees after GLAD. In its final design it will consist of 30 double planes with 100 plastic scintillators of size 5x5x250 cm$^3$ providing an active detector surface of 2.5x2.5 m$^2$ and thickness of 3m. Its high detection efficiency, a time resolution of $\sigma_t \le 150 ps$ and a mulit-neutron efficiency of 50\% to 70\% for four-neutron events are crucial detector features for complete kinematics experiments at R3B. For more detailed information, see \cite{boretzky2021neuland} and \cite{boretzky2014neuland}.\newline
+For the S444 commissioning experiment in 2020 eight double-planes of the NeuLAND detector have been used. 
 
 \subsubsection{Calibration of the Detector Systems}
 

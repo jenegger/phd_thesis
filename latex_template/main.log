@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2023.5.31)  16 SEP 2024 17:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2023.5.31)  17 SEP 2024 12:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -707,24 +707,62 @@ Package cleveref Info: always capitalise cross-reference names on input line 77
 56.
 Package cleveref Info: always capitalise cross-reference names on input line 77
 83.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/floatrow/floatrow.sty
+Package: floatrow 2008/08/02 v0.3b floatrow: float package extension
+\c@float@type=\count287
+\float@exts=\toks31
+\float@box=\box51
+\@floatcapt=\box52
+Package floatrow Info: Modified float package code loaded on input line 455.
+Package floatrow Info: Modified rotfloat package code loaded on input line 473.
+
+\FR@everyfloat=\toks32
+\flrow@foot=\insert252
+\FB@wd=\dimen192
+\FBo@wd=\dimen193
+\FBc@wd=\dimen194
+\FBo@ht=\skip84
+\FBc@ht=\skip85
+\FBf@ht=\skip86
+\FBo@max=\skip87
+\FBc@max=\skip88
+\FBf@max=\skip89
+\c@FBl@b=\count288
+\floatbox@depth=\count289
+\c@FRobj=\count290
+\c@FRsobj=\count291
+\Xhsize=\skip90
+\sXhsize=\skip91
+\Zhsize=\skip92
+\sZhsize=\skip93
+\flrow@rowbox=\box53
+\FR@Zunitlength=\dimen195
+\c@FBcnt=\count292
+\FPOScnt=\count293
+\LTleft=\skip94
+\LTright=\skip95
+\LTleft=\skip96
+\LTright=\skip97
+\flrow@types=\toks33
 ) (./main.aux
 (./Abstract.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -762,17 +800,17 @@ LaTeX Font Info:    ... okay on input line 45.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count287
-\scratchdimen=\dimen192
-\scratchbox=\box51
-\nofMPsegments=\count288
-\nofMParguments=\count289
-\everyMPshowfont=\toks31
-\MPscratchCnt=\count290
-\MPscratchDim=\dimen193
-\MPnumerator=\count291
-\makeMPintoPDFobject=\count292
-\everyMPtoPDFconversion=\toks32
+\scratchcounter=\count294
+\scratchdimen=\dimen196
+\scratchbox=\box54
+\nofMPsegments=\count295
+\nofMParguments=\count296
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count297
+\MPscratchDim=\dimen197
+\MPnumerator=\count298
+\makeMPintoPDFobject=\count299
+\everyMPtoPDFconversion=\toks35
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -790,8 +828,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box52
-Package hyperref Info: Link coloring ON on input line 45.
+\AtBeginShipoutBox=\box55
+Package hyperref Info: Link coloring ON on input line 46.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -799,11 +837,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count293
+\c@section@level=\count300
 )
-LaTeX Info: Redefining \ref on input line 45.
-LaTeX Info: Redefining \pageref on input line 45.
-LaTeX Info: Redefining \nameref on input line 45.
+LaTeX Info: Redefining \ref on input line 46.
+LaTeX Info: Redefining \pageref on input line 46.
+LaTeX Info: Redefining \nameref on input line 46.
 
 (./main.out) (./main.out)
 \@outlinefile=\write4
@@ -812,9 +850,12 @@ LaTeX Info: Redefining \nameref on input line 45.
 .................................................
 . chemgreek info: "mapping-activated"
 . 
-. Activating mapping `default' on line 45.
+. Activating mapping `default' on line 46.
 .................................................
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: floatrow package is loaded.
+Package caption Info: float package is loaded.
+Package caption Info: floatrow package is loaded.
 Package caption Info: hypcap package is loaded.
 Package caption Info: sidecap package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -828,20 +869,20 @@ Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 126.
 )
-\CenteringLeftskip=\skip84
-\RaggedLeftLeftskip=\skip85
-\RaggedRightLeftskip=\skip86
-\CenteringRightskip=\skip87
-\RaggedLeftRightskip=\skip88
-\RaggedRightRightskip=\skip89
-\CenteringParfillskip=\skip90
-\RaggedLeftParfillskip=\skip91
-\RaggedRightParfillskip=\skip92
-\JustifyingParfillskip=\skip93
-\CenteringParindent=\skip94
-\RaggedLeftParindent=\skip95
-\RaggedRightParindent=\skip96
-\JustifyingParindent=\skip97
+\CenteringLeftskip=\skip98
+\RaggedLeftLeftskip=\skip99
+\RaggedRightLeftskip=\skip100
+\CenteringRightskip=\skip101
+\RaggedLeftRightskip=\skip102
+\RaggedRightRightskip=\skip103
+\CenteringParfillskip=\skip104
+\RaggedLeftParfillskip=\skip105
+\RaggedRightParfillskip=\skip106
+\JustifyingParfillskip=\skip107
+\CenteringParindent=\skip108
+\RaggedLeftParindent=\skip109
+\RaggedRightParindent=\skip110
+\JustifyingParindent=\skip111
 )
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
@@ -857,7 +898,7 @@ File: Figures/TUMLogo_oZ_Outline_blau_CMYK-eps-converted-to.pdf Graphic file (t
 ype pdf)
 <use Figures/TUMLogo_oZ_Outline_blau_CMYK-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/TUMLogo_oZ_Outline_blau_CMYK-eps-converted-to.
-pdf  used on input line 51.
+pdf  used on input line 52.
 (pdftex.def)             Requested size: 110.8946pt x 59.56181pt.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
@@ -902,13 +943,13 @@ File: Figures/TUMLogo_oZ_Outline_blau_CMYK-eps-converted-to.pdf Graphic file (t
 ype pdf)
 <use Figures/TUMLogo_oZ_Outline_blau_CMYK-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/TUMLogo_oZ_Outline_blau_CMYK-eps-converted-to.
-pdf  used on input line 146.
+pdf  used on input line 147.
 (pdftex.def)             Requested size: 140.92793pt x 75.70404pt.
 <Figures/PH_CMYK-eps-converted-to.pdf, id=110, 30.1125pt x 30.1125pt>
 File: Figures/PH_CMYK-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/PH_CMYK-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/PH_CMYK-eps-converted-to.pdf  used on input li
-ne 207.
+ne 208.
 (pdftex.def)             Requested size: 70.46037pt x 70.46706pt.
  [3
 
@@ -1013,18 +1054,18 @@ been already used, duplicate ignored
 l.44 \item
            MWPC0: right at the beginning of the beam entrance in Cave C, $18...
 [4]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 60.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 59.
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 60.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 59.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--157
+Underfull \hbox (badness 10000) in paragraph at lines 101--156
 
  []
 
@@ -1032,19 +1073,19 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.157 
+l.156 
        [5]pdfTeX warning (ext4): destination with the same identifier (name{pag
 e.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.157 
+l.156 
        [6]pdfTeX warning (ext4): destination with the same identifier (name{pag
 e.7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.157 
+l.156 
        [7]
-Underfull \hbox (badness 10000) in paragraph at lines 163--171
+Underfull \hbox (badness 10000) in paragraph at lines 162--170
 
  []
 
@@ -1052,48 +1093,65 @@ Underfull \hbox (badness 10000) in paragraph at lines 163--171
 <Figures/glad_magnet.jpg, id=231, 853.5087pt x 521.3076pt>
 File: Figures/glad_magnet.jpg Graphic file (type jpg)
 <use Figures/glad_magnet.jpg>
-Package pdftex.def Info: Figures/glad_magnet.jpg  used on input line 179.
+Package pdftex.def Info: Figures/glad_magnet.jpg  used on input line 178.
 (pdftex.def)             Requested size: 279.50987pt x 170.71954pt.
- [9 <./Figures/glad_magnet.jpg>]) (./../writings/analysis.tex)
-(./../writings/results.tex) (./main.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 272.
- [10]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 272.
+ [9 <./Figures/glad_magnet.jpg>]
+<Figures/sof_tofw.png, id=247, 2246.3925pt x 2062.70625pt>
+File: Figures/sof_tofw.png Graphic file (type png)
+<use Figures/sof_tofw.png>
+Package pdftex.def Info: Figures/sof_tofw.png  used on input line 209.
+(pdftex.def)             Requested size: 185.91924pt x 170.71672pt.
+File: Figures/sof_tofw.png Graphic file (type png)
+<use Figures/sof_tofw.png>
+Package pdftex.def Info: Figures/sof_tofw.png  used on input line 209.
+(pdftex.def)             Requested size: 185.91924pt x 170.71672pt.
+
+Overfull \hbox (7.47276pt too wide) detected at line 222
+ [] 
+ []
+
+[10 <./Figures/sof_tofw.png>]) (./../writings/analysis.tex)
+(./../writings/results.tex) (./main.bbl [11])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 273.
+ [12]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 273.
  (./main.aux (./Abstract.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 272.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 272.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 273.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 273.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: C999C038AEC091E4BF2326B4131938CC;1630.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 272.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 273.
  ) 
 Here is how much of TeX's memory you used:
- 21444 strings out of 492982
- 386525 string characters out of 6134896
+ 21991 strings out of 492982
+ 394491 string characters out of 6134896
  515023 words of memory out of 5000000
- 24710 multiletter control sequences out of 15000+600000
+ 25242 multiletter control sequences out of 15000+600000
  547258 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,16n,49p,10367b,432s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,16n,56p,10367b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb>
-</usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fo
-nts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-
-super/sfcc1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb><
-/usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fon
-ts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-s
-uper/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></
-usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/font
-s/type1/public/cm-super/sfrm2488.pfb></usr/share/texmf/fonts/type1/public/cm-su
-per/sfsl1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on main.pdf (18 pages, 7507069 bytes).
+ype1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy8.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/sh
+are/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type
+1/public/cm-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
+cc1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/sha
+re/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1
+/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfr
+m1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/shar
+e/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/fonts/type1/
+public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm
+2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl1200.pfb></usr/share
+/texmf/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on main.pdf (20 pages, 15045596 bytes).
 PDF statistics:
- 327 PDF objects out of 1000 (max. 8388607)
- 279 compressed objects within 3 object streams
- 57 named destinations out of 1000 (max. 500000)
- 200 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 363 PDF objects out of 1000 (max. 8388607)
+ 305 compressed objects within 4 object streams
+ 65 named destinations out of 1000 (max. 500000)
+ 205 words of extra memory for PDF output out of 10000 (max. 10000000)
 
