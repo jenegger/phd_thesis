@@ -191,17 +191,47 @@ The \textbf{CAL}orimeter for \textbf{I}n \textbf{F}light detection of $\gamma$-r
 %of the remaining nucleus with high angular resolution and precise Doppler correction.
 \textbf{Geometry}\newline
 
-For the detection of gammas and light charged particle 
 The CALIFA detector is a highly segmented detector with more than 2500 CsI crystals installed in the final design. Since experiments in the R3B setup operate in relativistic kinematics both the incoming ions as well as the the measured particles originating from reactions inside the source experience relativistic effects, more precisely the so called relativistic Doppler effect. The emitted gammas and protons are not isotropically distributed around the source region but are boosted in forward direction. Moreover, the energy measured in the lab frame is different from the kinetic energy in the rest frame of the incoming ion.\newline
 %find formula for theta relativistic for massive/massless particles
 
 The relativistic Doppler effect has a huge impact on the geometric design and requirements of CALIFA. Herefore the detector was subdivided into three polar angle ranges:
-\begin{enumerate}
-\item[$\blacksquare$] $7^{\circ} \leq \theta \leq 19^{\circ}$ - CEPA (CALIFA Endcap Phoswich Array): The most forward segment consists of 96 CsI(Tl) crystals. Due to the aforementioned rel. Doppler effect this area will have the highest intensities and energies. For high beam energies most of the particles will not be stopped inside the crystal and will escape as "punch-throughs". Despite the "punch-through" ions deposit only a fraction of their kinetic energy ($\Delta E$) in CALIFA it is possible to reconstruct the initial energy of the particle \footnote{This is done by exploiting the distinct scintillation components of CsI,see more in chapter 5 of \cite{Bendel:98055}}.     
-\item[$\blacksquare$] $19^{\circ} \leq \theta \leq 43^{\circ}$ - Intristic Phoswich (iPhos):
-\item[$\blacksquare$] $43^{\circ} \leq \theta \leq 140^{\circ}$ - Barrel:
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=\textwidth,height=10cm,keepaspectratio=true]{Figures/califa_section_overview.png}
+    \caption{
+    Schematic view of the Barrel and Endcap(iPhos and CEPA) segments of CALIFA and the according angular and energy distribution of emitted $\gamma$ rays (monoenergetic in the projectile frame at beam energy of 700 AMeV). From \cite{tdr:barrel}
+    }
+    \label{fig:GLAD}
+\end{figure}
 
+\begin{enumerate}
+\item[$\blacksquare$] $7^{\circ} \leq \theta \leq 19^{\circ}$ - CEPA (CALIFA Endcap Phoswich Array): The most forward segment consists of 96 CsI(Tl) crystals. Due to the aforementioned rel. Doppler effect this area will have the highest intensities and energies. For high beam energies most of the particles will not be stopped inside the crystal and will escape as "punch-throughs". Despite the "punch-through" ions deposit only a fraction of their kinetic energy ($\Delta E$) in CALIFA it is possible to reconstruct the initial energy of the particle \footnote{This is done by exploiting the distinct scintillation components of CsI, see more in chapter 5 of \cite{Bendel:98055}}. In CEPA crystals with a length of 15 cm are used and cover each a polar angle of $\approx$ 2$^{\circ}$. This finer segmentation in polar angular range has the benefit to compensate for the high rate.     
+\item[$\blacksquare$] $19^{\circ} \leq \theta \leq 43^{\circ}$ - Intristic Phoswich (iPhos): In conjunction with the CEPA, the iPhos region forms a part of the CALIFA Endcap. The iPhos region is, same as for the CEPA, affected by hight rates. Protons reaching this region have high kinetic energies ($E_{kin,p} \leq 600 MeV$) and herefore a large fraction of "punch-throughs" are expected. In the iPhos region 480 CsI(Tl) crystals with a length of 22 cm\footnote{To fully stop protons with $E_{kin,p} \approx 600 AMeV$ crystals with a lenght of 60 cm would be needed. Such long crystals would have multiple drawbacks: reduced energy resolution due to worse scintillator light transport, enhanced nuclear reactions inside the crystals and challenging demands on stability of the detector holding structure} are installed and cover each a polar angle of $\approx$ 3$^{\circ}$.(For more information see Endcap TDR:\cite{tdr:endcap}).
+\item[$\blacksquare$] $43^{\circ} \leq \theta \leq 140^{\circ}$ - Barrel: This segment covers the region where the lowest rates and energies are expected. The Barrel region contains 1952 CsI(Tl) crystals, due to the large polar angular coverage and the requirement of Doppler correction via angle measurement. The most forward crystals have a length of 22 cm (which allow to stop protons with $E_{kin,p} \leq 315 MeV$). This length is reduced down to 12 cm for the most backward crystals (For more information see Barrel TDR:\cite{tdr:barrel}).   
 \end{enumerate}
+The crystals are arranged in carbon fibre alveoli with a nominal wall thickness of 230 $\mu m$\cite{tdr:barrel} that provide a support structure for the crystals and keep the material budged as low as possible. The alveoli in turn are hold and covered by individual aluminium tiles. The volume enclosed by the alveoli and the aluminium tiles is flooded with nitrogen to keep humidity low on the surface of the crystals. For a sufficient suspension of the aluminium cover a robust external holding structure was designed.\newline
+\begin{figure}
+     \centering
+     \begin{subfigure}[b]{0.4\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Figures/califa_inner_outer_structure.png}
+         \caption{Zoomed view between inner and outer strucure layers, from \cite{tdr:barrel}. The black boxes symbolize the preamplifiers, which are directly mounted on the aluminium tiles.}
+         \label{fig:califa_frame_zoom}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.4\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Figures/califa_frame.png}
+         \caption{Artistic view of the outer support structures, from \cite{tdr:endcap}. For better access to the target area the detector infrastructure is split into two halves, the left side commonly referred as "Messel" and the right side as "Wixhausen" (in-beam-view).}
+         \label{fig:califa_frame}
+     \end{subfigure}
+     \hfill
+        \caption{CALIFA internal and external holding structure}
+        \label{fig:califa_holding_structure}
+\end{figure}
+
+
+%write about installation of the califa sections
 %write in here the segmentation in Barrel/iPHos/CEPA 
 %write in here doppler correction and maybe also a plot from Lukas
 %maybe also some simulated data, from FOPRA?
