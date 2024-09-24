@@ -182,19 +182,38 @@ The default bending angle of the beam with respect to the beam line was set to 1
     \label{fig:GLAD}
 \end{figure}
 \subsubsection{CALIFA Calorimeter}
-The \textbf{CAL}orimeter for \textbf{I}n \textbf{F}light detection of $\gamma$-rays and high energy charged p\textbf{A}rticles, CALIFA, is one of the main detector components of the R3B setup. Covering the full azimuthal range and having a polar angular acceptance from 7\textdegree up to 140\textdegree in the target region, its a key detector in the R3B setup. 
-The CALIFA calorimeter, with its 2528 CsI scintillation crystals in its final design, is a key detector
-in quasi-free-scattering experiments at R3B. Covering the full azimuthal range and having a polar
-angular acceptance from 22° up to 89° in the target region already now it allows to detect both the
-two coincident protons from the quasi-free-scattering process and emitted γ-rays from de-excitation
-of the remaining nucleus with high angular resolution and precise Doppler correction.
-\textbf{Geometry}
+The \textbf{CAL}orimeter for \textbf{I}n \textbf{F}light detection of $\gamma$-rays and high energy charged p\textbf{A}rticles, CALIFA, is one of the main detector components of the R3B setup. It surrounds the target area and covers the full azimuthal range and a polar angular acceptance from 7$^{\circ}$ up to 140$^{\circ}$ in the target region. The calorimeter serves for the detection of gamma rays in the energy region 100 keV $\lesssim$ E\textunderscore$\gamma$ $\lesssim$ 30 MeV and light charged particles, mostly protons, up to E\textunderscore p $\lesssim$ 700 MeV. To fulfill the demands requested by the different experimental campaigns an energy resoultion of $\frac{\Delta E}{E}$(@1MeV) $\sim$ 6\% in the gamma-ray energy regime $\frac{\Delta E}{E}$(@100MeV) $\sim$ 1 \% in the proton range regime is required.\newline
+%
+%The CALIFA calorimeter, with its 2528 CsI scintillation crystals in its final design, is a key detector
+%in quasi-free-scattering experiments at R3B. Covering the full azimuthal range and having a polar
+%angular acceptance from 22° up to 89° in the target region already now it allows to detect both the
+%two coincident protons from the quasi-free-scattering process and emitted γ-rays from de-excitation
+%of the remaining nucleus with high angular resolution and precise Doppler correction.
+\textbf{Geometry}\newline
 
-\textbf{Energy and particle reconstruction with CsI scintillator crystals}
+For the detection of gammas and light charged particle 
+The CALIFA detector is a highly segmented detector with more than 2500 CsI crystals installed in the final design. Since experiments in the R3B setup operate in relativistic kinematics both the incoming ions as well as the the measured particles originating from reactions inside the source experience relativistic effects, more precisely the so called relativistic Doppler effect. The emitted gammas and protons are not isotropically distributed around the source region but are boosted in forward direction. Moreover, the energy measured in the lab frame is different from the kinetic energy in the rest frame of the incoming ion.\newline
+%find formula for theta relativistic for massive/massless particles
 
-\textbf{From scintillator light to electrical signal}
+The relativistic Doppler effect has a huge impact on the geometric design and requirements of CALIFA. Herefore the detector was subdivided into three polar angle ranges:
+\begin{enumerate}
+\item[$\blacksquare$] $7^{\circ} \leq \theta \leq 19^{\circ}$ - CEPA (CALIFA Endcap Phoswich Array): The most forward segment consists of 96 CsI(Tl) crystals. Due to the aforementioned rel. Doppler effect this area will have the highest intensities and energies. For high beam energies most of the particles will not be stopped inside the crystal and will escape as "punch-throughs". Despite the "punch-through" ions deposit only a fraction of their kinetic energy ($\Delta E$) in CALIFA it is possible to reconstruct the initial energy of the particle \footnote{This is done by exploiting the distinct scintillation components of CsI,see more in chapter 5 of \cite{Bendel:98055}}.     
+\item[$\blacksquare$] $19^{\circ} \leq \theta \leq 43^{\circ}$ - Intristic Phoswich (iPhos):
+\item[$\blacksquare$] $43^{\circ} \leq \theta \leq 140^{\circ}$ - Barrel:
 
-\textbf{Signal Processing and readout system}
+\end{enumerate}
+%write in here the segmentation in Barrel/iPHos/CEPA 
+%write in here doppler correction and maybe also a plot from Lukas
+%maybe also some simulated data, from FOPRA?
+\textbf{Energy and particle reconstruction with CsI scintillator crystals}\newline
+%really brief description of how CsI works, and why we have chosen this material
+%really brief how energy is reconstructed with PSA
+%the two(or even three) light components to make PID
+\textbf{From scintillator light to electrical signal}\newline
+%shortly something about APDs
+%Preamps, different versions, also something from Stefan's thesis
+\textbf{Signal Processing and readout system}\newline
+%think about....
 \subsubsection{Sofia Time of Flight Wall}
 The Sofia Time of Flight Wall (or "Stop detector") is positioned at the very end of the experiment setup at approximately 6.6 m distance from the target position. It consists of a plane of 28 vertically aligned scintillator bars, each of dimension 32x600x5 mm. The scintillator plastics are numbered from 0 to 28 from left to right (when looking in beam direction). The time of flight of the ions between Start and ToFW can be measured by substracting the time measurement of  the Start detector from the ToFW. The combined resolution of the Start and TOFW detector is at 40 ps, for an average time of flight of 30 ns\cite{martin2021fission}. For the technical specifications of the Sofia ToFW, see table \ref{table:sof_tofw_tecs} and reference \cite{bail2011time}.
 \begin{figure}
