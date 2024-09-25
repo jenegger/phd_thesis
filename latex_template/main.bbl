@@ -43,6 +43,24 @@ M.~Bendel, {\em {E}ntwicklung einer neuartigen {N}achweismethode
   \url{https://edms.cern.ch/ui/file/1833748/2/TDR_R3B_CALIFA_ENDCAP_public.pdf}.
 \newblock Accessed: 2024-09-24.
 
+\bibitem{grana2023fission}
+J.~Gra{\~n}a-Gonz{\'a}lez, J.~Rodr{\'\i}guez-S{\'a}nchez, J.~Benlliure,
+  G.~Garc{\'\i}a-Jim{\'e}nez, H.~Alvarez-Pol, D.~Cortina-Gil, L.~Atar,
+  L.~Audouin, G.~Authelet, A.~Besteiro, {\em et~al.}, ``Fission studies in
+  inverse kinematics with the r3b setup,'' in {\em EPJ Web of Conferences},
+  vol.~290, p.~02015, EDP Sciences, 2023.
+
+\bibitem{holl1988measurement}
+I.~Holl, E.~Lorenz, and G.~Mageras, ``A measurement of the light yield of
+  common inorganic scintillators,'' {\em IEEE Transactions on Nuclear Science},
+  vol.~35, no.~1, pp.~105--109, 1988.
+
+\bibitem{syntfeld2007non}
+A.~Syntfeld-Kazuch, L.~Swiderski, W.~Czarnacki, M.~Gierlik, W.~Klamra,
+  M.~Moszynski, and P.~Schotanus, ``Non-proportionality and energy resolution
+  of csi (tl),'' {\em IEEE Transactions on Nuclear Science}, vol.~54, no.~5,
+  pp.~1836--1841, 2007.
+
 \bibitem{bail2011time}
 A.~Bail, J.~Taieb, A.~Chatillon, G.~Belier, B.~Laurent, and E.~Pellereau,
   ``Time of flight measurement on the sofia experiment,'' in {\em 2011 2nd
