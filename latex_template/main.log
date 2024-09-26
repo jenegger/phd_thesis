@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2023.5.31)  25 SEP 2024 12:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2023.5.31)  26 SEP 2024 11:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1125,34 +1125,29 @@ Package pdftex.def Info: Figures/califa_frame.png  used on input line 224.
 (pdftex.def)             Requested size: 177.42868pt x 140.25378pt.
  [12 <./Figures/califa_inner_outer_structure.png> <./Figures/califa_frame.png>]
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--252
+Underfull \hbox (badness 10000) in paragraph at lines 242--255
 
  []
 
-<Figures/sof_tofw.png, id=296, 2246.3925pt x 2062.70625pt>
+[13]
+<Figures/sof_tofw.png, id=311, 2246.3925pt x 2062.70625pt>
 File: Figures/sof_tofw.png Graphic file (type png)
 <use Figures/sof_tofw.png>
-Package pdftex.def Info: Figures/sof_tofw.png  used on input line 264.
+Package pdftex.def Info: Figures/sof_tofw.png  used on input line 267.
 (pdftex.def)             Requested size: 185.91924pt x 170.71672pt.
 File: Figures/sof_tofw.png Graphic file (type png)
 <use Figures/sof_tofw.png>
-Package pdftex.def Info: Figures/sof_tofw.png  used on input line 264.
+Package pdftex.def Info: Figures/sof_tofw.png  used on input line 267.
 (pdftex.def)             Requested size: 185.91924pt x 170.71672pt.
 
-Overfull \hbox (7.47276pt too wide) detected at line 277
+Overfull \hbox (7.47276pt too wide) detected at line 280
  [] 
  []
 
-
-Underfull \vbox (badness 1325) has occurred while \output is active []
-
- [13])
-(./../writings/analysis.tex) (./../writings/results.tex) (./main.bbl
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [14 <./Figures/sof_tofw.png>]
+[14]) (./../writings/analysis.tex) (./../writings/results.tex) (./main.bbl
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 25.
- (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 Underfull \hbox (badness 2717) in paragraph at lines 23--27
@@ -1160,7 +1155,7 @@ Underfull \hbox (badness 2717) in paragraph at lines 23--27
 rge-acceptance
  []
 
-
+[15 <./Figures/sof_tofw.png>]
 Underfull \hbox (badness 2368) in paragraph at lines 29--33
 []\T1/cmr/m/n/12 ``Technical re-port for the de-sign, con-struc-tion and com-mi
 s-sion-ing of the
@@ -1178,15 +1173,21 @@ Underfull \hbox (badness 1127) in paragraph at lines 47--52
 arcía-Jiménez,
  []
 
-[15]
+
 Underfull \hbox (badness 1072) in paragraph at lines 59--63
 []\T1/cmr/m/n/12 A. Syntfeld-Kazuch, L. Swider-ski, W. Czarnacki, M. Gier-lik, 
 W. Klamra,
  []
 
-)
+
+Underfull \hbox (badness 1286) in paragraph at lines 70--73
+\T1/cmr/m/it/12 Echtzeit-Implementierung in CAL-IFA\T1/cmr/m/n/12 .  PhD the-si
+s, Tech-nis-che Uni-ver-sität
+ []
+
+[16])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 273.
- [16]
+ [17]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 273.
  (./main.aux (./Abstract.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 273.
@@ -1196,10 +1197,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 273.
  ) 
 Here is how much of TeX's memory you used:
- 22068 strings out of 492982
- 396398 string characters out of 6134896
+ 22077 strings out of 492982
+ 396564 string characters out of 6134896
  515023 words of memory out of 5000000
- 25295 multiletter control sequences out of 15000+600000
+ 25298 multiletter control sequences out of 15000+600000
  548340 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,16n,56p,10367b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1227,10 +1228,10 @@ onts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm
 nts/type1/public/cm-super/sfrm2488.pfb></usr/share/texmf/fonts/type1/public/cm-
 super/sfsl1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb><
 /usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on main.pdf (24 pages, 15831287 bytes).
+Output written on main.pdf (25 pages, 15846605 bytes).
 PDF statistics:
- 452 PDF objects out of 1000 (max. 8388607)
- 374 compressed objects within 4 object streams
- 81 named destinations out of 1000 (max. 500000)
+ 468 PDF objects out of 1000 (max. 8388607)
+ 389 compressed objects within 4 object streams
+ 87 named destinations out of 1000 (max. 500000)
  220 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -61,6 +61,20 @@ A.~Syntfeld-Kazuch, L.~Swiderski, W.~Czarnacki, M.~Gierlik, W.~Klamra,
   of csi (tl),'' {\em IEEE Transactions on Nuclear Science}, vol.~54, no.~5,
   pp.~1836--1841, 2007.
 
+\bibitem{winkel2011implementierung}
+M.~Winkel, {\em Implementierung und Erprobung einer digitalen Pulsformanalyse
+  zur Auslese von Kalorimetern}.
+\newblock PhD thesis, Diplomarbeit, 2011.
+
+\bibitem{winkel2016komplexe}
+M.~O. Winkel, {\em Komplexe Pulsformalgorithmen und Teilchenidentifikation zur
+  Echtzeit-Implementierung in CALIFA}.
+\newblock PhD thesis, Technische Universit{\"a}t M{\"u}nchen, 2016.
+
+\bibitem{hartigevolution}
+A.-L. Hartig, ``Evolution of califa: From single detector modules to benchmark
+  reactions,''
+
 \bibitem{bail2011time}
 A.~Bail, J.~Taieb, A.~Chatillon, G.~Belier, B.~Laurent, and E.~Pellereau,
   ``Time of flight measurement on the sofia experiment,'' in {\em 2011 2nd
