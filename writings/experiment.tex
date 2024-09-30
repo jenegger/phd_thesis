@@ -241,25 +241,27 @@ Although the the energy calibration of CsI(Tl) crystals for charged particles is
 L(t) = \frac{N_f}{\tau_s} exp(-\frac{t}{\tau_f}) + \frac{N_s}{\tau_s} exp(-\frac{t}{\tau_s})
 \end{equation}
 Where $N_{f}$ is the amplitude of the fast component and $N_{s}$ the amplitude of the slow component. Accordingly $\tau_{f}$ the life time of the fast component ($\tau_{f} \approx 650-770 ns$ ) and $\tau_{s}$ the lifetime of the slow component ($\tau_{s} \approx 3.2 - 3.5\mu s$). It has been found that the proportion between the two components is energy and particle dependend. This proprety can be used to identify isotopes by extracting the $N_{f}$ and $N_{s}$ values from pulse shape anaylsis (PSA) on the according light emission response\footnote{The method has been implemented in the CALIFA Firmware as $Quick Particle Identification -QPID$. For more information see \cite{winkel2011implementierung} and \cite{winkel2016komplexe}}.  
-TODO: put in a picture of nf vs ns an one with the scintillation light impulse
+TODO: put in a picture of nf vs ns an one with the scintillation light impulse\newline
 %last can be found in paper : A method for the intrinsic calibration of CsI(Tl) detectors,D.V. Kamanin
 %really brief description of how CsI works, and why we have chosen this material
 %really brief how energy is reconstructed with PSA
 %the two(or even three) light components to make PID
 \textbf{From scintillator light to electrical signal}\newline
 The scintillator light produced by the ionisation processes  has first to be transported to the back-end of the crystal. The optimum design has been determined to be frustrum-shaped crystals, wrapped into enhanced specular reflector (ESR) foil which provides excellent reflectivity. Finally at the backside of the crystals a large area avalance photodiode (LAAPD) is attached\footnote{Detailed information about the crystal wrapping and LAAPD gluing can be found in this work:\cite{hartigevolution}}. Avalanche photodiodes have the same working principle as photodiodes to convert (scintillator) light into electricity. As a result of an additional highly doted p-layer a region with very high field is formed which accounts for amplification factors up to $\approx$ 100.\newline
-For the next amplivication step the  electric signal is forwarded via thin ribbon cables to the back end of the preamplifiers from Mesytec\cite{mesytec-home} which can serve up to 32 input channels. Four different versions of the MPRB-32 preamplifiers are in use for CALIFA:\newline
+For the next amplification step the  electric signal is forwarded via thin ribbon cables to the back end of the preamplifiers from Mesytec\cite{mesytec-home} which can serve up to 32 input channels. For CALIFA two general types of peramplifiers are in use:
 \begin{enumerate}
-\item Single range 1/10 pC: 
-\item Single range 3/30 pC:
-\item Dual range 3/30 pC:
-\item Dual range 3/45 pC:
+\item Dual Range (DR) Preamplifiers: They are used in the iPhos and CEPA region where both high energetic protons as well as gammas are expected. They cover two amplification ranges in parallel: the $gamma \enspace range$ with low input signal and high amplification and the $proton \enspace range$ with high input signal with low amplification. Following from this they have 64 channel differential signal output.
+\item Single Range (SR) Preamplifiers: In the Barrel region, where mostly $\gamma$ rays are expected, only one amplification range is needed. Depending on the experimental demands these preamplifiers can be switched to $gamma$ or $proton \enspace range$. These peamplifiers have a 32 channel differential signal output.
+\end{enumerate}
+The fall time for the preamplifiers $\tau_{RC}$ has been chosen to $\approx$ 35 $\mu$s. This is a trade-off between the ballistic deficit on one side (reduction of the signal amplitude due to low $\tau_{RC}$, see also \cite{winkel2011implementierung}, chapter 3.4.5) and rate capability (restricted by large $\tau_{RC}$ value) on the other side.\newline
+The differential signal output of the preamplifiers is then transmitted over shielded and twisted line pairs to the input of the FEBEX Addon Boards (FAB) for further processing.\newline
+\textbf{Signal Processing and readout system}\newline
+The central hardware module for the signal processing in CALIFA is the FEBEX 3B Module (Front End Board with optical link EXtension\cite{febex-tec}). Attached on it is a so-called AddOn board developed by TUM. The signal from the preamplifier gets here first filtered by a low pass two pole bessel filter ($f_{c} \approx 25 MHz$). Furthermore, since the input of the FEBEX ADCs cover a range of $\pm$ 0.9 V while the signal output from the preamplifier only has one polarity, an offset to the signal is applied to use the full range of the ADCs. The signal from the ADCs is read out continuously on the FEBEX card and split up into two branches:\newline
+\begin{enumerate}
+\item Fast/trigger branch:
+\item Slow branch:
 \end{enumerate}
 
-
-%shortly something about APDs
-%Preamps, different versions, also something from Stefan's thesis
-\textbf{Signal Processing and readout system}\newline
 %think about....
 \subsubsection{Sofia Time of Flight Wall}
 The Sofia Time of Flight Wall (or "Stop detector") is positioned at the very end of the experiment setup at approximately 6.6 m distance from the target position. It consists of a plane of 28 vertically aligned scintillator bars, each of dimension 32x600x5 mm. The scintillator plastics are numbered from 0 to 28 from left to right (when looking in beam direction). The time of flight of the ions between Start and ToFW can be measured by substracting the time measurement of  the Start detector from the ToFW. The combined resolution of the Start and TOFW detector is at 40 ps, for an average time of flight of 30 ns\cite{martin2021fission}. For the technical specifications of the Sofia ToFW, see table \ref{table:sof_tofw_tecs} and reference \cite{bail2011time}.
