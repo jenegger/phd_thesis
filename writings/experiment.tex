@@ -247,13 +247,22 @@ TODO: put in a picture of nf vs ns an one with the scintillation light impulse
 %really brief how energy is reconstructed with PSA
 %the two(or even three) light components to make PID
 \textbf{From scintillator light to electrical signal}\newline
-The scintillator light produced by the ionisation processes  has first to be transported to the back-end of the crystal. The optimum design has been determined to be frustrum-shaped crystals, wrapped into enhanced specular reflector (ESR) foil which provides excellent reflectivity. Finally at the backside of the crystals a large area avalance photodiode (LAAPD) is attached\footnote{Detailled infomration about the crystal wrapping and LAAPD gluing can be found in this work:\cite{hartigevolution}}.  
+The scintillator light produced by the ionisation processes  has first to be transported to the back-end of the crystal. The optimum design has been determined to be frustrum-shaped crystals, wrapped into enhanced specular reflector (ESR) foil which provides excellent reflectivity. Finally at the backside of the crystals a large area avalance photodiode (LAAPD) is attached\footnote{Detailed information about the crystal wrapping and LAAPD gluing can be found in this work:\cite{hartigevolution}}. Avalanche photodiodes have the same working principle as photodiodes to convert (scintillator) light into electricity. As a result of an additional highly doted p-layer a region with very high field is formed which accounts for amplification factors up to $\approx$ 100.\newline
+For the next amplivication step the  electric signal is forwarded via thin ribbon cables to the back end of the preamplifiers from Mesytec\cite{mesytec-home} which can serve up to 32 input channels. Four different versions of the MPRB-32 preamplifiers are in use for CALIFA:\newline
+\begin{enumerate}
+\item Single range 1/10 pC: 
+\item Single range 3/30 pC:
+\item Dual range 3/30 pC:
+\item Dual range 3/45 pC:
+\end{enumerate}
+
+
 %shortly something about APDs
 %Preamps, different versions, also something from Stefan's thesis
 \textbf{Signal Processing and readout system}\newline
 %think about....
 \subsubsection{Sofia Time of Flight Wall}
-The Sofia Time of Flight Wall (or "Stop detector") is positioned at the very end of the experiment setup at approximately 6.6 m distance from the target position. It consists of a plane of 28 vertically aligned scintillator bars, each of dimension 32x600x5 mm. The scintillator plastics are numbered from 0 to 28 from left to right (when looking in beam direction). The time of flight of the ions between Start and ToFW can be measured by substracting the time measurement of  the Start detector from the ToFW. The combined resolution of the Start and TOFW detector is at 40 ps, for an average time of flight of 30 ns\cite{martin2021fission}. For the technical specifications of the Sofia ToFW, see table \ref{table:sof_tofw_tecs} and reference \cite{bail2011time}. LAAPDs have the same functional principle as ordinary phododiodes - the transformation of (scintillator) light into electrical current via the inner photoelectric effect - but consist moreover of an additional higly doped pn-metallurgical junction where the signal of the formed elektrons is avalanche-like amplified.
+The Sofia Time of Flight Wall (or "Stop detector") is positioned at the very end of the experiment setup at approximately 6.6 m distance from the target position. It consists of a plane of 28 vertically aligned scintillator bars, each of dimension 32x600x5 mm. The scintillator plastics are numbered from 0 to 28 from left to right (when looking in beam direction). The time of flight of the ions between Start and ToFW can be measured by substracting the time measurement of  the Start detector from the ToFW. The combined resolution of the Start and TOFW detector is at 40 ps, for an average time of flight of 30 ns\cite{martin2021fission}. For the technical specifications of the Sofia ToFW, see table \ref{table:sof_tofw_tecs} and reference \cite{bail2011time}.
 \begin{figure}
 \begin{floatrow}
 %\includegraphics[width=\textwidth,height=6cm,keepaspectratio=true]{Figures/sof_tofw.png}{
