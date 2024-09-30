@@ -4,51 +4,49 @@ The top-level auxiliary file: main.aux
 A level-1 auxiliary file: Abstract.aux
 The style file: ieeetr.bst
 Database file #1: main.bib
-Warning--entry type for "mesytec-home" isn't style-file defined
---line 141 of file main.bib
 Warning--entry type for "febex-tec" isn't style-file defined
 --line 147 of file main.bib
 Warning--empty journal in hartigevolution
 Warning--empty year in hartigevolution
-You've used 18 entries,
+You've used 19 entries,
             1876 wiz_defined-function locations,
-            582 strings with 7272 characters,
-and the built_in function-call counts, 4457 in all, are:
-= -- 419
-> -- 228
+            590 strings with 7514 characters,
+and the built_in function-call counts, 4617 in all, are:
+= -- 444
+> -- 232
 < -- 0
-+ -- 85
-- -- 67
-* -- 303
-:= -- 644
-add.period$ -- 22
-call.type$ -- 18
++ -- 87
+- -- 68
+* -- 310
+:= -- 675
+add.period$ -- 28
+call.type$ -- 19
 change.case$ -- 16
 chr.to.int$ -- 0
-cite$ -- 20
-duplicate$ -- 220
-empty$ -- 398
-format.name$ -- 67
-if$ -- 1078
+cite$ -- 21
+duplicate$ -- 227
+empty$ -- 409
+format.name$ -- 68
+if$ -- 1116
 int.to.chr$ -- 0
-int.to.str$ -- 18
+int.to.str$ -- 19
 missing$ -- 10
-newline$ -- 64
-num.names$ -- 14
-pop$ -- 71
+newline$ -- 70
+num.names$ -- 15
+pop$ -- 77
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 171
+skip$ -- 163
 stack$ -- 0
 substring$ -- 202
-swap$ -- 94
+swap$ -- 95
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
-while$ -- 33
-width$ -- 20
-write$ -- 172
-(There were 4 warnings)
+while$ -- 34
+width$ -- 21
+write$ -- 188
+(There were 3 warnings)

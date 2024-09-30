@@ -34,8 +34,8 @@ J.-F. Martin, J.~Ta{\"\i}eb, G.~Boutoux, A.~Chatillon, T.~Gorbinet,
 \bibitem{Bendel:98055}
 M.~Bendel, {\em {E}ntwicklung einer neuartigen {N}achweismethode
   hochenergetischer {T}eilchen im {CALIFA}-{K}alorimeter}.
-\newblock Dr., Technische Universität München, München, 2014.
-\newblock Technische Universität München, Diss., 2014.
+\newblock Dr., Technische Universit{\"a}t M{\"u}nchen, M{\"u}nchen, 2014.
+\newblock Technische Universit{\"a}t M{\"u}nchen, Diss., 2014.
 
 \bibitem{tdr:endcap}
 ``Technical report for the design, construction and commissioning of the califa
@@ -76,10 +76,17 @@ A.-L. Hartig, ``Evolution of califa: From single detector modules to benchmark
   reactions,''
 
 \bibitem{mesytec-home}
-``Homepage - mesytec.''
+``Mesytec.'' \url{https://www.mesytec.com/}.
+\newblock [Online; accessed September 29, 2024].
 
 \bibitem{febex-tec}
-``Homepage - mesytec.''
+``Febex 3b-front end board with optical link extension.''
+  \url{https://www.gsi.de/fileadmin/EE/Module/FEBEX/febex3b.pdf}.
+\newblock [Online; accessed September 30, 2024].
+
+\bibitem{pklenze}
+K.~Philipp, {\em Gamma detection with CALIFA}.
+\newblock PhD thesis, Technische Universit{\"a}t M{\"u}nchen, 2024.
 
 \bibitem{bail2011time}
 A.~Bail, J.~Taieb, A.~Chatillon, G.~Belier, B.~Laurent, and E.~Pellereau,
