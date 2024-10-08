@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2023.5.31)  2 OCT 2024 11:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2023.5.31)  8 OCT 2024 16:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -892,8 +892,8 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-<Figures/TUMLogo_oZ_Outline_blau_CMYK-eps-converted-to.pdf, id=95, 54.2025pt x 
-29.10875pt>
+<Figures/TUMLogo_oZ_Outline_blau_CMYK-eps-converted-to.pdf, id=123, 54.2025pt x
+ 29.10875pt>
 File: Figures/TUMLogo_oZ_Outline_blau_CMYK-eps-converted-to.pdf Graphic file (t
 ype pdf)
 <use Figures/TUMLogo_oZ_Outline_blau_CMYK-eps-converted-to.pdf>
@@ -945,7 +945,7 @@ ype pdf)
 Package pdftex.def Info: Figures/TUMLogo_oZ_Outline_blau_CMYK-eps-converted-to.
 pdf  used on input line 147.
 (pdftex.def)             Requested size: 140.92793pt x 75.70404pt.
-<Figures/PH_CMYK-eps-converted-to.pdf, id=110, 30.1125pt x 30.1125pt>
+<Figures/PH_CMYK-eps-converted-to.pdf, id=138, 30.1125pt x 30.1125pt>
 File: Figures/PH_CMYK-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/PH_CMYK-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/PH_CMYK-eps-converted-to.pdf  used on input li
@@ -1090,7 +1090,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 162--170
  []
 
 [8]
-<Figures/glad_magnet.jpg, id=231, 853.5087pt x 521.3076pt>
+<Figures/glad_magnet.jpg, id=266, 853.5087pt x 521.3076pt>
 File: Figures/glad_magnet.jpg Graphic file (type jpg)
 <use Figures/glad_magnet.jpg>
 Package pdftex.def Info: Figures/glad_magnet.jpg  used on input line 178.
@@ -1105,20 +1105,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 194--196
 
  []
 
-<Figures/califa_section_overview.png, id=245, 724.7075pt x 556.0775pt>
+<Figures/califa_section_overview.png, id=280, 724.7075pt x 556.0775pt>
 File: Figures/califa_section_overview.png Graphic file (type png)
 <use Figures/califa_section_overview.png>
 Package pdftex.def Info: Figures/califa_section_overview.png  used on input lin
 e 200.
 (pdftex.def)             Requested size: 370.81233pt x 284.52913pt.
 [10] [11 <./Figures/califa_section_overview.png>]
-<Figures/califa_inner_outer_structure.png, id=274, 398.48875pt x 244.915pt>
+<Figures/califa_inner_outer_structure.png, id=309, 398.48875pt x 244.915pt>
 File: Figures/califa_inner_outer_structure.png Graphic file (type png)
 <use Figures/califa_inner_outer_structure.png>
 Package pdftex.def Info: Figures/califa_inner_outer_structure.png  used on inpu
 t line 217.
 (pdftex.def)             Requested size: 177.42868pt x 109.04848pt.
-<Figures/califa_frame.png, id=277, 570.13pt x 450.68375pt>
+<Figures/califa_frame.png, id=312, 570.13pt x 450.68375pt>
 File: Figures/califa_frame.png Graphic file (type png)
 <use Figures/califa_frame.png>
 Package pdftex.def Info: Figures/califa_frame.png  used on input line 224.
@@ -1130,7 +1130,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 256--261
  []
 
 [14] [15]
-<Figures/sof_tofw.png, id=345, 2246.3925pt x 2062.70625pt>
+<Figures/sof_tofw.png, id=380, 2246.3925pt x 2062.70625pt>
 File: Figures/sof_tofw.png Graphic file (type png)
 <use Figures/sof_tofw.png>
 Package pdftex.def Info: Figures/sof_tofw.png  used on input line 281.
@@ -1144,12 +1144,67 @@ Overfull \hbox (7.47276pt too wide) detected at line 294
  [] 
  []
 
-[16]) (./../writings/analysis.tex) (./../writings/results.tex) (./main.bbl
+[16]) (./../writings/analysis.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 1.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+[17 <./Figures/sof_tofw.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 5--8
+
+ []
+
+) (./../writings/results.tex) (./main.bbl
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [17 <./Figures/sof_tofw.png>]
+ [18]
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 25.
- (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 Underfull \hbox (badness 2717) in paragraph at lines 23--27
@@ -1169,7 +1224,7 @@ Underfull \hbox (badness 1735) in paragraph at lines 35--39
 he Uni-ver-sität München,
  []
 
-
+[19]
 Underfull \hbox (badness 2368) in paragraph at lines 41--45
 []\T1/cmr/m/n/12 ``Technical re-port for the de-sign, con-struc-tion and com-mi
 s-sion-ing of the
@@ -1181,7 +1236,7 @@ Underfull \hbox (badness 1127) in paragraph at lines 47--52
 arcía-Jiménez,
  []
 
-[18]
+
 Underfull \hbox (badness 1072) in paragraph at lines 59--63
 []\T1/cmr/m/n/12 A. Syntfeld-Kazuch, L. Swider-ski, W. Czarnacki, M. Gier-lik, 
 W. Klamra,
@@ -1211,23 +1266,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 92--95
 $[][]\T1/cmr/m/n/12 .  [On-line;
  []
 
-[19])
+[20])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 273.
- [20]
+ [21]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 273.
  (./main.aux (./Abstract.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 273.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 273.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C999C038AEC091E4BF2326B4131938CC;1630.
+(rerunfilecheck)             Checksum: 3C04B01013034B4A31AEBB9ED5471B22;2252.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 273.
  ) 
 Here is how much of TeX's memory you used:
- 22095 strings out of 492982
- 396754 string characters out of 6134896
+ 22118 strings out of 492982
+ 397089 string characters out of 6134896
  515023 words of memory out of 5000000
- 25302 multiletter control sequences out of 15000+600000
- 548340 words of font info for 64 fonts, out of 8000000 for 9000
+ 25315 multiletter control sequences out of 15000+600000
+ 549886 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,16n,56p,10367b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
@@ -1254,10 +1309,10 @@ onts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm
 nts/type1/public/cm-super/sfrm2488.pfb></usr/share/texmf/fonts/type1/public/cm-
 super/sfsl1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb><
 /usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on main.pdf (28 pages, 15861811 bytes).
+Output written on main.pdf (29 pages, 15869894 bytes).
 PDF statistics:
- 509 PDF objects out of 1000 (max. 8388607)
- 426 compressed objects within 5 object streams
- 101 named destinations out of 1000 (max. 500000)
- 220 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 555 PDF objects out of 1000 (max. 8388607)
+ 471 compressed objects within 5 object streams
+ 110 named destinations out of 1000 (max. 500000)
+ 276 words of extra memory for PDF output out of 10000 (max. 10000000)
 
