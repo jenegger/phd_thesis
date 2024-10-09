@@ -3,13 +3,37 @@ This chapter will go through the  analysis step by step from the unpacking stage
 All relevant detector related geometrical and efficiency corrections will be adressed and their influence to the final result and its uncertainty will be discussed.
 \subsection{Cross Section Measurement via Transmission Method}
 In its most generic form cross sections give a measure of the probability that a specific reaction will take place when two or more particles collide. The cross sections  measured in scattering exepriments, as well as the energy and angular distribution of the reaction products, provide information about the dynamics of the interaction between the projectile and the target particle, i.e., about the shape of the interaction potential and the coupling strength.\newline
-The cross section $\sigma$ can be derived by looking at the relation between the number of incoming particles and survived particles after collision. For an experiment with fixed target with thickness $z$ and volumetric number density $n$ the number of reacted particles in the infinitesimal thin target layer $dz$ can be expressed as:\newline
-%\frac{dI}{dz} = -n\sigmaI 
+The cross section $\sigma$ can be derived by looking at the relation between the number of incoming particles (N$_{1}$) and unreacted particles after collision ($N_{2}$). For an experiment with fixed target with thickness $z$ and volumetric number density $n$ the number of reacted particles in the infinitesimal thin target layer $dz$ can be expressed as:
 \begin{equation}
-\frac{dI}{dz} = -n \sigma I
-%L(t) = \frac{N_f}{\tau_s} exp(-\frac{t}{\tau_f}) + \frac{N_s}{\tau_s} exp(-\frac{t}{\tau_s})
+\frac{dN_{2}}{dz} = -n \sigma N_{2}
 \end{equation}
-\subsection{Event Selection}
+Solving this differential equation for $N_{2}$ (with the condition $N_{2}$ = $N_{1}$ for $z=0$) discloses an exponential relation:
+\begin{equation}
+N_{2} = N_{1}e^{-n\sigma z}
+\label{eq:cross_sec}
+\end{equation} 
+Where $n z$ can be summarized as $N_t$, the total number of scattering centers per unit area. The relation $(N_{2}/N_{1})$, number of unreacted particles after collision versus number of incoming particles, is often called survival probability. For an idealistic experimental setup with full detector efficiency and no interactions in the setup material the cross section could simply be deduced from equation \ref{eq:cross_sec}. To account for reactions of the projectile that occur within the setup material and first order detector specific distortions of output signals the survival probabiltiy $(N_{2}/N_{1})$ has to be divided by $(N_{2}^E/N_{1}^E)$, where $N_{1}^E$ is the number of incoming particles and $N_{2}^E$ the number of unreacted particles after collision for an empty run respectively. The factor $(N_{2}^E/N_{1}^E)$ can also be seen as an overall-experiment specific efficiency. The final formula for the cross section for a so called transmission measurement is:
+\begin{equation}
+\sigma = -\frac{1}{N_t} ln(\frac{1}{\epsilon_{setup}} \frac{N_2}{N_1}),\quad with \quad  \epsilon_{setup} = \frac{N_{2}^E}{N_{1}^E}
+\label{eq:corr_cross}
+\end{equation}
+From the above formula \ref{eq:corr_cross} it is evident that for cross section measurements with the transmission method three types of observables have to be measured:\newline
+\begin{enumerate}
+\item[$\blacksquare$] \textbf{Number of scattering centers $N_t$}\newline
+The number of scattering centers per unit area of the target is a target specific number. It depends from the target thickness and and its density. The values herefore are taken from \cite{ponnath2023precise}\footnote{For the purpose of this work the target thicknesses were remeasured at GSI with a chromatic sensor giving 2D depth profiles of each target.}. 
+\item[$\blacksquare$] \textbf{Number of incoming projectiles ($^{12}$C) $N_1$}
+For the measurement only events with well identified incoming $^{12}$C projectiles are chosen. Herefore strict cuts on the detectors upstream the target are set. This strict (upstream) event selection makes sure that we only consider events with single $^{12}$C ...See more in section \ref{subsec:event-sel}.  %TODO finish this sencence 
+\item[$\blacksquare$] \textbf{Number of unreacted projectiles ($^{12}$C) $N_2$ after the target}
+Detectors downstream the target are used to count the number of unreacted projectiles $^{12}$C. To reduce detector specific influences which could distort the result it is advisable to use only as few as requirable detectors for the clear identification of unreacted projectiles. Moreover detector specific efficiencies which only depend of the beam energy are cancelled out by including both empty and target runs in the cross section calculation, see equation\ref{eq:corr_cross}. For all downstream detectors used in this analyisis it is critical to limit any selection cuts to what is necessary and if necessary systematically check their effects on the counted number $N_2$.
+\end{enumerate}
+\subsection{Event Selection}\label{subsec:event-sel}
+For event selection, all three upstream detectors are utilized: the MWPC0, the R3BMusic Ionization Chamber, and the START detector. To ensure a clean incoming event selection, the following prerequisites must be met:
+\begin{enumerate}
+\item $^{12}$C identification of incoming projectile by upstream detectors:
+In the S444 experiment the incoming beam was directly delivered by the SIS18 ring accelerator, which is operated in ultra-high vacuum the level of pollution is low %TODO:up to where is the beam in vacuum?
+\item Pileup rejection:
+\item Projectile's focus on the active target region:
+\end{enumerate}
 \subsection{Charge Changing Cross Section Measurement}
 \subsection{Geometric Corrections}
 \subsection{Isotope Correction - Total Interaction Cross Section}

@@ -8,45 +8,45 @@ Warning--entry type for "febex-tec" isn't style-file defined
 --line 147 of file main.bib
 Warning--empty journal in hartigevolution
 Warning--empty year in hartigevolution
-You've used 20 entries,
+You've used 21 entries,
             1876 wiz_defined-function locations,
-            593 strings with 7653 characters,
-and the built_in function-call counts, 4749 in all, are:
-= -- 457
-> -- 236
+            596 strings with 7751 characters,
+and the built_in function-call counts, 4873 in all, are:
+= -- 472
+> -- 240
 < -- 0
-+ -- 89
-- -- 69
-* -- 314
-:= -- 694
-add.period$ -- 30
-call.type$ -- 20
++ -- 91
+- -- 70
+* -- 319
+:= -- 717
+add.period$ -- 32
+call.type$ -- 21
 change.case$ -- 17
 chr.to.int$ -- 0
-cite$ -- 22
-duplicate$ -- 231
-empty$ -- 427
-format.name$ -- 69
-if$ -- 1150
+cite$ -- 23
+duplicate$ -- 238
+empty$ -- 438
+format.name$ -- 70
+if$ -- 1178
 int.to.chr$ -- 0
-int.to.str$ -- 20
+int.to.str$ -- 21
 missing$ -- 10
-newline$ -- 74
-num.names$ -- 16
-pop$ -- 84
+newline$ -- 78
+num.names$ -- 17
+pop$ -- 86
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 166
+skip$ -- 168
 stack$ -- 0
 substring$ -- 202
-swap$ -- 95
+swap$ -- 96
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
-while$ -- 35
-width$ -- 22
-write$ -- 197
+while$ -- 36
+width$ -- 23
+write$ -- 207
 (There were 3 warnings)

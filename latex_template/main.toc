@@ -20,12 +20,12 @@
 \contentsline {section}{\numberline {3}Analysis - Total Interaction Cross Section $^{12}$C + $^{12}$C - $^{12}$C + $^{12}$C}{17}{section.3}
 \contentsline {subsection}{\numberline {3.1}Cross Section Measurement via Transmission Method}{18}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Event Selection}{19}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Charge Changing Cross Section Measurement}{19}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Geometric Corrections}{19}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Isotope Correction - Total Interaction Cross Section}{19}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}Fine Tuned Geometric Correction}{19}{subsection.3.6}
-\contentsline {subsection}{\numberline {3.7}Results}{19}{subsection.3.7}
-\contentsline {subsection}{\numberline {3.8}qfs analyis}{19}{subsection.3.8}
-\contentsline {subsection}{\numberline {3.9}reaction cross section Analysis}{19}{subsection.3.9}
-\contentsline {section}{\numberline {4}Results and Discussion}{19}{section.4}
-\contentsline {section}{References}{19}{section.4}
+\contentsline {subsection}{\numberline {3.3}Charge Changing Cross Section Measurement}{20}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Geometric Corrections}{20}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Isotope Correction - Total Interaction Cross Section}{20}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Fine Tuned Geometric Correction}{20}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}Results}{20}{subsection.3.7}
+\contentsline {subsection}{\numberline {3.8}qfs analyis}{20}{subsection.3.8}
+\contentsline {subsection}{\numberline {3.9}reaction cross section Analysis}{20}{subsection.3.9}
+\contentsline {section}{\numberline {4}Results and Discussion}{20}{section.4}
+\contentsline {section}{References}{20}{section.4}

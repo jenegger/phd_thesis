@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2023.5.31)  8 OCT 2024 16:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2023.5.31)  9 OCT 2024 18:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1194,14 +1194,20 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
 [17 <./Figures/sof_tofw.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 5--8
+Underfull \hbox (badness 10000) in paragraph at lines 19--22
 
  []
 
-) (./../writings/results.tex) (./main.bbl
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[18]
+Overfull \hbox (5.20639pt too wide) in paragraph at lines 30--32
+\T1/cmr/m/n/12 For event se-lec-tion, all three up-stream de-tec-tors are uti-l
+ized: the MWPC0, the R3BMusic
+ []
 
- [18]
+) (./../writings/results.tex) (./main.bbl
+Underfull \vbox (badness 2111) has occurred while \output is active []
+
+ [19]
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 25.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -1224,13 +1230,13 @@ Underfull \hbox (badness 1735) in paragraph at lines 35--39
 he Uni-ver-sität München,
  []
 
-[19]
+
 Underfull \hbox (badness 2368) in paragraph at lines 41--45
 []\T1/cmr/m/n/12 ``Technical re-port for the de-sign, con-struc-tion and com-mi
 s-sion-ing of the
  []
 
-
+[20]
 Underfull \hbox (badness 1127) in paragraph at lines 47--52
 []\T1/cmr/m/n/12 J. Graña-González, J. Rodríguez-Sánchez, J. Ben-l-li-ure, G. G
 arcía-Jiménez,
@@ -1266,9 +1272,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 92--95
 $[][]\T1/cmr/m/n/12 .  [On-line;
  []
 
-[20])
+[21])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 273.
- [21]
+ [22]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 273.
  (./main.aux (./Abstract.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 273.
@@ -1278,10 +1284,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 273.
  ) 
 Here is how much of TeX's memory you used:
- 22118 strings out of 492982
- 397089 string characters out of 6134896
+ 22133 strings out of 492982
+ 397305 string characters out of 6134896
  515023 words of memory out of 5000000
- 25315 multiletter control sequences out of 15000+600000
+ 25322 multiletter control sequences out of 15000+600000
  549886 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,16n,56p,10367b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1309,10 +1315,10 @@ onts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm
 nts/type1/public/cm-super/sfrm2488.pfb></usr/share/texmf/fonts/type1/public/cm-
 super/sfsl1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb><
 /usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on main.pdf (29 pages, 15869894 bytes).
+Output written on main.pdf (30 pages, 15876666 bytes).
 PDF statistics:
- 555 PDF objects out of 1000 (max. 8388607)
- 471 compressed objects within 5 object streams
- 110 named destinations out of 1000 (max. 500000)
+ 570 PDF objects out of 1000 (max. 8388607)
+ 485 compressed objects within 5 object streams
+ 118 named destinations out of 1000 (max. 500000)
  276 words of extra memory for PDF output out of 10000 (max. 10000000)
 
