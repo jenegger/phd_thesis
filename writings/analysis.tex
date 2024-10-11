@@ -49,7 +49,18 @@ For event selection, all three upstream detectors are utilized: the MWPC0, the R
 \end{figure}
 In the S444 experiment the incoming beam was directly delivered by the SIS18 ring accelerator, which is operated in ultra-high vacuum the level of pollution is low.(TODO:up to which stage do we have vacuum? Until MW0?)\newline %TODO:up to where is the beam in vacuum?
 For the charge identification of the incoming ion the R3BMusic ionisation chamber is used which is positioned directly after the MWPC0 at the beam entrance in Cave C,see figure \ref{fig:setup_target_region}. The R3BMusic detector measures anode-wise the energy loss of the passing-through ion which in the first order is proportional to the square of its charge ($\Delta E \sim Z^{2}$). Herfore the default predefined calibration parameters are used. Figure \ref{fig:r3bmusic_charge} shows the measured charge distribution in R3BMusic. To select $Z = 6$ incoming ions the distibution is fitted. All ions with charge within the $\pm 1 \sigma$ range are accepted.  
-\item Pileup rejection:
+\item Pileup rejection and TPat selection:\newline
+The overall recoding and merging of the data from various subdetectors is one of the tasks of the Data AcQuisition (DAQ) system. Whether an event is recorded or not depends on the pre-established trigger logic. Various detectors can send out triggers to the main DAQ when certain conditions are given (e.g. CALIFA sends aout a trigger when a hit with more than 20 MeV is recorded). The different triggers are processed by the trigger logic and summarized as a defined trigger pattern, so called TPat, which is stored in a 16-bit mask for each event. Table blabla gives an overview of the trigger logic and the trigger patterns set in the S444 experiment.
+\begin{table}[h!]
+\centering
+\begin{tabular}{||c c c||} 
+\hline
+Bit Position &TPat Name & Description \\
+\hline\hline
+0 & Min Bias & Hit in Start detector\\
+\hline
+\end{tabular}
+\end{table}
 \item Projectile's focus on the active target region:
 \end{enumerate}
 \subsection{Charge Changing Cross Section Measurement}
