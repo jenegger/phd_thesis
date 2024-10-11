@@ -38,19 +38,25 @@ Detectors downstream the target are used to count the number of unreacted projec
 
 For event selection, all three upstream detectors are utilized: the MWPC0, the R3BMusic Ionization Chamber, and the START detector. To ensure a clean incoming event selection, the following prerequisites must be met:
 \begin{enumerate}
-\item $^{12}$C identification of incoming projectile by upstream detectors:\newline
+\item \textbf{$^{12}$C identification of incoming projectile by upstream detectors:}\newline
 \begin{figure}[htpb]
     \centering
-    \includegraphics[width=\textwidth,height=6cm,keepaspectratio=true]{Figures/charge_r3bmusic.png}
+    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/charge_r3bmusic.png}
     \caption{
     Charge distribution on R3BMusic with predefinded calibration parameters with already applied positional cuts on MWPC0 - positioned upstream to the ionisation chamber. 
     }
     \label{fig:r3bmusic_charge}
 \end{figure}
 In the S444 experiment the incoming beam was directly delivered by the SIS18 ring accelerator, which is operated in ultra-high vacuum the level of pollution is low.(TODO:up to which stage do we have vacuum? Until MW0?)\newline %TODO:up to where is the beam in vacuum?
-For the charge identification of the incoming ion the R3BMusic ionisation chamber is used which is positioned directly after the MWPC0 at the beam entrance in Cave C,see figure \ref{fig:setup_target_region}. The R3BMusic detector measures anode-wise the energy loss of the passing-through ion which in the first order is proportional to the square of its charge ($\Delta E \sim Z^{2}$). Herfore the default predefined calibration parameters are used. Figure \ref{fig:r3bmusic_charge} shows the measured charge distribution in R3BMusic. To select $Z = 6$ incoming ions the distibution is fitted. All ions with charge within the $\pm 1 \sigma$ range are accepted.  
-\item Pileup rejection and TPat selection:\newline
-The overall recoding and merging of the data from various subdetectors is one of the tasks of the Data AcQuisition (DAQ) system. Whether an event is recorded or not depends on the pre-established trigger logic. Various detectors can send out triggers to the main DAQ when certain conditions are given (e.g. CALIFA sends aout a trigger when a hit with more than 20 MeV is recorded). The different triggers are processed by the trigger logic and summarized as a defined trigger pattern, so called TPat, which is stored in a 16-bit mask for each event. Table blabla gives an overview of the trigger logic and the trigger patterns set in the S444 experiment.
+For the charge identification of the incoming ion the R3BMusic ionisation chamber is used which is positioned directly after the MWPC0 at the beam entrance in Cave C,see figure \ref{fig:setup_target_region}. The R3BMusic detector measures anode-wise the energy loss of the passing-through ion which in the first order is proportional to the square of its charge ($\Delta E \sim Z^{2}$). Herfore the default predefined calibration parameters are used. Figure \ref{fig:r3bmusic_charge} shows the measured charge distribution in R3BMusic. To select $Z = 6$ incoming ions the distibution is fitted. All ions with charge within the $\pm 1 \sigma$ range are accepted. Figure \ref{fig:r3bmusic_cuts} summarizes the $\pm 1 \sigma$ cuts on the R3BMusic charge for empty/target runs for all beam energies.   
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/r3bmusic_charge_cuts.png}
+\caption{Strict $\pm 1 \sigma$ charge cuts with R3BMusic for incoming particle selection. Fixed predefined calibration parameters were used which do not compensate different gain settings between runs. }
+\label{fig:r3bmusic_cuts}
+\end{figure}
+\item \textbf{Pileup rejection and TPat selection:}\newline
+The overall recoding and merging of the data from various subdetectors is one of the tasks of the Data AcQuisition (DAQ) system. Whether an event is recorded or not depends on the pre-established trigger logic. Various detectors can send out triggers to the main DAQ when certain conditions are given (e.g. CALIFA sends aout a trigger when a hit with more than 20 MeV is recorded). The different triggers are processed by the trigger logic and summarized as a defined trigger pattern, so called TPat, which is stored in a 16-bit mask for each event. Table \ref{tab:tpats} gives an overview of the trigger logic and the trigger patterns set in the S444 experiment. For this analysis the \textit{"Min. Bias"} trigger is required\footnote{This includes also \textit{"Reaction"} and \textit{"Neutron"} TPat since these patterns contain also \textit{"Min. Bias"} TPat as necessary condition.}.\newline 
 \begin{table}[h!]
 \centering
 \begin{tabular}{||c c c||} 
@@ -58,10 +64,46 @@ The overall recoding and merging of the data from various subdetectors is one of
 Bit Position &TPat Name & Description \\
 \hline\hline
 0 & Min Bias & Hit in Start detector\\
-\hline
+1 & Reaction & "CalifaOR" -high energy hit in CALIFA \\
+2 & Neutron & Hit in NeuLAND \\
+3 & p+n & Hit in CALIFA and Neuland \\
+8 & Califa & high energy hit in califa - off-spill \\
+9 & NeuLAND & Hit in NeuLAND - off-spill \\
+\hline\hline
 \end{tabular}
+\caption{List of TPats set for S444 experiment. As for the selected runs low beam rates ($< 10kHz$) were expected no dead time issues should arise for the in-beam detectors, therefore no downscaling of the \textit{Min. Bias} TPat was deployed.}
+\label{tab:tpats}
 \end{table}
-\item Projectile's focus on the active target region:
+Since the TPat selection itself does not necessary set any pileup constraints it is important to analyse the signals of the detectors upstream carefully to insure yourself that only events with  one incoming $^{12}$C ion at a time get selected. Herefore events with incoming ions with charge $Z = 6 \pm 1\sigma$ are chosen, as discussed in the previous point. Moreover it is required that both left and right preamplifiers of the START detector have seen a coincident signal within a time-window of 1.391 ns. The overall searching window of the START detector was set to 2 $\mu s$. For the MWPC0 which is placed right at the beam entrance of Cave C no hit multiplicity cuts were applied considering its operating mode, which is designed for charge sharing between the readout pads. 
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/start_tdiff_exactly2good_hits.png}
+\caption{$\Delta t_{right-left}$ between hits in the Start detector for events with exactly one hit on the left and right preamplifier and limiting the time differnce in the range 0.555 ns to 1.946ns.}
+\label{fig:start_good_event_sel}
+\end{figure}
+\item \textbf{Projectile's focus on the active target region:}\newline
+To assure that the incoming $^{12}$C ion hits the target it is necessary to select only events where the projectile is focussed to the active target region. Therefore strict cuts on the MWPC0 x and y positon are applied. This was achieved by fitting the x and y distribution of the MWPC0 (without any restrictions on it) by a gaussian function. The selection of good incoming events was then restricted to events with hits in MWPC0 within the $\pm 1\sigma$ region in the x and y position, see figure \ref{fig:mw0_xy_overview} and \ref{fig:mw0_cuts}.\newline
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/mw0_xy_summary.png}
+\caption{x-y position of incoming ion on MWPC0.}
+\label{fig:mw0_xy_overview}
+\end{figure}
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/mwpc0_cutxy.png}
+\caption{Overview of $\pm 1\sigma$ cuts in x and y in MWPC0 for empty/target runs.}
+\label{fig:mw0_cuts}
+\end{figure}
+The MWPC0 x-position and the available projectile angle in the x-y plane from the R3BMusic is used to propagate the corresponding x-position on the target location to further check that the selected projectiles hit parallel to the z-position (= beam direction) the target and do only have a minimal incident angle,see figure \ref{fig:x_pos_target}. This can also be seen as a consistency check whether the applied (predefined) calibration parameters are properly set.
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/x_proj_beam_mw0_target.png}
+    \caption{
+   	Propagated x-position on target location from measured x-value on MWPC0 and x-y plane angle measurement from R3BMusic. The active target area is 3 x 3 cm. In red the selected events with $\pm 1\sigma$ cut in x and y position in MWPC0, in blue all events.
+    }
+    \label{fig:x_pos_target}
+\end{figure}
 \end{enumerate}
 \subsection{Charge Changing Cross Section Measurement}
 \subsection{Geometric Corrections}
