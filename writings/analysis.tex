@@ -106,6 +106,55 @@ The MWPC0 x-position and the available projectile angle in the x-y plane from th
 \end{figure}
 \end{enumerate}
 \subsection{Charge Changing Cross Section Measurement}
+The charge changing cross section refers to a measure of the probability that the incoming projectile will undergo a reaction inside the target that changes its charge. To measure the charge changing cross section it can be referred to formula \ref{eq:corr_cross} where in this case $N_2$ is the number of survived carbon isotopes, i.e. projectiles which did not change their charge state. For this measurement only the data from the double ionisation chamber TWIN (see section \ref{sec:ionisation_chambers}) needs to be read out and analyzed.\newline
+While for the event seletion before the target the cut conditions can be arbitrarly strict (it will only have an impact to the statistics and the derivated statistical error), cuts on the downstream detectors need to be avoided if at all possible. Too selective cuts on the identification of $N_2$ can distort the measurement.
+\subsubsection{TWIN MUSIC Calibration}
+For the analyis of data in TWIN MUSIC - different to the upstream detectors, where precalibrated data is used - the so called \textit{mapped} raw level data is processed. In the mapped level TWIN MUSIC provides following information:
+\begin{itemize}
+\itemsep0em 
+\item \textbf{SectionID:} The detector is a double ionisation chamber and as such split up into four parts (in beam perspective): section 1 - right up; section 2 - right down; section 3 - left down; section 4 - left up. For the S44 experiment only section 1 was operated and accordingly centered on the beam spot.
+\item \textbf{AnodeID:} TWIN MUSIC has 16 anodes for energy-loss readout and one refence anode (anodeID = 17).
+\item \textbf{Time:} Each hit in each anode gets assigned to a time. Each time has individually no meaning. The drift time (in ns) of the electrons from the ionisation process of the gas by the inflying projectile (or the fragments of it) to the anode is calculated by substracting the individual anode time by the time of the reference anode. The reference anode gets its clean signal from a constant fraction discriminator of the START detector.
+\item \textbf{Energy:} Each hit in each anode gets assigned to an energy - except the reference signal. To reconstruct the charge of the crossing through charged particle anodewise or detectorwise the parmetrization formula Z = [0] + [1]*$\sqrt(E)$ + [2]*E is used. 
+\end{itemize}
+The calibration of the TWIN energy for each anode is done run-wise. The event selection on the incoming ion is limited to the  \textit{"Min. Bias"} TPat condition (coincident signal in START detector peampliviers within 1.391 ns, on-spill). For the TWIN MUSIC only events where all anodes having exactly one hit (including the reference anode) are chosen. The most prominent peak (Z = 6) was fitted with gaussian function. The calibration was then done by determining the scaling factor for each anode  that shifts the mean of the gaussian fits to the same position\footnote{For this analysis the peaks were shifted to $\Delta E = 6$. Since $\Delta E \propto Z^2$ holds, the scaled $\Delta E$ value, even though peaking at 6, is not equate the charge Z = 6.}, see figure \ref{fig:calibration}.
+\begin{figure}
+     \centering
+     \begin{subfigure}[t]{0.45\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Figures/twim_mapped_550.png}
+         \caption{Uncalibrated raw $\Delta E$ distributions for all 16 anodes for the 550 AMeV target run.The last six anodes have a slightly different electronics amplification chain.}
+         \label{fig:raw_twim}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[t]{0.45\textwidth}
+         \centering
+         \includegraphics[width=\textwidth]{Figures/twim_mapped_550_no_calib.png}
+         \caption{Gaussian fit applied to prominent peak and shifted to same position.}
+         \label{fig:cal_twim_one}
+     \end{subfigure}
+     \hfill
+        \caption{Fitting procedure in TWIN.TODO: nicer labeling!}
+        \label{fig:calibration}
+\end{figure}
+\subsubsection{TWIN MUSIC Event Selection}
+As previously stated cuts on the downstream detectors are avoided. However, events which have hits in one or several anodes in TWIN MUSIC but no signal in the reference anode are discarted as a whole neither contributing to $N_1$ (incoming selected ions) nor to $N_2$ (unreacted ions). If not reference time from START CFD signal is available it is not possible to measure the drift time in the individual anodes which makes it not possible to distinguish between signal and noise hits for multi-hit anode events in TWIN MUSIC. The number of events affected by this cut is in the region of few tens. This is negligible to the number of incoming ions $N_1$ and should not have any dependence whether the projectile reacted or not. 
+\subsubsection{Carbon Identification}
+-> deltaE possonian distributed, according to central limit theorem, the sum too
+-> therefore plot Esum of first 8 anodes vs Esum of last 8 anodes
+-> two modules were used for readout
+-> For selecting charge = 6 make gaussian fit on Esum up down
+-> Compare charge = 6 cuts:
+	-->show gaussian 2D cut, for all sigmas (with and whithout borders)
+	-->show gaussian diagonal cut for all sigmas (with and without borders)
+	-->show effect when discarting first/last, first two/last, first three/last and only using last 8 or last 6 anodes with fixed sigma cut
+	
+
+
+\subsubsection{Results}
+
+
+
 \subsection{Geometric Corrections}
 \subsection{Isotope Correction - Total Interaction Cross Section}
 \subsection{Fine Tuned Geometric Correction}

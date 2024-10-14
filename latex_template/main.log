@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2023.5.31)  11 OCT 2024 18:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2023.5.31)  14 OCT 2024 16:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -892,7 +892,7 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-<Figures/TUMLogo_oZ_Outline_blau_CMYK-eps-converted-to.pdf, id=123, 54.2025pt x
+<Figures/TUMLogo_oZ_Outline_blau_CMYK-eps-converted-to.pdf, id=139, 54.2025pt x
  29.10875pt>
 File: Figures/TUMLogo_oZ_Outline_blau_CMYK-eps-converted-to.pdf Graphic file (t
 ype pdf)
@@ -945,7 +945,7 @@ ype pdf)
 Package pdftex.def Info: Figures/TUMLogo_oZ_Outline_blau_CMYK-eps-converted-to.
 pdf  used on input line 147.
 (pdftex.def)             Requested size: 140.92793pt x 75.70404pt.
-<Figures/PH_CMYK-eps-converted-to.pdf, id=138, 30.1125pt x 30.1125pt>
+<Figures/PH_CMYK-eps-converted-to.pdf, id=154, 30.1125pt x 30.1125pt>
 File: Figures/PH_CMYK-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/PH_CMYK-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/PH_CMYK-eps-converted-to.pdf  used on input li
@@ -1001,8 +1001,8 @@ ne 208.
 
  [1
 
-] (./../writings/introduction.tex)
-(./../writings/experiment.tex
+] [2]
+(./../writings/introduction.tex) (./../writings/experiment.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--4
 
  []
@@ -1090,7 +1090,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 162--170
  []
 
 [8]
-<Figures/glad_magnet.jpg, id=266, 853.5087pt x 521.3076pt>
+<Figures/glad_magnet.jpg, id=290, 853.5087pt x 521.3076pt>
 File: Figures/glad_magnet.jpg Graphic file (type jpg)
 <use Figures/glad_magnet.jpg>
 Package pdftex.def Info: Figures/glad_magnet.jpg  used on input line 178.
@@ -1105,20 +1105,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 194--196
 
  []
 
-<Figures/califa_section_overview.png, id=280, 724.7075pt x 556.0775pt>
+<Figures/califa_section_overview.png, id=304, 724.7075pt x 556.0775pt>
 File: Figures/califa_section_overview.png Graphic file (type png)
 <use Figures/califa_section_overview.png>
 Package pdftex.def Info: Figures/califa_section_overview.png  used on input lin
 e 200.
 (pdftex.def)             Requested size: 370.81233pt x 284.52913pt.
 [10] [11 <./Figures/califa_section_overview.png>]
-<Figures/califa_inner_outer_structure.png, id=309, 398.48875pt x 244.915pt>
+<Figures/califa_inner_outer_structure.png, id=334, 398.48875pt x 244.915pt>
 File: Figures/califa_inner_outer_structure.png Graphic file (type png)
 <use Figures/califa_inner_outer_structure.png>
 Package pdftex.def Info: Figures/califa_inner_outer_structure.png  used on inpu
 t line 217.
 (pdftex.def)             Requested size: 177.42868pt x 109.04848pt.
-<Figures/califa_frame.png, id=312, 570.13pt x 450.68375pt>
+<Figures/califa_frame.png, id=337, 570.13pt x 450.68375pt>
 File: Figures/califa_frame.png Graphic file (type png)
 <use Figures/califa_frame.png>
 Package pdftex.def Info: Figures/califa_frame.png  used on input line 224.
@@ -1130,7 +1130,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 256--261
  []
 
 [14] [15]
-<Figures/sof_tofw.png, id=380, 2246.3925pt x 2062.70625pt>
+<Figures/sof_tofw.png, id=404, 2246.3925pt x 2062.70625pt>
 File: Figures/sof_tofw.png Graphic file (type png)
 <use Figures/sof_tofw.png>
 Package pdftex.def Info: Figures/sof_tofw.png  used on input line 281.
@@ -1198,7 +1198,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--22
 
  []
 
-<Figures/SETUP_around_Target.png, id=418, 1927.2pt x 1084.05pt>
+<Figures/SETUP_around_Target.png, id=442, 1927.2pt x 1084.05pt>
 File: Figures/SETUP_around_Target.png Graphic file (type png)
 <use Figures/SETUP_around_Target.png>
 Package pdftex.def Info: Figures/SETUP_around_Target.png  used on input line 32
@@ -1210,19 +1210,19 @@ Overfull \hbox (5.20639pt too wide) in paragraph at lines 39--41
 ized: the MWPC0, the R3BMusic
  []
 
-<Figures/charge_r3bmusic.png, id=419, 1704.3675pt x 1207.51125pt>
+<Figures/charge_r3bmusic.png, id=443, 1704.3675pt x 1207.51125pt>
 File: Figures/charge_r3bmusic.png Graphic file (type png)
 <use Figures/charge_r3bmusic.png>
 Package pdftex.def Info: Figures/charge_r3bmusic.png  used on input line 44.
 (pdftex.def)             Requested size: 321.25854pt x 227.60544pt.
-<Figures/r3bmusic_charge_cuts.png, id=423, 1011.78pt x 578.16pt>
+<Figures/r3bmusic_charge_cuts.png, id=447, 1011.78pt x 578.16pt>
 File: Figures/r3bmusic_charge_cuts.png Graphic file (type png)
 <use Figures/r3bmusic_charge_cuts.png>
 Package pdftex.def Info: Figures/r3bmusic_charge_cuts.png  used on input line 5
 4.
 (pdftex.def)             Requested size: 398.32872pt x 227.61641pt.
 [19] [20 <./Figures/SETUP_around_Target.png> <./Figures/charge_r3bmusic.png>]
-<Figures/start_tdiff_exactly2good_hits.png, id=440, 1181.41376pt x 796.9775pt>
+<Figures/start_tdiff_exactly2good_hits.png, id=465, 1181.41376pt x 796.9775pt>
 File: Figures/start_tdiff_exactly2good_hits.png Graphic file (type png)
 <use Figures/start_tdiff_exactly2good_hits.png>
 Package pdftex.def Info: Figures/start_tdiff_exactly2good_hits.png  used on inp
@@ -1230,25 +1230,40 @@ ut line 80.
 (pdftex.def)             Requested size: 337.40947pt x 227.61522pt.
 
 [21 <./Figures/r3bmusic_charge_cuts.png>]
-<Figures/mw0_xy_summary.png, id=451, 837.1275pt x 544.0325pt>
+<Figures/mw0_xy_summary.png, id=476, 837.1275pt x 544.0325pt>
 File: Figures/mw0_xy_summary.png Graphic file (type png)
 <use Figures/mw0_xy_summary.png>
 Package pdftex.def Info: Figures/mw0_xy_summary.png  used on input line 88.
 (pdftex.def)             Requested size: 350.24994pt x 227.62045pt.
-<Figures/mwpc0_cutxy.png, id=452, 1011.78pt x 578.16pt>
+<Figures/mwpc0_cutxy.png, id=477, 1011.78pt x 578.16pt>
 File: Figures/mwpc0_cutxy.png Graphic file (type png)
 <use Figures/mwpc0_cutxy.png>
 Package pdftex.def Info: Figures/mwpc0_cutxy.png  used on input line 94.
 (pdftex.def)             Requested size: 398.32872pt x 227.61641pt.
-<Figures/x_proj_beam_mw0_target.png, id=454, 1166.3575pt x 799.98875pt>
+<Figures/x_proj_beam_mw0_target.png, id=479, 1166.3575pt x 799.98875pt>
 File: Figures/x_proj_beam_mw0_target.png Graphic file (type png)
 <use Figures/x_proj_beam_mw0_target.png>
 Package pdftex.def Info: Figures/x_proj_beam_mw0_target.png  used on input line
  101.
 (pdftex.def)             Requested size: 331.86363pt x 227.62074pt.
  [22] [23 <./Figures/start_tdiff_exactly2good_hits.png> <./Figures/mw0_xy_summa
-ry.png>]) (./../writings/results.tex)
-(./main.bbl [24 <./Figures/mwpc0_cutxy.png>]
+ry.png>] [24 <./Figures/mwpc0_cutxy.png>]
+<Figures/twim_mapped_550.png, id=508, 1202.4925pt x 1002.74625pt>
+File: Figures/twim_mapped_550.png Graphic file (type png)
+<use Figures/twim_mapped_550.png>
+Package pdftex.def Info: Figures/twim_mapped_550.png  used on input line 125.
+(pdftex.def)             Requested size: 199.60895pt x 166.44054pt.
+<Figures/twim_mapped_550_no_calib.png, id=509, 952.55875pt x 527.9725pt>
+File: Figures/twim_mapped_550_no_calib.png Graphic file (type png)
+<use Figures/twim_mapped_550_no_calib.png>
+Package pdftex.def Info: Figures/twim_mapped_550_no_calib.png  used on input li
+ne 132.
+(pdftex.def)             Requested size: 199.60895pt x 110.6358pt.
+ [25 <./Figures/x_proj_beam_mw0_target.png>]) (./../writings/results.tex)
+(./main.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [26 <./Figures/twim_mapped_550.png> <./Figures/twim_mapped_550_no_calib.png>]
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 25.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -1271,13 +1286,13 @@ Underfull \hbox (badness 1735) in paragraph at lines 35--39
 he Uni-ver-sität München,
  []
 
-
+[27]
 Underfull \hbox (badness 2368) in paragraph at lines 41--45
 []\T1/cmr/m/n/12 ``Technical re-port for the de-sign, con-struc-tion and com-mi
 s-sion-ing of the
  []
 
-[25 <./Figures/x_proj_beam_mw0_target.png>]
+
 Underfull \hbox (badness 1127) in paragraph at lines 47--52
 []\T1/cmr/m/n/12 J. Graña-González, J. Rodríguez-Sánchez, J. Ben-l-li-ure, G. G
 arcía-Jiménez,
@@ -1313,54 +1328,55 @@ Underfull \hbox (badness 10000) in paragraph at lines 92--95
 $[][]\T1/cmr/m/n/12 .  [On-line;
  []
 
-[26])
+[28])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 273.
- [27]
+ [29]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 273.
  (./main.aux (./Abstract.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 273.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 273.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3C04B01013034B4A31AEBB9ED5471B22;2252.
+(rerunfilecheck)             Checksum: F1CBBB135A3685F3813A12AC06326DB8;2568.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 273.
  ) 
 Here is how much of TeX's memory you used:
- 22200 strings out of 492982
- 399006 string characters out of 6134896
+ 22245 strings out of 492982
+ 399969 string characters out of 6134896
  515023 words of memory out of 5000000
- 25367 multiletter control sequences out of 15000+600000
- 550572 words of font info for 71 fonts, out of 8000000 for 9000
+ 25401 multiletter control sequences out of 15000+600000
+ 552120 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,16n,56p,10367b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/sha
-re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf
-/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/
-cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pf
-b></usr/share/texmf/fonts/type1/public/cm-super/sfcc1440.pfb></usr/share/texmf/
-fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/type1/public/c
-m-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb
-></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/f
-onts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm
--super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb>
-</usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fo
-nts/type1/public/cm-super/sfrm2488.pfb></usr/share/texmf/fonts/type1/public/cm-
-super/sfsl1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb><
-/usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fon
-ts/type1/public/cm-super/sftt1200.pfb>
-Output written on main.pdf (35 pages, 16245344 bytes).
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf/fonts
+/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-sup
+er/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb></us
+r/share/texmf/fonts/type1/public/cm-super/sfcc1440.pfb></usr/share/texmf/fonts/
+type1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/type1/public/cm-supe
+r/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr
+/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/t
+ype1/public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super
+/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/
+share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/ty
+pe1/public/cm-super/sfrm2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/
+sfsl1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/s
+hare/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/typ
+e1/public/cm-super/sftt1200.pfb>
+Output written on main.pdf (38 pages, 16348491 bytes).
 PDF statistics:
- 627 PDF objects out of 1000 (max. 8388607)
- 523 compressed objects within 6 object streams
- 132 named destinations out of 1000 (max. 500000)
- 311 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 680 PDF objects out of 1000 (max. 8388607)
+ 569 compressed objects within 6 object streams
+ 141 named destinations out of 1000 (max. 500000)
+ 353 words of extra memory for PDF output out of 10000 (max. 10000000)
 
