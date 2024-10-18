@@ -23,13 +23,13 @@
 \contentsline {subsection}{\numberline {3.3}Charge Changing Cross Section Measurement}{24}{subsection.3.3}
 \contentsline {subsubsection}{\numberline {3.3.1}TWIN MUSIC Calibration}{24}{subsubsection.3.3.1}
 \contentsline {subsubsection}{\numberline {3.3.2}TWIN MUSIC Event Selection}{26}{subsubsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.3}Carbon Identification}{27}{subsubsection.3.3.3}
-\contentsline {subsubsection}{\numberline {3.3.4}Results}{27}{subsubsection.3.3.4}
-\contentsline {subsection}{\numberline {3.4}Geometric Corrections}{27}{subsection.3.4}
-\contentsline {subsection}{\numberline {3.5}Isotope Correction - Total Interaction Cross Section}{27}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}Fine Tuned Geometric Correction}{27}{subsection.3.6}
-\contentsline {subsection}{\numberline {3.7}Results}{27}{subsection.3.7}
-\contentsline {subsection}{\numberline {3.8}qfs analyis}{27}{subsection.3.8}
-\contentsline {subsection}{\numberline {3.9}reaction cross section Analysis}{27}{subsection.3.9}
-\contentsline {section}{\numberline {4}Results and Discussion}{27}{section.4}
-\contentsline {section}{References}{27}{section.4}
+\contentsline {subsubsection}{\numberline {3.3.3}Carbon Identification}{26}{subsubsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.4}Results}{28}{subsubsection.3.3.4}
+\contentsline {subsection}{\numberline {3.4}Geometric Corrections}{28}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Isotope Correction - Total Interaction Cross Section}{28}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Fine Tuned Geometric Correction}{28}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}Results}{28}{subsection.3.7}
+\contentsline {subsection}{\numberline {3.8}qfs analyis}{28}{subsection.3.8}
+\contentsline {subsection}{\numberline {3.9}reaction cross section Analysis}{28}{subsection.3.9}
+\contentsline {section}{\numberline {4}Results and Discussion}{28}{section.4}
+\contentsline {section}{References}{28}{section.4}

@@ -140,6 +140,28 @@ The calibration of the TWIN energy for each anode is done run-wise. The event se
 \subsubsection{TWIN MUSIC Event Selection}
 As previously stated cuts on the downstream detectors are avoided. However, events which have hits in one or several anodes in TWIN MUSIC but no signal in the reference anode are discarted as a whole neither contributing to $N_1$ (incoming selected ions) nor to $N_2$ (unreacted ions). If not reference time from START CFD signal is available it is not possible to measure the drift time in the individual anodes which makes it not possible to distinguish between signal and noise hits for multi-hit anode events in TWIN MUSIC. The number of events affected by this cut is in the region of few tens. This is negligible to the number of incoming ions $N_1$ and should not have any dependence whether the projectile reacted or not. 
 \subsubsection{Carbon Identification}
+The identification of carbon isotopes in TWIN is done by reconstructing fragments with charge Z = 6 from 2D plots where coincident mean energy losses $\Delta E$ for different anode combinations are plotted. Since the TWIN MUSIC is multi-hit capable various strategies were developed to deal with multi-hit events, i.e. when having anodes with multiple hits, decide which hit originates from the final state products from the reaction and which from background and noise.\newline
+The default strategy is to use the time information of each hit for selection. It has to be remarked that for the S444 experiment the TWIN MUSIC was read out by two independent MDPP modules\cite{MDPP-16}. The signals from the first reference anode and the first eight upstream anodes were forwarded to module 1, the ones from the last eight downstream anodes and the second reference anode were forwarded to module 2. For the first eight upstream anodes the drift time is calculated by substracting the hit time in each anode by the reference time from the first reference anode and for the last eight downstream anodes accordingly the second reference andode was used:\newline
+drift time formula
+The time based selection algorithm for multi-hit anodes works as follows:\newline
+\begin{enumerate}
+\itemsep0em
+\item Get the mean drift time for the eight upstream anodes($t_{mean\_up}$) and the eight downstream anodes($t_{mean\_down}$)\footnote{For the case all eight downstream anodes have multiple hits, set $t_{mean\_down} = t_{mean\_up}$ and vice versa}. Anodes with multiple hits do not contribute to this calculation.
+\item If there are anodes with muliple hits compare the hit time with the accorging mean drift time ($t_{mean\_up}$ for any of the eight upstream anodes, $t_{mean\_down}$ for any of the eight downstream anodes). Calculate herefore the absolute difference between mean drift time and each hit time:
+\begin{equation}
+\Delta t = | \bar{t} - {t^i}_{drift}|;  \text{i = anodeID (1-16) with} \quad \bar{t} = 
+\begin{cases}
+t_{mean\_up} & \text{for i} \leq 8\\
+t_{mean\_down} & \text{for i} \geq 9 \\
+\end{cases}
+\end{equation}
+\item For each anodes with muliple hits select the hit with lowest drift time differnce to the mean drift time.
+\end{enumerate}
+
+
+
+
+ 
 -> deltaE possonian distributed, according to central limit theorem, the sum too
 -> therefore plot Esum of first 8 anodes vs Esum of last 8 anodes
 -> two modules were used for readout
