@@ -171,11 +171,49 @@ After having selected the appropriate hit for single and multi-hit anodes the me
 f(x) = A e^{-\frac{1}{2}((\frac{x - \bar{x}}{\sigma_{x}})^2 +(\frac{y - \bar{y}}{\sigma_{y}})^2)}
 \label{eq:gauss_fit}
 \end{equation},
-where x is the mean rescaled energy loss of the first upstream andodes and y the according eight downstream anodes. The number of survived carbon isotopes is given by the integral of events within the 2D gaussian fit. Since the anodes were read out by two independent MDPP modules with slightly different thresholds also events along the histogram axes with no hit entry in either the upstream anodes or downstream anodes are analyzed. For those events a one dimensional gaussian cut is applied using the parameters from equation \ref{eq:gauss_fit}, see horizontal and vertical bars in figure \ref{fig:twin_2d_gaus_cut}. 
-In figure blabla 
+where x is the mean rescaled energy loss of the first upstream andodes and y the according eight downstream anodes. The number of survived carbon isotopes is given by the integral of events within the 2D gaussian fit. Since the anodes were read out by two independent MDPP modules with slightly different thresholds also events along the histogram axes with no hit entry in either the upstream anodes or downstream anodes are analyzed. For those events a one dimensional gaussian cut is applied using the parameters from equation \ref{eq:gauss_fit}, see horizontal and vertical bars in figure \ref{fig:twin_2d_gaus_cut}.\newline
+To get the charge changing cross section values equation \ref{eq:corr_cross} has to be applied where both the number of survived  carbon isotopes for target run and empty run are determined via the 2D gaussian fit as in figure \ref{fig:twin_2d_gaus_cut}. The number of target particles, $N_t$ in \ref{eq:corr_cross} is given by:
+\begin{equation}
+\begin{split}
+&N_t = \rho \cdot N_A \cdot n \cdot d\\ 
+&\rho = \text{density [$g/cm^3$]} = 1.851 g/cm^3,\text{taken from \cite{ponnath2023precise}}\\
+&N_A = \text{Avogadro constant} =  6.02214076 \cdot 10^{23} mol^{-1}\\
+&n = \text{amount of substance [mol/g]} = 1./12.011 \; mol/g\\
+&d = \text{target thickness[cm]}
+\end{split}
+\end{equation}
+Three carbon targets with different thicknesses are given:
+\begin{enumerate}
+\itemsep0em
+\item thin target: d = 0.5451 cm
+\item medium target: d = 1.0793 cm
+\item thick target: d = 2.1928 cm 
+\end{enumerate}
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/cccs_with_out_border_3_5_sigma.png}
+    \caption{
+    Charge changing cross section without geometry corrections. The red data points result from considering events with only hits in the upstream or downstream anodes, the blue data points don't take these events in consideration. 
+     }
+    \label{fig:cccs_with_out_border_3_5}
+\end{figure}
+The resulting charge changing cross sections are summarized in \ref{fig:cccs_with_out_border_3_5} once with consideration of the vertical/horizontal bars in figure \ref{fig:twin_2d_gaus_cut} and once without using a two dimensional gaussian fit with 3.5 $\sigma$ cut  on identified carbon isotopes. 
+To get the optimal $\sigma$ cut on the two dimensional gaussian fit on the energy losses of the upstream anodes versus downstream anodes the charge changing cross section for all targets and all energies was systematically measured for $\sigma$-cuts in the range of 1 to 5 $\sigma$, see figure \ref{fig:cccs_vs_sigma_cut}. In the region \~ 3.5$\sigma$ the variation of the cross section is minimal.
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/cccs_vs_sigma_cut.png}
+    \caption{
+    Measured charge changing cross sections according to the $\sigma$ cut applied on the figure \ref{fig:twin_2d_gaus_cut} (with borders) for the different target thicknesses and beam energies.
+     }
+    \label{fig:cccs_vs_sigma_cut}
+\end{figure}
+
+%TODO:
+%explain diagonal method and show diagonal/with/without border and comparison to gaussian
+%show method of taking different sections of TWIN
+%note that thickness calc from Lukas
 
 
- 
 %-> deltaE possonian distributed, according to central limit theorem, the sum too
 %-> therefore plot Esum of first 8 anodes vs Esum of last 8 anodes
 %-> two modules were used for readout
