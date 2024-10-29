@@ -207,9 +207,26 @@ To get the optimal $\sigma$ cut on the two dimensional gaussian fit on the energ
      }
     \label{fig:cccs_vs_sigma_cut}
 \end{figure}
-Another method to assert the number survived carbon ions is to apply a diagonal cut on the 2D $\Delta E$ histogram. To set the slope and offset of the diagonal cut line firstly the two dimensional gaussian fit is applied, same as for the previous method. Then the intersection point between the 3.5 $\sigma$ ellipse and the identity line ($\Delta E$ upstream anodes = $\Delta E$ downstream anodes) is found. Through this point, perpendicular to the identity line, the diagonal line is drawn. Everything above the diagonal line is considered as survived carbon ions. Moreover the borders are considered within the 3.5 $\sigma$ cut. 
+Another method to assert the number survived carbon ions is to apply a diagonal cut on the 2D $\Delta E$ histogram. To set the slope and offset of the diagonal cut line firstly the two dimensional gaussian fit is applied, same as for the previous method. Then the intersection point between the 3.5 $\sigma$ ellipse and the identity line ($\Delta E$ upstream anodes = $\Delta E$ downstream anodes) is found. Through this point, perpendicular to the identity line, the diagonal line is drawn. Everything above the diagonal line is considered as survived carbon ions. Moreover the borders are considered within the 3.5 $\sigma$ cut, see figure \ref{fig:diagonal_cut_twim}. 
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/charge_loss_550_thick.png}
+    \caption{
+    Diagonal cut on identified carbon isotopes along the gaussian 3.5 $\sigma$ cut with borders. All hits above the diagonal line are counted as carbon isotopes. Histogram from thick target run, 550 AMeV beam energy.
+     }
+    \label{fig:diagonal_cut_twim}
+\end{figure}
+The effects of the different methods using to identify the carbon isotopes for the charge changing cross section is summarized in figure \ref{fig:cccs_gaus_vs_diag}. The differences in the measured cross sections are within the margin of error herefore both methods are comparable, as expected.
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/cccs_gauss_diag_comp_3_5_sigma.png}
+    \caption{
+    Comparison of charge changing cross section measured via 2D gaussian fit cut and diagonal cut. The differnces are within the margin of error.
+     }
+    \label{fig:cccs_gaus_vs_diag}
+\end{figure}
+
 %TODO:
-%explain diagonal method and show diagonal/with/without border and comparison to gaussian
 %show method of taking different sections of TWIN
 %note that thickness calc from Lukas
 
