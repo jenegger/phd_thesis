@@ -225,17 +225,33 @@ The effects of the different methods using to identify the carbon isotopes for t
      }
     \label{fig:cccs_gaus_vs_diag}
 \end{figure}
+To check wether single anodes or groups of anodes are malfunctioning the charge changing cross section measurement was repeated using only certain anodes for the charge identification:
+\begin{enumerate}[label=\alph*)]
+\itemsep0em
+\item anodes 2-8 versus anodes 9-15 (omitting first and last anode)
+\item anodes 1-4 versus anodes 5-8 (upstream anodes)
+\item anodes 5-8 versus anodes 9-12 (central anodes)
+\item anodes 9-12 versus anodes 13-16 (downstream anodes)
+\end{enumerate}
+The results from the measurement is summarized in figure \ref{fig:cccs_gaus_diff_sections}. The difference between the default gaussian fit method (with 3.5$\sigma$ cut and considering the borders) considering all 16 anodes and applying the same method but omitting the first and last anode is minimal over all four beam energies. When selecting only 8 out of 16 anodes instead the cross sections are systematically lower when going to high beam energies. TODO: give a good explanation about this divergence... 
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/cccs_various_sections_2dgauss_border.png}
+    \caption{
+   	Measurement of charge changing cross sections using different anode sections to make the two dimensional gaussian fit on the identified carbon isotopes. Red: using all 16 anodes. Blue: the various combinations. 
+     }
+    \label{fig:cccs_gaus_diff_sections}
+\end{figure}
+
 
 %TODO:
-%show method of taking different sections of TWIN
-%note that thickness calc from Lukas
-
-
-%-> deltaE possonian distributed, according to central limit theorem, the sum too
-%-> therefore plot Esum of first 8 anodes vs Esum of last 8 anodes
-%-> two modules were used for readout
-%-> For selecting charge = 6 make gaussian fit on Esum up down
-%-> Compare charge = 6 cuts:
+%show method of taking different sections of TWIN DONE
+%note that thickness calc from Lukas --TODO
+%-> deltaE possonian distributed, according to central limit theorem, the sum too DONE
+%-> therefore plot Esum of first 8 anodes vs Esum of last 8 anodes DONE
+%-> two modules were used for readout DONE
+%-> For selecting charge = 6 make gaussian fit on Esum up down DONE
+%-> Compare charge = 6 cuts: DONE
 %	-->show gaussian 2D cut, for all sigmas (with and whithout borders)
 %	-->show gaussian diagonal cut for all sigmas (with and without borders)
 %	-->show effect when discarting first/last, first two/last, first three/last and only using last 8 or last 6 anodes with fixed sigma cut
