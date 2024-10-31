@@ -233,7 +233,11 @@ To check wether single anodes or groups of anodes are malfunctioning the charge 
 \item anodes 5-8 versus anodes 9-12 (central anodes)
 \item anodes 9-12 versus anodes 13-16 (downstream anodes)
 \end{enumerate}
-The results from the measurement is summarized in figure \ref{fig:cccs_gaus_diff_sections}. The difference between the default gaussian fit method (with 3.5$\sigma$ cut and considering the borders) considering all 16 anodes and applying the same method but omitting the first and last anode is minimal over all four beam energies. When selecting only 8 out of 16 anodes instead the cross sections are systematically lower when going to high beam energies. TODO: give a good explanation about this divergence... 
+The results from the measurement is summarized in figure \ref{fig:cccs_gaus_diff_sections}. The difference between the default gaussian fit method (with 3.5$\sigma$ cut and considering the borders) considering all 16 anodes and applying the same method but omitting the first and last anode is minimal over all four beam energies. When selecting only 8 out of 16 anodes instead the cross sections are systematically lower when going to high beam energies. The energy loss inside the TWIN MUSIC decreases with higher beam intensities, according to the Bethe-Bloch formula:
+\begin{equation}
+instert lenghty formula!!
+\end{equation}
+The behaviour of dE/dx for small $\beta$- values are dominated by the 1/$\beta^2$ term. The decrease of deposited energy for larger beam energies has as consequence a lower relative resolution in the two dimensional $\delta E$ loss histogram (see figure \ref{fig:twin_2d_gaus_cut}). In addition reducing the number of readout anodes by a factor two degrades the resolution by a factor $\sqrt{2}$. This has as consequence that the ellipsis with 3.5$\sigma$ cut incorporates a non negligible amount of boron isotopes which are counted as survived carbon isotopes which in turn reduces the measured charge chaning cross section.
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/cccs_various_sections_2dgauss_border.png}
@@ -242,7 +246,6 @@ The results from the measurement is summarized in figure \ref{fig:cccs_gaus_diff
      }
     \label{fig:cccs_gaus_diff_sections}
 \end{figure}
-
 
 %TODO:
 %show method of taking different sections of TWIN DONE
