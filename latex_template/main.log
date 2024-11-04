@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2023.5.31)  30 OCT 2024 13:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2023.5.31)  4 NOV 2024 11:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1298,18 +1298,29 @@ Package pdftex.def Info: Figures/cccs_gauss_diag_comp_3_5_sigma.png  used on in
 put line 222.
 (pdftex.def)             Requested size: 303.49796pt x 227.62346pt.
  [29 <./Figures/cccs_with_out_border_3_5_sigma.png> <./Figures/cccs_vs_sigma_cu
-t.png>]
-<Figures/cccs_various_sections_2dgauss_border.png, id=585, 1242.6425pt x 567.11
+t.png>] [30 <./Figures/charge_loss_550_thick.png>]
+<Figures/cccs_various_sections_2dgauss_border.png, id=598, 1242.6425pt x 567.11
 874pt>
 File: Figures/cccs_various_sections_2dgauss_border.png Graphic file (type png)
 <use Figures/cccs_various_sections_2dgauss_border.png>
 Package pdftex.def Info: Figures/cccs_various_sections_2dgauss_border.png  used
- on input line 239.
+ on input line 259.
 (pdftex.def)             Requested size: 443.5777pt x 202.44054pt.
+ [31 <./Figures/cccs_gauss_diag_comp_3_5_sigma.png>]
+<Figures/cccs_with_stat_errors.png, id=606, 433.62pt x 289.08pt>
+File: Figures/cccs_with_stat_errors.png Graphic file (type png)
+<use Figures/cccs_with_stat_errors.png>
+Package pdftex.def Info: Figures/cccs_with_stat_errors.png  used on input line 
+271.
+(pdftex.def)             Requested size: 341.43124pt x 227.62082pt.
 )
-(./../writings/results.tex) (./main.bbl [30 <./Figures/charge_loss_550_thick.pn
-g>] [31 <./Figures/cccs_gauss_diag_comp_3_5_sigma.png> <./Figures/cccs_various_
-sections_2dgauss_border.png>]
+(./../writings/results.tex) (./main.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32 <./Figures/cccs_various_sections_2dgauss_border.png>]
+Underfull \vbox (badness 1701) has occurred while \output is active []
+
+ [33 <./Figures/cccs_with_stat_errors.png>]
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 25.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -1338,7 +1349,7 @@ Underfull \hbox (badness 2368) in paragraph at lines 41--45
 s-sion-ing of the
  []
 
-[32]
+
 Underfull \hbox (badness 1127) in paragraph at lines 47--52
 []\T1/cmr/m/n/12 J. Graña-González, J. Rodríguez-Sánchez, J. Ben-l-li-ure, G. G
 arcía-Jiménez,
@@ -1356,7 +1367,7 @@ Underfull \hbox (badness 1286) in paragraph at lines 70--73
 s, Tech-nis-che Uni-ver-sität
  []
 
-
+[34]
 Underfull \hbox (badness 10000) in paragraph at lines 92--95
 []\T1/cmr/m/n/12 GSI Helmholtzzen-trum für Schw-e-ri-o-nen-forschung GmbH, ``Ex
 -ploder.''
@@ -1374,7 +1385,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 92--95
 $[][]\T1/cmr/m/n/12 .  [On-line;
  []
 
-[33]
+
 Underfull \hbox (badness 2213) in paragraph at lines 121--124
 []\T1/cmr/m/n/12 ``Mdpp-16 de-tec-tor read-out sys-tems, mesytec.'' [][]$\T1/cm
 tt/m/n/12 https : / / www . mesytec . com /
@@ -1382,7 +1393,7 @@ tt/m/n/12 https : / / www . mesytec . com /
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 273.
- [34]
+ [35]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 273.
  (./main.aux (./Abstract.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 273.
@@ -1392,10 +1403,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 273.
  ) 
 Here is how much of TeX's memory you used:
- 22319 strings out of 492982
- 401903 string characters out of 6134896
+ 22329 strings out of 492982
+ 402174 string characters out of 6134896
  515023 words of memory out of 5000000
- 25443 multiletter control sequences out of 15000+600000
+ 25449 multiletter control sequences out of 15000+600000
  552886 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,20n,56p,10367b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1429,10 +1440,10 @@ m2488.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsl1200.pfb></usr/shar
 e/texmf/fonts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/
 public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt
 1200.pfb>
-Output written on main.pdf (43 pages, 16992101 bytes).
+Output written on main.pdf (44 pages, 17035012 bytes).
 PDF statistics:
- 778 PDF objects out of 1000 (max. 8388607)
- 637 compressed objects within 7 object streams
- 166 named destinations out of 1000 (max. 500000)
- 383 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 791 PDF objects out of 1000 (max. 8388607)
+ 646 compressed objects within 7 object streams
+ 169 named destinations out of 1000 (max. 500000)
+ 388 words of extra memory for PDF output out of 10000 (max. 10000000)
 
