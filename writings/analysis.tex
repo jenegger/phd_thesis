@@ -262,10 +262,17 @@ The behaviour of dE/dx for small $\beta$- values are dominated by the 1/$\beta^2
      }
     \label{fig:cccs_gaus_diff_sections}
 \end{figure}
-While in the above measurements a time based secelction algorithm for multi-hit anodes was used also an energy based selection was tested. This algorithm selects for multi-hit anodes the hit with the highest energy as physical hit and discarts all others, as they are considered as background/noise. 
-
-
+While in the above measurements a time based secelction algorithm for multi-hit anodes was used also an energy based selection was tested. This algorithm selects for multi-hit anodes the hit with the highest energy as physical hit and discarts all others, as they are considered as background/noise. Figure \ref{fig:cccs_gaus_time_vs_energy} compares the time based method versus the energy based method. In both cases a two dimensional gaussian 3.5$\sigma$ cut is applied as in figure \ref{fig:twin_2d_gaus_cut} and the borders are counted as well. The difference in the outcome is negligible. This can be explained since noise or background signal should be both uncorrelated to the event time and at a low energy level and are therefore filtered by both algorithms.
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/cccs_time_vs_engergy_sorted.png}
+    \caption{
+    Comparison of charge changing cross section measurements when using time sorting algorithm(red) and energy sorting algorithm(blue) for multi-hit anodes.
+     }
+    \label{fig:cccs_gaus_time_vs_energy}
+\end{figure}
 The final charge changing cross section measurements with 2D gaussian fit applying a 3.5 $\sigma$ cut and including the borders of the histogram are summarized in figure \ref{fig:cccs_gaus_with_errors}. At this stage also the statistical errors are incorporated. 
+TODO: Description of statistical gaussian error propagation (refer to L.Ponnath thesis).
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/cccs_with_stat_errors.png}
@@ -276,8 +283,6 @@ The final charge changing cross section measurements with 2D gaussian fit applyi
 \end{figure}
 
 
-%TODO:
-%show method of taking different sections of TWIN DONE
 %note that thickness calc from Lukas --TODO
 %-> deltaE possonian distributed, according to central limit theorem, the sum too DONE
 %-> therefore plot Esum of first 8 anodes vs Esum of last 8 anodes DONE
@@ -288,13 +293,8 @@ The final charge changing cross section measurements with 2D gaussian fit applyi
 %	-->show gaussian diagonal cut for all sigmas (with and without borders)
 %	-->show effect when discarting first/last, first two/last, first three/last and only using last 8 or last 6 anodes with fixed sigma cut
 %	
-
-
-\subsubsection{Results}
-
-
-
 \subsection{Geometric Corrections}
+For the S444 experiment only section 1 (right down) of the TWIN MUSIC, which was centered on the beam spot, was operated. As consequence full geometric efficiency could not be assumed. When plotting
 \subsection{Isotope Correction - Total Interaction Cross Section}
 \subsection{Fine Tuned Geometric Correction}
 \subsection{Results}
