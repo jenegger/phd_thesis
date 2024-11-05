@@ -139,7 +139,8 @@ The calibration of the TWIN energy for each anode is done run-wise. The event se
 \end{figure}
 \subsubsection{TWIN MUSIC Event Selection}
 As previously stated cuts on the downstream detectors are avoided. However, events which have hits in one or several anodes in TWIN MUSIC but no signal in the reference anode are discarted as a whole neither contributing to $N_1$ (incoming selected ions) nor to $N_2$ (unreacted ions). If not reference time from START CFD signal is available it is not possible to measure the drift time in the individual anodes which makes it not possible to distinguish between signal and noise hits for multi-hit anode events in TWIN MUSIC. The number of events affected by this cut is in the region of few tens. This is negligible to the number of incoming ions $N_1$ and should not have any dependence whether the projectile reacted or not. 
-\subsubsection{Carbon Identification}
+\subsubsection{Carbon Identification}\label{subsec:carbon_id}
+%\subsubsection{Carbon Identification}\label{subsec:carbon_id}
 The identification of carbon isotopes in TWIN is done by reconstructing fragments with charge Z = 6 from 2D plots where coincident mean energy losses $\Delta E$ for different anode combinations are plotted. Since the TWIN MUSIC is multi-hit capable various strategies were developed to deal with multi-hit events, i.e. when having anodes with multiple hits, decide which hit originates from the final state products from the reaction and which from background and noise.\newline
 The default strategy is to use the time information of each hit for selection. It has to be remarked that for the S444 experiment the TWIN MUSIC was read out by two independent MDPP modules\cite{MDPP-16}. The signals from the first reference anode and the first eight upstream anodes were forwarded to module 1, the ones from the last eight downstream anodes and the second reference anode were forwarded to module 2. For the first eight upstream anodes the drift time is calculated by substracting the hit time in each anode by the reference time from the first reference anode and for the last eight downstream anodes accordingly the second reference andode was used:\newline
 drift time formula
@@ -294,7 +295,26 @@ TODO: Description of statistical gaussian error propagation (refer to L.Ponnath 
 %	-->show effect when discarting first/last, first two/last, first three/last and only using last 8 or last 6 anodes with fixed sigma cut
 %	
 \subsection{Geometric Corrections}
-For the S444 experiment only section 1 (right down) of the TWIN MUSIC, which was centered on the beam spot, was operated. As consequence full geometric efficiency could not be assumed. When plotting
+For the S444 experiment only section 1 (right down) of the TWIN MUSIC, which was centered on the beam spot, was operated. As consequence full geometric efficiency could not be assumed. To visualize the restricted geometic efficiency of the TWIN MUSIC the position in x and y (perpendicular plane to the beam direction) on the MWPC1 in front of the ionisation chamber was plotted, once without any conditions on the TWIN MUSIC and once with the condition of having identified a carbon isotope (with the 2D gauss-fit method as described in chapter \ref{subsec:carbon_id}), see figure \ref{fig:mw1_xy}. The MWPC1 with an active surface of 200 x 200 mm$^{2}$, covers the full phase space of the outgoing fragments whereas the TWIN MUSIC behind it, with an active survace of 55 x 110 mm$^{2}$ (section 1), is not sensitive to the strongly scattered fragments.\newline
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/geo_corr_examples.png}
+    \caption{
+    Distribution in x and y on MWPC1 for different energies with and without target. 
+     }
+    \label{fig:mw1_xy}
+\end{figure}
+
+The efficiency loss depends on the target thickness - for thicker targets the geometric distribution of the fragments is broader and therefore the efficiency loss larger - and the beam energies - for larger beam energies the scattering angles decrease due to the boost effects, the efficiency loss gets smaller. This means, that the efficiency loss needs to be compensated runwise. These efficiency effects can be observed in figure \ref{fig:mw1_xy}.\newline
+To compensate correctly for the geometric efficiency it has to be considered that for the charge changing cross section measurement only the carbon isotopes after the target are counted in the TWIN MUSIC. Therefore the correction should only be applied to the carbon isotopes (Z = 6) on the x-y distribution on the MWPC1, see figure \ref{fig:mw1_xy}. The geometric efficiency correction is done graphically on the on the x-y distribution on the MWPC1 for carbon isotopes by following procedure:
+\begin{enumerate}
+\itemsep0em
+\item anodes 2-8 versus anodes 9-15 (omitting first and last anode)
+
+\end{enumerate}
+
+
+
 \subsection{Isotope Correction - Total Interaction Cross Section}
 \subsection{Fine Tuned Geometric Correction}
 \subsection{Results}
