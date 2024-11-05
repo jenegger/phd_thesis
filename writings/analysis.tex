@@ -309,8 +309,21 @@ The efficiency loss depends on the target thickness - for thicker targets the ge
 To compensate correctly for the geometric efficiency it has to be considered that for the charge changing cross section measurement only the carbon isotopes after the target are counted in the TWIN MUSIC. Therefore the correction should only be applied to the carbon isotopes (Z = 6) on the x-y distribution on the MWPC1, see figure \ref{fig:mw1_xy}. The geometric efficiency correction is done graphically on the on the x-y distribution on the MWPC1 for carbon isotopes by following procedure:
 \begin{enumerate}
 \itemsep0em
-\item anodes 2-8 versus anodes 9-15 (omitting first and last anode)
-
+\item Correction for the x-position distribution:
+\begin{enumerate}
+\item First fit x-distribution with double-gaussian function (free parameter, mean value of both gaussian functions equal) and get mean from fit
+\item Fit again within range mean value +- fixed value (21)
+\item Fit function is integrated in the range -100 up to bound val and compared with the number of data entries in this region
+\item Fit function is integrated in the range  bound val up to 100 and compared with the number of data entries in this region
+\item (data_integral_right_x-integral_fit_right_x_bound) -(data_integral_left_x-integral_fit_left_x_bound) explain compensation
+\end{enumerate}
+\item Correction for the y-position distribution:
+\begin{enumerate}
+\item Fit y-distribution with double-gaussian function (free parameter, mean value of both gaussian fucntions equal) and get mean from fit.
+\item Fit function is integrated in the range of -100 up to mean - fix value and compared with the number of data entries in this range
+\item Fit function is integrated in the range of mean + fix value up to 100 and compared with the number of data entries in this range
+\item (data_integral_left_y -integral_fit_left_y) - (data_integral_right_y -integral_fit_right_y) explain compensation
+\end{enumerate}
 \end{enumerate}
 
 
