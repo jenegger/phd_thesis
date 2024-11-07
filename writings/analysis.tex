@@ -138,9 +138,25 @@ The calibration of the TWIN energy for each anode is done run-wise. The event se
         \label{fig:calibration}
 \end{figure}
 \subsubsection{TWIN MUSIC Event Selection}
-As previously stated cuts on the downstream detectors are avoided. However, events which have hits in one or several anodes in TWIN MUSIC but no signal in the reference anode are discarted as a whole neither contributing to $N_1$ (incoming selected ions) nor to $N_2$ (unreacted ions). If not reference time from START CFD signal is available it is not possible to measure the drift time in the individual anodes which makes it not possible to distinguish between signal and noise hits for multi-hit anode events in TWIN MUSIC. The number of events affected by this cut is in the region of few tens. This is negligible to the number of incoming ions $N_1$ and should not have any dependence whether the projectile reacted or not. 
+As previously stated cuts on the downstream detectors are avoided. However, events which have hits in one or several anodes in TWIN MUSIC but no signal in the reference anode are discarted as a whole neither contributing to $N_1$ (incoming selected ions) nor to $N_2$ (unreacted ions). If not reference time from START CFD signal is available it is not possible to measure the drift time in the individual anodes which makes it not possible to distinguish between signal and noise hits for multi-hit anode events in TWIN MUSIC. The number of events affected by this cut is in the region of few tens. This is negligible to the number of incoming ions $N_1$ and should not have any dependence whether the projectile reacted or not.
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\makecell{\# incoming \\ projectiles $N_1$}& 400 & 550 & 650 & 800 \\
+      & MeV/nucleon & MeV/nucleon & MeV/nucleon & MeV/nucleon \\
+\hline
+Empty & 574279{\footnotesize(451)} & 453729{\footnotesize(34)} & 522451{\footnotesize(44)} & 395451{\footnotesize(52)} \\
+\hline
+thin & 569503{\footnotesize(422)} & 476323{\footnotesize(33)} & 538037{\footnotesize(43)} & 481459{\footnotesize(36)} \\
+\hline
+medium & 606578{\footnotesize(431)} & 451137{\footnotesize(27)} & 500688{\footnotesize(40)} & 345654{\footnotesize(46)} \\
+\hline
+thick & 655762{\footnotesize(497)} & 436457{\footnotesize(30)} & 530869{\footnotesize(29)} & 479679{\footnotesize(61)} \\
+\hline
+\end{tabular}
+\end{table}
 \subsubsection{Carbon Identification}\label{subsec:carbon_id}
-%\subsubsection{Carbon Identification}\label{subsec:carbon_id}
 The identification of carbon isotopes in TWIN is done by reconstructing fragments with charge Z = 6 from 2D plots where coincident mean energy losses $\Delta E$ for different anode combinations are plotted. Since the TWIN MUSIC is multi-hit capable various strategies were developed to deal with multi-hit events, i.e. when having anodes with multiple hits, decide which hit originates from the final state products from the reaction and which from background and noise.\newline
 The default strategy is to use the time information of each hit for selection. It has to be remarked that for the S444 experiment the TWIN MUSIC was read out by two independent MDPP modules\cite{MDPP-16}. The signals from the first reference anode and the first eight upstream anodes were forwarded to module 1, the ones from the last eight downstream anodes and the second reference anode were forwarded to module 2. For the first eight upstream anodes the drift time is calculated by substracting the hit time in each anode by the reference time from the first reference anode and for the last eight downstream anodes accordingly the second reference andode was used:\newline
 drift time formula
@@ -307,24 +323,24 @@ For the S444 experiment only section 1 (right down) of the TWIN MUSIC, which was
 
 The efficiency loss depends on the target thickness - for thicker targets the geometric distribution of the fragments is broader and therefore the efficiency loss larger - and the beam energies - for larger beam energies the scattering angles decrease due to the boost effects, the efficiency loss gets smaller. This means, that the efficiency loss needs to be compensated runwise. These efficiency effects can be observed in figure \ref{fig:mw1_xy}.\newline
 To compensate correctly for the geometric efficiency it has to be considered that for the charge changing cross section measurement only the carbon isotopes after the target are counted in the TWIN MUSIC. Therefore the correction should only be applied to the carbon isotopes (Z = 6) on the x-y distribution on the MWPC1, see figure \ref{fig:mw1_xy}. The geometric efficiency correction is done graphically on the on the x-y distribution on the MWPC1 for carbon isotopes by following procedure:
-\begin{enumerate}
-\itemsep0em
-\item Correction for the x-position distribution:
-\begin{enumerate}
-\item First fit x-distribution with double-gaussian function (free parameter, mean value of both gaussian functions equal) and get mean from fit
-\item Fit again within range mean value +- fixed value (21)
-\item Fit function is integrated in the range -100 up to bound val and compared with the number of data entries in this region
-\item Fit function is integrated in the range  bound val up to 100 and compared with the number of data entries in this region
-\item (data_integral_right_x-integral_fit_right_x_bound) -(data_integral_left_x-integral_fit_left_x_bound) explain compensation
-\end{enumerate}
-\item Correction for the y-position distribution:
-\begin{enumerate}
-\item Fit y-distribution with double-gaussian function (free parameter, mean value of both gaussian fucntions equal) and get mean from fit.
-\item Fit function is integrated in the range of -100 up to mean - fix value and compared with the number of data entries in this range
-\item Fit function is integrated in the range of mean + fix value up to 100 and compared with the number of data entries in this range
-\item (data_integral_left_y -integral_fit_left_y) - (data_integral_right_y -integral_fit_right_y) explain compensation
-\end{enumerate}
-\end{enumerate}
+%\begin{enumerate}
+%\itemsep0em
+%\item Correction for the x-position distribution:
+%\begin{enumerate}
+%\item First fit x-distribution with double-gaussian function (free parameter, mean value of both gaussian functions equal) and get mean from fit
+%\item Fit again within range mean value +- fixed value (21)
+%\item Fit function is integrated in the range -100 up to bound val and compared with the number of data entries in this region
+%\item Fit function is integrated in the range  bound val up to 100 and compared with the number of data entries in this region
+%\item (data_integral_right_x-integral_fit_right_x_bound) -(data_integral_left_x-integral_fit_left_x_bound) explain compensation
+%\end{enumerate}
+%\item Correction for the y-position distribution:
+%\begin{enumerate}
+%\item Fit y-distribution with double-gaussian function (free parameter, mean value of both gaussian fucntions equal) and get mean from fit.
+%\item Fit function is integrated in the range of -100 up to mean - fix value and compared with the number of data entries in this range
+%\item Fit function is integrated in the range of mean + fix value up to 100 and compared with the number of data entries in this range
+%\item (data_integral_left_y -integral_fit_left_y) - (data_integral_right_y -integral_fit_right_y) explain compensation
+%\end{enumerate}
+%\end{enumerate}
 
 
 

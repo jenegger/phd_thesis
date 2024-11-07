@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.24)  5 NOV 2024 14:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.24)  7 NOV 2024 20:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -455,6 +455,12 @@ Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
 \c@SC@C=\count305
 \SC@BOX=\box57
 )
+(/usr/share/texlive/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen194
+\c@nlinenum=\count306
+\TeXr@lab=\toks27
+)
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/hypcap.sty
 Package: hypcap 2016/05/16 v1.12 Adjusting the anchors of captions (HO)
 )
@@ -463,12 +469,12 @@ Package: fancybox 2010/05/15 1.4
 
 Style option: `fancybox' v1.4 <2010/05/15> (tvz)
 \@fancybox=\box58
-\shadowsize=\dimen194
+\shadowsize=\dimen195
 \@Sbox=\box59
-\do@VerbBox=\toks27
-\the@fancyput=\toks28
-\this@fancyput=\toks29
-\EndVerbatimTokens=\toks30
+\do@VerbBox=\toks28
+\the@fancyput=\toks29
+\this@fancyput=\toks30
+\EndVerbatimTokens=\toks31
 \Verbatim@Outfile=\write3
 \Verbatim@Infile=\read3
 ) (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
@@ -476,8 +482,8 @@ Package: pdfpages 2022/01/29 v0.5u Insert pages of external PDF documents (AM)
 
 (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
-\ESO@tempdima=\dimen195
-\ESO@tempdimb=\dimen196
+\ESO@tempdima=\dimen196
+\ESO@tempdimb=\dimen197
 
 (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
@@ -496,19 +502,19 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
 ))
-\AM@pagewidth=\dimen197
-\AM@pageheight=\dimen198
-\AM@fboxrule=\dimen199
+\AM@pagewidth=\dimen198
+\AM@pageheight=\dimen199
+\AM@fboxrule=\dimen256
 
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
 File: pppdftex.def 2022/01/29 v0.5u Pdfpages driver for pdfTeX (AM)
 )
-\pdfpages@includegraphics@status=\count306
+\pdfpages@includegraphics@status=\count307
 \AM@pagebox=\box60
-\AM@global@opts=\toks31
-\AM@pagecnt=\count307
-\AM@toc@title=\toks32
-\c@AM@survey=\count308
+\AM@global@opts=\toks32
+\AM@pagecnt=\count308
+\AM@toc@title=\toks33
+\c@AM@survey=\count309
 \AM@templatesizebox=\box61
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tocbibind/tocbibind.sty
@@ -538,41 +544,41 @@ Package cleveref Info: always capitalise cross-reference names on input line 78
 )
 (/usr/share/texlive/texmf-dist/tex/latex/floatrow/floatrow.sty
 Package: floatrow 2008/08/02 v0.3b floatrow: float package extension
-\c@float@type=\count309
-\float@exts=\toks33
+\c@float@type=\count310
+\float@exts=\toks34
 \float@box=\box62
 \@floatcapt=\box63
 Package floatrow Info: Modified float package code loaded on input line 455.
 Package floatrow Info: Modified rotfloat package code loaded on input line 473.
 
-\FR@everyfloat=\toks34
+\FR@everyfloat=\toks35
 \flrow@foot=\insert252
-\FB@wd=\dimen256
-\FBo@wd=\dimen257
-\FBc@wd=\dimen258
+\FB@wd=\dimen257
+\FBo@wd=\dimen258
+\FBc@wd=\dimen259
 \FBo@ht=\skip84
 \FBc@ht=\skip85
 \FBf@ht=\skip86
 \FBo@max=\skip87
 \FBc@max=\skip88
 \FBf@max=\skip89
-\c@FBl@b=\count310
-\floatbox@depth=\count311
-\c@FRobj=\count312
-\c@FRsobj=\count313
+\c@FBl@b=\count311
+\floatbox@depth=\count312
+\c@FRobj=\count313
+\c@FRsobj=\count314
 \Xhsize=\skip90
 \sXhsize=\skip91
 \Zhsize=\skip92
 \sZhsize=\skip93
 \flrow@rowbox=\box64
-\FR@Zunitlength=\dimen259
-\c@FBcnt=\count314
-\FPOScnt=\count315
+\FR@Zunitlength=\dimen260
+\c@FBcnt=\count315
+\FPOScnt=\count316
 \LTleft=\skip94
 \LTright=\skip95
 \LTleft=\skip96
 \LTright=\skip97
-\flrow@types=\toks35
+\flrow@types=\toks36
 ) (./main.aux
 (./Abstract.aux))
 \openout1 = `main.aux'.
@@ -632,17 +638,17 @@ LaTeX Font Info:    ... okay on input line 46.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count316
-\scratchdimen=\dimen260
+\scratchcounter=\count317
+\scratchdimen=\dimen261
 \scratchbox=\box65
-\nofMPsegments=\count317
-\nofMParguments=\count318
-\everyMPshowfont=\toks36
-\MPscratchCnt=\count319
-\MPscratchDim=\dimen261
-\MPnumerator=\count320
-\makeMPintoPDFobject=\count321
-\everyMPtoPDFconversion=\toks37
+\nofMPsegments=\count318
+\nofMParguments=\count319
+\everyMPshowfont=\toks37
+\MPscratchCnt=\count320
+\MPscratchDim=\dimen262
+\MPnumerator=\count321
+\makeMPintoPDFobject=\count322
+\everyMPtoPDFconversion=\toks38
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 
@@ -671,7 +677,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count322
+\c@section@level=\count323
 )
 LaTeX Info: Redefining \ref on input line 46.
 LaTeX Info: Redefining \pageref on input line 46.
@@ -1078,7 +1084,11 @@ Package pdftex.def Info: Figures/twim_mapped_550_no_calib.png  used on input li
 ne 132.
 (pdftex.def)             Requested size: 199.60895pt x 110.6358pt.
  [25 <./Figures/x_proj_beam_mw0_target.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 144--149
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 160--165
 
  []
 
@@ -1087,180 +1097,74 @@ Underfull \hbox (badness 10000) in paragraph at lines 144--149
 File: Figures/charge_cut_with_out_borders.png Graphic file (type png)
 <use Figures/charge_cut_with_out_borders.png>
 Package pdftex.def Info: Figures/charge_cut_with_out_borders.png  used on input
- line 163.
+ line 179.
 (pdftex.def)             Requested size: 404.75096pt x 227.62459pt.
 
-[27] [28 <./Figures/charge_cut_with_out_borders.png>]
-<Figures/cccs_with_out_border_3_5_sigma.png, id=559, 462.528pt x 346.896pt>
+[27]
+Underfull \vbox (badness 3058) has occurred while \output is active []
+
+ [28 <./Figures/charge_cut_with_out_borders.png>]
+<Figures/cccs_with_out_border_3_5_sigma.png, id=557, 462.528pt x 346.896pt>
 File: Figures/cccs_with_out_border_3_5_sigma.png Graphic file (type png)
 <use Figures/cccs_with_out_border_3_5_sigma.png>
 Package pdftex.def Info: Figures/cccs_with_out_border_3_5_sigma.png  used on in
-put line 195.
+put line 211.
 (pdftex.def)             Requested size: 303.49796pt x 227.62346pt.
-<Figures/cccs_vs_sigma_cut.png, id=563, 1084.05pt x 289.08pt>
+<Figures/cccs_vs_sigma_cut.png, id=561, 1084.05pt x 289.08pt>
 File: Figures/cccs_vs_sigma_cut.png Graphic file (type png)
 <use Figures/cccs_vs_sigma_cut.png>
-Package pdftex.def Info: Figures/cccs_vs_sigma_cut.png  used on input line 205.
+Package pdftex.def Info: Figures/cccs_vs_sigma_cut.png  used on input line 221.
 
 (pdftex.def)             Requested size: 443.57016pt x 118.28537pt.
-<Figures/charge_loss_550_thick.png, id=567, 1114.1625pt x 933.4875pt>
+<Figures/charge_loss_550_thick.png, id=565, 1114.1625pt x 933.4875pt>
 File: Figures/charge_loss_550_thick.png Graphic file (type png)
 <use Figures/charge_loss_550_thick.png>
 Package pdftex.def Info: Figures/charge_loss_550_thick.png  used on input line 
-214.
+230.
 (pdftex.def)             Requested size: 271.67165pt x 227.61678pt.
-<Figures/cccs_gauss_diag_comp_3_5_sigma.png, id=569, 462.528pt x 346.896pt>
+<Figures/cccs_gauss_diag_comp_3_5_sigma.png, id=567, 462.528pt x 346.896pt>
 File: Figures/cccs_gauss_diag_comp_3_5_sigma.png Graphic file (type png)
 <use Figures/cccs_gauss_diag_comp_3_5_sigma.png>
 Package pdftex.def Info: Figures/cccs_gauss_diag_comp_3_5_sigma.png  used on in
-put line 223.
+put line 239.
 (pdftex.def)             Requested size: 303.49796pt x 227.62346pt.
- [29 <./Figures/cccs_with_out_border_3_5_sigma.png> <./Figures/cccs_vs_sigma_cu
-t.png>] [30 <./Figures/charge_loss_550_thick.png>]
-<Figures/cccs_various_sections_2dgauss_border.png, id=594, 1242.6425pt x 567.11
+ [29 <./Figures/cccs_with_out_border_3_5_sigma.png>] [30 <./Figures/cccs_vs_sig
+ma_cut.png> <./Figures/charge_loss_550_thick.png>]
+Underfull \vbox (badness 4108) has occurred while \output is active []
+
+ [31 <./Figures/cccs_gauss_diag_comp_3_5_sigma.png>]
+<Figures/cccs_various_sections_2dgauss_border.png, id=601, 1242.6425pt x 567.11
 874pt>
 File: Figures/cccs_various_sections_2dgauss_border.png Graphic file (type png)
 <use Figures/cccs_various_sections_2dgauss_border.png>
 Package pdftex.def Info: Figures/cccs_various_sections_2dgauss_border.png  used
- on input line 260.
+ on input line 276.
 (pdftex.def)             Requested size: 443.5777pt x 202.44054pt.
-<Figures/cccs_time_vs_engergy_sorted.png, id=597, 462.528pt x 346.896pt>
+<Figures/cccs_time_vs_engergy_sorted.png, id=604, 462.528pt x 346.896pt>
 File: Figures/cccs_time_vs_engergy_sorted.png Graphic file (type png)
 <use Figures/cccs_time_vs_engergy_sorted.png>
 Package pdftex.def Info: Figures/cccs_time_vs_engergy_sorted.png  used on input
- line 269.
+ line 285.
 (pdftex.def)             Requested size: 303.49796pt x 227.62346pt.
-<Figures/cccs_with_stat_errors.png, id=599, 433.62pt x 289.08pt>
+<Figures/cccs_with_stat_errors.png, id=606, 433.62pt x 289.08pt>
 File: Figures/cccs_with_stat_errors.png Graphic file (type png)
 <use Figures/cccs_with_stat_errors.png>
 Package pdftex.def Info: Figures/cccs_with_stat_errors.png  used on input line 
-279.
+295.
 (pdftex.def)             Requested size: 341.43124pt x 227.62082pt.
- [31 <./Figures/cccs_gauss_diag_comp_3_5_sigma.png>]
-<Figures/geo_corr_examples.png, id=610, 1768.6075pt x 807.015pt>
+ [32 <./Figures/cccs_various_sections_2dgauss_border.png>]
+<Figures/geo_corr_examples.png, id=617, 1768.6075pt x 807.015pt>
 File: Figures/geo_corr_examples.png Graphic file (type png)
 <use Figures/geo_corr_examples.png>
-Package pdftex.def Info: Figures/geo_corr_examples.png  used on input line 301.
+Package pdftex.def Info: Figures/geo_corr_examples.png  used on input line 317.
 
 (pdftex.def)             Requested size: 443.55411pt x 202.39359pt.
+ [33 <./Figures/cccs_time_vs_engergy_sorted.png>])
+(./../writings/results.tex) (./main.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[32 <./Figures/cccs_various_sections_2dgauss_border.png>] [33 <./Figures/cccs_t
-ime_vs_engergy_sorted.png> <./Figures/cccs_with_stat_errors.png>] [34 <./Figure
-s/geo_corr_examples.png>]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.318 \item (data_
-                  integral_right_x-integral_fit_right_x_bound) -(data_integr...
-
-? 
-! Double subscript.
-l.318 ...ta_integral_right_x-integral_fit_right_x_
-                                                  bound) -(data_integral_lef...
-
-? 
-! Double subscript.
-l.318 ...data_integral_left_x-integral_fit_left_x_
-                                                  bound) explain compensation
-? 
-
-! LaTeX Error: Command \end{enumerate} invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.319 \end{enumerate}
-                     
-? 
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.319 \end{enumerate}
-                     
-? 
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.319 \end{enumerate}
-                     
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.319 \end{enumerate}
-                     
-? 
-
-Overfull \hbox (154.36018pt too wide) in paragraph at lines 318--320
-[]\T1/cmr/m/n/12 (data$[]\OML/cmm/m/it/12 ntegral[]ight[] \OMS/cmsy/m/n/12 ^^@ 
-\OML/cmm/m/it/12 integral[]it[]ight[][]ound\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^
-^@ \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 data[]ntegral[]eft[] \OMS/cmsy/m/n/12 ^^@ 
-\OML/cmm/m/it/12 integral[]it[]eft[][]ound\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 exp
-laincompensation$ 
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.325 \item (data_
-                  integral_left_y -integral_fit_left_y) - (data_integral_rig...
-
-? 
-
-! LaTeX Error: Command \end{enumerate} invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.326 \end{enumerate}
-                     
-? 
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.326 \end{enumerate}
-                     
-? 
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.326 \end{enumerate}
-                     
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.326 \end{enumerate}
-                     
-? 
-
-Overfull \hbox (93.99214pt too wide) in paragraph at lines 325--327
-[]\T1/cmr/m/n/12 (data$[]\OML/cmm/m/it/12 ntegral[]eft[] \OMS/cmsy/m/n/12 ^^@ \
-OML/cmm/m/it/12 integral[]it[]eft[]\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^@ \OT1/
-cmr/m/n/12 (\OML/cmm/m/it/12 data[]ntegral[]ight[] \OMS/cmsy/m/n/12 ^^@ \OML/cm
-m/m/it/12 integral[]it[]ight[]\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 explaincompensa
-tion$ 
- []
-
-) (./../writings/results.tex) (./main.bbl [35]
+ [34 <./Figures/cccs_with_stat_errors.png>] [35 <./Figures/geo_corr_examples.pn
+g>]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
 5.
 
@@ -1337,10 +1241,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: B44E4B1EA3CF1EA96A0A2BB62F787B64;6241.
  ) 
 Here is how much of TeX's memory you used:
- 18942 strings out of 480121
- 325311 string characters out of 5892160
- 656312 words of memory out of 5000000
- 36403 multiletter control sequences out of 15000+600000
+ 19097 strings out of 480121
+ 327308 string characters out of 5892160
+ 659110 words of memory out of 5000000
+ 36564 multiletter control sequences out of 15000+600000
  492210 words of font info for 85 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  61i,20n,75p,1639b,631s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1379,10 +1283,10 @@ fonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/
 msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/m
 sbm10.pfb>
-Output written on main.pdf (46 pages, 17863734 bytes).
+Output written on main.pdf (46 pages, 17863567 bytes).
 PDF statistics:
- 1506 PDF objects out of 1728 (max. 8388607)
- 689 compressed objects within 7 object streams
- 183 named destinations out of 1000 (max. 500000)
+ 1496 PDF objects out of 1728 (max. 8388607)
+ 676 compressed objects within 7 object streams
+ 173 named destinations out of 1000 (max. 500000)
  390 words of extra memory for PDF output out of 10000 (max. 10000000)
 
