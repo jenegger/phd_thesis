@@ -20,7 +20,20 @@ Where $n z$ can be summarized as $N_t$, the total number of scattering centers p
 From the above formula \ref{eq:corr_cross} it is evident that for cross section measurements with the transmission method three types of observables have to be measured:\newline
 \begin{enumerate}
 \item[$\blacksquare$] \textbf{Number of scattering centers $N_t$}\newline
-The number of scattering centers per unit area of the target is a target specific number. It depends from the target thickness and and its density. The values herefore are taken from \cite{ponnath2023precise}\footnote{For the purpose of this work the target thicknesses were remeasured at GSI with a chromatic sensor giving 2D depth profiles of each target.}. 
+The number of scattering centers per unit area of the target is a target specific number. It depends from the target thickness and and its density. The values herefore are taken from \cite{ponnath2023precise}\footnote{For the purpose of this work the target thicknesses were remeasured at GSI with a chromatic sensor giving 2D depth profiles of each target.}:
+\begin{enumerate}
+\item Thin target:\newline 
+target thickness d = 0.5451 cm; $N_t = 5.0588795\cdot 10^{22}$; $\Delta N_t = 0.0648\%$
+\item Medium target:\newline
+target thickness d = 1.0793 cm; $N_t = 1.0016600\cdot 10^{23}$; $\Delta N_t = 0.2620\%$
+\item Thick target:\newline
+target thickness d =2.1928cm; $N_t = 2.0350598\cdot 10^{23}$; $\Delta N_t = 0.0322\%$
+\end{enumerate} 
+where $N_t$ was calculated by:
+\begin{equation}
+N_t = \frac{\rho \cdot d \cdot N_A}{M}
+\end{equation}
+with $\rho$ the target density\footnote{$\rho = 1.851 g/cm^{3}$, from \cite{ponnath2023precise}}, $N_A$ the Avogadro constant ($6.02214076\cdot10^{23}\,mol^{-1}$) and $M$ the molar mass of the target (for carbon $M = 12.011g \cdot mol^{-1}$).
 \item[$\blacksquare$] \textbf{Number of incoming projectiles ($^{12}$C) $N_1$}
 For the measurement only events with well identified incoming $^{12}$C projectiles are chosen. Herefore strict cuts on the detectors upstream the target are set. This strict (upstream) event selection makes sure that we only consider events with single $^{12}$C ...See more in section \ref{subsec:event-sel}.  %TODO finish this sencence 
 \item[$\blacksquare$] \textbf{Number of unreacted projectiles ($^{12}$C) $N_2$ after the target}
@@ -141,6 +154,8 @@ The calibration of the TWIN energy for each anode is done run-wise. The event se
 As previously stated cuts on the downstream detectors are avoided. However, events which have hits in one or several anodes in TWIN MUSIC but no signal in the reference anode are discarted as a whole neither contributing to $N_1$ (incoming selected ions) nor to $N_2$ (unreacted ions). If not reference time from START CFD signal is available it is not possible to measure the drift time in the individual anodes which makes it not possible to distinguish between signal and noise hits for multi-hit anode events in TWIN MUSIC. The number of events affected by this cut is in the region of few tens. This is negligible to the number of incoming ions $N_1$ and should not have any dependence whether the projectile reacted or not.
 \begin{table}[h!]
 \centering
+\begin{subtable}[c]{1.\textwidth}
+\centering
 \begin{tabular}{|c|c|c|c|c|}
 \hline
 \makecell{\# incoming \\ projectiles $N_1$}& 400 & 550 & 650 & 800 \\
@@ -155,6 +170,31 @@ medium & 606578{\footnotesize(431)} & 451137{\footnotesize(27)} & 500688{\footno
 thick & 655762{\footnotesize(497)} & 436457{\footnotesize(30)} & 530869{\footnotesize(29)} & 479679{\footnotesize(61)} \\
 \hline
 \end{tabular}
+\caption{Number of clean selected incoming $^{12}$C ions. In brackets number of rejected events because of missing tref in TWIN MUSIC.}
+\label{tab:incoming_ions}
+\end{subtable}
+\newline
+\begin{subtable}[c]{1.\textwidth}
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\makecell{\# survived carbon \\ isotopes $N_2$}& 400 & 550 & 650 & 800 \\
+      & MeV/nucleon & MeV/nucleon & MeV/nucleon & MeV/nucleon \\
+\hline
+Empty & 563382{\footnotesize(1.898\%)} & 444618{\footnotesize(2.008\%)} & 511923{\footnotesize(2.015\%)} & 387513{\footnotesize(2.007\%)} \\
+\hline
+thin & 538245{\footnotesize(5.489\%)} & 449422{\footnotesize(5.648\%)} & 507557{\footnotesize(5.665\%)} & 454099{\footnotesize(5.683\%)} \\
+\hline
+medium & 552763{\footnotesize(8.872\%)} & 410376{\footnotesize(9.035\%)} & 455159{\footnotesize(9.093\%)} & 314119{\footnotesize(9.123\%)} \\
+\hline
+thick & 553935{\footnotesize(15.528\%)} & 368004{\footnotesize(15.684\%)} & 446115{\footnotesize(15.965\%)} & 402696{\footnotesize(16.049\%)} \\
+\hline
+\end{tabular}
+\caption{Number of survived carbon isotopes after the target identified via 2D gaussian fit with borders within 3.5$\sigma$ cut. In brackets the rate of charge changed incoming projectiles.}
+\label{tab:survived_ions}
+\end{subtable}
+\caption{Overview}
+\label{tab:overview_nr_cccs}
 \end{table}
 \subsubsection{Carbon Identification}\label{subsec:carbon_id}
 The identification of carbon isotopes in TWIN is done by reconstructing fragments with charge Z = 6 from 2D plots where coincident mean energy losses $\Delta E$ for different anode combinations are plotted. Since the TWIN MUSIC is multi-hit capable various strategies were developed to deal with multi-hit events, i.e. when having anodes with multiple hits, decide which hit originates from the final state products from the reaction and which from background and noise.\newline
@@ -323,16 +363,17 @@ For the S444 experiment only section 1 (right down) of the TWIN MUSIC, which was
 
 The efficiency loss depends on the target thickness - for thicker targets the geometric distribution of the fragments is broader and therefore the efficiency loss larger - and the beam energies - for larger beam energies the scattering angles decrease due to the boost effects, the efficiency loss gets smaller. This means, that the efficiency loss needs to be compensated runwise. These efficiency effects can be observed in figure \ref{fig:mw1_xy}.\newline
 To compensate correctly for the geometric efficiency it has to be considered that for the charge changing cross section measurement only the carbon isotopes after the target are counted in the TWIN MUSIC. Therefore the correction should only be applied to the carbon isotopes (Z = 6) on the x-y distribution on the MWPC1, see figure \ref{fig:mw1_xy}. The geometric efficiency correction is done graphically on the on the x-y distribution on the MWPC1 for carbon isotopes by following procedure:
-%\begin{enumerate}
-%\itemsep0em
-%\item Correction for the x-position distribution:
-%\begin{enumerate}
-%\item First fit x-distribution with double-gaussian function (free parameter, mean value of both gaussian functions equal) and get mean from fit
-%\item Fit again within range mean value +- fixed value (21)
-%\item Fit function is integrated in the range -100 up to bound val and compared with the number of data entries in this region
-%\item Fit function is integrated in the range  bound val up to 100 and compared with the number of data entries in this region
-%\item (data_integral_right_x-integral_fit_right_x_bound) -(data_integral_left_x-integral_fit_left_x_bound) explain compensation
-%\end{enumerate}
+\begin{enumerate}
+\itemsep0em
+\item Correction for the x-position distribution:
+\begin{enumerate}
+\item First fit x-distribution with double-gaussian function ($A\,e^{\frac{(x-\mu)^2}{\sigma_A^{2}}} + B\,e^{\frac{(x-\mu)^2}{\sigma_B^{2}}}$) and get mean($\mu$) from fit.
+\item Fit again within range $\mu\,\pm21 [mm]$ with the double gaussian fit function. The obtained parameters are used for the following integration steps.
+\item Fit function is integrated in the range from -100 up to $\mu - 21 mm$ ($I_{fit\textunderscore left}$) and compared with the number of data entries in this region ($I_{data\textunderscore left}$).
+\item Fit function is integrated in the range from $\mu + 21$ up to 100 mm ($I_{fit\textunderscore right}$) and compared with the number of data entries in this region ($I_{data\textunderscore right}$).
+\item To reconstruct the number of carbon isotopes lost due to the reduced geometric efficiency the diffence between the integrated fit function and the data entries are compared. For the right integration region the difference between integrated number of entries and the fit integral ($\Delta_{right}$) should be small since this side should not be affected by the limited geometric efficiency and the data should be well described by the double gaussian fit. For the left integration region this difference ($\Delta_{left}$) is large since this side is prevalently affected by the geometric efficiency decrease, see figure \ref{fig:mw1_xy}. Since the data distribution should be symmetric with respect to the two integration regions the number lost data entries due to geometric efficiency limitations can be reconstructed by:\newline
+$\Delta_x = \Delta_{right} - \Delta_{left}$
+\end{enumerate}
 %\item Correction for the y-position distribution:
 %\begin{enumerate}
 %\item Fit y-distribution with double-gaussian function (free parameter, mean value of both gaussian fucntions equal) and get mean from fit.
@@ -340,7 +381,7 @@ To compensate correctly for the geometric efficiency it has to be considered tha
 %\item Fit function is integrated in the range of mean + fix value up to 100 and compared with the number of data entries in this range
 %\item (data_integral_left_y -integral_fit_left_y) - (data_integral_right_y -integral_fit_right_y) explain compensation
 %\end{enumerate}
-%\end{enumerate}
+\end{enumerate}
 
 
 
