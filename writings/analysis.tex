@@ -311,7 +311,7 @@ TODO: Description of statistical gaussian error propagation (refer to L.Ponnath 
 %	-->show effect when discarting first/last, first two/last, first three/last and only using last 8 or last 6 anodes with fixed sigma cut
 %	
 \subsection{Geometric Corrections}
-For the S444 experiment only section 1 (right down) of the TWIN MUSIC, which was centered on the beam spot, was operated. As consequence full geometric efficiency could not be assumed. To visualize the restricted geometic efficiency of the TWIN MUSIC the position in x and y (perpendicular plane to the beam direction) on the MWPC1 in front of the ionisation chamber was plotted, once without any conditions on the TWIN MUSIC and once with the condition of having identified a carbon isotope (with the 2D gauss-fit method as described in chapter \ref{subsec:carbon_id}), see figure \ref{fig:mw1_xy}. The MWPC1 with an active surface of 200 x 200 mm$^{2}$, covers the full phase space of the outgoing fragments whereas the TWIN MUSIC behind it, with an active survace of 55 x 110 mm$^{2}$ (section 1), is not sensitive to the strongly scattered fragments.\newline
+For the S444 experiment only section 1 (right down) of the TWIN MUSIC, which was centered on the beam spot, was operated. As consequence full geometric efficiency could not be assumed. To visualize the restricted geometic efficiency of the TWIN MUSIC the position in x and y (perpendicular plane to the beam direction) on the MWPC1 in front of the ionisation chamber was plotted, once without any conditions on the TWIN MUSIC and once with the condition of having identified a carbon isotope (with the 2D gauss-fit method as described in chapter \ref{subsec:carbon_id}), see figure \ref{fig:mw1_xy}. The MWPC1 with an active surface of 200 x 200 mm$^{2}$, covers the full phase space of the outgoing fragments whereas the TWIN MUSIC behind it, with an active survace of 55 x 110 mm$^{2}$ (section 1), is not sensitive to the scattered fragments with large deflection angle.\newline
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/geo_corr_examples.png}
@@ -323,24 +323,37 @@ For the S444 experiment only section 1 (right down) of the TWIN MUSIC, which was
 
 The efficiency loss depends on the target thickness - for thicker targets the geometric distribution of the fragments is broader and therefore the efficiency loss larger - and the beam energies - for larger beam energies the scattering angles decrease due to the boost effects, the efficiency loss gets smaller. This means, that the efficiency loss needs to be compensated runwise. These efficiency effects can be observed in figure \ref{fig:mw1_xy}.\newline
 To compensate correctly for the geometric efficiency it has to be considered that for the charge changing cross section measurement only the carbon isotopes after the target are counted in the TWIN MUSIC. Therefore the correction should only be applied to the carbon isotopes (Z = 6) on the x-y distribution on the MWPC1, see figure \ref{fig:mw1_xy}. The geometric efficiency correction is done graphically on the on the x-y distribution on the MWPC1 for carbon isotopes by following procedure:
-%\begin{enumerate}
-%\itemsep0em
-%\item Correction for the x-position distribution:
-%\begin{enumerate}
-%\item First fit x-distribution with double-gaussian function (free parameter, mean value of both gaussian functions equal) and get mean from fit
-%\item Fit again within range mean value +- fixed value (21)
-%\item Fit function is integrated in the range -100 up to bound val and compared with the number of data entries in this region
-%\item Fit function is integrated in the range  bound val up to 100 and compared with the number of data entries in this region
-%\item (data_integral_right_x-integral_fit_right_x_bound) -(data_integral_left_x-integral_fit_left_x_bound) explain compensation
-%\end{enumerate}
-%\item Correction for the y-position distribution:
-%\begin{enumerate}
-%\item Fit y-distribution with double-gaussian function (free parameter, mean value of both gaussian fucntions equal) and get mean from fit.
-%\item Fit function is integrated in the range of -100 up to mean - fix value and compared with the number of data entries in this range
-%\item Fit function is integrated in the range of mean + fix value up to 100 and compared with the number of data entries in this range
-%\item (data_integral_left_y -integral_fit_left_y) - (data_integral_right_y -integral_fit_right_y) explain compensation
-%\end{enumerate}
-%\end{enumerate}
+\begin{enumerate}
+\itemsep0em
+\item Correction for the x-position distribution:
+\begin{enumerate}
+\item First fit x-distribution with double-gaussian function with five free parameters and common mean value $\mu_x$
+\begin{equation}
+f(x) = A \cdot exp\left(-\frac{(x-\mu_x)^2}{a^2} \right) + B \cdot exp\left(-\frac{(x-\mu_x)^2}{b^2} \right)
+\end{equation}
+\item Fit again within range $\mu_x \pm \epsilon_x$.The parameter $\epsilon_x$ is fixed by educated guess, TODO.As $\mu_x$ take the value from the fit in the previous step. A fit for the central region of the x-distribution is obtained,\newline
+$f(x)_{central}(A_{central},a_{central},B_{central},b_{central},\mu_{central})$.
+\item The obtained fit function $f(x)_{central}$ is then used to compare with the data distribution($f(x)_{data}$) in the border regions [-100,$\mu_{central}-\epsilon_x$] and [$\mu_{central} + \epsilon_x$,100]. Since only the left border region (low x-positions) is affected by the limited geometric acceptance, the right border region can be used for correction:
+\begin{equation}
+\Delta_{xcorr} = \int_{\mu_{central} + \epsilon_x}^{100} f(x)_{data} - f(x)_{central}\; - \;\int_{-100}^{\mu_{central} - \epsilon_x} f(x)_{data} - f(x)_{central} 
+\end{equation}
+\end{enumerate}
+\item Correction for the y-position distribution:
+\begin{enumerate}
+\item First fit y-distribution with double-gaussian function with five free parameters and common mean value $\mu_y$
+\begin{equation}
+f(y)_{fit} = C \cdot exp\left(-\frac{(y-\mu_y)^2}{c^2} \right) + D \cdot exp\left(-\frac{(y-\mu_y)^2}{d^2} \right)
+\end{equation}
+\item The obtained fit function $f(y)$ is then used to compare the data distribution($f(y)_{data}$) in the border regions [-100,$\mu_y-\epsilon_y$] and [$\mu_y + \epsilon_y$,100]. The parameter $\epsilon_y$ is fixed by educated guess, TODO. As $\mu_y$ take the value from the fit in the previous step. Same as for the x-correction both border regions are compared. The high border region (high y-positions) affected by the limited geometric acceptance while the low border region (low y-positions) has full geometric acceptance.
+\begin{equation}
+\Delta_{ycorr} = \int_{-100}^{\mu_{central} - \epsilon_y} f(y)_{data} - f(y)_{fit} \; - \; \int_{\mu_x + \epsilon_y}^{100} f(y)_{data} - f(y)_{fit} 
+\end{equation}
+\end{enumerate}
+\item To correct the number of survived carbon isotopes $N_2 = N_{carbon}$ both corrections in x and y are applied:
+\begin{equation}
+N_2^{corr} = N_2 +\frac{\Delta_{xcorr}+\Delta_{ycorr}}{N_2}
+\end{equation}
+\end{enumerate}
 
 
 
