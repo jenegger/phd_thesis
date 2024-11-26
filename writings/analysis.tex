@@ -193,7 +193,7 @@ thick & 553935{\footnotesize(15.528\%)} & 368004{\footnotesize(15.684\%)} & 4461
 \caption{Number of survived carbon isotopes after the target identified via 2D gaussian fit with borders within 3.5$\sigma$ cut. In brackets the rate of charge changed incoming projectiles.}
 \label{tab:survived_ions}
 \end{subtable}
-\caption{Overview}
+\caption{Numbers of incoming projectiles $N_1$ and survived carbon isotopes $N_2$ for all energy and target runs.}
 \label{tab:overview_nr_cccs}
 \end{table}
 \subsubsection{Carbon Identification}\label{subsec:carbon_id}
@@ -366,8 +366,8 @@ To compensate correctly for the geometric efficiency it has to be considered tha
 \begin{enumerate}
 \itemsep0em
 \item Correction for the x-position distribution:
+%TODO: insert x-Distribution in MW1 and the fitted functions
 \begin{enumerate}
-<<<<<<< HEAD
 \item First fit x-distribution with double-gaussian function with five free parameters and common mean value $\mu_x$
 \begin{equation}
 f(x) = A \cdot exp\left(-\frac{(x-\mu_x)^2}{a^2} \right) + B \cdot exp\left(-\frac{(x-\mu_x)^2}{b^2} \right)
@@ -380,6 +380,7 @@ $f(x)_{central}(A_{central},a_{central},B_{central},b_{central},\mu_{central})$.
 \end{equation}
 \end{enumerate}
 \item Correction for the y-position distribution:
+%TODO: insert y-Distribution in MW1 and the fitted functions
 \begin{enumerate}
 \item First fit y-distribution with double-gaussian function with five free parameters and common mean value $\mu_y$
 \begin{equation}
@@ -394,13 +395,12 @@ f(y)_{fit} = C \cdot exp\left(-\frac{(y-\mu_y)^2}{c^2} \right) + D \cdot exp\lef
 \begin{equation}
 N_2^{corr} = N_2 +\frac{\Delta_{xcorr}+\Delta_{ycorr}}{N_2}
 \end{equation}
-=======
-\item First fit x-distribution with double-gaussian function ($A\,e^{\frac{(x-\mu)^2}{\sigma_A^{2}}} + B\,e^{\frac{(x-\mu)^2}{\sigma_B^{2}}}$) and get mean($\mu$) from fit.
-\item Fit again within range $\mu\,\pm21 [mm]$ with the double gaussian fit function. The obtained parameters are used for the following integration steps.
-\item Fit function is integrated in the range from -100 up to $\mu - 21 mm$ ($I_{fit\textunderscore left}$) and compared with the number of data entries in this region ($I_{data\textunderscore left}$).
-\item Fit function is integrated in the range from $\mu + 21$ up to 100 mm ($I_{fit\textunderscore right}$) and compared with the number of data entries in this region ($I_{data\textunderscore right}$).
-\item To reconstruct the number of carbon isotopes lost due to the reduced geometric efficiency the diffence between the integrated fit function and the data entries are compared. For the right integration region the difference between integrated number of entries and the fit integral ($\Delta_{right}$) should be small since this side should not be affected by the limited geometric efficiency and the data should be well described by the double gaussian fit. For the left integration region this difference ($\Delta_{left}$) is large since this side is prevalently affected by the geometric efficiency decrease, see figure \ref{fig:mw1_xy}. Since the data distribution should be symmetric with respect to the two integration regions the number lost data entries due to geometric efficiency limitations can be reconstructed by:\newline
-$\Delta_x = \Delta_{right} - \Delta_{left}$
+%\item First fit x-distribution with double-gaussian function ($A\,e^{\frac{(x-\mu)^2}{\sigma_A^{2}}} + B\,e^{\frac{(x-\mu)^2}{\sigma_B^{2}}}$) and get mean($\mu$) from fit.
+%\item Fit again within range $\mu\,\pm21 [mm]$ with the double gaussian fit function. The obtained parameters are used for the following integration steps.
+%\item Fit function is integrated in the range from -100 up to $\mu - 21 mm$ ($I_{fit\textunderscore left}$) and compared with the number of data entries in this region ($I_{data\textunderscore left}$).
+%\item Fit function is integrated in the range from $\mu + 21$ up to 100 mm ($I_{fit\textunderscore right}$) and compared with the number of data entries in this region ($I_{data\textunderscore right}$).
+%\item To reconstruct the number of carbon isotopes lost due to the reduced geometric efficiency the diffence between the integrated fit function and the data entries are compared. For the right integration region the difference between integrated number of entries and the fit integral ($\Delta_{right}$) should be small since this side should not be affected by the limited geometric efficiency and the data should be well described by the double gaussian fit. For the left integration region this difference ($\Delta_{left}$) is large since this side is prevalently affected by the geometric efficiency decrease, see figure \ref{fig:mw1_xy}. Since the data distribution should be symmetric with respect to the two integration regions the number lost data entries due to geometric efficiency limitations can be reconstructed by:\newline
+%$\Delta_x = \Delta_{right} - \Delta_{left}$
 \end{enumerate}
 %\item Correction for the y-position distribution:
 %\begin{enumerate}
@@ -409,9 +409,29 @@ $\Delta_x = \Delta_{right} - \Delta_{left}$
 %\item Fit function is integrated in the range of mean + fix value up to 100 and compared with the number of data entries in this range
 %\item (data_integral_left_y -integral_fit_left_y) - (data_integral_right_y -integral_fit_right_y) explain compensation
 %\end{enumerate}
->>>>>>> 8c35394d93f0256f993406351e41da3549f0b3ba
-\end{enumerate}
-
+%\end{enumerate}
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/corig_geo_corr_factor.png}
+    \caption{
+    Geometric correction factors from limited geometric efficiency of TWIN Music. 
+     }
+    \label{fig:geo_corr_twim}
+\end{figure}
+Figure \ref{fig:geo_corr_twim} summarizes the geometric correction factors $\epsilon_{geo\textunderscore corr}$ obtained from the graphical reconstruction of missed TWIN Music events as described above. The correction factor is subsequently applied to the charge-changing cross-section, resulting in the final corrected charge-changing cross-section:
+\begin{equation}
+\sigma_{geo\textunderscore corr} = -\frac{1}{N_t} ln(\frac{N_{1}^E}{N_{2}^E}\frac{N_2}{N_1}\cdot \epsilon_{geo\textunderscore corr}) = -\frac{1}{N_t} \left( ln(\frac{N_{1}^E}{N_{2}^E}\frac{N_2}{N_1}) + ln(\epsilon_{geo\textunderscore corr})\right)
+\label{eq:geo_corr_cccs}
+\end{equation}
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/charge_changing_geo_corrected_cross_section.png}
+    \caption{
+    Charge changing cross section with applied geometry corrections. In gray: charge changing cross section measurements without ... 
+     }
+    \label{fig:geo_corr_twim}
+\end{figure}
+Figure blabla shows the measured charge changing cross section once without considering the the limited geometric acceptance of the TWIM Music and once applying the geometric correction factors as presented in equation \ref{eq:geo_corr_cccs}. While the measurements for the
 
 
 \subsection{Isotope Correction - Total Interaction Cross Section}

@@ -25,10 +25,10 @@
 \contentsline {subsubsection}{\numberline {3.3.2}TWIN MUSIC Event Selection}{26}{subsubsection.3.3.2}%
 \contentsline {subsubsection}{\numberline {3.3.3}Carbon Identification}{27}{subsubsection.3.3.3}%
 \contentsline {subsection}{\numberline {3.4}Geometric Corrections}{33}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Isotope Correction - Total Interaction Cross Section}{37}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}Fine Tuned Geometric Correction}{37}{subsection.3.6}%
-\contentsline {subsection}{\numberline {3.7}Results}{37}{subsection.3.7}%
-\contentsline {subsection}{\numberline {3.8}qfs analyis}{37}{subsection.3.8}%
-\contentsline {subsection}{\numberline {3.9}reaction cross section Analysis}{37}{subsection.3.9}%
-\contentsline {section}{\numberline {4}Results and Discussion}{37}{section.4}%
-\contentsline {section}{References}{37}{section.4}%
+\contentsline {subsection}{\numberline {3.5}Isotope Correction - Total Interaction Cross Section}{38}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Fine Tuned Geometric Correction}{38}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}Results}{38}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}qfs analyis}{38}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.9}reaction cross section Analysis}{38}{subsection.3.9}%
+\contentsline {section}{\numberline {4}Results and Discussion}{38}{section.4}%
+\contentsline {section}{References}{38}{section.4}%
