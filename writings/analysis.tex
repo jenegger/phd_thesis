@@ -1,7 +1,7 @@
 \section{Analysis - Total Interaction Cross Section $^{12}$C + $^{12}$C - $^{12}$C + $^{12}$C}
 This chapter will go through the  analysis step by step from the unpacking stage to the final measurement of the total reaction cross section. It will start by a short overview of the transmission method used for the cross section measurements. The next step is  the selection of clean incoming $^{12}$C isotopes. Following the identification of the carbon isotopes after the target - for the measurement of the charge changing cross section - and as final step the reaction cross section measurement. \newline
 All relevant detector related geometrical and efficiency corrections will be adressed and their influence to the final result and its uncertainty will be discussed.
-\subsection{Cross Section Measurement via Transmission Method}
+\subsection{Cross Section Measurement via Transmission Method}\label{section:transmission_method}
 In its most generic form cross sections give a measure of the probability that a specific reaction will take place when two or more particles collide. The cross sections  measured in scattering exepriments, as well as the energy and angular distribution of the reaction products, provide information about the dynamics of the interaction between the projectile and the target particle, i.e., about the shape of the interaction potential and the coupling strength.\newline
 The cross section $\sigma$ can be derived by looking at the relation between the number of incoming particles (N$_{1}$) and unreacted particles after collision ($N_{2}$). For an experiment with fixed target with thickness $z$ and volumetric number density $n$ the number of reacted particles in the infinitesimal thin target layer $dz$ can be expressed as:
 \begin{equation}
@@ -12,14 +12,14 @@ Solving this differential equation for $N_{2}$ (with the condition $N_{2}$ = $N_
 N_{2} = N_{1}e^{-n\sigma z}
 \label{eq:cross_sec}
 \end{equation} 
-Where $n z$ can be summarized as $N_t$, the total number of scattering centers per unit area. The relation $(N_{2}/N_{1})$, number of unreacted particles after collision versus number of incoming particles, is often called survival probability. For an idealistic experimental setup with full detector efficiency and no interactions in the setup material the cross section could simply be deduced from equation \ref{eq:cross_sec}. To account for reactions of the projectile that occur within the setup material and first order detector specific distortions of output signals the survival probabiltiy $(N_{2}/N_{1})$ has to be divided by $(N_{2}^E/N_{1}^E)$, where $N_{1}^E$ is the number of incoming particles and $N_{2}^E$ the number of unreacted particles after collision for an empty run respectively. The factor $(N_{2}^E/N_{1}^E)$ can also be seen as an overall-experiment specific efficiency. The final formula for the cross section for a so called transmission measurement is:
+Where $n\cdot z$ can be summarized as $N_t$, the total number of scattering centers per unit area. The relation $(N_{2}/N_{1})$, number of unreacted particles after collision versus number of incoming particles, is often called survival probability. For an idealistic experimental setup with full detector efficiency and no interactions in the setup material the cross section could simply be deduced from equation \ref{eq:cross_sec}. To account for reactions of the projectile that occur within the setup material and first order detector specific distortions of output signals the survival probabiltiy $(N_{2}/N_{1})$ has to be divided by $(N_{2}^E/N_{1}^E)$, where $N_{1}^E$ is the number of incoming particles and $N_{2}^E$ the number of unreacted particles after collision for an empty run respectively. The factor $(N_{2}^E/N_{1}^E)$ can also be seen as an overall-experiment specific efficiency. The final formula for the cross section for a so called transmission measurement is:
 \begin{equation}
 \sigma = -\frac{1}{N_t} ln(\frac{1}{\epsilon_{setup}} \frac{N_2}{N_1}),\quad with \quad  \epsilon_{setup} = \frac{N_{2}^E}{N_{1}^E}
 \label{eq:corr_cross}
 \end{equation}
 From the above formula \ref{eq:corr_cross} it is evident that for cross section measurements with the transmission method three types of observables have to be measured:\newline
 \begin{enumerate}
-\item[$\blacksquare$] \textbf{Number of scattering centers $N_t$}\newline
+\item[$\blacksquare$] \textbf{Number of scattering centers $\mathbf{N_t}$}\newline
 The number of scattering centers per unit area of the target is a target specific number. It depends from the target thickness and and its density. The values herefore are taken from \cite{ponnath2023precise}\footnote{For the purpose of this work the target thicknesses were remeasured at GSI with a chromatic sensor giving 2D depth profiles of each target.}:
 \begin{enumerate}
 \item Thin target:\newline 
@@ -34,10 +34,10 @@ where $N_t$ was calculated by:
 N_t = \frac{\rho \cdot d \cdot N_A}{M}
 \end{equation}
 with $\rho$ the target density\footnote{$\rho = 1.851 g/cm^{3}$, from \cite{ponnath2023precise}}, $N_A$ the Avogadro constant ($6.02214076\cdot10^{23}\,mol^{-1}$) and $M$ the molar mass of the target (for carbon $M = 12.011g \cdot mol^{-1}$).
-\item[$\blacksquare$] \textbf{Number of incoming projectiles ($^{12}$C) $N_1$}
+\item[$\blacksquare$] \textbf{Number of incoming projectiles ($^{12}$C) $\mathbf{N_1}$}\newline
 For the measurement only events with well identified incoming $^{12}$C projectiles are chosen. Herefore strict cuts on the detectors upstream the target are set. This strict (upstream) event selection makes sure that we only consider events with single $^{12}$C ...See more in section \ref{subsec:event-sel}.  %TODO finish this sencence 
-\item[$\blacksquare$] \textbf{Number of unreacted projectiles ($^{12}$C) $N_2$ after the target}
-Detectors downstream the target are used to count the number of unreacted projectiles $^{12}$C. To reduce detector specific influences which could distort the result it is advisable to use only as few as requirable detectors for the clear identification of unreacted projectiles. Moreover detector specific efficiencies which only depend of the beam energy are cancelled out by including both empty and target runs in the cross section calculation, see equation\ref{eq:corr_cross}. For all downstream detectors used in this analyisis it is critical to limit any selection cuts to what is necessary and if necessary systematically check their effects on the counted number $N_2$.
+\item[$\blacksquare$] \textbf{Number of unreacted projectiles ($^{12}$C) $\mathbf{N_2}$ after the target}\newline
+Detectors downstream the target are used to count the number of unreacted projectiles $^{12}$C. To reduce detector specific influences which could distort the result it is advisable to use only as few as requirable detectors for the clear identification of unreacted projectiles after the target. Moreover detector specific efficiencies which only depend on the beam energy are cancelled out by including both empty and target runs in the cross section calculation, see equation\ref{eq:corr_cross}. For all downstream detectors used in this analysis it is critical to limit any selection cuts to what is necessary and if necessary systematically check their effects on the counted number $N_2$.
 \end{enumerate}
 \subsection{Event Selection}\label{subsec:event-sel}
 \begin{figure}[htpb]
@@ -61,7 +61,7 @@ For event selection, all three upstream detectors are utilized: the MWPC0, the R
     \label{fig:r3bmusic_charge}
 \end{figure}
 In the S444 experiment the incoming beam was directly delivered by the SIS18 ring accelerator, which is operated in ultra-high vacuum the level of pollution is low.(TODO:up to which stage do we have vacuum? Until MW0?)\newline %TODO:up to where is the beam in vacuum?
-For the charge identification of the incoming ion the R3BMusic ionisation chamber is used which is positioned directly after the MWPC0 at the beam entrance in Cave C,see figure \ref{fig:setup_target_region}. The R3BMusic detector measures anode-wise the energy loss of the passing-through ion which in the first order is proportional to the square of its charge ($\Delta E \sim Z^{2}$). Herfore the default predefined calibration parameters are used. Figure \ref{fig:r3bmusic_charge} shows the measured charge distribution in R3BMusic. To select $Z = 6$ incoming ions the distibution is fitted. All ions with charge within the $\pm 1 \sigma$ range are accepted. Figure \ref{fig:r3bmusic_cuts} summarizes the $\pm 1 \sigma$ cuts on the R3BMusic charge for empty/target runs for all beam energies.   
+For the charge identification of the incoming ion the R3BMusic ionisation chamber is used which is positioned directly after the MWPC0 at the beam entrance in Cave C, see figure \ref{fig:setup_target_region}. The R3BMusic detector measures anode-wise the energy loss of the passing-through ion which in the first order is proportional to the square of its charge ($\Delta E \sim Z^{2}$). Herfore the default predefined calibration parameters are used. Figure \ref{fig:r3bmusic_charge} shows the measured charge distribution in R3BMusic. To select $Z = 6$ incoming ions the distibution is fitted with a gaussian fit function. All ions with charge within the $\pm 1 \sigma$ range are accepted. Figure \ref{fig:r3bmusic_cuts} summarizes the $\pm 1 \sigma$ cuts on the R3BMusic charge for empty/target runs for all beam energies.   
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/r3bmusic_charge_cuts.png}
@@ -69,7 +69,7 @@ For the charge identification of the incoming ion the R3BMusic ionisation chambe
 \label{fig:r3bmusic_cuts}
 \end{figure}
 \item \textbf{Pileup rejection and TPat selection:}\newline
-The overall recoding and merging of the data from various subdetectors is one of the tasks of the Data AcQuisition (DAQ) system. Whether an event is recorded or not depends on the pre-established trigger logic. Various detectors can send out triggers to the main DAQ when certain conditions are given (e.g. CALIFA sends aout a trigger when a hit with more than 20 MeV is recorded). The different triggers are processed by the trigger logic and summarized as a defined trigger pattern, so called TPat, which is stored in a 16-bit mask for each event. Table \ref{tab:tpats} gives an overview of the trigger logic and the trigger patterns set in the S444 experiment. For this analysis the \textit{"Min. Bias"} trigger is required\footnote{This includes also \textit{"Reaction"} and \textit{"Neutron"} TPat since these patterns contain also \textit{"Min. Bias"} TPat as necessary condition.}.\newline 
+The overall recoding and merging of the data from various subdetectors is one of the tasks of the Data AcQuisition (DAQ) system. Whether an event is recorded or not depends on the pre-established trigger logic. Various detectors can send out triggers to the main DAQ when certain conditions are given (e.g. CALIFA can be configured to send out a trigger when a hit with more than 20 MeV is recorded in the calorimeter). The different triggers are processed by the trigger logic and summarized as a defined trigger pattern, so called TPat, which is stored in a 16-bit mask for each event. Table \ref{tab:tpats} gives an overview of the trigger logic and the trigger patterns set in the S444 experiment. For this analysis the \textit{"Min. Bias"} trigger is required\footnote{This includes also \textit{"Reaction"} and \textit{"Neutron"} TPat since these patterns contain also \textit{"Min. Bias"} TPat as necessary condition.}.\newline 
 \begin{table}[h!]
 \centering
 \begin{tabular}{||c c c||} 
@@ -108,7 +108,7 @@ To assure that the incoming $^{12}$C ion hits the target it is necessary to sele
 \caption{Overview of $\pm 1\sigma$ cuts in x and y in MWPC0 for empty/target runs.}
 \label{fig:mw0_cuts}
 \end{figure}
-The MWPC0 x-position and the available projectile angle in the x-y plane from the R3BMusic is used to propagate the corresponding x-position on the target location to further check that the selected projectiles hit parallel to the z-position (= beam direction) the target and do only have a minimal incident angle,see figure \ref{fig:x_pos_target}. This can also be seen as a consistency check whether the applied (predefined) calibration parameters are properly set.
+The MWPC0 x-position and the available projectile angle in the x-y plane from the R3BMusic is used to propagate the corresponding x-position on the target location to further check that the selected projectiles hit parallel to the z-position (= beam direction) the target and do only have a minimal incident angle, see figure \ref{fig:x_pos_target}. This can also be seen as a consistency check whether the applied (predefined) calibration parameters are properly set.
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/x_proj_beam_mw0_target.png}
@@ -119,18 +119,18 @@ The MWPC0 x-position and the available projectile angle in the x-y plane from th
 \end{figure}
 \end{enumerate}
 \subsection{Charge Changing Cross Section Measurement}
-The charge changing cross section refers to a measure of the probability that the incoming projectile will undergo a reaction inside the target that changes its charge. To measure the charge changing cross section it can be referred to formula \ref{eq:corr_cross} where in this case $N_2$ is the number of survived carbon isotopes, i.e. projectiles which did not change their charge state. For this measurement only the data from the double ionisation chamber TWIN (see section \ref{sec:ionisation_chambers}) needs to be read out and analyzed.\newline
+The charge changing cross section refers to a measure of the probability that the incoming projectile will undergo a reaction inside the target that changes its charge. To measure the charge changing cross section it can be referred to formula \ref{eq:corr_cross} where in this case $N_2$ is the number of survived carbon isotopes, i.e. projectiles which did not change their charge state. For this measurement only the data from the double ionisation chamber TWIN Music (see section \ref{sec:ionisation_chambers}) needs to be read out and analyzed.\newline
 While for the event seletion before the target the cut conditions can be arbitrarly strict (it will only have an impact to the statistics and the derivated statistical error), cuts on the downstream detectors need to be avoided if at all possible. Too selective cuts on the identification of $N_2$ can distort the measurement.
 \subsubsection{TWIN MUSIC Calibration}
-For the analyis of data in TWIN MUSIC - different to the upstream detectors, where precalibrated data is used - the so called \textit{mapped} raw level data is processed. In the mapped level TWIN MUSIC provides following information:
+For the analyis of data in TWIN MUSIC - different to the upstream detectors, where calibrated data with default calibration parameters is used - the so called \textit{mapped} raw level data is processed. In the mapped level TWIN MUSIC provides following information:
 \begin{itemize}
 \itemsep0em 
-\item \textbf{SectionID:} The detector is a double ionisation chamber and as such split up into four parts (in beam perspective): section 1 - right up; section 2 - right down; section 3 - left down; section 4 - left up. For the S44 experiment only section 1 was operated and accordingly centered on the beam spot.
+\item \textbf{SectionID:} The detector is a double ionisation chamber and as such split up into four parts (in beam perspective): section 1 - right down; section 2 - right up; section 3 - left down; section 4 - left up. For the S44 experiment only section 1 was operated and accordingly centered on the beam spot.
 \item \textbf{AnodeID:} TWIN MUSIC has 16 anodes for energy-loss readout and one refence anode (anodeID = 17).
 \item \textbf{Time:} Each hit in each anode gets assigned to a time. Each time has individually no meaning. The drift time (in ns) of the electrons from the ionisation process of the gas by the inflying projectile (or the fragments of it) to the anode is calculated by substracting the individual anode time by the time of the reference anode. The reference anode gets its clean signal from a constant fraction discriminator of the START detector.
-\item \textbf{Energy:} Each hit in each anode gets assigned to an energy - except the reference signal. To reconstruct the charge of the crossing through charged particle anodewise or detectorwise the parmetrization formula Z = [0] + [1]*$\sqrt(E)$ + [2]*E is used. 
+\item \textbf{Energy:} Each hit in each anode gets assigned to an energy - except the hit in the reference anode. To reconstruct the charge of the crossing through charged particle anodewise or detectorwise the parmetrization formula Z = [0] + [1]*$\sqrt(E)$ + [2]*E is used. 
 \end{itemize}
-The calibration of the TWIN energy for each anode is done run-wise. The event selection on the incoming ion is limited to the  \textit{"Min. Bias"} TPat condition (coincident signal in START detector peampliviers within 1.391 ns, on-spill). For the TWIN MUSIC only events where all anodes having exactly one hit (including the reference anode) are chosen. The most prominent peak (Z = 6) was fitted with gaussian function. The calibration was then done by determining the scaling factor for each anode  that shifts the mean of the gaussian fits to the same position, see figure \ref{fig:calibration}. For this analysis the peaks were shifted to $\Delta E = 6$. Since $\Delta E \propto Z^2$ holds, the scaled $\Delta E$ value, even though peaking at 6, is not equate the charge Z = 6.
+The calibration of the TWIN energy for each anode is done run-wise. The event selection on the incoming ion is limited to the  \textit{"Min. Bias"}-TPat condition (coincident signal in START detector preamplifiers within 1.391 ns, on-spill). For the TWIN MUSIC only events where all anodes having exactly one hit (including the reference anode) are chosen. The most prominent peak (Z = 6) was fitted with gaussian function. The calibration was then done by determining the scaling factor for each anode  that shifts the mean of the gaussian fits to the same position, see figure \ref{fig:calibration}. For this analysis the peaks were shifted to $\Delta E = 6$. Since $\Delta E \propto Z^2$ holds, the scaled $\Delta E$ value, even though peaking at 6, is not equate the charge Z = 6.
 \begin{figure}
      \centering
      \begin{subfigure}[t]{0.45\textwidth}
@@ -151,7 +151,7 @@ The calibration of the TWIN energy for each anode is done run-wise. The event se
         \label{fig:calibration}
 \end{figure}
 \subsubsection{TWIN MUSIC Event Selection}
-As previously stated cuts on the downstream detectors are avoided. However, events which have hits in one or several anodes in TWIN MUSIC but no signal in the reference anode are discarted as a whole neither contributing to $N_1$ (incoming selected ions) nor to $N_2$ (unreacted ions). If not reference time from START CFD signal is available it is not possible to measure the drift time in the individual anodes which makes it not possible to distinguish between signal and noise hits for multi-hit anode events in TWIN MUSIC. The number of events affected by this cut is in the region of few tens. This is negligible to the number of incoming ions $N_1$ and should not have any dependence whether the projectile reacted or not.
+As previously stated cuts on the downstream detectors are avoided. However, events which have hits in one or several anodes in TWIN MUSIC but no signal in the reference anode are discarted as a whole neither contributing to $N_1$ (incoming selected ions) nor to $N_2$ (unreacted ions). If no reference time from START CFD signal is available it is not possible to measure the drift time in the individual anodes which makes it not possible to distinguish between signal and noise hits for multi-hit anode events in TWIN MUSIC. The number of events affected by this cut is in the region of few tens. This is negligible to the number of incoming ions $N_1$ and should not have any dependence whether the projectile reacted or not.
 \begin{table}[h!]
 \centering
 \begin{subtable}[c]{1.\textwidth}
@@ -198,15 +198,14 @@ thick & 553935{\footnotesize(15.528\%)} & 368004{\footnotesize(15.684\%)} & 4461
 \end{table}
 \subsubsection{Carbon Identification}\label{subsec:carbon_id}
 The identification of carbon isotopes in TWIN is done by reconstructing fragments with charge Z = 6 from 2D plots where coincident mean energy losses $\Delta E$ for different anode combinations are plotted. Since the TWIN MUSIC is multi-hit capable various strategies were developed to deal with multi-hit events, i.e. when having anodes with multiple hits, decide which hit originates from the final state products from the reaction and which from background and noise.\newline
-The default strategy is to use the time information of each hit for selection. It has to be remarked that for the S444 experiment the TWIN MUSIC was read out by two independent MDPP modules\cite{MDPP-16}. The signals from the first reference anode and the first eight upstream anodes were forwarded to module 1, the ones from the last eight downstream anodes and the second reference anode were forwarded to module 2. For the first eight upstream anodes the drift time is calculated by substracting the hit time in each anode by the reference time from the first reference anode and for the last eight downstream anodes accordingly the second reference andode was used:\newline
-drift time formula
+The default strategy is to use the time information of each hit for selection. It has to be remarked that for the S444 experiment the TWIN MUSIC was read out by two independent MDPP modules\cite{MDPP-16}. The signals from the first reference anode and the first eight upstream anodes were forwarded to module 1, the ones from the last eight downstream anodes and the second reference anode were forwarded to module 2. For the first eight upstream anodes the drift time is calculated by substracting the hit time in each anode by the reference time from the first reference anode and for the last eight downstream anodes accordingly the second reference andode was used.\newline
 The time based selection algorithm for multi-hit anodes works as follows:\newline
 \begin{enumerate}
 \itemsep0em
 \item Get the mean drift time for the eight upstream anodes($t_{mean\_up}$) and the eight downstream anodes($t_{mean\_down}$)\footnote{For the case all eight downstream anodes have multiple hits, set $t_{mean\_down} = t_{mean\_up}$ and vice versa}. Anodes with multiple hits do not contribute to this calculation.
 \item If there are anodes with muliple hits compare the hit time with the accorging mean drift time ($t_{mean\_up}$ for any of the eight upstream anodes, $t_{mean\_down}$ for any of the eight downstream anodes). Calculate herefore the absolute difference between mean drift time and each hit time:
 \begin{equation}
-\Delta t = | \bar{t} - {t^i}_{drift}|;  \text{i = anodeID (1-16) with} \quad \bar{t} = 
+\Delta t = | \bar{t} - {t^i}_{drift}|; \, \text{i = anodeID (1-16) with} \quad \bar{t} = 
 \begin{cases}
 t_{mean\_up} & \text{for i} \leq 8\\
 t_{mean\_down} & \text{for i} \geq 9 \\
@@ -223,29 +222,29 @@ t_{mean\_down} & \text{for i} \geq 9 \\
     \label{fig:twin_2d_gaus_cut}
 \end{figure}
 
-After having selected the appropriate hit for single and multi-hit anodes the mean value for the pre-calibrated $\Delta E$ loss, see figure \ref{fig:cal_twim_one}, for the eight upstream and accordingly for the eight downstream anodes is determined. Finally, to select the number of survived carbon isotopes the mean $\Delta E$ of the eight upstream anodes versus the mean $\Delta E$ of the eight downstream anodes is plotted. To retrieve the number of survived carbon isotopes following two-dimensional gaussian fit is applied on the 2D plot on the charge Z = 6 blob,see figure \ref{fig:twin_2d_gaus_cut}:
+After having selected the appropriate hit for single and multi-hit anodes the mean value for the pre-calibrated $\Delta E$ loss, see figure \ref{fig:cal_twim_one}, for the eight upstream and accordingly for the eight downstream anodes is determined. Finally, to select the number of survived carbon isotopes the mean $\Delta E$ of the eight upstream anodes versus the mean $\Delta E$ of the eight downstream anodes is plotted. To retrieve the number of survived carbon isotopes following two-dimensional gaussian fit is applied on the 2D plot on the charge Z = 6 blob, see figure \ref{fig:twin_2d_gaus_cut}:
 \begin{equation}
 f(x) = A e^{-\frac{1}{2}((\frac{x - \bar{x}}{\sigma_{x}})^2 +(\frac{y - \bar{y}}{\sigma_{y}})^2)}
 \label{eq:gauss_fit}
-\end{equation},
-where x is the mean rescaled energy loss of the first upstream andodes and y the according eight downstream anodes. The number of survived carbon isotopes is given by the integral of events within the 2D gaussian fit. Since the anodes were read out by two independent MDPP modules with slightly different thresholds also events along the histogram axes with no hit entry in either the upstream anodes or downstream anodes are analyzed. For those events a one dimensional gaussian cut is applied using the parameters from equation \ref{eq:gauss_fit}, see horizontal and vertical bars in figure \ref{fig:twin_2d_gaus_cut}.\newline
-To get the charge changing cross section values equation \ref{eq:corr_cross} has to be applied where both the number of survived  carbon isotopes for target run and empty run are determined via the 2D gaussian fit as in figure \ref{fig:twin_2d_gaus_cut}. The number of target particles, $N_t$ in \ref{eq:corr_cross} is given by:
-\begin{equation}
-\begin{split}
-&N_t = \rho \cdot N_A \cdot n \cdot d\\ 
-&\rho = \text{density [$g/cm^3$]} = 1.851 g/cm^3,\text{taken from \cite{ponnath2023precise}}\\
-&N_A = \text{Avogadro constant} =  6.02214076 \cdot 10^{23} mol^{-1}\\
-&n = \text{amount of substance [mol/g]} = 1./12.011 \; mol/g\\
-&d = \text{target thickness[cm]}
-\end{split}
 \end{equation}
-Three carbon targets with different thicknesses are given:
-\begin{enumerate}
-\itemsep0em
-\item thin target: d = 0.5451 cm
-\item medium target: d = 1.0793 cm
-\item thick target: d = 2.1928 cm 
-\end{enumerate}
+where x is the mean rescaled energy loss of the first upstream andodes and y the according eight downstream anodes. The number of survived carbon isotopes is given by the integral of events within the 2D gaussian fit. Since the anodes were read out by two independent MDPP modules with slightly different thresholds also events along the histogram axes with no hit entry in either the upstream anodes or downstream anodes are analyzed. For those events a one dimensional gaussian cut is applied using the parameters from equation \ref{eq:gauss_fit}, see horizontal and vertical bars in figure \ref{fig:twin_2d_gaus_cut}.\newline
+To get the charge changing cross section values equation \ref{eq:corr_cross} has to be applied where both the number of survived  carbon isotopes for target run and empty run are determined via the 2D gaussian fit as in figure \ref{fig:twin_2d_gaus_cut}. The number of target particles, are defined by the target thickness and its density and are listed in section \ref{section:transmission_method}. 
+%\begin{equation}
+%\begin{split}
+%&N_t = \rho \cdot N_A \cdot n \cdot d\\ 
+%&\rho = \text{density [$g/cm^3$]} = 1.851 g/cm^3,\text{taken from \cite{ponnath2023precise}}\\
+%&N_A = \text{Avogadro constant} =  6.02214076 \cdot 10^{23} mol^{-1}\\
+%&n = \text{amount of substance [mol/g]} = 1./12.011 \; mol/g\\
+%&d = \text{target thickness[cm]}
+%\end{split}
+%\end{equation}
+%Three carbon targets with different thicknesses are given:
+%\begin{enumerate}
+%\itemsep0em
+%\item thin target: d = 0.5451 cm
+%\item medium target: d = 1.0793 cm
+%\item thick target: d = 2.1928 cm 
+%\end{enumerate}
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/cccs_with_out_border_3_5_sigma.png}
@@ -254,7 +253,7 @@ Three carbon targets with different thicknesses are given:
      }
     \label{fig:cccs_with_out_border_3_5}
 \end{figure}
-The resulting charge changing cross sections are summarized in \ref{fig:cccs_with_out_border_3_5} once with consideration of the vertical/horizontal bars in figure \ref{fig:twin_2d_gaus_cut} and once without using a two dimensional gaussian fit with 3.5 $\sigma$ cut  on identified carbon isotopes. 
+The resulting charge changing cross sections are summarized in figure \ref{fig:cccs_with_out_border_3_5} once with consideration of the vertical/horizontal bars in figure \ref{fig:twin_2d_gaus_cut} and once without. Hits within the 3.5 $\sigma$ gaussian fit are identified as carbon isotopes.
 To get the optimal $\sigma$ cut on the two dimensional gaussian fit on the energy losses of the upstream anodes versus downstream anodes the charge changing cross section for all targets and all energies was systematically measured for $\sigma$-cuts in the range of 1 to 5 $\sigma$, see figure \ref{fig:cccs_vs_sigma_cut}. In the region $\thicksim$ 3.5$\sigma$ the variation of the cross section is minimal.
 \begin{figure}[htpb]
     \centering
@@ -273,7 +272,7 @@ Another method to assert the number survived carbon ions is to apply a diagonal 
      }
     \label{fig:diagonal_cut_twim}
 \end{figure}
-The effects of the different methods using to identify the carbon isotopes for the charge changing cross section is summarized in figure \ref{fig:cccs_gaus_vs_diag}. The differences in the measured cross sections are within the margin of error herefore both methods are comparable, as expected.
+The effects of the two different methods used for the identification of the carbon isotopes for the charge changing cross section is summarized in figure \ref{fig:cccs_gaus_vs_diag}. The differences in the measured cross sections are within the margin of error herefore both methods are comparable, as expected.
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/cccs_gauss_diag_comp_3_5_sigma.png}
@@ -310,7 +309,7 @@ T_{\text{max}} &= \text{maximum kinetic energy transferable to an electron in on
 I &= \text{mean excitation potential of the target material}, \\
 \delta(\beta \gamma) &= \text{density effect correction}.
 \end{align*}
-The behaviour of dE/dx for small $\beta$- values are dominated by the 1/$\beta^2$ term. The decrease of deposited energy for larger beam energies has as consequence a lower relative resolution in the two dimensional $\delta E$ loss histogram (see figure \ref{fig:twin_2d_gaus_cut}). In addition reducing the number of readout anodes by a factor two degrades the resolution by a factor $\sqrt{2}$. This has as consequence that the ellipsis with 3.5$\sigma$ cut incorporates a non negligible amount of boron isotopes which are counted as survived carbon isotopes which in turn reduces the measured charge chaning cross section.
+The behaviour of dE/dx for small $\beta$- values are dominated by the 1/$\beta^2$ term. The decrease of deposited energy for larger beam energies has as consequence a lower relative resolution in the two dimensional $\Delta E$ loss histogram (see figure \ref{fig:twin_2d_gaus_cut}) reflecting the poissonian distribution properties. In addition reducing the number of readout anodes by a factor two degrades the resolution by a factor $\sqrt{2}$\footnote{It can be assumed a similar $\Delta$ E distribution for all anodes. Hence the central limit theorem can be applied where $\sigma = \frac{\sigma_{anode}}{\sqrt(n)}$ with $n = number of anodes$.}. This has as consequence that the ellipsis with 3.5$\sigma$ cut incorporates a non negligible amount of boron isotopes which are counted as survived carbon isotopes which in turn reduces the measured charge chaning cross section.\newline
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/cccs_various_sections_2dgauss_border.png}
@@ -329,7 +328,7 @@ While in the above measurements a time based secelction algorithm for multi-hit 
     \label{fig:cccs_gaus_time_vs_energy}
 \end{figure}
 The final charge changing cross section measurements with 2D gaussian fit applying a 3.5 $\sigma$ cut and including the borders of the histogram are summarized in figure \ref{fig:cccs_gaus_with_errors}. At this stage also the statistical errors are incorporated. 
-TODO: Description of statistical gaussian error propagation (refer to L.Ponnath thesis).
+%TODO: Description of statistical gaussian error propagation (refer to L.Ponnath thesis).
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/cccs_with_stat_errors.png}
@@ -339,7 +338,7 @@ TODO: Description of statistical gaussian error propagation (refer to L.Ponnath 
     \label{fig:cccs_gaus_with_errors}
 \end{figure}
 
-
+\newpage
 %note that thickness calc from Lukas --TODO
 %-> deltaE possonian distributed, according to central limit theorem, the sum too DONE
 %-> therefore plot Esum of first 8 anodes vs Esum of last 8 anodes DONE
@@ -362,11 +361,11 @@ For the S444 experiment only section 1 (right down) of the TWIN MUSIC, which was
 \end{figure}
 
 The efficiency loss depends on the target thickness - for thicker targets the geometric distribution of the fragments is broader and therefore the efficiency loss larger - and the beam energies - for larger beam energies the scattering angles decrease due to the boost effects, the efficiency loss gets smaller. This means, that the efficiency loss needs to be compensated runwise. These efficiency effects can be observed in figure \ref{fig:mw1_xy}.\newline
-To compensate correctly for the geometric efficiency it has to be considered that for the charge changing cross section measurement only the carbon isotopes after the target are counted in the TWIN MUSIC. Therefore the correction should only be applied to the carbon isotopes (Z = 6) on the x-y distribution on the MWPC1, see figure \ref{fig:mw1_xy}. The geometric efficiency correction is done graphically on the on the x-y distribution on the MWPC1 for carbon isotopes by following procedure:
+To compensate correctly for the geometric efficiency it has to be considered that for the charge changing cross section measurement only the carbon isotopes after the target are counted in the TWIN MUSIC. Therefore the correction should only be applied to the carbon isotopes (Z = 6) on the x-y distribution on the MWPC1, see figure \ref{fig:mw1_xy}. The geometric efficiency correction is done graphically on the x-y distribution of the MWPC1 for carbon isotopes by following procedure:
 \begin{enumerate}
 \itemsep0em
-\item Correction for the x-position distribution:
-%TODO: insert x-Distribution in MW1 and the fitted functions
+\item \textbf{Correction for the x-position distribution:}
+%\item TODO: insert x-Distribution in MW1 and the fitted functions
 \begin{enumerate}
 \item First fit x-distribution with double-gaussian function with five free parameters and common mean value $\mu_x$
 \begin{equation}
@@ -379,8 +378,8 @@ $f(x)_{central}(A_{central},a_{central},B_{central},b_{central},\mu_{central})$.
 \Delta_{xcorr} = \int_{\mu_{central} + \epsilon_x}^{100} f(x)_{data} - f(x)_{central}\; - \;\int_{-100}^{\mu_{central} - \epsilon_x} f(x)_{data} - f(x)_{central} 
 \end{equation}
 \end{enumerate}
-\item Correction for the y-position distribution:
-%TODO: insert y-Distribution in MW1 and the fitted functions
+\item \textbf{Correction for the y-position distribution:}
+%\item TODO: insert y-Distribution in MW1 and the fitted functions
 \begin{enumerate}
 \item First fit y-distribution with double-gaussian function with five free parameters and common mean value $\mu_y$
 \begin{equation}
@@ -395,21 +394,7 @@ f(y)_{fit} = C \cdot exp\left(-\frac{(y-\mu_y)^2}{c^2} \right) + D \cdot exp\lef
 \begin{equation}
 N_2^{corr} = N_2 +\frac{\Delta_{xcorr}+\Delta_{ycorr}}{N_2}
 \end{equation}
-%\item First fit x-distribution with double-gaussian function ($A\,e^{\frac{(x-\mu)^2}{\sigma_A^{2}}} + B\,e^{\frac{(x-\mu)^2}{\sigma_B^{2}}}$) and get mean($\mu$) from fit.
-%\item Fit again within range $\mu\,\pm21 [mm]$ with the double gaussian fit function. The obtained parameters are used for the following integration steps.
-%\item Fit function is integrated in the range from -100 up to $\mu - 21 mm$ ($I_{fit\textunderscore left}$) and compared with the number of data entries in this region ($I_{data\textunderscore left}$).
-%\item Fit function is integrated in the range from $\mu + 21$ up to 100 mm ($I_{fit\textunderscore right}$) and compared with the number of data entries in this region ($I_{data\textunderscore right}$).
-%\item To reconstruct the number of carbon isotopes lost due to the reduced geometric efficiency the diffence between the integrated fit function and the data entries are compared. For the right integration region the difference between integrated number of entries and the fit integral ($\Delta_{right}$) should be small since this side should not be affected by the limited geometric efficiency and the data should be well described by the double gaussian fit. For the left integration region this difference ($\Delta_{left}$) is large since this side is prevalently affected by the geometric efficiency decrease, see figure \ref{fig:mw1_xy}. Since the data distribution should be symmetric with respect to the two integration regions the number lost data entries due to geometric efficiency limitations can be reconstructed by:\newline
-%$\Delta_x = \Delta_{right} - \Delta_{left}$
 \end{enumerate}
-%\item Correction for the y-position distribution:
-%\begin{enumerate}
-%\item Fit y-distribution with double-gaussian function (free parameter, mean value of both gaussian fucntions equal) and get mean from fit.
-%\item Fit function is integrated in the range of -100 up to mean - fix value and compared with the number of data entries in this range
-%\item Fit function is integrated in the range of mean + fix value up to 100 and compared with the number of data entries in this range
-%\item (data_integral_left_y -integral_fit_left_y) - (data_integral_right_y -integral_fit_right_y) explain compensation
-%\end{enumerate}
-%\end{enumerate}
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/corig_geo_corr_factor.png}
@@ -427,11 +412,11 @@ Figure \ref{fig:geo_corr_twim} summarizes the geometric correction factors $\eps
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/charge_changing_geo_corrected_cross_section.png}
     \caption{
-    Charge changing cross section with applied geometry corrections. In gray: charge changing cross section measurements without ... 
+    Charge changing cross section with applied geometry corrections. In gray: charge changing cross section measurements before applying corrections, as in figure \ref{fig:cccs_gaus_diff_sections}. 
      }
-    \label{fig:geo_corr_twim}
+    \label{fig:geo_corr_cross_sec}
 \end{figure}
-Figure blabla shows the measured charge changing cross section once without considering the the limited geometric acceptance of the TWIM Music and once applying the geometric correction factors as presented in equation \ref{eq:geo_corr_cccs}. While the measurements for the
+Figure \ref{fig:geo_corr_cross_sec} shows the measured charge changing cross section once without considering the the limited geometric acceptance of the TWIM Music and once applying the geometric correction factors as presented in equation \ref{eq:geo_corr_cccs}. As expected significantly affected by the  geometric correction are runs with 400 and 550 AMeV beam energy whereas at beam energies of 650 and 800 AMeV the effect is exceptionally small since at high beam energies  the fragments after the target preceive a strong boost effect in beam direction which constrains the distribution in the x-y-plane.
 
 
 \subsection{Isotope Correction - Total Interaction Cross Section}
