@@ -1,9 +1,9 @@
-\section{Analysis - Total Interaction Cross Section $^{12}$C + $^{12}$C - $^{12}$C + $^{12}$C}
-This chapter will go through the  analysis step by step from the unpacking stage to the final measurement of the total reaction cross section. It will start by a short overview of the transmission method used for the cross section measurements. The next step is  the selection of clean incoming $^{12}$C isotopes. Following the identification of the carbon isotopes after the target - for the measurement of the charge changing cross section - and as final step the reaction cross section measurement. \newline
+\section{Analysis - Total Interaction Cross Section of  $^{12}$C + $^{12}$C}
+This chapter will go through the  analysis step by step from the unpacking stage to the final measurement of the total interaction cross section. It will start by a short overview of the transmission method used for the cross section measurements. The next step is  the selection of clean incoming $^{12}$C isotopes. Following the identification of the carbon isotopes after the target - for the measurement of the charge changing cross section - and as final step the interaction cross section measurement. \newline
 All relevant detector related geometrical and efficiency corrections will be adressed and their influence to the final result and its uncertainty will be discussed.
 \subsection{Cross Section Measurement via Transmission Method}\label{section:transmission_method}
 In its most generic form cross sections give a measure of the probability that a specific reaction will take place when two or more particles collide. The cross sections  measured in scattering exepriments, as well as the energy and angular distribution of the reaction products, provide information about the dynamics of the interaction between the projectile and the target particle, i.e., about the shape of the interaction potential and the coupling strength.\newline
-The cross section $\sigma$ can be derived by looking at the relation between the number of incoming particles (N$_{1}$) and unreacted particles after collision ($N_{2}$). For an experiment with fixed target with thickness $z$ and volumetric number density $n$ the number of reacted particles in the infinitesimal thin target layer $dz$ can be expressed as:
+The cross section $\sigma$ can be derived by looking at the relation between the number of incoming particles (N$_{1}$) and unreacted particles after the target ($N_{2}$). For an experiment with fixed target with thickness $z$ and volumetric number density $n$ the number of reacted particles in the infinitesimal thin target layer $dz$ can be expressed as:
 \begin{equation}
 \frac{dN_{2}}{dz} = -n \sigma N_{2}
 \end{equation}
@@ -12,7 +12,7 @@ Solving this differential equation for $N_{2}$ (with the condition $N_{2}$ = $N_
 N_{2} = N_{1}e^{-n\sigma z}
 \label{eq:cross_sec}
 \end{equation} 
-Where $n\cdot z$ can be summarized as $N_t$, the total number of scattering centers per unit area. The relation $(N_{2}/N_{1})$, number of unreacted particles after collision versus number of incoming particles, is often called survival probability. For an idealistic experimental setup with full detector efficiency and no interactions in the setup material the cross section could simply be deduced from equation \ref{eq:cross_sec}. To account for reactions of the projectile that occur within the setup material and first order detector specific distortions of output signals the survival probabiltiy $(N_{2}/N_{1})$ has to be divided by $(N_{2}^E/N_{1}^E)$, where $N_{1}^E$ is the number of incoming particles and $N_{2}^E$ the number of unreacted particles after collision for an empty run respectively. The factor $(N_{2}^E/N_{1}^E)$ can also be seen as an overall-experiment specific efficiency. The final formula for the cross section for a so called transmission measurement is:
+Where $n\cdot z$ can be summarized as $N_t$, the total number of scattering centers per unit area. The relation $(N_{2}/N_{1})$, number of unreacted particles after the target versus number of incoming particles, is often called survival probability. For an idealistic experimental setup with full detector efficiency and no interactions in the setup material the cross section could simply be deduced from equation \ref{eq:cross_sec}. To account for reactions of the projectile that occur within the setup material and first order detector specific distortions of output signals the survival probabiltiy $(N_{2}/N_{1})$ has to be divided by $(N_{2}^E/N_{1}^E)$, where $N_{1}^E$ is the number of incoming particles and $N_{2}^E$ the number of unreacted particles after the target for an empty run respectively. The factor $(N_{2}^E/N_{1}^E)$ can also be seen as an overall-experiment specific efficiency. The final formula for the cross section for a so called transmission measurement is:
 \begin{equation}
 \sigma = -\frac{1}{N_t} ln(\frac{1}{\epsilon_{setup}} \frac{N_2}{N_1}),\quad with \quad  \epsilon_{setup} = \frac{N_{2}^E}{N_{1}^E}
 \label{eq:corr_cross}
@@ -35,9 +35,9 @@ N_t = \frac{\rho \cdot d \cdot N_A}{M}
 \end{equation}
 with $\rho$ the target density\footnote{$\rho = 1.851 g/cm^{3}$, from \cite{ponnath2023precise}}, $N_A$ the Avogadro constant ($6.02214076\cdot10^{23}\,mol^{-1}$) and $M$ the molar mass of the target (for carbon $M = 12.011g \cdot mol^{-1}$).
 \item[$\blacksquare$] \textbf{Number of incoming projectiles ($^{12}$C) $\mathbf{N_1}$}\newline
-For the measurement only events with well identified incoming $^{12}$C projectiles are chosen. Herefore strict cuts on the detectors upstream the target are set. This strict (upstream) event selection makes sure that we only consider events with single $^{12}$C ...See more in section \ref{subsec:event-sel}.  %TODO finish this sencence 
+For the measurement only events with well identified incoming $^{12}$C projectiles are chosen. Herefore strict cuts on the detectors upstream the target area are set. This strict event selection makes sure that we only consider events with single $^{12}$C. This will be discussed in more detail in section \ref{subsec:event-sel}.  %TODO finish this sencence 
 \item[$\blacksquare$] \textbf{Number of unreacted projectiles ($^{12}$C) $\mathbf{N_2}$ after the target}\newline
-Detectors downstream the target are used to count the number of unreacted projectiles $^{12}$C. To reduce detector specific influences which could distort the result it is advisable to use only as few as requirable detectors for the clear identification of unreacted projectiles after the target. Moreover detector specific efficiencies which only depend on the beam energy are cancelled out by including both empty and target runs in the cross section calculation, see equation\ref{eq:corr_cross}. For all downstream detectors used in this analysis it is critical to limit any selection cuts to what is necessary and if necessary systematically check their effects on the counted number $N_2$.
+Detectors downstream the target area are used to count the number of unreacted projectiles $^{12}$C. To reduce detector specific influences which could distort the result it is advisable to use only as few as requirable detectors for the clear identification of unreacted projectiles. Moreover detector specific efficiencies are cancelled out by including both empty and target runs in the cross section calculation(see equation\ref{eq:corr_cross}). For all downstream detectors used in this analysis it is critical to minimize any selection cuts and systematically check their effects on $N_2$.
 \end{enumerate}
 \subsection{Event Selection}\label{subsec:event-sel}
 \begin{figure}[htpb]
@@ -49,23 +49,23 @@ Detectors downstream the target are used to count the number of unreacted projec
     \label{fig:setup_target_region}
 \end{figure}
 
-For event selection, all three upstream detectors are utilized: the MWPC0, the R3BMusic Ionization Chamber, and the START detector. To ensure a clean incoming event selection, the following prerequisites must be met:
+For event selection, all three upstream detectors are utilized: the MWPC0, the R3BMUSIC Ionization Chamber, and the start detector. To ensure a clean incoming event selection, the following prerequisites must be met:
 \begin{enumerate}
 \item \textbf{$^{12}$C identification of incoming projectile by upstream detectors:}\newline
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/charge_r3bmusic.png}
     \caption{
-    Charge distribution on R3BMusic with predefinded calibration parameters with already applied positional cuts on MWPC0 - positioned upstream to the ionisation chamber. 
+    Charge distribution on R3BMUSIC with predefinded calibration parameters with already applied positional cuts on MWPC0 - positioned upstream to the ionisation chamber. The rise beyond Z $\ge$ 7.2 comes from pile-up events. TODO: more explanation needed? 2D plot needed? 
     }
     \label{fig:r3bmusic_charge}
 \end{figure}
-In the S444 experiment the incoming beam was directly delivered by the SIS18 ring accelerator, which is operated in ultra-high vacuum the level of pollution is low.(TODO:up to which stage do we have vacuum? Until MW0?)\newline %TODO:up to where is the beam in vacuum?
-For the charge identification of the incoming ion the R3BMusic ionisation chamber is used which is positioned directly after the MWPC0 at the beam entrance in Cave C, see figure \ref{fig:setup_target_region}. The R3BMusic detector measures anode-wise the energy loss of the passing-through ion which in the first order is proportional to the square of its charge ($\Delta E \sim Z^{2}$). Herfore the default predefined calibration parameters are used. Figure \ref{fig:r3bmusic_charge} shows the measured charge distribution in R3BMusic. To select $Z = 6$ incoming ions the distibution is fitted with a gaussian fit function. All ions with charge within the $\pm 1 \sigma$ range are accepted. Figure \ref{fig:r3bmusic_cuts} summarizes the $\pm 1 \sigma$ cuts on the R3BMusic charge for empty/target runs for all beam energies.   
+In the S444 experiment the incoming beam was directly delivered by the SIS18 ring accelerator, which is operated in ultra-high vacuum.The level of contamination is low.(TODO:up to which stage do we have vacuum? Until MW0?)\newline %TODO:up to where is the beam in vacuum?
+For the charge identification of the incoming ion the R3BMUSIC ionisation chamber is used which is positioned directly after the MWPC0 at the beam entrance in Cave C, see figure \ref{fig:setup_target_region}. The R3BMUSIC detector measures anode-wise the energy loss of the passing-through ion which in the first order is proportional to the square of its charge ($\Delta E \sim Z^{2}$). Herfore the calibration parameters from the online analysis are used\footnote{These are generic paramteter values used to the detector performance during the experiment phase.}. Figure \ref{fig:r3bmusic_charge} shows the measured charge distribution in R3BMUSIC. To select $Z = 6$ incoming ions the distibution is fitted with a gaussian fit function. All ions with charge within the $\pm 1 \sigma$ range are accepted. Figure \ref{fig:r3bmusic_cuts} summarizes the $\pm 1 \sigma$ cuts on the R3BMUSIC charge for empty/target runs for all beam energies.   
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/r3bmusic_charge_cuts.png}
-\caption{Strict $\pm 1 \sigma$ charge cuts with R3BMusic for incoming particle selection. Fixed predefined calibration parameters were used which do not compensate different gain settings between runs. }
+\caption{Strict $\pm 1 \sigma$ charge cuts with R3BMUSIC for incoming particle selection. Fixed predefined calibration parameters were used which do not compensate different gain settings between runs. This is in particular the case for the 400 AMeV beam energy runs.}
 \label{fig:r3bmusic_cuts}
 \end{figure}
 \item \textbf{Pileup rejection and TPat selection:}\newline
@@ -87,7 +87,7 @@ Bit Position &TPat Name & Description \\
 \caption{List of TPats set for S444 experiment. As for the selected runs low beam rates ($< 10kHz$) were expected no dead time issues should arise for the in-beam detectors, therefore no downscaling of the \textit{Min. Bias} TPat was deployed.}
 \label{tab:tpats}
 \end{table}
-Since the TPat selection itself does not necessary set any pileup constraints it is important to analyse the signals of the detectors upstream carefully to insure yourself that only events with  one incoming $^{12}$C ion at a time get selected. Herefore events with incoming ions with charge $Z = 6 \pm 1\sigma$ are chosen, as discussed in the previous point. Moreover it is required that both left and right preamplifiers of the START detector have seen a coincident signal within a time-window of 1.391 ns. The overall searching window of the START detector was set to 2 $\mu s$. For the MWPC0 which is placed right at the beam entrance of Cave C no hit multiplicity cuts were applied considering its operating mode, which is designed for charge sharing between the readout pads. 
+Since the TPat selection itself does not necessary set any pileup constraints it is important to analyse the signals of the detectors upstream carefully to insure yourself that only events with  one incoming $^{12}$C ion at a time get selected. Herefore events with incoming ions with charge $Z = 6 \pm 1\sigma$ are chosen, as discussed in the previous point. Moreover it is required that both left and right preamplifiers of the start detector have seen a coincident signal within a time-window of 1.391 ns.---TODO: why this time window?-- The overall searching window of the start detector was set to 2 $\mu s$, see figure \ref{fig:start_good_event_sel}. For the MWPC0 which is mounted right at the beam entrance of Cave C no hit multiplicity cuts were applied considering its operating mode, which is designed for charge sharing between the readout pads. 
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/start_tdiff_exactly2good_hits.png}
@@ -95,7 +95,7 @@ Since the TPat selection itself does not necessary set any pileup constraints it
 \label{fig:start_good_event_sel}
 \end{figure}
 \item \textbf{Projectile's focus on the active target region:}\newline
-To assure that the incoming $^{12}$C ion hits the target it is necessary to select only events where the projectile is focussed to the active target region. Therefore strict cuts on the MWPC0 x and y positon are applied. This was achieved by fitting the x and y distribution of the MWPC0 (without any restrictions on it) by a gaussian function. The selection of good incoming events was then restricted to events with hits in MWPC0 within the $\pm 1\sigma$ region in the x and y position, see figure \ref{fig:mw0_xy_overview} and \ref{fig:mw0_cuts}.\newline
+To assure that the incoming $^{12}$C ion hits the target it is necessary to select only events where the projectile is focussed to the active target region. Therefore strict cuts on the MWPC0 x and y positon are applied. This was achieved by fitting the x and y distribution of the MWPC0 (without any restrictions on it) by a gaussian function. The selection of focused incoming projectiles was then restricted to events with hits in MWPC0 within the $\pm 1\sigma$ region in the x and y position, see figure \ref{fig:mw0_xy_overview} and \ref{fig:mw0_cuts}.\newline
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/mw0_xy_summary.png}
@@ -105,38 +105,42 @@ To assure that the incoming $^{12}$C ion hits the target it is necessary to sele
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/mwpc0_cutxy.png}
-\caption{Overview of $\pm 1\sigma$ cuts in x and y in MWPC0 for empty/target runs.}
+\caption{Overview of $\pm 1\sigma$ cuts in x and y in MWPC0 for empty/target runs. TODO: labelling on the right side is wrong! (should be y!)}
 \label{fig:mw0_cuts}
 \end{figure}
-The MWPC0 x-position and the available projectile angle in the x-y plane from the R3BMusic is used to propagate the corresponding x-position on the target location to further check that the selected projectiles hit parallel to the z-position (= beam direction) the target and do only have a minimal incident angle, see figure \ref{fig:x_pos_target}. This can also be seen as a consistency check whether the applied (predefined) calibration parameters are properly set.
+The MWPC0 x-position and the available projectile angle in the x-y plane from the R3BMUSIC is used to propagate the corresponding x-position on the target location to further check that the selected projectiles hit the target parallel to the z-position (= beam direction) and do only have a minimal incident angle, see figure \ref{fig:x_pos_target}. 
+%This can also be seen as a consistency check whether the applied (predefined) calibration parameters are properly set.
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/x_proj_beam_mw0_target.png}
     \caption{
-   	Propagated x-position on target location from measured x-value on MWPC0 and x-y plane angle measurement from R3BMusic. The active target area is 3 x 3 cm. In red the selected events with $\pm 1\sigma$ cut in x and y position in MWPC0, in blue all events.
+   	Propagated x-position on target location from measured x-value on MWPC0 and x-y plane angle measurement from R3BMUSIC. The target area is 3 x 3 cm. In red the selected events with $\pm 1\sigma$ cut in x and y position in MWPC0, in blue all events. TODO: which run is this?
     }
     \label{fig:x_pos_target}
 \end{figure}
 \end{enumerate}
-\subsection{Charge Changing Cross Section Measurement}
+\subsection{Charge-Changing Cross Section Measurement}
 The charge changing cross section refers to a measure of the probability that the incoming projectile will undergo a reaction inside the target that changes its charge. To measure the charge changing cross section it can be referred to formula \ref{eq:corr_cross} where in this case $N_2$ is the number of survived carbon isotopes, i.e. projectiles which did not change their charge state. For this measurement only the data from the double ionisation chamber TWIN Music (see section \ref{sec:ionisation_chambers}) needs to be read out and analyzed.\newline
 While for the event seletion before the target the cut conditions can be arbitrarly strict (it will only have an impact to the statistics and the derivated statistical error), cuts on the downstream detectors need to be avoided if at all possible. Too selective cuts on the identification of $N_2$ can distort the measurement.
 \subsubsection{TWIN MUSIC Calibration}
 For the analyis of data in TWIN MUSIC - different to the upstream detectors, where calibrated data with default calibration parameters is used - the so called \textit{mapped} raw level data is processed. In the mapped level TWIN MUSIC provides following information:
 \begin{itemize}
 \itemsep0em 
-\item \textbf{SectionID:} The detector is a double ionisation chamber and as such split up into four parts (in beam perspective): section 1 - right down; section 2 - right up; section 3 - left down; section 4 - left up. For the S44 experiment only section 1 was operated and accordingly centered on the beam spot.
+\item \textbf{SectionID:} The detector is a double ionisation chamber and as such divided into four parts (in beam perspective): section 1 - right down; section 2 - right up; section 3 - left down; section 4 - left up. For the S444 experiment only section 1 was operated and accordingly centered on the beam spot.
 \item \textbf{AnodeID:} TWIN MUSIC has 16 anodes for energy-loss readout and one refence anode (anodeID = 17).
-\item \textbf{Time:} Each hit in each anode gets assigned to a time. Each time has individually no meaning. The drift time (in ns) of the electrons from the ionisation process of the gas by the inflying projectile (or the fragments of it) to the anode is calculated by substracting the individual anode time by the time of the reference anode. The reference anode gets its clean signal from a constant fraction discriminator of the START detector.
+\item \textbf{Time:} Each hit in each anode gets assigned to a time. Each time has individually no meaning. The drift time (in ns) of the electrons from the ionisation process of the gas by the inflying projectile (or the fragments of it) to the anode is calculated by substracting the individual anode time by the time of the reference anode. The reference anode receives its clean signal from a constant fraction discriminator of the start detector.
 \item \textbf{Energy:} Each hit in each anode gets assigned to an energy - except the hit in the reference anode. To reconstruct the charge of the crossing through charged particle anodewise or detectorwise the parmetrization formula Z = [0] + [1]*$\sqrt(E)$ + [2]*E is used. 
 \end{itemize}
-The calibration of the TWIN energy for each anode is done run-wise. The event selection on the incoming ion is limited to the  \textit{"Min. Bias"}-TPat condition (coincident signal in START detector preamplifiers within 1.391 ns, on-spill). For the TWIN MUSIC only events where all anodes having exactly one hit (including the reference anode) are chosen. The most prominent peak (Z = 6) was fitted with gaussian function. The calibration was then done by determining the scaling factor for each anode  that shifts the mean of the gaussian fits to the same position, see figure \ref{fig:calibration}. For this analysis the peaks were shifted to $\Delta E = 6$. Since $\Delta E \propto Z^2$ holds, the scaled $\Delta E$ value, even though peaking at 6, is not equate the charge Z = 6.
+The calibration of the TWIN energy for each anode is done run-wise. 
+%The event selection on the incoming ion is limited to the  \textit{"Min. Bias"}-TPat condition (coincident signal in start detector preamplifiers within 1.391 ns, on-spill).
+For the TWIN MUSIC only events where all anodes having exactly one hit (including the reference anode) are chosen. The most prominent peak (Z = 6) was fitted with gaussian function. The calibration was then done by determining the scaling factor for each anode  that shifts the mean of the gaussian fits to the same position, see figure \ref{fig:calibration}. For this analysis the peaks were shifted to $\Delta E = 6$. Since $\Delta E \propto Z^2$ holds, the scaled $\Delta E$ value, even though peaking at 6, is not equate the charge Z = 6.
+TODO: describe better the calibration steps!!! this is not good!
 \begin{figure}
      \centering
      \begin{subfigure}[t]{0.45\textwidth}
          \centering
          \includegraphics[width=\textwidth]{Figures/twim_mapped_550.png}
-         \caption{Uncalibrated raw $\Delta E$ distributions for all 16 anodes for the 550 AMeV target run.The last six anodes have a slightly different electronics amplification chain.}
+         \caption{Uncalibrated raw $\Delta E$ distributions for all 16 anodes for the thick target run, 550 AMeV beam energy.The last six anodes have a slightly different electronics amplification chain.}
          \label{fig:raw_twim}
      \end{subfigure}
      \hfill
@@ -151,7 +155,7 @@ The calibration of the TWIN energy for each anode is done run-wise. The event se
         \label{fig:calibration}
 \end{figure}
 \subsubsection{TWIN MUSIC Event Selection}
-As previously stated cuts on the downstream detectors are avoided. However, events which have hits in one or several anodes in TWIN MUSIC but no signal in the reference anode are discarted as a whole neither contributing to $N_1$ (incoming selected ions) nor to $N_2$ (unreacted ions). If no reference time from START CFD signal is available it is not possible to measure the drift time in the individual anodes which makes it not possible to distinguish between signal and noise hits for multi-hit anode events in TWIN MUSIC. The number of events affected by this cut is in the region of few tens. This is negligible to the number of incoming ions $N_1$ and should not have any dependence whether the projectile reacted or not.
+As previously stated cuts on the downstream detectors are avoided. However, events which have hits in one or several anodes in TWIN MUSIC but no signal in the reference anode are discarted as a whole neither contributing to $N_1$ (incoming selected ions) nor to $N_2$ (unreacted ions). If no reference time from start CFD signal is available it is not possible to measure the drift time in the individual anodes which makes it not possible to distinguish between signal and noise hits for multi-hit anode events in TWIN MUSIC. The number of events affected by this cut is in the region of few tens. This is negligible to the number of incoming ions $N_1$ and should not have any dependence whether the projectile reacted or not.
 \begin{table}[h!]
 \centering
 \begin{subtable}[c]{1.\textwidth}
@@ -170,7 +174,7 @@ medium & 606578{\footnotesize(431)} & 451137{\footnotesize(27)} & 500688{\footno
 thick & 655762{\footnotesize(497)} & 436457{\footnotesize(30)} & 530869{\footnotesize(29)} & 479679{\footnotesize(61)} \\
 \hline
 \end{tabular}
-\caption{Number of clean selected incoming $^{12}$C ions. In brackets number of rejected events because of missing tref in TWIN MUSIC.}
+\caption{Number of clean selected incoming $^{12}$C ions. In brackets number of rejected events because of missing tref in TWIN MUSIC. TODO: change the bracket notation, looks like error number!!}
 \label{tab:incoming_ions}
 \end{subtable}
 \newline
@@ -190,7 +194,7 @@ medium & 552763{\footnotesize(8.872\%)} & 410376{\footnotesize(9.035\%)} & 45515
 thick & 553935{\footnotesize(15.528\%)} & 368004{\footnotesize(15.684\%)} & 446115{\footnotesize(15.965\%)} & 402696{\footnotesize(16.049\%)} \\
 \hline
 \end{tabular}
-\caption{Number of survived carbon isotopes after the target identified via 2D gaussian fit with borders within 3.5$\sigma$ cut. In brackets the rate of charge changed incoming projectiles.}
+\caption{Number of survived carbon isotopes after the target identified via 2D gaussian fit with borders within 3.5$\sigma$ cut. In brackets the precentage of projectiles with a charge state of Z < 6 after the target.}
 \label{tab:survived_ions}
 \end{subtable}
 \caption{Numbers of incoming projectiles $N_1$ and survived carbon isotopes $N_2$ for all energy and target runs.}
