@@ -165,13 +165,13 @@ As previously stated cuts on the downstream detectors are avoided. However, even
 \makecell{\# incoming \\ projectiles $N_1$}& 400 & 550 & 650 & 800 \\
       & MeV/nucleon & MeV/nucleon & MeV/nucleon & MeV/nucleon \\
 \hline
-Empty & 574279{\footnotesize(451)} & 453729{\footnotesize(34)} & 522451{\footnotesize(44)} & 395451{\footnotesize(52)} \\
+Empty & 574279{\footnotesize(*451*)} & 453729{\footnotesize(*34*)} & 522451{\footnotesize(*44*)} & 395451{\footnotesize(*52*)} \\
 \hline
-thin & 569503{\footnotesize(422)} & 476323{\footnotesize(33)} & 538037{\footnotesize(43)} & 481459{\footnotesize(36)} \\
+thin & 569503{\footnotesize(*422*)} & 476323{\footnotesize(*33*)} & 538037{\footnotesize(*43*)} & 481459{\footnotesize(*36*)} \\
 \hline
-medium & 606578{\footnotesize(431)} & 451137{\footnotesize(27)} & 500688{\footnotesize(40)} & 345654{\footnotesize(46)} \\
+medium & 606578{\footnotesize(*431*)} & 451137{\footnotesize(*27*)} & 500688{\footnotesize(*40*)} & 345654{\footnotesize(*46*)} \\
 \hline
-thick & 655762{\footnotesize(497)} & 436457{\footnotesize(30)} & 530869{\footnotesize(29)} & 479679{\footnotesize(61)} \\
+thick & 655762{\footnotesize(*497*)} & 436457{\footnotesize(*30*)} & 530869{\footnotesize(*29*)} & 479679{\footnotesize(*61*)} \\
 \hline
 \end{tabular}
 \caption{Number of clean selected incoming $^{12}$C ions. In brackets number of rejected events because of missing tref in TWIN MUSIC. TODO: change the bracket notation, looks like error number!!}
@@ -202,7 +202,7 @@ thick & 553935{\footnotesize(15.528\%)} & 368004{\footnotesize(15.684\%)} & 4461
 \end{table}
 \subsubsection{Carbon Identification}\label{subsec:carbon_id}
 The identification of carbon isotopes in TWIN is done by reconstructing fragments with charge Z = 6 from 2D plots where coincident mean energy losses $\Delta E$ for different anode combinations are plotted. Since the TWIN MUSIC is multi-hit capable various strategies were developed to deal with multi-hit events, i.e. when having anodes with multiple hits, decide which hit originates from the final state products from the reaction and which from background and noise.\newline
-The default strategy is to use the time information of each hit for selection. It has to be remarked that for the S444 experiment the TWIN MUSIC was read out by two independent MDPP modules\cite{MDPP-16}. The signals from the first reference anode and the first eight upstream anodes were forwarded to module 1, the ones from the last eight downstream anodes and the second reference anode were forwarded to module 2. For the first eight upstream anodes the drift time is calculated by substracting the hit time in each anode by the reference time from the first reference anode and for the last eight downstream anodes accordingly the second reference andode was used.\newline
+The default strategy is to use the time information of each hit for selection. It has to be remarked that for the S444 experiment the TWIN MUSIC was read out by two independent MDPP modules\cite{MDPP-16}. The signals from the first reference anode and the first eight upstream anodes were sent to module 1, the ones from the last eight downstream anodes and the second reference anode were forwarded to module 2. For the first eight upstream anodes the drift time is calculated by substracting the hit time in each anode by the reference time from the first reference anode and for the last eight downstream anodes accordingly the second reference andode was used.\newline
 The time based selection algorithm for multi-hit anodes works as follows:\newline
 \begin{enumerate}
 \itemsep0em
@@ -221,7 +221,7 @@ t_{mean\_down} & \text{for i} \geq 9 \\
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/charge_cut_with_out_borders.png}
     \caption{
-    Two dimensional gaussian fit with 3.5 $\sigma$ cut  on identified carbon isotopes in TWIN MUSIC. The horizontal and vertical side bars contain events where either the eight upstream anodes or downstream anodes have no hit entry.
+    Two dimensional gaussian fit with 3.5 $\sigma$ cut  on identified carbon isotopes in TWIN MUSIC. The horizontal and vertical side bars contain events where either the eight upstream anodes or downstream anodes have no hit entry. The cluster at scaled $\Delta E$ loss $\approx$ 4.5 corresponds to boron isotopes (Z=5). The clusters for Z=4 (Be) and Z=3(Li) overlap.
     }
     \label{fig:twin_2d_gaus_cut}
 \end{figure}
@@ -231,7 +231,7 @@ After having selected the appropriate hit for single and multi-hit anodes the me
 f(x) = A e^{-\frac{1}{2}((\frac{x - \bar{x}}{\sigma_{x}})^2 +(\frac{y - \bar{y}}{\sigma_{y}})^2)}
 \label{eq:gauss_fit}
 \end{equation}
-where x is the mean rescaled energy loss of the first upstream andodes and y the according eight downstream anodes. The number of survived carbon isotopes is given by the integral of events within the 2D gaussian fit. Since the anodes were read out by two independent MDPP modules with slightly different thresholds also events along the histogram axes with no hit entry in either the upstream anodes or downstream anodes are analyzed. For those events a one dimensional gaussian cut is applied using the parameters from equation \ref{eq:gauss_fit}, see horizontal and vertical bars in figure \ref{fig:twin_2d_gaus_cut}.\newline
+where x is the mean rescaled energy loss of the first upstream andodes and y the according eight downstream anodes. The number of survived carbon isotopes is given by the integral of events within the 2D gaussian fit. Since the anodes were read out by two independent MDPP modules with slightly different thresholds also events along the histogram axes with no hit entry in either the upstream anodes or downstream anodes are analyzed. For those events a one dimensional gaussian cut is applied using the parameters from equation \ref{eq:gauss_fit} (see horizontal and vertical bars in figure \ref{fig:twin_2d_gaus_cut}).\newline
 To get the charge changing cross section values equation \ref{eq:corr_cross} has to be applied where both the number of survived  carbon isotopes for target run and empty run are determined via the 2D gaussian fit as in figure \ref{fig:twin_2d_gaus_cut}. The number of target particles, are defined by the target thickness and its density and are listed in section \ref{section:transmission_method}. 
 %\begin{equation}
 %\begin{split}
