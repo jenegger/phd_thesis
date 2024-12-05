@@ -17,10 +17,10 @@
 \contentsline {subsubsection}{\numberline {2.3.6}Sofia Time of Flight Wall}{16}{subsubsection.2.3.6}
 \contentsline {subsubsection}{\numberline {2.3.7}NeuLAND Detector}{17}{subsubsection.2.3.7}
 \contentsline {subsubsection}{\numberline {2.3.8}Calibration of the Detector Systems}{17}{subsubsection.2.3.8}
-\contentsline {section}{\numberline {3}Analysis - Total Interaction Cross Section $^{12}$C + $^{12}$C - $^{12}$C + $^{12}$C}{18}{section.3}
+\contentsline {section}{\numberline {3}Analysis - Total Interaction Cross Section of $^{12}$C + $^{12}$C}{18}{section.3}
 \contentsline {subsection}{\numberline {3.1}Cross Section Measurement via Transmission Method}{18}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}Event Selection}{20}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Charge Changing Cross Section Measurement}{23}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.3}Charge-Changing Cross Section Measurement}{25}{subsection.3.3}
 \contentsline {subsubsection}{\numberline {3.3.1}TWIN MUSIC Calibration}{25}{subsubsection.3.3.1}
 \contentsline {subsubsection}{\numberline {3.3.2}TWIN MUSIC Event Selection}{26}{subsubsection.3.3.2}
 \contentsline {subsubsection}{\numberline {3.3.3}Carbon Identification}{27}{subsubsection.3.3.3}

@@ -12,10 +12,18 @@ Solving this differential equation for $N_{2}$ (with the condition $N_{2}$ = $N_
 N_{2} = N_{1}e^{-n\sigma z}
 \label{eq:cross_sec}
 \end{equation} 
-Where $n\cdot z$ can be summarized as $N_t$, the total number of scattering centers per unit area. The relation $(N_{2}/N_{1})$, number of unreacted particles after the target versus number of incoming particles, is often called survival probability. For an idealistic experimental setup with full detector efficiency and no interactions in the setup material the cross section could simply be deduced from equation \ref{eq:cross_sec}. To account for reactions of the projectile that occur within the setup material and first order detector specific distortions of output signals the survival probabiltiy $(N_{2}/N_{1})$ has to be divided by $(N_{2}^E/N_{1}^E)$, where $N_{1}^E$ is the number of incoming particles and $N_{2}^E$ the number of unreacted particles after the target for an empty run respectively. The factor $(N_{2}^E/N_{1}^E)$ can also be seen as an overall-experiment specific efficiency. The final formula for the cross section for a so called transmission measurement is:
+Where $n\cdot z$ can be summarized as $N_t$, the total number of scattering centers per unit area. The relation $(N_{2}/N_{1})$, number of unreacted particles after the target versus number of incoming particles, is often called survival probability. For an idealistic experimental setup with full detector efficiency and no interactions in the setup material the cross section could simply be deduced from equation \ref{eq:cross_sec}. To account for reactions of the projectile that occur within the setup material and first order detector specific distortions of output signals the survival probabiltiy $(N_{2}/N_{1})$ has to be divided by $(N_{2}^E/N_{1}^E)$, where $N_{1}^E$ is the number of incoming particles and $N_{2}^E$ the number of unreacted particles after the target for an empty run respectively. Thereby the setup specific efficiency($\epsilon_{setup}$) and transmission factor($t_{setup}$) are cancelled out to obtain the underlying number of unreacted particles after the target $\tilde{N_{2}}$:\newline
+$N_{2} = \tilde{N_{2}} \cdot t_{setup}\cdot \epsilon_{setup}$, with $\tilde{N_{2}}$\newline
+$N_{2}^E = \tilde{N_{2}^E} \cdot \epsilon_{setup}$ with $\frac{\tilde{N_{2}^E}}{N_{1}^E}$ the setup specific transmission factor $t_{setup}$ \newline
+\newline
+The final formula for the cross section for a so called transmission measurement is:
 \begin{equation}
-\sigma = -\frac{1}{N_t} ln(\frac{1}{\epsilon_{setup}} \frac{N_2}{N_1}),\quad with \quad  \epsilon_{setup} = \frac{N_{2}^E}{N_{1}^E}
+	\begin{split}
+\sigma = -\frac{1}{N_t} ln(\frac{N_{1}^E}{N_{2}^E} \cdot \frac{N_2}{N_1}) = -\frac{1}{N_t} ln(\frac{N_{1}^E}{\tilde{N_{2}^E} \cdot t_{setup}\cdot \epsilon_{setup}} \cdot \frac{\tilde{N_{2}^E} \cdot \epsilon_{setup}}{N_1}) \\
+\text{With $\frac{\tilde{N_{2}^E}}{N_{1}^E} = t_{setup}$} \\
+\sigma = -\frac{1}{N_t} ln(\frac{1}{t_{setup}} \cdot \frac{\tilde{N_{2}} \cdot t_{setup}}{N_1}) = -\frac{1}{N_t} ln(\frac{\tilde{N_{2}}}{N_1})
 \label{eq:corr_cross}
+	\end{split}
 \end{equation}
 From the above formula \ref{eq:corr_cross} it is evident that for cross section measurements with the transmission method three types of observables have to be measured:\newline
 \begin{enumerate}
@@ -354,7 +362,7 @@ The final charge changing cross section measurements with 2D gaussian fit applyi
 %	-->show effect when discarting first/last, first two/last, first three/last and only using last 8 or last 6 anodes with fixed sigma cut
 %	
 \subsection{Geometric Corrections}
-For the S444 experiment only section 1 (right down) of the TWIN MUSIC, which was centered on the beam spot, was operated. As consequence full geometric efficiency could not be assumed. To visualize the restricted geometic efficiency of the TWIN MUSIC the position in x and y (perpendicular plane to the beam direction) on the MWPC1 in front of the ionisation chamber was plotted, once without any conditions on the TWIN MUSIC and once with the condition of having identified a carbon isotope (with the 2D gauss-fit method as described in chapter \ref{subsec:carbon_id}), see figure \ref{fig:mw1_xy}. The MWPC1 with an active surface of 200 x 200 mm$^{2}$, covers the full phase space of the outgoing fragments whereas the TWIN MUSIC behind it, with an active survace of 55 x 110 mm$^{2}$ (section 1), is not sensitive to the scattered fragments with large deflection angle.\newline
+For the S444 experiment only section 1 (right down) of the TWIN MUSIC, which was centered on the beam spot, was operated. As consequence full geometric efficiency could not be assumed. To visualize the restricted geometic efficiency of the TWIN MUSIC the position in x and y (perpendicular plane to the beam direction) on the MWPC1 in front of the ionisation chamber was plotted, once without any conditions on the TWIN MUSIC and once with the condition of having identified a carbon isotope (with the 2D gauss-fit method as described in chapter \ref{subsec:carbon_id}), see figure \ref{fig:mw1_xy}. The large active surface area of 200 x 200 mm$^{2}$ of the MWPC1 affirms that all the carbon fragments are detected\footnote{This statement does not hold for light fragments as protons or deuterons. Their deflection angle exceeds the geometric acceptance of the MWPC1.} whereas the TWIN MUSIC behind it, with an active survace of 55 x 110 mm$^{2}$ (section 1), is not sensitive to the scattered fragments with large deflection angle.\newline
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/geo_corr_examples.png}
@@ -394,7 +402,7 @@ f(y)_{fit} = C \cdot exp\left(-\frac{(y-\mu_y)^2}{c^2} \right) + D \cdot exp\lef
 \Delta_{ycorr} = \int_{-100}^{\mu_{central} - \epsilon_y} f(y)_{data} - f(y)_{fit} \; - \; \int_{\mu_x + \epsilon_y}^{100} f(y)_{data} - f(y)_{fit} 
 \end{equation}
 \end{enumerate}
-\item To correct the number of survived carbon isotopes $N_2 = N_{carbon}$ both corrections in x and y are applied:
+\item To correct the number of survived carbon isotopes $N_2 = N_{carbon}$ both corrections in x and y are applied\footnote{Under the assumption that x and y are uncorrelated where the x-y distribution on the MWPC1 is given by $f(x,y) = f(x)\cdot f(y)$.}
 \begin{equation}
 N_2^{corr} = N_2 +\frac{\Delta_{xcorr}+\Delta_{ycorr}}{N_2}
 \end{equation}
@@ -422,10 +430,13 @@ Figure \ref{fig:geo_corr_twim} summarizes the geometric correction factors $\eps
 \end{figure}
 Figure \ref{fig:geo_corr_cross_sec} shows the measured charge changing cross section once without considering the the limited geometric acceptance of the TWIM Music and once applying the geometric correction factors as presented in equation \ref{eq:geo_corr_cccs}. As expected significantly affected by the  geometric correction are runs with 400 and 550 AMeV beam energy whereas at beam energies of 650 and 800 AMeV the effect is exceptionally small since at high beam energies  the fragments after the target preceive a strong boost effect in beam direction which constrains the distribution in the x-y-plane.
 
-
 \subsection{Isotope Correction - Total Interaction Cross Section}
-\subsection{Fine Tuned Geometric Correction}
-\subsection{Results}
+-> up to now only N2 = number of survived carbon isotopes -> charge changing cross section
+-> to get total interaction cross section, look more closer to the survived carbon isotopes 
+-> for the total interaction cross section N2 = number of survived 12C isotopes, herefore we have to distinguish between 12C and 11C (10C) isotpes.
+-> we use the GLAD as mass spectrometer and the formula for magnetic rigidity bro = ... -> 
+
+\subsection{(Preliminary) Results}
 \subsection{qfs analyis}
 \subsection{reaction cross section Analysis}
 
