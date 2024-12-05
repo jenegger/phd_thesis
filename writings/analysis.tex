@@ -127,7 +127,7 @@ The MWPC0 x-position and the available projectile angle in the x-y plane from th
     \label{fig:x_pos_target}
 \end{figure}
 \end{enumerate}
-\subsection{Charge-Changing Cross Section Measurement}
+\subsection{Charge-Changing Cross Section Measurement}\label{subsec:cc_cs}
 The charge changing cross section refers to a measure of the probability that the incoming projectile will undergo a reaction inside the target that changes its charge. To measure the charge changing cross section it can be referred to formula \ref{eq:corr_cross} where in this case $N_2$ is the number of survived carbon isotopes, i.e. projectiles which did not change their charge state. For this measurement only the data from the double ionisation chamber TWIN Music (see section \ref{sec:ionisation_chambers}) needs to be read out and analyzed.\newline
 While for the event seletion before the target the cut conditions can be arbitrarly strict (it will only have an impact to the statistics and the derivated statistical error), cuts on the downstream detectors need to be avoided if at all possible. Too selective cuts on the identification of $N_2$ can distort the measurement.
 \subsubsection{TWIN MUSIC Calibration}
@@ -431,10 +431,40 @@ Figure \ref{fig:geo_corr_twim} summarizes the geometric correction factors $\eps
 Figure \ref{fig:geo_corr_cross_sec} shows the measured charge changing cross section once without considering the the limited geometric acceptance of the TWIM Music and once applying the geometric correction factors as presented in equation \ref{eq:geo_corr_cccs}. As expected significantly affected by the  geometric correction are runs with 400 and 550 AMeV beam energy whereas at beam energies of 650 and 800 AMeV the effect is exceptionally small since at high beam energies  the fragments after the target preceive a strong boost effect in beam direction which constrains the distribution in the x-y-plane.
 
 \subsection{Isotope Correction - Total Interaction Cross Section}
--> up to now only N2 = number of survived carbon isotopes -> charge changing cross section
--> to get total interaction cross section, look more closer to the survived carbon isotopes 
--> for the total interaction cross section N2 = number of survived 12C isotopes, herefore we have to distinguish between 12C and 11C (10C) isotpes.
--> we use the GLAD as mass spectrometer and the formula for magnetic rigidity bro = ... -> 
+The general formulation for the calculation of cross sections in equation \ref{eq:corr_cross} can be used to determine the cross section for specific channels depending on the definition of $N_2$. In the previous subsection \ref{subsec:cc_cs} where the charge changing cross section was measured, $N_2$ had to be sensitive to the charge of the outgoing fragment. Therefore $N_2$  was  defined as the number of survived carbon isotopes, i.e. $N_2 = N_2^{Z=6}$. For the measurement of the total interaction cross section $N_2$ has to be sensitive to both proton and neutron number of the fragments. $N_2$ is herefore restricted to the number of survived  $^{12}$C isotopes, i.e. $N_2 = N_2^{^{12}C}$. Since $N_2^{^{12}C}$ is a subset of $N_2^{Z=6}$, $N_2^{^{12}C}$ can be determined by identifying and disentangling the number of survived $^{12}$C isotopes from the set of events with carbon isotopes $N_2^{Z=6}$. For that reason the positional correlations on the x-coordinate of MWPC2 (upstream to GLAD) and the MWPC3 (downstream to GLAD) are exploited. The GLAD magnet, which acts as a mass spectrometer, deflects the passing through fragment. Depending on its proton to neutron ratio the fragment is deflected more or less, described by the formula for magnetic rigidity:\newline
+\begin{equation}
+B\cdot \rho = \frac{\gamma \cdot m \cdot v}{q}
+\end{equation}
+\text{where:}
+\begin{align*}
+    B &\quad \text{is the strength of the magnetic field,} \\
+    \rho &\quad \text{is the radius of curvature of the particle's trajectory,} \\
+    \gamma &\quad \text{is the Lorentz factor,} \\
+    v &\quad \text{is the velocity of the particle,} \\
+    m &\quad \text{is its mass,} \\
+    q &\quad \text{is its charge.}
+\end{align*}
+Figure blabla shows the x distribution on MWPC2 versus MWPC3 for the thick target run at a beam energy of 400 AMeV. The main diagonal line corresponds to the $^{12}$C isotopes. From all isotopes they have the largest mass to proton ratio (n+p/p) and are therefore less deflected by the magnetic field of GLAD. The less prominent line below corresponds to $^{11}$C isotopes and on the lower edge few events with $^{10}$C are visible. To identify the number of survived $^{12}$C fragments a graphical selection of the $^{12}$C isotopes - the main diagonal line - is applied. 
+
+-> explain that ratio is done
+-> N2_12C = R12_c/carbon*N_x carbon
+-> no det. efficiencies on MW2 and MW3 have to be applied, since ratio used and det. efficiency of MWPCs should be same for all carbon isotopes as only charge important
+-> however positional efficiency not corrected: TODO-> maybe to be discussed
+-> discuss uncorrelated stuff on y axis
+-> present algorithm for diagonal cut:
+		-> using own clustering algorithm
+		-> no clustering algorithm
+		-> using mw13 with own clustering algorith
+		-> using mw13 with no clustering algorighm
+		-> using mw23 only upper side, own clustering algorithm
+		-> using mw23 onyl upper side, no clustering algorithm
+
+
+ 
+
+
+
+
 
 \subsection{(Preliminary) Results}
 \subsection{qfs analyis}
