@@ -444,20 +444,47 @@ B\cdot \rho = \frac{\gamma \cdot m \cdot v}{q}
     m &\quad \text{is its mass,} \\
     q &\quad \text{is its charge.}
 \end{align*}
-Figure blabla shows the x distribution on MWPC2 versus MWPC3 for the thick target run at a beam energy of 400 AMeV. The main diagonal line corresponds to the $^{12}$C isotopes. From all isotopes they have the largest mass to proton ratio (n+p/p) and are therefore less deflected by the magnetic field of GLAD. The less prominent line below corresponds to $^{11}$C isotopes and on the lower edge few events with $^{10}$C are visible. To identify the number of survived $^{12}$C fragments a graphical selection of the $^{12}$C isotopes - the main diagonal line - is applied. 
+Figure blabla shows the x distribution on MWPC2 versus MWPC3 for the thick target run at a beam energy of 400 AMeV. The main diagonal line corresponds to the $^{12}$C isotopes. From all isotopes they have the largest mass to proton ratio (n+p/p) and are therefore less deflected by the magnetic field of GLAD. The less prominent line below corresponds to $^{11}$C isotopes and on the lower edge few events with $^{10}$C are visible. To identify the number of survived $^{12}$C fragments a graphical selection of the $^{12}$C isotopes - the main diagonal line - is applied.\newline
+\textbf{Graphical Selection Algorithm:}
+\begin{itemize}
+\itemsep0em
+\item Fit the main diagonal line, which corresponds to the $^{12}$C isotopes, with a linear fit function $f(x_{mw2}) = a \cdot x_{mw2} + b$.
+\item To get the most accurate intersection line between $^{12}$C isotopes and all lighter carbon isotopes the linear fit function from the previous step is taken as starting point. Iteratively the offset value $b$ is reduced by $b_i = b_{i-1} -1$. For all iteration steps the ratio $r_{^{12}C(i)}$ of hits below the linear fit function and the total number of hits in the histogram is calculated. 
+\item The derivative $\diff{r_{^{12}C}(i)}{b_i}$ is calculated.  
+\item Finally the offset $b_i$ with the largest value for $\diff{r_{^{12}C}(i)}{b_i}$ is selected as cutting line between $^{12}$C isotopes and $^{11}$C/$^{10}$C isotopes\footnote{For empty target runs the offset $b$ is manually selected}.
+\end{itemize}
+The ratio ${r_{^{12}C}}$ is unaffected by detector efficiencies of MWPC2 and MWPC3\footnote{Under the assumption of constant efficiency over $x_{mw2}$ and $x_{mw3}$} and therefore the ratio ${r_{^{12}C}}$ can be applied directly as  isotope correction to calculate the total interaction cross section:
+\begin{equation}
+\sigma_I = \sigma_{geo\textunderscore corr} + \sigma_{iso} \\
+\text{With the isotope correction cross section $\sigma_{iso}$:}
+\sigma_{iso} = -\frac{1}{N_t} ln(r_{^{12}C})  
+\end{equation}\label{eq:tot_inter_cs}
+To calculate the isotope correction cross section six different methods were employed and compared with each other:
+\begin{itemize}
+\itemsep0em
+\item MWPC2 and MWPC3 hit-level data:
+\item MWPC2 and MWPC3 data with own "hit-clustering" level:
+\item MWPC1 and MWPC3 hit-level data:
+\item MWPC1 and MWPC3 data with own "hit-clustering" level:
+\item MWPC2 and MWPC3 hit-level data, right side:
+\item MWPC2 and MWPC3 data with own "hit-clustering" level, right side:
 
--> explain that ratio is done
--> N2_12C = R12_c/carbon*N_x carbon
--> no det. efficiencies on MW2 and MW3 have to be applied, since ratio used and det. efficiency of MWPCs should be same for all carbon isotopes as only charge important
--> however positional efficiency not corrected: TODO-> maybe to be discussed
--> discuss uncorrelated stuff on y axis
--> present algorithm for diagonal cut:
-		-> using own clustering algorithm
-		-> no clustering algorithm
-		-> using mw13 with own clustering algorith
-		-> using mw13 with no clustering algorighm
-		-> using mw23 only upper side, own clustering algorithm
-		-> using mw23 onyl upper side, no clustering algorithm
+\end{itemize}
+
+
+
+%-> explain that ratio is done
+%-> N2_12C = R12_c/carbon*N_x carbon
+%-> no det. efficiencies on MW2 and MW3 have to be applied, since ratio used and det. efficiency of MWPCs should be same for all carbon isotopes as only charge important
+%-> however positional efficiency not corrected: TODO-> maybe to be discussed
+%-> discuss uncorrelated stuff on y axis
+%-> present algorithm for diagonal cut:
+%		-> using own clustering algorithm
+%		-> no clustering algorithm
+%		-> using mw13 with own clustering algorith
+%		-> using mw13 with no clustering algorighm
+%		-> using mw23 only upper side, own clustering algorithm
+%		-> using mw23 onyl upper side, no clustering algorithm
 
 
  
