@@ -116,4 +116,10 @@ L.~Ponnath, {\em Precise Measurement of Nuclear Interaction Cross Sections with
   \url{https://www.mesytec.com/products/nuclear-physics/MDPP-16.html}.
 \newblock [Online; accessed October 18, 2024].
 
+\bibitem{lau1995optimization}
+K.~Lau and J.~Pyrlik, ``Optimization of centroid-finding algorithms for cathode
+  strip chambers,'' {\em Nuclear Instruments and Methods in Physics Research
+  Section A: Accelerators, Spectrometers, Detectors and Associated Equipment},
+  vol.~366, no.~2-3, pp.~298--309, 1995.
+
 \end{thebibliography}

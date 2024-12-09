@@ -454,15 +454,43 @@ Figure blabla shows the x distribution on MWPC2 versus MWPC3 for the thick targe
 \item Finally the offset $b_i$ with the largest value for $\diff{r_{^{12}C}(i)}{b_i}$ is selected as cutting line between $^{12}$C isotopes and $^{11}$C/$^{10}$C isotopes\footnote{For empty target runs the offset $b$ is manually selected}.
 \end{itemize}
 The ratio ${r_{^{12}C}}$ is unaffected by detector efficiencies of MWPC2 and MWPC3\footnote{Under the assumption of constant efficiency over $x_{mw2}$ and $x_{mw3}$} and therefore the ratio ${r_{^{12}C}}$ can be applied directly as  isotope correction to calculate the total interaction cross section:
-\begin{equation}
-\sigma_I = \sigma_{geo\textunderscore corr} + \sigma_{iso} \\
-\text{With the isotope correction cross section $\sigma_{iso}$:}
-\sigma_{iso} = -\frac{1}{N_t} ln(r_{^{12}C})  
-\end{equation}\label{eq:tot_inter_cs}
+%\begin{equation}
+\begin{flalign*}
+\sigma_I &= \sigma_{geo\textunderscore corr} + \sigma_{iso} &\\
+\text{With the isotope correction cross section $\sigma_{iso}$:} & &\\
+\sigma_{iso} &= -\frac{1}{N_t} ln(r_{^{12}C}) & 
+\end{flalign*}
+%\end{equation}\label{eq:tot_inter_cs}
 To calculate the isotope correction cross section six different methods were employed and compared with each other:
 \begin{itemize}
 \itemsep0em
-\item MWPC2 and MWPC3 hit-level data:
+\item MWPC2 and MWPC3 hit-level data:\newline
+For all MWPCs the standard  \textit{cal-to-hit} step  sorts the calibrated hits in the detector according to the calibrated charge deposited in the pads. The final position (in mm) is determined by selecting the hit with the highest charge deposition $Q_{max}$ and its left ($Q_L$) and right neighbour ($Q_R$) pads\footnote{In case no charge deposition in one or both neighbours the charge value is set to 1 respectively.}. These charge and position values are inserted in the "hyperbolic squared secant" function \cite{lau1995optimization} with the following charge distribution function:
+\[
+Q(x) = \frac{a_1}{\cosh^2\left(\frac{\pi (x - a_2)}{a_3}\right)}
+\]
+\vspace{-0.5em} % Reduces the space between equations
+where \(a_1\) is the amplitude of the distribution $Q_{max}$, \(a_2\) its centroid, and \(a_3\) derives as follows:
+\[
+a_3 = \frac{\pi \omega}{\cosh^{-1}\left(0.5 \times \left(\sqrt{\frac{Q_{\text{max}}}{Q_L}} + \sqrt{\frac{Q_{\text{max}}}{Q_R}}\right)\right)}
+\]
+\vspace{-0.5em} % Reduces the space between equations
+\(\omega\) being the width of the pads. The centroid of the distribution, which is used as final hit position in the \textit{hit-}data level, can be deduced from:
+\vspace{-0.5em} % Reduces the space between equations
+\[
+a_2 = \frac{a_3}{\pi} \times \tanh^{-1}\left(\frac{\sqrt{\frac{Q_{\text{max}}}{Q_L}} - \sqrt{\frac{Q_{\text{max}}}{Q_R}}}{2 \sinh\left(\frac{\pi \omega}{a_3}\right)}\right)
+\]
+Figure \ref{fig:hyp_function} shows the "hyperbolic squared secant" function with the insertef values for $Q_{max}$, $Q_R$ and $Q_L$. 
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/hyperbolic_squared_secant_function.png}
+    \caption{
+   	 Firgure taken from \cite{martin2021fission}, with w being the with of the cathode pads of the MWPC and $a_2$ the final position value of the hit determined by the hyperbolic squared secant function (in red). In black the measured charge deposition distribution in the MWPC. 
+     }
+    \label{fig:hyp_function}
+\end{figure}
+
+
 \item MWPC2 and MWPC3 data with own "hit-clustering" level:
 \item MWPC1 and MWPC3 hit-level data:
 \item MWPC1 and MWPC3 data with own "hit-clustering" level:
