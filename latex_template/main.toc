@@ -26,8 +26,8 @@
 \contentsline {subsubsection}{\numberline {3.3.3}Carbon Identification}{27}{subsubsection.3.3.3}
 \contentsline {subsection}{\numberline {3.4}Geometric Corrections}{35}{subsection.3.4}
 \contentsline {subsection}{\numberline {3.5}Isotope Correction - Total Interaction Cross Section}{38}{subsection.3.5}
-\contentsline {subsection}{\numberline {3.6}(Preliminary) Results}{42}{subsection.3.6}
-\contentsline {subsection}{\numberline {3.7}qfs analyis}{42}{subsection.3.7}
-\contentsline {subsection}{\numberline {3.8}reaction cross section Analysis}{42}{subsection.3.8}
-\contentsline {section}{\numberline {4}Results and Discussion}{42}{section.4}
-\contentsline {section}{References}{42}{section.4}
+\contentsline {subsection}{\numberline {3.6}(Preliminary) Results}{44}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}qfs analyis}{44}{subsection.3.7}
+\contentsline {subsection}{\numberline {3.8}reaction cross section Analysis}{44}{subsection.3.8}
+\contentsline {section}{\numberline {4}Results and Discussion}{44}{section.4}
+\contentsline {section}{References}{44}{section.4}
