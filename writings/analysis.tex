@@ -536,35 +536,75 @@ Again, to overcome the issue with potentially wrong x-position reconstruction in
     \label{fig:mw13_own_cluster}
 \end{figure}
 
-\item \textbf{MWPC2 and MWPC3 hit-level data, right side:}\newline
-As described in section \ref{sec:geo_corr} the geometric efficiency of the TWIN MUSIC is restricted 
-\item \textbf{MWPC2 and MWPC3 data with own "hit-clustering" level, right side:}\newline
+\item \textbf{MWPC2 and MWPC3 with own clustering, quadrant selection in MWPC2:}\footnote{I did the quadrant selection also in MWPC2, outcome really similar, TODO: add to appendix...}\newline
+The limited geometric acceptance of TWIN MUSIC, described in section \ref{sec:geo_corr}, affects the isotope correction too. The x distribution on the MWPC1/2/3 is cut off on the lower end and the y distribution on the higher end, see figure \ref{fig:mw1_xy}. The $^{11}$C/$^{10}$C isotopes are expected to have a broader x and y distribution. Missing the lower and higher edges in the x and y distribution respectively distorts the ${r_{^{12}C}}$ ratio towards higher values. This results in a lower cross section contribution of the isotope correction, especially for the low energy runs. To correct for this the x-y distribution in MWPC1 was split into four quadrants, see figure \ref{fig:mw1_xy_quadrants}. The intersection lines were derived by the mean of the gaussian fit of the x and y distribution. The cross section contribution of the isotope correction was measured for all four quadrants.
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/quadrants_mw1_xy_400_thick.png}
+    \caption{
+   	 Distribution of x and y in MWPC1 split up in four quadrants.Thick target run, beam energy 400 AMeV. 
+     }
+    \label{fig:mw1_xy_quadrants}
+\end{figure}
+\end{itemize}
+\newpage
+
+\subsubsection{Results for Isotope Correction Methods}
+\begin{itemize}
+\item \textbf{MWPC2 and MWPC3 hit-level data:}\newline
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/iso_corr_contr_default_cluster_mw23.png}
+    \caption{
+	Isotope correction contribution to the total interaction cross section using standard hit level data in MWPC2 and MWPC3.
+     }
+    \label{fig:iso_corr_mw23_default}
+\end{figure}
+
+\item \textbf{MWPC2 and MWPC3 data with own "hit-clustering" level:}\newline 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/iso_corr_contr_own_cluster_mw23.png}
+    \caption{
+	Isotope correction contribution to the total interaction cross section using own  hit clustering in MWPC2 and MWPC3.
+     }
+    \label{fig:iso_corr_mw23_own_cluster}
+\end{figure}
+
+\item \textbf{MWPC1 and MWPC3 hit-level data:}\newline
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/iso_corr_contr_default_cluster_mw13.png}
+    \caption{
+	Isotope correction contribution to the total interaction cross section using standard hit leved data  in MWPC1 and MWPC3.
+     }
+    \label{fig:iso_corr_mw13_default}
+\end{figure}
+
+\item \textbf{MWPC1 and MWPC3 data with own "hit-clustering" level:}\newline
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/iso_corr_contr_own_cluster_mw13.png}
+    \caption{
+	Isotope correction contribution to the total interaction cross section using own  hit clustering in MWPC1 and MWPC3.
+     }
+    \label{fig:iso_corr_mw13_own_cluster}
+\end{figure}
+
+\item \textbf{MWPC2 and MWPC3 with own clustering, quadrant selection in MWPC1:}\newline
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/iso_corr_contr_own_cluster_mw23_quadmw1.png}
+    \caption{
+	Isotope correction contribution to the total interaction cross section using own  hit clustering in MWPC2 and MWPC3. Comparison for different quadrant selection in MWPC1. Quadrant four is the preferred one as it is not affected by limited geometric acceptance of TWIN MUSIC.
+     }
+    \label{fig:iso_corr_quadrants_own_cluster}
+\end{figure}
 
 \end{itemize}
 
+\subsection{(Preliminary) Results Total Interaction Cross Section}
 
-
-%-> explain that ratio is done
-%-> N2_12C = R12_c/carbon*N_x carbon
-%-> no det. efficiencies on MW2 and MW3 have to be applied, since ratio used and det. efficiency of MWPCs should be same for all carbon isotopes as only charge important
-%-> however positional efficiency not corrected: TODO-> maybe to be discussed
-%-> discuss uncorrelated stuff on y axis
-%-> present algorithm for diagonal cut:
-%		-> using own clustering algorithm
-%		-> no clustering algorithm
-%		-> using mw13 with own clustering algorith
-%		-> using mw13 with no clustering algorighm
-%		-> using mw23 only upper side, own clustering algorithm
-%		-> using mw23 onyl upper side, no clustering algorithm
-
-
- 
-
-
-
-
-
-\subsection{(Preliminary) Results}
 \subsection{qfs analyis}
 \subsection{reaction cross section Analysis}
 
