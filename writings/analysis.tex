@@ -52,7 +52,7 @@ Detectors downstream the target area are used to count the number of unreacted p
     \centering
     \includegraphics[width=\textwidth,height=6cm,keepaspectratio=true]{Figures/SETUP_around_Target.png}
     \caption{
-    R3B Setup for the S444 experiment in the target region. 
+    R3B Setup for the S444 experiment in the target region. TODO: select overview with less numbers/measures...
     }
     \label{fig:setup_target_region}
 \end{figure}
@@ -127,7 +127,7 @@ The MWPC0 x-position and the available projectile angle in the x-y plane from th
     \label{fig:x_pos_target}
 \end{figure}
 \end{enumerate}
-\subsection{Charge-Changing Cross Section Measurement}\label{subsec:cc_cs}
+\subsection{Charge Changing Cross Section Measurement}\label{subsec:cc_cs}
 The charge changing cross section refers to a measure of the probability that the incoming projectile will undergo a reaction inside the target that changes its charge. To measure the charge changing cross section it can be referred to formula \ref{eq:corr_cross} where in this case $N_2$ is the number of survived carbon isotopes, i.e. projectiles which did not change their charge state. For this measurement only the data from the double ionisation chamber TWIN Music (see section \ref{sec:ionisation_chambers}) needs to be read out and analyzed.\newline
 While for the event seletion before the target the cut conditions can be arbitrarly strict (it will only have an impact to the statistics and the derivated statistical error), cuts on the downstream detectors need to be avoided if at all possible. Too selective cuts on the identification of $N_2$ can distort the measurement.
 \subsubsection{TWIN MUSIC Calibration}
@@ -261,7 +261,7 @@ To get the charge changing cross section values equation \ref{eq:corr_cross} has
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/cccs_with_out_border_3_5_sigma.png}
     \caption{
-    Charge changing cross section without geometry corrections. The red data points result from considering events with only hits in the upstream or downstream anodes, the blue data points don't take these events in consideration. 
+    Charge changing cross section without geometry corrections. The red data points result from considering also events with only hits in the upstream or downstream anodes, the blue data points don't take these events in consideration. 
      }
     \label{fig:cccs_with_out_border_3_5}
 \end{figure}
@@ -367,7 +367,7 @@ For the S444 experiment only section 1 (right down) of the TWIN MUSIC, which was
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/geo_corr_examples.png}
     \caption{
-    Distribution in x and y on MWPC1 for different energies with and without target. 
+    Distribution in x and y on MWPC1 for different energies with and without target. TODO: subplot b) wrong naming,it's the empty run 400 AMeV. 
      }
     \label{fig:mw1_xy}
 \end{figure}
@@ -444,7 +444,7 @@ B\cdot \rho = \frac{\gamma \cdot m \cdot v}{q}
     m &\quad \text{is its mass,} \\
     q &\quad \text{is its charge.}
 \end{align*}
-Figure blabla shows the x distribution on MWPC2 versus MWPC3 for the thick target run at a beam energy of 400 AMeV. The main diagonal line corresponds to the $^{12}$C isotopes. From all isotopes they have the largest mass to proton ratio (n+p/p) and are therefore less deflected by the magnetic field of GLAD. The less prominent line below corresponds to $^{11}$C isotopes and on the lower edge few events with $^{10}$C are visible. To identify the number of survived $^{12}$C fragments a graphical selection of the $^{12}$C isotopes - the main diagonal line - is applied.\newline
+Figure \ref{fig:x_mw23_default} shows the x distribution on MWPC2 versus MWPC3 for the thick target run at a beam energy of 400 AMeV. The main diagonal line corresponds to the $^{12}$C isotopes. From all isotopes they have the largest mass to proton ratio (n+p/p) and are therefore less deflected by the magnetic field of GLAD. The less prominent line below corresponds to $^{11}$C isotopes and on the lower edge few events with $^{10}$C are visible. To identify the number of survived $^{12}$C fragments a graphical selection of the $^{12}$C isotopes - the main diagonal line - is applied.\newline
 \textbf{Graphical Selection Algorithm:}
 \begin{itemize}
 \itemsep0em
