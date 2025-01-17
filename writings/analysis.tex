@@ -9,7 +9,7 @@ The cross section $\sigma$ can be derived by looking at the relation between the
 \end{equation}
 Solving this differential equation for $N_{2}$ (with the condition $N_{2}$ = $N_{1}$ for $z=0$) discloses an exponential relation:
 \begin{equation}
-N_{2} = N_{1}e^{-n\sigma z}
+N_{2} = N_{1}e^{-n\sigma z}  = N_{1}e^{-N_t\sigma}
 \label{eq:cross_sec}
 \end{equation} 
 Where $n\cdot z$ can be summarized as $N_t$, the total number of scattering centers per unit area. The relation $(N_{2}/N_{1})$, number of unreacted particles after the target versus number of incoming particles, is often called survival probability. For an idealistic experimental setup with full detector efficiency and no interactions in the setup material the cross section could simply be deduced from equation \ref{eq:cross_sec}. To account for reactions of the projectile that occur within the setup material and first order detector specific distortions of output signals the survival probabiltiy $(N_{2}/N_{1})$ has to be divided by $(N_{2}^E/N_{1}^E)$, where $N_{1}^E$ is the number of incoming particles and $N_{2}^E$ the number of unreacted particles after the target for an empty run respectively. Thereby the setup specific efficiency($\epsilon_{setup}$) and transmission factor($t_{setup}$) are cancelled out to obtain the underlying number of unreacted particles after the target $\tilde{N_{2}}$:\newline
@@ -604,6 +604,29 @@ The limited geometric acceptance of TWIN MUSIC, described in section \ref{sec:ge
 \end{itemize}
 
 \newpage
+\subsection{Statistical and Systematic Error Analysis}
+All three measurements presented in this section, the charge changing cross section, the isotopic cross section correction cross section and the total interaction cross section, rely on the transmission method and the error analysis of those measurements are treated the same accordingly. The generic formula for all three measurements was presented in section \ref{section:transmission_method}, equation \ref{eq:cross_sec}.\newline
+Since all quantities in equation \ref{eq:cross_sec} are mutually independent, the gaussian error propagation for statistical and systematical uncetainties is given by:
+\begin{equation}
+\Delta_{stat./syst.}  = \sqrt{\sum_{i=1}^n \left( \frac{\partial f}{\partial x_i} \cdot \Delta_{x_i} \right)^2 }\
+%fi(x_1,x_2,..,x_n): \textrm{the error prone cross section function}\ 
+%x_i: \textrm{the independent variables (N_1,N_2,N_t; see equation \ref{eq:cross_sec})}\
+%\Delta_{x_i}: \textrm{uncertainties associated to indepenent variable x_i}
+\end{equation}
+\text{with:}
+\begin{align*}
+	f(x_1,x_2,..,x_n) &\quad \text{the error prone cross section function,} \\
+	x_i  &\quad \text{the independent variables ($N_1$,$N_2$,$N_t$; see equation \ref{eq:cross_sec}),} \\
+	\Delta_{x_i} &\quad \text{stat./syst. uncertainties associated to indepenent variable $x_i$}
+\end{align*}
+
+
+\subsubsection{Statistical Uncertainties}
+
+
+\subsubsection{Statistical Uncertainties}
+
+
 \subsection{(Preliminary) Results Total Interaction Cross Section}
 \begin{figure}[h!]
     \centering

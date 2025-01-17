@@ -1,5 +1,5 @@
-This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
-Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: Abstract.aux
 The style file: ieeetr.bst
@@ -14,45 +14,45 @@ Repeated entry---line 184 of file main.bib
 I'm skipping whatever remains of this entry
 Warning--empty journal in hartigevolution
 Warning--empty year in hartigevolution
-You've used 22 entries,
+You've used 25 entries,
             1876 wiz_defined-function locations,
-            600 strings with 7803 characters,
-and the built_in function-call counts, 4939 in all, are:
-= -- 480
-> -- 238
+            619 strings with 8209 characters,
+and the built_in function-call counts, 5652 in all, are:
+= -- 549
+> -- 268
 < -- 0
-+ -- 91
-- -- 69
-* -- 319
-:= -- 723
-add.period$ -- 34
-call.type$ -- 22
-change.case$ -- 18
++ -- 102
+- -- 77
+* -- 371
+:= -- 829
+add.period$ -- 37
+call.type$ -- 25
+change.case$ -- 21
 chr.to.int$ -- 0
-cite$ -- 24
-duplicate$ -- 240
-empty$ -- 453
-format.name$ -- 69
-if$ -- 1199
+cite$ -- 27
+duplicate$ -- 281
+empty$ -- 518
+format.name$ -- 77
+if$ -- 1379
 int.to.chr$ -- 0
-int.to.str$ -- 22
-missing$ -- 10
-newline$ -- 82
-num.names$ -- 17
-pop$ -- 93
+int.to.str$ -- 25
+missing$ -- 13
+newline$ -- 91
+num.names$ -- 20
+pop$ -- 99
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 169
+skip$ -- 195
 stack$ -- 0
-substring$ -- 194
-swap$ -- 94
+substring$ -- 216
+swap$ -- 111
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
-while$ -- 36
-width$ -- 24
-write$ -- 216
+while$ -- 43
+width$ -- 27
+write$ -- 248
 (There was 1 error message)
