@@ -621,21 +621,26 @@ Since all quantities in equation \ref{eq:cross_sec} are mutually independent, th
 \subsubsection{Statistical Uncertainties}
 For the charge changing cross section the combined  statistical error is:\newline
 \begin{equation}\label{eq:stat_cc}
-\Delta\sigma_\text{stat.} = \sqrt{\left(\frac{\partial \sigma_{cc}}{\partial N_t} \Delta N_t\right)^2 + \left(\frac{\partial \sigma_{cc}}{\partial P_{surv}(Z=6)} \Delta P_{surv}(Z=6)\right)^2 + \left(\frac{\partial \sigma_{cc}}{\partial P^{E}_{surv}(Z=6)} \Delta P^{E}_{surv}(Z=6)\right)^2}
+\Delta\sigma_\text{stat.|cc} = \sqrt{\left(\frac{\partial \sigma_{cc}}{\partial N_t} \Delta N_t\right)^2 + \left(\frac{\partial \sigma_{cc}}{\partial P_{surv|cc}} \Delta P_{surv|cc}\right)^2 + \left(\frac{\partial \sigma_{cc}}{\partial P^{E}_{surv|cc}} \Delta P^{E}_{surv|cc})\right)^2}
 \end {equation}
-where $\Delta N_t$ accounts for the uncertainty in the measurement of the target thickness. $P_{surv}$ follows a binomial distribution with $N_1$ independent experiments and a boolean valued reaction output (suvived vs. non-survived). Therefore $P_{surv}$ follows the standard error of binomial distributed variable:
+where $\Delta N_t$ accounts for the uncertainty in the measurement of the target thickness. $P_{surv|cc}$, the surviving probability of having a carbon isotpe in the final state, follows a binomial distribution with $N_1$ independent experiments and a boolean valued reaction output (suvived vs. non-survived). Therefore $P_{surv|cc}$ follows the standard error of binomial distributed variable:
 \begin{equation}
-\Delta P^{(E)}_{surv}(Z=6) = \sqrt{\frac{P^{(E)}_{surv}(Z=6)\cdot (1-P^{(E)}_{surv}(Z=6))}{N^{(E)}_{1}}}
+\Delta P^{(E)}_{surv|cc} = \sqrt{\frac{P^{(E)}_{surv|cc}\cdot (1-P^{(E)}_{surv|cc})}{N^{(E)}_{1}}}
 \end{equation}
 Inserting in equation \ref{eq:stat_cc} gives:
 \begin{equation}
-\Delta\sigma_\text{stat.} = \sqrt{\left(\frac{\sigma_I \Delta N_t}{N_t}\right)^2 + \frac{1}{N_t^2} \left(\frac{1 - P_{surv}(Z=6)}{P_{surv}(Z=6) N_1} + \frac{1 - P^{(E)}_{surv}(Z=6)}{P^{(E)}_{surv}(Z=6) N_1^E}\right)}
+\Delta\sigma_\text{stat.|cc} = \sqrt{\left(\frac{\sigma_{cc} \Delta N_t}{N_t}\right)^2 + \frac{1}{N_t^2} \left(\frac{1 - P_{surv|cc}}{P_{surv|cc} N_1} + \frac{1 - P^{(E)}_{surv|cc}}{P^{(E)}_{surv|cc} N_1^E}\right)}
 \end{equation}
 Similar for the isotopic correction cross section with $P_{surv|iso}$ the ratio of reconstructed $^{12}C$ isotopes to all identified carbon isotopes  in the x-position  correlation plots for MWPC2 and MWPC3: 
 \begin{equation}
-\Delta\sigma_\text{stat.|iso} = \sqrt{\left(\frac{\sigma_I \Delta N_t}{N_t}\right)^2 + \frac{1}{N_t^2} \left(\frac{1 - P_{surv|iso}}{P_{surv|iso} N_1} + \frac{1 - P^{(E)}_{surv|iso}}{P^{(E)}_{surv|iso} N_1^E}\right)}
+\Delta\sigma_\text{stat.|iso} = \sqrt{\left(\frac{\sigma_{iso} \Delta N_t}{N_t}\right)^2 + \frac{1}{N_t^2} \left(\frac{1 - P_{surv|iso}}{P_{surv|iso} N_1} + \frac{1 - P^{(E)}_{surv|iso}}{P^{(E)}_{surv|iso} N_1^E}\right)}
 \end{equation}
-
+For viewing the statistical uncertainties of the total interaction cross section measuerments the uncertainties in the target thickness as well as the uncertainties of the carbon isotope surviving probability $P_{surv|cc}$  and the $^{12}C$ surviving probability $P_{surv|iso}$ have to be accounted for:
+\small
+\begin{equation}
+\Delta\sigma_\text{stat.|tot} = \sqrt{\left(\frac{\sigma_{tot} \Delta N_t}{N_t}\right)^2 + \frac{1}{N_t^2} \left(\frac{1 - P_{surv|cc}}{P_{surv|cc} N_1} + \frac{1 - P^{(E)}_{surv|cc}}{P^{(E)}_{surv|cc} N_1^E}\right)  + \frac{1}{N_t^2} \left(\frac{1 - P_{surv|iso}}{P_{surv|iso} N_1} + \frac{1 - P^{(E)}_{surv|iso}}{P^{(E)}_{surv|iso} N_1^E}\right)}
+\end{equation}
+\normalsize
 \subsubsection{Systematic Uncertainties}
 
 
