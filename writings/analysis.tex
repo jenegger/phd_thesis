@@ -12,14 +12,14 @@ Solving this differential equation for $N_{2}$ (with the condition $N_{2}$ = $N_
 N_{2} = N_{1}e^{-n\sigma z}  = N_{1}e^{-N_t\sigma}
 \label{eq:cross_sec}
 \end{equation} 
-Where $n\cdot z$ can be summarized as $N_t$, the total number of scattering centers per unit area. The relation $(N_{2}/N_{1})$, number of unreacted particles after the target versus number of incoming particles, is often called survival probability. For an idealistic experimental setup with full detector efficiency and no interactions in the setup material the cross section could simply be deduced from equation \ref{eq:cross_sec}. To account for reactions of the projectile that occur within the setup material and first order detector specific distortions of output signals the survival probabiltiy $(N_{2}/N_{1})$ has to be divided by $(N_{2}^E/N_{1}^E)$, where $N_{1}^E$ is the number of incoming particles and $N_{2}^E$ the number of unreacted particles after the target for an empty run respectively. Thereby the setup specific efficiency($\epsilon_{setup}$) and transmission factor($t_{setup}$) are cancelled out to obtain the underlying number of unreacted particles after the target $\tilde{N_{2}}$:\newline
+Where $n\cdot z$ can be summarized as $N_t$, the total number of scattering centers per unit area. The relation $(N_{2}/N_{1})$, number of unreacted particles after the target versus number of incoming particles, is often called survival probability $P_{surv}$. For an idealistic experimental setup with full detector efficiency and no interactions in the setup material the cross section could simply be deduced from equation \ref{eq:cross_sec}. To account for reactions of the projectile that occur within the setup material and first order detector specific distortions of output signals the survival probabiltiy $(N_{2}/N_{1})$ has to be divided by the survival probability for an empty target run $P^{E}_{surv}$ = $(N_{2}^E/N_{1}^E)$, where $N_{1}^E$ is the number of incoming particles and $N_{2}^E$ the number of unreacted particles after the target for an empty run respectively. Thereby the setup specific efficiency($\epsilon_{setup}$) and transmission factor($t_{setup}$) are cancelled out to obtain the underlying number of unreacted particles after the target $\tilde{N_{2}}$:\newline
 $N_{2} = \tilde{N_{2}} \cdot t_{setup}\cdot \epsilon_{setup}$, with $\tilde{N_{2}}$\newline
 $N_{2}^E = \tilde{N_{2}^E} \cdot \epsilon_{setup}$ with $\frac{\tilde{N_{2}^E}}{N_{1}^E}$ the setup specific transmission factor $t_{setup}$ \newline
 \newline
 The final formula for the cross section for a so called transmission measurement is:
 \begin{equation}
 	\begin{split}
-\sigma = -\frac{1}{N_t} ln(\frac{N_{1}^E}{N_{2}^E} \cdot \frac{N_2}{N_1}) = -\frac{1}{N_t} ln(\frac{N_{1}^E}{\tilde{N_{2}^E} \cdot t_{setup}\cdot \epsilon_{setup}} \cdot \frac{\tilde{N_{2}^E} \cdot \epsilon_{setup}}{N_1}) \\
+\sigma = -\frac{1}{N_t} ln(\frac{N_{1}^E}{N_{2}^E} \cdot \frac{N_2}{N_1}) = -\frac{1}{N_t} ln(\frac{N_{1}^E}{\tilde{N_{2}^E} \cdot \epsilon_{setup}} \cdot \frac{\tilde{N_{2}} \cdot t_{setup} \cdot \epsilon_{setup}}{N_1}) \\
 \text{With $\frac{\tilde{N_{2}^E}}{N_{1}^E} = t_{setup}$} \\
 \sigma = -\frac{1}{N_t} ln(\frac{1}{t_{setup}} \cdot \frac{\tilde{N_{2}} \cdot t_{setup}}{N_1}) = -\frac{1}{N_t} ln(\frac{\tilde{N_{2}}}{N_1})
 \label{eq:corr_cross}
@@ -608,10 +608,7 @@ The limited geometric acceptance of TWIN MUSIC, described in section \ref{sec:ge
 All three measurements presented in this section, the charge changing cross section, the isotopic cross section correction cross section and the total interaction cross section, rely on the transmission method and the error analysis of those measurements are treated the same accordingly. The generic formula for all three measurements was presented in section \ref{section:transmission_method}, equation \ref{eq:cross_sec}.\newline
 Since all quantities in equation \ref{eq:cross_sec} are mutually independent, the gaussian error propagation for statistical and systematical uncetainties is given by:
 \begin{equation}
-\Delta_{stat./syst.}  = \sqrt{\sum_{i=1}^n \left( \frac{\partial f}{\partial x_i} \cdot \Delta_{x_i} \right)^2 }\
-%fi(x_1,x_2,..,x_n): \textrm{the error prone cross section function}\ 
-%x_i: \textrm{the independent variables (N_1,N_2,N_t; see equation \ref{eq:cross_sec})}\
-%\Delta_{x_i}: \textrm{uncertainties associated to indepenent variable x_i}
+\Delta_{stat./syst.}  = \sqrt{\sum_{i=1}^n \left( \frac{\partial f}{\partial x_i} \cdot \Delta_{x_i} \right)^2 }
 \end{equation}
 \text{with:}
 \begin{align*}
@@ -622,9 +619,24 @@ Since all quantities in equation \ref{eq:cross_sec} are mutually independent, th
 
 
 \subsubsection{Statistical Uncertainties}
+For the charge changing cross section the combined  statistical error is:\newline
+\begin{equation}\label{eq:stat_cc}
+\Delta\sigma_\text{stat.} = \sqrt{\left(\frac{\partial \sigma_{cc}}{\partial N_t} \Delta N_t\right)^2 + \left(\frac{\partial \sigma_{cc}}{\partial P_{surv}(Z=6)} \Delta P_{surv}(Z=6)\right)^2 + \left(\frac{\partial \sigma_{cc}}{\partial P^{E}_{surv}(Z=6)} \Delta P^{E}_{surv}(Z=6)\right)^2}
+\end {equation}
+where $\Delta N_t$ accounts for the uncertainty in the measurement of the target thickness. $P_{surv}$ follows a binomial distribution with $N_1$ independent experiments and a boolean valued reaction output (suvived vs. non-survived). Therefore $P_{surv}$ follows the standard error of binomial distributed variable:
+\begin{equation}
+\Delta P^{(E)}_{surv}(Z=6) = \sqrt{\frac{P^{(E)}_{surv}(Z=6)\cdot (1-P^{(E)}_{surv}(Z=6))}{N^{(E)}_{1}}}
+\end{equation}
+Inserting in equation \ref{eq:stat_cc} gives:
+\begin{equation}
+\Delta\sigma_\text{stat.} = \sqrt{\left(\frac{\sigma_I \Delta N_t}{N_t}\right)^2 + \frac{1}{N_t^2} \left(\frac{1 - P_{surv}(Z=6)}{P_{surv}(Z=6) N_1} + \frac{1 - P^{(E)}_{surv}(Z=6)}{P^{(E)}_{surv}(Z=6) N_1^E}\right)}
+\end{equation}
+Similar for the isotopic correction cross section with $P_{surv|iso}$ the ratio of reconstructed $^{12}C$ isotopes to all identified carbon isotopes  in the x-position  correlation plots for MWPC2 and MWPC3: 
+\begin{equation}
+\Delta\sigma_\text{stat.|iso} = \sqrt{\left(\frac{\sigma_I \Delta N_t}{N_t}\right)^2 + \frac{1}{N_t^2} \left(\frac{1 - P_{surv|iso}}{P_{surv|iso} N_1} + \frac{1 - P^{(E)}_{surv|iso}}{P^{(E)}_{surv|iso} N_1^E}\right)}
+\end{equation}
 
-
-\subsubsection{Statistical Uncertainties}
+\subsubsection{Systematic Uncertainties}
 
 
 \subsection{(Preliminary) Results Total Interaction Cross Section}
