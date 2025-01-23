@@ -14,45 +14,45 @@ Repeated entry---line 184 of file main.bib
 I'm skipping whatever remains of this entry
 Warning--empty journal in hartigevolution
 Warning--empty year in hartigevolution
-You've used 25 entries,
+You've used 26 entries,
             1876 wiz_defined-function locations,
-            619 strings with 8209 characters,
-and the built_in function-call counts, 5652 in all, are:
-= -- 549
-> -- 268
+            627 strings with 8527 characters,
+and the built_in function-call counts, 6100 in all, are:
+= -- 587
+> -- 303
 < -- 0
-+ -- 102
-- -- 77
-* -- 371
-:= -- 829
-add.period$ -- 37
-call.type$ -- 25
-change.case$ -- 21
++ -- 114
+- -- 88
+* -- 412
+:= -- 899
+add.period$ -- 38
+call.type$ -- 26
+change.case$ -- 22
 chr.to.int$ -- 0
-cite$ -- 27
-duplicate$ -- 281
-empty$ -- 518
-format.name$ -- 77
-if$ -- 1379
+cite$ -- 28
+duplicate$ -- 298
+empty$ -- 548
+format.name$ -- 88
+if$ -- 1480
 int.to.chr$ -- 0
-int.to.str$ -- 25
-missing$ -- 13
-newline$ -- 91
-num.names$ -- 20
-pop$ -- 99
+int.to.str$ -- 26
+missing$ -- 14
+newline$ -- 94
+num.names$ -- 21
+pop$ -- 100
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 195
+skip$ -- 209
 stack$ -- 0
-substring$ -- 216
-swap$ -- 111
+substring$ -- 248
+swap$ -- 120
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
-while$ -- 43
-width$ -- 27
-write$ -- 248
+while$ -- 47
+width$ -- 28
+write$ -- 259
 (There was 1 error message)
