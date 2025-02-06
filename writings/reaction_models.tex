@@ -67,7 +67,7 @@ A simplified picture, which however explains the essential physics of the QFS re
     \label{fig:sketch_qfs}
 \end{figure}
 From energy -momentum conservation the reaction can be expressed as:
-\begin{equation}
+\begin{equation}\label{eq:four_mom_cons_qfs}
 P_A  +  P_0 = P_1 + P_2 +P_{A-1} 
 \end{equation}
 with $P_i$ the four momentum $(\mathbf{p_i},E_i)$.\newline
@@ -89,7 +89,29 @@ P_i \approx P_{miss} \equiv P_1 + P_2  - P_0
 \end{equation}
 where $P_{miss}$ is the so called "measured missing four-momentum of the reaction"\cite{patsyuk2021unperturbed}\footnote{$P_{miss}$ is only equal to $P_i$ for the unperturbed QFS (no ISI/FSI) case.}.
 Thereupon, the separation energy measurement and the recoil momentum distribution fully describe the single paricle state in the various shell levels. 
-In addition and as complementary method $\gamma$ rays can be measured in coincidence with the reaction and consequentely exclusive cross section and momentum distribution measurements of the single particle states are accessible as illustrated in figure blabla. The reduction of the measured exclusive cross sections relative to the theoretical predictions defined as spectroscopic strength $R_S = \frac{\sigma_{exp}}{\sigma_{th}}$ is the direct way to evaluate the various theoretical nuclear models.  
+In addition and as complementary method $\gamma$ rays can be measured in coincidence with the reaction and consequentely exclusive cross section and momentum distribution measurements of the single particle states are accessible as illustrated in figure blabla.\newline
+Considering the removal of a single nucleon from an initial nucleus with A nucleons and initial spin \textit{I} $\Psi^A_i$ and final nucleus state  $\Psi^{A-1}_f$ with final spin $I_f$ an overlap function between intial and final state many-body wave function can be written as:
+\begin{equation}
+\langle \vec{r}, \Psi_f^{A^{-1}} | \Psi_i^A \rangle = \sum_j C_j^{if} \psi_j(\vec{r}), \quad with  |I - I_f| < j < |I + I_f|
+\end{equation}
+where $S_j^{if} = |C_j^{if}|^2$ is the commonly named spectroscopic factor, see ref \cite{hansen2003direct} sec.2.1. $S_j^{if}$ is summed over all final single particle states m (from $-j$ to $j$). It is unity for nucleon removal from a pure single particle state and equals (2j+1) when the nucleon was removed from a filled j-subshell.
+The spectroscopic factor is linked to the exclusive experimental cross section measurement of a single particle state and the theoretical predicted one, as in ref \cite{hansen2003direct}:
+\begin{equation}
+\sigma_{th}^{if} = \sum_j S_j^{if}\,\sigma_{sp}(nlj)
+\end{equation}
+where $\sigma_{sp}$ are the theoretical cross sections for the normalized wave functions $\Psi_j$ of the final state nucleus A-1 with the appropriate quantum numbers.\newline
+From this considerations the spectroscopic factor can be used to probe the theoretical shell predictions. In past this was already done with direct qfs-reactions $(e,e'p)$. Results for the spectroscopic factor with data obtained at the NIKHEF facility is shown in figure \ref{fig:spec_fac}. The substantial reduction of the spectroscopic factor with respect to the independent particle model (IPM) or mean field of $\approx 35\%$ indicates a substantial depletion of the single-hole states and inferring from this a refined model prediction has to be applied\footnote{The mean field potential does not consider spin-spin interaction $V_{ss}$, non central tensor-potential $V_T$ or spin-orbit interaction $V_{LS}$.}.\newline
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/spec_factor.png}
+    \caption{Normalized spectroscopic factors from the $(e, e\prime p)$ reaction as a function of target mass taken from \cite{DICKHOFF2004377}. As input for the theoretical cross sections the prediction from mean field models were used. }
+    \label{fig:spec_fac}
+\end{figure}
+While qfs-reaction with electrons $(e,e\prime p)$ in direct kinematics is a valuable method to make precise measurements for stable (target) nuclei it is not suitable for the experimental analysis with exotic (neutron or proton rich) nuclei. Due to their unstability they have a short lifetime (e.g. $^{52}Ca$ with $\tau = 4.6s$) they can hardly serve as targets. Inducing the reaction in inverse kinematics - having electrons as targets and the exotic nuclei of interest as projectiles - is also not feasible since no free electons can be captured as target. The alternative approach is to use proton induced quasi-free scattering in inverse kinematics where the exotic beam inpinges on an extended proton target such as liquid hydrogen $H_2$  or a fixed proton rich target such as $CH_2$\footnote{Herefore a carbon target reference run is used to extract the qfs-reaction events from the $CH_2$ target run.}.\newline
+Summarizing, the qfs-reaction technique in inverse kinematics with exotic nuclei as in-flight projectiles and a proton-like target opens new possibilities to probe theoretical model predictions of deformed nuclei far off stability which haven't been accessible before.\newline
+For precise cross section measurements of the single particle states $\sigma_{sp}$ the kinematical characteristics of the qfs-reaction products have to be considered for correct identification of qfs-events and clear background substraction. The following descriptions are already encoded in equation \ref{eq:four_mom_cons_qfs}.\newline
+As starting point one compares the qfs-reaction of the two nucleons with the two dimensionali non-central collision of free pointlike particles in nonrelativistic kinematics. Since both kinetic energy and momenta are conserved a  clear signature is expected: the opening angle of the scattered particles is exactly 90 \textdegree. 
+
 From experimental point of view-> important to identify the QFS events.
 In non rel. kinematics of free particles a really clean signature: two dim-colllision with coplanar nucleons = delta phi = 180 degr and an opening angle of 90 degr. \newline
 When going to rel. energies -> 80 degrees of opening angle(400 AMeV). Is there a function to calculate the opening angle? The opening angle is smeared because of relativistic effects + inner momentum of the nucleon. \newline
