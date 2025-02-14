@@ -3,7 +3,7 @@ Explain path to go:
 \begin{itemize}
 \item short intro why we use scrattering reactions: to study structure of nuclei (mostly via e. scattering as they only interact via electromagn. force) and refer to chapter. Introduce problems qe account body problem etc
 \item starting from elastic scattering at low energies going to medium to high energies
-\itemexplain glauber: eikonal wave approximations, optical limit which leads to optical potential model, description via nucleon nucleon interaction
+\item explain glauber: eikonal wave approximations, optical limit which leads to optical potential model, description via nucleon nucleon interaction
 \end{itemize}
 \subsection{Elastic scattering at low energies}
 \begin{itemize}
@@ -110,7 +110,27 @@ From this considerations the spectroscopic factor can be used to probe the theor
 While qfs-reaction with electrons $(e,e'p)$ in direct kinematics is a valuable method to make precise measurements for stable (target) nuclei it is not suitable for the experimental analysis with exotic (neutron or proton rich) nuclei. Due to their unstability they have a short lifetime (e.g. $^{52}Ca$ with $\tau = 4.6s$) they can hardly serve as targets. Inducing the reaction in inverse kinematics - having electrons as targets and the exotic nuclei of interest as projectiles - is also not feasible since no free electons can be captured as target. The alternative approach is to use proton induced quasi-free scattering in inverse kinematics where the exotic beam inpinges on an extended proton target such as liquid hydrogen $H_2$  or a fixed proton rich target such as $CH_2$\footnote{Herefore a carbon target reference run is used to extract the qfs-reaction events from the $CH_2$ target run.}.\newline
 Summarizing, the qfs-reaction technique in inverse kinematics with exotic nuclei as in-flight projectiles and a proton-like target opens new possibilities to probe theoretical model predictions of deformed nuclei far off stability which haven't been accessible before.\newline
 For precise cross section measurements of the single particle states $\sigma_{sp}$ the kinematical characteristics of the qfs-reaction products have to be considered for correct identification of qfs-events and clear background substraction. The following descriptions are already encoded in equation \ref{eq:four_mom_cons_qfs}.\newline
-As starting point one compares the qfs-reaction of the two nucleons with the two dimensionali non-central collision of free pointlike particles in nonrelativistic kinematics. Since both kinetic energy and momenta are conserved a  clear signature is expected: the opening angle of the scattered particles is exactly 90 \textdegree. 
+As starting point one compares the qfs-reaction of the two nucleons with the two dimensional non-central collision of free pointlike particles in nonrelativistic kinematics. Since both kinetic energy and momenta are conserved a  clear signature is expected: the opening angle of the scattered particles is exactly 90$^{\circ}$. 
+
+However, at kinetic energies of 400 AMeV and more, relativistic effects affects the opening angle of the scattered particles\footnote{Relativistic considerations become relevant at velocities $ \beta \gtrapprox 0.1 c$. This corresponds to $\approx$ 4.5 MeV.}. 
+put in here the formula for the opening angle in realtivisti kinematics, to be derived
+
+For the final description of the process it has to be considered that the projectile nucleon inside the nucleus has a non negligible momentum. In the picture of the fermi gas model where protons and neutrons freely move inside the nucleus' potential. In the ground state of the nucleus the nucleons can reach a momentum up to the Fermi momentum $p_F$. Except for the light nuclei, the Fermi momentum is almost independent of A and amounts to $\approx 250$ MeV/c \footnote{For light nuclei like $ ^{12}C$, $p_F \approx 230$ MeV/c can be assumed}. The mean quadratic momenta of the nucleons is related to the Fermi momentum by:
+\begin{equation}
+\langle \mathbf{p}^2 \rangle = \frac{3}{5}p^2_F \footnote{From the derivation of the mean kinetic energy of the nucleons $\langle E_{\text{kin}} \rangle = \frac{\int_0^{p_F} E_{\text{kin}} \, p^2 \, dp}{\int_0^{p_F} p^2 \, dp} = \frac{3}{5} \cdot \frac{p_F^2}{2M}$}
+\end{equation}
+The width of the momentum distribution of the nucleons is given in the Goldhaber model by:
+\begin{equation}
+\sigma^2 = \sigma_0^2 K(A-K)/(A-1), \, \text{with} \, \sigma_0 \approx 90 MeV/c
+\end{equation}
+where A is the mass number of the projectile nucleus and K the mass number of the fragment after scattering. For a detailled derivation and further readings see ref. \cite{goldhaber1974statistical} and \cite{FESHBACH1973300}.
+In the impuse approximation, where we assume that the interaction between the projectile and target nucleons has approximately the same form as the interaction between two nucleons in free space, the inner momenta of the scattered nucleons smear out the angular correlations of the outgoing fragment - which has the same momentum as the knocked out nucleon in the cms system of the nucleus but points in opposite direction - as well as of the two nucleons involved in the scattering. As consequence the opening angle distribution of the two scattered nucleons gets broadened as well as the azimuthal angular correlation which for the assumption of zero nucleon momentum sharply peaked at $\Delta\phi = 180\circ$.
+\begin{itemize}
+\item put in the L.V. Chulkov formula and plot to get the transversal mom etc
+\item Last correction: whe have to consider the separation energy(and NOT binding energy) -> makes angle again smaller etc show also on the formula that it gets smaller...this is then also an explanation why it gets smaller if nucleon is knocked out from a deeper shell.
+\end{itemize}
+
+
 
 From experimental point of view-> important to identify the QFS events.
 In non rel. kinematics of free particles a really clean signature: two dim-colllision with coplanar nucleons = delta phi = 180 degr and an opening angle of 90 degr. \newline
