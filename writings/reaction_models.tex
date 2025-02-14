@@ -84,7 +84,7 @@ E^{*}_{A-1} =  M_{A-1}c^2  +T_{A-1} + E_{exe}
 The excitation energy $E_{exe}$ is reflected in the difference in the separation energy of the least bound nucleon and the ejected one. From the experimental point of view $E_{exe}$ is directly accessible via gamma detection from the transition of the final nucleus from the excited to the ground state. 
 According to the picture of having a nucleon nucleon scattering process with no influence of the residual nucleus A-1 we can approximate $\mathbf{p_A} \approx \mathbf{p_i} + \mathbf{p_{A-1}}$ where $\mathbf{p_i}$ is the initial nucleon momentum inside the initial nucleus A. Since the initial nucleus is at rest ($\mathbf{p_A} = 0$), the recoil momentum of the nucleus in final state $\mathbf{p_{A-1}}$ equals to $-\mathbf{p_i}$ the momentum of the initial nucleon pointing in opposite direction. \newline
 In addition the four-momentum of the inner nucleon can be deduced from momentum measurement of the initial and final state free nucleons:
-\begin{equation}
+\begin{equation}\label{eq:miss_mom}
 P_i \approx P_{miss} \equiv P_1 + P_2  - P_0
 \end{equation}
 where $P_{miss}$ is the so called "measured missing four-momentum of the reaction"\cite{patsyuk2021unperturbed}\footnote{$P_{miss}$ is only equal to $P_i$ for the unperturbed QFS (no ISI/FSI) case.}.
@@ -115,7 +115,8 @@ As starting point one compares the qfs-reaction of the two nucleons with the two
 However, at kinetic energies of 400 AMeV and more, relativistic effects affects the opening angle of the scattered particles\footnote{Relativistic considerations become relevant at velocities $ \beta \gtrapprox 0.1 c$. This corresponds to $\approx$ 4.5 MeV.}. 
 put in here the formula for the opening angle in realtivisti kinematics, to be derived
 
-For the final description of the process it has to be considered that the projectile nucleon inside the nucleus has a non negligible momentum. In the picture of the fermi gas model where protons and neutrons freely move inside the nucleus' potential. In the ground state of the nucleus the nucleons can reach a momentum up to the Fermi momentum $p_F$. Except for the light nuclei, the Fermi momentum is almost independent of A and amounts to $\approx 250$ MeV/c \footnote{For light nuclei like $ ^{12}C$, $p_F \approx 230$ MeV/c can be assumed}. The mean quadratic momenta of the nucleons is related to the Fermi momentum by:
+For the final description of the process it has to be considered that the projectile nucleon inside the nucleus has a non negligible momentum (see $P_i$ in equation \ref{eq:miss_mom})  and in addition the separation energy $S_{p/n}$ has to be expended to remove the scattered nucleon of the nuclear potential of the projectile nucleus.\newline
+To account for the nucleon momentum the picture of the fermi gas model where protons and neutrons freely move inside the nucleus' potential is applied. In the ground state of the nucleus the nucleons can reach a momentum up to the Fermi momentum $p_F$. Except for the light nuclei, the Fermi momentum is almost independent of A and amounts to $\approx 250$ MeV/c \footnote{For light nuclei like $ ^{12}C$, $p_F \approx 230$ MeV/c can be assumed}. The mean quadratic momenta of the nucleons is related to the Fermi momentum by:
 \begin{equation}
 \langle \mathbf{p}^2 \rangle = \frac{3}{5}p^2_F \footnote{From the derivation of the mean kinetic energy of the nucleons $\langle E_{\text{kin}} \rangle = \frac{\int_0^{p_F} E_{\text{kin}} \, p^2 \, dp}{\int_0^{p_F} p^2 \, dp} = \frac{3}{5} \cdot \frac{p_F^2}{2M}$}
 \end{equation}
@@ -124,7 +125,27 @@ The width of the momentum distribution of the nucleons is given in the Goldhaber
 \sigma^2 = \sigma_0^2 K(A-K)/(A-1), \, \text{with} \, \sigma_0 \approx 90 MeV/c
 \end{equation}
 where A is the mass number of the projectile nucleus and K the mass number of the fragment after scattering. For a detailled derivation and further readings see ref. \cite{goldhaber1974statistical} and \cite{FESHBACH1973300}.
-In the impuse approximation, where we assume that the interaction between the projectile and target nucleons has approximately the same form as the interaction between two nucleons in free space, the inner momenta of the scattered nucleons smear out the angular correlations of the outgoing fragment - which has the same momentum as the knocked out nucleon in the cms system of the nucleus but points in opposite direction - as well as of the two nucleons involved in the scattering. As consequence the opening angle distribution of the two scattered nucleons gets broadened as well as the azimuthal angular correlation which for the assumption of zero nucleon momentum sharply peaked at $\Delta\phi = 180\circ$.
+In the impuse approximation, where we assume that the interaction between the projectile and target nucleons has approximately the same form as the interaction between two nucleons in free space, the inner momenta of the scattered nucleons smear out the angular correlations of the outgoing fragment - which has the same momentum as the knocked out nucleon in the cms system of the nucleus but points in opposite direction - as well as of the two nucleons involved in the scattering. As consequence the opening angle distribution of the two scattered nucleons gets broadened as well as the azimuthal angular correlation which for the assumption of zero nucleon momentum sharply peaked at $\Delta\phi = 180^{\circ}$.\newline
+In view of the added nucleon momentum the kinematics get expanded from a two dimensional scattering reaction to a three dimensional process where the reaction plane is determined by the plane spanned by the momentum vector of the projectile nucleus $\mathbf{p}_A$ and the scattered nucleon after the reaction \footnote{For (p,2p) reactions there is an ambigousity which of the scattered protons $\mathbf{p}_1$ or $\mathbf{p}_2$ origin from the projectile nucleus or the proton like target.}. With the momentum measurement of the two correlated outgoing nucleons and the momentum of the incoming projectile nucleus it is possible to retrieve the internal momentum of the knocked out nucleon perpendicular to the reaction plane via the formula derived in reference\cite{chulkov2005quasi}:
+\begin{equation}\label{eq:chulkov}
+Q_{\perp i} = sin(\theta_{1/2})\cdot sin(\phi_{1/2} -\phi_{2/1})\cdot\mathbf{p}_{2/1}
+\end{equation}
+In case of (p,2p) reactions it is impossible to track back the origin of each nucleon - from the projectile nucleus or the proton-like target. Iferrring from this there are two possible solutions for $Q_{\perp}$. The ambiguity can be resolved by incorporating the momentum of the fragment nucleus perpendicular to the reaction plane $Q_{\perp A-1}$. The fragment momentum vector should be of the same amout but point in opposite direction to $Q_{\perp i}$.
+TODO: insert here the correlation plot of VALERII, check if that is correct.
+
+
+Up to this point the scattering process was described similar to the free elastic scattering in relativistic kinematics with the projectile nucleon having a non negligible momentum. However the projectile nucleon is an off-shell particle  bound inside the nucleus. 
+\begin{equation}
+\mu_i =  \sqrt{m_A^2 + m_{A-1}^2 + 2m_A\sqrt{m_{A-1}^2 + |\mathbf{p}_i|^2}}
+\end{equation}
+in the c.m.s. of the projectile nucleus, with
+\begin{equation}
+0 < \mu_i  < m_n
+\end{equation}
+where $m_n$ is the mass of the appropriate free nucleon.
+To knock the bound nucleon out of the nucleus the separation energy has to be overcome which can be observed in the reduced opening angle of the two outgoing correlated nucleons.
+
+
 \begin{itemize}
 \item put in the L.V. Chulkov formula and plot to get the transversal mom etc
 \item Last correction: whe have to consider the separation energy(and NOT binding energy) -> makes angle again smaller etc show also on the formula that it gets smaller...this is then also an explanation why it gets smaller if nucleon is knocked out from a deeper shell.
