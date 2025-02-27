@@ -97,6 +97,20 @@ S.~Paschalis, M.~Petri, A.~Macchiavelli, O.~Hen, and E.~Piasetzky,
   ``Nucleon-nucleon correlations and the single-particle strength in atomic
   nuclei,'' {\em Physics Letters B}, vol.~800, p.~135110, 2020.
 
+\bibitem{garcia2023study}
+G.~Garc{\'\i}a-Jim{\'e}nez, H.~Alvarez-Pol, A.~Gra{\~n}a-Gonz{\'a}lez,
+  J.~Rodr{\'\i}guez-S{\'a}nchez, J.~Benlliure, D.~Cortina-Gil, L.~Atar,
+  L.~Audouin, G.~Authelet, A.~Besteiro, {\em et~al.}, ``Study of (p, 2p)
+  fission reactions in inverse kinematics using the r3b set-up,'' in {\em EPJ
+  Web of Conferences}, vol.~290, p.~02009, EDP Sciences, 2023.
+
+\bibitem{grana2023fission}
+J.~Gra{\~n}a-Gonz{\'a}lez, J.~Rodr{\'\i}guez-S{\'a}nchez, J.~Benlliure,
+  G.~Garc{\'\i}a-Jim{\'e}nez, H.~Alvarez-Pol, D.~Cortina-Gil, L.~Atar,
+  L.~Audouin, G.~Authelet, A.~Besteiro, {\em et~al.}, ``Fission studies in
+  inverse kinematics with the r3b setup,'' in {\em EPJ Web of Conferences},
+  vol.~290, p.~02015, EDP Sciences, 2023.
+
 \bibitem{charpak1968use}
 G.~Charpak, R.~Bouclier, T.~Bressani, J.~Favier, and
   {\v{C}}.~Zupan{\v{c}}i{\v{c}}, ``The use of multiwire proportional counters
@@ -133,13 +147,6 @@ M.~Bendel, {\em {E}ntwicklung einer neuartigen {N}achweismethode
   endcap.''
   \url{https://edms.cern.ch/ui/file/1833748/2/TDR_R3B_CALIFA_ENDCAP_public.pdf}.
 \newblock Accessed: 2024-09-24.
-
-\bibitem{grana2023fission}
-J.~Gra{\~n}a-Gonz{\'a}lez, J.~Rodr{\'\i}guez-S{\'a}nchez, J.~Benlliure,
-  G.~Garc{\'\i}a-Jim{\'e}nez, H.~Alvarez-Pol, D.~Cortina-Gil, L.~Atar,
-  L.~Audouin, G.~Authelet, A.~Besteiro, {\em et~al.}, ``Fission studies in
-  inverse kinematics with the r3b setup,'' in {\em EPJ Web of Conferences},
-  vol.~290, p.~02015, EDP Sciences, 2023.
 
 \bibitem{holl1988measurement}
 I.~Holl, E.~Lorenz, and G.~Mageras, ``A measurement of the light yield of
