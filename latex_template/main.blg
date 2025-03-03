@@ -16,6 +16,10 @@ Repeated entry---line 404 of file main.bib
  : @inproceedings{grana2023fission
  :                                ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 413 of file main.bib
+ : @inproceedings{bail2011time
+ :                            ,
+I'm skipping whatever remains of this entry
 Warning--empty author in clas2018probing
 Warning--empty journal in hartigevolution
 Warning--empty year in hartigevolution
@@ -60,4 +64,4 @@ warning$ -- 3
 while$ -- 94
 width$ -- 45
 write$ -- 441
-(There were 2 error messages)
+(There were 3 error messages)
