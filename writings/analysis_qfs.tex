@@ -7,30 +7,38 @@ For setup description refer to section \ref{sec:analysis_cross_sec}. For all det
 The procedure to calibrate the Time of Flight (ToF) Wall involves beforehand a precise flight-path reconstruction of the projectile from the entrance of Cave C downstream to the ToF Wall. Since only one tracking detector downstream to GLAD was in operation for the S444 experiment no angle of the deflected fragment/beam $\theta_{out}$ could be directly extracted. Herefore an advanced tracking algorithm was developed, motivated from ref. \cite{bertini2013study} (section 3.4). 
 \begin{itemize}
 \item The first step is to measure the scattering angle after target, $\theta_{in}$, and draw an extended line from the target position through the effective magnetic field of GLAD.  
-\item Draw a trajectory line from the hit position in MWPC3 to the intersection point C (see figure) of the "kick-plane-line" and the reconstructed and extended track line upstream to GLAD.
-\item Now sweep along the reconstructed track line upstream to GLAD. For each step a value for $\theta_{out}$ and $d1-d2$ is gathered, see figure blabla
-\item As in figure blabla shown, fit the data-points from previous step with a linear fit function and find the corresponding $\theta_{out}$ value where the fit line intersects with the abscissa. This corresponds to the case where $d1 = d2$. This is the approximated "kickpoint" in GLAD. 
+\item Draw a trajectory line from the hit position in MWPC3 to the intersection point C (see figure \ref{fig:sub1_reco_path}) of the "kick-plane-line" and the reconstructed and extended track line upstream to GLAD.
+\item Now sweep along the reconstructed track line upstream to GLAD. For each step a value for $\theta_{out}$ and $d1-d2$ is gathered, see figure \ref{fig:sub2_reco_path}.
+\item As in figure \ref{fig:sub2_reco_path} shown, fit the data-points from previous step with a linear fit function and find the corresponding $\theta_{out}$ value where the fit line intersects with the abscissa. This corresponds to the case where $d1 = d2$. This is the approximated "kickpoint" in GLAD. 
 \item Previous steps need to be executed for all events accordingly.
 \end{itemize}
 \begin{figure}[ht]
     \centering
     % First subfigure
-    \begin{subfigure}[b]{0.45\textwidth}
+    \begin{subfigure}[b]{0.70\textwidth}
         \includegraphics[width=\textwidth]{Figures/kick_point_algorithm.png}
-        \caption{First subfigure caption}
-        \label{fig:sub1}
+        \caption{Flightpath reconstruction with "Leff" being the effective active width of the magnetic field of GLAD}
+        \label{fig:sub1_reco_path}
     \end{subfigure}
-    \hfill % Optional: adds horizontal space between the figures
+    %\hfill % Optional: adds horizontal space between the figures
     % Second subfigure
-    \begin{subfigure}[b]{0.45\textwidth}
+    \begin{subfigure}[b]{0.25\textwidth}
         \includegraphics[width=\textwidth]{Figures/intersection_algorithm.png}
-        \caption{Second subfigure caption}
-        \label{fig:sub2}
+        \caption{$\theta_{out}$ approximation. For detailed information see text.}
+        \label{fig:sub2_reco_path}
     \end{subfigure}
 
-    \caption{Overall figure caption}
-    \label{fig:overall}
+    \caption{Flightpath tracking and reconstruction of the fragment/beam after the target.}
+    \label{fig:reco_path}
 \end{figure}
+
+Now that the scattering angle after the target $\theta_{in}$ and the angle after GLAD, $\theta_{out}$ is known and the position outside the magnetic field of GLAD are fixed, the bending radius $\rho_{GLAD}$ from the magnetic deflection can be determined:
+\begin{equation}\label{eq:rho_glad}
+\rho_{GLAD} = \frac{L_{eff}}{sin\left(\frac{\theta_{in}+\theta_{out}}{2}\right)}
+\end{equation}
+where $L_{eff}$ is the effective active with of the magnetic field of GLAD, which correspons $\approx 2.06\,m$. This value could also be verified by extracting $L_{eff}$ from the formula for the magnetic rigidity $ B\cdot \rho = \gamma\beta \, m /q$ for empty target runs with known values of the B-field\footnote{For detector calibration, primarly for the ToFWall, we had several "empty sweep runs", with empty target and different B-field strenght settings. Those runs were optimal to validate $L_{eff}$}.\newline
+A detailed derivation of equation \ref{eq:rho_glad} can be found in appendix \ref{app:flightpath}.
+
 \subsection{Event Selection}
 no major efforts on th event selection done, look up the code.
 \subsection{Fragment Identification}
