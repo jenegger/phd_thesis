@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.24)  18 MAR 2025 16:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.24)  18 MAR 2025 18:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1480,19 +1480,23 @@ Underfull \hbox (badness 2103) in paragraph at lines 27--27
 [65]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
+(hyperref)                removing `math shift' on input line 51.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 49.
+(hyperref)                removing `superscript' on input line 51.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 49.
+(hyperref)                removing `math shift' on input line 51.
 
-) (./../writings/results.tex) [66 <./Figures/kick_point_algorithm.png> <./Figur
-es/intersection_algorithm.png>] (./../writings/appendix.tex
-<Figures/charge_changing_cross_sec_twim_eff_corr.png, id=1124, 462.528pt x 346.
+) (./../writings/results.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [66 <./Figures/kick_point_algorithm.png> <./Figures/intersection_algorithm.png
+>] [67]
+(./../writings/appendix.tex
+<Figures/charge_changing_cross_sec_twim_eff_corr.png, id=1129, 462.528pt x 346.
 896pt>
 File: Figures/charge_changing_cross_sec_twim_eff_corr.png Graphic file (type pn
 g)
@@ -1500,7 +1504,7 @@ g)
 Package pdftex.def Info: Figures/charge_changing_cross_sec_twim_eff_corr.png  u
 sed on input line 11.
 (pdftex.def)             Requested size: 303.49796pt x 227.62346pt.
-<Figures/tot_interaction_cs_twim_eff_corr.png, id=1128, 462.528pt x 346.896pt>
+<Figures/tot_interaction_cs_twim_eff_corr.png, id=1133, 462.528pt x 346.896pt>
 File: Figures/tot_interaction_cs_twim_eff_corr.png Graphic file (type png)
 <use Figures/tot_interaction_cs_twim_eff_corr.png>
 Package pdftex.def Info: Figures/tot_interaction_cs_twim_eff_corr.png  used on 
@@ -1510,21 +1514,27 @@ input line 19.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[67 <./Figures/charge_changing_cross_sec_twim_eff_corr.png>]
-<Figures/drawings_flightpath.png, id=1140, 1132.23pt x 1023.825pt>
+
+Overfull \hbox (111.23792pt too wide) has occurred while \output is active
+\T1/cmr/m/n/12 68 \T1/cmr/m/sl/12 A TWIN MUSIC GEOMETRIC ACCEPTANCE CORRECTION 
+VIA EFFICIENCY MEASUREMENT
+ []
+
+[68 <./Figures/charge_changing_cross_sec_twim_eff_corr.png>]
+<Figures/drawings_flightpath.png, id=1145, 871.255pt x 774.895pt>
 File: Figures/drawings_flightpath.png Graphic file (type png)
 <use Figures/drawings_flightpath.png>
 Package pdftex.def Info: Figures/drawings_flightpath.png  used on input line 30
 .
-(pdftex.def)             Requested size: 443.57848pt x 401.10233pt.
+(pdftex.def)             Requested size: 443.57848pt x 394.51726pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[68 <./Figures/tot_interaction_cs_twim_eff_corr.png>]
-Underfull \vbox (badness 6758) has occurred while \output is active []
+[69 <./Figures/tot_interaction_cs_twim_eff_corr.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [69 <./Figures/drawings_flightpath.png>]) (./main.bbl [70] [71]
+ [70 <./Figures/drawings_flightpath.png>]) (./main.bbl [71] [72]
 Underfull \hbox (badness 1127) in paragraph at lines 108--113
 []\T1/cmr/m/n/12 J. Graña-González, J. Rodríguez-Sánchez, J. Ben-l-li-ure, G. G
 arcía-Jiménez,
@@ -1558,7 +1568,7 @@ Underfull \hbox (badness 2368) in paragraph at lines 146--150
 s-sion-ing of the
  []
 
-[72]
+[73]
 Underfull \hbox (badness 1072) in paragraph at lines 157--161
 []\T1/cmr/m/n/12 A. Syntfeld-Kazuch, L. Swider-ski, W. Czarnacki, M. Gier-lik, 
 W. Klamra,
@@ -1588,19 +1598,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 190--193
 $[][]\T1/cmr/m/n/12 .  [On-line;
  []
 
-[73]
+[74]
 Underfull \hbox (badness 2213) in paragraph at lines 219--222
 []\T1/cmr/m/n/12 ``Mdpp-16 de-tec-tor read-out sys-tems, mesytec.'' [][]$\T1/cm
 tt/m/n/12 https : / / www . mesytec . com /
  []
 
-) [74] (./main.aux (./Abstract.aux))
+) [75] (./main.aux (./Abstract.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: EE882D4EB39852591D766D903799ECD3;12271.
  ) 
 Here is how much of TeX's memory you used:
- 19798 strings out of 480121
- 343151 string characters out of 5892160
+ 19799 strings out of 480121
+ 343158 string characters out of 5892160
  666924 words of memory out of 5000000
  37055 multiletter control sequences out of 15000+600000
  497306 words of font info for 101 fonts, out of 8000000 for 9000
@@ -1647,10 +1657,10 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (83 pages, 19419611 bytes).
+Output written on main.pdf (84 pages, 19407676 bytes).
 PDF statistics:
- 2196 PDF objects out of 2487 (max. 8388607)
- 1154 compressed objects within 12 object streams
- 334 named destinations out of 1000 (max. 500000)
+ 2201 PDF objects out of 2487 (max. 8388607)
+ 1158 compressed objects within 12 object streams
+ 335 named destinations out of 1000 (max. 500000)
  693 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -29,20 +29,20 @@ The same correction factor can be applied to the total interaction cross section
     \centering
     \includegraphics[width=\textwidth]{Figures/drawings_flightpath.png}
     \caption{
-        Flightpath reconstruction with reference positions $(x_0,y_0)$, $(x_1,y_1)$ and $(x_2,y_2)$. The GLAD magnet is tilted by $\alpha = 14^{\circ}$.}
+        Flightpath reconstruction with reference positions $(z_0,x_0)$, $(z_1,x_1)$ and $(z_2,x_2)$. The GLAD magnet is tilted by $\alpha = 14^{\circ}$.}
     \label{fig:draw_flight}
 \end{figure}
-The first step in the radius and flightpath reconstruction is expressing the entrance point on the GLAD field $(x_1,y_1)$ and the exit point $(x_2,y_2)$ with the center of the circle path $(x_0,y_0)$ as reference, see figure \ref{fig:draw_flight}:
+The first step in the radius and flightpath reconstruction is expressing the entrance point on the GLAD field $(z_1,x_1)$ and the exit point $(z_2,x_2)$ with the center of the circle path $(z_0,x_0)$ as reference, see figure \ref{fig:draw_flight}:
 \begin{align*}
-x_1 &= x_0 -r\,cos(90^{\circ}-\theta_i) = x_0 -r\,sin(\theta_i)\\
-y_1 &= y_0 + r\,sin(90^{\circ}-\theta_i) = y_0 + r\,cos(\theta_i)\\
+z_1 &= z_0 -r\,cos(90^{\circ}-\theta_i) = z_0 -r\,sin(\theta_i)\\
+x_1 &= x_0 + r\,sin(90^{\circ}-\theta_i) = x_0 + r\,cos(\theta_i)\\
 \hspace{1cm}
-x_2 &= x_0 + r\,cos(90^{\circ}-\theta_o) = x_0 + r\,sin(\theta_o)\\
-y_2 &= y_0 + r\,sin(90^{\circ}-\theta_o) = y_0 + r\,cos(\theta_o) 
+z_2 &= z_0 + r\,cos(90^{\circ}-\theta_o) = z_0 + r\,sin(\theta_o)\\
+x_2 &= x_0 + r\,sin(90^{\circ}-\theta_o) = x_0 + r\,cos(\theta_o) 
 \end{align*}
-The slope $m_1$ of the intersection line between $(x_1,y_1)$ and $(x_2,y_2)$ is given by:
+The slope $m_1$ of the intersection line between $(z_1,x_1)$ and $(z_2,x_2)$ is given by:
 \begin{align*}
-m_1 &= \frac{y_2-y_1}{x_2 -x_1} = \frac{cos(\theta_o) - cos(\theta_i)}{sin(\theta_o)+sin(\theta_i)}
+m_1 &= \frac{x_2-x_1}{z_2 -z_1} = \frac{cos(\theta_o) - cos(\theta_i)}{sin(\theta_o)+sin(\theta_i)}
 \end{align*}
 and with the distance between the two points given by:
 \begin{align*}
@@ -50,9 +50,9 @@ and with the distance between the two points given by:
 	       &= 4r^2\,sin^2(\frac{\theta_i}{2} +\frac{\theta_o}{2} )\\
 \Rightarrow \Delta_{i/o} &= 2r\,sin(\frac{\theta_i}{2} +\frac{\theta_o}{2})
 \end{align*}
-To describe the distance between $(x_1,y_1)$ and $(x_2,y_2)$ with the given effective GLAD length $L_{eff}$ ($= 2.06\,m$) the tilting angle $\alpha$ (see figure \ref{fig:draw_flight}) of GLAD in relation to the incoming beam line direction has to be considered. Consequential the angle $\delta$ between the trajectory connecting $(x_1,y_1)$ and $(x_2,y_2)$ and the line parallel to the GLAD width $L_{eff}$ can be determined as:
+To describe the distance between $(z_1,x_1)$ and $(z_2,x_2)$ with the given effective GLAD length $L_{eff}$ ($= 2.06\,m$) the tilting angle $\alpha$ (see figure \ref{fig:draw_flight}) of GLAD in relation to the incoming beam line direction has to be considered. Consequential the angle $\delta$ between the trajectory connecting $(z_1,x_1)$ and $(z_2,x_2)$ and the line parallel to the GLAD magnet width $L_{eff}$ can be determined as:
 \begin{flalign*}
-tan(\delta) &= |\frac{m_1-m_2}{1+ m_1\cdot m_2}|
+tan(\delta) &= \left| \frac{m_1-m_2}{1+ m_1\cdot m_2} \right|
 \end{flalign*}
 with $m_2 = -tan(\alpha)$:
 \begin{align*}
