@@ -36,14 +36,14 @@ Now that the scattering angle after the target $\theta_{in}$ and the angle after
 \begin{equation}\label{eq:rho_glad}
 r = \frac{L_{eff}}{2\,\cdot sin\left(\frac{\theta_{in}+\theta_{out}}{2}\right)\,\cdot cos\delta}
 \end{equation}
-where $L_{eff}$ is the effective active with of the magnetic field of GLAD, which correspons $\approx 2.06\,m$. This value could also be verified by extracting $L_{eff}$ from the formula for the magnetic rigidity $ B\,\cdot\,r = \gamma\beta \, m /q$ for empty target runs with known values of the B-field\footnote{For detector calibration, primarly for the ToFWall, we had several "empty sweep runs", with empty target and different B-field strenght settings. Those runs were optimal to validate $L_{eff}$.}.\newline
-The angle $\delta$ in equation \ref{eq:rho_glad} is given by the trajectory line going through $(x_1,y_1)$/$(x_2,y_2)$ and the line parallel to the GLAD magnet width $L_{eff}$.\newline
+where $L_{eff}$ is the effective active with of the magnetic field of GLAD, which correspons $\approx 2.06\,m$. This value could also be verified by extracting $L_{eff}$ from the formula for the magnetic rigidity $ B\cdot r = \gamma\beta \, m /q$ for empty target runs with known values of the B-field\footnote{For detector calibration, primarly for the ToFWall, we had several "empty sweep runs", with empty target and different B-field strenght settings. Those runs were optimal to validate $L_{eff}$.}.\newline
+The angle $\delta$ in equation \ref{eq:rho_glad} is given by the trajectory line going through $(z_1,x_1)$/$(z_2,x_2)$ and the line parallel to the GLAD magnet width $L_{eff}$.\newline
 A detailed derivation of equation \ref{eq:rho_glad} can be found in appendix \ref{app:flightpath}.
-The arc trajectory of the fragment within GLAD can be reconstructed using the bending radius $r$ and the entry and exit points $(z_1,x_1)$/$(z_2,x_2)$:
+The arc trajectory $s_{GLAD}$ of the fragment within GLAD can be reconstructed using the bending radius $r$ and the entry and exit points $(z_1,x_1)$/$(z_2,x_2)$:
 \begin{align*}
-
+s_{GLAD} &= r \cdot \omega\qquad \text{with}\qquad \omega = 2\cdot asin(t_{1/2}{(2\cdot r)})
 \end{align*}
-
+where $\omega$ is the central angle and  $t_{1/2}$ is the cord length between $(z_1,x_1)$ and $(z_2,x_2)$.
 
 \subsection{Event Selection}
 no major efforts on th event selection done, look up the code.
