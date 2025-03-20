@@ -39,11 +39,39 @@ r = \frac{L_{eff}}{2\,\cdot sin\left(\frac{\theta_{in}+\theta_{out}}{2}\right)\,
 where $L_{eff}$ is the effective active with of the magnetic field of GLAD, which correspons $\approx 2.06\,m$. This value could also be verified by extracting $L_{eff}$ from the formula for the magnetic rigidity $ B\cdot r = \gamma\beta \, m /q$ for empty target runs with known values of the B-field\footnote{For detector calibration, primarly for the ToFWall, we had several "empty sweep runs", with empty target and different B-field strenght settings. Those runs were optimal to validate $L_{eff}$.}.\newline
 The angle $\delta$ in equation \ref{eq:rho_glad} is given by the trajectory line going through $(z_1,x_1)$/$(z_2,x_2)$ and the line parallel to the GLAD magnet width $L_{eff}$.\newline
 A detailed derivation of equation \ref{eq:rho_glad} can be found in appendix \ref{app:flightpath}.
-The arc trajectory $s_{GLAD}$ of the fragment within GLAD can be reconstructed using the bending radius $r$ and the entry and exit points $(z_1,x_1)$/$(z_2,x_2)$:
+The arc trajectory $l_{GLAD}$ of the fragment within GLAD can be reconstructed using the bending radius $r$ and the entry and exit points $(z_1,x_1)$/$(z_2,x_2)$:
+\begin{equation}\label{eq:arc}
+l_{GLAD} = r \cdot \omega\qquad \text{with}\qquad \omega = 2\cdot asin(t_{1/2}{(2\cdot r)})
+\end{equation}
+where $\omega$ is the central angle and  $t_{1/2}$ is the cord length between $(z_1,x_1)$ and $(z_2,x_2)$.\newline
+At this stage the full pathlength $L$ form the Start detector to the ToFW is fixed:
+\begin{description}
+\item \textbf{From Start to the target $l_{ST}$:} For this path section a straight flightpath parallel to the z-coordinate is assumed. The pathlength is taken from the position measurements of the Start detector and the target accordingly ($=118.3\,cm$). 
+\item \textbf{Target to GLAD entrance point $(z_1,x_1)$, $l_{in}$:}For the  exact position assignment of $(z_1,x_1)$ both MWPC1 and MWPC2 position measurements have been calibrated with empty target runs by including an offset valuein order to center the x-position in both detectors around zero. From the position measurement of the central position of GLAD, its tilting angle $\alpha$ and $L_{eff}$ the intersection point of the fragment trajectory before GLAD and the "effective GLAD magnetic field rectangle", $(z_1,x_1)$, can be determined and with it the according flightpath section $l_{in}$.
+\item \textbf{Arc trajectory within GLAD, ${l_{GLAD}}$:}This flightpath passage is determined by reconstructing $(z_1,x_1)$ and $(z_2,x_2)$, as it has been described in detail in the previous section. Hence the magnetic bending radius can be determined, see equation \ref{eq:rho_glad}, and finally the arc trajectory ${l_{GLAD}}$ as in equation \ref{eq:arc}.
+\item \textbf{GLAD exit point $(z_2,x_2)$ to ToFW, $l_{out}$:}The hit position $(z_{MWPC3},x_{MWPC3})$ in MWPC3 is given by the reconstructed hit position in this detector and the position measurement of the detector itself. The exit point $(z_2,x_2)$ was reconstructed in the previous steps. Hence the trajectory line from $(z_2,x_2)$ to $(z_{MWPC3},x_{MWPC3})$ is fixed and is expanded to the intersection with the ToFW plane for the concluding $l_{out}$ measurement.  
+\end{description}
+The resulting flightpath $L$ recombines from:
 \begin{align*}
-s_{GLAD} &= r \cdot \omega\qquad \text{with}\qquad \omega = 2\cdot asin(t_{1/2}{(2\cdot r)})
+L &= l_{ST}+l_{in}+l_{GLAD} + l_{out} 
 \end{align*}
-where $\omega$ is the central angle and  $t_{1/2}$ is the cord length between $(z_1,x_1)$ and $(z_2,x_2)$.
+In the flightpath reconstruction the deflections in the y-dimension were omitted as the angular straggling in the target is small (TODO: give sigma value) and since the deflection of the fragment within GLAD is independent from its  y-position this contribution can be disregarded.
+
+
+\subsubsection{Time fof Flight Calibration -  SOFIA Start \& Time of Flight Wall}
+TODO: shortly explain VFTX, coarse time and fine time. \newline
+When going from mapped to cal you do RawTimeNs =  (coarse time)*5ns + offset[fine_time], this is no physical time\newline
+as next step you get the raw time:\newline
+RawTof = 0.5*(RawTimeNs_{i,down}+RawTimeNs_{i,up}) - 0.5*(RawTimeNs_{start,right}+RawTimeNs{start,left})\newline
+now real calibration starts:\newline
+To calculate the offset for each pad in ToFWall you have to do:\newline
+delta_offset = mean_pl[i]/v_beam  - raw_time_of_flight_ns_mean[i], where v_beam = 214,2mm/ns (you get this also from atima), using empty target runs
+To get final time resolution you do:
+mean_pl[i]/(pathlengt_eventvise[i]/calib_time_eventvise  now calib time has the delta_offset included
+time res, was somewhere around 90ps.
+
+
+
 
 \subsection{Event Selection}
 no major efforts on th event selection done, look up the code.
