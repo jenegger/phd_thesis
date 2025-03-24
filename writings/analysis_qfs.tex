@@ -58,17 +58,27 @@ L &= l_{ST}+l_{in}+l_{GLAD} + l_{out}
 In the flightpath reconstruction the deflections in the y-dimension were omitted as the angular straggling in the target is small (TODO: give sigma value) and since the deflection of the fragment within GLAD is independent from its  y-position this contribution can be disregarded.
 
 
-\subsubsection{Time fof Flight Calibration -  SOFIA Start \& Time of Flight Wall}
-TODO: shortly explain VFTX, coarse time and fine time. \newline
-When going from mapped to cal you do RawTimeNs =  (coarse time)*5ns + offset[fine_time], this is no physical time\newline
-as next step you get the raw time:\newline
-RawTof = 0.5*(RawTimeNs_{i,down}+RawTimeNs_{i,up}) - 0.5*(RawTimeNs_{start,right}+RawTimeNs{start,left})\newline
-now real calibration starts:\newline
-To calculate the offset for each pad in ToFWall you have to do:\newline
-delta_offset = mean_pl[i]/v_beam  - raw_time_of_flight_ns_mean[i], where v_beam = 214,2mm/ns (you get this also from atima), using empty target runs
-To get final time resolution you do:
-mean_pl[i]/(pathlengt_eventvise[i]/calib_time_eventvise  now calib time has the delta_offset included
-time res, was somewhere around 90ps.
+\subsubsection{Time of Flight Calibration -  SOFIA Start \& Time of Flight Wall}
+For the time of flight measurement in the S444 setup the time is recorded and digitized by the VFTX,  VME-FPGA Time-to-Digital Converter (TDC) Modules based on tapped delay line (TDL) TDCs\cite{bayer2009development}. These modules provide for each detected signal a coarse time, is determined by counting cycles of a 200 MHz readout clock, resulting in a 5 ns binning resolution, and a fine time, which is obtained using an FPGA-based Time-to-Digital Converter (TDC), which employs a tapped delay line (TDL). In this approach, the signal propagates through a series of delayed logic modules within the FPGA until the subsequent clock cycle terminates the sampling process. The number of delay elements traversed by the signal is used to compute the time difference between the signal onset and the end of the clock cycle. The translation of the resulting fine time, with reasonable assumption of an uniformly distributed fine time, is achieved via a calibrated linear function. This procedure assigns to each preamplifier signal in the start detector (left/right) and the ToF Wall (up/down) a calibrated raw time \textit{RawTimeNs}:
+\begin{align*}
+RawTimeNs &= coarse\_time\_clocks  \cdot 5ns + offset[fine\_time]
+\end{align*}
+Finally, the raw time of flight is reconstructed by combinding all four time measurements:
+\begin{align*}
+RawTof &= 0.5*(RawTimeNs\_{i,down}+RawTimeNs\_{i,up}) - 0.5*(RawTimeNs\_{start,right}+RawTimeNs{start,left})\newline
+\end{align*}
+where \textit{i} $(\in 0...27)$ refers to the scintillator number of the ToF Wall. As 
+
+%TODO: shortly explain VFTX, coarse time and fine time. \newline
+%When going from mapped to cal you do RawTimeNs =  (coarse time)*5ns + offset[fine_time], this is no physical time\newline
+%as next step you get the raw time:\newline
+%RawTof = 0.5*(RawTimeNs_{i,down}+RawTimeNs_{i,up}) - 0.5*(RawTimeNs_{start,right}+RawTimeNs{start,left})\newline
+%now real calibration starts:\newline
+%To calculate the offset for each pad in ToFWall you have to do:\newline
+%delta_offset = mean_pl[i]/v_beam  - raw_time_of_flight_ns_mean[i], where v_beam = 214,2mm/ns (you get this also from atima), using empty target runs
+%To get final time resolution you do:
+%mean_pl[i]/(pathlengt_eventvise[i]/calib_time_eventvise  now calib time has the delta_offset included
+%time res, was somewhere around 90ps.
 
 
 
