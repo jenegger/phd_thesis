@@ -3,7 +3,7 @@ Until the S444 experiment in 2020 CALIFA consisted out of a prototype frame fill
 Even though great improvements in the detector development  were achieved the correction factors to correct for geometric acceptance would be much too high ( $\approx$ 10) for precise cross section measurements for qfs-reactions since the correction factors would in turn rely on a a simplified reaction model. A precise analysis of the acceptance correction factor and the development of a more sophisticated and data driven reaction model is out of the scope of this work. Therefore this analysis focusses on the methods of qfs-reaction identification and the extraction of the key informations dicussed in section \ref{sec:qfs_theo}. TODO: add more stuff here...\newline
 \subsection{Setup-Calibration}
 For setup description refer to section \ref{sec:analysis_cross_sec}. For all detectors except the SOFIA (Study On FIssion with Aladin) Time of Flight Wall the calibration parameters investigated by the respective detector-expert group were adopted. Herefore we will subsequently only describe the Time of Flight Wall calibration in this subsection.
-\subsubsection{Flight-Path Reconstruction - SOFIA Time of Flight Wall}
+\subsubsection{Flight-Path Reconstruction - SOFIA Time of Flight Wall}\label{subsec:flightpath_reco}
 The procedure to calibrate the Time of Flight (ToF) Wall involves beforehand a precise flight-path reconstruction of the projectile from the entrance of Cave C downstream to the ToF Wall. Since only one tracking detector downstream to GLAD was in operation for the S444 experiment no angle of the deflected fragment/beam $\theta_{out}$ could be directly extracted. Herefore an advanced tracking algorithm was developed, motivated from ref. \cite{bertini2013study} (section 3.4). 
 \begin{itemize}
 \item The first step is to measure the scattering angle after target, $\theta_{in}$, and draw an extended line from the target position through the effective magnetic field of GLAD.  
@@ -59,15 +59,28 @@ In the flightpath reconstruction the deflections in the y-dimension were omitted
 
 
 \subsubsection{Time of Flight Calibration -  SOFIA Start \& Time of Flight Wall}
-For the time of flight measurement in the S444 setup the time is recorded and digitized by the VFTX,  VME-FPGA Time-to-Digital Converter (TDC) Modules based on tapped delay line (TDL) TDCs\cite{bayer2009development}. These modules provide for each detected signal a coarse time, is determined by counting cycles of a 200 MHz readout clock, resulting in a 5 ns binning resolution, and a fine time, which is obtained using an FPGA-based Time-to-Digital Converter (TDC), which employs a tapped delay line (TDL). In this approach, the signal propagates through a series of delayed logic modules within the FPGA until the subsequent clock cycle terminates the sampling process. The number of delay elements traversed by the signal is used to compute the time difference between the signal onset and the end of the clock cycle. The translation of the resulting fine time, with reasonable assumption of an uniformly distributed fine time, is achieved via a calibrated linear function. This procedure assigns to each preamplifier signal in the start detector (left/right) and the ToF Wall (up/down) a calibrated raw time \textit{RawTimeNs}:
+For the time of flight measurement in the S444 setup the time is recorded and digitized by the VFTX,  VME-FPGA Time-to-Digital Converter (TDC) Modules based on tapped delay line (TDL) TDCs\cite{bayer2009development}. These modules provide for each detected signal a coarse time, is determined by counting cycles of a 200 MHz readout clock, resulting in a 5 ns binning resolution, and a fine time, which is obtained using an FPGA-based Time-to-Digital Converter (TDC), which employs a tapped delay line (TDL). In this approach, the signal propagates through a series of delayed logic modules within the FPGA until the subsequent clock cycle terminates the sampling process. The number of delay elements traversed by the signal is used to compute the time difference between the signal onset and the end of the clock cycle. The translation of the resulting fine time, with reasonable assumption of an uniform distribution, is achieved via a calibrated linear function. This procedure assigns to each preamplifier signal in the start detector (left/right) and the ToF Wall (up/down) a calibrated raw time \textit{raw\_t}:
 \begin{align*}
-RawTimeNs &= coarse\_time\_clocks  \cdot 5ns + offset[fine\_time]
+raw\_t &= coarse\_time\_clocks  \cdot 5ns + offset[fine\_time]
 \end{align*}
 Finally, the raw time of flight is reconstructed by combinding all four time measurements:
+\begin{gather}
+RawTof = 0.5*(raw\_t_{i,down}+raw\_t_{i,up}) - 0.5*(raw\_t_{start,right}+raw\_t_{start,left})
+\end{gather}
+where \textit{i} $(\in 0...27)$ refers to the scintillator number of the ToF Wall. Since the mentioned time measurements are standalone and not synchronized the \textit{RawToF} has to be corrected by an offset which has to be determined again for each scintillator bar \textit{i} of the ToF Wall:
 \begin{align*}
-RawTof &= 0.5*(RawTimeNs\_{i,down}+RawTimeNs\_{i,up}) - 0.5*(RawTimeNs\_{start,right}+RawTimeNs{start,left})\newline
+\Delta_{ToF}[i] &= \overline{L[i]}/v_{beam} - \overline{RawTof[i]}
+\end{align*} 
+where $\overline{L[i]}$ is the mean reconstructed path length for all events in empty target runs which hit scintillator bar \textit{i} of the ToF Wall. The beam velocity $v_{beam}$ is directly taken from the given beam settings, e.g. 400 AMeV beam, emtpy target corresponds to $v_{beam} = 214,2mm/ns$. The mean raw ToF $\overline{RawTof[i]}$ again results from all events which hit scintillator bar \textit{i} and is extracted from the mean value of a gaussian fit to the raw ToF. The resulting calibrated ToF can then be expressed as:
+\begin{align*}
+ToF[i] = 0.5*(raw\_t_{i,down}+raw\_t_{i,up}) - 0.5*(raw\_t_{start,right}+raw\_t_{start,left}) + \Delta_{ToF}[i]
+\end{align*}  
+To estimate the time of flight resolution for events with hit in ToF Wall bar \textit{i} it has to be noted that the ToF is affected by the flight path. Hence the the time of flight should be written as:
+\begin{align*}
+\widetilde{ToF} = \frac{$\overline{L[i]}$}{\frac{L[i]}{ToF[i]}}\footnote{$\overline{L[i]}$ is the mean pathlength, whereas $L[i]$ and $ToF[i]$ are eventwise selected}.
 \end{align*}
-where \textit{i} $(\in 0...27)$ refers to the scintillator number of the ToF Wall. As 
+The average time resolution $\sigma_t$ reconstructing the fligh-path as described in subsection \ref{subsec:flightpath_reco} and the mentioned time calibration steps results in $\approx 90 ps$\footnote{To reduce
+
 
 %TODO: shortly explain VFTX, coarse time and fine time. \newline
 %When going from mapped to cal you do RawTimeNs =  (coarse time)*5ns + offset[fine_time], this is no physical time\newline
