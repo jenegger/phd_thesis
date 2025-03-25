@@ -96,6 +96,9 @@ However, for the identification of fragments downstream of the target, various d
 \item One hit scintillation bar in ToF Wall with signal from both up/down PMTs.
 \end{itemize}
 \subsection{Fragment Identification}
+The first step for the identification of the QFS-reaction channel $^{12}C(p,2p)^{11}B$ is the identification of the fragment $^{11}B$ via the formula for the magnetic rigidity: $ B\cdot r = \gamma\beta \, m /q$. From the flightpath reconstruction and the ToF measurement as described in previous sections $r$,$\beta$ and $\gamma$ are obtained whereas the charge of the fragment $q$ is directly measured in the TWIN MUSIC detector. 
+
+
 -> mention magnetic rigidity and lorentz transformation stuff...!
 -> plot A/q plot, explain it well also the peak at Z ~8
 -> make also a sketch of the qfs- event with the two protons and the fragment and the gamma
@@ -107,7 +110,33 @@ However, for the identification of fragments downstream of the target, various d
 ->some simulations to compare....
 -> reconstruction of inner momentum. Give also some values
 -> Correlations between fragment and proton pair
-\subsubsection{Separation energy}
+\subsubsection{Proton Separation Energy $S_p$}
+The proton separation energy $S_p$ of $^{12}C$ from the reaction channel $^{12}C(p,2p)^{11}B$ is defined by the masses and energies of the initial and final state particles in the $^{12}C$ rest frame. One can write the full energy conservation in the rest frame of $^{12}C$:
+\begin{equation}
+M_{^{12}C} + \gamma \cdot m_p = E_1^* + E_2^* + (M_{^{11}B} + E_{ex})  + T_{^{11}B^*}
+\end{equation}
+where $E_1^*$ and $E_2^*$ are total energies of the two protons in the $^{12}C$ rest frame, $E_{ex}$ is residual excitation in $^{11}B$ and $T_{^{11}B^*}$ the kinetic energy of the $^{11}B$ in the $^{12}C$ rest frame.\newline
+Using this equation, one can express the total binding energy $B$ of the knocked out nucleon:
+\begin{equation}
+B = S_p - E_{ex} = M_{^{12}C} - M_{^{11}B} - E_{ex} - m_p = E_1^* + E_2^* + T_{^{11}B^*} - \gamma \cdot m_p - m_p
+\end{equation}
+Using Lorentz transformation from lab to 12C rest frame one can obtain for $E_1^*/E_2^*$:
+\begin{align*}
+E_{1/2}^* &=  \gamma \cdot m_p + \gamma \cdot T_{1/2} - \beta \cdot \gamma \cdot p_{1/2} \cdot cos(\theta_{1/2})
+\end{align*}
+The kinetic energy of the $^{11}B$ in the $^{12}C$ rest frame can be written as:
+\begin{align*}
+T_{^{11}B^*} &= \frac{p_i^2}{2 \cdot M_{^{11}B}}
+\end{align*}
+with $p_i$ the inner momentum of the proton knocked out of the $^{12}C$ projectile, see equation \ref{eq:miss_mom}.
+Putting this in the previous equation one finally gets for the binding energy $B$:
+\begin{equation}
+B = (\gamma - 1)\cdot m_p + \gamma \cdot (T_1+T_2) - \beta \cdot \gamma \cdot(p_1*cos(\theta_1) + p_2*cos(\theta_2)) + T_{^{11}B}
+\end{equation}
+For $E_{ex} = 0$, i.e. the fragment $^{11}B$ in the ground state, the binding energy $B$ is equal to the one proton separation energy $S_p$. 
+As for the S444 experiment no target detector tracking system was available
+
+
 \subsection{Reconstruction of excited$ ^{11}$B states}
 ->Show level scheme of 11B, explain excited states and why it is not expected to see any peaks at 4.4 MeV.
 ->Explain Doppler correction (this is really the key point of the CALIFA, why it is highly segmented)
