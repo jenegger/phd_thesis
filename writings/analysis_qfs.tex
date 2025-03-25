@@ -77,32 +77,40 @@ ToF[i] = 0.5*(raw\_t_{i,down}+raw\_t_{i,up}) - 0.5*(raw\_t_{start,right}+raw\_t_
 \end{align*}  
 To estimate the time of flight resolution for events with hit in ToF Wall bar \textit{i} it has to be noted that the ToF is affected by the flight path. Hence the the time of flight should be written as:
 \begin{align*}
-\widetilde{ToF} = \frac{$\overline{L[i]}$}{\frac{L[i]}{ToF[i]}}\footnote{$\overline{L[i]}$ is the mean pathlength, whereas $L[i]$ and $ToF[i]$ are eventwise selected}.
+%ToF &= \frac{$\overline{L[i]}$}{\frac{L[i]}{ToF[i]}}
+\widetilde{ToF} &= \frac{\overline{L[i]}}{\frac{L[i]}{ToF[i]}}
 \end{align*}
-The average time resolution $\sigma_t$ reconstructing the fligh-path as described in subsection \ref{subsec:flightpath_reco} and the mentioned time calibration steps results in $\approx 90 ps$\footnote{To reduce
-
-
-%TODO: shortly explain VFTX, coarse time and fine time. \newline
-%When going from mapped to cal you do RawTimeNs =  (coarse time)*5ns + offset[fine_time], this is no physical time\newline
-%as next step you get the raw time:\newline
-%RawTof = 0.5*(RawTimeNs_{i,down}+RawTimeNs_{i,up}) - 0.5*(RawTimeNs_{start,right}+RawTimeNs{start,left})\newline
-%now real calibration starts:\newline
-%To calculate the offset for each pad in ToFWall you have to do:\newline
-%delta_offset = mean_pl[i]/v_beam  - raw_time_of_flight_ns_mean[i], where v_beam = 214,2mm/ns (you get this also from atima), using empty target runs
-%To get final time resolution you do:
-%mean_pl[i]/(pathlengt_eventvise[i]/calib_time_eventvise  now calib time has the delta_offset included
-%time res, was somewhere around 90ps.
-
-
-
+$\overline{L[i]}$ is the mean pathlength, whereas $L[i]$ and $ToF[i]$ are eventwise selected.
+By reconstructing the fligh-path as described in subsection \ref{subsec:flightpath_reco} and employment of the mentioned time calibration steps the average time resolution $\sigma_t$ results $\approx 90\, ps$\footnote{To remove events with large angular straggling, a cut of $\pm 20mm$ on the beam spot for the y-position on the MWPC3 was applied.}.
 
 \subsection{Event Selection}
-no major efforts on th event selection done, look up the code.
+For the precise measurement of the total interaction cross section $^{12}C + ^{12}C$, as detailed in the section \ref{sec:analysis_cross_sec}, event selection was of critical importance, requiring stringent cuts on the TPats (see table \ref{tab:tpats}), as well as on the charge and position of the incoming particles. In contrast, for this qualitative QFS analysis, these factors played a minor role, allowing for only minimal cuts on the incoming ions:
+\begin{itemize}
+\item Both left and right preamplifiers of the start detector have seen a coincident signal.
+\item Exactly one hit in MWPC0 in the hit-level data.
+\end{itemize}
+However, for the identification of fragments downstream of the target, various detector signals and event parameters are required:
+\begin{itemize} 
+\item One hit (in the hit-level data) in the MWPC tracking detectors, MWPC1 and MWPC2 upstream to GLAD, MWPC3 downstream to GLAD.
+\item Charge measurement in the TWIN-MUSIC.
+\item One hit scintillation bar in ToF Wall with signal from both up/down PMTs.
+\end{itemize}
 \subsection{Fragment Identification}
-->order of reconstruction: first fragment, critical! then the two protons
-
+-> mention magnetic rigidity and lorentz transformation stuff...!
+-> plot A/q plot, explain it well also the peak at Z ~8
+-> make also a sketch of the qfs- event with the two protons and the fragment and the gamma
 \subsection{QFS-Protons}
-
+->polar angle correlation/opening angle peak
+->Azimuthal angle distribution, maybe I can clean it up making a cut on the energy...
+-> opening angle... do I have a nicer plot?
+->Califa front view plot of detector, explain that it was only partly filled etc... 
+->some simulations to compare....
+-> reconstruction of inner momentum. Give also some values
+-> Correlations between fragment and proton pair
+\subsubsection{Separation energy}
 \subsection{Reconstruction of excited$ ^{11}$B states}
-
-\subsection{Separation energy, correlation fragment protons, aob..}
+->Show level scheme of 11B, explain excited states and why it is not expected to see any peaks at 4.4 MeV.
+->Explain Doppler correction (this is really the key point of the CALIFA, why it is highly segmented)
+-> show all conditions that you apply
+-> This comm. exp. has shown that we can really pin down reaction mechanism and we are ready for exciting p2p experiments
+-> Limitations: CALIFA was only partly filled for this exp. 
