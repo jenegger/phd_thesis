@@ -111,18 +111,40 @@ Furthermore, it is important to note the apparent cut at $Z \approx 4$ in the da
     }
     \label{fig:a_q_vs_q}
 \end{figure}
+For this qualitative analysis, the upper charge bound of $^{11}B$ was determined by locating the intersection point of the Gaussian-fitted distributions corresponding to the $Z=5$ and $Z=6$ peaks. The lower bound was set by applying an offset of minus one unit.\newline
+A similar approach was employed to select the specific boron isotope $^{11}B$. The charge selection was performed using the previously defined boundary cuts. To isolate the $^{11}B$ isotopes, the lower bound was determined by identifying the intersection point of the Gaussian-fitted distributions corresponding to the $^{10}B$ and $^{11}B$ peaks. The upper bound was established by measuring the distance from this intersection point to the peak of $^{11}B$.
 
 \subsection{QFS-Protons}
+Following the identification of the fragments through precise flight path reconstruction and time measurement, as detailed in the previous subsection, and the subsequent selection of the $^{11}B$ isotope, the analysis focuses on the two correlated protons to fully characterize the quasi-free scattering channel $^{12}C(p,2p)^{11}B$.\newline
+For a proper interpretation of the data, it is essential to consider the geometric acceptance of CALIFA during the S444 experiment in 2020. The central \textit{BARREL} region (Ring 3 and Ring 4), covering the polar angular range from $43^{\circ}$ to $88^{\circ}$, was fully operational. In contrast, the forward region, referred to as \textit{iPhos} ($19^{\circ}$ to $43^{\circ}$), was only partially equipped, with a coverage of approximately $35\%$. The forward endcap, known as \textit{CEPA}, was not installed, and the backward barrel remained unoccupied. The corresponding geometry is illustrated in Figure \ref{fig:qfs_reac_and_geo}.\newline
+\begin{figure}[htpb]
+    \centering
+    \subfloat[\centering Quasi-free scattering channel $^{12}C(p,2p)^{11}B$]{{\includegraphics[width=6cm]{Figures/reaction_qfs_model.png} }}%
+    \qquad
+    \subfloat[\centering Simulated front view of the CALIFA calorimeter in 2020.]{{\includegraphics[width=6cm]{Figures/CALIFA2020Front.png} }}%
+    \caption{Tagging the $^{12}C(p,2p)^{11}B$ channel with only partly filled CALIFA calorimeter for the detection of the two correlated protons.}%
+    \label{fig:qfs_reac_and_geo}%
+\end{figure}
+For the proton selection and the application of reasonable cuts it is important to understand the processing steps of the raw \textit{mapped} level data to the \textit{cal} level and finally \textit{hit} level data. The \textit{mapped} level data has following structure for each CALIFA hit:
+For an accurate proton selection and the application of appropriate cuts, it is crucial to understand the data processing steps from the raw \textit{mapped}-level to the \textit{cal}-level and finally to the \textit{hit}-level. The \textit{mapped}-level data for each CALIFA hit is structured as follows:
+\begin{itemize}
+\item[$\blacksquare$] CrystalID
+\item[$\blacksquare$] Uncalibrated Energy
+\item[$\blacksquare$] Slow Component $N_s$
+\item[$\blacksquare$] Fast Component $N_f$
+\item[$\blacksquare$] WRTS
+\item[$\blacksquare$] Time over Threshold
+\end{itemize}
 
 ->Explain cuts that are made in CALIFA and how the clustering works
 Plots I need:
 -> the overview plot also with plot of CALIFA view/partly filled-> you need two subfigures
 
-\begin{wrapfigure}{l}{0.25\textwidth}
-\includegraphics[width=0.9\linewidth]{Figures/reaction_qfs_model.png} 
-\caption{QFS-reaction overview $^{12}C(p,2p)^{11}B$. }
-\label{fig:wrapfig}
-\end{wrapfigure}
+%\begin{wrapfigure}{l}{0.25\textwidth}
+%\includegraphics[width=0.9\linewidth]{Figures/reaction_qfs_model.png} 
+%\caption{QFS-reaction overview $^{12}C(p,2p)^{11}B$. }
+%\label{fig:wrapfig}
+%\end{wrapfigure}
 ->Polar angle correlation plot, explain wixhausen/messel side, this was due to configuration
 ->Azimuthal angle correlation plot, explain also how this was done
 ->Opening angle, also with formula, maybe also with simulation? Easy to be done..
