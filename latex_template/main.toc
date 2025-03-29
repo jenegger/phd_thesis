@@ -47,8 +47,14 @@
 \contentsline {subsection}{\numberline {5.3}Fragment Identification}{69}{subsection.5.3}%
 \contentsline {subsection}{\numberline {5.4}QFS-Protons}{71}{subsection.5.4}%
 \contentsline {subsubsection}{\numberline {5.4.1}Proton Separation Energy $S_p$}{72}{subsubsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.5}Reconstruction of excited$ ^{11}$B states}{73}{subsection.5.5}%
-\contentsline {section}{\numberline {6}Results and Discussion}{75}{section.6}%
+\contentsline {subsection}{\numberline {5.5}Reconstruction of excited$ ^{11}$B states}{74}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Fission via Quasi-Free Scattering reaction}{74}{subsection.5.6}%
+\contentsline {section}{\numberline {6}Machine Learning in CALIFA Hit Clustering for $\gamma $ - rays}{75}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Data Simulation and Selection}{75}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Agglomerative Clustering Model}{75}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}"Edge Model" - Graphical NN}{75}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}Combination of both methods}{75}{subsubsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.4}Results}{75}{subsection.6.4}%
 \contentsline {section}{Appendices}{76}{section*.54}%
 \contentsline {section}{\numberline {A}TWIN MUSIC Geometric Acceptance Correction via Efficiency Measurement}{76}{appendix.1.A}%
 \contentsline {section}{\numberline {B}Flight-Path Reconstruction}{77}{appendix.1.B}%

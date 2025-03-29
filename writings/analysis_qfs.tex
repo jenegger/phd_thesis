@@ -116,7 +116,7 @@ A similar approach was employed to select the specific boron isotope $^{11}B$. T
 
 \subsection{QFS-Protons}
 Following the identification of the fragments through precise flight path reconstruction and time measurement, as detailed in the previous subsection, and the subsequent selection of the $^{11}B$ isotope, the analysis focuses on the two correlated protons to fully characterize the quasi-free scattering channel $^{12}C(p,2p)^{11}B$.\newline
-For a proper interpretation of the data, it is essential to consider the geometric acceptance of CALIFA during the S444 experiment in 2020. The central \textit{BARREL} region (Ring 3 and Ring 4), covering the polar angular range from $43^{\circ}$ to $88^{\circ}$, was fully operational. In contrast, the forward region, referred to as \textit{iPhos} ($19^{\circ}$ to $43^{\circ}$), was only partially equipped, with a coverage of approximately $35\%$. The forward endcap, known as \textit{CEPA}, was not installed, and the backward barrel remained unoccupied. The corresponding geometry is illustrated in Figure \ref{fig:qfs_reac_and_geo}.\newline
+For a proper interpretation of the data, it is essential to consider the geometric acceptance of CALIFA during the S444 experiment in 2020. The central \textit{BARREL} region (Ring 3 and Ring 4), covering the polar angular range from $43^{\circ}$ to $88^{\circ}$, was fully operational. In contrast, the forward region, referred to as \textit{iPhos} ($19^{\circ}$ to $43^{\circ}$), was only partially equipped, with a coverage of approximately $35\%$. The forward endcap, known as \textit{CEPA}, was not installed, and the backward barrel remained unoccupied. The corresponding geometry is illustrated in figure \ref{fig:qfs_reac_and_geo}.\newline
 \begin{figure}[htpb]
     \centering
     \subfloat[\centering Quasi-free scattering channel $^{12}C(p,2p)^{11}B$]{{\includegraphics[width=6cm]{Figures/reaction_qfs_model.png} }}%
@@ -136,9 +136,15 @@ For an accurate proton selection and the application of appropriate cuts, it is 
 \item[$\blacksquare$] Time over Threshold
 \end{itemize}
 
+The \textit{cal}-level data is structured as in the \textit{mapped}-level, however with calibrated energy by applying the calibration parameters from calibration run to each crystal channel.\newline
+For the calibration runs a $^{22}Na$ (with peaks at $511keV$ and $1275keV$) or a $^{60}Co$ (with peaks at $1173keV$ and $1332keV$) is used. For each crystal channel a linear fit on the two photopeaks is performed. Using this fitting function, the uncalibrated energy, expressed in energy channels, can be converted into calibrated energy values.\newline
+For the final \textit{hit}-level data the energy-calibrated hits from \textit{cal}-level are merged to clusters.
+
+
+\footnote{For this analyis, when going from \textit{mapped} to \textit{cal}-level an energy threshold $E_{thr}$ of $100keV$ was applied. All hits with $E_{hit} < E_{thr}$ were omitted in the } 
+
 ->Explain cuts that are made in CALIFA and how the clustering works
 Plots I need:
--> the overview plot also with plot of CALIFA view/partly filled-> you need two subfigures
 
 %\begin{wrapfigure}{l}{0.25\textwidth}
 %\includegraphics[width=0.9\linewidth]{Figures/reaction_qfs_model.png} 
@@ -193,3 +199,10 @@ The best way to visualize the separation energy $S_p$ id to plot it against the 
 -> show all conditions that you apply
 -> This comm. exp. has shown that we can really pin down reaction mechanism and we are ready for exciting p2p experiments
 -> Limitations: CALIFA was only partly filled for this exp. 
+\subsection{Fission via Quasi-Free Scattering reaction}
+-> shortly explain the challenges behind, idea should be in the theory part. Also mention that this was complementary experiment to Coulex Exp, where nature paper was submitted
+-> mention that TUM Munich group was strongly involved
+-> Charge reconstruction is done, mention the papers and publications
+-> One really interesting aspect would have been to pick out specific reaction channels, eg. with one fission fragment being a thin isotope and look at the gamma spectrum. 
+-> the issue there is of course that precise thin isotope cannot be selected yet. But from CALIFA side this was motivation to improve the clustering algorithm, especially for fission reactions, where you have lot more hits in CALIFA. And there especially looking at low energy hits from gammas, which can be quite sparse.
+-> This should then be the introduction for the next section about clustering.
