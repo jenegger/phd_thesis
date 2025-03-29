@@ -23,36 +23,37 @@ I'm skipping whatever remains of this entry
 Warning--empty author in clas2018probing
 Warning--empty journal in hartigevolution
 Warning--empty year in hartigevolution
-You've used 45 entries,
+Warning--empty journal in serrano2013white
+You've used 46 entries,
             1876 wiz_defined-function locations,
-            745 strings with 12194 characters,
-and the built_in function-call counts, 12009 in all, are:
-= -- 1173
-> -- 580
+            748 strings with 12349 characters,
+and the built_in function-call counts, 12222 in all, are:
+= -- 1184
+> -- 603
 < -- 0
-+ -- 214
-- -- 169
-* -- 829
-:= -- 1726
-add.period$ -- 58
-call.type$ -- 45
-change.case$ -- 40
++ -- 222
+- -- 176
+* -- 849
+:= -- 1765
+add.period$ -- 59
+call.type$ -- 46
+change.case$ -- 41
 chr.to.int$ -- 0
-cite$ -- 48
-duplicate$ -- 626
-empty$ -- 1027
-format.name$ -- 169
-if$ -- 2941
+cite$ -- 50
+duplicate$ -- 635
+empty$ -- 1044
+format.name$ -- 176
+if$ -- 2985
 int.to.chr$ -- 0
-int.to.str$ -- 45
-missing$ -- 32
-newline$ -- 152
-num.names$ -- 39
-pop$ -- 141
+int.to.str$ -- 46
+missing$ -- 33
+newline$ -- 155
+num.names$ -- 40
+pop$ -- 147
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 479
+skip$ -- 480
 stack$ -- 0
 substring$ -- 573
 swap$ -- 295
@@ -60,8 +61,8 @@ text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 3
-while$ -- 97
-width$ -- 47
-write$ -- 460
+warning$ -- 4
+while$ -- 98
+width$ -- 48
+write$ -- 467
 (There were 3 error messages)

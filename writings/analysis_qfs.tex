@@ -128,29 +128,25 @@ For a proper interpretation of the data, it is essential to consider the geometr
 For the proton selection and the application of reasonable cuts it is important to understand the processing steps of the raw \textit{mapped} level data to the \textit{cal} level and finally \textit{hit} level data. The \textit{mapped} level data has following structure for each CALIFA hit:
 For an accurate proton selection and the application of appropriate cuts, it is crucial to understand the data processing steps from the raw \textit{mapped}-level to the \textit{cal}-level and finally to the \textit{hit}-level. The \textit{mapped}-level data for each CALIFA hit is structured as follows:
 \begin{itemize}
-\item[$\blacksquare$] CrystalID
+\item[$\blacksquare$] CrystalID: each crystal channel gets assigned a unique ID. Gamma range channels are in the range up to 2550, proton range ones from 2550 up to ..
 \item[$\blacksquare$] Uncalibrated Energy
-\item[$\blacksquare$] Slow Component $N_s$
-\item[$\blacksquare$] Fast Component $N_f$
-\item[$\blacksquare$] WRTS
-\item[$\blacksquare$] Time over Threshold
+\item[$\blacksquare$] Slow Component $N_s$, extracted from the signal shape, see \cite{winkel2011implementierung}, section 2.
+\item[$\blacksquare$] Fast Component $N_f$, extracted from the signal shape, see \cite{winkel2011implementierung}, section 2.
+\item[$\blacksquare$] WRTS: White Rabbit Time Stamp\cite{serrano2013white}, interpolated from FEBEX inner clock.
+\item[$\blacksquare$] Time over Threshold, optionally activated for $\gamma$-range channels to reconstruct energies beyond range.
 \end{itemize}
 
 The \textit{cal}-level data is structured as in the \textit{mapped}-level, however with calibrated energy by applying the calibration parameters from calibration run to each crystal channel.\newline
-For the calibration runs a $^{22}Na$ (with peaks at $511keV$ and $1275keV$) or a $^{60}Co$ (with peaks at $1173keV$ and $1332keV$) is used. For each crystal channel a linear fit on the two photopeaks is performed. Using this fitting function, the uncalibrated energy, expressed in energy channels, can be converted into calibrated energy values.\newline
-For the final \textit{hit}-level data the energy-calibrated hits from \textit{cal}-level are merged to clusters.
+For the calibration runs a $^{22}Na$ (with peaks at $511keV$ and $1275keV$) or a $^{60}Co$ (with peaks at $1173keV$ and $1332keV$) source is used. For each crystal channel a linear fit on the two photopeaks is performed. Using this fitting function, the uncalibrated energy, expressed in energy channels, can be converted into calibrated energy values.\newline
+For the final \textit{hit}-level data, the energy-calibrated hits from the \textit{cal}-level are merged into clusters. High-energy proton hits ($E_{hit} > 15 MeV$) and low-energy $\gamma$ hits are first listed and sorted in descending energy order. Clusters are then formed using a cone-shaped approach, where each cluster is centered around the highest-energy hit with a half-opening angle of $\theta_c = 14.3^{\circ}$. All hits within this angular region are merged into the cluster. This process is iteratively repeated until both the high- and low-energy lists are empty. To improve the signal-to-noise ratio in this analysis, hits with energy values below the threshold of $E_{thr} = 100keV$ are discarded during clustering.\newline
+The resulting correlations in polar and azimuthal angles,with the only cut to have at least two high energy clusters with energy larger 15 MeV, with respect to the simulated \textit{p2p}-simulations are shown in figure 1 and figure 2 accordingly. 
 
 
-\footnote{For this analyis, when going from \textit{mapped} to \textit{cal}-level an energy threshold $E_{thr}$ of $100keV$ was applied. All hits with $E_{hit} < E_{thr}$ were omitted in the } 
 
-->Explain cuts that are made in CALIFA and how the clustering works
-Plots I need:
+\begin{equation}\label{eq:opang}
+\theta_{p2p} = acos\left( \sin(\theta_1) \sin(\theta_2) \cos(\phi_2 - \phi_1) + \cos(\theta_1) \cos(\theta_2) \right)
+\end{equation}
 
-%\begin{wrapfigure}{l}{0.25\textwidth}
-%\includegraphics[width=0.9\linewidth]{Figures/reaction_qfs_model.png} 
-%\caption{QFS-reaction overview $^{12}C(p,2p)^{11}B$. }
-%\label{fig:wrapfig}
-%\end{wrapfigure}
 ->Polar angle correlation plot, explain wixhausen/messel side, this was due to configuration
 ->Azimuthal angle correlation plot, explain also how this was done
 ->Opening angle, also with formula, maybe also with simulation? Easy to be done..

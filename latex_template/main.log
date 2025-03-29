@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.24)  29 MAR 2025 13:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.24)  29 MAR 2025 18:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1502,41 +1502,43 @@ File: Figures/CALIFA2020Front.png Graphic file (type png)
 <use Figures/CALIFA2020Front.png>
 Package pdftex.def Info: Figures/CALIFA2020Front.png  used on input line 124.
 (pdftex.def)             Requested size: 170.71652pt x 191.24161pt.
- [71 <./Figures/reaction_qfs_model.png> <./Figures/CALIFA2020Front.png>]
+ [71 <./Figures/reaction_qfs_model.png> <./Figures/CALIFA2020Front.png>] [72]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 161.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 161.
+(hyperref)                removing `math shift' on input line 157.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 161.
+(hyperref)                removing `subscript' on input line 157.
 
-[72]
-<Figures/sep_energy_vs_sum_energy.png, id=1214, 954.56625pt x 648.4225pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 157.
+
+<Figures/sep_energy_vs_sum_energy.png, id=1216, 954.56625pt x 648.4225pt>
 File: Figures/sep_energy_vs_sum_energy.png Graphic file (type png)
 <use Figures/sep_energy_vs_sum_energy.png>
 Package pdftex.def Info: Figures/sep_energy_vs_sum_energy.png  used on input li
-ne 189.
+ne 185.
 (pdftex.def)             Requested size: 418.85979pt x 284.52515pt.
- [73]
+[73]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 196.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 196.
+(hyperref)                removing `math shift' on input line 192.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 196.
+(hyperref)                removing `superscript' on input line 192.
 
-) (./../writings/califa_odsl_clustering.tex [74 <./Figures/sep_energy_vs_sum_en
-ergy.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 192.
+
+
+Underfull \vbox (badness 1024) has occurred while \output is active []
+
+ [74 <./Figures/sep_energy_vs_sum_energy.png>]) (./../writings/califa_odsl_clus
+tering.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1550,7 +1552,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
 ) [75] (./../writings/appendix.tex
-<Figures/charge_changing_cross_sec_twim_eff_corr.png, id=1234, 462.528pt x 346.
+<Figures/charge_changing_cross_sec_twim_eff_corr.png, id=1237, 462.528pt x 346.
 896pt>
 File: Figures/charge_changing_cross_sec_twim_eff_corr.png Graphic file (type pn
 g)
@@ -1558,7 +1560,7 @@ g)
 Package pdftex.def Info: Figures/charge_changing_cross_sec_twim_eff_corr.png  u
 sed on input line 11.
 (pdftex.def)             Requested size: 303.49796pt x 227.62346pt.
-<Figures/tot_interaction_cs_twim_eff_corr.png, id=1238, 462.528pt x 346.896pt>
+<Figures/tot_interaction_cs_twim_eff_corr.png, id=1241, 462.528pt x 346.896pt>
 File: Figures/tot_interaction_cs_twim_eff_corr.png Graphic file (type png)
 <use Figures/tot_interaction_cs_twim_eff_corr.png>
 Package pdftex.def Info: Figures/tot_interaction_cs_twim_eff_corr.png  used on 
@@ -1575,7 +1577,7 @@ VIA EFFICIENCY MEASUREMENT
  []
 
 [76 <./Figures/charge_changing_cross_sec_twim_eff_corr.png>]
-<Figures/drawings_flightpath.png, id=1251, 871.255pt x 774.895pt>
+<Figures/drawings_flightpath.png, id=1254, 871.255pt x 774.895pt>
 File: Figures/drawings_flightpath.png Graphic file (type png)
 <use Figures/drawings_flightpath.png>
 Package pdftex.def Info: Figures/drawings_flightpath.png  used on input line 30
@@ -1663,10 +1665,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 1D894385A5DF78892A0860A4C001A36F;13946.
  ) 
 Here is how much of TeX's memory you used:
- 19875 strings out of 480121
- 344936 string characters out of 5892160
- 668200 words of memory out of 5000000
- 37099 multiletter control sequences out of 15000+600000
+ 19879 strings out of 480121
+ 345001 string characters out of 5892160
+ 668314 words of memory out of 5000000
+ 37102 multiletter control sequences out of 15000+600000
  497306 words of font info for 101 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  61i,22n,75p,1639b,698s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1711,10 +1713,10 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (92 pages, 19772124 bytes).
+Output written on main.pdf (92 pages, 19771774 bytes).
 PDF statistics:
  2324 PDF objects out of 2487 (max. 8388607)
- 1254 compressed objects within 13 object streams
- 363 named destinations out of 1000 (max. 500000)
+ 1257 compressed objects within 13 object streams
+ 364 named destinations out of 1000 (max. 500000)
  769 words of extra memory for PDF output out of 10000 (max. 10000000)
 
