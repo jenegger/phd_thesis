@@ -16,6 +16,7 @@ The procedure to calibrate the Time of Flight (ToF) Wall involves beforehand a p
     \centering
     % First subfigure
     \begin{subfigure}[b]{0.70\textwidth}
+		\centering
         \includegraphics[width=\textwidth]{Figures/kick_point_algorithm.png}
         \caption{Flightpath reconstruction with "Leff" being the effective active width of the magnetic field of GLAD}
         \label{fig:sub1_reco_path}
@@ -23,6 +24,7 @@ The procedure to calibrate the Time of Flight (ToF) Wall involves beforehand a p
     %\hfill % Optional: adds horizontal space between the figures
     % Second subfigure
     \begin{subfigure}[b]{0.25\textwidth}
+		\centering
         \includegraphics[width=\textwidth]{Figures/intersection_algorithm.png}
         \caption{$\theta_{out}$ approximation. For detailed information see text.}
         \label{fig:sub2_reco_path}
@@ -118,10 +120,14 @@ A similar approach was employed to select the specific boron isotope $^{11}B$. T
 Following the identification of the fragments through precise flight path reconstruction and time measurement, as detailed in the previous subsection, and the subsequent selection of the $^{11}B$ isotope, the analysis focuses on the two correlated protons to fully characterize the quasi-free scattering channel $^{12}C(p,2p)^{11}B$.\newline
 For a proper interpretation of the data, it is essential to consider the geometric acceptance of CALIFA during the S444 experiment in 2020. The central \textit{BARREL} region (Ring 3 and Ring 4), covering the polar angular range from $43^{\circ}$ to $88^{\circ}$, was fully operational. In contrast, the forward region, referred to as \textit{iPhos} ($19^{\circ}$ to $43^{\circ}$), was only partially equipped, with a coverage of approximately $35\%$. The forward endcap, known as \textit{CEPA}, was not installed, and the backward barrel remained unoccupied. The corresponding geometry is illustrated in figure \ref{fig:qfs_reac_and_geo}.\newline
 \begin{figure}[htpb]
-    \centering
-    \subfloat[\centering Quasi-free scattering channel $^{12}C(p,2p)^{11}B$]{{\includegraphics[width=6cm]{Figures/reaction_qfs_model.png} }}%
-    \qquad
-    \subfloat[\centering Simulated front view of the CALIFA calorimeter in 2020.]{{\includegraphics[width=6cm]{Figures/CALIFA2020Front.png} }}%
+	\begin{subfigure}[t]{.4\linewidth}
+    \includegraphics[width=\textwidth]{Figures/reaction_qfs_model.png}
+	\caption{Quasi-free scattering channel $^{12}C(p,2p)^{11}B$}
+	\end{subfigure}
+	\begin{subfigure}[t]{.4\linewidth}
+    \includegraphics[width=\textwidth]{Figures/CALIFA2020Front.png}
+	\caption{Simulated front view of the CALIFA calorimeter in 2020.}
+	\end{subfigure}
     \caption{Tagging the $^{12}C(p,2p)^{11}B$ channel with only partly filled CALIFA calorimeter for the detection of the two correlated protons.}%
     \label{fig:qfs_reac_and_geo}%
 \end{figure}
@@ -139,13 +145,52 @@ For an accurate proton selection and the application of appropriate cuts, it is 
 The \textit{cal}-level data is structured as in the \textit{mapped}-level, however with calibrated energy by applying the calibration parameters from calibration run to each crystal channel.\newline
 For the calibration runs a $^{22}Na$ (with peaks at $511keV$ and $1275keV$) or a $^{60}Co$ (with peaks at $1173keV$ and $1332keV$) source is used. For each crystal channel a linear fit on the two photopeaks is performed. Using this fitting function, the uncalibrated energy, expressed in energy channels, can be converted into calibrated energy values.\newline
 For the final \textit{hit}-level data, the energy-calibrated hits from the \textit{cal}-level are merged into clusters. High-energy proton hits ($E_{hit} > 15 MeV$) and low-energy $\gamma$ hits are first listed and sorted in descending energy order. Clusters are then formed using a cone-shaped approach, where each cluster is centered around the highest-energy hit with a half-opening angle of $\theta_c = 14.3^{\circ}$. All hits within this angular region are merged into the cluster. This process is iteratively repeated until both the high- and low-energy lists are empty. To improve the signal-to-noise ratio in this analysis, hits with energy values below the threshold of $E_{thr} = 100keV$ are discarded during clustering.\newline
-The resulting correlations in polar and azimuthal angles,with the only cut to have at least two high energy clusters with energy larger 15 MeV, with respect to the simulated \textit{p2p}-simulations are shown in figure 1 and figure 2 accordingly. 
-
-
-
+The resulting correlations in azimuthal and polar angles,with the only cut to have at least two high energy clusters with energy larger 15 MeV, with respect to the simulated \textit{p2p}-simulations are shown in figure \ref{fig:azimuth_corr} and figure \ref{fig:polar_corr} accordingly.\newline
+\begin{figure}[htpb]
+	\begin{subfigure}[t]{.75\linewidth}
+    \includegraphics[width=\textwidth]{Figures/phi12_califa.png}
+	\caption{Correlation from S444 experimental data}
+	\end{subfigure}
+	\begin{subfigure}[t]{.75\linewidth}
+    \includegraphics[width=\textwidth]{Figures/phi12_sim.png}
+	\caption{Simulated data using based on QFS kinematical code by Leonid Chulkov, GSI.}
+	\end{subfigure}
+    \caption{Azimuthal angular correlation $\phi_1$ versus $\phi_2$ of the two clusters with highest energy in CALIFA }
+    \label{fig:azimuth_corr}
+\end{figure}
+From the azimuthal correlation plot in Figure \ref{fig:azimuth_corr}, the geometric acceptance limitations of CALIFA become evident. In the so-called \textit{iPhos} region, CALIFA was instrumented only within the azimuthal ranges of $\pm 45^{\circ}$ and $157.5^{\circ}$ to $202.5^{\circ}$. Due to relativistic kinematics, both protons undergo a forward boost, leading to their predominant detection in the iPhos array. Consequently, any acceptance loss in this region has a substantial impact on the overall detection efficiency.\newline
+Moreover, the correlation plot exhibits a distinct correlation line at $\phi_1 \approx \phi_2$. This feature primarily arises from inaccuracies in cluster reconstruction, where proton cluster hits fall outside the predefined cone size of the reconstruction algorithm, resulting in the erroneous identification of two separate hits. This effect is particularly pronounced in the \textit{iPhos} region as it is the primary detection region for the protons. Such misidentified events are systematically excluded in analyses focusing on the clean $^{12}C(p,2p)^{11}B$ channel.\newline
+\begin{figure}[htpb]
+	\begin{subfigure}[t]{.75\linewidth}
+    \includegraphics[width=\textwidth]{Figures/theta12_califa.png}
+	\caption{Correlation from S444 experimental data}
+	\end{subfigure}
+	\begin{subfigure}[t]{.75\linewidth}
+    \includegraphics[width=\textwidth]{Figures/theta12_sim.png}
+	\caption{Simulated data using based on QFS kinematical code by Leonid Chulkov, GSI.}
+	\end{subfigure}
+    \caption{Polar angular correlation $\theta_1$ versus $\theta_2$ of the two clusters with highest energy in CALIFA }
+    \label{fig:polar_corr}
+\end{figure}
+The polar angular correlation in figure \ref{fig:polar_corr} shows as expected a strong anti-correlation between the two proton clusters. For beam energies up to approximately $500 AMeV$ the anti-correlation line is expected to be uniformly distributed over the polar range as the momentum transfer $t = -Q^2$, which defines the angular distributions $\theta_{1/2}$, does not effect the cross section in this energy regime\footnote{At higher beam energies, parameterizations of the cross section as a function of $t$ often take the form $\frac{d\sigma}{dt} = C e^{bt}$, where $C$ and $b$ are empirically determined parameters.}.\newline
+The information of azimuthal and polar angles of the two protons can merged in the opening angle of the two reconstructed protons via the geometric formula:
 \begin{equation}\label{eq:opang}
 \theta_{p2p} = acos\left( \sin(\theta_1) \sin(\theta_2) \cos(\phi_2 - \phi_1) + \cos(\theta_1) \cos(\theta_2) \right)
 \end{equation}
+
+\begin{figure}[htpb]
+	\begin{subfigure}[t]{.43\linewidth}
+    \includegraphics[width=\textwidth]{Figures/opang.png}
+	\caption{Opening angle distribution from S444 experimental data}
+	\end{subfigure}
+	\begin{subfigure}[t]{.47\linewidth}
+    \includegraphics[width=\textwidth]{Figures/opang_sim.png}
+	\caption{Simulated opening angle $\theta_{p2p}$ based on QFS kinematical code by Leonid Chulkov, GSI.}
+	\end{subfigure}
+    \caption{Reconstruction of the opening angle $\theta_{p2p}$ as in equation \ref{eq:opang} from the two clusters with highest energy in CALIFA }
+    \label{fig:polar_opang}
+\end{figure}
+
 
 ->Polar angle correlation plot, explain wixhausen/messel side, this was due to configuration
 ->Azimuthal angle correlation plot, explain also how this was done
