@@ -199,7 +199,7 @@ Herefore in the next considerations only events with following criteria are sele
 \item $\Delta \varphi < 180 \pm 40^{\circ}$
 \end{itemize}
 
-\subsubsection{Missing Momentum $\mathbf{p_{miss}}$ Reconstruction}
+\subsubsection{Missing Momentum $\mathbf{p_{miss}}$ Reconstruction}\label{sec:p_miss}
 
 As discussed in Section \ref{sec:qfs_theo}, the momentum of the knocked-out proton inside the $^{12}C$ nucleus can be reconstructed, assuming higher-order perturbations are negligible, as described by Equation \ref{eq:miss_mom}. For this reconstruction, the momenta of the two detected protons, $\mathbf{p_{1/2}}$, and the initial target proton, $\mathbf{p_{0}}$ (which is approximately zero in the laboratory frame), must be known and transformed into the center-of-mass frame of the $^{12}C$ nucleus. The resulting distribution of the missing momentum, $\mathbf{p_{miss}}$, obtained from experimental data, is presented in Figure \ref{fig:p_miss}.\newline
 \begin{figure}[htpb]
@@ -216,19 +216,19 @@ As discussed in Section \ref{sec:qfs_theo}, the momentum of the knocked-out prot
     \begin{subfigure}[b]{0.3\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/p_miss_x.png} % Replace with your image file
-        \caption{Reconstructed x-component of $\mathbf{p_{miss}}$.}
+        \caption{Reconstructed\newline x-component of $\mathbf{p_{miss}}$.}
         \label{fig:p_miss_x}
     \end{subfigure}
     \begin{subfigure}[b]{0.3\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/p_miss_y.png} % Replace with your image file
-        \caption{Reconstructed y-component of $\mathbf{p_{miss}}$.}
+        \caption{Reconstructed\newline y-component of $\mathbf{p_{miss}}$.}
         \label{fig:p_miss_y}
     \end{subfigure}
     \begin{subfigure}[b]{0.3\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/p_miss_z.png} % Replace with your image file
-        \caption{Reconstructed z-component of $\mathbf{p_{miss}}$.}
+        \caption{Reconstructed\newline z-component of $\mathbf{p_{miss}}$.}
         \label{fig:p_miss_z}
     \end{subfigure}
 
@@ -242,10 +242,74 @@ Furthermore, the beam energy, assumed to be constant at $400, A\text{MeV}$, play
 Additionally, as shown in Figure \ref{fig:p_miss_z}, the distribution of the z-component of $\mathbf{p_{miss}}$ exhibits a slight asymmetry, with a tail extending toward lower values. Since the z-component is particularly sensitive to deviations in the mean beam energy, this effect further contributes to the shift of the mean $\mathbf{p_{miss}}$ value toward lower values. Future studies with improved acceptance corrections and access to event-wise beam energy measurements could further refine the results and enhance the accuracy of the $\mathbf{p_{miss}}$ reconstruction.
 
 
-\subsubsection{Correlations between $^{11}B$ Fragment and Proton Pair}
+\subsubsection{Correlations between $^{11}B$ Fragment and the reconstruced inner Proton }
+%In subsection \ref{sec:p_miss} we reconstructed the momentum of the inner proton $\mathbf{p_{miss}}$. Herefore only data from the CALIFA calorimeter was necessary. As next step the reconstructed inner proton momentum $\mathbf{p_{miss}}$ can be correlated with the reconstructed $^{11}B$ momentum in the $^{12}C$ rest frame. The momenta of the two constituents of the $^{12}C$, the reconstruced proton and the $^{11}B$, should add up to zero since this is the definition of the rest frame. That means that the momentum vectors of the inner proton and the $^{11}B$ accordingly should point to opposite directions. Which again means for the cosine of the angle $\gamma$ between the two constituents should be approximately -1. This is also what we receive from data, as shown in figure \ref{fig:cos_gamma}.\newline
+%Moreover figure \ref{fig:x_corr_p_miss_11b} and \ref{fig:y_corr_p_miss_11b} show the correlation between the x and y momentum of the inner proton to the accoring component of the $^{11}B$ accordingly. In both cases a strong anti-correlation is visible. While the correlation plot for the y component is relatively sharp, the one for the x component is quite blurred. This really comes from the geometric dependent resolutions in the subdetectors:\newline
+%For the x component it has to be considered that only the side halves of CALIFA are filled in the \textit{iPhos} region ($\varphi_{1/2}$ in the region $\pm 45^{\circ}$ and $157.5^{\circ}$ to $202.5^{\circ}$). The angular resolution in $\varphi$ is only moderate ($\approx \frac{6^{\circ}}{sqrt{12}}$ and the x component reconstruction is proportional to $\cos(\varphi)$ with an only slowly changing derivative ($\sin(\varphi)$) for $\varphi \approx 0$. Moreover the x component of the $^{11}B$ fragment has to be reconstructed from the position resolutions right after the target with a small lever arm compared to the reconstruction of the y component of the $^{11}B$ fragment which is reconstructed from the y information in MWCP3 after GLAD, since the y component should not be affected by the GLAD magnet. 
+%
+In Subsection \ref{sec:p_miss}, the momentum of the inner proton, $\mathbf{p_{miss}}$, was reconstructed using data exclusively from the CALIFA calorimeter. As a next step, this reconstructed momentum can be correlated with the momentum of the $^{11}B$ fragment in the rest frame of the $^{12}C$ nucleus.\newline
 
-->Reconstruction of the inner momentum, make a fit and compare to separation energy, tell that this depends on exact target position and vertex reco point to discussion of separation energy.
-->Maybe also correlations between fragment and proton pair, see Chulkov.
+Since the total momentum in the rest frame must be zero by definition, the momentum vectors of the inner proton and the $^{11}B$ fragment should be directed oppositely. Consequently, the cosine of the angle $\gamma$ between these two constituents should be approximately $-1$, which is confirmed by the experimental data, as shown in Figure \ref{fig:cos_gamma}.\newline
+
+Furthermore, Figures \ref{fig:x_corr_p_miss_11b} and \ref{fig:y_corr_p_miss_11b} illustrate the correlation between the x- and y-components of $\mathbf{p_{miss}}$ and the corresponding components of the $^{11}B$ fragment. A strong anti-correlation is observed in both cases. While the correlation in the y-component is relatively sharp, the x-component exhibits a more blurred distribution.\newline
+
+This effect arises from the geometry-dependent resolution of the subdetectors:
+\begin{itemize}
+\item[--]For the x-component, it is important to consider that only the lateral halves of CALIFA were instrumented in the \textit{iPhos} region ($\varphi_{1/2}$ within $\pm 45^{\circ}$ and $157.5^{\circ}$ to $202.5^{\circ}$). The azimuthal resolution is moderate ($\approx \frac{6^{\circ}}{\sqrt{12}}$), and since the x-component is reconstructed as $\propto \cos(\varphi)$, the derivative $\sin(\varphi)$ remains small for $\varphi \approx 0$, leading to lower sensitivity in this region.
+\item[--] The x-component of the $^{11}B$ fragment is reconstructed from position measurements immediately after the target, where the lever arm for momentum reconstruction is relatively short.
+\item[--]In contrast, the y-component of the $^{11}B$ fragment is determined from its position in MWPC3 after GLAD, where the larger lever arm improves resolution. Moreover, the y-component remains largely unaffected by the GLAD magnet, further enhancing its reconstruction accuracy.
+\end{itemize}
+
+\begin{figure}[h]
+    \centering
+    % Large subfigure on the left
+    \begin{subfigure}[b]{0.9\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/cos_angle_2p_11b.png} % Replace with actual image
+        \caption{Cosine of the angle $\gamma$ between inner proton and $^{11}B$.}
+        \label{fig:cos_gamma}
+    \end{subfigure}
+
+    \vspace{0.3cm} % Adjust vertical spacing
+
+    % Row for two smaller subfigures
+    \begin{subfigure}[b]{0.39\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/p_x_2p_11b.png} % Replace with actual image
+        \caption{x-component correlation between inner proton and $^{11}B$.}
+        \label{fig:x_corr_p_miss_11b}
+    \end{subfigure}
+    \hspace{0.2cm} % Adjust horizontal spacing
+    \begin{subfigure}[b]{0.39\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/p_y_2p_11b.png} % Replace with actual image
+        \caption{y-component correlation between inner proton and $^{11}B$.}
+        \label{fig:y_corr_p_miss_11b}
+    \end{subfigure}
+
+    %% Small subfigures stacked on the right
+    %\begin{subfigure}[b]{0.9\textwidth}
+    %    \centering
+    %    \begin{subfigure}[b]{0.9\textwidth}
+    %        \centering
+    %        \includegraphics[width=0.45\textwidth]{Figures/p_x_2p_11b.png} % Replace with actual image
+    %        \caption{x-component correlation between inner proton and $^{11}B$.}
+    %        \label{fig:x_corr_p_miss_11b}
+    %    \end{subfigure}
+    %    \vspace{0.2cm}
+    %    \begin{subfigure}[b]{0.9\textwidth}
+    %        \centering
+    %        \includegraphics[width=0.45\textwidth]{Figures/p_y_2p_11b.png} % Replace with actual image
+    %        \caption{y-component correlation between inner proton and $^{11}B$.}
+    %        \label{fig:y_corr_p_miss_11b}
+    %    \end{subfigure}
+    %\end{subfigure}
+    
+    \caption{Correlation plots between inner proton and $^{11}B$ in the $^{12}C$ rest frame.}
+    \label{fig:corr_p_miss_11b}
+\end{figure}
+
+TODO:->Maybe also correlations between fragment and proton pair, see Chulkov.
 
 
 \subsubsection{Proton Separation Energy $S_p$}
