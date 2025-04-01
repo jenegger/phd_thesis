@@ -155,11 +155,11 @@ The resulting correlations in azimuthal and polar angles,with the only cut to ha
     \includegraphics[width=\textwidth]{Figures/phi12_sim.png}
 	\caption{Simulated data using based on QFS kinematical code by Leonid Chulkov, GSI.}
 	\end{subfigure}
-    \caption{Azimuthal angular correlation $\phi_1$ versus $\phi_2$ of the two clusters with highest energy in CALIFA }
+    \caption{Azimuthal angular correlation $\varphi_1$ versus $\varphi_2$ of the two clusters with highest energy in CALIFA }
     \label{fig:azimuth_corr}
 \end{figure}
 From the azimuthal correlation plot in Figure \ref{fig:azimuth_corr}, the geometric acceptance limitations of CALIFA become evident. In the so-called \textit{iPhos} region, CALIFA was instrumented only within the azimuthal ranges of $\pm 45^{\circ}$ and $157.5^{\circ}$ to $202.5^{\circ}$. Due to relativistic kinematics, both protons undergo a forward boost, leading to their predominant detection in the iPhos array. Consequently, any acceptance loss in this region has a substantial impact on the overall detection efficiency.\newline
-Moreover, the correlation plot exhibits a distinct correlation line at $\phi_1 \approx \phi_2$. This feature primarily arises from inaccuracies in cluster reconstruction, where proton cluster hits fall outside the predefined cone size of the reconstruction algorithm, resulting in the erroneous identification of two separate hits. This effect is particularly pronounced in the \textit{iPhos} region as it is the primary detection region for the protons. Such misidentified events are systematically excluded in analyses focusing on the clean $^{12}C(p,2p)^{11}B$ channel.\newline
+Moreover, the correlation plot exhibits a distinct correlation line at $\varphi_1 \approx \varphi_2$. This feature primarily arises from inaccuracies in cluster reconstruction, where proton cluster hits fall outside the predefined cone size of the reconstruction algorithm, resulting in the erroneous identification of two separate hits. This effect is particularly pronounced in the \textit{iPhos} region as it is the primary detection region for the protons. Such misidentified events are systematically excluded in analyses focusing on the clean $^{12}C(p,2p)^{11}B$ channel.\newline
 \begin{figure}[htpb]
 	\begin{subfigure}[t]{.75\linewidth}
     \includegraphics[width=\textwidth]{Figures/theta12_califa.png}
@@ -173,9 +173,10 @@ Moreover, the correlation plot exhibits a distinct correlation line at $\phi_1 \
     \label{fig:polar_corr}
 \end{figure}
 The polar angular correlation in figure \ref{fig:polar_corr} shows as expected a strong anti-correlation between the two proton clusters. For beam energies up to approximately $500 AMeV$ the anti-correlation line is expected to be uniformly distributed over the polar range as the momentum transfer $t = -Q^2$, which defines the angular distributions $\theta_{1/2}$, does not effect the cross section in this energy regime\footnote{At higher beam energies, parameterizations of the cross section as a function of $t$ often take the form $\frac{d\sigma}{dt} = C e^{bt}$, where $C$ and $b$ are empirically determined parameters.}.\newline
+Moreover in figure \ref{fig:polar_corr} the two off-diagonal lines should be noted. This artifact arises from wrong cluster reconstruction where proton cluster hits fall outside the predefined cone size of the reconstruction algorithm, resulting in the erroneous identification of two separate hits. As the resulting clusters are in close proximity, they exhibit a systematic offset from the diagonal in the polar angular correlation plot.\newline
 The information of azimuthal and polar angles of the two protons can merged in the opening angle of the two reconstructed protons via the geometric formula:
 \begin{equation}\label{eq:opang}
-\theta_{p2p} = acos\left( \sin(\theta_1) \sin(\theta_2) \cos(\phi_2 - \phi_1) + \cos(\theta_1) \cos(\theta_2) \right)
+\theta_{p2p} = acos\left( \sin(\theta_1) \sin(\theta_2) \cos(\varphi_2 - \varphi_1) + \cos(\theta_1) \cos(\theta_2) \right)
 \end{equation}
 
 \begin{figure}[htpb]
@@ -188,13 +189,61 @@ The information of azimuthal and polar angles of the two protons can merged in t
 	\caption{Simulated opening angle $\theta_{p2p}$ based on QFS kinematical code by Leonid Chulkov, GSI.}
 	\end{subfigure}
     \caption{Reconstruction of the opening angle $\theta_{p2p}$ as in equation \ref{eq:opang} from the two clusters with highest energy in CALIFA }
-    \label{fig:polar_opang}
+    \label{fig:opang}
 \end{figure}
 
+Figure \ref{fig:opang} presents the opening angle $\theta_{p2p}$ for the reconstructed protons. In both the simulated and experimental data, the distribution exhibits a peak at approximately $81^{\circ}$. While the simulated distribution shows a strict upper limit around $82^{\circ}$, the experimental data features a pronounced tail extending toward larger values. This effect is primarily attributed to final-state interactions (FSI) and can be significantly reduced by applying appropriate selection criteria to the polar and azimuthal angular correlations of the two reconstructed high-energy hits.\newline
+Herefore in the next considerations only events with following criteria are selected:
+\begin{itemize}
+\item $\theta_1 + \theta_1 < 90^{\circ}$
+\item $\Delta \varphi < 180 \pm 40^{\circ}$
+\end{itemize}
 
-->Polar angle correlation plot, explain wixhausen/messel side, this was due to configuration
-->Azimuthal angle correlation plot, explain also how this was done
-->Opening angle, also with formula, maybe also with simulation? Easy to be done..
+\subsubsection{Missing Momentum $\mathbf{p_{miss}}$ Reconstruction}
+
+As discussed in Section \ref{sec:qfs_theo}, the momentum of the knocked-out proton inside the $^{12}C$ nucleus can be reconstructed, assuming higher-order perturbations are negligible, as described by Equation \ref{eq:miss_mom}. For this reconstruction, the momenta of the two detected protons, $\mathbf{p_{1/2}}$, and the initial target proton, $\mathbf{p_{0}}$ (which is approximately zero in the laboratory frame), must be known and transformed into the center-of-mass frame of the $^{12}C$ nucleus. The resulting distribution of the missing momentum, $\mathbf{p_{miss}}$, obtained from experimental data, is presented in Figure \ref{fig:p_miss}.\newline
+\begin{figure}[htpb]
+    \centering
+    % Large subfigure
+    \begin{subfigure}[b]{0.9\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/p_miss_tot.png} % Replace with your image file
+        \caption{Reconstructed absolulte value of $\mathbf{p_{miss}}$.}
+        \label{fig:p_miss_tot}
+    \end{subfigure}
+
+    % Row of three smaller subfigures
+    \begin{subfigure}[b]{0.3\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/p_miss_x.png} % Replace with your image file
+        \caption{Reconstructed x-component of $\mathbf{p_{miss}}$.}
+        \label{fig:p_miss_x}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.3\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/p_miss_y.png} % Replace with your image file
+        \caption{Reconstructed y-component of $\mathbf{p_{miss}}$.}
+        \label{fig:p_miss_y}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.3\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/p_miss_z.png} % Replace with your image file
+        \caption{Reconstructed z-component of $\mathbf{p_{miss}}$.}
+        \label{fig:p_miss_z}
+    \end{subfigure}
+
+    \caption{Reconstructed $\mathbf{p_{miss}}$ and its components in the $^{12}C$ rest frame}
+    \label{fig:p_miss}
+\end{figure}
+
+Compared to previous experimental results, such as those reported in Ref. \cite{moniz1971nuclear}, where the measured Fermi momentum for $^{12}C$ was determined to be $221 \mp 5$ MeV/c, corresponding to a mean internal proton momentum of $171$ MeV/c, the reconstructed mean value in the present analysis is found to be $156$ MeV/c.\newline
+While this value is slightly lower than the reference, it is important to consider the specific experimental conditions. The geometric acceptance of CALIFA, particularly in the forward region, was not fully instrumented, which may introduce some distortions in the reconstructed $\mathbf{p_{miss}}$ distribution. Nevertheless, the obtained results remain consistent within the expected systematic uncertainties.\newline
+Furthermore, the beam energy, assumed to be constant at $400, A\text{MeV}$, plays a crucial role in transforming the reconstructed proton momenta into the center-of-mass frame of the $^{12}C$ nucleus. Small variations in the actual beam energy could have a non-negligible impact on the missing momentum reconstruction. Since no precise event-by-event beam energy information was available for this analysis, a constant value of $400$ AMeV was used.\newline
+Additionally, as shown in Figure \ref{fig:p_miss_z}, the distribution of the z-component of $\mathbf{p_{miss}}$ exhibits a slight asymmetry, with a tail extending toward lower values. Since the z-component is particularly sensitive to deviations in the mean beam energy, this effect further contributes to the shift of the mean $\mathbf{p_{miss}}$ value toward lower values. Future studies with improved acceptance corrections and access to event-wise beam energy measurements could further refine the results and enhance the accuracy of the $\mathbf{p_{miss}}$ reconstruction.
+
+
+\subsubsection{Correlations between $^{11}B$ Fragment and Proton Pair}
+
 ->Reconstruction of the inner momentum, make a fit and compare to separation energy, tell that this depends on exact target position and vertex reco point to discussion of separation energy.
 ->Maybe also correlations between fragment and proton pair, see Chulkov.
 
@@ -223,7 +272,7 @@ Putting this in the previous equation one finally gets for the binding energy $B
 B = (\gamma - 1)\cdot m_p + \gamma \cdot (T_1+T_2) - \beta \cdot \gamma \cdot(p_1*cos(\theta_1) + p_2*cos(\theta_2)) + T_{^{11}B}
 \end{equation}\label{eq:sep_energy}
 For $E_{ex} = 0$, i.e. the fragment $^{11}B$ in the ground state, the binding energy $B$ is equal to the one proton separation energy $S_p$\footnote{Since the $^{11}B$ fragment predominantly remains in its ground state---implying that, in most cases, the outermost protons are removed---the binding energy $B$ and the proton separation energy $S_p$ are used interchangeably, also due to the limited energy resolution.}. \newline
-As for the S444 experiment no target detector tracking system was available. Consequently the energies as well as the azimutal ($\phi$) and polar($\theta$) angles of the two correlated protons had to be fully reconstructed using the CALIFA calorimeter. The calorimeter provided an energy resolution $\frac{\Delta E}{E}(@100MeV) \lesssim 1 \%$, along with angular resolutions of approximately  $\Delta \phi \approx \frac{6}{\sqrt{12}}^{\circ}$, and $\Delta \theta \approx \frac{2}{\sqrt{12}}^{\circ}$.
+As for the S444 experiment no target detector tracking system was available. Consequently the energies as well as the azimutal ($\varphi$) and polar($\theta$) angles of the two correlated protons had to be fully reconstructed using the CALIFA calorimeter. The calorimeter provided an energy resolution $\frac{\Delta E}{E}(@100MeV) \lesssim 1 \%$, along with angular resolutions of approximately  $\Delta \varphi \approx \frac{6}{\sqrt{12}}^{\circ}$, and $\Delta \theta \approx \frac{2}{\sqrt{12}}^{\circ}$.
 The best way to visualize the separation energy $S_p$ id to plot it against the summed energy of the two protons in the $^{12}C$ rest frame as shown in figure \ref{fig:sep_energy}. Two vertical lines are visible. They correspond to the two QFS-reaction types within the $CH_2$ target: the proton within the $^{12}C$ projectile can either scatter on the hydrogen (proton-like) part of on the carbon part of the plastic target. For the first case only the separation energy $S_p$ as derived in equation \ref{eq:sep_energy} is necessary to remove the proton of the projectile within the $^{12}C$ nucleus. In the second case the QFS-reaction is between two protons both bound within a carbon nucleus -- the projectile carbon and the target carbon part. Herefore more energy is needed to free both protons from their nuclear bond. This corresponds to the left vertical line in figure \ref{fig:sep_energy}. It should be noted that the reconstructed one-proton separation energy $S_p$ is shifted with respect to the mean value of $\approx 16 MeV$. For a precise measurement the accurate position of the target and the reaction vertex would be needed, as well as a precise measurement of the kinetic energy of the incoming $^{12}C$ would be required (for the actual measurements the beam energy value was set to $400 AMeV$). 
 \begin{figure}[htpb]
     \centering
