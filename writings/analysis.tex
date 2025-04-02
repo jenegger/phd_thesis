@@ -52,28 +52,28 @@ Detectors downstream the target area are used to count the number of unreacted p
     \centering
     \includegraphics[width=\textwidth,height=6cm,keepaspectratio=true]{Figures/SETUP_around_Target.png}
     \caption{
-    R3B Setup for the S444 experiment in the target region. TODO: select overview with less numbers/measures...
+    R$^3$B setup for the S444 experiment in the target region. TODO: select overview with less numbers/measures...
     }
     \label{fig:setup_target_region}
 \end{figure}
 
-For event selection, all three upstream detectors are utilized: the MWPC0, the R3BMUSIC Ionization Chamber, and the start detector. To ensure a clean incoming event selection, the following prerequisites must be met:
+For event selection, all three upstream detectors are utilized: the MWPC0, the R$^3$B MUSIC Ionization Chamber, and the start detector. To ensure a clean incoming event selection, the following prerequisites must be met:
 \begin{enumerate}
 \item \textbf{$^{12}$C identification of incoming projectile by upstream detectors:}\newline
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/charge_r3bmusic.png}
     \caption{
-    Charge distribution on R3BMUSIC with predefinded calibration parameters with already applied positional cuts on MWPC0 - positioned upstream to the ionisation chamber. The rise beyond Z $\ge$ 7.2 comes from pile-up events. TODO: more explanation needed? 2D plot needed? 
+    Charge distribution on R$^3$B MUSIC with predefinded calibration parameters with already applied positional cuts on MWPC0 - positioned upstream to the ionisation chamber. The rise beyond Z $\ge$ 7.2 comes from pile-up events. TODO: more explanation needed? 2D plot needed? 
     }
     \label{fig:r3bmusic_charge}
 \end{figure}
 In the S444 experiment the incoming beam was directly delivered by the SIS18 ring accelerator, which is operated in ultra-high vacuum.The level of contamination is low.(TODO:up to which stage do we have vacuum? Until MW0?)\newline %TODO:up to where is the beam in vacuum?
-For the charge identification of the incoming ion the R3BMUSIC ionisation chamber is used which is positioned directly after the MWPC0 at the beam entrance in Cave C, see figure \ref{fig:setup_target_region}. The R3BMUSIC detector measures anode-wise the energy loss of the passing-through ion which in the first order is proportional to the square of its charge ($\Delta E \sim Z^{2}$). Herfore the calibration parameters from the online analysis are used\footnote{These are generic paramteter values used to the detector performance during the experiment phase.}. Figure \ref{fig:r3bmusic_charge} shows the measured charge distribution in R3BMUSIC. To select $Z = 6$ incoming ions the distibution is fitted with a gaussian fit function. All ions with charge within the $\pm 1 \sigma$ range are accepted. Figure \ref{fig:r3bmusic_cuts} summarizes the $\pm 1 \sigma$ cuts on the R3BMUSIC charge for empty/target runs for all beam energies.   
+For the charge identification of the incoming ion the R$^3$B MUSIC ionisation chamber is used which is positioned directly after the MWPC0 at the beam entrance in Cave C, see figure \ref{fig:setup_target_region}. The R$^3$B MUSIC detector measures anode-wise the energy loss of the passing-through ion which in the first order is proportional to the square of its charge ($\Delta E \sim Z^{2}$). Herfore the calibration parameters from the online analysis are used\footnote{These are generic paramteter values used to the detector performance during the experiment phase.}. Figure \ref{fig:r3bmusic_charge} shows the measured charge distribution in R$^3$B MUSIC. To select $Z = 6$ incoming ions the distibution is fitted with a gaussian fit function. All ions with charge within the $\pm 1 \sigma$ range are accepted. Figure \ref{fig:r3bmusic_cuts} summarizes the $\pm 1 \sigma$ cuts on the R$^3$B MUSIC charge for empty/target runs for all beam energies.   
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/r3bmusic_charge_cuts.png}
-\caption{Strict $\pm 1 \sigma$ charge cuts with R3BMUSIC for incoming particle selection. Fixed predefined calibration parameters were used which do not compensate different gain settings between runs. This is in particular the case for the 400 AMeV beam energy runs.}
+\caption{Strict $\pm 1 \sigma$ charge cuts with R$^3$B MUSIC for incoming particle selection. Fixed predefined calibration parameters were used which do not compensate different gain settings between runs. This is in particular the case for the 400 AMeV beam energy runs.}
 \label{fig:r3bmusic_cuts}
 \end{figure}
 \item \textbf{Pileup rejection and TPat selection:}\newline
@@ -116,13 +116,13 @@ To assure that the incoming $^{12}$C ion hits the target it is necessary to sele
 \caption{Overview of $\pm 1\sigma$ cuts in x and y in MWPC0 for empty/target runs. TODO: labelling on the right side is wrong! (should be y!)}
 \label{fig:mw0_cuts}
 \end{figure}
-The MWPC0 x-position and the available projectile angle in the x-y plane from the R3BMUSIC is used to propagate the corresponding x-position on the target location to further check that the selected projectiles hit the target parallel to the z-position (= beam direction) and do only have a minimal incident angle, see figure \ref{fig:x_pos_target}. 
+The MWPC0 x-position and the available projectile angle in the x-y plane from the R$^3$B MUSIC is used to propagate the corresponding x-position on the target location to further check that the selected projectiles hit the target parallel to the z-position (= beam direction) and do only have a minimal incident angle, see figure \ref{fig:x_pos_target}. 
 %This can also be seen as a consistency check whether the applied (predefined) calibration parameters are properly set.
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/x_proj_beam_mw0_target.png}
     \caption{
-   	Propagated x-position on target location from measured x-value on MWPC0 and x-y plane angle measurement from R3BMUSIC. The target area is 3 x 3 cm. In red the selected events with $\pm 1\sigma$ cut in x and y position in MWPC0, in blue all events. TODO: which run is this?
+   	Propagated x-position on target location from measured x-value on MWPC0 and x-y plane angle measurement from R$^3$B MUSIC. The target area is 3 x 3 cm. In red the selected events with $\pm 1\sigma$ cut in x and y position in MWPC0, in blue all events. TODO: which run is this?
     }
     \label{fig:x_pos_target}
 \end{figure}
