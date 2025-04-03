@@ -111,6 +111,51 @@ J.~Gra{\~n}a-Gonz{\'a}lez, J.~Rodr{\'\i}guez-S{\'a}nchez, J.~Benlliure,
   inverse kinematics with the r3b setup,'' in {\em EPJ Web of Conferences},
   vol.~290, p.~02015, EDP Sciences, 2023.
 
+\bibitem{gerl2009nuclear}
+J.~Gerl, ``Nuclear spectroscopy studies at gsi--from rising to
+  hispec/despec.,'' {\em Acta Physica Polonica B}, vol.~40, no.~3, 2009.
+
+\bibitem{galatyuk2014hades}
+T.~Galatyuk, H.~Collaboration, {\em et~al.}, ``Hades overview,'' {\em Nuclear
+  Physics A}, vol.~931, pp.~41--51, 2014.
+
+\bibitem{kluge2008hitrap}
+H.-J. Kluge, T.~Beier, K.~Blaum, L.~Dahl, S.~Eliseev, F.~Herfurth, B.~Hofmann,
+  O.~Kester, S.~Koszudowski, C.~Kozhuharov, {\em et~al.}, ``Hitrap: a facility
+  at gsi for highly charged ions,'' {\em Advances in Quantum Chemistry},
+  vol.~53, pp.~83--98, 2008.
+
+\bibitem{major2024high}
+Z.~Major, U.~Eisenbarth, B.~Zielbauer, C.~Brabetz, J.~Ohland, Y.~Zobus,
+  S.~Roeder, D.~Reemts, S.~Kunzer, S.~G{\"o}tte, {\em et~al.}, ``High-energy
+  laser facility phelix at gsi: latest advances and extended capabilities,''
+  {\em High Power Laser Science and Engineering}, vol.~12, p.~e39, 2024.
+
+\bibitem{dullmann2022five}
+C.~E. D{\"u}llmann, M.~Block, F.~P. He{\ss}berger, J.~Khuyagbaatar, B.~Kindler,
+  J.~V. Kratz, B.~Lommel, G.~M{\"u}nzenberg, V.~Pershina, D.~Renisch, {\em
+  et~al.}, ``Five decades of gsi superheavy element discoveries and chemical
+  investigation,'' {\em Radiochimica Acta}, vol.~110, no.~6-9, pp.~417--439,
+  2022.
+
+\bibitem{ion_sources_web}
+``Starting point of the gsi accelerator facility: Ion sources.''
+\newblock Accessed: 2025-04-03.
+
+\bibitem{sis18_web}
+``Ring accelerator sis18—the record holder.''
+\newblock Accessed: 2025-04-03.
+
+\bibitem{nociforo2014time}
+C.~Nociforo, ``Time-of-flight measurements at the super-frs,'' {\em Journal of
+  Instrumentation}, vol.~9, no.~01, p.~C01022, 2014.
+
+\bibitem{ponnath2024measurement}
+L.~Ponnath, T.~Aumann, C.~Bertulani, R.~Gernh{\"a}user, M.~Heil, T.~Almusidi,
+  H.~Alvarez-Pol, L.~Atar, L.~Atkins, Y.~Ayyad, {\em et~al.}, ``Measurement of
+  nuclear interaction cross sections towards neutron-skin thickness
+  determination,'' {\em Physics Letters B}, vol.~855, p.~138780, 2024.
+
 \bibitem{charpak1968use}
 G.~Charpak, R.~Bouclier, T.~Bressani, J.~Favier, and
   {\v{C}}.~Zupan{\v{c}}i{\v{c}}, ``The use of multiwire proportional counters
@@ -147,6 +192,20 @@ M.~Bendel, {\em {E}ntwicklung einer neuartigen {N}achweismethode
   endcap.''
   \url{https://edms.cern.ch/ui/file/1833748/2/TDR_R3B_CALIFA_ENDCAP_public.pdf}.
 \newblock Accessed: 2024-09-24.
+
+\bibitem{murray1961scintillation}
+R.~Murray and A.~Meyer, ``Scintillation response of activated inorganic
+  crystals to various charged particles,'' {\em Physical Review}, vol.~122,
+  no.~3, p.~815, 1961.
+
+\bibitem{zazubovich2001physics}
+S.~Zazubovich, ``Physics of halide scintillators,'' {\em Radiation
+  Measurements}, vol.~33, no.~5, pp.~699--704, 2001.
+
+\bibitem{bendel2014entwicklung}
+M.~Bendel, {\em Entwicklung einer neuartigen Nachweismethode hochenergetischer
+  Teilchen im CALIFA-Kalorimeter}.
+\newblock PhD thesis, Technische Universit{\"a}t M{\"u}nchen, 2014.
 
 \bibitem{holl1988measurement}
 I.~Holl, E.~Lorenz, and G.~Mageras, ``A measurement of the light yield of

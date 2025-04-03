@@ -24,45 +24,45 @@ Warning--empty author in clas2018probing
 Warning--empty journal in hartigevolution
 Warning--empty year in hartigevolution
 Warning--empty journal in serrano2013white
-You've used 47 entries,
+You've used 59 entries,
             1876 wiz_defined-function locations,
-            756 strings with 12552 characters,
-and the built_in function-call counts, 12507 in all, are:
-= -- 1208
-> -- 623
+            820 strings with 14634 characters,
+and the built_in function-call counts, 15712 in all, are:
+= -- 1510
+> -- 800
 < -- 0
-+ -- 229
-- -- 182
-* -- 873
-:= -- 1810
-add.period$ -- 60
-call.type$ -- 47
-change.case$ -- 42
++ -- 294
+- -- 235
+* -- 1103
+:= -- 2280
+add.period$ -- 73
+call.type$ -- 59
+change.case$ -- 53
 chr.to.int$ -- 0
-cite$ -- 51
-duplicate$ -- 650
-empty$ -- 1065
-format.name$ -- 182
-if$ -- 3053
+cite$ -- 63
+duplicate$ -- 810
+empty$ -- 1333
+format.name$ -- 235
+if$ -- 3828
 int.to.chr$ -- 0
-int.to.str$ -- 47
-missing$ -- 34
-newline$ -- 158
-num.names$ -- 41
-pop$ -- 149
+int.to.str$ -- 59
+missing$ -- 43
+newline$ -- 197
+num.names$ -- 51
+pop$ -- 187
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 490
+skip$ -- 608
 stack$ -- 0
-substring$ -- 579
-swap$ -- 302
+substring$ -- 727
+swap$ -- 376
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 4
-while$ -- 100
-width$ -- 49
-write$ -- 478
+while$ -- 126
+width$ -- 61
+write$ -- 596
 (There were 3 error messages)
