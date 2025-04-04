@@ -13,7 +13,7 @@ N_{2} = N_{1}e^{-n\sigma z}  = N_{1}e^{-N_t\sigma}
 \label{eq:cross_sec}
 \end{equation} 
 Where $n\cdot z$ can be summarized as $N_t$, the total number of scattering centers per unit area. The relation $(N_{2}/N_{1})$, number of unreacted particles after the target versus number of incoming particles, is often called survival probability $P_{surv}$. For an idealistic experimental setup with full detector efficiency and no interactions in the setup material the cross section could simply be deduced from equation \ref{eq:cross_sec}. To account for reactions of the projectile that occur within the setup material and first order detector specific distortions of output signals the survival probabiltiy $(N_{2}/N_{1})$ has to be divided by the survival probability for an empty target run $P^{E}_{surv}$ = $(N_{2}^E/N_{1}^E)$, where $N_{1}^E$ is the number of incoming particles and $N_{2}^E$ the number of unreacted particles after the target for an empty run respectively. Thereby the setup specific efficiency($\epsilon_{setup}$) and transmission factor($t_{setup}$) are cancelled out to obtain the underlying number of unreacted particles after the target $\tilde{N_{2}}$:\newline
-$N_{2} = \tilde{N_{2}} \cdot t_{setup}\cdot \epsilon_{setup}$, with $\tilde{N_{2}}$\newline
+$N_{2} = \tilde{N_{2}} \cdot t_{setup}\cdot \epsilon_{setup}$\newline
 $N_{2}^E = \tilde{N_{2}^E} \cdot \epsilon_{setup}$ with $\frac{\tilde{N_{2}^E}}{N_{1}^E}$ the setup specific transmission factor $t_{setup}$ \newline
 \newline
 The final formula for the cross section for a so called transmission measurement is:
@@ -64,11 +64,11 @@ For event selection, all three upstream detectors are utilized: the MWPC0, the R
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/charge_r3bmusic.png}
     \caption{
-    Charge distribution on R$^3$B MUSIC with predefinded calibration parameters with already applied positional cuts on MWPC0 - positioned upstream to the ionisation chamber. The rise beyond Z $\ge$ 7.2 comes from pile-up events. TODO: more explanation needed? 2D plot needed? 
+    Charge distribution on R$^3$B MUSIC with predefinded calibration parameters with already applied positional cuts on MWPC0 - positioned upstream to the ionisation chamber. The rise beyond Z $\ge$ 7.2 comes from pile-up events. 
     }
     \label{fig:r3bmusic_charge}
 \end{figure}
-In the S444 experiment the incoming beam was directly delivered by the SIS18 ring accelerator, which is operated in ultra-high vacuum.The level of contamination is low.(TODO:up to which stage do we have vacuum? Until MW0?)\newline %TODO:up to where is the beam in vacuum?
+In the S444 experiment the incoming beam was directly delivered by the SIS18 ring accelerator, which is operated in ultra-high vacuum. Herefore the level of contamination is low.\newline 
 For the charge identification of the incoming ion the R$^3$B MUSIC ionisation chamber is used which is positioned directly after the MWPC0 at the beam entrance in Cave C, see figure \ref{fig:setup_target_region}. The R$^3$B MUSIC detector measures anode-wise the energy loss of the passing-through ion which in the first order is proportional to the square of its charge ($\Delta E \sim Z^{2}$). Herfore the calibration parameters from the online analysis are used\footnote{These are generic paramteter values used to the detector performance during the experiment phase.}. Figure \ref{fig:r3bmusic_charge} shows the measured charge distribution in R$^3$B MUSIC. To select $Z = 6$ incoming ions the distibution is fitted with a gaussian fit function. All ions with charge within the $\pm 1 \sigma$ range are accepted. Figure \ref{fig:r3bmusic_cuts} summarizes the $\pm 1 \sigma$ cuts on the R$^3$B MUSIC charge for empty/target runs for all beam energies.   
 \begin{figure}
 \centering
@@ -128,10 +128,10 @@ The MWPC0 x-position and the available projectile angle in the x-y plane from th
 \end{figure}
 \end{enumerate}
 \subsection{Charge Changing Cross Section Measurement}\label{subsec:cc_cs}
-The charge changing cross section refers to a measure of the probability that the incoming projectile will undergo a reaction inside the target that changes its charge. To measure the charge changing cross section it can be referred to formula \ref{eq:corr_cross} where in this case $N_2$ is the number of survived carbon isotopes, i.e. projectiles which did not change their charge state. For this measurement only the data from the double ionisation chamber TWIN Music (see section \ref{sec:ionisation_chambers}) needs to be read out and analyzed.\newline
+The charge changing cross section refers to a measure of the probability that the incoming projectile will undergo a reaction inside the target that changes its charge. To measure the charge changing cross section it can be referred to formula \ref{eq:corr_cross} where in this case $N_2$ is the number of survived carbon isotopes, i.e. projectiles which did not change their charge state. For this measurement only the data from the double ionisation chamber TWIN MUSIC (see section \ref{sec:ionisation_chambers}) needs to be read out and analyzed.\newline
 While for the event seletion before the target the cut conditions can be arbitrarly strict (it will only have an impact to the statistics and the derivated statistical error), cuts on the downstream detectors need to be avoided if at all possible. Too selective cuts on the identification of $N_2$ can distort the measurement.
 \subsubsection{TWIN MUSIC Calibration}
-For the analyis of data in TWIN MUSIC - different to the upstream detectors, where calibrated data with default calibration parameters is used - the so called \textit{mapped} raw level data is processed. In the mapped level TWIN MUSIC provides following information:
+For the analysis of data in TWIN MUSIC -- different to the upstream detectors, where calibrated data with default calibration parameters is used -- the so called \textit{mapped} raw level data is processed. In the mapped level TWIN MUSIC provides following information:
 \begin{itemize}
 \itemsep0em 
 \item \textbf{SectionID:} The detector is a double ionisation chamber and as such divided into four parts (in beam perspective): section 1 - right down; section 2 - right up; section 3 - left down; section 4 - left up. For the S444 experiment only section 1 was operated and accordingly centered on the beam spot.
@@ -142,7 +142,7 @@ For the analyis of data in TWIN MUSIC - different to the upstream detectors, whe
 The calibration of the TWIN energy for each anode is done run-wise. 
 %The event selection on the incoming ion is limited to the  \textit{"Min. Bias"}-TPat condition (coincident signal in start detector preamplifiers within 1.391 ns, on-spill).
 For the TWIN MUSIC only events where all anodes having exactly one hit (including the reference anode) are chosen. The most prominent peak (Z = 6) was fitted with gaussian function. The calibration was then done by determining the scaling factor for each anode  that shifts the mean of the gaussian fits to the same position, see figure \ref{fig:calibration}. For this analysis the peaks were shifted to $\Delta E = 6$. Since $\Delta E \propto Z^2$ holds, the scaled $\Delta E$ value, even though peaking at 6, is not equate the charge Z = 6.
-TODO: describe better the calibration steps!!! this is not good!
+
 \begin{figure}
      \centering
      \begin{subfigure}[t]{0.45\textwidth}
@@ -266,7 +266,7 @@ To get the charge changing cross section values equation \ref{eq:corr_cross} has
     \label{fig:cccs_with_out_border_3_5}
 \end{figure}
 The resulting charge changing cross sections are summarized in figure \ref{fig:cccs_with_out_border_3_5} once with consideration of the vertical/horizontal bars in figure \ref{fig:twin_2d_gaus_cut} and once without. Hits within the 3.5 $\sigma$ gaussian fit are identified as carbon isotopes.
-To get the optimal $\sigma$ cut on the two dimensional gaussian fit on the energy losses of the upstream anodes versus downstream anodes the charge changing cross section for all targets and all energies was systematically measured for $\sigma$-cuts in the range of 1 to 5 $\sigma$, see figure \ref{fig:cccs_vs_sigma_cut}. In the region $\thicksim$ 3.5$\sigma$ the variation of the cross section is minimal.
+To get the optimal $\sigma$ cut on the two dimensional gaussian fit on the energy losses of the upstream anodes versus downstream anodes the charge changing cross section for all targets and all energies was systematically measured for $\sigma$-cuts in the range of 1 to 5 $\sigma$, see figure \ref{fig:cccs_vs_sigma_cut}. In the region $\thicksim$ 3.5$\sigma$ the variation of the cross section is minimal.\newline
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/cccs_vs_sigma_cut.png}
@@ -411,11 +411,11 @@ N_2^{corr} = N_2 +\frac{\Delta_{xcorr}+\Delta_{ycorr}}{N_2}
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/corig_geo_corr_factor.png}
     \caption{
-    Geometric correction factors from limited geometric efficiency of TWIN Music. 
+    Geometric correction factors from limited geometric efficiency of TWIN MUSIC. 
      }
     \label{fig:geo_corr_twim}
 \end{figure}
-Figure \ref{fig:geo_corr_twim} summarizes the geometric correction factors $\epsilon_{geo\textunderscore corr}$ obtained from the graphical reconstruction of missed TWIN Music events as described above. The correction factor is subsequently applied to the charge-changing cross-section, resulting in the final corrected charge-changing cross-section:
+Figure \ref{fig:geo_corr_twim} summarizes the geometric correction factors $\epsilon_{geo\textunderscore corr}$ obtained from the graphical reconstruction of missed TWIN MUSIC events as described above. The correction factor is subsequently applied to the charge-changing cross-section, resulting in the final corrected charge-changing cross-section:
 \begin{equation}
 \sigma_{geo\textunderscore corr} = -\frac{1}{N_t} ln(\frac{N_{1}^E}{N_{2}^E}\frac{N_2}{N_1}\cdot \epsilon_{geo\textunderscore corr}) = -\frac{1}{N_t} \left( ln(\frac{N_{1}^E}{N_{2}^E}\frac{N_2}{N_1}) + ln(\epsilon_{geo\textunderscore corr})\right)
 \label{eq:geo_corr_cccs}
@@ -428,7 +428,7 @@ Figure \ref{fig:geo_corr_twim} summarizes the geometric correction factors $\eps
      }
     \label{fig:geo_corr_cross_sec}
 \end{figure}
-Figure \ref{fig:geo_corr_cross_sec} shows the measured charge changing cross section once without considering the the limited geometric acceptance of the TWIM Music and once applying the geometric correction factors as presented in equation \ref{eq:geo_corr_cccs}. As expected significantly affected by the  geometric correction are runs with 400 and 550 AMeV beam energy whereas at beam energies of 650 and 800 AMeV the effect is exceptionally small since at high beam energies  the fragments after the target preceive a strong boost effect in beam direction which constrains the distribution in the x-y-plane.
+Figure \ref{fig:geo_corr_cross_sec} shows the measured charge changing cross section once without considering the the limited geometric acceptance of the TWIM MUSIC and once applying the geometric correction factors as presented in equation \ref{eq:geo_corr_cccs}. As expected significantly affected by the  geometric correction are runs with 400 and 550 AMeV beam energy whereas at beam energies of 650 and 800 AMeV the effect is exceptionally small since at high beam energies  the fragments after the target preceive a strong boost effect in beam direction which constrains the distribution in the x-y-plane.
 
 \subsection{Isotope Correction - Total Interaction Cross Section}
 The general formulation for the calculation of cross sections in equation \ref{eq:corr_cross} can be used to determine the cross section for specific channels depending on the definition of $N_2$. In the previous subsection \ref{subsec:cc_cs} where the charge changing cross section was measured, $N_2$ had to be sensitive to the charge of the outgoing fragment. Therefore $N_2$  was  defined as the number of survived carbon isotopes, i.e. $N_2 = N_2^{Z=6}$. For the measurement of the total interaction cross section $N_2$ has to be sensitive to both proton and neutron number of the fragments. $N_2$ is herefore restricted to the number of survived  $^{12}$C isotopes, i.e. $N_2 = N_2^{^{12}C}$. Since $N_2^{^{12}C}$ is a subset of $N_2^{Z=6}$, $N_2^{^{12}C}$ can be determined by identifying and disentangling the number of survived $^{12}$C isotopes from the set of events with carbon isotopes $N_2^{Z=6}$. For that reason the positional correlations on the x-coordinate of MWPC2 (upstream to GLAD) and the MWPC3 (downstream to GLAD) are exploited. The GLAD magnet, which acts as a mass spectrometer, deflects the passing through fragment. Depending on its proton to neutron ratio the fragment is deflected more or less, described by the formula for magnetic rigidity:\newline
