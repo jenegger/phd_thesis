@@ -66,57 +66,61 @@ A simplified picture, which however explains the essential kinematics of the QFS
     }
     \label{fig:sketch_qfs}
 \end{figure}
-From energy -momentum conservation the reaction can be expressed as:
+As from standard textbooks (see~\cite[Chapter~6.2]{povh2013teilchen}) the energy-momentum conservation of the reaction can be expressed as:
 \begin{equation}\label{eq:four_mom_cons_qfs}
 P_A  +  P_0 = P_1 + P_2 +P_{A-1} 
 \end{equation}
-with $P_i$ the four momentum $(\mathbf{p_i},E_i)$.\newline
+with $P_i$ the four momentum $(E_i,\mathbf{p_i})$.\newline
 In direct kinematics as presented in figure \ref{fig:sketch_qfs} the separation energy  of the ejected nucleon for a certain final state of the nucleus \textit{A-1} is given by\footnote{In inverse kinematics the four-momentum vectors need to be boosted to the center of mass frame of the initial nucleus via Lorentz transformation.}:
 \begin{equation}
 S = T_0 -(T_1+T_2 +T_{A-1}); \; \text{with $T_i$ the kinetic energy of particle $i$} 
 \label{eq:sep_e}
 \end{equation}
-In the idealized shell model the separation energy equals to the (negative) energy of the nucleus' single-particle state. For the case the proton knocks out the least bound nucleon (proton/neutron) the final nucleus is lying in the ground state with $E_{A-1} = M_{A-1}c^2  + T_{A-1}$.\newline
+In the idealized shell model the separation energy equals to the (negative) energy of the nucleus' single-particle state. In the case where the final nucleus \( A-1 \) (corresponding to a one-proton knockout) remains in its ground state, its total energy in the center-of-mass frame of the initial nucleus is given by
+\begin{equation}
+E_{A-1} = M_{A-1}c^{2} + T_{A-1},
+\end{equation}
+where \( M_{A-1} \) denotes the rest mass of the final nucleus and \( T_{A-1} \) its kinetic energy after the quasi-free nucleon-nucleon collision.\newline
 If a nucleon has been ejected from an inner shell resulting in a hole state, the final nucleus will be in an excited state:
 \begin{equation}
 E^{*}_{A-1} =  M_{A-1}c^2  +T_{A-1} + E_{exe}
 \end{equation} 
-The excitation energy $E_{exe}$ is reflected in the difference in the separation energy of the least bound nucleon and the ejected one. From the experimental point of view $E_{exe}$ is directly accessible via gamma detection from the transition of the final nucleus from the excited to the ground state.\newline
-According to the picture of having a nucleon nucleon scattering process with no influence of the residual nucleus A-1 we can approximate the momenta of both constituents of the nucleus A with $\mathbf{p_A} \approx \mathbf{p_i} + \mathbf{p_{A-1}}$ where $\mathbf{p_i}$ is the initial nucleon momentum inside the initial nucleus A. Since the initial nucleus is at rest ($\mathbf{p_A} = 0$), the recoil momentum of the nucleus in final state $\mathbf{p_{A-1}}$ equals to $-\mathbf{p_i}$ the momentum of the initial nucleon pointing in opposite direction. \newline
+From the experimental point of view $E_{exe}$ is directly accessible via gamma detection from the transition of the final nucleus from the excited to the ground state or via the detection of evaporated neutrons from higher excited states.\newline
+From momentum conservation follows that in the center-of-mass frame of the initial nucleus ($\mathbf{p_A} = 0$), the recoil momentum of the nucleus in final state $\mathbf{p_{A-1}}$ equals to $-\mathbf{p_i}$, the momentum of the initial nucleon inside the nucleus A pointing in opposite direction. \newline
 In addition the four-momentum of the inner nucleon can be deduced from momentum measurement of the initial and final state free nucleons:
 \begin{equation}\label{eq:miss_mom}
 P_i \approx P_{miss} \equiv P_1 + P_2  - P_0
 \end{equation}
 where $P_{miss}$ is the so called "measured missing four-momentum of the reaction"\cite{patsyuk2021unperturbed}\footnote{$P_{miss}$ is only equal to $P_i$ for the unperturbed QFS (no ISI/FSI) case.}.
 Thereupon, the separation energy measurement and the recoil momentum distribution fully describe the single paricle state in the various shell levels. 
-In addition and as complementary method $\gamma$ rays can be measured in coincidence with the reaction and consequentely exclusive cross section and momentum distribution measurements of the single particle states are accessible as illustrated in figure blabla.\newline
-Considering the removal of a single nucleon from an initial nucleus with A nucleons and initial spin \textit{I} $\Psi^A_i$ and final nucleus state  $\Psi^{A-1}_f$ with final spin $I_f$ an overlap function between intial and final state many-body wave function can be written as:
+In addition and as complementary method $\gamma$ rays can be measured in coincidence with the reaction and consequentely exclusive cross section and momentum distribution measurements of the single particle states are accessible.\newline
+Considering the removal of a single nucleon from an initial nucleus state $\Psi^A_i$ with A nucleons and initial spin \textit{I} and final nucleus state  $\Psi^{A-1}_f$ with final spin $I_f$ an overlap function between intial and final state many-body wave function can be written as:
 \begin{equation}
 \langle \vec{r}, \Psi_f^{A^{-1}} | \Psi_i^A \rangle = \sum_j C_j^{if} \psi_j(\vec{r}), \quad with  |I - I_f| < j < |I + I_f|
 \end{equation}
-where $S_j^{if} = |C_j^{if}|^2$ is the commonly named spectroscopic factor, see ref \cite{hansen2003direct} sec.2.1. $S_j^{if}$ is summed over all final single particle states m (from $-j$ to $j$). It is unity for nucleon removal from a pure single particle state and equals (2j+1) when the nucleon was removed from a filled j-subshell.
-The spectroscopic factor is linked to the exclusive experimental cross section measurement of a single particle state and the theoretical predicted one, as in ref \cite{hansen2003direct}:
+where $S_j^{if} = |C_j^{if}|^2$ is the commonly named spectroscopic factor, see ref \cite{hansen2003direct} sec.2.1. $S_j^{if}$ is summed over all final single particle states m (from $-j$ to $j$). It is unity for nucleon removal from a pure single particle state and in this picture equals (2j+1) when the nucleon was removed from a filled j-subshell.
+In a more realistic model the spectroscopic factor is linked to the exclusive experimental cross section measurement of a single particle state $\sigma_{sp}(nlj)$ and the theoretical predicted one, as in ref \cite{hansen2003direct}:
 \begin{equation}
 \sigma_{th}^{if} = \sum_j S_j^{if}\,\sigma_{sp}(nlj)
 \end{equation}
 where $\sigma_{sp}$ are the theoretical cross sections for the normalized wave functions $\Psi_j$ of the final state nucleus A-1 with the appropriate quantum numbers.\newline
-From this considerations the spectroscopic factor can be used to probe the theoretical shell predictions. In past this was already done with direct QFS-reactions $(e,e'p)$. Results for the spectroscopic factor with data obtained at the NIKHEF facility is shown in figure \ref{fig:spec_fac}. The substantial reduction of the spectroscopic factor with respect to the independent particle model (IPM) or mean field of $\approx 35\%$ indicates a substantial depletion of the single-hole states and inferring from this a refined model prediction has to be applied\footnote{The mean field potential does not consider spin-spin interaction $V_{ss}$, non central tensor-potential $V_T$ or spin-orbit interaction $V_{LS}$.}.\newline
+From this considerations the spectroscopic factor can be used to probe the theoretical shell predictions. In past this was already done with direct QFS-reactions $(e,e'p)$. Results for the spectroscopic factor with data obtained at the NIKHEF facility are shown in figure \ref{fig:spec_fac}. The substantial reduction of the spectroscopic factor with respect to the independent particle model (IPM) or mean field of $\approx 35\%$ indicates a substantial depletion of the single-particle states and inferring from this a refined model prediction has to be applied\footnote{The mean field potential does not consider spin-spin interaction $V_{ss}$, non central tensor-potential $V_T$ or spin-orbit interaction $V_{LS}$.}.\newline
 \begin{figure}[h!]
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/spec_factor.png}
     \caption{Normalized spectroscopic factors from the $(e,e'p)$ reaction as a function of target mass taken from \cite{DICKHOFF2004377}. As input for the theoretical cross sections the prediction from mean field models were used. }
     \label{fig:spec_fac}
 \end{figure}
-While QFS-reaction with electrons $(e,e'p)$ in direct kinematics is a valuable method to make precise measurements for stable (target) nuclei it is not suitable for the experimental analysis with exotic (neutron or proton rich) nuclei. Due to their unstability they have a short lifetime (e.g. $^{52}Ca$ with $\tau = 4.6s$) they can hardly serve as targets. Inducing the reaction in inverse kinematics - having electrons as targets and the exotic nuclei of interest as projectiles - is also not feasible since no free electons can be captured as target. The alternative approach is to use proton induced quasi-free scattering in inverse kinematics where the exotic beam inpinges on an extended proton target such as liquid hydrogen $H_2$  or a fixed proton rich target such as $CH_2$\footnote{Herefore a carbon target reference run is used to extract the QFS-reaction events from the $CH_2$ target run.}.\newline
-Summarizing, the QFS-reaction technique in inverse kinematics with exotic nuclei as in-flight projectiles and a proton-like target opens new possibilities to probe theoretical model predictions of deformed nuclei far off stability which haven't been accessible before.\newline
+While QFS-reaction with electrons $(e,e'p)$ in direct kinematics is a valuable method to make precise measurements for stable (target) nuclei it is not suitable for the experimental analysis with exotic (neutron or proton rich) nuclei. Due to their short lifetime (e.g. $^{52}Ca$ with $\tau = 4.6s$) they can hardly serve as a target. Inducing the reaction in inverse kinematics - having electrons as targets and the exotic nuclei of interest as projectiles - is also not feasible since no free electons can be captured as target and even more important the required center of mass energies in such an asymmetric system would require extremely high beam energies. The alternative approach is to use proton induced quasi-free scattering in inverse kinematics where the exotic beam inpinges on an extended proton target such as liquid hydrogen $H_2$  or a fixed proton rich target such as $CH_2$\footnote{Herefore a carbon target reference run is used to extract the QFS-reaction events from the $CH_2$ target run.}.\newline
+Summarizing, the QFS-reaction technique in inverse kinematics with exotic nuclei as in-flight projectiles and a proton-like target opens new possibilities to probe theoretical model predictions of exotic nuclei far off stability which haven't been accessible before.\newline
 For precise cross section measurements of the single particle states $\sigma_{sp}$ the kinematical characteristics of the QFS-reaction products have to be considered for correct identification of QFS-events and clear background substraction. The following descriptions are already implicitly embedded within the equation \ref{eq:four_mom_cons_qfs}.\newline
 As starting point one compares the QFS-reaction of the two nucleons with the two dimensional non-central collision of free pointlike particles in nonrelativistic kinematics. Since both kinetic energy and momenta are conserved a  clear signature is expected: the opening angle of the scattered particles is exactly 90$^{\circ}$. 
 
-However, at kinetic energies of 400 AMeV and more, relativistic effects affects the opening angle of the scattered particles\footnote{Relativistic considerations become relevant at velocities $ \beta \gtrapprox 0.1 c$. This corresponds to $\approx$ 4.5 MeV.}. 
+However, at kinetic energies of 400 AMeV and more, relativistic effects affect the opening angle of the scattered particles\footnote{Relativistic considerations become relevant at velocities $ \beta \gtrapprox 0.1 c$. This corresponds to $\approx$ 4.5 MeV.}. 
 TODO: Formula to calculate directly from beam energy the opening angle...
 
 For the final description of the process it has to be considered that the projectile nucleon inside the nucleus has a non negligible momentum (see $P_i$ in equation \ref{eq:miss_mom})  and in addition the separation energy $S_{p/n}$ has to be expended to remove the scattered nucleon of the nuclear potential of the projectile nucleus.\newline
-To account for the nucleon momentum the picture of the fermi gas model where protons and neutrons freely move inside the nucleus' potential is applied. In the ground state of the nucleus the nucleons can reach a momentum up to the Fermi momentum $p_F$. Except for the light nuclei, the Fermi momentum is almost independent of A and amounts to $\approx 250$ MeV/c \footnote{For light nuclei like $ ^{12}C$, $p_F \approx 230$ MeV/c can be assumed}. The mean quadratic momenta of the nucleons is related to the Fermi momentum by:
+To account for the nucleon momentum the picture of the fermi gas model where protons and neutrons freely move inside the nucleus' potential is applied. In the ground state of the nucleus the nucleons can reach a momentum up to the Fermi momentum $p_F$. Except for the light nuclei, the Fermi momentum is almost independent of A and amounts to $ p_f \approx 250$ MeV/c \footnote{For light nuclei like $ ^{12}C$, $p_F \approx 230$ MeV/c can be assumed}. The mean quadratic momenta of the nucleons is related to the Fermi momentum by:
 \begin{equation}
 \langle \mathbf{p}^2 \rangle = \frac{3}{5}p^2_F \footnote{From the derivation of the mean kinetic energy of the nucleons $\langle E_{\text{kin}} \rangle = \frac{\int_0^{p_F} E_{\text{kin}} \, p^2 \, dp}{\int_0^{p_F} p^2 \, dp} = \frac{3}{5} \cdot \frac{p_F^2}{2M}$}
 \end{equation}

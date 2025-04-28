@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.24)  24 APR 2025 14:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.24)  28 APR 2025 17:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -935,7 +935,7 @@ been already used, duplicate ignored
                    \relax 
 l.59 \subsubsection{Kinematics of QFS Reactions}
                                                 \label{sec:kin_qfs} [5]
-<Figures/sketch_qfs.png, id=410, 1318.9275pt x 744.7825pt>
+<Figures/sketch_qfs.png, id=417, 1318.9275pt x 744.7825pt>
 File: Figures/sketch_qfs.png Graphic file (type png)
 <use Figures/sketch_qfs.png>
 Package pdftex.def Info: Figures/sketch_qfs.png  used on input line 63.
@@ -944,56 +944,62 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.83 \end{equation}
+l.82 \end{equation}
                     [6]pdfTeX warning (ext4): destination with the same identif
 ier (name{page.7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.94 \begin{equation}
+l.98 \begin{equation}
                       [7 <./Figures/sketch_qfs.png>]
-<Figures/spec_factor.png, id=441, 608.2725pt x 710.655pt>
+<Figures/spec_factor.png, id=444, 608.2725pt x 710.655pt>
 File: Figures/spec_factor.png Graphic file (type png)
 <use Figures/spec_factor.png>
-Package pdftex.def Info: Figures/spec_factor.png  used on input line 106.
+Package pdftex.def Info: Figures/spec_factor.png  used on input line 110.
 (pdftex.def)             Requested size: 194.82753pt x 227.62027pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[8] [9 <./Figures/spec_factor.png>] [10]
-<Figures/spec_red_factors.png, id=500, 1330.9725pt x 879.285pt>
+[8]
+Underfull \vbox (badness 1622) has occurred while \output is active []
+
+ [9 <./Figures/spec_factor.png>] [10] [11]
+<Figures/spec_red_factors.png, id=512, 1330.9725pt x 879.285pt>
 File: Figures/spec_red_factors.png Graphic file (type png)
 <use Figures/spec_red_factors.png>
-Package pdftex.def Info: Figures/spec_red_factors.png  used on input line 170.
+Package pdftex.def Info: Figures/spec_red_factors.png  used on input line 174.
 (pdftex.def)             Requested size: 344.54182pt x 227.61586pt.
- [11] [12 <./Figures/spec_red_factors.png>] [13]
-<Figures/src_pn_excess.png, id=538, 966.61125pt x 767.86874pt>
+ [12] [13 <./Figures/spec_red_factors.png>]
+<Figures/src_pn_excess.png, id=541, 966.61125pt x 767.86874pt>
 File: Figures/src_pn_excess.png Graphic file (type png)
 <use Figures/src_pn_excess.png>
-Package pdftex.def Info: Figures/src_pn_excess.png  used on input line 189.
+Package pdftex.def Info: Figures/src_pn_excess.png  used on input line 193.
 (pdftex.def)             Requested size: 286.53429pt x 227.62068pt.
 
-Overfull \hbox (14.54854pt too wide) in paragraph at lines 184--195
+Overfull \hbox (14.54854pt too wide) in paragraph at lines 188--199
 []\T1/cmr/m/n/12 Short range cor-re-la-tions re-fer to el-e-men-tary nucleon-
  []
 
-<Figures/gabriel_1.png, id=544, 1084.05pt x 756.8275pt>
+<Figures/gabriel_1.png, id=547, 1084.05pt x 756.8275pt>
 File: Figures/gabriel_1.png Graphic file (type png)
 <use Figures/gabriel_1.png>
-Package pdftex.def Info: Figures/gabriel_1.png  used on input line 202.
+Package pdftex.def Info: Figures/gabriel_1.png  used on input line 206.
 (pdftex.def)             Requested size: 133.07489pt x 92.90561pt.
-<Figures/gabriel_2.png, id=545, 1055.945pt x 744.7825pt>
+<Figures/gabriel_2.png, id=548, 1055.945pt x 744.7825pt>
 File: Figures/gabriel_2.png Graphic file (type png)
 <use Figures/gabriel_2.png>
-Package pdftex.def Info: Figures/gabriel_2.png  used on input line 205.
+Package pdftex.def Info: Figures/gabriel_2.png  used on input line 209.
 (pdftex.def)             Requested size: 133.07489pt x 93.859pt.
-<Figures/gabriel_3.png, id=546, 1067.99pt x 750.805pt>
+<Figures/gabriel_3.png, id=549, 1067.99pt x 750.805pt>
 File: Figures/gabriel_3.png Graphic file (type png)
 <use Figures/gabriel_3.png>
-Package pdftex.def Info: Figures/gabriel_3.png  used on input line 208.
+Package pdftex.def Info: Figures/gabriel_3.png  used on input line 212.
 (pdftex.def)             Requested size: 133.07489pt x 93.55252pt.
-[14]) [15 <./Figures/src_pn_excess.png>] [16 <./Figures/gabriel_1.png> <./Figur
-es/gabriel_2.png> <./Figures/gabriel_3.png>] (./../writings/experiment.tex
+[14]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15 <./Figures/src_pn_excess.png>]) [16 <./Figures/gabriel_1.png> <./Figures/g
+abriel_2.png> <./Figures/gabriel_3.png>] [17] (./../writings/experiment.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--4
 
  []
@@ -1003,7 +1009,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--20
 
  []
 
-[17] [18]
+[18] [19]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 24.
@@ -1016,30 +1022,30 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 24.
 
-<Figures/r3b_setup_intro.png, id=604, 1112.155pt x 531.9875pt>
+<Figures/r3b_setup_intro.png, id=614, 1112.155pt x 531.9875pt>
 File: Figures/r3b_setup_intro.png Graphic file (type png)
 <use Figures/r3b_setup_intro.png>
 Package pdftex.def Info: Figures/r3b_setup_intro.png  used on input line 28.
 (pdftex.def)             Requested size: 356.88113pt x 170.71028pt.
-[19 <./Figures/r3b_setup_intro.png>]
+[20 <./Figures/r3b_setup_intro.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 39--42
 
  []
 
-<Figures/mwpcs_operation.png, id=620, 706.64pt x 796.9775pt>
+<Figures/mwpcs_operation.png, id=630, 706.64pt x 796.9775pt>
 File: Figures/mwpcs_operation.png Graphic file (type png)
 <use Figures/mwpcs_operation.png>
 Package pdftex.def Info: Figures/mwpcs_operation.png  used on input line 52.
 (pdftex.def)             Requested size: 201.815pt x 227.61522pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 3803) has occurred while \output is active []
 
- [20]
+ [21]
 Underfull \hbox (badness 10000) in paragraph at lines 59--61
 
  []
 
-[21]
+[22]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1060,12 +1066,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 117--170
 
  []
 
-[22 <./Figures/mwpcs_operation.png>] [23]
+[23 <./Figures/mwpcs_operation.png>] [24]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[24] [25]
-<Figures/glad_magnet.jpg, id=669, 853.5087pt x 521.3076pt>
+[25] [26]
+<Figures/glad_magnet.jpg, id=679, 853.5087pt x 521.3076pt>
 File: Figures/glad_magnet.jpg Graphic file (type jpg)
 <use Figures/glad_magnet.jpg>
 Package pdftex.def Info: Figures/glad_magnet.jpg  used on input line 192.
@@ -1080,39 +1086,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 201--202
 
  []
 
-<Figures/califa_section_overview.png, id=673, 724.7075pt x 556.0775pt>
+<Figures/califa_section_overview.png, id=683, 724.7075pt x 556.0775pt>
 File: Figures/califa_section_overview.png Graphic file (type png)
 <use Figures/califa_section_overview.png>
 Package pdftex.def Info: Figures/califa_section_overview.png  used on input lin
 e 207.
 (pdftex.def)             Requested size: 370.81233pt x 284.52913pt.
-[26 <./Figures/glad_magnet.jpg>] [27 <./Figures/califa_section_overview.png>]
-<Figures/califa_inner_outer_structure.png, id=701, 398.48875pt x 244.915pt>
+[27 <./Figures/glad_magnet.jpg>] [28 <./Figures/califa_section_overview.png>]
+<Figures/califa_inner_outer_structure.png, id=712, 398.48875pt x 244.915pt>
 File: Figures/califa_inner_outer_structure.png Graphic file (type png)
 <use Figures/califa_inner_outer_structure.png>
 Package pdftex.def Info: Figures/califa_inner_outer_structure.png  used on inpu
 t line 224.
 (pdftex.def)             Requested size: 177.42868pt x 109.04848pt.
-<Figures/califa_frame.png, id=704, 570.13pt x 450.68375pt>
+<Figures/califa_frame.png, id=715, 570.13pt x 450.68375pt>
 File: Figures/califa_frame.png Graphic file (type png)
 <use Figures/califa_frame.png>
 Package pdftex.def Info: Figures/califa_frame.png  used on input line 231.
 (pdftex.def)             Requested size: 177.42868pt x 140.25378pt.
 
-[28] [29 <./Figures/califa_inner_outer_structure.png> <./Figures/califa_frame.p
+[29] [30 <./Figures/califa_inner_outer_structure.png> <./Figures/califa_frame.p
 ng>]
-<Figures/qpid_plot.png, id=742, 899.36pt x 839.135pt>
+<Figures/qpid_plot.png, id=752, 899.36pt x 839.135pt>
 File: Figures/qpid_plot.png Graphic file (type png)
 <use Figures/qpid_plot.png>
 Package pdftex.def Info: Figures/qpid_plot.png  used on input line 253.
 (pdftex.def)             Requested size: 304.94124pt x 284.52106pt.
- [30]
+ [31]
 Underfull \hbox (badness 10000) in paragraph at lines 267--272
 
  []
 
-[31 <./Figures/qpid_plot.png>] [32]
-<Figures/sof_tofw.png, id=792, 2246.3925pt x 2062.70625pt>
+[32 <./Figures/qpid_plot.png>] [33]
+<Figures/sof_tofw.png, id=802, 2246.3925pt x 2062.70625pt>
 File: Figures/sof_tofw.png Graphic file (type png)
 <use Figures/sof_tofw.png>
 Package pdftex.def Info: Figures/sof_tofw.png  used on input line 292.
@@ -1126,7 +1132,7 @@ Overfull \hbox (7.4728pt too wide) detected at line 305
  [] 
  []
 
-[33] [34 <./Figures/sof_tofw.png>]) (./../writings/analysis.tex
+[34] [35 <./Figures/sof_tofw.png>]) (./../writings/analysis.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
@@ -1156,62 +1162,62 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--20
 
  []
 
-[35]
+[36]
 Underfull \hbox (badness 10000) in paragraph at lines 27--30
 
  []
 
-[36]
-<Figures/SETUP_around_Target.png, id=844, 1927.2pt x 1084.05pt>
+[37]
+<Figures/SETUP_around_Target.png, id=854, 1927.2pt x 1084.05pt>
 File: Figures/SETUP_around_Target.png Graphic file (type png)
 <use Figures/SETUP_around_Target.png>
 Package pdftex.def Info: Figures/SETUP_around_Target.png  used on input line 53
 .
 (pdftex.def)             Requested size: 303.47679pt x 170.70569pt.
-<Figures/charge_r3bmusic.png, id=845, 1704.3675pt x 1207.51125pt>
+<Figures/charge_r3bmusic.png, id=855, 1704.3675pt x 1207.51125pt>
 File: Figures/charge_r3bmusic.png Graphic file (type png)
 <use Figures/charge_r3bmusic.png>
 Package pdftex.def Info: Figures/charge_r3bmusic.png  used on input line 65.
 (pdftex.def)             Requested size: 321.25854pt x 227.60544pt.
-<Figures/r3bmusic_charge_cuts.png, id=850, 1011.78pt x 578.16pt>
+<Figures/r3bmusic_charge_cuts.png, id=860, 1011.78pt x 578.16pt>
 File: Figures/r3bmusic_charge_cuts.png Graphic file (type png)
 <use Figures/r3bmusic_charge_cuts.png>
 Package pdftex.def Info: Figures/r3bmusic_charge_cuts.png  used on input line 7
 5.
 (pdftex.def)             Requested size: 398.32872pt x 227.61641pt.
- [37 <./Figures/SETUP_around_Target.png>]
-<Figures/start_tdiff_exactly2good_hits.png, id=860, 1181.41376pt x 796.9775pt>
+ [38 <./Figures/SETUP_around_Target.png>]
+<Figures/start_tdiff_exactly2good_hits.png, id=870, 1181.41376pt x 796.9775pt>
 File: Figures/start_tdiff_exactly2good_hits.png Graphic file (type png)
 <use Figures/start_tdiff_exactly2good_hits.png>
 Package pdftex.def Info: Figures/start_tdiff_exactly2good_hits.png  used on inp
 ut line 101.
 (pdftex.def)             Requested size: 337.40947pt x 227.61522pt.
- [38 <./Figures/charge_r3bmusic.png>] [39 <./Figures/r3bmusic_charge_cuts.png>]
-<Figures/mw0_xy_summary.png, id=879, 837.1275pt x 544.0325pt>
+ [39 <./Figures/charge_r3bmusic.png>] [40 <./Figures/r3bmusic_charge_cuts.png>]
+<Figures/mw0_xy_summary.png, id=889, 837.1275pt x 544.0325pt>
 File: Figures/mw0_xy_summary.png Graphic file (type png)
 <use Figures/mw0_xy_summary.png>
 Package pdftex.def Info: Figures/mw0_xy_summary.png  used on input line 109.
 (pdftex.def)             Requested size: 350.24994pt x 227.62045pt.
-<Figures/mwpc0_cutxy.png, id=880, 1011.78pt x 578.16pt>
+<Figures/mwpc0_cutxy.png, id=890, 1011.78pt x 578.16pt>
 File: Figures/mwpc0_cutxy.png Graphic file (type png)
 <use Figures/mwpc0_cutxy.png>
 Package pdftex.def Info: Figures/mwpc0_cutxy.png  used on input line 115.
 (pdftex.def)             Requested size: 398.32872pt x 227.61641pt.
-<Figures/x_proj_beam_mw0_target.png, id=882, 1166.3575pt x 799.98875pt>
+<Figures/x_proj_beam_mw0_target.png, id=892, 1166.3575pt x 799.98875pt>
 File: Figures/x_proj_beam_mw0_target.png Graphic file (type png)
 <use Figures/x_proj_beam_mw0_target.png>
 Package pdftex.def Info: Figures/x_proj_beam_mw0_target.png  used on input line
  123.
 (pdftex.def)             Requested size: 331.86363pt x 227.62074pt.
- [40 <./Figures/start_tdiff_exactly2good_hits.png>] [41 <./Figures/mw0_xy_summa
-ry.png> <./Figures/mwpc0_cutxy.png>] [42 <./Figures/x_proj_beam_mw0_target.png>
+ [41 <./Figures/start_tdiff_exactly2good_hits.png>] [42 <./Figures/mw0_xy_summa
+ry.png> <./Figures/mwpc0_cutxy.png>] [43 <./Figures/x_proj_beam_mw0_target.png>
 ]
-<Figures/twim_mapped_550.png, id=908, 1202.4925pt x 1002.74625pt>
+<Figures/twim_mapped_550.png, id=918, 1202.4925pt x 1002.74625pt>
 File: Figures/twim_mapped_550.png Graphic file (type png)
 <use Figures/twim_mapped_550.png>
 Package pdftex.def Info: Figures/twim_mapped_550.png  used on input line 150.
 (pdftex.def)             Requested size: 199.60895pt x 166.44054pt.
-<Figures/twim_mapped_550_no_calib.png, id=909, 952.55875pt x 527.9725pt>
+<Figures/twim_mapped_550_no_calib.png, id=919, 952.55875pt x 527.9725pt>
 File: Figures/twim_mapped_550_no_calib.png Graphic file (type png)
 <use Figures/twim_mapped_550_no_calib.png>
 Package pdftex.def Info: Figures/twim_mapped_550_no_calib.png  used on input li
@@ -1233,72 +1239,72 @@ Underfull \hbox (badness 10000) in paragraph at lines 212--216
 
 Underfull \vbox (badness 2165) has occurred while \output is active []
 
- [43]
-[44 <./Figures/twim_mapped_550.png> <./Figures/twim_mapped_550_no_calib.png>]
-<Figures/charge_cut_with_out_borders.png, id=926, 1061.9675pt x 597.23125pt>
+ [44]
+[45 <./Figures/twim_mapped_550.png> <./Figures/twim_mapped_550_no_calib.png>]
+<Figures/charge_cut_with_out_borders.png, id=935, 1061.9675pt x 597.23125pt>
 File: Figures/charge_cut_with_out_borders.png Graphic file (type png)
 <use Figures/charge_cut_with_out_borders.png>
 Package pdftex.def Info: Figures/charge_cut_with_out_borders.png  used on input
  line 230.
 (pdftex.def)             Requested size: 404.75096pt x 227.62459pt.
 
-[45]
-<Figures/cccs_with_out_border_3_5_sigma.png, id=942, 462.528pt x 346.896pt>
+[46]
+<Figures/cccs_with_out_border_3_5_sigma.png, id=952, 462.528pt x 346.896pt>
 File: Figures/cccs_with_out_border_3_5_sigma.png Graphic file (type png)
 <use Figures/cccs_with_out_border_3_5_sigma.png>
 Package pdftex.def Info: Figures/cccs_with_out_border_3_5_sigma.png  used on in
 put line 262.
 (pdftex.def)             Requested size: 303.49796pt x 227.62346pt.
-<Figures/cccs_vs_sigma_cut.png, id=946, 1084.05pt x 289.08pt>
+<Figures/cccs_vs_sigma_cut.png, id=956, 1084.05pt x 289.08pt>
 File: Figures/cccs_vs_sigma_cut.png Graphic file (type png)
 <use Figures/cccs_vs_sigma_cut.png>
 Package pdftex.def Info: Figures/cccs_vs_sigma_cut.png  used on input line 272.
 
 (pdftex.def)             Requested size: 443.57016pt x 118.28537pt.
-<Figures/charge_loss_550_thick.png, id=950, 1114.1625pt x 933.4875pt>
+<Figures/charge_loss_550_thick.png, id=960, 1114.1625pt x 933.4875pt>
 File: Figures/charge_loss_550_thick.png Graphic file (type png)
 <use Figures/charge_loss_550_thick.png>
 Package pdftex.def Info: Figures/charge_loss_550_thick.png  used on input line 
 281.
 (pdftex.def)             Requested size: 271.67165pt x 227.61678pt.
-<Figures/cccs_gauss_diag_comp_3_5_sigma.png, id=952, 462.528pt x 346.896pt>
+<Figures/cccs_gauss_diag_comp_3_5_sigma.png, id=962, 462.528pt x 346.896pt>
 File: Figures/cccs_gauss_diag_comp_3_5_sigma.png Graphic file (type png)
 <use Figures/cccs_gauss_diag_comp_3_5_sigma.png>
 Package pdftex.def Info: Figures/cccs_gauss_diag_comp_3_5_sigma.png  used on in
 put line 290.
 (pdftex.def)             Requested size: 303.49796pt x 227.62346pt.
- [46 <./Figures/charge_cut_with_out_borders.png>] [47 <./Figures/cccs_with_out_
-border_3_5_sigma.png> <./Figures/cccs_vs_sigma_cut.png>] [48 <./Figures/charge_
+ [47 <./Figures/charge_cut_with_out_borders.png>] [48 <./Figures/cccs_with_out_
+border_3_5_sigma.png> <./Figures/cccs_vs_sigma_cut.png>] [49 <./Figures/charge_
 loss_550_thick.png>]
-<Figures/cccs_various_sections_2dgauss_border.png, id=985, 1242.6425pt x 567.11
+<Figures/cccs_various_sections_2dgauss_border.png, id=994, 1242.6425pt x 567.11
 874pt>
 File: Figures/cccs_various_sections_2dgauss_border.png Graphic file (type png)
 <use Figures/cccs_various_sections_2dgauss_border.png>
 Package pdftex.def Info: Figures/cccs_various_sections_2dgauss_border.png  used
  on input line 327.
 (pdftex.def)             Requested size: 443.5777pt x 202.44054pt.
-<Figures/cccs_time_vs_engergy_sorted.png, id=988, 462.528pt x 346.896pt>
+<Figures/cccs_time_vs_engergy_sorted.png, id=997, 462.528pt x 346.896pt>
 File: Figures/cccs_time_vs_engergy_sorted.png Graphic file (type png)
 <use Figures/cccs_time_vs_engergy_sorted.png>
 Package pdftex.def Info: Figures/cccs_time_vs_engergy_sorted.png  used on input
  line 336.
 (pdftex.def)             Requested size: 303.49796pt x 227.62346pt.
-<Figures/cccs_with_stat_errors.png, id=990, 433.62pt x 289.08pt>
+<Figures/cccs_with_stat_errors.png, id=999, 433.62pt x 289.08pt>
 File: Figures/cccs_with_stat_errors.png Graphic file (type png)
 <use Figures/cccs_with_stat_errors.png>
 Package pdftex.def Info: Figures/cccs_with_stat_errors.png  used on input line 
 346.
 (pdftex.def)             Requested size: 341.43124pt x 227.62082pt.
- [49 <./Figures/cccs_gauss_diag_comp_3_5_sigma.png>]
-[50 <./Figures/cccs_various_sections_2dgauss_border.png>] [51 <./Figures/cccs_t
+ [50 <./Figures/cccs_gauss_diag_comp_3_5_sigma.png>]
+[51 <./Figures/cccs_various_sections_2dgauss_border.png>] [52 <./Figures/cccs_t
 ime_vs_engergy_sorted.png> <./Figures/cccs_with_stat_errors.png>]
-<Figures/geo_corr_examples.png, id=1016, 1768.6075pt x 807.015pt>
+<Figures/geo_corr_examples.png, id=1026, 1768.6075pt x 807.015pt>
 File: Figures/geo_corr_examples.png Graphic file (type png)
 <use Figures/geo_corr_examples.png>
 Package pdftex.def Info: Figures/geo_corr_examples.png  used on input line 368.
 
 (pdftex.def)             Requested size: 443.55411pt x 202.39359pt.
- [52 <./Figures/geo_corr_examples.png>]
+ [53 <./Figures/geo_corr_examples.png>]
 Overfull \hbox (38.0447pt too wide) in paragraph at lines 400--401
 []\T1/cmr/m/n/12 The ob-tained fit func-tion $\OML/cmm/m/it/12 f\OT1/cmr/m/n/12
  (\OML/cmm/m/it/12 y\OT1/cmr/m/n/12 )$ \T1/cmr/m/n/12 is then used to com-pare 
@@ -1306,8 +1312,8 @@ the data distribution($\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 y\OT
 1/cmr/m/n/12 )[]$\T1/cmr/m/n/12 )
  []
 
-[53]
-<Figures/corig_geo_corr_factor.png, id=1043, 462.528pt x 346.896pt>
+[54]
+<Figures/corig_geo_corr_factor.png, id=1053, 462.528pt x 346.896pt>
 File: Figures/corig_geo_corr_factor.png Graphic file (type png)
 <use Figures/corig_geo_corr_factor.png>
 Package pdftex.def Info: Figures/corig_geo_corr_factor.png  used on input line 
@@ -1326,7 +1332,7 @@ LaTeX Warning: Command \textunderscore invalid in math mode on input line 420.
 
 LaTeX Warning: Command \textunderscore invalid in math mode on input line 420.
 
-<Figures/charge_changing_geo_corrected_cross_section.png, id=1045, 462.528pt x 
+<Figures/charge_changing_geo_corrected_cross_section.png, id=1055, 462.528pt x 
 346.896pt>
 File: Figures/charge_changing_geo_corrected_cross_section.png Graphic file (typ
 e png)
@@ -1339,30 +1345,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 434--435
 
  []
 
-[54 <./Figures/corig_geo_corr_factor.png>]
+[55 <./Figures/corig_geo_corr_factor.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [55 <./Figures/charge_changing_geo_corrected_cross_section.png>]
+ [56 <./Figures/charge_changing_geo_corrected_cross_section.png>]
 
 LaTeX Warning: Command \textunderscore invalid in math mode on input line 462.
 
 
 LaTeX Warning: Command \textunderscore invalid in math mode on input line 462.
 
-[56]
-<Figures/hyperbolic_squared_secant_function.png, id=1083, 537.00626pt x 444.661
+[57]
+<Figures/hyperbolic_squared_secant_function.png, id=1092, 537.00626pt x 444.661
 25pt>
 File: Figures/hyperbolic_squared_secant_function.png Graphic file (type png)
 <use Figures/hyperbolic_squared_secant_function.png>
 Package pdftex.def Info: Figures/hyperbolic_squared_secant_function.png  used o
 n input line 486.
 (pdftex.def)             Requested size: 274.89381pt x 227.62234pt.
-<Figures/mw23_default.png, id=1087, 1013.7875pt x 702.625pt>
+<Figures/mw23_default.png, id=1096, 1013.7875pt x 702.625pt>
 File: Figures/mw23_default.png Graphic file (type png)
 <use Figures/mw23_default.png>
 Package pdftex.def Info: Figures/mw23_default.png  used on input line 495.
 (pdftex.def)             Requested size: 328.42514pt x 227.62137pt.
-<Figures/own_clustering_mwpcs.png, id=1089, 413.545pt x 296.10625pt>
+<Figures/own_clustering_mwpcs.png, id=1098, 413.545pt x 296.10625pt>
 File: Figures/own_clustering_mwpcs.png Graphic file (type png)
 <use Figures/own_clustering_mwpcs.png>
 Package pdftex.def Info: Figures/own_clustering_mwpcs.png  used on input line 5
@@ -1378,27 +1384,27 @@ File: Figures/own_clustering_mwpcs.png Graphic file (type png)
 Package pdftex.def Info: Figures/own_clustering_mwpcs.png  used on input line 5
 06.
 (pdftex.def)             Requested size: 199.16928pt x 142.61282pt.
-<Figures/mw23_own_clustering.png, id=1093, 917.4275pt x 617.30624pt>
+<Figures/mw23_own_clustering.png, id=1102, 917.4275pt x 617.30624pt>
 File: Figures/mw23_own_clustering.png Graphic file (type png)
 <use Figures/mw23_own_clustering.png>
 Package pdftex.def Info: Figures/mw23_own_clustering.png  used on input line 51
 1.
 (pdftex.def)             Requested size: 338.28096pt x 227.61792pt.
- [57] [58 <./Figures/hyperbolic_squared_secant_function.png> <./Figures/mw23_de
+ [58] [59 <./Figures/hyperbolic_squared_secant_function.png> <./Figures/mw23_de
 fault.png>]
-<Figures/mw13_standard_cluster.png, id=1110, 721.69624pt x 518.93875pt>
+<Figures/mw13_standard_cluster.png, id=1119, 721.69624pt x 518.93875pt>
 File: Figures/mw13_standard_cluster.png Graphic file (type png)
 <use Figures/mw13_standard_cluster.png>
 Package pdftex.def Info: Figures/mw13_standard_cluster.png  used on input line 
 522.
 (pdftex.def)             Requested size: 316.55623pt x 227.6211pt.
- [59 <./Figures/own_clustering_mwpcs.png> <./Figures/mw23_own_clustering.png>]
-<Figures/mw13_own_cluster.png, id=1122, 679.53876pt x 498.86375pt>
+ [60 <./Figures/own_clustering_mwpcs.png> <./Figures/mw23_own_clustering.png>]
+<Figures/mw13_own_cluster.png, id=1131, 679.53876pt x 498.86375pt>
 File: Figures/mw13_own_cluster.png Graphic file (type png)
 <use Figures/mw13_own_cluster.png>
 Package pdftex.def Info: Figures/mw13_own_cluster.png  used on input line 532.
 (pdftex.def)             Requested size: 310.06161pt x 227.62277pt.
-<Figures/quadrants_mw1_xy_400_thick.png, id=1127, 1072.005pt x 770.88pt>
+<Figures/quadrants_mw1_xy_400_thick.png, id=1136, 1072.005pt x 770.88pt>
 File: Figures/quadrants_mw1_xy_400_thick.png Graphic file (type png)
 <use Figures/quadrants_mw1_xy_400_thick.png>
 Package pdftex.def Info: Figures/quadrants_mw1_xy_400_thick.png  used on input 
@@ -1410,37 +1416,37 @@ Overfull \hbox (30.8736pt too wide) in paragraph at lines 539--549
 in MWPC2:[][][][][] 
  []
 
-[60 <./Figures/mw13_standard_cluster.png>] [61 <./Figures/mw13_own_cluster.png>
+[61 <./Figures/mw13_standard_cluster.png>] [62 <./Figures/mw13_own_cluster.png>
 ]
-<Figures/iso_corr_cs_mw23_hit.png, id=1142, 462.528pt x 346.896pt>
+<Figures/iso_corr_cs_mw23_hit.png, id=1151, 462.528pt x 346.896pt>
 File: Figures/iso_corr_cs_mw23_hit.png Graphic file (type png)
 <use Figures/iso_corr_cs_mw23_hit.png>
 Package pdftex.def Info: Figures/iso_corr_cs_mw23_hit.png  used on input line 5
 57.
 (pdftex.def)             Requested size: 303.49796pt x 227.62346pt.
-<Figures/iso_corr_cs_mw23_own_cluster.png, id=1143, 462.528pt x 346.896pt>
+<Figures/iso_corr_cs_mw23_own_cluster.png, id=1152, 462.528pt x 346.896pt>
 File: Figures/iso_corr_cs_mw23_own_cluster.png Graphic file (type png)
 <use Figures/iso_corr_cs_mw23_own_cluster.png>
 Package pdftex.def Info: Figures/iso_corr_cs_mw23_own_cluster.png  used on inpu
 t line 567.
 (pdftex.def)             Requested size: 303.49796pt x 227.62346pt.
- [62 <./Figures/quadrants_mw1_xy_400_thick.png> <./Figures/iso_corr_cs_mw23_hit
+ [63 <./Figures/quadrants_mw1_xy_400_thick.png> <./Figures/iso_corr_cs_mw23_hit
 .png>]
-<Figures/iso_corr_cs_mw13_hit.png, id=1151, 462.528pt x 346.896pt>
+<Figures/iso_corr_cs_mw13_hit.png, id=1160, 462.528pt x 346.896pt>
 File: Figures/iso_corr_cs_mw13_hit.png Graphic file (type png)
 <use Figures/iso_corr_cs_mw13_hit.png>
 Package pdftex.def Info: Figures/iso_corr_cs_mw13_hit.png  used on input line 5
 77.
 (pdftex.def)             Requested size: 303.49796pt x 227.62346pt.
-<Figures/iso_corr_cs_mw13_own_cluster.png, id=1152, 462.528pt x 346.896pt>
+<Figures/iso_corr_cs_mw13_own_cluster.png, id=1161, 462.528pt x 346.896pt>
 File: Figures/iso_corr_cs_mw13_own_cluster.png Graphic file (type png)
 <use Figures/iso_corr_cs_mw13_own_cluster.png>
 Package pdftex.def Info: Figures/iso_corr_cs_mw13_own_cluster.png  used on inpu
 t line 587.
 (pdftex.def)             Requested size: 303.49796pt x 227.62346pt.
- [63 <./Figures/iso_corr_cs_mw23_own_cluster.png> <./Figures/iso_corr_cs_mw13_h
+ [64 <./Figures/iso_corr_cs_mw23_own_cluster.png> <./Figures/iso_corr_cs_mw13_h
 it.png>]
-<Figures/iso_corr_cs_mw23_own_cluster_all_quadrants.png, id=1161, 1084.05pt x 5
+<Figures/iso_corr_cs_mw23_own_cluster_all_quadrants.png, id=1171, 1084.05pt x 5
 05.89pt>
 File: Figures/iso_corr_cs_mw23_own_cluster_all_quadrants.png Graphic file (type
  png)
@@ -1457,7 +1463,7 @@ in MWPC1:
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[64 <./Figures/iso_corr_cs_mw13_own_cluster.png>]
+[65 <./Figures/iso_corr_cs_mw13_own_cluster.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 622--623
 
  []
@@ -1465,12 +1471,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 622--623
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [65 <./Figures/iso_corr_cs_mw23_own_cluster_all_quadrants.png>]
+ [66 <./Figures/iso_corr_cs_mw23_own_cluster_all_quadrants.png>]
 Overfull \hbox (50.40031pt too wide) detected at line 642
 [][]\OT1/cmr/m/n/10.95 ^^A\OML/cmm/m/it/10.95 ^^[[] \OT1/cmr/m/n/10.95 = []
  []
 
-<Figures/tot_interaction_cs_geo_corr.png, id=1188, 462.528pt x 346.896pt>
+<Figures/tot_interaction_cs_geo_corr.png, id=1197, 462.528pt x 346.896pt>
 File: Figures/tot_interaction_cs_geo_corr.png Graphic file (type png)
 <use Figures/tot_interaction_cs_geo_corr.png>
 Package pdftex.def Info: Figures/tot_interaction_cs_geo_corr.png  used on input
@@ -1479,7 +1485,7 @@ Package pdftex.def Info: Figures/tot_interaction_cs_geo_corr.png  used on input
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[66]) [67 <./Figures/tot_interaction_cs_geo_corr.png>]
+[67]) [68 <./Figures/tot_interaction_cs_geo_corr.png>]
 (./../writings/analysis_qfs.tex
 Overfull \hbox (42.01863pt too wide) in paragraph at lines 1--1
 |[]\T1/cmr/bx/n/17.28 Qualitative Anal-y-sis - Quasi-Free Scat-ter-ing $[]$C(p,
@@ -1515,14 +1521,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--4
 
  []
 
-[68]
-<Figures/kick_point_algorithm.png, id=1218, 1214.5375pt x 758.835pt>
+[69]
+<Figures/kick_point_algorithm.png, id=1227, 1214.5375pt x 758.835pt>
 File: Figures/kick_point_algorithm.png Graphic file (type png)
 <use Figures/kick_point_algorithm.png>
 Package pdftex.def Info: Figures/kick_point_algorithm.png  used on input line 2
 0.
 (pdftex.def)             Requested size: 310.50357pt x 193.99246pt.
-<Figures/intersection_algorithm.png, id=1219, 835.12pt x 796.9775pt>
+<Figures/intersection_algorithm.png, id=1228, 835.12pt x 796.9775pt>
 File: Figures/intersection_algorithm.png Graphic file (type png)
 <use Figures/intersection_algorithm.png>
 Package pdftex.def Info: Figures/intersection_algorithm.png  used on input line
@@ -1533,21 +1539,21 @@ Underfull \hbox (badness 2103) in paragraph at lines 29--29
 \T1/cmr/m/n/10.95 For de-tailed in-for-ma-
  []
 
-[69 <./Figures/kick_point_algorithm.png> <./Figures/intersection_algorithm.png>
-] [70] [71]
+[70 <./Figures/kick_point_algorithm.png> <./Figures/intersection_algorithm.png>
+] [71] [72]
 Overfull \hbox (25.98763pt too wide) detected at line 79
 []
  []
 
-[72]
-<Figures/a_over_q_vs_q_plot.png, id=1259, 1316.92pt x 843.15pt>
+[73]
+<Figures/a_over_q_vs_q_plot.png, id=1268, 1316.92pt x 843.15pt>
 File: Figures/a_over_q_vs_q_plot.png Graphic file (type png)
 <use Figures/a_over_q_vs_q_plot.png>
 Package pdftex.def Info: Figures/a_over_q_vs_q_plot.png  used on input line 110
 .
 (pdftex.def)             Requested size: 443.56721pt x 283.9912pt.
- [73] [74 <./Figures/a_over_q_vs_q_plot.png>]
-<Figures/reaction_qfs_model.png, id=1272, 732.7375pt x 594.22pt>
+ [74] [75 <./Figures/a_over_q_vs_q_plot.png>]
+<Figures/reaction_qfs_model.png, id=1281, 732.7375pt x 594.22pt>
 File: Figures/reaction_qfs_model.png Graphic file (type png)
 <use Figures/reaction_qfs_model.png>
 Package pdftex.def Info: Figures/reaction_qfs_model.png  used on input line 124
@@ -1558,35 +1564,35 @@ Underfull \hbox (badness 6461) in paragraph at lines 125--125
 []\T1/cmr/m/n/10.95 (a) |Quasi-free scat-ter-ing chan-nel
  []
 
-<Figures/CALIFA2020Front.png, id=1273, 576.1525pt x 645.41125pt>
+<Figures/CALIFA2020Front.png, id=1282, 576.1525pt x 645.41125pt>
 File: Figures/CALIFA2020Front.png Graphic file (type png)
 <use Figures/CALIFA2020Front.png>
 Package pdftex.def Info: Figures/CALIFA2020Front.png  used on input line 128.
 (pdftex.def)             Requested size: 177.42868pt x 198.75577pt.
-[75 <./Figures/reaction_qfs_model.png> <./Figures/CALIFA2020Front.png>]
-<Figures/phi12_califa.png, id=1285, 1021.8175pt x 680.5425pt>
+[76 <./Figures/reaction_qfs_model.png> <./Figures/CALIFA2020Front.png>]
+<Figures/phi12_califa.png, id=1295, 1021.8175pt x 680.5425pt>
 File: Figures/phi12_califa.png Graphic file (type png)
 <use Figures/phi12_califa.png>
 Package pdftex.def Info: Figures/phi12_califa.png  used on input line 151.
 (pdftex.def)             Requested size: 332.68385pt x 221.56828pt.
-<Figures/phi12_sim.png, id=1286, 712.6625pt x 472.76625pt>
+<Figures/phi12_sim.png, id=1296, 712.6625pt x 472.76625pt>
 File: Figures/phi12_sim.png Graphic file (type png)
 <use Figures/phi12_sim.png>
 Package pdftex.def Info: Figures/phi12_sim.png  used on input line 155.
 (pdftex.def)             Requested size: 332.68385pt x 220.69247pt.
-<Figures/theta12_califa.png, id=1288, 699.61375pt x 523.9575pt>
+<Figures/theta12_califa.png, id=1298, 699.61375pt x 523.9575pt>
 File: Figures/theta12_califa.png Graphic file (type png)
 <use Figures/theta12_califa.png>
 Package pdftex.def Info: Figures/theta12_califa.png  used on input line 165.
 (pdftex.def)             Requested size: 332.68385pt x 249.15422pt.
-<Figures/theta12_sim.png, id=1289, 705.63625pt x 560.0925pt>
+<Figures/theta12_sim.png, id=1299, 705.63625pt x 560.0925pt>
 File: Figures/theta12_sim.png Graphic file (type png)
 <use Figures/theta12_sim.png>
 Package pdftex.def Info: Figures/theta12_sim.png  used on input line 169.
 (pdftex.def)             Requested size: 332.68385pt x 264.06395pt.
 
-[76] [77 <./Figures/phi12_califa.png> <./Figures/phi12_sim.png>]
-<Figures/opang.png, id=1307, 925.4575pt x 796.9775pt>
+[77] [78 <./Figures/phi12_califa.png> <./Figures/phi12_sim.png>]
+<Figures/opang.png, id=1316, 925.4575pt x 796.9775pt>
 File: Figures/opang.png Graphic file (type png)
 <use Figures/opang.png>
 Package pdftex.def Info: Figures/opang.png  used on input line 184.
@@ -1596,7 +1602,7 @@ Underfull \hbox (badness 1931) in paragraph at lines 185--185
 []\T1/cmr/m/n/10.95 (a) |Open-ing an-gle dis-tri-bu-tion from
  []
 
-<Figures/opang_sim.png, id=1308, 925.4575pt x 724.7075pt>
+<Figures/opang_sim.png, id=1317, 925.4575pt x 724.7075pt>
 File: Figures/opang_sim.png Graphic file (type png)
 <use Figures/opang_sim.png>
 Package pdftex.def Info: Figures/opang_sim.png  used on input line 188.
@@ -1613,22 +1619,22 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 202.
 
-<Figures/p_miss_tot.png, id=1315, 1007.765pt x 813.0375pt>
+<Figures/p_miss_tot.png, id=1324, 1007.765pt x 813.0375pt>
 File: Figures/p_miss_tot.png Graphic file (type png)
 <use Figures/p_miss_tot.png>
 Package pdftex.def Info: Figures/p_miss_tot.png  used on input line 210.
 (pdftex.def)             Requested size: 399.21791pt x 322.07054pt.
-<Figures/p_miss_x.png, id=1316, 823.075pt x 704.6325pt>
+<Figures/p_miss_x.png, id=1325, 823.075pt x 704.6325pt>
 File: Figures/p_miss_x.png Graphic file (type png)
 <use Figures/p_miss_x.png>
 Package pdftex.def Info: Figures/p_miss_x.png  used on input line 218.
 (pdftex.def)             Requested size: 133.07489pt x 113.9262pt.
-<Figures/p_miss_y.png, id=1317, 803.0pt x 704.6325pt>
+<Figures/p_miss_y.png, id=1326, 803.0pt x 704.6325pt>
 File: Figures/p_miss_y.png Graphic file (type png)
 <use Figures/p_miss_y.png>
 Package pdftex.def Info: Figures/p_miss_y.png  used on input line 224.
 (pdftex.def)             Requested size: 133.07489pt x 116.76468pt.
-<Figures/p_miss_z.png, id=1318, 825.0825pt x 712.6625pt>
+<Figures/p_miss_z.png, id=1327, 825.0825pt x 712.6625pt>
 File: Figures/p_miss_z.png Graphic file (type png)
 <use Figures/p_miss_z.png>
 Package pdftex.def Info: Figures/p_miss_z.png  used on input line 230.
@@ -1636,9 +1642,9 @@ Package pdftex.def Info: Figures/p_miss_z.png  used on input line 230.
 
 Underfull \vbox (badness 1132) has occurred while \output is active []
 
- [78]
-[79 <./Figures/theta12_califa.png> <./Figures/theta12_sim.png>] [80 <./Figures/
-opang.png> <./Figures/opang_sim.png>] [81 <./Figures/p_miss_tot.png> <./Figures
+ [79]
+[80 <./Figures/theta12_califa.png> <./Figures/theta12_sim.png>] [81 <./Figures/
+opang.png> <./Figures/opang_sim.png>] [82 <./Figures/p_miss_tot.png> <./Figures
 /p_miss_x.png> <./Figures/p_miss_y.png> <./Figures/p_miss_z.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1667,18 +1673,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 254--255
 
  []
 
-[82]
-<Figures/cos_angle_2p_11b.png, id=1361, 895.345pt x 815.045pt>
+[83]
+<Figures/cos_angle_2p_11b.png, id=1370, 895.345pt x 815.045pt>
 File: Figures/cos_angle_2p_11b.png Graphic file (type png)
 <use Figures/cos_angle_2p_11b.png>
 Package pdftex.def Info: Figures/cos_angle_2p_11b.png  used on input line 268.
 (pdftex.def)             Requested size: 399.21791pt x 363.42142pt.
-<Figures/p_x_2p_11b.png, id=1362, 853.1875pt x 728.7225pt>
+<Figures/p_x_2p_11b.png, id=1371, 853.1875pt x 728.7225pt>
 File: Figures/p_x_2p_11b.png Graphic file (type png)
 <use Figures/p_x_2p_11b.png>
 Package pdftex.def Info: Figures/p_x_2p_11b.png  used on input line 278.
 (pdftex.def)             Requested size: 172.99533pt x 147.75452pt.
-<Figures/p_y_2p_11b.png, id=1363, 857.2025pt x 726.715pt>
+<Figures/p_y_2p_11b.png, id=1372, 857.2025pt x 726.715pt>
 File: Figures/p_y_2p_11b.png Graphic file (type png)
 <use Figures/p_y_2p_11b.png>
 Package pdftex.def Info: Figures/p_y_2p_11b.png  used on input line 285.
@@ -1696,13 +1702,13 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 315.
 
-<Figures/sep_energy_vs_sum_energy.png, id=1369, 954.56625pt x 648.4225pt>
+<Figures/sep_energy_vs_sum_energy.png, id=1378, 954.56625pt x 648.4225pt>
 File: Figures/sep_energy_vs_sum_energy.png Graphic file (type png)
 <use Figures/sep_energy_vs_sum_energy.png>
 Package pdftex.def Info: Figures/sep_energy_vs_sum_energy.png  used on input li
 ne 343.
 (pdftex.def)             Requested size: 418.85979pt x 284.52515pt.
-[83] [84 <./Figures/cos_angle_2p_11b.png> <./Figures/p_x_2p_11b.png> <./Figures
+[84] [85 <./Figures/cos_angle_2p_11b.png> <./Figures/p_x_2p_11b.png> <./Figures
 /p_y_2p_11b.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1719,7 +1725,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 Underfull \vbox (badness 1024) has occurred while \output is active []
 
- [85 <./Figures/sep_energy_vs_sum_energy.png>] [86])
+ [86 <./Figures/sep_energy_vs_sum_energy.png>] [87])
 (./../writings/califa_odsl_clustering.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1733,8 +1739,14 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 1.
 
-) [87] (./../writings/appendix.tex
-<Figures/charge_changing_cross_sec_twim_eff_corr.png, id=1401, 462.528pt x 346.
+)
+Overfull \hbox (167.85764pt too wide) has occurred while \output is active
+\T1/cmr/m/n/12 88 \T1/cmr/m/sl/12 6 MACHINE LEARNING FOR THE CLUSTER RECONSTRUC
+TION IN THE CALIFA CALORIMETER AT R$[]$B
+ []
+
+[88] (./../writings/appendix.tex
+<Figures/charge_changing_cross_sec_twim_eff_corr.png, id=1411, 462.528pt x 346.
 896pt>
 File: Figures/charge_changing_cross_sec_twim_eff_corr.png Graphic file (type pn
 g)
@@ -1742,7 +1754,7 @@ g)
 Package pdftex.def Info: Figures/charge_changing_cross_sec_twim_eff_corr.png  u
 sed on input line 11.
 (pdftex.def)             Requested size: 303.49796pt x 227.62346pt.
-<Figures/tot_interaction_cs_twim_eff_corr.png, id=1405, 462.528pt x 346.896pt>
+<Figures/tot_interaction_cs_twim_eff_corr.png, id=1415, 462.528pt x 346.896pt>
 File: Figures/tot_interaction_cs_twim_eff_corr.png Graphic file (type png)
 <use Figures/tot_interaction_cs_twim_eff_corr.png>
 Package pdftex.def Info: Figures/tot_interaction_cs_twim_eff_corr.png  used on 
@@ -1752,14 +1764,8 @@ input line 19.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Overfull \hbox (111.23792pt too wide) has occurred while \output is active
-\T1/cmr/m/n/12 88 \T1/cmr/m/sl/12 A TWIN MUSIC GEOMETRIC ACCEPTANCE CORRECTION 
-VIA EFFICIENCY MEASUREMENT
- []
-
-[88 <./Figures/charge_changing_cross_sec_twim_eff_corr.png>]
-<Figures/drawings_flightpath.png, id=1418, 871.255pt x 774.895pt>
+[89 <./Figures/charge_changing_cross_sec_twim_eff_corr.png>]
+<Figures/drawings_flightpath.png, id=1427, 871.255pt x 774.895pt>
 File: Figures/drawings_flightpath.png Graphic file (type png)
 <use Figures/drawings_flightpath.png>
 Package pdftex.def Info: Figures/drawings_flightpath.png  used on input line 30
@@ -1769,103 +1775,103 @@ Package pdftex.def Info: Figures/drawings_flightpath.png  used on input line 30
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[89 <./Figures/tot_interaction_cs_twim_eff_corr.png>]
+[90 <./Figures/tot_interaction_cs_twim_eff_corr.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [90 <./Figures/drawings_flightpath.png>]) [91] [92] (./main.bbl [93] [94]
-Underfull \hbox (badness 1127) in paragraph at lines 121--126
+ [91 <./Figures/drawings_flightpath.png>]) [92] [93] (./main.bbl [94] [95]
+Underfull \hbox (badness 1127) in paragraph at lines 126--131
 []\T1/cmr/m/n/12 J. Graña-González, J. Rodríguez-Sánchez, J. Ben-l-li-ure, G. G
 arcía-Jiménez,
  []
 
-[95]
+[96]
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
-88.
+93.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-Underfull \hbox (badness 2717) in paragraph at lines 186--190
+Underfull \hbox (badness 2717) in paragraph at lines 191--195
 []\T1/cmr/m/n/12 GSI Helmholtzzen-trum für Schw-e-ri-o-nen-forschung GmbH, ``La
 rge-acceptance
  []
 
 
-Underfull \hbox (badness 2368) in paragraph at lines 192--196
+Underfull \hbox (badness 2368) in paragraph at lines 197--201
 []\T1/cmr/m/n/12 ``Technical re-port for the de-sign, con-struc-tion and com-mi
 s-sion-ing of the
  []
 
 
-Underfull \hbox (badness 1735) in paragraph at lines 198--202
+Underfull \hbox (badness 1735) in paragraph at lines 203--207
 \T1/cmr/m/it/12 Teilchen im CALIFA-Kalorimeter\T1/cmr/m/n/12 .  Dr., Tech-nis-c
 he Uni-ver-sität München,
  []
 
 
-Underfull \hbox (badness 2368) in paragraph at lines 204--208
+Underfull \hbox (badness 2368) in paragraph at lines 209--213
 []\T1/cmr/m/n/12 ``Technical re-port for the de-sign, con-struc-tion and com-mi
 s-sion-ing of the
  []
 
 
-Underfull \hbox (badness 1072) in paragraph at lines 229--233
+Underfull \hbox (badness 1072) in paragraph at lines 234--238
 []\T1/cmr/m/n/12 A. Syntfeld-Kazuch, L. Swider-ski, W. Czarnacki, M. Gier-lik, 
 W. Klamra,
  []
 
-
-Underfull \hbox (badness 1286) in paragraph at lines 240--243
+[97]
+Underfull \hbox (badness 1286) in paragraph at lines 245--248
 \T1/cmr/m/it/12 Echtzeit-Implementierung in CAL-IFA\T1/cmr/m/n/12 .  PhD the-si
 s, Tech-nis-che Uni-ver-sität
  []
 
-[96]
-Underfull \hbox (badness 10000) in paragraph at lines 262--265
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--270
 []\T1/cmr/m/n/12 GSI Helmholtzzen-trum für Schw-e-ri-o-nen-forschung GmbH, ``Ex
 -ploder.''
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--265
+Underfull \hbox (badness 10000) in paragraph at lines 267--270
 [][]$\T1/cmtt/m/n/12 https : / / www . gsi . de / en / work / forschung / exper
 imentelektronik /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--265
+Underfull \hbox (badness 10000) in paragraph at lines 267--270
 \T1/cmtt/m/n/12 digitalelektronik / digitalelektronik / module / lwl / exploder
 $[][]\T1/cmr/m/n/12 .  [On-line;
  []
 
-
-Underfull \hbox (badness 2213) in paragraph at lines 291--294
+[98]
+Underfull \hbox (badness 2213) in paragraph at lines 296--299
 []\T1/cmr/m/n/12 ``Mdpp-16 de-tec-tor read-out sys-tems, mesytec.'' [][]$\T1/cm
 tt/m/n/12 https : / / www . mesytec . com /
  []
 
-[97]) [98] (./main.aux (./Abstract.aux))
+) [99] (./main.aux (./Abstract.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9EBCF42EE1F0FF37FF8EEAD3768850CF;13993.
+(rerunfilecheck)             Checksum: C25CC26F8E3C2553A09FD231C1951A35;13993.
  ) 
 Here is how much of TeX's memory you used:
- 20158 strings out of 480121
- 350986 string characters out of 5892160
- 668783 words of memory out of 5000000
- 37311 multiletter control sequences out of 15000+600000
+ 20163 strings out of 480121
+ 351057 string characters out of 5892160
+ 668826 words of memory out of 5000000
+ 37312 multiletter control sequences out of 15000+600000
  497996 words of font info for 103 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  61i,22n,75p,1640b,698s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/tobias/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.60
 0pk> </home/tobias/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.
-600pk> </home/tobias/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti100
-0.600pk> </home/tobias/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0
-600.600pk> </home/tobias/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecr
-m1095.600pk> </home/tobias/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/e
-crm0500.600pk> </home/tobias/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec
-/ecrm1000.600pk> </home/tobias/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/
-ec/ecrm0700.600pk> </home/tobias/.texlive2021/texmf-var/fonts/pk/ljfour/jknappe
-n/ec/ecrm0800.600pk> </home/tobias/.texlive2021/texmf-var/fonts/pk/ljfour/jknap
-pen/ec/ecti1200.600pk> </home/tobias/.texlive2021/texmf-var/fonts/pk/ljfour/jkn
+600pk> </home/tobias/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm060
+0.600pk> </home/tobias/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1
+095.600pk> </home/tobias/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecr
+m0500.600pk> </home/tobias/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/e
+cti1200.600pk> </home/tobias/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec
+/ecti1000.600pk> </home/tobias/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/
+ec/ecrm1000.600pk> </home/tobias/.texlive2021/texmf-var/fonts/pk/ljfour/jknappe
+n/ec/ecrm0700.600pk> </home/tobias/.texlive2021/texmf-var/fonts/pk/ljfour/jknap
+pen/ec/ecrm0800.600pk> </home/tobias/.texlive2021/texmf-var/fonts/pk/ljfour/jkn
 appen/ec/tcrm1200.600pk> </home/tobias/.texlive2021/texmf-var/fonts/pk/ljfour/j
 knappen/ec/ecbx1440.600pk> </home/tobias/.texlive2021/texmf-var/fonts/pk/ljfour
 /jknappen/ec/ecsl1200.600pk> </home/tobias/.texlive2021/texmf-var/fonts/pk/ljfo
@@ -1897,10 +1903,10 @@ b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr
 texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on main.pdf (107 pages, 21670886 bytes).
+Output written on main.pdf (108 pages, 21675204 bytes).
 PDF statistics:
- 2510 PDF objects out of 2984 (max. 8388607)
- 1391 compressed objects within 14 object streams
- 406 named destinations out of 1000 (max. 500000)
+ 2527 PDF objects out of 2984 (max. 8388607)
+ 1400 compressed objects within 14 object streams
+ 410 named destinations out of 1000 (max. 500000)
  849 words of extra memory for PDF output out of 10000 (max. 10000000)
 
