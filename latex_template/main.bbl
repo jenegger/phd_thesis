@@ -46,6 +46,11 @@ W.~Dickhoff and C.~Barbieri, ``Self-consistent green's function method for
   nuclei and nuclear matter,'' {\em Progress in Particle and Nuclear Physics},
   vol.~52, no.~2, pp.~377--496, 2004.
 
+\bibitem{moniz1971nuclear}
+E.~J. Moniz, I.~Sick, R.~Whitney, J.~Ficenec, R.~D. Kephart, and W.~Trower,
+  ``Nuclear fermi momenta from quasielastic electron scattering,'' {\em
+  Physical Review Letters}, vol.~26, no.~8, p.~445, 1971.
+
 \bibitem{goldhaber1974statistical}
 A.~S. Goldhaber, ``Statistical models of fragmentation processes,'' {\em
   Physics Letters B}, vol.~53, no.~4, pp.~306--308, 1974.
@@ -317,10 +322,5 @@ E.~Bayer and M.~Traxler, ``Development of a high-resolution (< 10 ps rms)
 \bibitem{serrano2013white}
 J.~Serrano, M.~Lipinski, T.~Wlostowski, E.~Gousiou, E.~van~der Bij, M.~Cattin,
   and G.~Daniluk, ``The white rabbit project,'' 2013.
-
-\bibitem{moniz1971nuclear}
-E.~J. Moniz, I.~Sick, R.~Whitney, J.~Ficenec, R.~D. Kephart, and W.~Trower,
-  ``Nuclear fermi momenta from quasielastic electron scattering,'' {\em
-  Physical Review Letters}, vol.~26, no.~8, p.~445, 1971.
 
 \end{thebibliography}

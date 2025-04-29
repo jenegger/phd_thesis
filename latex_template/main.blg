@@ -20,6 +20,10 @@ Repeated entry---line 413 of file main.bib
  : @inproceedings{bail2011time
  :                            ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 576 of file main.bib
+ : @article{moniz1971nuclear
+ :                          ,
+I'm skipping whatever remains of this entry
 Warning--empty author in clas2018probing
 Warning--empty journal in hartigevolution
 Warning--empty year in hartigevolution
@@ -65,4 +69,4 @@ warning$ -- 4
 while$ -- 131
 width$ -- 64
 write$ -- 627
-(There were 3 error messages)
+(There were 4 error messages)
