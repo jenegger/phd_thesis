@@ -208,17 +208,17 @@ J.-F. Martin, J.~Ta{\"\i}eb, G.~Boutoux, A.~Chatillon, T.~Gorbinet,
   \url{https://igfae.usc.es/~r3b/documentos/TDR/CALIFA_BARREL_TDR.pdf}.
 \newblock Accessed: 2024-09-24.
 
-\bibitem{Bendel:98055}
-M.~Bendel, {\em {E}ntwicklung einer neuartigen {N}achweismethode
-  hochenergetischer {T}eilchen im {CALIFA}-{K}alorimeter}.
-\newblock Dr., Technische Universit{\"a}t M{\"u}nchen, M{\"u}nchen, 2014.
-\newblock Technische Universit{\"a}t M{\"u}nchen, Diss., 2014.
-
 \bibitem{tdr:endcap}
 ``Technical report for the design, construction and commissioning of the califa
   endcap.''
   \url{https://edms.cern.ch/ui/file/1833748/2/TDR_R3B_CALIFA_ENDCAP_public.pdf}.
 \newblock Accessed: 2024-09-24.
+
+\bibitem{Bendel:98055}
+M.~Bendel, {\em {E}ntwicklung einer neuartigen {N}achweismethode
+  hochenergetischer {T}eilchen im {CALIFA}-{K}alorimeter}.
+\newblock Dr., Technische Universit{\"a}t M{\"u}nchen, M{\"u}nchen, 2014.
+\newblock Technische Universit{\"a}t M{\"u}nchen, Diss., 2014.
 
 \bibitem{murray1961scintillation}
 R.~Murray and A.~Meyer, ``Scintillation response of activated inorganic
