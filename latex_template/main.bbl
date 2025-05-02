@@ -220,6 +220,11 @@ M.~Bendel, {\em {E}ntwicklung einer neuartigen {N}achweismethode
 \newblock Dr., Technische Universit{\"a}t M{\"u}nchen, M{\"u}nchen, 2014.
 \newblock Technische Universit{\"a}t M{\"u}nchen, Diss., 2014.
 
+\bibitem{bendel2014entwicklung}
+M.~Bendel, {\em Entwicklung einer neuartigen Nachweismethode hochenergetischer
+  Teilchen im CALIFA-Kalorimeter}.
+\newblock PhD thesis, Technische Universit{\"a}t M{\"u}nchen, 2014.
+
 \bibitem{murray1961scintillation}
 R.~Murray and A.~Meyer, ``Scintillation response of activated inorganic
   crystals to various charged particles,'' {\em Physical Review}, vol.~122,
@@ -228,11 +233,6 @@ R.~Murray and A.~Meyer, ``Scintillation response of activated inorganic
 \bibitem{zazubovich2001physics}
 S.~Zazubovich, ``Physics of halide scintillators,'' {\em Radiation
   Measurements}, vol.~33, no.~5, pp.~699--704, 2001.
-
-\bibitem{bendel2014entwicklung}
-M.~Bendel, {\em Entwicklung einer neuartigen Nachweismethode hochenergetischer
-  Teilchen im CALIFA-Kalorimeter}.
-\newblock PhD thesis, Technische Universit{\"a}t M{\"u}nchen, 2014.
 
 \bibitem{holl1988measurement}
 I.~Holl, E.~Lorenz, and G.~Mageras, ``A measurement of the light yield of
@@ -259,23 +259,28 @@ M.~O. Winkel, {\em Komplexe Pulsformalgorithmen und Teilchenidentifikation zur
 A.-L. Hartig, ``Evolution of califa: From single detector modules to benchmark
   reactions,''
 
+\bibitem{hamamatsuS8664}
+{Hamamatsu Photonics}, ``{S8664-1010: Silicon Avalanche Photodiode}.''
+  \url{https://www.hamamatsu.com/jp/en/product/optical-sensors/apd/si-apd/S8664-1010.html},
+  2025.
+\newblock Accessed: 2025-04-30.
+
 \bibitem{mesytec-home}
 ``Mesytec.'' \url{https://www.mesytec.com/}.
 \newblock [Online; accessed September 29, 2024].
-
-\bibitem{febex-tec}
-``Febex 3b-front end board with optical link extension.''
-  \url{https://www.gsi.de/fileadmin/EE/Module/FEBEX/febex3b.pdf}.
-\newblock [Online; accessed September 30, 2024].
 
 \bibitem{pklenze}
 K.~Philipp, {\em Gamma detection with CALIFA}.
 \newblock PhD thesis, Technische Universit{\"a}t M{\"u}nchen, 2024.
 
-\bibitem{exploder:gsi}
-{GSI Helmholtzzentrum f\"ur Schwerionenforschung GmbH}, ``Exploder.''
-  \url{https://www.gsi.de/en/work/forschung/experimentelektronik/digitalelektronik/digitalelektronik/module/lwl/exploder}.
-\newblock [Online; accessed September 30, 2024].
+\bibitem{jacob2008memory}
+B.~Jacob, S.~W. Ng, and D.~T. Wang, {\em Memory Systems: Cache, DRAM, Disk}.
+\newblock Morgan Kaufmann, 2008.
+
+\bibitem{mbsweb}
+``Multi branch system (mbs).''
+  \url{https://www.gsi.de/en/work/research/experiment_electronics/data_processing/data_acquisition/mbs}.
+\newblock Accessed: 2025-05-02.
 
 \bibitem{bail2011time}
 A.~Bail, J.~Taieb, A.~Chatillon, G.~Belier, B.~Laurent, and E.~Pellereau,
