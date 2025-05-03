@@ -1,11 +1,12 @@
 \section{Analysis - Total Interaction Cross Section of  $^{12}$C + $^{12}$C}\label{sec:analysis_cross_sec}
-This chapter will go through the  analysis step by step from the unpacking stage to the final measurement of the total interaction cross section. It will start by a short overview of the transmission method used for the cross section measurements. The next step is  the selection of clean incoming $^{12}$C isotopes. Following the identification of the carbon isotopes after the target - for the measurement of the charge changing cross section - and as final step the interaction cross section measurement. \newline
+This chapter will go through the  analysis step by step from the unpacking stage to the final results of the interaction cross sections. It will start by a short overview of the transmission method used for the cross section measurements. The next step is  the selection of clean incoming $^{12}$C isotopes. Following the identification of the carbon isotopes after the target - for the measurement of the charge changing cross section - and as final step the interaction cross section measurement. \newline
 All relevant detector related geometrical and efficiency corrections will be adressed and their influence to the final result and its uncertainty will be discussed.
 \subsection{Cross Section Measurement via Transmission Method}\label{section:transmission_method}
-In its most generic form cross sections give a measure of the probability that a specific reaction will take place when two or more particles collide. The cross sections  measured in scattering exepriments, as well as the energy and angular distribution of the reaction products, provide information about the dynamics of the interaction between the projectile and the target particle, i.e., about the shape of the interaction potential and the coupling strength.\newline
-The cross section $\sigma$ can be derived by looking at the relation between the number of incoming particles (N$_{1}$) and unreacted particles after the target ($N_{2}$). For an experiment with fixed target with thickness $z$ and volumetric number density $n$ the number of reacted particles in the infinitesimal thin target layer $dz$ can be expressed as:
+In its most generic form cross sections give a measure of the probability that a specific reaction will take place when two particles collide~\cite{bethge2007wiedemann}. It is expressed in units of area, with one barn defined as 1 b=10$^{-24}$ cm$^2$. Cross sections measured in scattering experiments, along with the corresponding energy and angular distributions of the reaction products, provide valuable insight into the underlying interaction dynamics between the projectile and target. Such measurements enable the extraction of fundamental quantities, including coupling constants, form factors, and structure functions.\newline
+In deep inelastic scattering processes involving multiple final-state channels, cross section measurements serve as a powerful tool to probe the parton distribution functions (PDFs), which describe the momentum distributions of quarks and gluons within nucleons. Furthermore, deviations from Standard Model predictions in the shape or magnitude of measured cross sections may indicate the presence of phenomena beyond the Standard Model, such as Supersymmetry or potential dark matter candidates.\newline
+The total cross section $\sigma_{tot}$ can be derived by looking at the relation between the number of incoming particles (N$_{1}$) and unreacted particles after the target ($N_{2}$). For an experiment with fixed target with thickness $z$ and volumetric number density $n$ the number of reacted particles in the infinitesimal thin target layer $dz$ can be expressed as:
 \begin{equation}
-\frac{dN_{2}}{dz} = -n \sigma N_{2}
+\frac{dN_{2}}{dz} = -n \sigma_{tot} N_{2}
 \end{equation}
 Solving this differential equation for $N_{2}$ (with the condition $N_{2}$ = $N_{1}$ for $z=0$) discloses an exponential relation:
 \begin{equation}
@@ -25,17 +26,18 @@ The final formula for the cross section for a so called transmission measurement
 \label{eq:corr_cross}
 	\end{split}
 \end{equation}
-From the above formula \ref{eq:corr_cross} it is evident that for cross section measurements with the transmission method three types of observables have to be measured:\newline
+It should be emphasized that this represents a first-order approximation, as in Equation~\ref{eq:corr_cross} the setup-specific detection efficiency $\epsilon_{setup}$ and transmission factor $t_{setup}$ are assumed to be identical for both the empty and target runs. This assumption enables the cancellation of these factors in the ratio, thereby simplifying the analysis.\newline
+From the Equation~\ref{eq:corr_cross} it is evident that for cross section measurements with the transmission method three types of observables have to be measured:\newline
 \begin{enumerate}
 \item[$\blacksquare$] \textbf{Number of scattering centers $\mathbf{N_t}$}\newline
 The number of scattering centers per unit area of the target is a target specific number. It depends from the target thickness and and its density. The values herefore are taken from \cite{ponnath2023precise}\footnote{For the purpose of this work the target thicknesses were remeasured at GSI with a chromatic sensor giving 2D depth profiles of each target.}:
 \begin{enumerate}
 \item Thin target:\newline 
-target thickness d = 0.5451 cm; $N_t = 5.0588795\cdot 10^{22}$; $\Delta N_t = 0.0648\%$
+target thickness d = 0.5451 cm; $N_t = 5.0588795\cdot 10^{22}$; $\frac{\Delta N_t}{N_t} = 0.0648\%$
 \item Medium target:\newline
-target thickness d = 1.0793 cm; $N_t = 1.0016600\cdot 10^{23}$; $\Delta N_t = 0.2620\%$
+target thickness d = 1.0793 cm; $N_t = 1.0016600\cdot 10^{23}$; $\frac{\Delta N_t}{N_t} = 0.2620\%$
 \item Thick target:\newline
-target thickness d =2.1928cm; $N_t = 2.0350598\cdot 10^{23}$; $\Delta N_t = 0.0322\%$
+target thickness d =2.1928cm; $N_t = 2.0350598\cdot 10^{23}$; $\frac{\Delta N_t}{N_t} = 0.0322\%$
 \end{enumerate} 
 where $N_t$ was calculated by:
 \begin{equation}
@@ -43,9 +45,9 @@ N_t = \frac{\rho \cdot d \cdot N_A}{M}
 \end{equation}
 with $\rho$ the target density\footnote{$\rho = 1.851 g/cm^{3}$, from \cite{ponnath2023precise}}, $N_A$ the Avogadro constant ($6.02214076\cdot10^{23}\,mol^{-1}$) and $M$ the molar mass of the target (for carbon $M = 12.011g \cdot mol^{-1}$).
 \item[$\blacksquare$] \textbf{Number of incoming projectiles ($^{12}$C) $\mathbf{N_1}$}\newline
-For the measurement only events with well identified incoming $^{12}$C projectiles are chosen. Herefore strict cuts on the detectors upstream the target area are set. This strict event selection makes sure that we only consider events with single $^{12}$C. This will be discussed in more detail in section \ref{subsec:event-sel}.  %TODO finish this sencence 
+For the measurement only events with well identified incoming $^{12}$C projectiles are chosen. Herefore strict cuts on the detectors upstream the target area are set. This strict event selection makes sure that we only consider events with single $^{12}$C WITHIN TIME WINDOW:TODO. This will be discussed in more detail in section \ref{subsec:event-sel}.  %TODO finish this sencence 
 \item[$\blacksquare$] \textbf{Number of unreacted projectiles ($^{12}$C) $\mathbf{N_2}$ after the target}\newline
-Detectors downstream the target area are used to count the number of unreacted projectiles $^{12}$C. To reduce detector specific influences which could distort the result it is advisable to use only as few as requirable detectors for the clear identification of unreacted projectiles. Moreover detector specific efficiencies are cancelled out by including both empty and target runs in the cross section calculation(see equation\ref{eq:corr_cross}). For all downstream detectors used in this analysis it is critical to minimize any selection cuts and systematically check their effects on $N_2$.
+Detectors downstream the target area are used to count the number of unreacted projectiles $^{12}$C. To reduce detector specific influences which could distort the result it is advisable to use only as few as requirable detectors for the clear identification of unreacted projectiles. Moreover detector specific efficiencies are cancelled out by including both empty and target runs (only in 1st order, as there may be a position dependence) in the cross section calculation(see equation\ref{eq:corr_cross}). For all downstream detectors used in this analysis it is critical to minimize any selection cuts and systematically check their effects on $N_2$.
 \end{enumerate}
 \subsection{Event Selection}\label{subsec:event-sel}
 \begin{figure}[htpb]
