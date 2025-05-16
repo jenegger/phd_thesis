@@ -97,7 +97,7 @@ However, for the identification of fragments downstream of the target, various d
 \item Charge measurement in the TWIN-MUSIC.
 \item One hit scintillation bar in ToF Wall with signal from both up/down PMTs.
 \end{itemize}
-\subsection{Fragment Identification}
+\subsection{Fragment Identification}\label{sec:frag_ident}
 The first step for the identification of the QFS-reaction channel $^{12}C(p,2p)^{11}B$ is the identification of the fragment $^{11}B$ via the formula for the magnetic rigidity: $ B\cdot r = \gamma\beta \, m /q$ where the $\gamma$ factor accounts for the increase in momentum for relativistic particles. From the flightpath reconstruction and the ToF measurement as described in previous sections $r$,$\beta$ and $\gamma$ are obtained whereas the charge of the fragment $q$ is measured by the energy loss ($\Delta E \sim Z^2$) in the TWIN MUSIC detector.\newline
 The measured values for $\frac{A}{q}$ and $q$ are shown in figure \ref{fig:a_q_vs_q} where the fragment of interest $^{11}B$ is expected to be at $\frac{A}{q} = 11/5 \approx 2.2$ and $q = 5$. The correlation plot exhibits a broad distribution in $\frac{A}{q}$, which may result from misidentification of hit positions in one of the MWPC tracking detectors when multiple signal hits occur. Even minor deviations in MWPC1 and MWPC2 can significantly affect the radius reconstruction, thereby impacting the accuracy of the $\frac{A}{q}$ determination.\newline
 An intriguing feature is the distinct cluster observed at $Z \approx 8.5$ and $\frac{A}{q} \approx 2$, which corresponds to pileup events. These occur when two ion signals arrive within a short time window in the TWIN MUSIC detector, preventing them from being resolved as separate events and instead being reconstructed as a single signal\footnote{For instance, if two carbon ions ($Z=6$) interact simultaneously, the total energy loss within TWIN MUSIC is approximately twice that of a single ion. Since the energy loss follows the relation $\Delta E \sim Z^2$, the reconstructed charge is given by $\sqrt(2)\,Z_{carbon} \approx 8.5 $.}.
@@ -348,14 +348,59 @@ The best way to visualize the separation energy $S_p$ id to plot it against the 
 \end{figure}
 
 \subsection{Reconstruction of excited$ ^{11}$B states}
+In order to achieve a complete kinematic reconstruction of the reaction products, the use of the CALIFA detector as a $\gamma$-ray spectrometer in the low-energy regime (down to $E_\gamma \geq 100\,\mathrm{keV}$) is essential. This is particularly relevant for reactions such as $^{12}\mathrm{C}(p,2p)^{11}\mathrm{B}$ in quasi-free scattering (QFS) kinematics. In such cases, it is possible to simultaneously identify and measure the energy of the two correlated protons (as demonstrated in previous sections) as well as detect $\gamma$-rays emitted during the de-excitation of $^{11}\mathrm{B}$ from excited states to its ground state ($3/2^-$).
+
+$\gamma$-ray spectroscopy serves as a sensitive probe for investigating the population of low-lying discrete nuclear states. In the case of exotic nuclei, this allows exploration of previously uncharted excited states. For well-known nuclei such as $^{11}\mathrm{B}$, it provides an opportunity to test theoretical shell-model predictions and extract spectroscopic factors with high precision. The established level scheme of $^{11}\mathrm{B}$ is illustrated in Figure~\ref{fig:11B_levels}.
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/levelschemaplot.png}
+    \caption{
+Level scheme of $^{11}\mathrm{B}$ taken from~\cite{iaea_nuclide_chart}.
+    }
+    \label{fig:11B_levels}
+\end{figure}
+
+Assuming the ground-state proton configuration of $^{12}\mathrm{C}$ as $(s_{1/2})^2(p_{3/2})^4$, the removal of a single proton from the $p$-shell is expected to result in a hole state with quantum numbers corresponding to either $3/2^-$ or $1/2^-$. The population of higher angular momentum states is strongly suppressed due to the absence of significant contributions from indirect two-step processes and the limiting influence of ground-state correlations in $^{12}\mathrm{C}$~\cite{van1988weak}.
+
+Some excited states of $^{11}\mathrm{B}$, such as the $5/2^-$ state with a known transition energy of 4.4~MeV, are not expected to be populated under QFS conditions. This state arises from the coupling of angular momenta of multiple unpaired nucleons (e.g., two nucleons in the $p_{3/2}$ orbital coupled to $J_{12} = 2$, and a third nucleon in $p_{1/2}$ with $J_3 = 1/2$). The population of such states via a QFS reaction would contradict the fundamental mechanism of QFS, which involves the interaction of the probe (typically a proton) with a single nucleon, while the remaining $A-1$ nucleons act as spectators.
+
+As the $^{11}\mathrm{B}$ fragments produced in the reaction carry nearly the full beam energy and move predominantly in the forward direction, the emitted $\gamma$-rays from their de-excitation experience relativistic Doppler shifts. Therefore, Doppler correction must be applied to the measured $\gamma$-ray energies. Following standard textbooks (e.g.,~\cite{krane1987}), the relation between the observed $\gamma$-ray energy in the laboratory frame and the rest-frame energy of the emitting nucleus is given by:
+
+\begin{equation}
+    E_\gamma = E_0 \cdot \gamma \cdot (1 - \beta \cos \theta)
+	\label{eq:doppler}
+\end{equation}
+
+where $E_0$ is the intrinsic $\gamma$-ray energy in the rest frame of $^{11}\mathrm{B}$ (approximately the same as the rest frame of the incoming $^{12}\mathrm{C}$), $\gamma = 1/\sqrt{1 - \beta^2}$ is the Lorentz factor, $\beta = v/c$ is the velocity of the $^{11}\mathrm{B}$ fragment normalized to the speed of light, and $\theta$ is the polar angle of the emitted $\gamma$-ray with respect to the beam axis in the laboratory frame\footnote{Since the excited state $1/2^-$ of $^{11}\mathrm{B}$ has a lifetime $T_{1/2} = 3.8$fs (which corresponds to a width of $\Gamma = 0.117$eV, see level scheme in Fig.~\ref{fig:11B_levels}) it is an immediate transition already occurring in the target region.}.\newline
+The high granularity of the CALIFA calorimeter enables a precise determination of the emission angle $\theta$ of detected $\gamma$-rays. For each $\gamma$-ray event, the angle $\theta$ is defined by the position of the individual crystal within the $\gamma$-cluster that recorded the maximum deposited energy. This crystal is assumed to represent the most probable direction of the primary $\gamma$-ray emission. The angle is then used--relative to the known target position--to perform the Doppler correction and reconstruct the rest-frame $\gamma$-ray energy $E_0$, according to the relativistic transformation described in Eq.~\eqref{eq:doppler}.
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/gamma_spec_12c_p2p_11b.png}
+    \caption{
+Doppler-corrected $\gamma$-ray spectrum in coincidence with the $^{12}\mathrm{C}(p,2p)^{11}\mathrm{B}$ quasi-free scattering reaction. The prominent peak at $E_{\gamma} \approx 2.1\,\mathrm{MeV}$ corresponds to the de-excitation of the $^{11}\mathrm{B}$ nucleus from its first excited state ($1/2^-$) to the ground state. This peak is fitted with a Gaussian function (blue), while the underlying background is described by an exponential distribution (green). A broader and less well-defined structure is observed at $E_{\gamma} \approx 5\,\mathrm{MeV}$, associated with the de-excitation of the $3/2^-$ state.
+    }
+    \label{fig:gamma_spec_12c_p2p_11b}
+\end{figure}
+The resulting Doppler-corrected $\gamma$-ray spectrum is presented in Figure~\ref{fig:gamma_spec_12c_p2p_11b}, which was obtained after applying the following reaction selection criteria:
+\begin{itemize}
+  \item Identification of the $^{11}\mathrm{B}$ fragment via time-of-flight measurements between the START detector and the TOFW (Sofia), as detailed in Section~\ref{sec:frag_ident}.
+  \item Detection of two high-energy hits corresponding to protons, each with an energy deposition $E_{\text{hit}} > 30\,\mathrm{MeV}$.
+\end{itemize}
+In Figure~\ref{fig:gamma_spec_12c_p2p_11b}, both peaks associated with the de-excitation of the $^{11}\mathrm{B}$ nucleus from the $1/2^-$ and $3/2^-$ excited states are visible. From the fit to the $1/2^-$ peak, an energy resolution of approximately $0.24\,\mathrm{MeV}$ (FWHM) is extracted.
+
+According to the detector specifications, the expected crystal-wise relative energy resolution is given by \(\Delta E / E = \frac{6\%}{\sqrt{E/\mathrm{MeV}}}\), which for a $2.1\,\mathrm{MeV}$ $\gamma$-ray corresponds to an ideal resolution of about $0.09\,\mathrm{MeV}$ (FWHM). The observed deviation from this expected value is non-negligible and can be attributed to several experimental and geometrical effects.
+
+First, the Doppler correction relies on the reconstructed polar angle $\theta$ of the $\gamma$-ray, derived from the position of the crystal with the highest energy deposition within the detected cluster. However, this may not correspond to the actual primary interaction point of the photon within the scintillator. This spatial uncertainty becomes increasingly relevant for large opening angles, leading to additional broadening of the reconstructed energy peak.
+
+Second, mechanical factors such as slight tilts or misalignments of the CALIFA detector halves, as well as minor displacements of individual crystals within the carbon alveolar frame, may further contribute to the degradation of energy resolution.
+
+The broader and less well-defined peak at $E_{\gamma} \approx 5\,\mathrm{MeV}$, associated with the $3/2^-$ state, was not fitted due to its complex structure. This broadening is likely a result of reduced cluster reconstruction efficiency for higher-energy $\gamma$-rays. In particular, for photon energies exceeding the pair production threshold (\(E_{\gamma} > 2 m_e c^2 \approx 1.022\,\mathrm{MeV}\)), electron-positron pair production becomes a significant interaction mechanism. Above \(E_{\gamma} \gtrsim 6\,\mathrm{MeV}\), it becomes dominant. These interactions can result in spatially separated energy depositions or partial energy loss due to annihilation photons escaping detection. Consequently, this can impair both the accuracy of cluster reconstruction and the effectiveness of Doppler correction, leading to a smeared peak structure.
+
+As anticipated, no enhancement is observed around $4.4\,\mathrm{MeV}$, which would correspond to the population of the $5/2^-$ state. This is consistent with the quasi-free scattering mechanism, which does not favor the population of such states involving complex multi-nucleon configurations.
+
+It should be emphasized that this experiment represents the first measurement campaign using CALIFA in its final mechanical configuration. The successful reconstruction of Doppler-corrected $\gamma$-ray spectra in coincidence with the $^{12}\mathrm{C}(p,2p)^{11}\mathrm{B}$ reaction serves as a proof of concept, demonstrating the capability of CALIFA as a key instrument for performing correlated measurements of $\gamma$-rays and light charged particles. These results contribute significantly to the overarching goal of achieving full kinematic reconstruction of nuclear reactions under investigation.
 
 
-
-->Show level scheme of 11B, explain excited states and why it is not expected to see any peaks at 4.4 MeV.
-->Explain Doppler correction (this is really the key point of the CALIFA, why it is highly segmented)
--> show all conditions that you apply
--> This comm. exp. has shown that we can really pin down reaction mechanism and we are ready for exciting p2p experiments
--> Limitations: CALIFA was only partly filled for this exp. 
 \subsection{Fission via Quasi-Free Scattering reaction}
 In 2021, the S455 experiment conducted at the R$^3$B experiment marked a significant advancement in experimental nuclear physics through the realization of an unprecedented fission study employing quasi-free scattering as a reaction mechanism. This approach induces fission via particle-hole excitations, which can span excitation energies from a few MeV up to several tens of MeV.\newline
 Over the past decades, Coulomb-induced fission reactions in inverse kinematics have served as a powerful tool to investigate fission dynamics and the nuclear structure of both stable and unstable heavy nuclei at large deformations. These reactions, however, provide only averaged information over many fission events, thereby limiting their ability to resolve the detailed topography of the potential-energy surface (PES). Consequently, they offer only indirect access to the fission barrier through measurements of integrated fission yields, making it difficult to probe finer aspects of fission dynamics.\newline
