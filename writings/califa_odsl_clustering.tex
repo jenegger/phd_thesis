@@ -1,8 +1,22 @@
 \section{Machine Learning for the Cluster Reconstruction in the CALIFA Calorimeter at R$^3$B}
-shortly recapitulate how the clustering is done
-Motivate with single/double escape peak stuff
-Mention that we have time information in CALIFA but we do not use it
-WORK IN PROGRESS WITH PAPER WRITING
+
+This study on improving cluster reconstruction in CALIFA using machine learning techniques was initiated in the context of data analysis for the S455 experiment, \textit{``Fission via Quasi-Free Scattering Reaction: $^{238}$U$(p,2p)X$''} (see Section~\ref{sec:fission_qfs}). The R$^3$B setup is designed to enable complete kinematic reconstruction of nuclear reactions. In the case of quasi-free scattering (QFS)-induced fission, as studied in S455, this implies that, in addition to reconstructing both heavy and light fission fragments via the dedicated SOFIA setup and detecting neutrons with the large-area NeuLAND detector, it is also possible to identify the two correlated protons from the QFS process. Furthermore, CALIFA can be used to detect the gamma rays emitted during the de-excitation of the fission fragments.\newline
+This capability enables precise measurements of the evolution of fission probabilities as a function of excitation energy ($E^*$), as well as the determination of fission barrier heights. These observables are particularly relevant for the study of short-lived, exotic nuclei, for which experimental data are scarce.\newline
+The S455 experiment, performed with a stable $^{238}$U beam, served as a pilot study and proof of principle for this novel experimental approach. A key objective was to tag specific isotopes and analyze the associated gamma-ray spectra measured with CALIFA. For light actinides such as uranium, fission is predominantly characterized by asymmetric mass splitting, a consequence of shell effects~\cite{sartori2013nuclear}, which results in a strong population of tin isotopes ($Z = 50$). These isotopes are of particular interest for gamma spectroscopy due to their well-known structure and high-lying excited states. Accordingly, a selection on $Z = 50$ fragments was applied, accounting for sufficient production cross-section with the presence of prominent gamma transitions. Notably, $^{132}$Sn exhibits a $2^+$ state at 4.041~MeV~\cite{schopper2013excited}, well above CALIFA's gamma detection threshold of approximately 200~keV, and should therefore be clearly identifiable.\newline
+Initial attempts to reconstruct gamma spectra via Doppler correction for $Z = 50$ fragments, however, yielded unsatisfactory results. The resulting spectra displayed broad distributions with no discernible peaks. Several factors contribute to the difficulty of accurate gamma energy reconstruction in this context, amongst others:\newline
+\textbf{High Background from Delta Electrons:} In heavy-ion fission experiments, numerous delta electrons are generated due to interactions between the beam particles and atomic electrons in the target and surrounding materials. These electrons create a significant number of spurious hits in CALIFA, which interfere with gamma cluster reconstruction and degrade the energy resolution.\newline
+\textbf{High-Energy Gamma Emission:} The de-excitation gamma rays from fission fragments often possess very high energies, especially in the laboratory frame at beam energies of 540~AMeV, where $E_{\text{lab}} > 10$~MeV. This is well above the pair production threshold (1.022~MeV), making pair production the dominant interaction mechanism. Consequently, gamma-ray interactions lead to more widely distributed and sparse detector hits, further complicating the clustering and energy reconstruction process.\newline
+These challenges, along with the difficulty in extracting meaningful gamma spectra, motivated a collaboration with the \textit{Origins Data Science Lab (ODSL)} to explore advanced machine learning techniques for improving gamma cluster reconstruction in CALIFA.\newline
+This section is structured as follows:
+\begin{itemize}
+    \setlength{\itemsep}{5pt}
+    \item First, the standard clustering model used in the R3B setup is reviewed, highlighting the specific challenges of relativistic gamma spectroscopy.
+    \item Next, the simulation framework developed for evaluating and comparing the performance of different clustering algorithms is introduced, along with the performance metrics used.
+    \item The agglomerative clustering model, an unsupervised learning approach that incorporates hit time information in CALIFA, is then presented.
+    \item This is followed by a description of the Edge Detection Neural Network, developed to improve clustering performance, particularly in the presence of complex hit patterns at the edges of clusters.
+    \item Finally, the performance of the proposed models is assessed, including a comparison with selected hand-labeled event examples, where the neural network-based model demonstrates superior results.
+\end{itemize}
+
 \subsection{Data Simulation and Selection}
 
 \subsection{Agglomerative Clustering Model}

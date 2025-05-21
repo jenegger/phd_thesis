@@ -342,11 +342,19 @@ J.~Serrano, M.~Lipinski, T.~Wlostowski, E.~Gousiou, E.~van~der Bij, M.~Cattin,
 
 \bibitem{van1988weak}
 G.~Van Der~Steenhoven, H.~Blok, E.~Jans, L.~Lapik{\'a}s, E.~Quint, and P.~D.~W.
-  Huberts, ``Weak transitions in the quasi-elastic reaction 12c (e, e′ p)
-  11b,'' {\em Nuclear Physics A}, vol.~484, no.~3-4, pp.~445--475, 1988.
+  Huberts, ``{Weak transitions in the quasi-elastic reaction 12C (e,ép)
+  11B},'' {\em Nuclear Physics A}, vol.~484, no.~3-4, pp.~445--475, 1988.
 
 \bibitem{krane1987}
 K.~S. Krane, {\em Introductory Nuclear Physics}.
 \newblock John Wiley \& Sons, 1987.
+
+\bibitem{sartori2013nuclear}
+E.~Sartori, ``Nuclear data for radioactive waste management,'' {\em Annals of
+  Nuclear Energy}, vol.~62, pp.~579--589, 2013.
+
+\bibitem{schopper2013excited}
+H.~Schopper, ``Excited nuclear states: Nuclei with z= 48-60,'' {\em Excited
+  Nuclear States: Nuclei with Z= 48-60}, 2013.
 
 \end{thebibliography}
