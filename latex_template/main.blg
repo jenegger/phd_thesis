@@ -26,45 +26,46 @@ Warning--empty author in clas2018probing
 Warning--empty journal in hartigevolution
 Warning--empty year in hartigevolution
 Warning--empty journal in serrano2013white
-You've used 70 entries,
+Warning--can't use both volume and number fields in bertini2011r3broot
+You've used 90 entries,
             1876 wiz_defined-function locations,
-            878 strings with 16316 characters,
-and the built_in function-call counts, 18455 in all, are:
-= -- 1767
-> -- 942
+            981 strings with 20803 characters,
+and the built_in function-call counts, 24424 in all, are:
+= -- 2309
+> -- 1278
 < -- 0
-+ -- 347
-- -- 277
-* -- 1287
-:= -- 2681
-add.period$ -- 88
-call.type$ -- 70
-change.case$ -- 61
++ -- 467
+- -- 377
+* -- 1736
+:= -- 3559
+add.period$ -- 113
+call.type$ -- 90
+change.case$ -- 79
 chr.to.int$ -- 0
-cite$ -- 74
-duplicate$ -- 947
-empty$ -- 1584
-format.name$ -- 277
-if$ -- 4496
+cite$ -- 95
+duplicate$ -- 1233
+empty$ -- 2114
+format.name$ -- 377
+if$ -- 5916
 int.to.chr$ -- 0
-int.to.str$ -- 70
-missing$ -- 55
-newline$ -- 234
-num.names$ -- 62
-pop$ -- 229
+int.to.str$ -- 90
+missing$ -- 77
+newline$ -- 299
+num.names$ -- 82
+pop$ -- 305
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 699
+skip$ -- 883
 stack$ -- 0
-substring$ -- 847
-swap$ -- 433
+substring$ -- 1196
+swap$ -- 547
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 4
-while$ -- 148
-width$ -- 72
-write$ -- 703
+warning$ -- 5
+while$ -- 205
+width$ -- 92
+write$ -- 899
 (There were 4 error messages)

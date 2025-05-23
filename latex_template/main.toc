@@ -51,12 +51,17 @@
 \contentsline {subsection}{\numberline {5.5}Reconstruction of excited$ ^{11}$B states}{92}{subsection.5.5}%
 \contentsline {subsection}{\numberline {5.6}Fission via Quasi-Free Scattering reaction}{96}{subsection.5.6}%
 \contentsline {section}{\numberline {6}Machine Learning for the Cluster Reconstruction in the CALIFA Calorimeter at R$^3$B}{97}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Data Simulation and Selection}{99}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Agglomerative Clustering Model}{99}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}"Edge Model" - Graphical NN}{99}{subsection.6.3}%
-\contentsline {subsubsection}{\numberline {6.3.1}Combination of both methods}{99}{subsubsection.6.3.1}%
-\contentsline {subsection}{\numberline {6.4}Results}{99}{subsection.6.4}%
-\contentsline {section}{Appendices}{100}{section*.62}%
-\contentsline {section}{\numberline {A}TWIN MUSIC Geometric Acceptance Correction via Efficiency Measurement}{100}{appendix.1.A}%
-\contentsline {section}{\numberline {B}Flight-Path Reconstruction}{101}{appendix.1.B}%
-\contentsline {section}{References}{105}{equation.1.B.43}%
+\contentsline {subsection}{\numberline {6.1}Gamma Spectroscopy with the Standard R3B Clustering Algorithm}{99}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Challenges in Relativistic Gamma Spectroscopy}{99}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}The Standard R3B Clustering Algorithm}{100}{subsubsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.2}Data Simulation and Selection}{101}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Simulation Setup}{101}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}Performance Metrics}{101}{subsubsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.3}Agglomerative Clustering Model}{102}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Edge Detection Neural Network}{103}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Results}{105}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Discussion and Outlook}{108}{subsection.6.6}%
+\contentsline {section}{Appendices}{109}{section*.67}%
+\contentsline {section}{\numberline {A}TWIN MUSIC Geometric Acceptance Correction via Efficiency Measurement}{109}{appendix.1.A}%
+\contentsline {section}{\numberline {B}Flight-Path Reconstruction}{110}{appendix.1.B}%
+\contentsline {section}{References}{114}{equation.1.B.43}%

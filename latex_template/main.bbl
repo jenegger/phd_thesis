@@ -357,4 +357,109 @@ E.~Sartori, ``Nuclear data for radioactive waste management,'' {\em Annals of
 H.~Schopper, ``Excited nuclear states: Nuclei with z= 48-60,'' {\em Excited
   Nuclear States: Nuclei with Z= 48-60}, 2013.
 
+\bibitem{kolanoski2016teilchendetektoren}
+H.~Kolanoski and N.~Wermes, {\em Teilchendetektoren}, ch.~13.5.2.
+\newblock Springer, 2016.
+
+\bibitem{seltzer2010xcom}
+S.~Seltzer, ``{XCOM-Photon Cross Sections Database, NIST Standard Reference
+  Database 8}.'' \url{http://www.nist.gov/pml/data/xcom/index.cfm}, 2010.
+\newblock Accessed: 2025-04-10.
+
+\bibitem{klein1929streuung}
+O.~Klein and Y.~Nishina, ``{{\"U}ber die Streuung von Strahlung durch freie
+  Elektronen nach der neuen relativistischen Quantendynamik von Dirac},'' {\em
+  Zeitschrift f{\"u}r Physik}, vol.~52, no.~11, pp.~853--868, 1929.
+
+\bibitem{knoll2010radiation}
+G.~F. Knoll, {\em Radiation Detection and Measurement}.
+\newblock John Wiley \& Sons, 4th~ed., 2010.
+\newblock See Chapter 7 (Interaction of Gamma Rays with Matter) and Chapter 12
+  (Gamma-Ray Spectroscopy) for discussion of single and double escape peaks.
+
+\bibitem{lipinski2011white}
+M.~Lipi{\'n}ski, T.~W{\l}ostowski, J.~Serrano, and P.~Alvarez, ``White rabbit:
+  A ptp application for robust sub-nanosecond synchronization,'' in {\em 2011
+  IEEE International Symposium on Precision Clock Synchronization for
+  Measurement, Control and Communication}, pp.~25--30, IEEE, 2011.
+
+\bibitem{bertini2011r3broot}
+D.~Bertini, ``{R3BRoot, simulation and analysis framework for the R3B
+  experiment at FAIR},'' in {\em Journal of Physics: Conference Series},
+  vol.~331, p.~032036, IOP Publishing, 2011.
+
+\bibitem{agostinelli2003geant4}
+S.~Agostinelli, J.~Allison, K.~a. Amako, J.~Apostolakis, H.~Araujo, P.~Arce,
+  M.~Asai, D.~Axen, S.~Banerjee, G.~Barrand, {\em et~al.}, ``Geant4—a
+  simulation toolkit,'' {\em Nuclear instruments and methods in physics
+  research section A: Accelerators, Spectrometers, Detectors and Associated
+  Equipment}, vol.~506, no.~3, pp.~250--303, 2003.
+
+\bibitem{Nielsen2016}
+F.~Nielsen, {\em Hierarchical Clustering}, pp.~195--211.
+\newblock Cham: Springer International Publishing, 2016.
+
+\bibitem{virtanen2020scipy}
+P.~Virtanen, R.~Gommers, T.~E. Oliphant, M.~Haberland, T.~Reddy, D.~Cournapeau,
+  E.~Burovski, P.~Peterson, W.~Weckesser, J.~Bright, {\em et~al.}, ``{SciPy
+  1.0: fundamental algorithms for scientific computing in Python},'' {\em
+  Nature methods}, vol.~17, no.~3, pp.~261--272, 2020.
+
+\bibitem{nielsen2016hierarchical}
+F.~Nielsen and F.~Nielsen, ``Hierarchical clustering,'' {\em Introduction to
+  HPC with MPI for Data Science}, pp.~195--211, 2016.
+
+\bibitem{imambi2021pytorch}
+S.~Imambi, K.~B. Prakash, and G.~Kanagachidambaresan, ``Pytorch,'' {\em
+  Programming with TensorFlow: solution for edge computing applications},
+  pp.~87--104, 2021.
+
+\bibitem{mannor2005cross}
+S.~Mannor, D.~Peleg, and R.~Rubinstein, ``The cross entropy method for
+  classification,'' in {\em Proceedings of the 22nd international conference on
+  Machine learning}, pp.~561--568, 2005.
+
+\bibitem{de2005tutorial}
+P.-T. De~Boer, D.~P. Kroese, S.~Mannor, and R.~Y. Rubinstein, ``A tutorial on
+  the cross-entropy method,'' {\em Annals of operations research}, vol.~134,
+  pp.~19--67, 2005.
+
+\bibitem{newton2018recent}
+D.~Newton, R.~Pasupathy, and F.~Yousefian, ``Recent trends in stochastic
+  gradient descent for machine learning and big data,'' in {\em 2018 Winter
+  Simulation Conference (WSC)}, pp.~366--380, IEEE, 2018.
+
+\bibitem{battaglia2018relational}
+P.~W. Battaglia, J.~B. Hamrick, V.~Bapst, A.~Sanchez-Gonzalez, V.~Zambaldi,
+  M.~Malinowski, A.~Tacchetti, D.~Raposo, A.~Santoro, R.~Faulkner, {\em
+  et~al.}, ``Relational inductive biases, deep learning, and graph networks,''
+  {\em arXiv preprint arXiv:1806.01261}, 2018.
+
+\bibitem{vaswani2017attention}
+A.~Vaswani, N.~Shazeer, N.~Parmar, J.~Uszkoreit, L.~Jones, A.~N. Gomez,
+  {\L}.~Kaiser, and I.~Polosukhin, ``Attention is all you need,'' {\em Advances
+  in neural information processing systems}, vol.~30, 2017.
+
+\bibitem{amatriain2023transformer}
+X.~Amatriain, A.~Sankar, J.~Bing, P.~K. Bodigutla, T.~J. Hazen, and M.~Kazi,
+  ``Transformer models: an introduction and catalog,'' {\em arXiv preprint
+  arXiv:2302.07730}, 2023.
+
+\bibitem{dezoort2021charged}
+G.~DeZoort, S.~Thais, J.~Duarte, V.~Razavimaleki, M.~Atkinson, I.~Ojalvo,
+  M.~Neubauer, and P.~Elmer, ``Charged particle tracking via edge-classifying
+  interaction networks,'' {\em Computing and Software for Big Science}, vol.~5,
+  pp.~1--13, 2021.
+
+\bibitem{ju2021performance}
+X.~Ju, D.~Murnane, P.~Calafiura, N.~Choma, S.~Conlon, S.~Farrell, Y.~Xu,
+  M.~Spiropulu, J.-R. Vlimant, A.~Aurisano, {\em et~al.}, ``Performance of a
+  geometric deep learning pipeline for hl-lhc particle tracking,'' {\em The
+  European Physical Journal C}, vol.~81, pp.~1--14, 2021.
+
+\bibitem{van2024transformers}
+S.~Van~Stroud, P.~Duckett, M.~Hart, N.~Pond, S.~Rettie, G.~Facini, and
+  T.~Scanlon, ``Transformers for charged particle track reconstruction in high
+  energy physics,'' {\em arXiv preprint arXiv:2411.07149}, 2024.
+
 \end{thebibliography}
