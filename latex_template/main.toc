@@ -56,12 +56,12 @@
 \contentsline {subsubsection}{\numberline {6.1.2}The Standard R3B Clustering Algorithm}{100}{subsubsection.6.1.2}%
 \contentsline {subsection}{\numberline {6.2}Data Simulation and Selection}{101}{subsection.6.2}%
 \contentsline {subsubsection}{\numberline {6.2.1}Simulation Setup}{101}{subsubsection.6.2.1}%
-\contentsline {subsubsection}{\numberline {6.2.2}Performance Metrics}{101}{subsubsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.3}Agglomerative Clustering Model}{102}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Edge Detection Neural Network}{103}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Results}{105}{subsection.6.5}%
-\contentsline {subsection}{\numberline {6.6}Discussion and Outlook}{108}{subsection.6.6}%
-\contentsline {section}{Appendices}{109}{section*.67}%
-\contentsline {section}{\numberline {A}TWIN MUSIC Geometric Acceptance Correction via Efficiency Measurement}{109}{appendix.1.A}%
-\contentsline {section}{\numberline {B}Flight-Path Reconstruction}{110}{appendix.1.B}%
-\contentsline {section}{References}{114}{equation.1.B.43}%
+\contentsline {subsubsection}{\numberline {6.2.2}Performance Metrics}{102}{subsubsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.3}Agglomerative Clustering Model}{103}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Edge Detection Neural Network}{104}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Results}{106}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Discussion and Outlook}{109}{subsection.6.6}%
+\contentsline {section}{Appendices}{110}{section*.69}%
+\contentsline {section}{\numberline {A}TWIN MUSIC Geometric Acceptance Correction via Efficiency Measurement}{110}{appendix.1.A}%
+\contentsline {section}{\numberline {B}Flight-Path Reconstruction}{111}{appendix.1.B}%
+\contentsline {section}{References}{115}{equation.1.B.43}%
