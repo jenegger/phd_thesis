@@ -409,24 +409,54 @@ To induce fission an activation energy $T_a$ has to be supplied to overcome the 
 Q = (m_i -m_f)c^2 = T_f - T_a
 \]
 where $m_i$ is the initial mass of the fissile nucleus and $m_f$ the sum of the masses of the fission products. Figure X shows the potential curve for the fission process into two fission fragments.\newline
-From previous fission experiments fission yields for 
+In case of low fission barriers $T_a$ \textit{spontaneous fission}(s.f.) may occur. For many other nuclei a higher potential wall is expected  where no spontaneous fission is observed. In that case a relatively small energy $T_a$ needs to be supplied to \textit{induce fission}.
+From previous fission experiments fission yields for a large range of exotic nuclei were measured together with the mass/charge distribution of the (two) fission fragments. It has been observed that there are distinct regions of symmetric mass distribution and as well as asymmetric regions which cannot be understood by liquid drop model approximations. Moreover many different processes associated with fission have shown that the fission barrier does not always have a single maximum as predicted by the liquid drop model~\cite{bassani2005encyclopedia}. It follows that, within the framework of theoretical models, the description must generally combine concepts from both the liquid-drop model and the shell model giving high importance to the fine structure of the topography of the potential-energy surface (PES) as shownn in Figure~\ref{fig:drop_shell_model}, implemented in scission models which focuses on the specific configuration of the fissioning nucleus just before it splits into fragments, considering factors like potential energy and shell effects~\cite{pacsca2016possible,andreev2012mass,moller2012calculated}.\newline
 
-
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/liquid_drop.png}
+    \caption{
+    Most probable fission paths (red arrows) in the a) liquid drop model which postulates symmetric fission fragment masses. b) includes shell effects introducing asymmetry in the fragment's mass distribution. Figure from~\cite{popescu2021review}. 
+    }
+    \label{fig:drop_shell_model}
+\end{figure}
 
 However, when microscopic effects—such as nuclear shell corrections and pairing interactions—are taken into account, the PES becomes substantially more complex and requires higher-resolution experimental techniques for validation.\newline
 To test these more nuanced theoretical predictions, a detailed and differential mapping of the PES is necessary. Fission induced via QFS reactions offers a promising experimental approach for this purpose. In QFS-induced fission, the projectile interacts with an individual nucleon within the target nucleus, leading to localized and controlled excitation of the residual system. This allows for event-by-event measurement of the fission process, enabling a direct correlation between the excitation energy and the resulting fission fragment charge and mass distributions, as well as the fission probabilities.\newline
-Such differential data facilitate a more precise determination of the temperature dependence of the fission process and the underlying fission barrier heights for exotic, neutron-rich heavy nuclei. By systematically analyzing these correlations, QFS-induced fission can provide critical constraints on theoretical models of the PES and improve our understanding of fission dynamics far from stability.
+Such differential data facilitate a more precise determination of the temperature dependence of the fission process and the underlying fission barrier heights for exotic, neutron-rich heavy nuclei. By systematically analyzing these correlations, QFS-induced fission can provide critical constraints on theoretical models of the PES and improve our understanding of fission dynamics far from stability.\newline
+In the S455 experiment, as proof of principle, for fission via quasi-free scattering the reaction $^{238}U(p,2pf)$ was analyzed, with an intermediate excited nucleus Protactinum (Pa*) which undergoes fission. An overview of the reaction mechanism is shown in Figure~\ref{fig:drop_shell_model}.\newline 
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/overview_exp_2021_s455.pdf}
+    \caption{
+    Overview of reaction mechanism $^{238}U$(p,2pf) in inverse kinematics.
+    }
+    \label{fig:drop_shell_model}
+\end{figure}
+The realization of the proposed experiment required a finely tuned  setup was needed for a complete identification of the fission fragments and the determination of the neutrons emitted in coincidence. Moreover a  precise measurement of the momentum of the knockout protons was required for a full charcterization of the fissioning process.\newline
+Central detector for the simultaneous charge measurement of the fission fragments is the TWIN MUSIC thanks to its four-section geometry (for more details see: Section~\ref{sec:ionisation_chambers}). %TODO find charge resolution of TWIN
+However the energy/charge calibration employs many fine-tuning steps to retrieve the final charges of the fission products:
+\begin{itemize}
+\item Anode- and section wise calibration
+%TODO: more; maybe also some plots you have
+
+\end{itemize}
+The final calibration of the TWIN MUSIC was carried out by our colleagues from University Spain,Valencia,Santiago.\newline
+The key detector for the identification of the quasi-free scattering part of the reaction was the CALIFA calorimeter. For this experiment the CALIFA DAQ was operated for the first time in multi-event readout mode since high CALIFA event rates were expected and from the experience from the S444 experiment, where CALIFA was operated in a fully self triggered mode, which slowed down the event-building rate and capabilities of the full R3B DAQ\footnote{For more details about the CALIFA DAQ readout modes see~\cite{pklenze}, Section 5.2}.\newline
+However, for offline analyis this configuration posed several data unwrapping steps to correctly assign the hits within the asynchronous multi-event readout blocks to the according recorded events. 
 
 
 
-Over the past decades, Coulomb-induced fission reactions in inverse kinematics have served as a powerful tool to investigate fission dynamics and the nuclear structure of both stable and unstable heavy nuclei at large deformations. These reactions, however, provide only averaged information over many fission events, thereby limiting their ability to resolve the detailed topography of the potential-energy surface (PES). Consequently, they offer only indirect access to the fission barrier through measurements of integrated fission yields, making it difficult to probe finer aspects of fission dynamics.\newline
-
-
-Coulomb-induced fission has confirmed the broad features predicted by macroscopic models such as the liquid-drop model, which typically exhibits a single, smooth rise in the PES leading to fission, as illustrated in Figure 1.
-
--> shortly explain the challenges behind, idea should be in the theory part. Also mention that this was complementary experiment to Coulex Exp, where nature paper was submitted
--> mention that TUM Munich group was strongly involved
--> Charge reconstruction is done, mention the papers and publications
--> One really interesting aspect would have been to pick out specific reaction channels, eg. with one fission fragment being a thin isotope and look at the gamma spectrum. 
--> the issue there is of course that precise thin isotope cannot be selected yet. But from CALIFA side this was motivation to improve the clustering algorithm, especially for fission reactions, where you have lot more hits in CALIFA. And there especially looking at low energy hits from gammas, which can be quite sparse.
--> This should then be the introduction for the next section about clustering.
+%
+%Over the past decades, Coulomb-induced fission reactions in inverse kinematics have served as a powerful tool to investigate fission dynamics and the nuclear structure of both stable and unstable heavy nuclei at large deformations. These reactions, however, provide only averaged information over many fission events, thereby limiting their ability to resolve the detailed topography of the potential-energy surface (PES). Consequently, they offer only indirect access to the fission barrier through measurements of integrated fission yields, making it difficult to probe finer aspects of fission dynamics.\newline
+%
+%
+%Coulomb-induced fission has confirmed the broad features predicted by macroscopic models such as the liquid-drop model, which typically exhibits a single, smooth rise in the PES leading to fission, as illustrated in Figure 1.
+%
+%-> shortly explain the challenges behind, idea should be in the theory part. Also mention that this was complementary experiment to Coulex Exp, where nature paper was submitted
+%-> mention that TUM Munich group was strongly involved
+%-> Charge reconstruction is done, mention the papers and publications
+%-> One really interesting aspect would have been to pick out specific reaction channels, eg. with one fission fragment being a thin isotope and look at the gamma spectrum. 
+%-> the issue there is of course that precise thin isotope cannot be selected yet. But from CALIFA side this was motivation to improve the clustering algorithm, especially for fission reactions, where you have lot more hits in CALIFA. And there especially looking at low energy hits from gammas, which can be quite sparse.
+%-> This should then be the introduction for the next section about clustering.
+\newpage

@@ -50,18 +50,18 @@
 \contentsline {subsubsection}{\numberline {5.4.3}Proton Separation Energy $S_p$}{89}{subsubsection.5.4.3}%
 \contentsline {subsection}{\numberline {5.5}Reconstruction of excited$ ^{11}$B states}{92}{subsection.5.5}%
 \contentsline {subsection}{\numberline {5.6}Fission via Quasi-Free Scattering reaction}{96}{subsection.5.6}%
-\contentsline {section}{\numberline {6}Machine Learning for the Cluster Reconstruction in the CALIFA Calorimeter at R$^3$B}{97}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Gamma Spectroscopy with the Standard R3B Clustering Algorithm}{99}{subsection.6.1}%
-\contentsline {subsubsection}{\numberline {6.1.1}Challenges in Relativistic Gamma Spectroscopy}{99}{subsubsection.6.1.1}%
-\contentsline {subsubsection}{\numberline {6.1.2}The Standard R3B Clustering Algorithm}{100}{subsubsection.6.1.2}%
-\contentsline {subsection}{\numberline {6.2}Data Simulation and Selection}{101}{subsection.6.2}%
-\contentsline {subsubsection}{\numberline {6.2.1}Simulation Setup}{101}{subsubsection.6.2.1}%
-\contentsline {subsubsection}{\numberline {6.2.2}Performance Metrics}{102}{subsubsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.3}Agglomerative Clustering Model}{103}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Edge Detection Neural Network}{104}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Results}{106}{subsection.6.5}%
-\contentsline {subsection}{\numberline {6.6}Discussion and Outlook}{109}{subsection.6.6}%
-\contentsline {section}{Appendices}{110}{section*.69}%
-\contentsline {section}{\numberline {A}TWIN MUSIC Geometric Acceptance Correction via Efficiency Measurement}{110}{appendix.1.A}%
-\contentsline {section}{\numberline {B}Flight-Path Reconstruction}{111}{appendix.1.B}%
-\contentsline {section}{References}{115}{equation.1.B.43}%
+\contentsline {section}{\numberline {6}Machine Learning for the Cluster Reconstruction in the CALIFA Calorimeter at R$^3$B}{99}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Gamma Spectroscopy with the Standard R3B Clustering Algorithm}{100}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Challenges in Relativistic Gamma Spectroscopy}{100}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}The Standard R3B Clustering Algorithm}{102}{subsubsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.2}Data Simulation and Selection}{102}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {6.2.1}Simulation Setup}{102}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.2.2}Performance Metrics}{104}{subsubsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.3}Agglomerative Clustering Model}{104}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Edge Detection Neural Network}{105}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Results}{107}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Discussion and Outlook}{110}{subsection.6.6}%
+\contentsline {section}{Appendices}{111}{section*.71}%
+\contentsline {section}{\numberline {A}TWIN MUSIC Geometric Acceptance Correction via Efficiency Measurement}{111}{appendix.1.A}%
+\contentsline {section}{\numberline {B}Flight-Path Reconstruction}{112}{appendix.1.B}%
+\contentsline {section}{References}{116}{equation.1.B.43}%
