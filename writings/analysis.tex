@@ -52,26 +52,26 @@ Detectors downstream the target area are used to count the number of unreacted p
 \subsection{Event Selection}\label{subsec:event-sel}
 \begin{figure}[htpb]
     \centering
-    \includegraphics[width=\textwidth,height=6cm,keepaspectratio=true]{Figures/SETUP_around_Target.png}
+    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/SETUP_around_Target.png}
     \caption{
-    R$^3$B setup for the S444 experiment in the target region. TODO: select overview with less numbers/measures...
+    Schematic layout of the R$^3$B experimental setup for the S444 experiment. The beam comes from the left, passing through MWPC0, R3B MUSIC (ionization chamber), START detector (orange), and ROLU (green) before interacting in the target chamber. The setup is spatially referenced with z=0 at the end of the target chamber. Measurement directions "Messel side" and "Wixhausen side" are also indicated for (left-right) orientation. Dimensions are given in millimeters. 
     }
     \label{fig:setup_target_region}
 \end{figure}
 
-For event selection, all three upstream detectors are utilized: the MWPC0, the R$^3$B MUSIC Ionization Chamber, and the start detector. To ensure a clean incoming event selection, the following prerequisites must be met:
+For event selection, all three upstream detectors are utilized: the MWPC0, the R$^3$B MUSIC Ionization Chamber, and the start detector. This selection of correlated signals in these detectors already ensure that individual dead times of the different DAQ systems and the central trigger system are excluded for the dataset and do not have to be considered in teh following analysis. To ensure a clean incoming event selection, the following prerequisites must be met:
 \begin{enumerate}
 \item \textbf{$^{12}$C identification of incoming projectile by upstream detectors:}\newline
 \begin{figure}[htpb]
     \centering
-    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/charge_r3bmusic.png}
+    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/charge_val_r3b_start_mw0_cuts.pdf}
     \caption{
-    Charge distribution on R$^3$B MUSIC with predefinded calibration parameters with already applied positional cuts on MWPC0 - positioned upstream to the ionisation chamber. The rise beyond Z $\ge$ 7.2 comes from pile-up events. 
+    Charge distribution in R$^3$B MUSIC with predefinded calibration parameters with already applied positional cuts on MWPC0 - positioned upstream to the ionisation chamber and required coincident signal in the start detector. The rise beyond Z $\ge$ 7.2 originates from pile-up events. The sharp cut on the right at Z $\gtrapprox$ 7.35 is due to the limit of the electronics dynamic range. The fall off at Z $\lessapprox$ 4.8 is due to applied threshold settings on the detector side.
     }
     \label{fig:r3bmusic_charge}
 \end{figure}
-In the S444 experiment the incoming beam was directly delivered by the SIS18 ring accelerator, which is operated in ultra-high vacuum. Herefore the level of contamination is low.\newline 
-For the charge identification of the incoming ion the R$^3$B MUSIC ionisation chamber is used which is positioned directly after the MWPC0 at the beam entrance in Cave C, see figure \ref{fig:setup_target_region}. The R$^3$B MUSIC detector measures anode-wise the energy loss of the passing-through ion which in the first order is proportional to the square of its charge ($\Delta E \sim Z^{2}$). Herfore the calibration parameters from the online analysis are used\footnote{These are generic paramteter values used to the detector performance during the experiment phase.}. Figure \ref{fig:r3bmusic_charge} shows the measured charge distribution in R$^3$B MUSIC. To select $Z = 6$ incoming ions the distibution is fitted with a gaussian fit function. All ions with charge within the $\pm 1 \sigma$ range are accepted. Figure \ref{fig:r3bmusic_cuts} summarizes the $\pm 1 \sigma$ cuts on the R$^3$B MUSIC charge for empty/target runs for all beam energies.   
+In the S444 experiment the incoming beam was directly delivered by the SIS18 ring accelerator, which is operated in ultra-high vacuum. Due to the low material budget in this beam line and its narrow p/q acceptance the level of contamination is very low.\newline 
+For the charge identification of the incoming ion the R$^3$B MUSIC ionisation chamber is used which is positioned directly after the MWPC0 at the beam entrance in Cave C, see figure \ref{fig:setup_target_region}. The R$^3$B MUSIC detector measures anode-wise the energy loss of the passing-through ion which in the first order is proportional to the square of its charge ($\Delta E \sim Z^{2}$). Herfore the calibration parameters from the online analysis are used\footnote{These are generic paramteter values used to the detector performance during the experiment phase.}. Figure \ref{fig:r3bmusic_charge} shows the measured charge distribution in R$^3$B MUSIC. To select $Z = 6$ incoming ions the distibution is fitted with a gaussian fit function. Only ions with an energy loss within the $\pm 1 \sigma$ range are accepted. Figure \ref{fig:r3bmusic_cuts} summarizes the $\pm 1 \sigma$ cuts on the R$^3$B MUSIC charge for empty/target runs for all beam energies.   
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/r3bmusic_charge_cuts.png}
@@ -79,14 +79,14 @@ For the charge identification of the incoming ion the R$^3$B MUSIC ionisation ch
 \label{fig:r3bmusic_cuts}
 \end{figure}
 \item \textbf{Pileup rejection and TPat selection:}\newline
-The overall recoding and merging of the data from various subdetectors is one of the tasks of the Data AcQuisition (DAQ) system. Whether an event is recorded or not depends on the pre-established trigger logic. Various detectors can send out triggers to the main DAQ when certain conditions are given (e.g. CALIFA can be configured to send out a trigger when a hit with more than 20 MeV is recorded in the calorimeter). The different triggers are processed by the trigger logic and summarized as a defined trigger pattern, so called TPat, which is stored in a 16-bit mask for each event. Table \ref{tab:tpats} gives an overview of the trigger logic and the trigger patterns set in the S444 experiment. For this analysis the \textit{"Min. Bias"} trigger is required\footnote{This includes also \textit{"Reaction"} and \textit{"Neutron"} TPat since these patterns contain also \textit{"Min. Bias"} TPat as necessary condition.}.\newline 
+The overall recoding and merging of the data from various subdetectors is one of the tasks of the Data AcQuisition (DAQ) system. Whether an event is recorded or not depends on the pre-established trigger logic. Various detectors can send out triggers to the main DAQ when certain conditions are given (e.g. CALIFA can be configured to send out a trigger when a hit is recorded in the calorimeter). The different triggers are processed by the trigger logic and summarized as a defined trigger pattern, so called TPat, which is stored in a 16-bit mask for each event. Table \ref{tab:tpats} gives an overview of the trigger logic and the trigger patterns set in the S444 experiment. For this analysis the \textit{"Min. Bias"} trigger is required\footnote{This includes also \textit{"Reaction"} and \textit{"Neutron"} TPat since these patterns contain also \textit{"Min. Bias"} TPat as necessary condition.}.\newline 
 \begin{table}[h!]
 \centering
 \begin{tabular}{||c c c||} 
 \hline
 Bit Position &TPat Name & Description \\
 \hline\hline
-0 & Min Bias & Hit in Start detector\\
+0 & Min Bias & Hit in Start detector and \textoverline{ROLU}\\
 1 & Reaction & "CalifaOR" -high energy hit in CALIFA \\
 2 & Neutron & Hit in NeuLAND \\
 3 & p+n & Hit in CALIFA and Neuland \\
@@ -97,15 +97,17 @@ Bit Position &TPat Name & Description \\
 \caption{List of TPats set for S444 experiment. As for the selected runs low beam rates ($< 10kHz$) were expected no dead time issues should arise for the in-beam detectors, therefore no downscaling of the \textit{Min. Bias} TPat was deployed.}
 \label{tab:tpats}
 \end{table}
-Since the TPat selection itself does not necessary set any pileup constraints it is important to analyse the signals of the detectors upstream carefully to insure yourself that only events with  one incoming $^{12}$C ion at a time get selected. Herefore events with incoming ions with charge $Z = 6 \pm 1\sigma$ are chosen, as discussed in the previous point. Moreover it is required that both left and right preamplifiers of the start detector have seen a coincident signal within a time-window of 1.391 ns.---TODO: why this time window?-- The overall searching window of the start detector was set to 2 $\mu s$, see figure \ref{fig:start_good_event_sel}. For the MWPC0 which is mounted right at the beam entrance of Cave C no hit multiplicity cuts were applied considering its operating mode, which is designed for charge sharing between the readout pads. 
-\begin{figure}
+Since the TPat selection itself does not necessary set any pileup constraints it is important to analyse the signals of the detectors upstream carefully to insure yourself that only events with  one incoming $^{12}$C ion at a time get selected. Herefore events with incoming ions with charge $Z = 6 \pm 1\sigma$ are chosen, as discussed in the previous point. With this restrictive cut pileup events can be efficiently rejected (see also Appendix \ref{app:r3bmusic_pileup}). \newline
+Moreover it is required that both left and right preamplifiers of the start detector have seen a coincident signal within a time-window of 1.391 ns, see Fig.~\ref{fig:start_good_event_sel}.The width of the time window was chosen based on the maximum signal rise time of the detector as well as the maximal propagation delay of the scintillation light to the oppositely positioned preamplifiers. The overall searching window of the start detector was set to 2 $\mu s$, see figure \ref{fig:start_good_event_sel}.\newline
+For the MWPC0 which is mounted right at the beam entrance of Cave C no hit multiplicity cuts were applied considering its operating mode, which is designed for charge sharing between the readout pads. 
+\begin{figure}[ht]
 \centering
-\includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/start_tdiff_exactly2good_hits.png}
-\caption{$\Delta t_{right-left}$ between hits in the Start detector for events with exactly one hit on the left and right preamplifier and limiting the time differnce in the range 0.555 ns to 1.946ns.}
+\includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/t_diff_start.pdf}
+\caption{$\Delta t_{right-left}$ between hits in the Start detector for events with exactly one hit on the left and right preamplifier and limiting the time difference in the range 0.555 ns to 1.946ns.}
 \label{fig:start_good_event_sel}
 \end{figure}
-\item \textbf{Projectile's focus on the active target region:}\newline
-To assure that the incoming $^{12}$C ion hits the target it is necessary to select only events where the projectile is focussed to the active target region. Therefore strict cuts on the MWPC0 x and y positon are applied. This was achieved by fitting the x and y distribution of the MWPC0 (without any restrictions on it) by a gaussian function. The selection of focused incoming projectiles was then restricted to events with hits in MWPC0 within the $\pm 1\sigma$ region in the x and y position, see figure \ref{fig:mw0_xy_overview} and \ref{fig:mw0_cuts}.\newline
+\item \textbf{Projectile's focus on the target region:}\newline
+To assure that the incoming $^{12}$C ion hits the target it is necessary to select only events where the projectile is focussed to the target region. Therefore strict cuts on the MWPC0 x and y positon are applied. This was achieved by fitting the x and y distribution of the MWPC0 (without any restrictions on it) by a gaussian function. The selection of \textit{"focused"} incoming projectiles was then restricted to events with hits in MWPC0 within the $\pm 1\sigma$ region in the x and y position around the beam spot center, see figure \ref{fig:mw0_xy_overview} and \ref{fig:mw0_cuts}.\newline
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/mw0_xy_summary.png}
