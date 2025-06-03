@@ -253,115 +253,121 @@ f(x) = A e^{-\frac{1}{2}((\frac{x - \bar{x}}{\sigma_{x}})^2 +(\frac{y - \bar{y}}
 \label{eq:gauss_fit}
 \end{equation}
 where x is the mean rescaled energy loss of the first upstream andodes and y the according eight downstream anodes. The number of survived carbon isotopes is given by the integral of events within the 2D gaussian fit. Since the anodes were read out by two independent MDPP modules with slightly different thresholds also events along the histogram axes with no hit entry in either the upstream anodes or downstream anodes are analyzed. For those events a one dimensional gaussian cut is applied using the parameters from equation \ref{eq:gauss_fit} (see horizontal and vertical bars in figure \ref{fig:twin_2d_gaus_cut}).\newline
-A preliminary estimate of the cross section, neglecting the influence of the geometrical acceptance of the TWIN MUSIC detector, can be derived from the raw event numbers using Eq.~\ref{eq:corr_cross}:
+A preliminary estimate of the charge changing cross section, neglecting the influence of the geometrical acceptance of the TWIN MUSIC detector, can be derived from the raw event numbers using Eq.~\ref{eq:corr_cross}:
 \begin{equation}
     \sigma = -\frac{1}{N_t} \ln\left(\frac{N_1^E}{N_2^E} \cdot \frac{N_2}{N_1}\right),
 \end{equation}
-where the number of surviving carbon isotopes, $N_2/N_2^E$, for the target and corresponding empty-target runs is obtained via the two-dimensional Gaussian fit shown in Fig.~\ref{fig:twin_2d_gaus_cut}. The preliminary results are presented in Fig.~\ref{fig:cccs_with_out_border_3_5}, where the fit range in the 2D distribution was fixed to $3.5\sigma$.
+where the number of surviving carbon isotopes, $N_2/N_2^E$, for the target and corresponding empty-target runs is obtained via the two-dimensional Gaussian fit shown in Fig.~\ref{fig:twin_2d_gaus_cut}. The preliminary results are presented in Fig.~\ref{fig:cccs_gaus_with_errors}, where the fit range in the 2D distribution was fixed to $3.5\sigma$.
 
-\begin{figure}[htpb]
-    \centering
-    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/cccs_with_out_border_3_5_sigma.png}
-    \caption{
-    Charge changing cross section without geometry corrections. The red data points result from considering also events with only hits in the upstream or downstream anodes, the blue data points don't take these events in consideration. 
-     }
-    \label{fig:cccs_with_out_border_3_5}
-\end{figure}
-To get the optimal fit range on the two dimensional gaussian fit on the reconstructed charges of the upstream anodes versus downstream anodes the charge changing cross section for all targets and all energies was systematically measured for $\sigma$-fit ranges between one and five $\sigma$, see figure \ref{fig:cccs_vs_sigma_cut}. In the region $\thicksim$ 3.5$\sigma$ the variation of the cross section is minimal.\newline
-\begin{figure}[htpb]
-    \centering
-    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/cccs_vs_sigma_cut.png}
-    \caption{
-    Measured charge changing cross sections according to the $\sigma$ fit range applied on the figure \ref{fig:twin_2d_gaus_cut} (with borders) for the different target thicknesses and beam energies.
-     }
-    \label{fig:cccs_vs_sigma_cut}
-\end{figure}
-Another method to assert the number survived carbon ions is to apply a diagonal cut on the 2D $\Delta E$ histogram. To set the slope and offset of the diagonal cut line firstly the two dimensional gaussian fit is applied, same as for the previous method. Then the intersection point between the 3.5 $\sigma$ ellipse and the identity line ($\Delta E$ upstream anodes = $\Delta E$ downstream anodes) is found. Through this point, perpendicular to the identity line, the diagonal line is drawn. Everything above the diagonal line is considered as survived carbon ions. Moreover the borders are considered within the 3.5 $\sigma$ cut, see figure \ref{fig:diagonal_cut_twim}. 
-\begin{figure}[htpb]
-    \centering
-    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/charge_loss_550_thick.png}
-    \caption{
-    Diagonal cut on identified carbon isotopes along the gaussian 3.5 $\sigma$ cut with borders. All hits above the diagonal line are counted as carbon isotopes. Histogram from thick target run, 550 AMeV beam energy.
-     }
-    \label{fig:diagonal_cut_twim}
-\end{figure}
-The effects of the two different methods used for the identification of the carbon isotopes for the charge changing cross section is summarized in figure \ref{fig:cccs_gaus_vs_diag}. The differences in the measured cross sections are within the margin of error herefore both methods are comparable, as expected.
-\begin{figure}[htpb]
-    \centering
-    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/cccs_gauss_diag_comp_3_5_sigma.png}
-    \caption{
-    Comparison of charge changing cross section measured via 2D gaussian fit cut and diagonal cut. The differnces are within the margin of error.
-     }
-    \label{fig:cccs_gaus_vs_diag}
-\end{figure}
-To check wether single anodes or groups of anodes are malfunctioning the charge changing cross section measurement was repeated using only certain anodes for the charge identification:
-\begin{enumerate}[label=\alph*)]
-\itemsep0em
-\item anodes 2-8 versus anodes 9-15 (omitting first and last anode)
-\item anodes 1-4 versus anodes 5-8 (upstream anodes)
-\item anodes 5-8 versus anodes 9-12 (central anodes)
-\item anodes 9-12 versus anodes 13-16 (downstream anodes)
-\end{enumerate}
-The results from the measurement are summarized in figure \ref{fig:cccs_gaus_diff_sections}. The difference between the default gaussian fit method (with 3.5$\sigma$ cut and considering the borders) considering all 16 anodes and applying the same method but omitting the first and last anode is minimal over all four beam energies. When selecting only 8 out of 16 anodes instead the cross sections are systematically lower when going to high beam energies. The energy loss inside the TWIN MUSIC decreases with higher beam intensities, according to the Bethe-Bloch formula:
-
-%\[
-\begin{equation}
--\frac{dE}{dx} = K z^2 \frac{Z}{A} \frac{1}{\beta^2} \left( \frac{1}{2} \ln \frac{2 m_e c^2 \beta^2 \gamma^2 T_{\text{max}}}{I^2} - \beta^2 - \frac{\delta(\beta \gamma)}{2} \right)
-\end{equation}
-%\]
-
-\text{where:}
-\begin{align*}
-K &= 4 \pi N_A r_e^2 m_e c^2 \approx 0.307 \, \text{MeV} \, \text{cm}^2 \, \text{g}^{-1}, \\
-z &= \text{charge of the incident particle (in elementary charge units)}, \\
-Z &= \text{atomic number of the target material}, \\
-A &= \text{atomic mass of the target material}, \\
-\beta &= \frac{v}{c} = \text{velocity of the particle relative to the speed of light}, \\
-\gamma &= \frac{1}{\sqrt{1 - \beta^2}} = \text{Lorentz factor}, \\
-T_{\text{max}} &= \text{maximum kinetic energy transferable to an electron in one collision}, \\
-I &= \text{mean excitation potential of the target material}, \\
-\delta(\beta \gamma) &= \text{density effect correction}.
-\end{align*}
-The behaviour of dE/dx for small $\beta$- values are dominated by the 1/$\beta^2$ term. The decrease of deposited energy for larger beam energies has as consequence a lower relative resolution in the two dimensional $\Delta E$ loss histogram (see figure \ref{fig:twin_2d_gaus_cut}) reflecting the poissonian distribution properties. In addition reducing the number of readout anodes by a factor two degrades the resolution by a factor $\sqrt{2}$\footnote{It can be assumed a similar $\Delta$ E distribution for all anodes. Hence the central limit theorem can be applied where $\sigma = \frac{\sigma_{anode}}{\sqrt(n)}$ with $n = number of anodes$.}. This has as consequence that the ellipsis with 3.5$\sigma$ cut incorporates a non negligible amount of boron isotopes which are counted as survived carbon isotopes which in turn reduces the measured charge chaning cross section.\newline
-\begin{figure}[htpb]
-    \centering
-    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/cccs_various_sections_2dgauss_border.png}
-    \caption{
-   	Measurement of charge changing cross sections using different anode sections to make the two dimensional gaussian fit on the identified carbon isotopes. Red: using all 16 anodes. Blue: the various combinations. 
-     }
-    \label{fig:cccs_gaus_diff_sections}
-\end{figure}
-While in the above measurements a time based secelction algorithm for multi-hit anodes was used also an energy based selection was tested. This algorithm selects for multi-hit anodes the hit with the highest energy as physical hit and discarts all others, as they are considered as background/noise. Figure \ref{fig:cccs_gaus_time_vs_energy} compares the time based method versus the energy based method. In both cases a two dimensional gaussian 3.5$\sigma$ cut is applied as in figure \ref{fig:twin_2d_gaus_cut} and the borders are counted as well. The difference in the outcome is negligible. This can be explained since noise or background signal should be both uncorrelated to the event time and at a low energy level and are therefore filtered by both algorithms.
-\begin{figure}[htpb]
-    \centering
-    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/cccs_time_vs_engergy_sorted.png}
-    \caption{
-    Comparison of charge changing cross section measurements when using time sorting algorithm(red) and energy sorting algorithm(blue) for multi-hit anodes.
-     }
-    \label{fig:cccs_gaus_time_vs_energy}
-\end{figure}
-The final charge changing cross section measurements with 2D gaussian fit applying a 3.5 $\sigma$ cut and including the borders of the histogram are summarized in figure \ref{fig:cccs_gaus_with_errors}. At this stage also the statistical errors are incorporated. 
-%TODO: Description of statistical gaussian error propagation (refer to L.Ponnath thesis).
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/cccs_with_stat_errors.png}
     \caption{
-    Measurement of charge changing cross sections using all 16 anodes of the TWIN MUSIC applying the 2D gaussian fit and considering the borders as in figure \ref{fig:twin_2d_gaus_cut}.
+    Preliminary estimate of charge-changing cross sections obtained by applying a two-dimensional Gaussian fit to the correlation plot of the reconstructed mean charge from the eight upstream anodes ($\overline{Z_{\text{up}}}$) versus the eight downstream anodes ($\overline{Z_{\text{down}}}$) and considering the borders as in figure \ref{fig:twin_2d_gaus_cut}.
      }
     \label{fig:cccs_gaus_with_errors}
 \end{figure}
 
-\newpage
-%note that thickness calc from Lukas --TODO
-%-> deltaE possonian distributed, according to central limit theorem, the sum too DONE
-%-> therefore plot Esum of first 8 anodes vs Esum of last 8 anodes DONE
-%-> two modules were used for readout DONE
-%-> For selecting charge = 6 make gaussian fit on Esum up down DONE
-%-> Compare charge = 6 cuts: DONE
-%	-->show gaussian 2D cut, for all sigmas (with and whithout borders)
-%	-->show gaussian diagonal cut for all sigmas (with and without borders)
-%	-->show effect when discarting first/last, first two/last, first three/last and only using last 8 or last 6 anodes with fixed sigma cut
-%	
+%\begin{figure}[htpb]
+%    \centering
+%    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/cccs_with_out_border_3_5_sigma.png}
+%    \caption{
+%    Charge changing cross section without geometry corrections. The red data points result from considering also events with only hits in the upstream or downstream anodes, the blue data points don't take these events in consideration. 
+%     }
+%    \label{fig:cccs_with_out_border_3_5}
+%\end{figure}
+
+To get the optimal fit range on the two dimensional gaussian fit on the reconstructed charges of the upstream anodes versus downstream anodes the charge changing cross section for all targets and all energies was systematically measured for $\sigma$-fit ranges between one and five $\sigma$, see figure \ref{fig:cccs_vs_sigma_cut}. In the region around 3.5$\sigma$ the variation of the cross section is minimal.\newline
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/cccs_vs_sigma_cut.pdf}
+    \caption{
+    Preliminary estimate of the charge changing cross sections according to the $\sigma$ fit range applied on the figure \ref{fig:twin_2d_gaus_cut} (with borders) for the different target thicknesses and beam energies.
+     }
+    \label{fig:cccs_vs_sigma_cut}
+\end{figure}
+
+For the sake of completeness, Appendix~\ref{app:twin_alternative} presents alternative methods for hit selection in multi-hit events in the TWIN MUSIC detector -- such as selecting the hit with the highest energy deposition in multi-hit anodes -- as well as different strategies for defining the charge selection cuts around $Z = 6$. Nevertheless, the approach presented in this section has proven to be the most stable and robust for the present analysis.
+
+%Another method to assert the number survived carbon ions is to apply a diagonal cut on the 2D $\Delta E$ histogram. To set the slope and offset of the diagonal cut line firstly the two dimensional gaussian fit is applied, same as for the previous method. Then the intersection point between the 3.5 $\sigma$ ellipse and the identity line ($\Delta E$ upstream anodes = $\Delta E$ downstream anodes) is found. Through this point, perpendicular to the identity line, the diagonal line is drawn. Everything above the diagonal line is considered as survived carbon ions. Moreover the borders are considered within the 3.5 $\sigma$ cut, see figure \ref{fig:diagonal_cut_twim}. 
+%\begin{figure}[htpb]
+%    \centering
+%    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/charge_loss_550_thick.png}
+%    \caption{
+%    Diagonal cut on identified carbon isotopes along the gaussian 3.5 $\sigma$ cut with borders. All hits above the diagonal line are counted as carbon isotopes. Histogram from thick target run, 550 AMeV beam energy.
+%     }
+%    \label{fig:diagonal_cut_twim}
+%\end{figure}
+%The effects of the two different methods used for the identification of the carbon isotopes for the charge changing cross section is summarized in figure \ref{fig:cccs_gaus_vs_diag}. The differences in the measured cross sections are within the margin of error herefore both methods are comparable, as expected.
+%\begin{figure}[htpb]
+%    \centering
+%    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/cccs_gauss_diag_comp_3_5_sigma.png}
+%    \caption{
+%    Comparison of charge changing cross section measured via 2D gaussian fit cut and diagonal cut. The differnces are within the margin of error.
+%     }
+%    \label{fig:cccs_gaus_vs_diag}
+%\end{figure}
+%To check wether single anodes or groups of anodes are malfunctioning the charge changing cross section measurement was repeated using only certain anodes for the charge identification:
+%\begin{enumerate}[label=\alph*)]
+%\itemsep0em
+%\item anodes 2-8 versus anodes 9-15 (omitting first and last anode)
+%\item anodes 1-4 versus anodes 5-8 (upstream anodes)
+%\item anodes 5-8 versus anodes 9-12 (central anodes)
+%\item anodes 9-12 versus anodes 13-16 (downstream anodes)
+%\end{enumerate}
+%The results from the measurement are summarized in figure \ref{fig:cccs_gaus_diff_sections}. The difference between the default gaussian fit method (with 3.5$\sigma$ cut and considering the borders) considering all 16 anodes and applying the same method but omitting the first and last anode is minimal over all four beam energies. When selecting only 8 out of 16 anodes instead the cross sections are systematically lower when going to high beam energies. The energy loss inside the TWIN MUSIC decreases with higher beam intensities, according to the Bethe-Bloch formula:
+%
+%%\[
+%\begin{equation}
+%-\frac{dE}{dx} = K z^2 \frac{Z}{A} \frac{1}{\beta^2} \left( \frac{1}{2} \ln \frac{2 m_e c^2 \beta^2 \gamma^2 T_{\text{max}}}{I^2} - \beta^2 - \frac{\delta(\beta \gamma)}{2} \right)
+%\end{equation}
+%%\]
+%
+%\text{where:}
+%\begin{align*}
+%K &= 4 \pi N_A r_e^2 m_e c^2 \approx 0.307 \, \text{MeV} \, \text{cm}^2 \, \text{g}^{-1}, \\
+%z &= \text{charge of the incident particle (in elementary charge units)}, \\
+%Z &= \text{atomic number of the target material}, \\
+%A &= \text{atomic mass of the target material}, \\
+%\beta &= \frac{v}{c} = \text{velocity of the particle relative to the speed of light}, \\
+%\gamma &= \frac{1}{\sqrt{1 - \beta^2}} = \text{Lorentz factor}, \\
+%T_{\text{max}} &= \text{maximum kinetic energy transferable to an electron in one collision}, \\
+%I &= \text{mean excitation potential of the target material}, \\
+%\delta(\beta \gamma) &= \text{density effect correction}.
+%\end{align*}
+%The behaviour of dE/dx for small $\beta$- values are dominated by the 1/$\beta^2$ term. The decrease of deposited energy for larger beam energies has as consequence a lower relative resolution in the two dimensional $\Delta E$ loss histogram (see figure \ref{fig:twin_2d_gaus_cut}) reflecting the poissonian distribution properties. In addition reducing the number of readout anodes by a factor two degrades the resolution by a factor $\sqrt{2}$\footnote{It can be assumed a similar $\Delta$ E distribution for all anodes. Hence the central limit theorem can be applied where $\sigma = \frac{\sigma_{anode}}{\sqrt(n)}$ with $n = number of anodes$.}. This has as consequence that the ellipsis with 3.5$\sigma$ cut incorporates a non negligible amount of boron isotopes which are counted as survived carbon isotopes which in turn reduces the measured charge changing cross section.\newline
+%\begin{figure}[htpb]
+%    \centering
+%    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/cccs_various_sections_2dgauss_border.png}
+%    \caption{
+%   	Measurement of charge changing cross sections using different anode sections to make the two dimensional gaussian fit on the identified carbon isotopes. Red: using all 16 anodes. Blue: the various combinations. 
+%     }
+%    \label{fig:cccs_gaus_diff_sections}
+%\end{figure}
+%While in the above measurements a time based secelction algorithm for multi-hit anodes was used also an energy based selection was tested. This algorithm selects for multi-hit anodes the hit with the highest energy as physical hit and discarts all others, as they are considered as background/noise. Figure \ref{fig:cccs_gaus_time_vs_energy} compares the time based method versus the energy based method. In both cases a two dimensional gaussian 3.5$\sigma$ cut is applied as in figure \ref{fig:twin_2d_gaus_cut} and the borders are counted as well. The difference in the outcome is negligible. This can be explained since noise or background signal should be both uncorrelated to the event time and at a low energy level and are therefore filtered by both algorithms.
+%\begin{figure}[htpb]
+%    \centering
+%    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/cccs_time_vs_engergy_sorted.png}
+%    \caption{
+%    Comparison of charge changing cross section measurements when using time sorting algorithm(red) and energy sorting algorithm(blue) for multi-hit anodes.
+%     }
+%    \label{fig:cccs_gaus_time_vs_energy}
+%\end{figure}
+%The final charge changing cross section measurements with 2D gaussian fit applying a 3.5 $\sigma$ cut and including the borders of the histogram are summarized in figure \ref{fig:cccs_gaus_with_errors}. At this stage also the statistical errors are incorporated. 
+%%TODO: Description of statistical gaussian error propagation (refer to L.Ponnath thesis).
+%\begin{figure}[htpb]
+%    \centering
+%    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/cccs_with_stat_errors.png}
+%    \caption{
+%    Measurement of charge changing cross sections using all 16 anodes of the TWIN MUSIC applying the 2D gaussian fit and considering the borders as in figure \ref{fig:twin_2d_gaus_cut}.
+%     }
+%    \label{fig:cccs_gaus_with_errors}
+%\end{figure}
+%
+\clearpage
+
+
+
 \subsection{Geometric Corrections}\label{sec:geo_corr}
 For the S444 experiment only section 1 (right down) of the TWIN MUSIC, which was centered on the beam spot, was operated. As consequence full geometric efficiency could not be assumed. To visualize the restricted geometic efficiency of the TWIN MUSIC the position in x and y (perpendicular plane to the beam direction) on the MWPC1 in front of the ionisation chamber was plotted, once without any conditions on the TWIN MUSIC and once with the condition of having identified a carbon isotope (with the 2D gauss-fit method as described in chapter \ref{subsec:carbon_id}), see figure \ref{fig:mw1_xy}. The large active surface area of 200 x 200 mm$^{2}$ of the MWPC1 affirms that all the carbon fragments are detected\footnote{This statement does not hold for light fragments as protons or deuterons. Their deflection angle exceeds the geometric acceptance of the MWPC1.} whereas the TWIN MUSIC behind it, with an active survace of 55 x 110 mm$^{2}$ (section 1), is not sensitive to the scattered fragments with large deflection angle.\newline
 \begin{figure}[htpb]

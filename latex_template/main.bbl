@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 
 \bibitem{wimmer2010discovery}
 K.~Wimmer, T.~Kr{\"o}ll, R.~Kr{\"u}cken, V.~Bildstein, R.~Gernh{\"a}user,
@@ -12,6 +12,29 @@ R.~Kanungo, C.~Nociforo, A.~Prochazka, T.~Aumann, D.~Boutin, D.~Cortina-Gil,
   B.~Davids, M.~Diakaki, F.~Farinon, H.~Geissel, {\em et~al.}, ``{One-Neutron
   Removal Measurement Reveals O 24 as a New Doubly Magic Nucleus},'' {\em
   Physical review letters}, vol.~102, no.~15, p.~152501, 2009.
+
+\bibitem{krucken2005nustar}
+R.~Kr{\"u}cken, forthe NuSTAR~collaboration, {\em et~al.}, ``The nustar facilty
+  at fair,'' {\em Journal of Physics G: Nuclear and Particle Physics}, vol.~31,
+  no.~10, p.~S1807, 2005.
+
+\bibitem{thielemann2017neutron}
+F.-K. Thielemann, M.~Eichler, I.~Panov, and B.~Wehmeyer, ``Neutron star mergers
+  and nucleosynthesis of heavy elements,'' {\em Annual Review of Nuclear and
+  Particle Science}, vol.~67, no.~1, pp.~253--274, 2017.
+
+\bibitem{horowitz2019r}
+C.~J. Horowitz, A.~Arcones, B.~Cote, I.~Dillmann, W.~Nazarewicz, I.~U.
+  Roederer, H.~Schatz, A.~Aprahamian, D.~Atanasov, A.~Bauswein, {\em et~al.},
+  ``r-process nucleosynthesis: Connecting rare-isotope beam facilities with the
+  cosmos,'' {\em Journal of Physics G: Nuclear and Particle Physics}, vol.~46,
+  no.~8, p.~083001, 2019.
+
+\bibitem{heil2022new}
+M.~Heil, A.~Keli{\'c}-Heil, L.~Bott, T.~Almusidi, H.~Alvarez-Pol, L.~Atar,
+  L.~Atkins, T.~Aumann, J.~Benlliure, K.~Boretzky, {\em et~al.}, ``A new
+  time-of-flight detector for the r 3 b setup,'' {\em The European Physical
+  Journal A}, vol.~58, no.~12, p.~248, 2022.
 
 \bibitem{chamberlain1952proton}
 O.~Chamberlain and E.~Segr{\`e}, ``Proton-proton collisions within lithium
