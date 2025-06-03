@@ -215,20 +215,20 @@ medium & 552763{\footnotesize(8.872\%)} & 410376{\footnotesize(9.035\%)} & 45515
 thick & 553935{\footnotesize(15.528\%)} & 368004{\footnotesize(15.684\%)} & 446115{\footnotesize(15.965\%)} & 402696{\footnotesize(16.049\%)} \\
 \hline
 \end{tabular}
-\caption{Number of survived carbon isotopes after the target identified via 2D gaussian fit with borders within 3.5$\sigma$ cut. In brackets the precentage of projectiles with a charge state of Z < 6 after the target.}
+\caption{Number of survived carbon isotopes after the target identified via 2D gaussian fit with borders within 3.5$\sigma$ fit range. In brackets the precentage of projectiles with a charge state of Z < 6 after the target.In brackets the percentage of projectiles outside the 3.5$\sigma$ fit range, relative to the total number $N_1$ of incoming $^{12}$C ions.}
 \label{tab:survived_ions}
 \end{subtable}
-\caption{Numbers of incoming projectiles $N_1$ and survived carbon isotopes $N_2$ for all energy and target runs.}
+\caption{Numbers of incoming projectiles $N_1$ and survived carbon isotopes $N_2$ for all energy and target combinations after the event selection.}
 \label{tab:overview_nr_cccs}
 \end{table}
 \subsubsection{Carbon Identification}\label{subsec:carbon_id}
-The identification of carbon isotopes in TWIN is done by reconstructing fragments with charge Z = 6 from 2D plots where coincident mean energy losses $\Delta E$ for different anode combinations are plotted. Since the TWIN MUSIC is multi-hit capable various strategies were developed to deal with multi-hit events, i.e. when having anodes with multiple hits, decide which hit originates from the final state products from the reaction and which from background and noise.\newline
-The default strategy is to use the time information of each hit for selection. It has to be remarked that for the S444 experiment the TWIN MUSIC was read out by two independent MDPP modules\cite{MDPP-16}. The signals from the first reference anode and the first eight upstream anodes were sent to module 1, the ones from the last eight downstream anodes and the second reference anode were forwarded to module 2. For the first eight upstream anodes the drift time is calculated by substracting the hit time in each anode by the reference time from the first reference anode and for the last eight downstream anodes accordingly the second reference andode was used.\newline
+The identification of carbon isotopes in TWIN is done by reconstructing fragments with charge Z = 6 from 2D plots where coincident mean reconstructed charge values for different anode combinations are plotted. Since the TWIN MUSIC is multi-hit capable various strategies were developed to deal with multi-hit events, i.e. when having anodes with multiple hits, decide which hit originates from the final state products from the reaction and which from background and noise. It is important to emphasize that these multi-hit events are not associated with pile-up phenomena, as such events are effectively identified due to the longer shaping time of the R3B MUSIC detector and are already excluded by the stringent charge selection applied in the R3B MUSIC data preprocessing.\newline
+The default strategy is to use the time information for single hit selection in multi-hit anodes. It has to be remarked that for the S444 experiment the TWIN MUSIC was read out by two independent MDPP modules~\cite{MDPP-16}. The signals from the first reference anode and the first eight upstream anodes were sent to module 1, the ones from the last eight downstream anodes and the second reference anode were forwarded to module 2. For the first eight upstream anodes the drift time is calculated by substracting the hit time in each anode by the reference time from the first reference anode and for the last eight downstream anodes accordingly the second reference andode was used.\newline
 The time based selection algorithm for multi-hit anodes works as follows:\newline
 \begin{enumerate}
 \itemsep0em
 \item Get the mean drift time for the eight upstream anodes($t_{mean\_up}$) and the eight downstream anodes($t_{mean\_down}$)\footnote{For the case all eight downstream anodes have multiple hits, set $t_{mean\_down} = t_{mean\_up}$ and vice versa}. Anodes with multiple hits do not contribute to this calculation.
-\item If there are anodes with muliple hits compare the hit time with the accorging mean drift time ($t_{mean\_up}$ for any of the eight upstream anodes, $t_{mean\_down}$ for any of the eight downstream anodes). Calculate herefore the absolute difference between mean drift time and each hit time:
+\item If there are anodes with muliple hits compare the hit time with the accorging mean drift time ($t_{mean\_up}$ for any of the eight upstream anodes, $t_{mean\_down}$ for any of the eight downstream anodes). Calculate the absolute difference between mean drift time and each hit time:
 \begin{equation}
 \Delta t = | \bar{t} - {t^i}_{drift}|; \, \text{i = anodeID (1-16) with} \quad \bar{t} = 
 \begin{cases}
@@ -236,40 +236,29 @@ t_{mean\_up} & \text{for i} \leq 8\\
 t_{mean\_down} & \text{for i} \geq 9 \\
 \end{cases}
 \end{equation}
-\item For each anodes with muliple hits select the hit with lowest drift time differnce to the mean drift time.
+\item For each anodes with muliple hits select the hit with lowest drift time difference to the mean drift time.
 \end{enumerate}
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/charge_cut_with_out_borders.png}
     \caption{
-    Two dimensional gaussian fit with 3.5 $\sigma$ cut  on identified carbon isotopes in TWIN MUSIC. The horizontal and vertical side bars contain events where either the eight upstream anodes or downstream anodes have no hit entry. The cluster at scaled $\Delta E$ loss $\approx$ 4.5 corresponds to boron isotopes (Z=5). The clusters for Z=4 (Be) and Z=3(Li) overlap.
+    Two dimensional gaussian fit with 3.5 $\sigma$ fit range on identified carbon isotopes in TWIN MUSIC. The horizontal and vertical side bars contain events where either the eight upstream anodes or downstream anodes have no hit entry. The cluster at $\overline{Z} \approx$ 4.5 corresponds to boron isotopes (Z=5). The broad cluster observed for $\overline{Z} \leq 3.5$ originates from events in which the $^{12}$C ion undergoes fragmentation into multiple light charged particles. In such cases, the total energy loss of the resulting particle combinations is measured in the TWIN MUSIC, which does not permit their individual separation. 
     }
     \label{fig:twin_2d_gaus_cut}
 \end{figure}
 
-After having selected the appropriate hit for single and multi-hit anodes the mean value for the pre-calibrated $\Delta E$ loss, see figure \ref{fig:cal_twim_one}, for the eight upstream and accordingly for the eight downstream anodes is determined. Finally, to select the number of survived carbon isotopes the mean $\Delta E$ of the eight upstream anodes versus the mean $\Delta E$ of the eight downstream anodes is plotted. To retrieve the number of survived carbon isotopes following two-dimensional gaussian fit is applied on the 2D plot on the charge Z = 6 blob, see figure \ref{fig:twin_2d_gaus_cut}:
+After selecting the appropriate hit for both single- and multi-hit anodes, the mean reconstructed charge is calculated separately for the eight upstream anodes ($\overline{Z_{\text{up}}}$) and the eight downstream anodes ($\overline{Z_{\text{down}}}$). To identify the surviving carbon isotopes, a two-dimensional Gaussian fit is then applied to the $\overline{Z_{\text{up}}}$ versus $\overline{Z_{\text{down}}}$ distribution, centered on the peak at $\overline{Z_{\text{up}}} \approx \overline{Z_{\text{down}}} \approx 6$ (see Fig.~\ref{fig:twin_2d_gaus_cut}):
 \begin{equation}
 f(x) = A e^{-\frac{1}{2}((\frac{x - \bar{x}}{\sigma_{x}})^2 +(\frac{y - \bar{y}}{\sigma_{y}})^2)}
 \label{eq:gauss_fit}
 \end{equation}
 where x is the mean rescaled energy loss of the first upstream andodes and y the according eight downstream anodes. The number of survived carbon isotopes is given by the integral of events within the 2D gaussian fit. Since the anodes were read out by two independent MDPP modules with slightly different thresholds also events along the histogram axes with no hit entry in either the upstream anodes or downstream anodes are analyzed. For those events a one dimensional gaussian cut is applied using the parameters from equation \ref{eq:gauss_fit} (see horizontal and vertical bars in figure \ref{fig:twin_2d_gaus_cut}).\newline
-To get the charge changing cross section values equation \ref{eq:corr_cross} has to be applied where both the number of survived  carbon isotopes for target run and empty run are determined via the 2D gaussian fit as in figure \ref{fig:twin_2d_gaus_cut}. The number of target particles, are defined by the target thickness and its density and are listed in section \ref{section:transmission_method}. 
-%\begin{equation}
-%\begin{split}
-%&N_t = \rho \cdot N_A \cdot n \cdot d\\ 
-%&\rho = \text{density [$g/cm^3$]} = 1.851 g/cm^3,\text{taken from \cite{ponnath2023precise}}\\
-%&N_A = \text{Avogadro constant} =  6.02214076 \cdot 10^{23} mol^{-1}\\
-%&n = \text{amount of substance [mol/g]} = 1./12.011 \; mol/g\\
-%&d = \text{target thickness[cm]}
-%\end{split}
-%\end{equation}
-%Three carbon targets with different thicknesses are given:
-%\begin{enumerate}
-%\itemsep0em
-%\item thin target: d = 0.5451 cm
-%\item medium target: d = 1.0793 cm
-%\item thick target: d = 2.1928 cm 
-%\end{enumerate}
+A preliminary estimate of the cross section, neglecting the influence of the geometrical acceptance of the TWIN MUSIC detector, can be derived from the raw event numbers using Eq.~\ref{eq:corr_cross}:
+\begin{equation}
+    \sigma = -\frac{1}{N_t} \ln\left(\frac{N_1^E}{N_2^E} \cdot \frac{N_2}{N_1}\right),
+\end{equation}
+where the number of surviving carbon isotopes, $N_2/N_2^E$, for the target and corresponding empty-target runs is obtained via the two-dimensional Gaussian fit shown in Fig.~\ref{fig:twin_2d_gaus_cut}. The preliminary results are presented in Fig.~\ref{fig:cccs_with_out_border_3_5}, where the fit range in the 2D distribution was fixed to $3.5\sigma$.
+
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/cccs_with_out_border_3_5_sigma.png}
@@ -278,13 +267,12 @@ To get the charge changing cross section values equation \ref{eq:corr_cross} has
      }
     \label{fig:cccs_with_out_border_3_5}
 \end{figure}
-The resulting charge changing cross sections are summarized in figure \ref{fig:cccs_with_out_border_3_5} once with consideration of the vertical/horizontal bars in figure \ref{fig:twin_2d_gaus_cut} and once without. Hits within the 3.5 $\sigma$ gaussian fit are identified as carbon isotopes.
-To get the optimal $\sigma$ cut on the two dimensional gaussian fit on the energy losses of the upstream anodes versus downstream anodes the charge changing cross section for all targets and all energies was systematically measured for $\sigma$-cuts in the range of 1 to 5 $\sigma$, see figure \ref{fig:cccs_vs_sigma_cut}. In the region $\thicksim$ 3.5$\sigma$ the variation of the cross section is minimal.\newline
+To get the optimal fit range on the two dimensional gaussian fit on the reconstructed charges of the upstream anodes versus downstream anodes the charge changing cross section for all targets and all energies was systematically measured for $\sigma$-fit ranges between one and five $\sigma$, see figure \ref{fig:cccs_vs_sigma_cut}. In the region $\thicksim$ 3.5$\sigma$ the variation of the cross section is minimal.\newline
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/cccs_vs_sigma_cut.png}
     \caption{
-    Measured charge changing cross sections according to the $\sigma$ cut applied on the figure \ref{fig:twin_2d_gaus_cut} (with borders) for the different target thicknesses and beam energies.
+    Measured charge changing cross sections according to the $\sigma$ fit range applied on the figure \ref{fig:twin_2d_gaus_cut} (with borders) for the different target thicknesses and beam energies.
      }
     \label{fig:cccs_vs_sigma_cut}
 \end{figure}
