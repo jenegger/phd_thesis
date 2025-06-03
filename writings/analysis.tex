@@ -97,7 +97,7 @@ Bit Position &TPat Name & Description \\
 \caption{List of TPats set for S444 experiment. As for the selected runs low beam rates ($< 10kHz$) were expected no dead time issues should arise for the in-beam detectors, therefore no downscaling of the \textit{Min. Bias} TPat was deployed.}
 \label{tab:tpats}
 \end{table}
-Since the TPat selection itself does not necessary set any pileup constraints it is important to analyse the signals of the detectors upstream carefully to insure yourself that only events with  one incoming $^{12}$C ion at a time get selected. Herefore events with incoming ions with charge $Z = 6 \pm 1\sigma$ are chosen, as discussed in the previous point. With this restrictive cut pileup events can be efficiently rejected (see also Appendix \ref{app:r3bmusic_pileup}). \newline
+Since the TPat selection itself does not necessary set any pileup constraints it is important to analyse the signals of the detectors upstream carefully to insure yourself that only events with  one incoming $^{12}$C ion at a time get selected. Herefore events with incoming ions with charge $Z = 6 \pm 1\sigma$ are chosen, as discussed in the previous point. With this restrictive cut pileup events can be efficiently rejected (see also Appendix~\ref{app:r3bmusic_pileup}). \newline
 Moreover it is required that both left and right preamplifiers of the start detector have seen a coincident signal within a time-window of 1.391 ns, see Fig.~\ref{fig:start_good_event_sel}.The width of the time window was chosen based on the maximum signal rise time of the detector as well as the maximal propagation delay of the scintillation light to the oppositely positioned preamplifiers. The overall searching window of the start detector was set to 2 $\mu s$, see figure \ref{fig:start_good_event_sel}.\newline
 For the MWPC0 which is mounted right at the beam entrance of Cave C no hit multiplicity cuts were applied considering its operating mode, which is designed for charge sharing between the readout pads. 
 \begin{figure}[ht]
@@ -110,14 +110,14 @@ For the MWPC0 which is mounted right at the beam entrance of Cave C no hit multi
 To assure that the incoming $^{12}$C ion hits the target it is necessary to select only events where the projectile is focussed to the target region. Therefore strict cuts on the MWPC0 x and y positon are applied. This was achieved by fitting the x and y distribution of the MWPC0 (without any restrictions on it) by a gaussian function. The selection of \textit{"focused"} incoming projectiles was then restricted to events with hits in MWPC0 within the $\pm 1\sigma$ region in the x and y position around the beam spot center, see figure \ref{fig:mw0_xy_overview} and \ref{fig:mw0_cuts}.\newline
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/mw0_xy_summary.png}
-\caption{x-y position of incoming ion on MWPC0.}
+\includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/mw0_xy_cut.pdf}
+\caption{Reconstructed \(x\)-\(y\) position of incoming ions on MWPC0 without applying a charge selection on the R3B MUSIC detector. The position reconstruction was performed without enforcing any multiplicity cut on the number of hits in MWPC0. However, a strict selection of \(\pm1\sigma\) around the beam spot center was applied independently in \(x\) and \(y\), as indicated by the red rectangular region. A detailed description of the MWPC0 hit selection procedure is provided in Appendix~\ref{app:mw0_cuts}.}
 \label{fig:mw0_xy_overview}
 \end{figure}
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/mwpc0_cutxy.png}
-\caption{Overview of $\pm 1\sigma$ cuts in x and y in MWPC0 for empty/target runs. TODO: labelling on the right side is wrong! (should be y!)}
+\caption{Overview of $\pm 1\sigma$ cuts in x and y in MWPC0 for empty/target runs.}
 \label{fig:mw0_cuts}
 \end{figure}
 The MWPC0 x-position and the available projectile angle in the x-y plane from the R$^3$B MUSIC is used to propagate the corresponding x-position on the target location to further check that the selected projectiles hit the target parallel to the z-position (= beam direction) and do only have a minimal incident angle, see figure \ref{fig:x_pos_target}. 
@@ -133,19 +133,28 @@ The MWPC0 x-position and the available projectile angle in the x-y plane from th
 \end{enumerate}
 \subsection{Charge Changing Cross Section Measurement}\label{subsec:cc_cs}
 The charge changing cross section refers to a measure of the probability that the incoming projectile will undergo a reaction inside the target that changes its charge. To measure the charge changing cross section it can be referred to formula \ref{eq:corr_cross} where in this case $N_2$ is the number of survived carbon isotopes, i.e. projectiles which did not change their charge state. For this measurement only the data from the double ionisation chamber TWIN MUSIC (see section \ref{sec:ionisation_chambers}) needs to be read out and analyzed.\newline
-While for the event seletion before the target the cut conditions can be arbitrarly strict (it will only have an impact to the statistics and the derivated statistical error), cuts on the downstream detectors need to be avoided if at all possible. Too selective cuts on the identification of $N_2$ can distort the measurement.
+While for the event seletion before the target the cut conditions can be arbitrarly strict (it will only have an impact to the statistics and the derivated statistical error), cuts on the downstream detectors need to be avoided if at all possible. Too selective cuts on the identification of $N_2$ can alter the result of the measurement.
 \subsubsection{TWIN MUSIC Calibration}
 For the analysis of data in TWIN MUSIC -- different to the upstream detectors, where calibrated data with default calibration parameters is used -- the so called \textit{mapped} raw level data is processed. In the mapped level TWIN MUSIC provides following information:
 \begin{itemize}
 \itemsep0em 
-\item \textbf{SectionID:} The detector is a double ionisation chamber and as such divided into four parts (in beam perspective): section 1 - right down; section 2 - right up; section 3 - left down; section 4 - left up. For the S444 experiment only section 1 was operated and accordingly centered on the beam spot.
-\item \textbf{AnodeID:} TWIN MUSIC has 16 anodes for energy-loss readout and one refence anode (anodeID = 17).
-\item \textbf{Time:} Each hit in each anode gets assigned to a time. Each time has individually no meaning. The drift time (in ns) of the electrons from the ionisation process of the gas by the inflying projectile (or the fragments of it) to the anode is calculated by substracting the individual anode time by the time of the reference anode. The reference anode receives its clean signal from a constant fraction discriminator of the start detector.
-\item \textbf{Energy:} Each hit in each anode gets assigned to an energy - except the hit in the reference anode. To reconstruct the charge of the crossing through charged particle anodewise or detectorwise the parmetrization formula Z = [0] + [1]*$\sqrt(E)$ + [2]*E is used. 
+\item \textbf{SectionID:} The detector is a double ionisation chamber and as such divided into four parts (in beam perspective): section 1 - right down; section 2 - right up; section 3 - left down; section 4 - left up. For the S444 experiment only section 1 was operated and accordingly geometrically centered on the beam spot.
+\item \textbf{AnodeID:} Each section has 16 anodes for energy-loss readout and one refence anode (anodeID = 17).
+\item \textbf{Time:} Each hit in each anode gets assigned to a time. The drift time (in ns) of the electrons from the ionisation process of the gas by the inflying projectile (or the fragments of it) to the anode is calculated by substracting the individual anode time by the time of the reference channel. The reference anode receives its clean signal from a constant fraction discriminator of the start detector.
+\item \textbf{Energy:} Each hit in each anode gets assigned to an energy. To reconstruct the charge of the passing charged particle anodewise or detectorwise the parametrization formula: 
+\begin{equation}\label{eq:param_z}
+Z = a + b \cdot \sqrt(E) + c \cdot E
+\end{equation}
+is used with individual settings of the calibration parameters a, b and c. For this analyis $a$ and $b$ are set to zero, so that the parametrization formula is reduced to $ Z = c \cdot E $\footnote{In this analysis, no \(\beta\)-correction is applied to the energy loss \(\Delta E\) measured in the TWIN MUSIC detector. Such a correction is only required in analyses involving heavy fragments, where the relative difference in charge between neighboring isotopes (e.g., \(Z\) and \(Z \pm 1\)) becomes small, and the velocity dependence of energy loss significantly affects charge resolution, e.g. fission experiments with heavy fragments and broad \(\beta\)-range.}. 
 \end{itemize}
-The calibration of the TWIN energy for each anode is done run-wise. 
-%The event selection on the incoming ion is limited to the  \textit{"Min. Bias"}-TPat condition (coincident signal in start detector preamplifiers within 1.391 ns, on-spill).
-For the TWIN MUSIC only events where all anodes having exactly one hit (including the reference anode) are chosen. The most prominent peak (Z = 6) was fitted with gaussian function. The calibration was then done by determining the scaling factor for each anode  that shifts the mean of the gaussian fits to the same position, see figure \ref{fig:calibration}. For this analysis the peaks were shifted to $\Delta E = 6$. Since $\Delta E \propto Z^2$ holds, the scaled $\Delta E$ value, even though peaking at 6, is not equate the charge Z = 6.
+
+The calibration of the TWIN MUSIC energy response was performed individually for each anode on a run-by-run basis. For the calibration step, only events in which all anodes -- including the reference anode -- registered exactly one hit were selected to ensure consistent signal conditions. The most prominent peak in the charge spectrum, corresponding to carbon fragments with charge \(Z = 6\), was fitted using a Gaussian function. The calibration for each anode was then achieved by determining a scaling factor that aligns the mean of its Gaussian fit with the reference position at \(Z = 6\); see Fig.~\ref{fig:calibration}.
+
+For the analysis of reaction fragments, the reconstructed charge \(\overline{Z}\) is finally determined from the calibrated energy signals according to:
+\begin{equation}
+\overline{Z} = \frac{1}{n} \sum_{i=1}^{n} c_i \cdot E_i,
+\end{equation}
+where \(E_i\) is the energy signal recorded by the \(i\)-th anode, \(c_i\) is its corresponding calibration factor, and \(n\) is the number of anodes with valid signals contributing to the event.
 
 \begin{figure}
      \centering
@@ -167,7 +176,7 @@ For the TWIN MUSIC only events where all anodes having exactly one hit (includin
         \label{fig:calibration}
 \end{figure}
 \subsubsection{TWIN MUSIC Event Selection}
-As previously stated cuts on the downstream detectors are avoided. However, events which have hits in one or several anodes in TWIN MUSIC but no signal in the reference anode are discarted as a whole neither contributing to $N_1$ (incoming selected ions) nor to $N_2$ (unreacted ions). If no reference time from start CFD signal is available it is not possible to measure the drift time in the individual anodes which makes it not possible to distinguish between signal and noise hits for multi-hit anode events in TWIN MUSIC. The number of events affected by this cut is in the region of few tens. This is negligible to the number of incoming ions $N_1$ and should not have any dependence whether the projectile reacted or not.
+As previously stated cuts on the downstream detectors are avoided. However, events which have hits in one or several anodes in TWIN MUSIC but no signal in the reference anode are discarted as a whole neither contributing to $N_1$ (incoming selected ions) nor to $N_2$ (unreacted ions). If no reference time from start CFD signal is available it is not possible to measure the drift time in the individual anodes which makes it not possible to distinguish between signal and noise hits for multi-hit anode events in TWIN MUSIC. The number of events affected by this cut is in the region of $10/10^5$. This is negligible to the number of incoming ions $N_1$ and should not have any dependence whether the projectile reacted or not.
 \begin{table}[h!]
 \centering
 \begin{subtable}[c]{1.\textwidth}
