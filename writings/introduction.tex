@@ -6,15 +6,34 @@ While the shell model has proven highly successful in describing nuclei close to
 This chapter introduces the scientific objectives and research program of the R$^3$B experiment. In particular, we highlight the role of nuclear structure studies in constraining the nuclear equation of state (EOS), especially for highly asymmetric nuclear matter. Nuclear scattering reactions at R$^3$B offer an effective probe of these systems, and their theoretical treatment -- along with a general overview of reaction mechanisms -- will be presented in chapter \ref{sec:reac_model}.
 
 \subsection{R$^3$B Experiment - "The Universe in the Lab"}
-\section{Scientific Objectives and Research Program of the R3B Experiment at FAIR}
+\subsubsection{Scientific Objectives and Research Program of the R3B Experiment at FAIR}
 The R3B experiment (Reactions with Relativistic Radioactive Beams) is a key component of the nuclear astrophysics program at the Facility for Antiproton and Ion Research (FAIR) in Darmstadt and major experiment of the NUSTAR (\textbf{N}uclear \textbf{ST}ructure, \textbf{A}strophysics and \textbf{R}eactions) collaboration~\cite{krucken2005nustar}.\newline
 As part of the broader research initiative \textit{"The Universe in the Lab"}, R3B aims to provide a comprehensive understanding of the fundamental nuclear processes that govern the formation of elements in the universe. It seeks to replicate, under controlled laboratory conditions, the extreme environments found in stellar explosions and neutron-star mergers -- astrophysical sites in which rapid nuclear reactions are responsible for the synthesis of the heavy elements~\cite{thielemann2017neutron}.\newline
 The central scientific objective of R3B is the investigation of the structure and reaction dynamics of exotic, short-lived nuclei far from the valley of stability, particularly those involved in the rapid neutron-capture process (r-process) and other astrophysical nucleosynthesis pathways~\cite{horowitz2019r}. This includes the determination of key nuclear properties such as masses, lifetimes, decay modes, and reaction cross sections, as well as branching ratios and transition probabilities under conditions similar to those of astrophysical environments.\newline
 To address these goals, R3B employs high-intensity, relativistic radioactive ion beams in conjunction with a versatile and high-resolution detectors capable of performing kinematically complete measurements of both incoming and outgoing reaction products. The experimental program covers a wide variety of reaction mechanisms, including fragmentation, Coulomb excitation, knockout, and charge-exchange reactions, as well as inverse kinematics reactions such as (p,n) and (n,p) on liquid hydrogen targets besides on carbon, plastic and lead targets - depending on the experimental focus.\newline
 The R3B setup is specifically optimized for operation at beam energies of several hundred~MeV per nucleon. It provides precise tracking and unambiguous particle identification, with excellent resolution in time, energy, and position~\cite{heil2022new}. These capabilities are essential for disentangling complex reaction channels and for extracting high-precision nuclear data that serve as critical input to astrophysical models of nucleosynthesis.\newline
-%% EOS study in R3B
-Directly related to the scientific objectives at R3B is the exploration of the equation of state (EoS) of asymmetric nuclear matter under extreme conditions. The EoS describes how nuclear matter behaves as a function of parameters such as density, temperature, and isospin asymmetry, and it plays a pivotal role in understanding a wide range of astrophysical phenomena, including the structure and evolution of neutron stars, core-collapse supernovae, and neutron star mergers.
+Directly related to the scientific objectives at R3B is the exploration of the equation of state (EoS) of asymmetric nuclear matter under extreme conditions. The EoS describes how nuclear matter behaves as a function of parameters such as density, temperature, and isospin asymmetry, and it plays a pivotal role in understanding a wide range of astrophysical phenomena, including the structure and evolution of neutron stars, core-collapse supernovae, and neutron star mergers.\newline
 
+\subsubsection{Study of the EoS at R3B}
+
+While various models agree at saturation density $n_0 \approx 0.16 fm^{-3}$  (natural packing density of nucleons inside a nucleus) at high baryon number density, as it is the case in neutron stars there are significant differences between the models. Fig X shows the EoS description for different models and their divergences by plotting the binding energy and the symmetry energy -- which will be introduced in the next paragraph -- versus the baryon number density. 
+Huge efforts are made to constrain the EoS for highly asymmetric or pure neutron matter. \newline
+In modeling the nuclear equation of state, it is common to perform a Taylor expansion of the energy per nucleon with respect to the isospin asymmetry parameter $\delta = \frac{n_n -n_p}{n_n + n_p}$ where $n_n$ and $n_p$ denote the neutron and proton number densities, respectively, at a fixed baryon density $n_B = n_n +n_p$. In this approach, the energy per nucleon is written as:
+\begin{equation}\label{eq:eos}
+E(n_B,\delta)=E(n_B,0)+S(n_B)\delta^2+\mathcal{O}(\delta^4)
+\end{equation}
+The second term on the left side of equation~\ref{eq:eos}  is called the asymmetry term. With:
+\begin{equation}
+S(n) = \frac{1}{2} \left. \frac{\partial^2 E(n, \delta)}{\partial \delta^2} \right|_{\delta = 0}
+\end{equation}
+
+This approach allows one to isolate the contribution of the symmetry energy $S(n_B)$  which governs the leading-order dependence on isospin asymmetry.\newline
+To further understand how the symmetry energy evolves with density -- particularly in environments such as neutron stars -- $S(n_B) $is itself often expanded around the nuclear saturation density $n_0$ in a separate Taylor series involving the slope $L$ and curvature $K_{sym}$ parameters:
+\begin{equation}
+S(n_B) = S_0 + L \left( \frac{n_B - n_0}{3n_0} \right) + \frac{1}{2} K_{\text{sym}} \left( \frac{n_B - n_0}{3n_0} \right)^2 + \cdots
+\end{equation}
+$S_0$ is constrained around 30-40 MeV which is compatible to the theoretical predictions. Both $L$ and $K$ are poorly constrained and according experimental data is limited. While the term with the curvature parameter $K$ enters quadratically, it’s contribution is small near to saturation density.\newline
+Whereas the slope parameter L is the dominating factor. Constraining L, which quantifies the "stiffness" of the symmetry energy -- how much the energy cost of isospin asymmetry increases as nuclear matter becomes denser -- is of high interest and would lead to a better understanding of nuclear matter and its interaction, especially when considering extereme astophysical object such as NS. 
 
 %from ML: In particular, the density dependence of the symmetry energy, a key component of the nuclear EoS, remains poorly constrained at supra-saturation densities. The symmetry energy governs how the energy of nuclear matter changes as the neutron-to-proton ratio varies and has direct consequences for the composition and stability of neutron stars.
 
