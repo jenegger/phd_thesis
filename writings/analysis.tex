@@ -158,21 +158,23 @@ where \(E_i\) is the energy signal recorded by the \(i\)-th anode, \(c_i\) is it
 
 \begin{figure}
      \centering
-     \begin{subfigure}[t]{0.5\textwidth}
+     \begin{subfigure}[t]{0.49\textwidth}
          \centering
-         \includegraphics[width=\textwidth]{Figures/twim_mapped_550.png}
-         \caption{Uncalibrated raw $\Delta E$ distributions for all 16 anodes for the thick target run, 550 AMeV beam energy.The last six anodes have a slightly different electronics amplification chain.}
+         \includegraphics[width=\textwidth]{Figures/twim_raw_550_target.png}
+         \caption{
+	 Uncalibrated raw energy-loss ($\Delta E$) distributions for all 16 TWIN anodes recorded during the thick-target run at a beam energy of 550~AMeV. The eight upstream anodes are shown in color, while the eight downstream anodes are displayed in shades of grey. No charge selection based on the R3B MUSIC detector or position cut using MWPC0 was applied, which accounts for the extended high-energy tail caused by pileup events. The sharp cut-off at 8192~a.u.\ corresponds to the upper limit of the digitizer's dynamic range, while the steep drop around 1500~a.u.\ results from the applied electronic thresholds. The last six anodes exhibit a slightly different amplification factor.
+	 }
          \label{fig:raw_twim}
      \end{subfigure}
      \hfill
-     \begin{subfigure}[t]{0.5\textwidth}
+     \begin{subfigure}[t]{0.49\textwidth}
          \centering
-         \includegraphics[width=\textwidth]{Figures/twim_mapped_550_no_calib.png}
-         \caption{Gaussian fit applied to prominent peak and shifted to same position.}
+         \includegraphics[width=\textwidth]{Figures/twim_cal_550_target.png}
+         \caption{Calibrated energy-loss ($\Delta E$) distributions for all 16 TWIN anodes after applying strict event selection criteria on R3B MUSIC and MWPC0 position distribution. A Gaussian fit was performed on the raw $\Delta E$ spectra for each anode, and the resulting peaks were aligned by applying individual shifts, ensuring a consistent energy scale across all channels.}
          \label{fig:cal_twim_one}
      \end{subfigure}
      \hfill
-        \caption{Fitting procedure in TWIN.TODO: nicer labeling!}
+        \caption{Fitting procedure in TWIN MUSIC.}
         \label{fig:calibration}
 \end{figure}
 \subsubsection{TWIN MUSIC Event Selection}

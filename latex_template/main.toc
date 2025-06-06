@@ -13,7 +13,7 @@
 \contentsline {subsubsection}{\numberline {2.5.1}Kinematics of QFS Reactions}{8}{subsubsection.2.5.1}%
 \contentsline {subsubsection}{\numberline {2.5.2}Cross Sections for QFS Reactions - Qualitative Considerations}{13}{subsubsection.2.5.2}%
 \contentsline {subsubsection}{\numberline {2.5.3}Application Fields of QFS Reactions}{13}{subsubsection.2.5.3}%
-\contentsline {subsubsection}{\numberline {2.5.4}Probing Fission Dynamics: Quasi-Free Scattering Versus Coulomb Excitation}{17}{subsubsection.2.5.4}%
+\contentsline {subsubsection}{\numberline {2.5.4}QFS and Coulex: A Complementary Approach to Fission}{17}{subsubsection.2.5.4}%
 \contentsline {section}{\numberline {3}Experiment}{21}{section.3}%
 \contentsline {subsection}{\numberline {3.1}GSI facility}{22}{subsection.3.1}%
 \contentsline {subsubsection}{\numberline {3.1.1}FAIR Project}{23}{subsubsection.3.1.1}%
