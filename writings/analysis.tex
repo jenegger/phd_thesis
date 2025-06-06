@@ -242,7 +242,8 @@ t_{mean\_down} & \text{for i} \geq 9 \\
 \end{enumerate}
 \begin{figure}[htpb]
     \centering
-    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/charge_cut_with_out_borders.png}
+    %\includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/charge_cut_with_out_borders.png}
+    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/twim_up_down_calibrated.pdf}
     \caption{
     Two dimensional gaussian fit with 3.5 $\sigma$ fit range on identified carbon isotopes in TWIN MUSIC. The horizontal and vertical side bars contain events where either the eight upstream anodes or downstream anodes have no hit entry. The cluster at $\overline{Z} \approx$ 4.5 corresponds to boron isotopes (Z=5). The broad cluster observed for $\overline{Z} \leq 3.5$ originates from events in which the $^{12}$C ion undergoes fragmentation into multiple light charged particles. In such cases, the total energy loss of the resulting particle combinations is measured in the TWIN MUSIC, which does not permit their individual separation. 
     }
@@ -371,18 +372,18 @@ For the sake of completeness, Appendix~\ref{app:twin_alternative} presents alter
 
 
 \subsection{Geometric Corrections}\label{sec:geo_corr}
-For the S444 experiment only section 1 (right down) of the TWIN MUSIC, which was centered on the beam spot, was operated. As consequence full geometric efficiency could not be assumed. To visualize the restricted geometic efficiency of the TWIN MUSIC the position in x and y (perpendicular plane to the beam direction) on the MWPC1 in front of the ionisation chamber was plotted, once without any conditions on the TWIN MUSIC and once with the condition of having identified a carbon isotope (with the 2D gauss-fit method as described in chapter \ref{subsec:carbon_id}), see figure \ref{fig:mw1_xy}. The large active surface area of 200 x 200 mm$^{2}$ of the MWPC1 affirms that all the carbon fragments are detected\footnote{This statement does not hold for light fragments as protons or deuterons. Their deflection angle exceeds the geometric acceptance of the MWPC1.} whereas the TWIN MUSIC behind it, with an active survace of 55 x 110 mm$^{2}$ (section 1), is not sensitive to the scattered fragments with large deflection angle.\newline
+During the S444 experiment only an active area of 11 x 11 cm was used, see section~\ref{sec:ionisation_chambers}. Particles which undergo elastic or inelastic scattering or simply exit the target at larger angles due to the multiple scattering process, may therefore not be fully confined in the active volume of the TWIN MUSIC. To visualize the restricted geometic acceptance of the TWIN MUSIC the position in x and y (perpendicular plane to the beam direction) on the MWPC1 in front of the ionisation chamber was plotted, for comparison without any conditions on the TWIN MUSIC and with the condition of having identified a carbon isotope (with the 2D gauss-fit method as described in chapter \ref{subsec:carbon_id}), see figure \ref{fig:mw1_xy}. The large active surface area of 200 x 200 mm$^{2}$ of the MWPC1 affirms a larger acceptance\footnote{This statement does not hold for light fragments as protons or deuterons. Their deflection angle exceeds the geometric acceptance of the MWPC1.} whereas the TWIN MUSIC behind it, with an active survace of 110 x 110 mm$^{2}$ (section 1), is -- as mentioned -- not sensitive to the scattered fragments with large deflection angle.\newline
 \begin{figure}[htpb]
     \centering
-    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/geo_corr_examples.png}
+    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/geo_acceptance.pdf}
     \caption{
-    Distribution in x and y on MWPC1 for different energies with and without target. TODO: subplot b) wrong naming,it's the empty run 400 AMeV. 
+    Distribution in x and y on MWPC1 for different energies with and without target. 
      }
     \label{fig:mw1_xy}
 \end{figure}
 
-The efficiency loss depends on the target thickness - for thicker targets the geometric distribution of the fragments is broader and therefore the efficiency loss larger - and the beam energies - for larger beam energies the scattering angles decrease due to the boost effects, the efficiency loss gets smaller. This means, that the efficiency loss needs to be compensated runwise. These efficiency effects can be observed in figure \ref{fig:mw1_xy}.\newline
-To compensate correctly for the geometric efficiency it has to be considered that for the charge changing cross section measurement only the carbon isotopes after the target are counted in the TWIN MUSIC. Therefore the correction should only be applied to the carbon isotopes (Z = 6) on the x-y distribution on the MWPC1, see figure \ref{fig:mw1_xy}. The geometric efficiency correction is done graphically on the x-y distribution of the MWPC1 for carbon isotopes by following procedure:
+The relative acceptance of the detection system is influenced by both the target thickness and the beam energy. Thicker targets lead to a broader angular distribution of the fragments due to increased multiple scattering and energy loss, thereby reducing the geometric acceptance. In contrast, higher beam energies result in smaller scattering angles owing to relativistic boost effects, which in turn increase the acceptance. Consequently, the acceptance correction must be evaluated and applied individually for each specific beam–target configuration. It is important to note that acceptance effects cannot be corrected by referencing to empty target runs. All these acceptance effects can be observed in figure \ref{fig:mw1_xy}.\newline
+To compensate correctly for the geometric acceptance it has to be considered that for the charge changing cross section measurement only the carbon isotopes after the target are counted in the TWIN MUSIC. Therefore the correction should only be applied to the carbon isotopes (Z = 6) on the x-y distribution on the MWPC1, see figure \ref{fig:mw1_xy}. The geometric efficiency correction is done graphically on the x-y distribution of the MWPC1 for carbon isotopes by following procedure:
 \begin{enumerate}
 \itemsep0em
 \item \textbf{Correction for the x-position distribution:}
@@ -431,9 +432,9 @@ Figure \ref{fig:geo_corr_twim} summarizes the geometric correction factors $\eps
 \end{equation}
 \begin{figure}[htpb]
     \centering
-    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/charge_changing_geo_corrected_cross_section.png}
+    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/charge_changing_cross_sec_twim_eff_corr.png}
     \caption{
-    Charge changing cross section with applied geometry corrections. In gray: charge changing cross section measurements before applying corrections, as in figure \ref{fig:cccs_gaus_diff_sections}. 
+    Charge changing cross section with applied geometry corrections. In gray: charge changing cross section measurements before applying corrections, as in figure \ref{fig:cccs_gaus_with_errors}. 
      }
     \label{fig:geo_corr_cross_sec}
 \end{figure}
