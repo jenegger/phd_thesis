@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2023.5.31)  9 JUN 2025 15:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2023.5.31)  9 JUN 2025 16:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1097,7 +1097,7 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.4 \item s
-           hort intro why we use scrattering reactions: to study structure o...
+           hort intro why we use scattering reactions: to study structure of...
 [4]pdfTeX warning (ext4): destination with the same identifier (name{page.5}) h
 as been already used, duplicate ignored
 <to be read again> 
@@ -1387,6 +1387,11 @@ Package pdftex.def Info: Figures/x_proj_beam_mw0_target.png  used on input line
 (pdftex.def)             Requested size: 331.86363pt x 227.62074pt.
 [47] [48 <./Figures/t_diff_start.pdf>] [49 <./Figures/mw0_xy_cut.pdf> <./Figure
 s/mwpc0_cutxy.png>] [50 <./Figures/x_proj_beam_mw0_target.png>]
+Overfull \hbox (1.12265pt too wide) in paragraph at lines 144--145
+\T1/cmr/m/n/12 charge of the pass-ing charged par-ti-cle anode-wise or detector
+-wise the parametriza-
+ []
+
 <Figures/twim_raw_550_target.png, id=1064, 2121.9275pt x 1357.07pt>
 File: Figures/twim_raw_550_target.png Graphic file (type png)
 <use Figures/twim_raw_550_target.png>
@@ -1679,12 +1684,12 @@ Underfull \hbox (badness 2103) in paragraph at lines 29--29
  []
 
 [76 <./Figures/kick_point_algorithm.png> <./Figures/intersection_algorithm.png>
-] [77] [78]
+] [77]
 Overfull \hbox (25.98763pt too wide) detected at line 79
 []
  []
 
-[79]
+[78] [79]
 <Figures/a_over_q_vs_q_plot.png, id=1433, 1316.92pt x 843.15pt>
 File: Figures/a_over_q_vs_q_plot.png Graphic file (type png)
 <use Figures/a_over_q_vs_q_plot.png>
@@ -2229,7 +2234,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 285.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 285.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 285.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C029868F0ED5377FFD1EB9A474EA3E4A;5955.
+(rerunfilecheck)             Checksum: D16FC38911768EA81C1001EE237E731C;5954.
 
 
 LaTeX Warning: There were undefined references.
@@ -2242,7 +2247,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 285.
 Here is how much of TeX's memory you used:
  23673 strings out of 492982
  428041 string characters out of 6134896
- 538112 words of memory out of 5000000
+ 538113 words of memory out of 5000000
  26354 multiletter control sequences out of 15000+600000
  559684 words of font info for 98 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2285,7 +2290,7 @@ ype1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super
 /sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/
 share/texmf/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on main.pdf (140 pages, 26607795 bytes).
+Output written on main.pdf (140 pages, 26607832 bytes).
 PDF statistics:
  2287 PDF objects out of 2487 (max. 8388607)
  1827 compressed objects within 19 object streams

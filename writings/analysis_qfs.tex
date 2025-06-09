@@ -1,6 +1,6 @@
 \section{Qualitative Analysis - Quasi-Free Scattering $^{12}$C(p,2p)$^{11}$B}
 Until the S444 experiment in 2020 CALIFA consisted out of a prototype frame filled with up to 64 CsI(Tl) crystals. The geometric coverage was therefore limited. For the S444 experiment CALIFA got its final frame and was fully filled in the forward barrel and 35\%filled in the iPhos region, CEPA was not installed yet. With these improvements it was possible to commission QFS-experiments with CALIFA at R$^3$B. In the follow up experiment S467, also in 2020, the first experimental run to study single-particle structures of neutron-rich Ca isotopes via QFS reactions was carried out.\newline
-Even though great improvements in the detector development  were achieved the correction factors to correct for geometric acceptance would be much too high ( $\approx$ 10) for precise cross section measurements for QFS-reactions since the correction factors would in turn rely on a a simplified reaction model. A precise analysis of the acceptance correction factor and the development of a more sophisticated and data driven reaction model is out of the scope of this work. Therefore this analysis focusses on the methods of QFS-reaction identification and the extraction of the key informations dicussed in section \ref{sec:qfs_theo}. TODO: add more stuff here...\newline
+Even though great improvements in the detector development  were achieved the correction factors to correct for geometric acceptance would be much too high ( $\approx$ 10) for precise cross section measurements for QFS-reactions since the correction factors would in turn rely on a a simplified reaction model. A precise analysis of the acceptance correction factor and the development of a more sophisticated and data driven reaction model is out of the scope of this work. Therefore this analysis focuses on the methods of QFS-reaction identification and the extraction of the key information discussed in section \ref{sec:qfs_theo}. TODO: add more stuff here...\newline
 \subsection{Setup-Calibration}
 For setup description refer to section \ref{sec:analysis_cross_sec}. For all detectors except the SOFIA (Study On FIssion with Aladin) Time of Flight Wall the calibration parameters investigated by the respective detector-expert group were adopted. Herefore we will subsequently only describe the Time of Flight Wall calibration in this subsection.
 \subsubsection{Flight-Path Reconstruction}\label{subsec:flightpath_reco}
@@ -38,7 +38,7 @@ Now that the scattering angle after the target $\theta_{in}$ and the angle after
 \begin{equation}\label{eq:rho_glad}
 r = \frac{L_{eff}}{2\,\cdot sin\left(\frac{\theta_{in}+\theta_{out}}{2}\right)\,\cdot cos\delta}
 \end{equation}
-where $L_{eff}$ is the effective active with of the magnetic field of GLAD, which correspons $L_{eff} \approx 2.06\,m$. This value could also be verified by extracting $L_{eff}$ from the formula for the magnetic rigidity $ B\cdot r = \gamma\beta \, m /q$ for empty target runs with known values of the B-field\footnote{For detector calibration, primarly for the ToFWall, we had several "empty sweep runs", with empty target and different B-field strenght settings. Those runs were optimal to validate $L_{eff}$.}.\newline
+where $L_{eff}$ is the effective active with of the magnetic field of GLAD, which corresponds $L_{eff} \approx 2.06\,m$. This value could also be verified by extracting $L_{eff}$ from the formula for the magnetic rigidity $ B\cdot r = \gamma\beta \, m /q$ for empty target runs with known values of the B-field\footnote{For detector calibration, primarily for the ToFWall, we had several "empty sweep runs", with empty target and different B-field strength settings. Those runs were optimal to validate $L_{eff}$.}.\newline
 The angle $\delta$ in equation \ref{eq:rho_glad} is given by the trajectory line going through $(z_1,x_1)$/$(z_2,x_2)$ and the line parallel to the GLAD magnet width $L_{eff}$.\newline
 A detailed derivation of equation \ref{eq:rho_glad} can be found in appendix \ref{app:flightpath}.
 The arc trajectory $l_{GLAD}$ of the fragment within GLAD can be reconstructed using the bending radius $r$ and the entry and exit points $(z_1,x_1)$/$(z_2,x_2)$:
@@ -49,7 +49,7 @@ where $\omega$ is the central angle and  $t_{1/2}$ is the cord length between $(
 At this stage the full pathlength $L$ form the Start detector to the ToFW is fixed:
 \begin{description}
 \item \textbf{From Start to the target $l_{ST}$:} For this path section a straight flightpath parallel to the z-coordinate is assumed. The pathlength is taken from the position measurements of the Start detector and the target accordingly ($=118.3\,cm$). 
-\item \textbf{Target to GLAD entrance point $(z_1,x_1)$, $l_{in}$:}For the  exact position assignment of $(z_1,x_1)$ both MWPC1 and MWPC2 position measurements have been calibrated with empty target runs by including an offset valuein order to center the x-position in both detectors around zero. From the position measurement of the central position of GLAD, its tilting angle $\alpha$ and $L_{eff}$ the intersection point of the fragment trajectory before GLAD and the "effective GLAD magnetic field rectangle", $(z_1,x_1)$, can be determined and with it the according flightpath section $l_{in}$.
+\item \textbf{Target to GLAD entrance point $(z_1,x_1)$, $l_{in}$:}For the  exact position assignment of $(z_1,x_1)$ both MWPC1 and MWPC2 position measurements have been calibrated with empty target runs by including an offset value in order to center the x-position in both detectors around zero. From the position measurement of the central position of GLAD, its tilting angle $\alpha$ and $L_{eff}$ the intersection point of the fragment trajectory before GLAD and the "effective GLAD magnetic field rectangle", $(z_1,x_1)$, can be determined and with it the according flightpath section $l_{in}$.
 \item \textbf{Arc trajectory within GLAD, ${l_{GLAD}}$:}This flightpath passage is determined by reconstructing $(z_1,x_1)$ and $(z_2,x_2)$, as it has been described in detail in the previous section. Hence the magnetic bending radius can be determined, see equation \ref{eq:rho_glad}, and finally the arc trajectory ${l_{GLAD}}$ as in equation \ref{eq:arc}.
 \item \textbf{GLAD exit point $(z_2,x_2)$ to ToFW, $l_{out}$:}The hit position $(z_{MWPC3},x_{MWPC3})$ in MWPC3 is given by the reconstructed hit position in this detector and the position measurement of the detector itself. The exit point $(z_2,x_2)$ was reconstructed in the previous steps. Hence the trajectory line from $(z_2,x_2)$ to $(z_{MWPC3},x_{MWPC3})$ is fixed and is expanded to the intersection with the ToFW plane for the concluding $l_{out}$ measurement.  
 \end{description}
@@ -65,7 +65,7 @@ For the time of flight measurement in the S444 setup the time is recorded and di
 \begin{align*}
 raw\_t &= coarse\_time\_clocks  \cdot 5ns + offset[fine\_time]
 \end{align*}
-Finally, the raw time of flight is reconstructed by combinding all four time measurements:
+Finally, the raw time of flight is reconstructed by combining all four time measurements:
 \begin{gather}
 RawTof = 0.5*(raw\_t_{i,down}+raw\_t_{i,up}) - 0.5*(raw\_t_{start,right}+raw\_t_{start,left})
 \end{gather}
@@ -73,7 +73,7 @@ where \textit{i} $(\in 0...27)$ refers to the scintillator number of the ToF Wal
 \begin{align*}
 \Delta_{ToF}[i] &= \overline{L[i]}/v_{beam} - \overline{RawTof[i]}
 \end{align*} 
-where $\overline{L[i]}$ is the mean reconstructed path length for all events in empty target runs which hit scintillator bar \textit{i} of the ToF Wall. The beam velocity $v_{beam}$ is directly taken from the given beam settings, e.g. 400 AMeV beam, emtpy target corresponds to $v_{beam} = 214,2mm/ns$. The mean raw ToF $\overline{RawTof[i]}$ again results from all events which hit scintillator bar \textit{i} and is extracted from the mean value of a gaussian fit to the raw ToF. The resulting calibrated ToF can then be expressed as:
+where $\overline{L[i]}$ is the mean reconstructed path length for all events in empty target runs which hit scintillator bar \textit{i} of the ToF Wall. The beam velocity $v_{beam}$ is directly taken from the given beam settings, e.g. 400 AMeV beam, empty target corresponds to $v_{beam} = 214,2mm/ns$. The mean raw ToF $\overline{RawTof[i]}$ again results from all events which hit scintillator bar \textit{i} and is extracted from the mean value of a Gaussian fit to the raw ToF. The resulting calibrated ToF can then be expressed as:
 \begin{align*}
 ToF[i] = 0.5*(raw\_t_{i,down}+raw\_t_{i,up}) - 0.5*(raw\_t_{start,right}+raw\_t_{start,left}) + \Delta_{ToF}[i]
 \end{align*}  
@@ -82,7 +82,7 @@ To estimate the time of flight resolution for events with hit in ToF Wall bar \t
 %ToF &= \frac{$\overline{L[i]}$}{\frac{L[i]}{ToF[i]}}
 \widetilde{ToF} &= \frac{\overline{L[i]}}{\frac{L[i]}{ToF[i]}}
 \end{align*}
-$\overline{L[i]}$ is the mean pathlength, whereas $L[i]$ and $ToF[i]$ are eventwise selected.
+$\overline{L[i]}$ is the mean pathlength, whereas $L[i]$ and $ToF[i]$ are event-wise selected.
 By reconstructing the fligh-path as described in subsection \ref{subsec:flightpath_reco} and employment of the mentioned time calibration steps the average time resolution $\sigma_t$ results $\approx 90\, ps$\footnote{To remove events with large angular straggling, a cut of $\pm 20mm$ on the beam spot for the y-position on the MWPC3 was applied.}.
 
 \subsection{Event Selection}
@@ -101,7 +101,7 @@ However, for the identification of fragments downstream of the target, various d
 The first step for the identification of the QFS-reaction channel $^{12}C(p,2p)^{11}B$ is the identification of the fragment $^{11}B$ via the formula for the magnetic rigidity: $ B\cdot r = \gamma\beta \, m /q$ where the $\gamma$ factor accounts for the increase in momentum for relativistic particles. From the flightpath reconstruction and the ToF measurement as described in previous sections $r$,$\beta$ and $\gamma$ are obtained whereas the charge of the fragment $q$ is measured by the energy loss ($\Delta E \sim Z^2$) in the TWIN MUSIC detector.\newline
 The measured values for $\frac{A}{q}$ and $q$ are shown in figure \ref{fig:a_q_vs_q} where the fragment of interest $^{11}B$ is expected to be at $\frac{A}{q} = 11/5 \approx 2.2$ and $q = 5$. The correlation plot exhibits a broad distribution in $\frac{A}{q}$, which may result from misidentification of hit positions in one of the MWPC tracking detectors when multiple signal hits occur. Even minor deviations in MWPC1 and MWPC2 can significantly affect the radius reconstruction, thereby impacting the accuracy of the $\frac{A}{q}$ determination.\newline
 An intriguing feature is the distinct cluster observed at $Z \approx 8.5$ and $\frac{A}{q} \approx 2$, which corresponds to pileup events. These occur when two ion signals arrive within a short time window in the TWIN MUSIC detector, preventing them from being resolved as separate events and instead being reconstructed as a single signal\footnote{For instance, if two carbon ions ($Z=6$) interact simultaneously, the total energy loss within TWIN MUSIC is approximately twice that of a single ion. Since the energy loss follows the relation $\Delta E \sim Z^2$, the reconstructed charge is given by $\sqrt(2)\,Z_{carbon} \approx 8.5 $.}.
-Moreover attention should be paid that it seems to be there a cut from analyis side at $Z \approx 4$. This is actually not the case. The TWIM MUSIC was optimized for the subsequent experimental run S467 with $Ca$ isotopes and herefore the charge measurement was optimized for $Z\approx 20$. Everything below $Z \approx 4$ was below the signal threshold of TWIM MUSIC.
+Moreover attention should be paid that it seems to be there a cut from analyis side at $Z \approx 4$. This is actually not the case. The TWIN MUSIC was optimized for the subsequent experimental run S467 with $Ca$ isotopes and herefore the charge measurement was optimized for $Z\approx 20$. Everything below $Z \approx 4$ was below the signal threshold of TWIN MUSIC.
 
 Furthermore, it is important to note the apparent cut at $Z \approx 4$ in the data. However, this is not an artifact of the analysis but rather a consequence of the experimental setup. The TWIN MUSIC detector was optimized for the subsequent S467 experiment, which focused on calcium isotopic chain ($Z = 20$). As a result, the charge measurement was calibrated for $Z \approx 20$, and signals corresponding to $Z \lesssim 4$ fell below the detection threshold of TWIN MUSIC.
 
@@ -143,7 +143,7 @@ For an accurate proton selection and the application of appropriate cuts, it is 
 \end{itemize}
 
 The \textit{cal}-level data is structured as in the \textit{mapped}-level, however with calibrated energy by applying the calibration parameters from calibration run to each crystal channel.\newline
-For the calibration runs a $^{22}Na$ (with peaks at $511keV$ and $1275keV$) or a $^{60}Co$ (with peaks at $1173keV$ and $1332keV$) source is used. For each crystal channel a linear fit on the two photopeaks is performed. Using this fitting function, the uncalibrated energy, expressed in energy channels, can be converted into calibrated energy values.\newline
+For the calibration runs a $^{22}Na$ (with peaks at $511keV$ and $1275keV$) or a $^{60}Co$ (with peaks at $1173keV$ and $1332keV$) source is used. For each crystal channel a linear fit on the two photo-peaks is performed. Using this fitting function, the uncalibrated energy, expressed in energy channels, can be converted into calibrated energy values.\newline
 For the final \textit{hit}-level data, the energy-calibrated hits from the \textit{cal}-level are merged into clusters. High-energy proton hits ($E_{hit} > 15 MeV$) and low-energy $\gamma$ hits are first listed and sorted in descending energy order. Clusters are then formed using a cone-shaped approach, where each cluster is centered around the highest-energy hit with a half-opening angle of $\theta_c = 14.3^{\circ}$. All hits within this angular region are merged into the cluster. This process is iteratively repeated until both the high- and low-energy lists are empty. To improve the signal-to-noise ratio in this analysis, hits with energy values below the threshold of $E_{thr} = 100keV$ are discarded during clustering.\newline
 The resulting correlations in azimuthal and polar angles,with the only cut to have at least two high energy clusters with energy larger 15 MeV, with respect to the simulated \textit{p2p}-simulations are shown in figure \ref{fig:azimuth_corr} and figure \ref{fig:polar_corr} accordingly.\newline
 \begin{figure}[htpb]
@@ -208,7 +208,7 @@ As discussed in Section \ref{sec:qfs_theo}, the momentum of the knocked-out prot
     \begin{subfigure}[b]{0.9\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/p_miss_tot.png} % Replace with your image file
-        \caption{Reconstructed absolulte value of $\mathbf{p_{miss}}$.}
+        \caption{Reconstructed absolute value of $\mathbf{p_{miss}}$.}
         \label{fig:p_miss_tot}
     \end{subfigure}
 
@@ -253,7 +253,7 @@ Since the total momentum in the rest frame must be zero by definition, the momen
 
 Furthermore, Figures \ref{fig:x_corr_p_miss_11b} and \ref{fig:y_corr_p_miss_11b} illustrate the correlation between the x- and y-components of $\mathbf{p_{miss}}$ and the corresponding components of the $^{11}B$ fragment. A strong anti-correlation is observed in both cases. While the correlation in the y-component is relatively sharp, the x-component exhibits a more blurred distribution.\newline
 
-This effect arises from the geometry-dependent resolution of the subdetectors:
+This effect arises from the geometry-dependent resolution of the sub-detectors:
 \begin{itemize}
 \item[--]For the x-component, it is important to consider that only the lateral halves of CALIFA were instrumented in the \textit{iPhos} region ($\varphi_{1/2}$ within $\pm 45^{\circ}$ and $157.5^{\circ}$ to $202.5^{\circ}$). The azimuthal resolution is moderate ($\approx \frac{6^{\circ}}{\sqrt{12}}$), and since the x-component is reconstructed as $\propto \cos(\varphi)$, the derivative $\sin(\varphi)$ remains small for $\varphi \approx 0$, leading to lower sensitivity in this region.
 \item[--] The x-component of the $^{11}B$ fragment is reconstructed from position measurements immediately after the target, where the lever arm for momentum reconstruction is relatively short.
@@ -342,7 +342,7 @@ The best way to visualize the separation energy $S_p$ id to plot it against the 
     \centering
     \includegraphics[width=\textwidth,height=10cm,keepaspectratio=true]{Figures/sep_energy_vs_sum_energy.png}
     \caption{
-	Sum of the kinetic energies of the two correlated protons ($T_1/T_2$) versus the one proton separation energy $S_p$. Since this energy is needed to solve the proton from the nucleus' core, it's valuehas conventionally a negative sign.  	 
+	Sum of the kinetic energies of the two correlated protons ($T_1/T_2$) versus the one proton separation energy $S_p$. Since this energy is needed to solve the proton from the nucleus' core, its value has conventionally a negative sign.  	 
     }
     \label{fig:sep_energy}
 \end{figure}
@@ -404,7 +404,7 @@ It should be emphasized that this experiment represents the first measurement ca
 \subsection{Fission via Quasi-Free Scattering reaction}\label{sec:fission_qfs}
 In 2021, the S455 experiment conducted at the R$^3$B experiment marked a significant advancement in experimental nuclear physics through the realization of an unprecedented fission study employing quasi-free scattering as a reaction mechanism. This approach induces fission via particle-hole excitations, which can span excitation energies from a few MeV up to several tens of MeV.\newline
 Since the discovery of the nuclear fission by O. Hahn and F. Stra{\ss}mann 1939~\cite{hahn1939nachweis} and the first interpretations of the underlying process by Lise Meitner and R. O. Frisch~\cite{meitner1939disintegration} and the theoretical approach of Bohr and Wheeler~\cite{bohr1939phys} with help of the liquid drop model numerous fission experiments were carried out for better understanding of fission as consequence of a dynamic instability of the considered nucleus.\newline
-To induce fission an activation energy $T_a$ has to be supplied to overcome the Coulomb wall. The final energy released inform of kinetetic energy of the fission products $T_f$ is given by:
+To induce fission an activation energy $T_a$ has to be supplied to overcome the Coulomb wall. The final energy released inform of kinetic energy of the fission products $T_f$ is given by:
 \[
 Q = (m_i -m_f)c^2 = T_f - T_a
 \]
@@ -442,20 +442,20 @@ In the S455 experiment, as proof of principle, for fission via quasi-free scatte
     }
     \label{fig:drop_shell_model}
 \end{figure}
-The realization of the proposed experiment required a finely tuned  setup was needed for a complete identification of the fission fragments and the determination of the neutrons emitted in coincidence. Moreover a  precise measurement of the momentum of the knockout protons was required for a full charcterization of the fissioning process.\newline
+The realization of the proposed experiment required a finely tuned  setup was needed for a complete identification of the fission fragments and the determination of the neutrons emitted in coincidence. Moreover a  precise measurement of the momentum of the knockout protons was required for a full characterization of the fissioning process.\newline
 Central detector for the simultaneous charge measurement of the fission fragments is the TWIN MUSIC thanks to its four-section geometry (for more details see: Section~\ref{sec:ionisation_chambers}). The final energy/charge calibration employs many fine-tuning steps to retrieve the final charges of the two fission products, as shown in Fig.~\ref{fig:charge_distr_s455}. 
 
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth,height=10cm,keepaspectratio=true]{Figures/fission_charge_distr_s455.png}
     \caption{
-    Charge distribution of the charges $\text{Z}_1$ and $\text{Z}_2$ of both fission fragments for all fissioning systems. The inset shows the fissioning system distibution. The red diagonal frame shows the charge distribution when selecting the fissioning system $\text{Z}_1 + \text{Z}_2 = 91$. Figure taken from~\cite{grana2023fission}.
+    Charge distribution of the charges $\text{Z}_1$ and $\text{Z}_2$ of both fission fragments for all fissioning systems. The inset shows the fissioning system distribution. The red diagonal frame shows the charge distribution when selecting the fissioning system $\text{Z}_1 + \text{Z}_2 = 91$. Figure taken from~\cite{grana2023fission}.
     }
     \label{fig:charge_distr_s455}
 \end{figure}
 
 The key detector for the identification of the quasi-free scattering part of the reaction was the CALIFA calorimeter. For this experiment the CALIFA DAQ was operated for the first time in multi-event readout mode since high CALIFA event rates were expected and from the experience from the S444 experiment, where CALIFA was operated in a fully self triggered mode, which slowed down the event-building rate and capabilities of the full R3B DAQ\footnote{For more details about the CALIFA DAQ readout modes see~\cite{pklenze}, Section 5.2}.\newline
-However, for offline analyis this configuration posed several data unwrapping steps to correctly assign the hits within the asynchronous multi-event readout blocks to the according recorded events.\newline
+However, for offline analysis this configuration posed several data unwrapping steps to correctly assign the hits within the asynchronous multi-event readout blocks to the according recorded events.\newline
 After successful assignment of the CALIFA detector data, it was possible to extract both the energy and angular information of the two correlated protons emitted in the \(^{238}\mathrm{U}(p,2p f)\) reaction. A significant observation is that the opening angle between the two protons -- an observable directly related to the excitation energy available for fission -- shows a strong correlation with the charge distribution of the resulting fission fragments, as illustrated in Fig.~\ref{fig:qfs_fission}.
 \begin{figure}[htpb]
     \centering

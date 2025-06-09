@@ -17,9 +17,9 @@
 \contentsline {subsection}{\numberline {3.1}GSI facility}{21}{subsection.3.1}
 \contentsline {subsubsection}{\numberline {3.1.1}FAIR Project}{22}{subsubsection.3.1.1}
 \contentsline {subsection}{\numberline {3.2}R$^3$B Setup}{22}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Detector Setup in S444 Commmissioning Experiment 2020}{23}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.3}Detector Setup in S444 Commissioning Experiment 2020}{23}{subsection.3.3}
 \contentsline {subsubsection}{\numberline {3.3.1}Multi Wire Proportional Chambers (MWPC)}{24}{subsubsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.2}Ionisation Chambers - R$^3$B Music/TWIN Music}{26}{subsubsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2}Ionization Chambers - R$^3$B Music/TWIN Music}{26}{subsubsection.3.3.2}
 \contentsline {subsubsection}{\numberline {3.3.3}Sofia Start Detector}{29}{subsubsection.3.3.3}
 \contentsline {subsubsection}{\numberline {3.3.4}GLAD Magnet}{29}{subsubsection.3.3.4}
 \contentsline {subsubsection}{\numberline {3.3.5}CALIFA Calorimeter}{29}{subsubsection.3.3.5}
