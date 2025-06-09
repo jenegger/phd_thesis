@@ -408,9 +408,18 @@ To induce fission an activation energy $T_a$ has to be supplied to overcome the 
 \[
 Q = (m_i -m_f)c^2 = T_f - T_a
 \]
-where $m_i$ is the initial mass of the fissile nucleus and $m_f$ the sum of the masses of the fission products. Figure X shows the potential curve for the fission process into two fission fragments.\newline
+where $m_i$ is the initial mass of the fissile nucleus and $m_f$ the sum of the masses of the fission products. Figure~\ref{fig:fission_kuckuk} shows the potential curve for the fission process into two fission fragments.\newline
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/fiss_model_kuckuk.png}
+    \caption{
+Energy levels and potential profile during fission. \textit{Left:} Energy diagram. \textit{Right:} Potential profile according to the liquid drop model. \textit{Top inset:} Detail of the potential barrier for a more realistic description using the fission hybrid model. The ground state is deformed in this case. Figure taken from~\cite{mayer2013kernphysik}.
+    }
+    \label{fig:fission_kuckuk}
+\end{figure}
+
 In case of low fission barriers $T_a$ \textit{spontaneous fission}(s.f.) may occur. For many other nuclei a higher potential wall is expected  where no spontaneous fission is observed. In that case a relatively small energy $T_a$ needs to be supplied to \textit{induce fission}.
-From previous fission experiments fission yields for a large range of exotic nuclei were measured together with the mass/charge distribution of the (two) fission fragments. It has been observed that there are distinct regions of symmetric mass distribution and as well as asymmetric regions which cannot be understood by liquid drop model approximations. Moreover many different processes associated with fission have shown that the fission barrier does not always have a single maximum as predicted by the liquid drop model~\cite{bassani2005encyclopedia}. It follows that, within the framework of theoretical models, the description must generally combine concepts from both the liquid-drop model and the shell model giving high importance to the fine structure of the topography of the potential-energy surface (PES) as shownn in Figure~\ref{fig:drop_shell_model}, implemented in scission models which focuses on the specific configuration of the fissioning nucleus just before it splits into fragments, considering factors like potential energy and shell effects~\cite{pacsca2016possible,andreev2012mass,moller2012calculated}.\newline
+From previous fission experiments fission yields for a large range of exotic nuclei were measured together with the mass/charge distribution of the (two) fission fragments. It has been observed that there are distinct regions of symmetric mass distribution and as well as asymmetric regions which cannot be understood by liquid drop model approximations. Moreover many different processes associated with fission have shown that the fission barrier does not always have a single maximum as predicted by the liquid drop model~\cite{bassani2005encyclopedia}. It follows that, within the framework of theoretical models, the description must generally combine concepts from both the liquid-drop model and the shell model giving high importance to the fine structure of the topography of the potential-energy surface (PES) as shown in Figure~\ref{fig:drop_shell_model}, implemented in scission models which focuses on the specific configuration of the fissioning nucleus just before it splits into fragments, considering factors like potential energy and shell effects~\cite{pacsca2016possible,andreev2012mass,moller2012calculated}.\newline
 
 \begin{figure}[htpb]
     \centering
@@ -421,7 +430,7 @@ From previous fission experiments fission yields for a large range of exotic nuc
     \label{fig:drop_shell_model}
 \end{figure}
 
-However, when microscopic effects—such as nuclear shell corrections and pairing interactions—are taken into account, the PES becomes substantially more complex and requires higher-resolution experimental techniques for validation.\newline
+However, when microscopic effects -- such as nuclear shell corrections and pairing interactions -- are taken into account, the PES becomes substantially more complex and requires higher-resolution experimental techniques for validation.\newline
 To test these more nuanced theoretical predictions, a detailed and differential mapping of the PES is necessary. Fission induced via QFS reactions offers a promising experimental approach for this purpose. In QFS-induced fission, the projectile interacts with an individual nucleon within the target nucleus, leading to localized and controlled excitation of the residual system. This allows for event-by-event measurement of the fission process, enabling a direct correlation between the excitation energy and the resulting fission fragment charge and mass distributions, as well as the fission probabilities.\newline
 Such differential data facilitate a more precise determination of the temperature dependence of the fission process and the underlying fission barrier heights for exotic, neutron-rich heavy nuclei. By systematically analyzing these correlations, QFS-induced fission can provide critical constraints on theoretical models of the PES and improve our understanding of fission dynamics far from stability.\newline
 In the S455 experiment, as proof of principle, for fission via quasi-free scattering the reaction $^{238}U(p,2pf)$ was analyzed, with an intermediate excited nucleus Protactinum (Pa*) which undergoes fission. An overview of the reaction mechanism is shown in Figure~\ref{fig:drop_shell_model}.\newline 
@@ -434,18 +443,55 @@ In the S455 experiment, as proof of principle, for fission via quasi-free scatte
     \label{fig:drop_shell_model}
 \end{figure}
 The realization of the proposed experiment required a finely tuned  setup was needed for a complete identification of the fission fragments and the determination of the neutrons emitted in coincidence. Moreover a  precise measurement of the momentum of the knockout protons was required for a full charcterization of the fissioning process.\newline
-Central detector for the simultaneous charge measurement of the fission fragments is the TWIN MUSIC thanks to its four-section geometry (for more details see: Section~\ref{sec:ionisation_chambers}). %TODO find charge resolution of TWIN
-However the energy/charge calibration employs many fine-tuning steps to retrieve the final charges of the fission products:
-\begin{itemize}
-\item Anode- and section wise calibration
-%TODO: more; maybe also some plots you have
+Central detector for the simultaneous charge measurement of the fission fragments is the TWIN MUSIC thanks to its four-section geometry (for more details see: Section~\ref{sec:ionisation_chambers}). The final energy/charge calibration employs many fine-tuning steps to retrieve the final charges of the two fission products, as shown in Fig.~\ref{fig:charge_distr_s455}. 
 
-\end{itemize}
-The final calibration of the TWIN MUSIC was carried out by our colleagues from University Spain,Valencia,Santiago.\newline
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=\textwidth,height=10cm,keepaspectratio=true]{Figures/fission_charge_distr_s455.png}
+    \caption{
+    Charge distribution of the charges $\text{Z}_1$ and $\text{Z}_2$ of both fission fragments for all fissioning systems. The inset shows the fissioning system distibution. The red diagonal frame shows the charge distribution when selecting the fissioning system $\text{Z}_1 + \text{Z}_2 = 91$. Figure taken from~\cite{grana2023fission}.
+    }
+    \label{fig:charge_distr_s455}
+\end{figure}
+
 The key detector for the identification of the quasi-free scattering part of the reaction was the CALIFA calorimeter. For this experiment the CALIFA DAQ was operated for the first time in multi-event readout mode since high CALIFA event rates were expected and from the experience from the S444 experiment, where CALIFA was operated in a fully self triggered mode, which slowed down the event-building rate and capabilities of the full R3B DAQ\footnote{For more details about the CALIFA DAQ readout modes see~\cite{pklenze}, Section 5.2}.\newline
-However, for offline analyis this configuration posed several data unwrapping steps to correctly assign the hits within the asynchronous multi-event readout blocks to the according recorded events. 
+However, for offline analyis this configuration posed several data unwrapping steps to correctly assign the hits within the asynchronous multi-event readout blocks to the according recorded events.\newline
+After successful assignment of the CALIFA detector data, it was possible to extract both the energy and angular information of the two correlated protons emitted in the \(^{238}\mathrm{U}(p,2p f)\) reaction. A significant observation is that the opening angle between the two protons -- an observable directly related to the excitation energy available for fission -- shows a strong correlation with the charge distribution of the resulting fission fragments, as illustrated in Fig.~\ref{fig:qfs_fission}.
+\begin{figure}[htpb]
+    \centering
+    \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth]{Figures/gabriel_1.png}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth]{Figures/gabriel_2.png}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.32\textwidth}
+    \includegraphics[width=\textwidth]{Figures/gabriel_3.png}
+    \end{subfigure}
+    \caption{
+	(a) Polar angle correlation between the two protons emitted in fission events following quasi-free scattering (QFS) conditions. 
+Panel (b) shows the resulting fission fragment charge distribution for quasi-free \((p,2p)\) events, selected from the blue-framed angular correlation region in (a). 
+Panel (c) displays the charge distribution corresponding to multi-nucleon knockout reactions dominated by final-state interactions (FSI), selected from the green-framed region in (a). 
+Adapted from Ref.~\cite{garcia2023study}, based on data from the S455 experiment conducted in 2021 at the R$^3$B setup, GSI.
+	}
+    \label{fig:qfs_fission}
+\end{figure}
+Specifically, events characterized by large proton opening angles, corresponding to low excitation energies (quasi-free scattering conditions), lead to more asymmetric fission fragment charge distributions (see Fig.~\ref{fig:qfs_fission}b). Conversely, selecting events with smaller proton opening angles -- typically associated with multi-nucleon interactions within the nucleus or knockout of deeply bound nucleons, and thus higher excitation energies -- results in a more symmetric charge distribution (see Fig.~\ref{fig:qfs_fission}c).\newline
+These first promising results, as reported in Refs.~\cite{garcia2023study,grana2023fission}, demonstrate the feasibility to scan finely the potential-energy surface to provide new insights into the dynamics of nuclear fission.
+\newpage
+The second part of the S455 experimental campaign employed a complementary and well-established method to investigate the fission process and its evolution: fission induced by Coulomb excitation (coulex-induced fission). This approach aimed at a precise characterization of fission yields and properties of 100 different neutron-deficient exotic isotopes, ranging from iridium (Z = 77) to thorium (Z = 90).\newline
+These isotopes were produced via the fragmentation of a relativistic  1 AGeV  $^{238}$U primary beam  and subsequently separated and identified individually using the GSI Fragment Separator (FRS). In the R$^3$B setup, the isotopes were directed onto a segmented lead target, where they were excited to a few MeV above their ground state energy, inducing the fission into two lighter fragments, which same as for the pilot fission via qfs experiment were identified and tracked within the dedicated R$^3$B detector setup.\newline
+The systematic study of the data collected during ten days of experiment, revealed a transition toward increasingly asymmetric fission in neutron-deficient heavy nuclei. This marks the discovery of a new ``island of asymmetric fission'' in the nuclear chart, characterized by a surprising dominance of light fission fragments with atomic number Z = 36, corresponding to krypton, see Fig.~\ref{fig:asymmetric_fission_islands}.\newline
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.85\textwidth]{Figures/csm_NuclideChart_with_islands_Foto_PMorfouace_res_47948441f0.png}
+    \caption[Asymmetric fission regions in the chart of nuclides]{Three-dimensional chart of nuclides illustrating the evolution of asymmetric fission, with asymmetry \( A \) shown as a color scale. The red circles indicate two distinct regions-so-called ``islands''-of asymmetric fission. The region in the upper right corresponds to the well-established asymmetric fission in the actinide range (atomic numbers \( Z = 89\text{--}103 \)), where the process is stabilized by the formation of a heavy fragment near xenon (\( Z = 54 \)). In contrast, the region in the lower left highlights the recently discovered asymmetric fission of lighter nuclei around mercury (\( Z = 80 \)), stabilized by the formation of a light fragment near krypton (\( Z = 36 \)). Black squares denote the valley of beta-stable isotopes. \textit{Image credit: Pierre Morfouace,CEA,DAM,DIF,Arpajon, France.}}
+    \label{fig:asymmetric_fission_islands}
+\end{figure}
+The significance of this discovery was underscored by its publication in \textbf{Nature} under the title \textbf{\textit{``An asymmetric fission island driven by shell effects in light fragments''}}~\cite{morfouace2025asymmetric}. This high-impact publication represents a major milestone for the R$^3$B collaboration and a notable recognition of the scientific importance of the experiment.\newline
+This discovery marks a first step toward identifying the extent of a newly observed region in the nuclear chart where asymmetric fission dominates. A series of follow-up experiments is planned at FAIR, which will begin operation in 2027 within the ``Early Science'' campaign. At the heart of these efforts is the new Superconducting Fragment Separator (Super-FRS) -- the successor of the currently operating FRS -- a major upgrade that will enable the selection and delivery of even rarer and more exotic isotopes. These advancements will be key to mapping this phenomenon in much greater detail and revealing fundamental aspects of nuclear matter under extreme conditions.\newline
 
-
+\clearpage
 
 %
 %Over the past decades, Coulomb-induced fission reactions in inverse kinematics have served as a powerful tool to investigate fission dynamics and the nuclear structure of both stable and unstable heavy nuclei at large deformations. These reactions, however, provide only averaged information over many fission events, thereby limiting their ability to resolve the detailed topography of the potential-energy surface (PES). Consequently, they offer only indirect access to the fission barrier through measurements of integrated fission yields, making it difficult to probe finer aspects of fission dynamics.\newline

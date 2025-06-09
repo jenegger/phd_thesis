@@ -145,26 +145,6 @@ S.~Paschalis, M.~Petri, A.~Macchiavelli, O.~Hen, and E.~Piasetzky,
   ``{Nucleon-nucleon correlations and the single-particle strength in atomic
   nuclei},'' {\em Physics Letters B}, vol.~800, p.~135110, 2020.
 
-\bibitem{garcia2023study}
-G.~Garc{\'\i}a-Jim{\'e}nez, H.~Alvarez-Pol, A.~Gra{\~n}a-Gonz{\'a}lez,
-  J.~Rodr{\'\i}guez-S{\'a}nchez, J.~Benlliure, D.~Cortina-Gil, L.~Atar,
-  L.~Audouin, G.~Authelet, A.~Besteiro, {\em et~al.}, ``{Study of (p, 2p)
-  fission reactions in inverse kinematics using the R3B set-up},'' in {\em EPJ
-  Web of Conferences}, vol.~290, p.~02009, EDP Sciences, 2023.
-
-\bibitem{grana2023fission}
-J.~Gra{\~n}a-Gonz{\'a}lez, J.~Rodr{\'\i}guez-S{\'a}nchez, J.~Benlliure,
-  G.~Garc{\'\i}a-Jim{\'e}nez, H.~Alvarez-Pol, D.~Cortina-Gil, L.~Atar,
-  L.~Audouin, G.~Authelet, A.~Besteiro, {\em et~al.}, ``{Fission studies in
-  inverse kinematics with the R3B setup},'' in {\em EPJ Web of Conferences},
-  vol.~290, p.~02015, EDP Sciences, 2023.
-
-\bibitem{morfouace2025asymmetric}
-P.~Morfouace, J.~Taieb, A.~Chatillon, L.~Audouin, G.~Blanchon, R.~Bernard,
-  N.~Dubray, N.~Pillet, D.~Regnier, H.~Alvarez-Pol, {\em et~al.}, ``{An
-  asymmetric fission island driven by shell effects in light fragments},'' {\em
-  Nature}, pp.~1--6, 2025.
-
 \bibitem{gerl2009nuclear}
 J.~Gerl, ``{NUCLEAR SPECTROSCOPY STUDIES AT GSI--FROM RISING TO
   HISPEC/DESPEC.},'' {\em Acta Physica Polonica B}, vol.~40, no.~3, 2009.
@@ -250,6 +230,13 @@ M.~Bendel, {\em {E}ntwicklung einer neuartigen {N}achweismethode
   hochenergetischer {T}eilchen im {CALIFA}-{K}alorimeter}.
 \newblock Dr., Technische Universit{\"a}t M{\"u}nchen, M{\"u}nchen, 2014.
 \newblock Technische Universit{\"a}t M{\"u}nchen, Diss., 2014.
+
+\bibitem{grana2023fission}
+J.~Gra{\~n}a-Gonz{\'a}lez, J.~Rodr{\'\i}guez-S{\'a}nchez, J.~Benlliure,
+  G.~Garc{\'\i}a-Jim{\'e}nez, H.~Alvarez-Pol, D.~Cortina-Gil, L.~Atar,
+  L.~Audouin, G.~Authelet, A.~Besteiro, {\em et~al.}, ``{Fission studies in
+  inverse kinematics with the R3B setup},'' in {\em EPJ Web of Conferences},
+  vol.~290, p.~02015, EDP Sciences, 2023.
 
 \bibitem{bendel2014entwicklung}
 M.~Bendel, {\em Entwicklung einer neuartigen Nachweismethode hochenergetischer
@@ -395,6 +382,10 @@ L.~Meitner and O.~R. Frisch, ``{Disintegration of uranium by neutrons: a new
 N.~Bohr and J.~Wheeler, ``{Phys. Rev.},'' {\em Phys. Rev}, vol.~56, no.~426,
   1939.
 
+\bibitem{mayer2013kernphysik}
+T.~Mayer-Kuckuk, {\em {Kernphysik: Eine Einf{\"u}hrung}}.
+\newblock Springer-Verlag, 2013.
+
 \bibitem{bassani2005encyclopedia}
 F.~Bassani, G.~L. Liedl, and P.~Wyder, ``{Encyclopedia of condensed matter
   physics},'' 2005.
@@ -417,6 +408,19 @@ P.~M{\"o}ller, J.~Randrup, and A.~J. Sierk, ``{Calculated fission yields of
 \bibitem{popescu2021review}
 V.~A. Popescu, ``{Review of mass and charge distributions in low energy fission
   for 235,238 U and 239Pu},'' 2021.
+
+\bibitem{garcia2023study}
+G.~Garc{\'\i}a-Jim{\'e}nez, H.~Alvarez-Pol, A.~Gra{\~n}a-Gonz{\'a}lez,
+  J.~Rodr{\'\i}guez-S{\'a}nchez, J.~Benlliure, D.~Cortina-Gil, L.~Atar,
+  L.~Audouin, G.~Authelet, A.~Besteiro, {\em et~al.}, ``{Study of (p, 2p)
+  fission reactions in inverse kinematics using the R3B set-up},'' in {\em EPJ
+  Web of Conferences}, vol.~290, p.~02009, EDP Sciences, 2023.
+
+\bibitem{morfouace2025asymmetric}
+P.~Morfouace, J.~Taieb, A.~Chatillon, L.~Audouin, G.~Blanchon, R.~Bernard,
+  N.~Dubray, N.~Pillet, D.~Regnier, H.~Alvarez-Pol, {\em et~al.}, ``{An
+  asymmetric fission island driven by shell effects in light fragments},'' {\em
+  Nature}, pp.~1--6, 2025.
 
 \bibitem{sartori2013nuclear}
 E.~Sartori, ``{Nuclear data for radioactive waste management},'' {\em Annals of
