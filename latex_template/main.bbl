@@ -332,12 +332,6 @@ L.~Ponnath, {\em {Precise Measurement of Nuclear Interaction Cross Sections
   \url{https://www.mesytec.com/products/nuclear-physics/MDPP-16.html}.
 \newblock [Online; accessed October 18, 2024].
 
-\bibitem{lau1995optimization}
-K.~Lau and J.~Pyrlik, ``{Optimization of centroid-finding algorithms for
-  cathode strip chambers},'' {\em Nuclear Instruments and Methods in Physics
-  Research Section A: Accelerators, Spectrometers, Detectors and Associated
-  Equipment}, vol.~366, no.~2-3, pp.~298--309, 1995.
-
 \bibitem{bertini2013study}
 O.~Bertini, {\em {Study of 3 Lambda H and 4 Lambda H in the reaction of 6 Li+
   12 C at 2 A GeV}}.
@@ -534,5 +528,11 @@ X.~Ju, D.~Murnane, P.~Calafiura, N.~Choma, S.~Conlon, S.~Farrell, Y.~Xu,
 S.~Van~Stroud, P.~Duckett, M.~Hart, N.~Pond, S.~Rettie, G.~Facini, and
   T.~Scanlon, ``{Transformers for Charged Particle Track Reconstruction in High
   Energy Physics},'' {\em arXiv preprint arXiv:2411.07149}, 2024.
+
+\bibitem{lau1995optimization}
+K.~Lau and J.~Pyrlik, ``{Optimization of centroid-finding algorithms for
+  cathode strip chambers},'' {\em Nuclear Instruments and Methods in Physics
+  Research Section A: Accelerators, Spectrometers, Detectors and Associated
+  Equipment}, vol.~366, no.~2-3, pp.~298--309, 1995.
 
 \end{thebibliography}

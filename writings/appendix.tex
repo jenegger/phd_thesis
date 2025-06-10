@@ -11,7 +11,61 @@ As detailed in Section~\ref{subsec:event-sel}, a stringent event selection crite
     \label{fig:r3b_vs_twin_charge_def}
 \end{figure}
 
+\section {MWPCs - \textit{cal-to-hit} data processing}
 
+
+For all MWPCs the standard  \textit{cal-to-hit} step  sorts the calibrated hits in the detector according to the calibrated charge deposited in the pads. The final position (in mm) is determined by selecting the hit with the highest charge deposition $Q_{max}$ and its left ($Q_L$) and right neighbor ($Q_R$) pads\footnote{In case no charge deposition in one or both neighbors the charge value is set to 1 respectively.}. These charge and position values are inserted in the "hyperbolic squared secant" function \cite{lau1995optimization} with the following charge distribution function:
+\[
+Q(x) = \frac{a_1}{\cosh^2\left(\frac{\pi (x - a_2)}{a_3}\right)}
+\]
+\vspace{-0.5em} % Reduces the space between equations
+where \(a_1\) is the amplitude of the distribution $Q_{max}$, \(a_2\) its centroid, and \(a_3\) derives as follows:
+\[
+a_3 = \frac{\pi \omega}{\cosh^{-1}\left(0.5 \times \left(\sqrt{\frac{Q_{\text{max}}}{Q_L}} + \sqrt{\frac{Q_{\text{max}}}{Q_R}}\right)\right)}
+\]
+\vspace{-0.5em} % Reduces the space between equations
+\(\omega\) being the width of the pads. The centroid of the distribution, which is used as final hit position in the \textit{hit-}data level, can be deduced from:
+\vspace{-0.5em} % Reduces the space between equations
+\[
+a_2 = \frac{a_3}{\pi} \times \tanh^{-1}\left(\frac{\sqrt{\frac{Q_{\text{max}}}{Q_L}} - \sqrt{\frac{Q_{\text{max}}}{Q_R}}}{2 \sinh\left(\frac{\pi \omega}{a_3}\right)}\right)
+\]
+Figure \ref{fig:hyp_function} shows the "hyperbolic squared secant" function with the inserted values for $Q_{max}$, $Q_R$ and $Q_L$. 
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/hyperbolic_squared_secant_function.png}
+    \caption{
+   	 Figure taken from \cite{martin2021fission}, with w being the with of the cathode pads of the MWPC and $a_2$ the final position value of the hit determined by the hyperbolic squared secant function (in red). In black the measured charge deposition distribution in the MWPC. 
+     }
+    \label{fig:hyp_function}
+\end{figure}
+The "hyperbolic squared secant" function is used to determine the x hit position as well as the y hit position for all MWPCs. Figure \ref{fig:x_mw23_default} shows the $x_{mw2}$ versus $x_{mw3}$ distribution of carbon isotopes for the 400 AMeV run with the thick target. The two correlated lines corresponding to the $^{12}$C and $^{11}$C isotopes can clearly be distinguished. The vertical line can be interpreted as amount of events where the incoming centered carbon fragment gets scattered by air or the detector material in place between MWPC2 and MWPC3. The horizontal wide spread line has no physical interpretation and can rather be explained by the \textit{cal-to-hit} step in MWPC2: For events where there is not a spatially constrained hit cluster but sparse hits the hyperbolic squared secant function may pick the wrong $Q_{max}$ and therefore wrongly reconstructs the x position in MWPC2. 
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/mw23_default.png}
+    \caption{
+   	 Distribution of x in MWPC2 and MWPC3 for the 400 AMeV run with thick target. The green line acts as reference line for the isotope separation between $^{12}$C and $^{11}$C/$^{10}$C.
+     }
+    \label{fig:x_mw23_default}
+\end{figure}
+
+
+\subsection {Coherent clustering} 
+
+To overcome the issue with potentially wrong x- or y-position reconstruction in the MWPCs the event selection can be restricted to events where the MWPCs of interest have only one spatially constrained cluster(see figure \ref{fig:own_clustering}) to avoid ambiguities in the position determination.\newline
+\begin{figure}
+\floatbox[{\capbeside\thisfloatsetup{capbesideposition={left,top},capbesidewidth=6cm}}]{figure}[\FBwidth]
+{\caption{Restricted event selection for MWPC2 and MWPC3: only events with one single coherent (i.e. without any holes) cluster are accepted.}\label{fig:own_clustering}}
+{\includegraphics[width=7cm]{Figures/own_clustering_mwpcs.png}}
+\end{figure}
+Figure \ref{fig:mw23_own_clustering} shows the distribution of x in MWPC2 and MWPC3 using the own hit-clustering reconstruction. This reconstruction method removes the uncorrelated horizontal line which was observed in figure \ref{fig:x_mw23_default}. However the statistics are reduced by approximately $35\%$\footnote{Number of entries in the 2D plot for default reconstruction method: 533816, for the own hit clustering reconstruction: 346315 for the 400 AMeV run with thick target.}.
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/mw23_own_clustering.png}
+    \caption{
+   	 Distribution of x in MWPC2 and MWPC3 using the own hit clustering reconstruction. Thick target run, beam energy 400 AMeV. The green line acts as reference line for the isotope separation between $^{12}$C and $^{11}$C/$^{10}$C.
+     }
+    \label{fig:mw23_own_clustering}
+\end{figure}
 
 \section {MWPC0 selection cuts}\label{app:mw0_cuts}
 
@@ -41,6 +95,9 @@ The same correction factor can be applied to the total interaction cross section
 \end{figure}
 \newpage
 
+
+
+\section {Overview of isotope correction methods - selection cuts on the MWPC1/2/3}
 
 \section{Flight-Path Reconstruction}\label{app:flightpath}
 \begin{figure}[h!]
