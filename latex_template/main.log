@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.24)  10 JUN 2025 12:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.24)  10 JUN 2025 15:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1963,26 +1963,39 @@ CTION IN THE CALIFA CALORIMETER AT R$[]$B
 
 [114]) [115 <./Figures/bad_reco_paper.png> <./Figures/good_reco_paper.png>]
 (./../writings/appendix.tex
+
+pdfTeX warning: pdflatex (file ./Figures/app_charge_r3b_twin_default.pdf): PDF 
+inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+<Figures/app_charge_r3b_twin_default.pdf, id=1949, 796.67719pt x 448.1309pt>
+File: Figures/app_charge_r3b_twin_default.pdf Graphic file (type pdf)
+<use Figures/app_charge_r3b_twin_default.pdf>
+Package pdftex.def Info: Figures/app_charge_r3b_twin_default.pdf  used on input
+ line 7.
+(pdftex.def)             Requested size: 443.57848pt x 249.51563pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [116 <./Figures/app_charge_r3b_twin_default.pdf>]
 File: Figures/charge_changing_cross_sec_twim_eff_corr.png Graphic file (type pn
 g)
 <use Figures/charge_changing_cross_sec_twim_eff_corr.png>
 Package pdftex.def Info: Figures/charge_changing_cross_sec_twim_eff_corr.png  u
-sed on input line 17.
+sed on input line 29.
 (pdftex.def)             Requested size: 341.43124pt x 227.62082pt.
 
 
-LaTeX Warning: Reference `fig:cccs_gaus_diff_sections' on page 116 undefined on
- input line 19.
+LaTeX Warning: Reference `fig:cccs_gaus_diff_sections' on page 117 undefined on
+ input line 31.
 
 
-LaTeX Warning: Reference `fig:cccs_gaus_diff_sections' on page 116 undefined on
- input line 19.
+LaTeX Warning: Reference `fig:cccs_gaus_diff_sections' on page 117 undefined on
+ input line 31.
 
-<Figures/tot_interaction_cs_twim_eff_corr.png, id=1949, 462.528pt x 346.896pt>
+<Figures/tot_interaction_cs_twim_eff_corr.png, id=1975, 462.528pt x 346.896pt>
 File: Figures/tot_interaction_cs_twim_eff_corr.png Graphic file (type png)
 <use Figures/tot_interaction_cs_twim_eff_corr.png>
 Package pdftex.def Info: Figures/tot_interaction_cs_twim_eff_corr.png  used on 
-input line 25.
+input line 37.
 (pdftex.def)             Requested size: 443.59836pt x 332.69878pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1990,28 +2003,22 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Overfull \hbox (117.27672pt too wide) has occurred while \output is active
-\T1/cmr/m/n/12 116 \T1/cmr/m/sl/12 D TWIN MUSIC GEOMETRIC ACCEPTANCE CORRECTION
- VIA EFFICIENCY MEASUREMENT
- []
-
-[116]
-<Figures/drawings_flightpath.png, id=1960, 871.255pt x 774.895pt>
+[117]
+<Figures/drawings_flightpath.png, id=1986, 871.255pt x 774.895pt>
 File: Figures/drawings_flightpath.png Graphic file (type png)
 <use Figures/drawings_flightpath.png>
-Package pdftex.def Info: Figures/drawings_flightpath.png  used on input line 36
+Package pdftex.def Info: Figures/drawings_flightpath.png  used on input line 48
 .
 (pdftex.def)             Requested size: 443.57848pt x 394.51726pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[117]
+[118]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [118 <./Figures/tot_interaction_cs_twim_eff_corr.png>]) [119 <./Figures/drawin
-gs_flightpath.png>] [120] (./main.bbl [121] [122] [123]
+ [119 <./Figures/tot_interaction_cs_twim_eff_corr.png>]) [120 <./Figures/drawin
+gs_flightpath.png>] [121] (./main.bbl [122] [123] [124]
 Underfull \hbox (badness 1394) in paragraph at lines 211--215
 []\T1/cmr/m/n/12 GSI Helmholtzzen-trum für Schw-e-ri-o-nen-forschung GmbH, ``La
 rge-acceptance
@@ -2023,7 +2030,7 @@ Underfull \hbox (badness 1092) in paragraph at lines 229--233
 he Uni-ver-sität München,
  []
 
-[124]
+[125]
 Underfull \hbox (badness 10000) in paragraph at lines 281--285
 []\T1/cmr/m/n/12 Hamamatsu Pho-ton-ics, ``S8664-1010: Sil-i-con Avalanche Pho-t
 o-di-ode.''
@@ -2035,7 +2042,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 281--285
 tical-[]sensors / apd /
  []
 
-[125]
+[126]
 Underfull \hbox (badness 3579) in paragraph at lines 299--302
 []\T1/cmr/m/n/12 ``Multi Branch Sys-tem (MBS).'' [][]$\T1/cmtt/m/n/12 https : /
  / www . gsi . de / en / work / research /
@@ -2047,13 +2054,13 @@ Underfull \hbox (badness 6300) in paragraph at lines 299--302
 on / mbs$[][]\T1/cmr/m/n/12 .  Ac-
  []
 
-[126] [127] [128]
+[127] [128] [129]
 Underfull \hbox (badness 1275) in paragraph at lines 517--520
 []\T1/cmr/m/n/12 X. Am-a-tri-ain, A. Sankar, J. Bing, P. K. Bod-igutla, T. J. H
 azen, and
  []
 
-[129]) [130] (./main.aux (./Abstract.aux))
+[130]) [131] (./main.aux (./Abstract.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -2064,10 +2071,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 331CA2DCD4F2236B40EB329A86F80FFA;16560.
  ) 
 Here is how much of TeX's memory you used:
- 20441 strings out of 480121
- 356667 string characters out of 5892160
- 681943 words of memory out of 5000000
- 37479 multiletter control sequences out of 15000+600000
+ 20452 strings out of 480121
+ 357073 string characters out of 5892160
+ 682353 words of memory out of 5000000
+ 37487 multiletter control sequences out of 15000+600000
  499008 words of font info for 105 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  61i,22n,75p,1721b,696s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2115,10 +2122,10 @@ cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on main.pdf (140 pages, 26424180 bytes).
+Output written on main.pdf (141 pages, 26477602 bytes).
 PDF statistics:
- 3182 PDF objects out of 3580 (max. 8388607)
- 1854 compressed objects within 19 object streams
- 508 named destinations out of 1000 (max. 500000)
- 971 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3208 PDF objects out of 3580 (max. 8388607)
+ 1871 compressed objects within 19 object streams
+ 510 named destinations out of 1000 (max. 500000)
+ 976 words of extra memory for PDF output out of 10000 (max. 10000000)
 

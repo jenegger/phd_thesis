@@ -1,6 +1,18 @@
 \begin{appendices}
 \section {Pileup rejection with R3B MUSIC charge cut}\label{app:r3bmusic_pileup}
 
+As detailed in Section~\ref{subsec:event-sel}, a stringent event selection criterion was applied to the incoming ions. This included a precise charge cut, as illustrated in Figure~\ref{fig:r3bmusic_charge}. The application of a rigid $\pm 1 \sigma$ charge cut, in conjunction with the requirement of a single hit in the Start detector, effectively suppresses pileup events. The superior pileup rejection capability of the R3B MUSIC detector, owing to its longer shaping time compared to the TWIN MUSIC detector, is further demonstrated in Figure~\ref{fig:r3b_vs_twin_charge_def}. This extended shaping time ensures that any genuine pileup event will be reliably registered by the R3B MUSIC.
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/app_charge_r3b_twin_default.pdf}
+    \caption{
+	Charge distribution in R3B MUSIC vs TWIN MUSIC. The strict charge cut -- only events within the two horizontal lines are selected for the analysis -- on R3B MUSIC fully supresses pileup events. For this plot positional cuts on the MWPC0  and the requirement of a single hit in the Start detector are applied. Target run, 550 AMeV. 
+    }
+    \label{fig:r3b_vs_twin_charge_def}
+\end{figure}
+
+
+
 \section {MWPC0 selection cuts}\label{app:mw0_cuts}
 
 \section {Alternative methods for TWIN MUSIC hit selection and charge assignment} \label{app:twin_alternative}
