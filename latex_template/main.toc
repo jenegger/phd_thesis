@@ -68,7 +68,7 @@
 \contentsline {subsection}{\numberline {B.1}Coherent clustering}{114}{subsection.1.B.1}%
 \contentsline {section}{\numberline {C}MWPC0 selection cuts}{115}{appendix.1.C}%
 \contentsline {section}{\numberline {D}Alternative methods for TWIN MUSIC hit selection and charge assignment}{117}{appendix.1.D}%
-\contentsline {section}{\numberline {E}TWIN MUSIC Geometric Acceptance Correction via Efficiency Measurement}{117}{appendix.1.E}%
-\contentsline {section}{\numberline {F}Overview of isotope correction methods - selection cuts on the MWPC1/2/3}{118}{appendix.1.F}%
-\contentsline {section}{\numberline {G}Flight-Path Reconstruction}{118}{appendix.1.G}%
-\contentsline {section}{References}{122}{equation.1.G.47}%
+\contentsline {section}{\numberline {E}TWIN MUSIC Geometric Acceptance Correction via Efficiency Measurement}{120}{appendix.1.E}%
+\contentsline {section}{\numberline {F}Overview of isotope correction methods - selection cuts on the MWPC1/2/3}{121}{appendix.1.F}%
+\contentsline {section}{\numberline {G}Flight-Path Reconstruction}{121}{appendix.1.G}%
+\contentsline {section}{References}{125}{equation.1.G.47}%

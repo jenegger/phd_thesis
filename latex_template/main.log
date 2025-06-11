@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.24)  11 JUN 2025 13:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.24)  11 JUN 2025 17:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1265,7 +1265,7 @@ Package pdftex.def Info: Figures/cccs_with_stat_errors.png  used on input line
 <Figures/cccs_vs_sigma_cut.pdf, id=1150, 796.6487pt x 448.10245pt>
 File: Figures/cccs_vs_sigma_cut.pdf Graphic file (type pdf)
 <use Figures/cccs_vs_sigma_cut.pdf>
-Package pdftex.def Info: Figures/cccs_vs_sigma_cut.pdf  used on input line 286.
+Package pdftex.def Info: Figures/cccs_vs_sigma_cut.pdf  used on input line 278.
 
 (pdftex.def)             Requested size: 443.57848pt x 249.5066pt.
  [56 <./Figures/cccs_with_stat_errors.png>] [57 <./Figures/cccs_vs_sigma_cut.pd
@@ -1273,12 +1273,12 @@ f>]
 <Figures/geo_acceptance.pdf, id=1181, 796.6487pt x 448.10245pt>
 File: Figures/geo_acceptance.pdf Graphic file (type pdf)
 <use Figures/geo_acceptance.pdf>
-Package pdftex.def Info: Figures/geo_acceptance.pdf  used on input line 378.
+Package pdftex.def Info: Figures/geo_acceptance.pdf  used on input line 370.
 (pdftex.def)             Requested size: 404.66873pt x 227.61983pt.
  [58
 
  <./Figures/geo_acceptance.pdf>]
-Overfull \hbox (38.0447pt too wide) in paragraph at lines 410--411
+Overfull \hbox (38.0447pt too wide) in paragraph at lines 402--403
 []\T1/cmr/m/n/12 The ob-tained fit func-tion $\OML/cmm/m/it/12 f\OT1/cmr/m/n/12
  (\OML/cmm/m/it/12 y\OT1/cmr/m/n/12 )$ \T1/cmr/m/n/12 is then used to com-pare 
 the data distribution($\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 y\OT
@@ -1290,20 +1290,20 @@ the data distribution($\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 y\OT
 File: Figures/corig_geo_corr_factor.png Graphic file (type png)
 <use Figures/corig_geo_corr_factor.png>
 Package pdftex.def Info: Figures/corig_geo_corr_factor.png  used on input line 
-422.
+414.
 (pdftex.def)             Requested size: 303.49796pt x 227.62346pt.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 428.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 420.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 430.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 422.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 430.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 422.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 430.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 422.
 
 <Figures/charge_changing_cross_sec_twim_eff_corr.png, id=1234, 433.62pt x 289.0
 8pt>
@@ -1311,22 +1311,22 @@ File: Figures/charge_changing_cross_sec_twim_eff_corr.png Graphic file (type pn
 g)
 <use Figures/charge_changing_cross_sec_twim_eff_corr.png>
 Package pdftex.def Info: Figures/charge_changing_cross_sec_twim_eff_corr.png  u
-sed on input line 435.
+sed on input line 427.
 (pdftex.def)             Requested size: 341.43124pt x 227.62082pt.
 [60 <./Figures/corig_geo_corr_factor.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 444--445
+Underfull \hbox (badness 10000) in paragraph at lines 436--437
 
  []
 
 [61 <./Figures/charge_changing_cross_sec_twim_eff_corr.png>]
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 472.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 464.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 472.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 464.
 
 [62]
-Underfull \hbox (badness 10000) in paragraph at lines 511--527
+Underfull \hbox (badness 10000) in paragraph at lines 503--519
 
  []
 
@@ -1334,22 +1334,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 511--527
 File: Figures/mw13_standard_cluster.png Graphic file (type png)
 <use Figures/mw13_standard_cluster.png>
 Package pdftex.def Info: Figures/mw13_standard_cluster.png  used on input line 
-532.
+524.
 (pdftex.def)             Requested size: 316.55623pt x 227.6211pt.
 <Figures/mw13_own_cluster.png, id=1273, 679.53876pt x 498.86375pt>
 File: Figures/mw13_own_cluster.png Graphic file (type png)
 <use Figures/mw13_own_cluster.png>
-Package pdftex.def Info: Figures/mw13_own_cluster.png  used on input line 542.
+Package pdftex.def Info: Figures/mw13_own_cluster.png  used on input line 534.
 (pdftex.def)             Requested size: 310.06161pt x 227.62277pt.
 [63 <./Figures/mw13_standard_cluster.png>]
 <Figures/quadrants_mw1_xy_400_thick.png, id=1285, 1072.005pt x 770.88pt>
 File: Figures/quadrants_mw1_xy_400_thick.png Graphic file (type png)
 <use Figures/quadrants_mw1_xy_400_thick.png>
 Package pdftex.def Info: Figures/quadrants_mw1_xy_400_thick.png  used on input 
-line 553.
+line 545.
 (pdftex.def)             Requested size: 316.53317pt x 227.61935pt.
 
-Overfull \hbox (30.8736pt too wide) in paragraph at lines 549--559
+Overfull \hbox (30.8736pt too wide) in paragraph at lines 541--551
 []\T1/cmr/bx/n/12 MWPC2 and MWPC3 with own clus-ter-ing, quad-rant se-lec-tion 
 in MWPC2:[][][][][] 
  []
@@ -1359,13 +1359,13 @@ in MWPC2:[][][][][]
 File: Figures/iso_corr_cs_mw23_hit.png Graphic file (type png)
 <use Figures/iso_corr_cs_mw23_hit.png>
 Package pdftex.def Info: Figures/iso_corr_cs_mw23_hit.png  used on input line 5
-67.
+59.
 (pdftex.def)             Requested size: 303.49796pt x 227.62346pt.
 <Figures/iso_corr_cs_mw23_own_cluster.png, id=1295, 462.528pt x 346.896pt>
 File: Figures/iso_corr_cs_mw23_own_cluster.png Graphic file (type png)
 <use Figures/iso_corr_cs_mw23_own_cluster.png>
 Package pdftex.def Info: Figures/iso_corr_cs_mw23_own_cluster.png  used on inpu
-t line 577.
+t line 569.
 (pdftex.def)             Requested size: 303.49796pt x 227.62346pt.
  [65 <./Figures/quadrants_mw1_xy_400_thick.png> <./Figures/iso_corr_cs_mw23_hit
 .png>]
@@ -1373,13 +1373,13 @@ t line 577.
 File: Figures/iso_corr_cs_mw13_hit.png Graphic file (type png)
 <use Figures/iso_corr_cs_mw13_hit.png>
 Package pdftex.def Info: Figures/iso_corr_cs_mw13_hit.png  used on input line 5
-87.
+79.
 (pdftex.def)             Requested size: 303.49796pt x 227.62346pt.
 <Figures/iso_corr_cs_mw13_own_cluster.png, id=1304, 462.528pt x 346.896pt>
 File: Figures/iso_corr_cs_mw13_own_cluster.png Graphic file (type png)
 <use Figures/iso_corr_cs_mw13_own_cluster.png>
 Package pdftex.def Info: Figures/iso_corr_cs_mw13_own_cluster.png  used on inpu
-t line 597.
+t line 589.
 (pdftex.def)             Requested size: 303.49796pt x 227.62346pt.
  [66 <./Figures/iso_corr_cs_mw23_own_cluster.png> <./Figures/iso_corr_cs_mw13_h
 it.png>]
@@ -1389,10 +1389,10 @@ File: Figures/iso_corr_cs_mw23_own_cluster_all_quadrants.png Graphic file (type
  png)
 <use Figures/iso_corr_cs_mw23_own_cluster_all_quadrants.png>
 Package pdftex.def Info: Figures/iso_corr_cs_mw23_own_cluster_all_quadrants.png
-  used on input line 607.
+  used on input line 599.
 (pdftex.def)             Requested size: 443.57016pt x 206.99939pt.
 
-Overfull \hbox (21.87567pt too wide) in paragraph at lines 604--613
+Overfull \hbox (21.87567pt too wide) in paragraph at lines 596--605
 []\T1/cmr/bx/n/12 MWPC2 and MWPC3 with own clus-ter-ing, quad-rant se-lec-tion 
 in MWPC1: 
  []
@@ -1401,7 +1401,7 @@ in MWPC1:
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [67 <./Figures/iso_corr_cs_mw13_own_cluster.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 632--633
+Underfull \hbox (badness 10000) in paragraph at lines 624--625
 
  []
 
@@ -1409,7 +1409,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 632--633
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [68 <./Figures/iso_corr_cs_mw23_own_cluster_all_quadrants.png>]
-Overfull \hbox (50.40031pt too wide) detected at line 652
+Overfull \hbox (50.40031pt too wide) detected at line 644
 [][]\OT1/cmr/m/n/10.95 ^^A\OML/cmm/m/it/10.95 ^^[[] \OT1/cmr/m/n/10.95 = []
  []
 
@@ -1417,7 +1417,7 @@ Overfull \hbox (50.40031pt too wide) detected at line 652
 File: Figures/tot_interaction_cs_geo_corr.png Graphic file (type png)
 <use Figures/tot_interaction_cs_geo_corr.png>
 Package pdftex.def Info: Figures/tot_interaction_cs_geo_corr.png  used on input
- line 660.
+ line 652.
 (pdftex.def)             Requested size: 303.49796pt x 227.62346pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1998,50 +1998,77 @@ Package pdftex.def Info: Figures/mw_coherent_less4.png  used on input line 104.
 (pdftex.def)             Requested size: 199.60895pt x 171.48944pt.
  [116 <./Figures/mw_no_cut.png> <./Figures/mw_coherent.png> <./Figures/mw_coher
 ent_less5.png> <./Figures/mw_coherent_less4.png>]
+<Figures/cccs_with_out_border_3_5_sigma.png, id=2006, 462.528pt x 346.896pt>
+File: Figures/cccs_with_out_border_3_5_sigma.png Graphic file (type png)
+<use Figures/cccs_with_out_border_3_5_sigma.png>
+Package pdftex.def Info: Figures/cccs_with_out_border_3_5_sigma.png  used on in
+put line 120.
+(pdftex.def)             Requested size: 303.49796pt x 227.62346pt.
+<Figures/charge_loss_550_thick.png, id=2009, 1114.1625pt x 933.4875pt>
+File: Figures/charge_loss_550_thick.png Graphic file (type png)
+<use Figures/charge_loss_550_thick.png>
+Package pdftex.def Info: Figures/charge_loss_550_thick.png  used on input line 
+130.
+(pdftex.def)             Requested size: 271.67165pt x 227.61678pt.
+<Figures/cccs_gauss_diag_comp_3_5_sigma.png, id=2011, 462.528pt x 346.896pt>
+File: Figures/cccs_gauss_diag_comp_3_5_sigma.png Graphic file (type png)
+<use Figures/cccs_gauss_diag_comp_3_5_sigma.png>
+Package pdftex.def Info: Figures/cccs_gauss_diag_comp_3_5_sigma.png  used on in
+put line 139.
+(pdftex.def)             Requested size: 303.49796pt x 227.62346pt.
+ [117 <./Figures/cccs_with_out_border_3_5_sigma.png>]
+Overfull \hbox (111.80748pt too wide) has occurred while \output is active
+\T1/cmr/m/n/12 118 \T1/cmr/m/sl/12 D ALTERNATIVE METHODS FOR TWIN MUSIC HIT SEL
+ECTION AND CHARGE ASSIGNMENT
+ []
+
+[118 <./Figures/charge_loss_550_thick.png>] [119 <./Figures/cccs_gauss_diag_com
+p_3_5_sigma.png>]
 File: Figures/charge_changing_cross_sec_twim_eff_corr.png Graphic file (type pn
 g)
 <use Figures/charge_changing_cross_sec_twim_eff_corr.png>
 Package pdftex.def Info: Figures/charge_changing_cross_sec_twim_eff_corr.png  u
-sed on input line 127.
+sed on input line 212.
 (pdftex.def)             Requested size: 341.43124pt x 227.62082pt.
 
 
-LaTeX Warning: Reference `fig:cccs_gaus_diff_sections' on page 117 undefined on
- input line 129.
+LaTeX Warning: Reference `fig:cccs_gaus_diff_sections' on page 120 undefined on
+ input line 214.
 
 
-LaTeX Warning: Reference `fig:cccs_gaus_diff_sections' on page 117 undefined on
- input line 129.
+LaTeX Warning: Reference `fig:cccs_gaus_diff_sections' on page 120 undefined on
+ input line 214.
 
-<Figures/tot_interaction_cs_twim_eff_corr.png, id=2007, 462.528pt x 346.896pt>
+<Figures/tot_interaction_cs_twim_eff_corr.png, id=2034, 462.528pt x 346.896pt>
 File: Figures/tot_interaction_cs_twim_eff_corr.png Graphic file (type png)
 <use Figures/tot_interaction_cs_twim_eff_corr.png>
 Package pdftex.def Info: Figures/tot_interaction_cs_twim_eff_corr.png  used on 
-input line 135.
+input line 220.
 (pdftex.def)             Requested size: 443.59836pt x 332.69878pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Overfull \hbox (116.29779pt too wide) has occurred while \output is active
+\T1/cmr/m/n/12 120 \T1/cmr/m/sl/12 E TWIN MUSIC GEOMETRIC ACCEPTANCE CORRECTION
+ VIA EFFICIENCY MEASUREMENT
+ []
 
-[117]
-<Figures/drawings_flightpath.png, id=2018, 871.255pt x 774.895pt>
+[120
+
+]
+<Figures/drawings_flightpath.png, id=2044, 871.255pt x 774.895pt>
 File: Figures/drawings_flightpath.png Graphic file (type png)
 <use Figures/drawings_flightpath.png>
-Package pdftex.def Info: Figures/drawings_flightpath.png  used on input line 14
-9.
+Package pdftex.def Info: Figures/drawings_flightpath.png  used on input line 23
+4.
 (pdftex.def)             Requested size: 443.57848pt x 394.51726pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
-Underfull \vbox (badness 3396) has occurred while \output is active []
-
- [118]
-[119 <./Figures/tot_interaction_cs_twim_eff_corr.png>]) [120 <./Figures/drawing
-s_flightpath.png>] [121] (./main.bbl [122] [123] [124]
+[121 <./Figures/tot_interaction_cs_twim_eff_corr.png>] [122 <./Figures/drawings
+_flightpath.png>]) [123] [124] (./main.bbl [125] [126] [127]
 Underfull \hbox (badness 1394) in paragraph at lines 211--215
 []\T1/cmr/m/n/12 GSI Helmholtzzen-trum für Schw-e-ri-o-nen-forschung GmbH, ``La
 rge-acceptance
@@ -2053,7 +2080,7 @@ Underfull \hbox (badness 1092) in paragraph at lines 229--233
 he Uni-ver-sität München,
  []
 
-[125]
+[128]
 Underfull \hbox (badness 10000) in paragraph at lines 281--285
 []\T1/cmr/m/n/12 Hamamatsu Pho-ton-ics, ``S8664-1010: Sil-i-con Avalanche Pho-t
 o-di-ode.''
@@ -2065,7 +2092,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 281--285
 tical-[]sensors / apd /
  []
 
-[126]
+[129]
 Underfull \hbox (badness 3579) in paragraph at lines 299--302
 []\T1/cmr/m/n/12 ``Multi Branch Sys-tem (MBS).'' [][]$\T1/cmtt/m/n/12 https : /
  / www . gsi . de / en / work / research /
@@ -2077,13 +2104,13 @@ Underfull \hbox (badness 6300) in paragraph at lines 299--302
 on / mbs$[][]\T1/cmr/m/n/12 .  Ac-
  []
 
-[127] [128] [129]
+[130] [131] [132]
 Underfull \hbox (badness 1275) in paragraph at lines 511--514
 []\T1/cmr/m/n/12 X. Am-a-tri-ain, A. Sankar, J. Bing, P. K. Bod-igutla, T. J. H
 azen, and
  []
 
-[130]) [131] (./main.aux (./Abstract.aux))
+[133]) [134] (./main.aux (./Abstract.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -2094,10 +2121,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 856B0046FA85AE25CB34481367A82499;17387.
  ) 
 Here is how much of TeX's memory you used:
- 20510 strings out of 480121
- 358410 string characters out of 5892160
- 683679 words of memory out of 5000000
- 37534 multiletter control sequences out of 15000+600000
+ 20543 strings out of 480121
+ 359540 string characters out of 5892160
+ 684595 words of memory out of 5000000
+ 37558 multiletter control sequences out of 15000+600000
  500397 words of font info for 107 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  61i,22n,75p,1721b,777s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2147,10 +2174,10 @@ fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on main.pdf (141 pages, 26585721 bytes).
+Output written on main.pdf (144 pages, 26806923 bytes).
 PDF statistics:
- 3266 PDF objects out of 3580 (max. 8388607)
- 1901 compressed objects within 20 object streams
- 515 named destinations out of 1000 (max. 500000)
- 1020 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3293 PDF objects out of 3580 (max. 8388607)
+ 1919 compressed objects within 20 object streams
+ 521 named destinations out of 1000 (max. 500000)
+ 1035 words of extra memory for PDF output out of 10000 (max. 10000000)
 
