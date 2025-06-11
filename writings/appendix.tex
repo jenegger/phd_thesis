@@ -57,17 +57,61 @@ To overcome the issue with potentially wrong x- or y-position reconstruction in 
 {\caption{Restricted event selection for MWPC2 and MWPC3: only events with one single coherent (i.e. without any holes) cluster are accepted.}\label{fig:own_clustering}}
 {\includegraphics[width=7cm]{Figures/own_clustering_mwpcs.png}}
 \end{figure}
-Figure \ref{fig:mw23_own_clustering} shows the distribution of x in MWPC2 and MWPC3 using the own hit-clustering reconstruction. This reconstruction method removes the uncorrelated horizontal line which was observed in figure \ref{fig:x_mw23_default}. However the statistics are reduced by approximately $35\%$\footnote{Number of entries in the 2D plot for default reconstruction method: 533816, for the own hit clustering reconstruction: 346315 for the 400 AMeV run with thick target.}.
+Figure \ref{fig:mw23_own_clustering} shows the distribution of x in MWPC2 and MWPC3 using the coherent clustering reconstruction. This reconstruction method removes the uncorrelated horizontal line which was observed in figure \ref{fig:x_mw23_default}. However the statistics are reduced by approximately $35\%$\footnote{Number of entries in the 2D plot for default reconstruction method: 533816, for the coherent clustering reconstruction: 346315 for the 400 AMeV run with thick target.}.
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/mw23_own_clustering.png}
     \caption{
-   	 Distribution of x in MWPC2 and MWPC3 using the own hit clustering reconstruction. Thick target run, beam energy 400 AMeV. The green line acts as reference line for the isotope separation between $^{12}$C and $^{11}$C/$^{10}$C.
+   	 Distribution of x in MWPC2 and MWPC3 using the coherent clustering reconstruction. Thick target run, beam energy 400 AMeV. The green line acts as reference line for the isotope separation between $^{12}$C and $^{11}$C/$^{10}$C.
      }
     \label{fig:mw23_own_clustering}
 \end{figure}
 
 \section {MWPC0 selection cuts}\label{app:mw0_cuts}
+
+As outlined in Section~\ref{subsec:event-sel}, only events with hits in MWPC0 within a $\pm1\sigma$ around the beam spot center in both the $x$ and $y$ directions were selected, in order to ensure the selection of well-focused incoming particles. The standard \textit{cal-to-hit} procedure was applied to determine the spatial coordinates of the hits.\newline
+For completeness, additional strategies were investigated to suppress misreconstructed positions, which manifest as horizontal and vertical bars in Fig.~\ref{fig:mw0_xy_overview}. These strategies included:
+\begin{itemize}
+    \item a coherent-clustering cut, restricted to events where the MWPCs of interest exhibit only one spatially confined cluster, and
+    \item cuts on the maximum number of reconstructed hits in $x$ and $y$.
+\end{itemize}
+\begin{figure}
+\begin{subfigure}{.45\textwidth}
+  \centering
+  % include first image
+  \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/mw_no_cut.png}
+  \caption{\textit{cal-to-hit} only. Events within $\pm1\sigma$: 901298}
+  \label{fig:sub-first}
+\end{subfigure}
+\begin{subfigure}{.45\textwidth}
+  \centering
+  % include second image
+  \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/mw_coherent.png}
+  \caption{Coherent clustering. Events within $\pm1\sigma$: 716002}
+  \label{fig:sub-second}
+\end{subfigure}
+
+\begin{subfigure}{.45\textwidth}
+  \centering
+  % include third image
+  \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/mw_coherent_less5.png}
+  \caption{Coherent clustering \& less than 5 hits in x \& y. Events within $\pm1\sigma$: 514124}
+  \label{fig:sub-third}
+\end{subfigure}
+\begin{subfigure}{.45\textwidth}
+  \centering
+  % include fourth image
+  \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/mw_coherent_less4.png}
+  \caption{Coherent clustering \& less than 4 hits in x \& y. Events within $\pm1\sigma$\protect\footnotemark: 165144}
+  \label{fig:sub-fourth}
+\end{subfigure}
+\caption{Overview of methods and cuts to clean up x \& y distibution on MWPC0 from misreconstruction.}
+\label{fig:mw0_approaches}
+\end{figure}
+\footnotetext{The ripples in the y-reconstruction reflect the dimension of the readout pads in y-direction}
+The effectiveness of these approaches is illustrated in Fig.~\ref{fig:mw0_approaches}. While both methods,when combined, significantly reduce the number of misreconstructed events and improve the spatial hit distribution, they lead to a substantial loss in statistics of more than 40\% (for coherent clustering \& less than 5 hits in x \& y).\newline
+Since the $\pm1\sigma$ position cuts were already chosen to be sufficiently tight for the analysis, no additional selection criteria were applied for the MWPC0 event selection.
+
 
 \section {Alternative methods for TWIN MUSIC hit selection and charge assignment} \label{app:twin_alternative}
 
