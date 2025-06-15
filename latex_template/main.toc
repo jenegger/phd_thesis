@@ -5,10 +5,10 @@
 \contentsline {subsubsection}{\numberline {1.1.2}Study of the EoS at R3B}{3}{subsubsection.1.1.2}
 \contentsline {section}{\numberline {2}Nuclear Scattering Reactions in the \\ Glauber Framework}{5}{section.2}
 \contentsline {subsection}{\numberline {2.1}Elastic scattering at low energies}{5}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Nuclear Density distribution studies via elastic scattering}{5}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.2}Nuclear Density distribution studies via elastic scattering}{6}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Glauber Model for nuclear scattering at high energies}{6}{subsection.2.3}
-\contentsline {subsubsection}{\numberline {2.3.1}Extensions to the Glauber model}{6}{subsubsection.2.3.1}
-\contentsline {subsection}{\numberline {2.4}Cross sections for $^{12}C + ^{12}C$}{6}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.3.1}Extensions to the Glauber model}{7}{subsubsection.2.3.1}
+\contentsline {subsection}{\numberline {2.4}Cross sections for $^{12}C + ^{12}C$}{7}{subsection.2.4}
 \contentsline {subsection}{\numberline {2.5}Quasi-Free Scattering (QFS) Reactions}{7}{subsection.2.5}
 \contentsline {subsubsection}{\numberline {2.5.1}Kinematics of QFS Reactions}{8}{subsubsection.2.5.1}
 \contentsline {subsubsection}{\numberline {2.5.2}Cross Sections for QFS Reactions - Qualitative Considerations}{13}{subsubsection.2.5.2}
