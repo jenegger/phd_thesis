@@ -625,13 +625,13 @@ For the charge changing cross section the combined  statistical error is:\newlin
 \begin{equation}\label{eq:stat_cc}
 \Delta\sigma_\text{stat.|cc} = \sqrt{\left(\frac{\partial \sigma_{cc}}{\partial N_t} \Delta N_t\right)^2 + \left(\frac{\partial \sigma_{cc}}{\partial P_{surv|cc}} \Delta P_{surv|cc}\right)^2 + \left(\frac{\partial \sigma_{cc}}{\partial P^{E}_{surv|cc}} \Delta P^{E}_{surv|cc})\right)^2}
 \end {equation}
-where $\Delta N_t$ accounts for the uncertainty in the measurement of the target thickness. $P_{surv|cc}$, the surviving probability of having a carbon isotope in the final state, follows a binomial distribution with $N_1$ independent experiments and a boolean valued reaction output (survived vs. non-survived). Therefore $P_{surv|cc}$ follows the standard error of binomial distributed variable:
+where $\Delta N_t$ accounts for the uncertainty in the measurement of the target thickness. $P_{surv|cc}$, the surviving probability of having a carbon isotope in the final state, follows a binomial distribution with $N_1$ independent experiments and a boolean valued reaction output (survived vs. non-survived). The surviving probability $P^{(E)}_{surv|cc}$ is given by the factor $N^{(E)}_2/N^{(E)}_1$ and follows the standard error of a binomial distributed variable:
 \begin{equation}
 \Delta P^{(E)}_{surv|cc} = \sqrt{\frac{P^{(E)}_{surv|cc}\cdot (1-P^{(E)}_{surv|cc})}{N^{(E)}_{1}}}
 \end{equation}
 Inserting in equation \ref{eq:stat_cc} gives:
 \begin{equation}
-\Delta\sigma_\text{stat.|cc} = \sqrt{\left(\frac{\sigma_{cc} \Delta N_t}{N_t}\right)^2 + \frac{1}{N_t^2} \left(\frac{1 - P_{surv|cc}}{P_{surv|cc} N_1} + \frac{1 - P^{(E)}_{surv|cc}}{P^{(E)}_{surv|cc} N_1^E}\right)}
+\Delta\sigma_\text{stat.|cc} = \sqrt{\left(\frac{\sigma_{cc} \Delta N_t}{N_t}\right)^2 + \frac{1}{N_t^2} \left(\frac{1 - P_{surv|cc}}{P_{surv|cc} N_1} + \frac{1 - P^{E}_{surv|cc}}{P^{E}_{surv|cc} N_1^E}\right)}
 \end{equation}
 Similar for the isotopic correction cross section with $P_{surv|iso}$ the ratio of reconstructed $^{12}C$ isotopes to all identified carbon isotopes  in the x-position  correlation plots for MWPC2 and MWPC3: 
 \begin{equation}
