@@ -52,17 +52,16 @@
 \contentsline {subsection}{\numberline {5.5}Reconstruction of excited$ ^{11}$B states}{92}{subsection.5.5}
 \contentsline {subsection}{\numberline {5.6}Fission via Quasi-Free Scattering reaction}{96}{subsection.5.6}
 \contentsline {section}{\numberline {6}Machine Learning for the Cluster Reconstruction in the CALIFA Calorimeter at R$^3$B}{103}{section.6}
-\contentsline {subsection}{\numberline {6.1}Gamma Spectroscopy with the Standard R3B Clustering Algorithm}{104}{subsection.6.1}
-\contentsline {subsubsection}{\numberline {6.1.1}Challenges in Relativistic Gamma Spectroscopy}{104}{subsubsection.6.1.1}
-\contentsline {subsubsection}{\numberline {6.1.2}The Standard R3B Clustering Algorithm}{106}{subsubsection.6.1.2}
-\contentsline {subsection}{\numberline {6.2}Data Simulation and Selection}{106}{subsection.6.2}
-\contentsline {subsubsection}{\numberline {6.2.1}Simulation Setup}{106}{subsubsection.6.2.1}
-\contentsline {subsubsection}{\numberline {6.2.2}Performance Metrics}{108}{subsubsection.6.2.2}
-\contentsline {subsection}{\numberline {6.3}Agglomerative Clustering Model}{108}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Edge Detection Neural Network}{109}{subsection.6.4}
-\contentsline {subsection}{\numberline {6.5}Results}{111}{subsection.6.5}
-\contentsline {subsection}{\numberline {6.6}Discussion and Outlook}{114}{subsection.6.6}
-\contentsline {section}{Appendices}{115}{section*.66}
+\contentsline {subsection}{\numberline {6.1}Challenges in Relativistic Gamma Spectroscopy}{104}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}The Standard R3B Clustering Algorithm}{106}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Data Simulation and Selection}{106}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}Simulation Setup}{106}{subsubsection.6.3.1}
+\contentsline {subsubsection}{\numberline {6.3.2}Performance Metrics}{108}{subsubsection.6.3.2}
+\contentsline {subsection}{\numberline {6.4}Agglomerative Clustering Model}{108}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Edge Detection Neural Network}{109}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}Results}{111}{subsection.6.6}
+\contentsline {subsection}{\numberline {6.7}Discussion and Outlook}{114}{subsection.6.7}
+\contentsline {section}{Appendices}{115}{section*.67}
 \contentsline {section}{\numberline {A}Pileup rejection with R3B MUSIC charge cut}{115}{Appendix.1.A}
 \contentsline {section}{\numberline {B}MWPCs - \textit {cal-to-hit} data processing}{115}{Appendix.1.B}
 \contentsline {subsection}{\numberline {B.1}Coherent clustering}{117}{subsection.1.B.1}
