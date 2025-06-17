@@ -92,7 +92,7 @@ C.~A. Raithel and F.~{\"O}zel, ``{Measurement of the nuclear symmetry energy
 
 \bibitem{reinhard2010information}
 P.-G. Reinhard and W.~Nazarewicz, ``Information content of a new observable:
-  The case of the nuclear neutron skin,'' {\em Physical Review C—Nuclear
+  The case of the nuclear neutron skin,'' {\em Physical Review C-Nuclear
   Physics}, vol.~81, no.~5, p.~051303, 2010.
 
 \bibitem{fearick2023electric}
@@ -115,6 +115,19 @@ T.~Aumann, C.~Bertulani, F.~Schindler, and S.~Typel, ``{Peeling off neutron
   skins from neutron-rich nuclei: constraints on the symmetry energy from
   neutron-removal cross sections},'' {\em Physical Review Letters}, vol.~119,
   no.~26, p.~262501, 2017.
+
+\bibitem{r3b2024measurements}
+R.~Collaboration {\em et~al.}, ``{Measurements of the reaction cross sections
+  of neutron-rich Sn isotopes at the R3B setup},'' {\em Acta Physica Polonica
+  B, Proceedings Supplement}, vol.~17, no.~3, pp.~3--A18, 2024.
+
+\bibitem{gross2013density}
+E.~K. Gross and R.~M. Dreizler, {\em Density functional theory}, vol.~337.
+\newblock Springer Science \& Business Media, 2013.
+
+\bibitem{colo2020nuclear}
+G.~Col{\`o}, ``Nuclear density functional theory,'' {\em Advances in Physics:
+  X}, vol.~5, no.~1, p.~1740061, 2020.
 
 \bibitem{chamberlain1952proton}
 O.~Chamberlain and E.~Segr{\`e}, ``{Proton-proton collisions within lithium
