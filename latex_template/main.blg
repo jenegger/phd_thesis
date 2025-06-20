@@ -22,6 +22,7 @@ Repeated entry---line 576 of file main.bib
  : @article{moniz1971nuclear
  :                          ,
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "agarap2018deep"
 Warning--empty journal in horvat2021evolution
 Warning--empty author in clas2018probing
 Warning--empty journal in hartigevolution
@@ -30,45 +31,45 @@ Warning--empty journal in serrano2013white
 Warning--empty journal in bassani2005encyclopedia
 Warning--empty journal in popescu2021review
 Warning--can't use both volume and number fields in bertini2011r3broot
-You've used 122 entries,
+You've used 121 entries,
             1876 wiz_defined-function locations,
-            1152 strings with 27349 characters,
-and the built_in function-call counts, 33940 in all, are:
-= -- 3210
-> -- 1796
+            1148 strings with 27147 characters,
+and the built_in function-call counts, 33777 in all, are:
+= -- 3192
+> -- 1792
 < -- 0
-+ -- 652
-- -- 530
-* -- 2411
-:= -- 4936
-add.period$ -- 147
-call.type$ -- 122
-change.case$ -- 109
++ -- 650
+- -- 529
+* -- 2404
+:= -- 4912
+add.period$ -- 144
+call.type$ -- 121
+change.case$ -- 108
 chr.to.int$ -- 0
-cite$ -- 130
-duplicate$ -- 1760
-empty$ -- 2870
-format.name$ -- 530
-if$ -- 8240
+cite$ -- 129
+duplicate$ -- 1751
+empty$ -- 2850
+format.name$ -- 529
+if$ -- 8198
 int.to.chr$ -- 0
-int.to.str$ -- 122
-missing$ -- 111
-newline$ -- 397
-num.names$ -- 114
-pop$ -- 388
+int.to.str$ -- 121
+missing$ -- 109
+newline$ -- 392
+num.names$ -- 113
+pop$ -- 384
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1292
+skip$ -- 1291
 stack$ -- 0
 substring$ -- 1616
-swap$ -- 816
+swap$ -- 815
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 8
-while$ -- 281
-width$ -- 125
-write$ -- 1226
+while$ -- 280
+width$ -- 124
+write$ -- 1214
 (There were 4 error messages)
