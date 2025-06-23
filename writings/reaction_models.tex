@@ -1,5 +1,67 @@
 \section{Nuclear Scattering Reactions in the \\ Glauber Framework}\label{sec:reac_model}
-Nuclear scattering reactions are central tools for the investigation of the nature of the structure and dynamics of nuclei since the discovery of the nucleus. In 1911 Rutherford, Geiger and Marsden investigated the nature of gold atoms by bombarding them with alpha particles. By their surprise they noticed that the majority of the alpha particles passed throught the gold foil, but few were scattered at large angles. This observation of backward scattered particles forced Rutherford to revise the Thomson atom model and the development of the Rutherford atom model with the mass and positive charge concentrated in a small volume, the so called nucleus, 10$^5$ smaller than the atom as a whole~\cite{rutherford1911lxxix}.
+Nuclear scattering reactions are central tools for the investigation of the nature of the structure and dynamics of nuclei since the discovery of the nucleus. In 1911 Rutherford, Geiger and Marsden investigated the nature of gold atoms by bombarding them with alpha particles. By their surprise they noticed that the majority of the alpha particles passed throught the gold foil, but few were scattered at large angles. This observation of backward scattered particles forced Rutherford to revise the Thomson atom model and the development of the Rutherford atom model with the mass and positive charge concentrated in a small volume, the so called nucleus, 10$^5$ smaller than the atom as a whole~\cite{rutherford1911lxxix}.\\
+Building upon the fundamental insight gained from Rutherford’s pioneering alpha scattering experiment, nuclear scattering experiments have evolved into indispensable tools for probing nuclear matter across a vast range of energies and momentum transfers. This chapter focuses on high-energy scattering reactions, which provide unique access to the internal nucleonic degrees of freedom and enable the study of nuclear structure on short-distance scales. This is primarily facilitated by the inverse relationship between the de Broglie wavelength ($\lambda$) and the incident particle energy ($E$), such that $\lambda \propto 1/\sqrt{E}$. At high energies, the reduced de Broglie wavelength allows for the spatial resolution of short distances, typically on the order of 0.5--1 fm, revealing details beyond the macroscopic properties of nuclei.\\
+A significant distinction of pure nuclear scattering experiments, in contrast to electron-nucleus scattering, lies in their ability to directly probe the nuclear force. This permits the detailed investigation of short-range correlations (SRCs) between nucleons, which are crucial for understanding the nuclear equation of state.\\
+High-energy nuclear scattering reactions serve a variety of purposes in nuclear and astroparticle physics, including:
+\begin{itemize}
+    \item \textbf{Investigation of Ground State Nuclei:} They provide insights into binding energies, sizes, and shapes of nuclei in their ground states.
+    \item \textbf{Quasi-Free Scattering Regime:} Accessing the quasi-free scattering regime (further detailed in Section \ref{sec:qfs_theo}) which enables mapping of single-particle levels in nuclei.
+    \item \textbf{Inelastic Excitations and Resonances:} These experiments are instrumental in studying inelastic excitations and nuclear resonances, including collective modes of nuclei and the determination of transition form factors.
+    \item \textbf{Connection to Fundamental QCD Degrees of Freedom:} At sufficiently high incident energies, scattering reactions can resolve sub-nucleonic structures, providing a direct link to the fundamental quark and gluon degrees of freedom of Quantum Chromodynamics (QCD).
+\end{itemize}
+
+An comprehensive overview of various nuclear reactions, including scattering reactions, categorized by impact parameter (related to the centrality of the collision, as discussed in the subsequent subsection) and incident energy, is presented in Figure \ref{fig:NuclearReactionsOverview}. In the high-energy regime, typically ranging from several tens of AMeV (MeV per nucleon) up to 1 AGeV, scattering reactions can encompass a wide spectrum of processes. These range from fragmentation and complete disintegration into multiple smaller particles at small impact parameters, offering insights into the highly dense nuclear core, to single nucleon knockout reactions and Coulomb excitations at larger impact parameters, which are more sensitive to the nuclear periphery.\\
+
+ \begin{figure}[htbp]
+     \centering
+     \includegraphics[width=0.8\textwidth]{Figures/overview_nuclear_reactions.png}
+     \caption{Overview of nuclear reactions in terms of impact parameter and incident energy, taken from~\cite{obertelli2021modern}.}
+     \label{fig:NuclearReactionsOverview}
+ \end{figure}
+
+Given the short interaction time characteristic of the high-energy regime, these reactions are often interpreted as singular nuclear interactions and are thus termed "\textit{direct reactions}". Direct reactions encompass several key channels, which can be expressed in short notation (see also Ref.~\cite{obertelli2021modern}):
+\begin{itemize}
+    \item \textbf{Elastic Scattering:} $a + A \rightarrow a + A$, denoted as $A(a, a)A$. In this process, the projectile $a$ scatters off the target nucleus $A$ without any change in their internal states or kinetic energy, apart from that exchanged in the scattering process.
+    \item \textbf{Inelastic Scattering:} $a + A \rightarrow a' + A^*$, denoted as $A(a, a')A^*$. Here, the projectile $a$ excites the target nucleus $A$ to an excited state $A^*$, resulting in a change in the internal energy of the target.
+    \item \textbf{Particle Transfer Reaction:} $a + A \rightarrow b + B$, denoted as $A(a, b)B$. This involves the exchange of nucleons or clusters of nucleons between the projectile and target, leading to new particles $b$ and $B$.
+    \item \textbf{Breakup/Knockout Reaction:} $a + A \rightarrow b + X$, denoted as $A(a, b)X$. In these reactions, one or more nucleons are ejected from the target nucleus, leaving behind a remnant $X$, often accompanied by the projectile $b$.
+\end{itemize}
+
+The accurate interpretation of such high-energy nuclear reactions necessitates a robust theoretical framework capable of addressing complex phenomena such as multiple scattering processes and nuclear transparency effects, particularly when dealing with complex nuclei. The Glauber model, originally formulated in the 1950s, provides an established and widely utilized framework for this purpose.\\
+
+The subsequent subsections will briefly introduce the main concepts and essential ingredients of scattering theory within the Glauber framework. A comprehensive and detailed theoretical derivation of the formalism, while foundational, falls outside the scope of this thesis. For a thorough introduction to these concepts, the reader is referred to the standard lecture by Glauber~\cite{glauber1959lectures} and other standard works~\cite{sitenko1990theory,lilley2013nuclear,bertulani2019introduction,obertelli2021modern}.\\
+
+\subsection{The Glauber model}\label{sec:glauber}
+The Glauber Model is a theoretical framework widely employed in high-energy nuclear and particle physics to describe elastic and inelastic scattering processes involving composite targets, such as nuclei. Originally formulated by Roy J.~Glauber, the model provides a quantum-mechanical description of multiple scattering in high-energy collisions and is particularly applicable in the regime where the de Broglie wavelength of the projectile is much smaller than the size of the target.\\
+
+The most general implementations of the Glauber Model incorporate the following key components:
+\begin{itemize}
+    \item \textbf{Eikonal Approximation:} In the high-energy limit, the projectile is assumed to traverse the target along a straight-line trajectory, experiencing only small-angle deflections. This simplifies the scattering problem by reducing it to a phase-shift analysis of the incident wavefunction. A formal introduction to the eikonal approximation is provided in Subsection~\ref{sec:eol}.
+    
+    \item \textbf{Multiple Scattering Formalism:} The total scattering amplitude is constructed by summing over all possible interactions between the projectile and individual nucleons within the target. This requires integration over the spatial distributions of all participating nucleons, which becomes computationally intensive for large systems. To address this, additional simplifications are introduced, leading to the so-called \textit{optical-limit approximation}, discussed in Subsection~\ref{sec:eol}.
+    
+    \item \textbf{Impact Parameter Formalism:} The cross-section is expressed as an integral over the transverse distance (impact parameter) between the centers of the projectile and the target, see Fig.~\ref{fig:impact_par_glauber}. This semiclassical treatment enables a geometric interpretation of the interaction and supports a probabilistic description of scattering.
+\end{itemize}
+ \begin{figure}[htbp]
+     \centering
+     \includegraphics[width=0.8\textwidth]{Figures/impact_par_glauber.pdf}
+     \caption{Impact par.}
+     \label{fig:impact_par_glauber}
+ \end{figure}
+
+Two principal approaches are commonly used to derive cross-sections within the Glauber framework:
+
+\begin{enumerate}
+    \item \textbf{Probability Approach (PA):} In this semiclassical method, nucleon-nucleon interactions are treated as independent binary collisions. All combinatorial configurations of these interactions are considered, and the total reaction cross-section is obtained by integrating over all possible impact parameters (see Figure~\ref{fig:impact_par_glauber}). In this picture, nucleons are often approximated as "\textit{billiard balls}"~\cite{bertulani2019introduction}. The \textit{abrasion-ablation model}~\cite{hufner1975abrasion}, which can be extended to incorporate isospin-dependent nucleon-nucleon cross-sections, is a widely used application of the probability approach, for instance in \textsc{Geant4} simulations~\cite{agostinelli2003geant4}. A comprehensive overview of the PA is provided in~\cite{schindler2017total}, with a detailed derivation available in~\cite{bertulani2019introduction}.
+
+    \item \textbf{Eikonal Optical Limit (EOL):} The present work focuses on the quantum-mechanical formulation known as the EOL approach. It is based on the time-independent Schrödinger equation, incorporating the eikonal wave approximation and the introduction of a complex optical potential. This results in a compact and analytically tractable expression for the scattering amplitude, making it particularly suitable for high-energy collisions involving extended targets.
+\end{enumerate}
+
+\subsection{Eikonal optical-limit approximation (EOL)}\label{sec:eol}
+
+
+
+
 Explain path to go:
 \begin{itemize}
 \item short intro why we use scattering reactions: to study structure of nuclei (mostly via e. scattering as they only interact via electromagn. force) and refer to chapter. Introduce problems qe account body problem etc

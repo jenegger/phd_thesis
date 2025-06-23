@@ -129,6 +129,48 @@ E.~K. Gross and R.~M. Dreizler, {\em Density functional theory}, vol.~337.
 G.~Col{\`o}, ``Nuclear density functional theory,'' {\em Advances in Physics:
   X}, vol.~5, no.~1, p.~1740061, 2020.
 
+\bibitem{rutherford1911lxxix}
+E.~Rutherford, ``{LXXIX. The scattering of $\alpha$ and $\beta$ particles by
+  matter and the structure of the atom},'' {\em The London, Edinburgh, and
+  Dublin Philosophical Magazine and Journal of Science}, vol.~21, no.~125,
+  pp.~669--688, 1911.
+
+\bibitem{obertelli2021modern}
+A.~Obertelli and H.~Sagawa, {\em Modern nuclear physics}.
+\newblock Springer, 2021.
+
+\bibitem{glauber1959lectures}
+R.~Glauber {\em et~al.}, ``Lectures in theoretical physics,'' 1959.
+
+\bibitem{sitenko1990theory}
+A.~Sitenko, ``Theory of nuclear reactions,''
+
+\bibitem{lilley2013nuclear}
+J.~Lilley, {\em Nuclear physics: principles and applications}.
+\newblock John Wiley \& Sons, 2013.
+
+\bibitem{bertulani2019introduction}
+C.~A. Bertulani and P.~Danielewicz, {\em Introduction to nuclear reactions}.
+\newblock CRC Press, 2019.
+
+\bibitem{hufner1975abrasion}
+J.~H{\"u}fner, K.~Sch{\"a}fer, and B.~Sch{\"u}rmann, ``Abrasion-ablation in
+  reactions between relativistic heavy ions,'' {\em Physical Review C},
+  vol.~12, no.~6, p.~1888, 1975.
+
+\bibitem{agostinelli2003geant4}
+S.~Agostinelli, J.~Allison, K.~a. Amako, J.~Apostolakis, H.~Araujo, P.~Arce,
+  M.~Asai, D.~Axen, S.~Banerjee, G.~Barrand, {\em et~al.}, ``{GEANT4—a
+  simulation toolkit},'' {\em Nuclear instruments and methods in physics
+  research section A: Accelerators, Spectrometers, Detectors and Associated
+  Equipment}, vol.~506, no.~3, pp.~250--303, 2003.
+
+\bibitem{schindler2017total}
+F.~Schindler, {\em Total reaction, charge-changing, and neutron-removal cross
+  sections of the heavy, neutron-rich nuclei 124Sn, 128Sn, 132Sn, and 134Sn
+  measured with large acceptance at R3B}.
+\newblock PhD thesis, Technische Universit{\"a}t Darmstadt, 2017.
+
 \bibitem{chamberlain1952proton}
 O.~Chamberlain and E.~Segr{\`e}, ``{Proton-proton collisions within lithium
   nuclei},'' {\em Physical Review}, vol.~87, no.~1, p.~81, 1952.
@@ -541,13 +583,6 @@ M.~Lipi{\'n}ski, T.~W{\l}ostowski, J.~Serrano, and P.~Alvarez, ``{White rabbit:
 D.~Bertini, ``{R3BRoot, simulation and analysis framework for the R3B
   experiment at FAIR},'' in {\em Journal of Physics: Conference Series},
   vol.~331, p.~032036, IOP Publishing, 2011.
-
-\bibitem{agostinelli2003geant4}
-S.~Agostinelli, J.~Allison, K.~a. Amako, J.~Apostolakis, H.~Araujo, P.~Arce,
-  M.~Asai, D.~Axen, S.~Banerjee, G.~Barrand, {\em et~al.}, ``{GEANT4—a
-  simulation toolkit},'' {\em Nuclear instruments and methods in physics
-  research section A: Accelerators, Spectrometers, Detectors and Associated
-  Equipment}, vol.~506, no.~3, pp.~250--303, 2003.
 
 \bibitem{Nielsen2016}
 F.~Nielsen, {\em {Hierarchical Clustering}}, pp.~195--211.

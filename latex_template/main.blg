@@ -1,5 +1,5 @@
-This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: Abstract.aux
 The style file: ieeetr.bst
@@ -22,8 +22,19 @@ Repeated entry---line 576 of file main.bib
  : @article{moniz1971nuclear
  :                          ,
 I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1140 of file main.bib
+ :   author={Sitenko, Alekse{\u\i}} 
+ :                                  Grigorʹevich},
+I'm skipping whatever remains of this entry
+Repeated entry---line 1166 of file main.bib
+ : @article{agostinelli2003geant4
+ :                               ,
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "agarap2018deep"
 Warning--empty journal in horvat2021evolution
+Warning--empty journal in glauber1959lectures
+Warning--empty journal in sitenko1990theory
+Warning--empty year in sitenko1990theory
 Warning--empty author in clas2018probing
 Warning--empty journal in hartigevolution
 Warning--empty year in hartigevolution
@@ -31,45 +42,45 @@ Warning--empty journal in serrano2013white
 Warning--empty journal in bassani2005encyclopedia
 Warning--empty journal in popescu2021review
 Warning--can't use both volume and number fields in bertini2011r3broot
-You've used 121 entries,
+You've used 129 entries,
             1876 wiz_defined-function locations,
-            1148 strings with 27147 characters,
-and the built_in function-call counts, 33777 in all, are:
-= -- 3192
-> -- 1792
+            1182 strings with 28158 characters,
+and the built_in function-call counts, 35230 in all, are:
+= -- 3334
+> -- 1843
 < -- 0
-+ -- 650
-- -- 529
-* -- 2404
-:= -- 4912
-add.period$ -- 144
-call.type$ -- 121
-change.case$ -- 108
++ -- 671
+- -- 542
+* -- 2484
+:= -- 5124
+add.period$ -- 155
+call.type$ -- 129
+change.case$ -- 112
 chr.to.int$ -- 0
-cite$ -- 129
-duplicate$ -- 1751
-empty$ -- 2850
-format.name$ -- 529
-if$ -- 8198
+cite$ -- 140
+duplicate$ -- 1837
+empty$ -- 3007
+format.name$ -- 542
+if$ -- 8557
 int.to.chr$ -- 0
-int.to.str$ -- 121
-missing$ -- 109
-newline$ -- 392
-num.names$ -- 113
-pop$ -- 384
+int.to.str$ -- 129
+missing$ -- 119
+newline$ -- 420
+num.names$ -- 121
+pop$ -- 420
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1291
+skip$ -- 1329
 stack$ -- 0
-substring$ -- 1616
-swap$ -- 815
+substring$ -- 1656
+swap$ -- 837
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 8
-while$ -- 280
-width$ -- 124
-write$ -- 1214
-(There were 4 error messages)
+warning$ -- 11
+while$ -- 292
+width$ -- 132
+write$ -- 1286
+(There were 6 error messages)
