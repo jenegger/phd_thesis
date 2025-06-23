@@ -29,6 +29,47 @@ Given the short interaction time characteristic of the high-energy regime, these
 
 The accurate interpretation of such high-energy nuclear reactions necessitates a robust theoretical framework capable of addressing complex phenomena such as multiple scattering processes and nuclear transparency effects, particularly when dealing with complex nuclei. The Glauber model, originally formulated in the 1950s, provides an established and widely utilized framework for this purpose.\\
 
+Before introducing the fundamental concepts of scattering theory within the Glauber framework, the key integrated cross sections relevant to this work are briefly defined:
+
+\begin{itemize}
+    \item \boldmath$\sigma_{\mathrm{el}}$\unboldmath{} -- \textit{Total elastic cross section}: The projectile remains in its ground state, and no nucleon is removed.
+    
+    \item \boldmath$\sigma_{\mathrm{inel}}$\unboldmath{} -- \textit{Total inelastic cross section (bound excitations)}: The projectile is excited to a bound state without nucleon removal.
+    
+    \item \boldmath$\sigma_{\mathrm{I}}$\unboldmath{} -- \textit{Total interaction cross section}: The projectile undergoes a transformation involving the removal of at least one nucleon.
+\end{itemize}
+
+Two additional composite cross sections are defined:
+
+\begin{align}
+    \sigma_{\mathrm{R}} &= \sigma_{\mathrm{inel}} + \sigma_{\mathrm{I}} \quad \text{(Total reaction cross section)} \\
+    \sigma_{\mathrm{T}} &= \sigma_{\mathrm{el}} + \sigma_{\mathrm{R}} = \sigma_{\mathrm{el}} + \sigma_{\mathrm{inel}} + \sigma_{\mathrm{I}} \quad \text{(Total cross section)}
+\end{align}
+
+At high beam energies ($E_{\mathrm{beam}} > 200$~AMeV), the contribution from inelastic nucleon-nucleon reaction channels is small. This allows the approximation:
+\begin{equation}
+    \sigma_{\mathrm{R}} \approx \sigma_{\mathrm{I}}.
+\end{equation}
+
+The interaction cross section $\sigma_{\mathrm{I}}$ can be further decomposed according to the type of nucleon removed:
+
+\begin{align}
+    \sigma_{\mathrm{I}} &= \sigma_{\Delta Z} + \sigma_{\Delta N}, 
+\end{align}
+
+where:
+
+\begin{itemize}
+    \item \boldmath$\sigma_{\Delta Z}$\unboldmath{} -- \textit{Total charge-changing cross section}: At least one proton is removed from the projectile, such that $Z_i \neq Z_f$.
+    
+    \item \boldmath$\sigma_{\Delta N}$\unboldmath{} -- \textit{Total neutron-removal cross section}: At least one neutron is removed while the charge remains unchanged ($N_i \neq N_f$, $Z_i = Z_f$).
+\end{itemize}
+
+Here, the indices $i$ and $f$ denote the initial and final states of the projectile, respectively.\\
+
+Further details on the experimental determination of these cross sections are provided in Section~\ref{section:transmission_method}.\\
+
+
 The subsequent subsections will briefly introduce the main concepts and essential ingredients of scattering theory within the Glauber framework. A comprehensive and detailed theoretical derivation of the formalism, while foundational, falls outside the scope of this thesis. For a thorough introduction to these concepts, the reader is referred to the standard lecture by Glauber~\cite{glauber1959lectures} and other standard works~\cite{sitenko1990theory,lilley2013nuclear,bertulani2019introduction,obertelli2021modern}.\\
 
 \subsection{The Glauber model}\label{sec:glauber}
@@ -44,8 +85,8 @@ The most general implementations of the Glauber Model incorporate the following 
 \end{itemize}
  \begin{figure}[htbp]
      \centering
-     \includegraphics[width=0.8\textwidth]{Figures/impact_par_glauber.pdf}
-     \caption{Impact par.}
+     \includegraphics[width=0.8\textwidth]{Figures/impact_parameter.pdf}
+     \caption{Collision of nucleus A with nucleus B at an impact parameter b. Both probability approach (PA) and  eikonal optical-limit approach (EOL) it is assumed that both nuclei transverse on straight lines. The relative distance between the nucleons to scatter is given by b - $\text{b}_{\text{A}}$ + $\text{b}_{\text{B}}$}.
      \label{fig:impact_par_glauber}
  \end{figure}
 
@@ -54,7 +95,7 @@ Two principal approaches are commonly used to derive cross-sections within the G
 \begin{enumerate}
     \item \textbf{Probability Approach (PA):} In this semiclassical method, nucleon-nucleon interactions are treated as independent binary collisions. All combinatorial configurations of these interactions are considered, and the total reaction cross-section is obtained by integrating over all possible impact parameters (see Figure~\ref{fig:impact_par_glauber}). In this picture, nucleons are often approximated as "\textit{billiard balls}"~\cite{bertulani2019introduction}. The \textit{abrasion-ablation model}~\cite{hufner1975abrasion}, which can be extended to incorporate isospin-dependent nucleon-nucleon cross-sections, is a widely used application of the probability approach, for instance in \textsc{Geant4} simulations~\cite{agostinelli2003geant4}. A comprehensive overview of the PA is provided in~\cite{schindler2017total}, with a detailed derivation available in~\cite{bertulani2019introduction}.
 
-    \item \textbf{Eikonal Optical Limit (EOL):} The present work focuses on the quantum-mechanical formulation known as the EOL approach. It is based on the time-independent Schrödinger equation, incorporating the eikonal wave approximation and the introduction of a complex optical potential. This results in a compact and analytically tractable expression for the scattering amplitude, making it particularly suitable for high-energy collisions involving extended targets.
+    \item \textbf{Eikonal Optical Limit (EOL):} The present work focuses on the quantum-mechanical formulation known as the EOL approach. It is based on the time-independent Schr\"odinger equation, incorporating the eikonal wave approximation and the introduction of a complex optical potential. This results in a compact and analytically tractable expression for the scattering amplitude, making it particularly suitable for high-energy collisions involving extended targets.
 \end{enumerate}
 
 \subsection{Eikonal optical-limit approximation (EOL)}\label{sec:eol}
@@ -62,54 +103,55 @@ Two principal approaches are commonly used to derive cross-sections within the G
 
 
 
-Explain path to go:
-\begin{itemize}
-\item short intro why we use scattering reactions: to study structure of nuclei (mostly via e. scattering as they only interact via electromagn. force) and refer to chapter. Introduce problems qe account body problem etc
-\item starting from elastic scattering at low energies going to medium to high energies
-\item explain glauber: eikonal wave approximations, optical limit which leads to optical potential model, description via nucleon nucleon interaction
-\end{itemize}
-\subsection{Elastic scattering at low energies}
-\begin{itemize}
-\item Rutherford scattering,poiniering works (alpha particle on gold atoms),description in classical mechanics
-\item Rutherford scattering only valid if coulomb potential
-\item at low energies below pion production only elastic cross section
-\item introduce here the Scattering problem in quantum mechanics (see Schindler, p. 23)
-\item from classical physics we go to quantum mechanics and use partial wave decomposition with theta being the scattering angle
-\item include in this picture coulomb and nuclear interaction (as done in Kuk, page 120)
-\end{itemize}
-\subsection{Nuclear Density distribution studies via elastic scattering}
-\begin{itemize}
-\item Rutherford, Mott and Rosenbluth
-\item  show something about form Factors
-\item  are charge radii and nuclear radii measured?
-\item note approximation for $^{12}C$ that neutron radius same as proton radius
-\end{itemize}
-\subsection{Glauber Model for nuclear scattering at high energies}
-\begin{itemize}
-\item explain model assumption
-\item eikonal wave approximation: high incoming momentum,low scattering angle
-\item Show picture of scattering
-\item optical limit: - Nucleons at high energy → undeflected due to large momentum (linear trajectory)
-		   -Nucleus large compared to nucleon-nucleon  force
-		   -Motion of nucleons independent of nucleus
-		   -overall cross-section described in terms of nucleon-nucleon cross section
-\item Description in the Probability Approach (also here I use all the eiconal and optical limit approximation)
-\item Description in the Eikonal optical-limit approximation
-\item Comparison of both descriptions methods  for total interaction cross section,should end up with same. Advantage of PA is that you can calculate the cross section for a defined number of removed projectile nucleons (Schindler, p. 49)
-\end{itemize}
-\subsubsection{Extensions to the Glauber model}
-\begin{itemize}
-\item things which cannot be neglected and influence the cross section
-\item in medium modifications (see Lukas thesis)
-\item Coulomb interaction
-\item Pauli blocking
-\end{itemize}
-\subsection{Cross sections for $^{12}C + ^{12}C$}
-\begin{itemize}
-\item Total reaction cross section
-\item charge changing cross section;maybe I have to include lise++ calculations
-\item isotope corrections- neutron removal; maybe I have to include lise++ calculations
-\end{itemize}
+
+%Explain path to go:
+%\begin{itemize}
+%\item short intro why we use scattering reactions: to study structure of nuclei (mostly via e. scattering as they only interact via electromagn. force) and refer to chapter. Introduce problems qe account body problem etc
+%\item starting from elastic scattering at low energies going to medium to high energies
+%\item explain glauber: eikonal wave approximations, optical limit which leads to optical potential model, description via nucleon nucleon interaction
+%\end{itemize}
+%\subsection{Elastic scattering at low energies}
+%\begin{itemize}
+%\item Rutherford scattering,poiniering works (alpha particle on gold atoms),description in classical mechanics
+%\item Rutherford scattering only valid if coulomb potential
+%\item at low energies below pion production only elastic cross section
+%\item introduce here the Scattering problem in quantum mechanics (see Schindler, p. 23)
+%\item from classical physics we go to quantum mechanics and use partial wave decomposition with theta being the scattering angle
+%\item include in this picture coulomb and nuclear interaction (as done in Kuk, page 120)
+%\end{itemize}
+%\subsection{Nuclear Density distribution studies via elastic scattering}
+%\begin{itemize}
+%\item Rutherford, Mott and Rosenbluth
+%\item  show something about form Factors
+%\item  are charge radii and nuclear radii measured?
+%\item note approximation for $^{12}C$ that neutron radius same as proton radius
+%\end{itemize}
+%\subsection{Glauber Model for nuclear scattering at high energies}
+%\begin{itemize}
+%\item explain model assumption
+%\item eikonal wave approximation: high incoming momentum,low scattering angle
+%\item Show picture of scattering
+%\item optical limit: - Nucleons at high energy → undeflected due to large momentum (linear trajectory)
+%		   -Nucleus large compared to nucleon-nucleon  force
+%		   -Motion of nucleons independent of nucleus
+%		   -overall cross-section described in terms of nucleon-nucleon cross section
+%\item Description in the Probability Approach (also here I use all the eiconal and optical limit approximation)
+%\item Description in the Eikonal optical-limit approximation
+%\item Comparison of both descriptions methods  for total interaction cross section,should end up with same. Advantage of PA is that you can calculate the cross section for a defined number of removed projectile nucleons (Schindler, p. 49)
+%\end{itemize}
+%\subsubsection{Extensions to the Glauber model}
+%\begin{itemize}
+%\item things which cannot be neglected and influence the cross section
+%\item in medium modifications (see Lukas thesis)
+%\item Coulomb interaction
+%\item Pauli blocking
+%\end{itemize}
+%\subsection{Cross sections for $^{12}C + ^{12}C$}
+%\begin{itemize}
+%\item Total reaction cross section
+%\item charge changing cross section;maybe I have to include lise++ calculations
+%\item isotope corrections- neutron removal; maybe I have to include lise++ calculations
+%\end{itemize}
 
 \subsection{Quasi-Free Scattering (QFS) Reactions}\label{sec:qfs_theo}
 Quasi-free scattering (QFS) reactions, as a subset of direct reactions, are processes where a projectile nucleon interacts with a target nucleon via the strong nuclear force in a single and fast localized event at large momentum transfer which allows for a highly localized vertex. The relative kinetic energies of the participants, typically in the order of  $E_{kin}\gtrsim$ 100 AMeV, are high\footnote{Which is needed for the single nucleon-nucleon interaction.The \textit{de Broglie wavelength} of a 100 MeV proton corresponds to $\lambda \approx 2.79fm$ which is in the order of the proton diameter ($\approx 1.6 fm$)}.\newline
