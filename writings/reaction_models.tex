@@ -100,8 +100,34 @@ Two principal approaches are commonly used to derive cross-sections within the G
 
 \subsection{Eikonal optical-limit approximation (EOL)}\label{sec:eol}
 
+For the introduction to this discussion is the elastic scattering process where neither the projectile nor the target gets excited or nucleons get knocked out. A good description of the elasitc scattering process allows us to later derive the reaction and the total cross section.\\
+Starting point is the quantum mechanical view from the time-independent Schr\"odinger equation, so a stationary treatment of the elastic scattering process:
+\begin{equation}\label{eq:schroedinger}
+H\psi_{\vec{k}}(\vec{r}) = E\psi_{\vec{k}}(\vec{r}),
+\end{equation}
+given the Hamiltonian:
+\begin{equation}
+H = -\frac{\hbar^2}{2\mu} \vec{\nabla}^2 + V(\vec{r}).
+\end{equation}
+
+The central goal is to find the wavefunction $\psi_{\vec{k}}(\vec{r})$ that fulfills equation~\ref{eq:schroedinger}  which consists of the sum of the incoming plane wave and the outgoing spherical wave, i.e.:
+\begin{equation}
+\psi_{\vec{k}}(\vec{r}) = A [e^{ikr} + f(\theta) \frac{e^{ikr}}{r}]
+\end{equation}
+The factor $f(\theta)$ in front of the outgoing sperical wave is called scattering amplitude. Assuming a spherical central potential the scattering amplitude depends on the polar angle $\theta$ only, the azimuthal angle $\varphi$ does not have to be considered. 
+The integral representation of the Schr\"odinger equation with the implementation of Green’s operator G(E) is given by:
 
 
+And following the derivation in Section 3.3 of Ref.~\cite{bertulani2019introduction} leads to following solution of the wavefunction:
+\begin{equation}
+\psi^-_k(\vec{r}) = \frac{1}{(2\pi)^{3/2}} \left[ e^{i\vec{k}\cdot \vec{r}} + \frac{e^{ikr}}{r} \left( -2\pi^2 \frac{2\mu}{\hbar^2} \right) \langle \varphi_{\vec{k}'} | V(\vec{r}) | \psi_{\vec{k}} \rangle \right] 
+\end{equation}
+
+which gives for the scattering amplitude $f(\theta)$:
+\begin{equation}
+f(\theta) = -2\pi^2 \left( \frac{2\mu}{\hbar^2} \right) \langle \varphi_{\vec{k}'} | V(\vec{r}) | \psi_{\vec{k}} \rangle 
+ = -2\pi^2 \left( \frac{2\mu}{\hbar^2} \right) \int \varphi_{\vec{k}'}^*(\vec{r}) V(\vec{r}) \psi_{\vec{k}}(\vec{r}) d\vec{r}
+\end{equation}
 
 
 %Explain path to go:
