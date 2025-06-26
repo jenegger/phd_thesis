@@ -110,14 +110,15 @@ given the Hamiltonian:
 H = -\frac{\hbar^2}{2\mu} \vec{\nabla}^2 + V(\vec{r}).
 \end{equation}
 
-The central goal is to find the wavefunction $\psi_{\vec{k}}(\vec{r})$ that fulfills equation~\ref{eq:schroedinger}  which consists of the sum of the incoming plane wave and the outgoing spherical wave, i.e.:
+The central goal is to find the wavefunction $\psi_{\vec{k}}(\vec{r})$ that fulfills equation~\ref{eq:schroedinger}  which consists of the sum of the incoming plane wave $\varphi_{\vec{k}}(\vec{r})$ and the outgoing spherical wave $\psi_{\vec{k}}(\vec{r})$, i.e.:
 \begin{equation}
-\psi_{\vec{k}}(\vec{r}) = A [e^{ikr} + f(\theta) \frac{e^{ikr}}{r}]
+\psi_{\vec{k}}(\vec{r}) = A [e^{ikr} + f(\theta) \frac{e^{ikr}}{r}] \equiv \varphi_{\vec{k}}(\vec{r}) + \psi_{\vec{k}}(\vec{r})
 \end{equation}
 The factor $f(\theta)$ in front of the outgoing sperical wave is called scattering amplitude. Assuming a spherical central potential the scattering amplitude depends on the polar angle $\theta$ only, the azimuthal angle $\varphi$ does not have to be considered. 
 The integral representation of the Schr\"odinger equation with the implementation of Green’s operator G(E) is given by:
-
-
+$$
+\left| \psi_{\vec{k}} \right\rangle = \left| \phi_{\vec{k}} \right\rangle + G_0(E)V(\vec{r}) \left| \phi_{\vec{k}} \right\rangle 
+$$
 And following the derivation in Section 3.3 of Ref.~\cite{bertulani2019introduction} leads to following solution of the wavefunction:
 \begin{equation}
 \psi^-_k(\vec{r}) = \frac{1}{(2\pi)^{3/2}} \left[ e^{i\vec{k}\cdot \vec{r}} + \frac{e^{ikr}}{r} \left( -2\pi^2 \frac{2\mu}{\hbar^2} \right) \langle \varphi_{\vec{k}'} | V(\vec{r}) | \psi_{\vec{k}} \rangle \right] 
@@ -125,10 +126,13 @@ And following the derivation in Section 3.3 of Ref.~\cite{bertulani2019introduct
 
 which gives for the scattering amplitude $f(\theta)$:
 \begin{equation}
-f(\theta) = -2\pi^2 \left( \frac{2\mu}{\hbar^2} \right) \langle \varphi_{\vec{k}'} | V(\vec{r}) | \psi_{\vec{k}} \rangle 
- = -2\pi^2 \left( \frac{2\mu}{\hbar^2} \right) \int \varphi_{\vec{k}'}^*(\vec{r}) V(\vec{r}) \psi_{\vec{k}}(\vec{r}) d\vec{r}
+\begin{split}
+f(\theta) & = -2\pi^2 \left( \frac{2\mu}{\hbar^2} \right) \langle \varphi_{\vec{k}'} | V(\vec{r}) | \psi_{\vec{k}} \rangle \\
+ & = -2\pi^2 \left( \frac{2\mu}{\hbar^2} \right) \int \varphi_{\vec{k}'}^*(\vec{r}) V(\vec{r}) \psi_{\vec{k}}(\vec{r}) d\vec{r}
+\end{split}
 \end{equation}
 
+with  $\psi_{\vec{k}}$ 
 
 %Explain path to go:
 %\begin{itemize}
