@@ -79,9 +79,9 @@ The most general implementations of the Glauber Model incorporate the following 
 \begin{itemize}
     \item \textbf{Eikonal Approximation:} In the high-energy limit, the projectile is assumed to traverse the target along a straight-line trajectory, experiencing only small-angle deflections. This simplifies the scattering problem by reducing it to a phase-shift analysis of the incident wavefunction. A formal introduction to the eikonal approximation is provided in Subsection~\ref{sec:eol}.
     
-    \item \textbf{Multiple Scattering Formalism:} The total scattering amplitude is constructed by summing over all possible interactions between the projectile and individual nucleons within the target. This requires integration over the spatial distributions of all participating nucleons, which becomes computationally intensive for large systems. To address this, additional simplifications are introduced, leading to the so-called \textit{optical-limit approximation}, discussed in Subsection~\ref{sec:eol}.
+    \item \textbf{Multiple Scattering Formalism:} The total scattering amplitude is constructed by summing over all possible interactions between the projectile and the individual nucleons of the target. This involves integrating over the spatial distributions of the nucleons, which becomes computationally demanding for large nuclei. To address this, further simplifications are applied, leading to the so-called \textit{optical-limit approximation}, discussed in Subsection~\ref{sec:eol}.
     
-    \item \textbf{Impact Parameter Formalism:} The cross-section is expressed as an integral over the transverse distance (impact parameter) between the centers of the projectile and the target, see Fig.~\ref{fig:impact_par_glauber}. This semiclassical treatment enables a geometric interpretation of the interaction and supports a probabilistic description of scattering.
+    \item \textbf{Impact Parameter Formalism:} The scattering cross-section is expressed as an integral over the transverse distance (impact parameter) between the centers of the projectile and the target nucleus (see Fig.~\ref{fig:impact_par_glauber}). This semi-classical treatment enables a geometric interpretation of the scattering process and facilitates a probabilistic formulation of nuclear interactions.
 \end{itemize}
  \begin{figure}[htbp]
      \centering
@@ -100,7 +100,7 @@ Two principal approaches are commonly used to derive cross-sections within the G
 
 \subsection{Eikonal optical-limit approximation (EOL)}\label{sec:eol}
 
-For the introduction to this discussion is the elastic scattering process where neither the projectile nor the target gets excited or nucleons get knocked out. A good description of the elasitc scattering process allows us to later derive the reaction and the total cross section.\\
+For the introduction to this discussion is the elastic scattering process where neither the projectile nor the target gets excited or nucleons get knocked out. A good description of the elastic scattering process allows us to later derive the reaction and the total cross section.\\
 Starting point is the quantum mechanical view from the time-independent Schr\"odinger equation, so a stationary treatment of the elastic scattering process:
 \begin{equation}\label{eq:schroedinger}
 H\psi_{\vec{k}}(\vec{r}) = E\psi_{\vec{k}}(\vec{r}),
@@ -109,13 +109,13 @@ given the Hamiltonian:
 \begin{equation}
 H = -\frac{\hbar^2}{2\mu} \vec{\nabla}^2 + V(\vec{r}).
 \end{equation}
-
-The central goal is to find the wavefunction $\psi_{\vec{k}}(\vec{r})$ that fulfills equation~\ref{eq:schroedinger}  which consists of the sum of the incoming plane wave $\varphi_{\vec{k}}(\vec{r})$ and the outgoing spherical wave $\psi_{\vec{k}}(\vec{r})$, i.e.:
-\begin{equation}
-\psi_{\vec{k}}(\vec{r}) = A [e^{ikr} + f(\theta) \frac{e^{ikr}}{r}] \equiv \varphi_{\vec{k}}(\vec{r}) + \psi_{\vec{k}}(\vec{r})
+where $\mu = \frac{m_T \cdot m_P}{m_T+m_P}$ is the  reduced mass of the system, composed of the target nucleus with mass $m_T$ and the projectile with mass $m_P$ .
+The objective is to determine  the wavefunction $\psi_{\vec{k}}(\vec{r})$ that satisfies equation~\ref{eq:schroedinger}. This wavefunction consists of the sum of the incoming plane wave $\psi_{\vec{k}}(\vec{r})$ and the outgoing spherical wave $\varphi_{\vec{k}}(\vec{r})$, i.e.:
+\begin{equation}\label{eq:tot_wave}
+\psi_{\vec{k}}(\vec{r}) = A [e^{ikr} + f(\theta) \frac{e^{ikr}}{r}] \equiv  \psi_{\vec{k}}(\vec{r}) + \varphi_{\vec{k}}(\vec{r})
 \end{equation}
 The factor $f(\theta)$ in front of the outgoing sperical wave is called scattering amplitude. Assuming a spherical central potential the scattering amplitude depends on the polar angle $\theta$ only, the azimuthal angle $\varphi$ does not have to be considered. 
-The integral representation of the Schr\"odinger equation with the implementation of Green’s operator G(E) is given by:
+The integral representation of the Schr\"odinger equation with the implementation of Green's operator G(E) is given by:
 $$
 \left| \psi_{\vec{k}} \right\rangle = \left| \phi_{\vec{k}} \right\rangle + G_0(E)V(\vec{r}) \left| \phi_{\vec{k}} \right\rangle 
 $$
@@ -132,7 +132,74 @@ f(\theta) & = -2\pi^2 \left( \frac{2\mu}{\hbar^2} \right) \langle \varphi_{\vec{
 \end{split}
 \end{equation}
 
-with  $\psi_{\vec{k}}$ 
+with  $\psi_{\vec{k}}$ the incoming wave and $\varphi_{\vec{k}'}$ the outgoing spherical wave accordingly, as in equation~\ref{eq:tot_wave}.\\
+The (differential) elastic scattering cross-section can be derived from the scattering amplitude $f(\theta)$ via conservation law of particle current\footnote{A derivation of this equation can be found in~\cite{mayer2013kernphysik}, Section 4.2}.
+\begin{equation}
+\left( \frac{\mathrm{d} \sigma_{el}}{\mathrm{d} \Omega} \right) = |f(\theta)|^2 \qquad \Rightarrow \qquad \sigma_{el} = \int \mathrm{d} \Omega \, |f(\theta)|^2 
+\end{equation}
+
+\subsubsection{Eikonal Wave Approximation}
+The eikonal wave approximation can be applied when the incident particle's energy is much larger than the potential's strength ($ E >> V$) and the potential should vary slowly over the wavelength of the particle. This approximation is most accurate for scattering at small angles. Are those prerequisites given, then the eikonal wave approximation assumes that the scattered particle follows a nearly straight-line trajectory (like a classical particle). The wavefunction is approximated as a plane wave modulated by a phase factor. The term "eikonal" comes from the Greek word for "image" or "likeness," reflecting its origin in optics (ray optics).
+Following the derivation of BERT04 the solution for the wave function in~\ref{eq:schroedinger} is expressed as:
+\begin{equation}\label{eq:wave_sol}
+\psi_{\mathbf{k}}(\mathbf{r}) = e^{ikz} \varphi(\mathbf{c}, z)
+\end{equation}
+where $e^{ikz}$ is the plane wave in $z$ direction and $\varphi(\mathbf{c}, z)$ the distortion caused by the potential.
+Inserting the plane wave function from equation~\ref{eq:wave_sol} in the Schr\"odinger equation~\ref{eq:schroedinger} and omitting higher order derivative terms, due to the slowly varying potential over the particle's wave length (full derivation can be found in BER04) the distortion $\varphi(\mathbf{c}, z)$ can be simplified by:
+\begin{equation}
+\varphi(\mathbf{c}, z) = \exp \left\{ -\frac{i}{\hbar \nu} \int_{-\infty}^{z} V(\mathbf{c}, z') \, dz' \right\}
+\end{equation}
+This is the aforementioned the phase factor, originating from the distortion due to the potential, called eikonal phase:
+\begin{equation}
+\chi(\vec{c}, z) = - \frac{1}{\hbar v} \int_{-\infty}^{z} V(\vec{c}, z') dz'
+\end{equation}
+Summarizing the eikonal wave function from eq.~\ref{eq:wave_sol}:
+\begin{equation}
+\psi_k(\vec{r}) = e^{ikz+i\chi(\vec{c},z)}
+\end{equation}
+The scattering amplitude can therefore be written as:
+\begin{equation}
+%really short derivation
+%.....
+\end{equation}
+%Tell the story about the optical theorem 
+%and give the results for tot. cross section, elastic, and reaction cross section
+%maybe also a short intro why and how this is related to the S-matrix
+
+
+\subsubsection{Optical potential and optical limit}
+
+
+\subsection{Input to the Glauber Model}
+
+\begin{description}
+\item[Nucleon-Nucleon cross section]
+\item[Nuclear density distribution]
+\end{description}
+
+\subsubsection{In medium modification - extension of the Glauber Model}
+\begin{description}
+\item[Fermi Motion] Reference to section in qfs
+\item[Pauli Blocking]
+\item[Coulomb Repulsion]
+\end{description}
+
+
+
+%-> short description of eike , greek blabla, what does this really mean? 
+%show the position of the approximation
+%This introduces simply a phase shift to the outgoing wave
+%write down the final elastic cross section 
+%
+%
+%Then put in the optical theorem, which gives you the total cross section
+%From this you can deduce the total reaction cross section
+
+
+
+
+
+
 
 %Explain path to go:
 %\begin{itemize}
@@ -269,8 +336,7 @@ In view of the added nucleon momentum the kinematics get expanded from a two dim
 \begin{equation}\label{eq:chulkov}
 Q_{\perp i} = sin(\theta_{1/2})\cdot sin(\varphi_{1/2} -\varphi_{2/1})\cdot\mathbf{p}_{2/1}
 \end{equation}
-In case of (p,2p) reactions it is impossible to track back the origin of each nucleon - from the projectile nucleus or the proton-like target. Inferring from this there are two possible solutions for $Q_{\perp}$. The ambiguity can be resolved by incorporating the momentum of the fragment nucleus perpendicular to the reaction plane $Q_{\perp A-1}$. The fragment momentum vector should be of the same amount but point in opposite direction to $Q_{\perp i}$.
-TODO: maybe insert here the plot of $Q_{\perp}$ if possible...
+In case of (p,2p) reactions it is impossible to track back the origin of each nucleon - from the projectile nucleus or the proton-like target. Inferring from this there are two possible solutions for $Q_{\perp}$. The ambiguity can be resolved by incorporating the momentum of the fragment nucleus perpendicular to the reaction plane $Q_{\perp A-1}$. The fragment momentum vector should be of the same amount but point in opposite direction to $Q_{\perp i}$.\\
 
 Up to this point, the scattering process has been described analogously to free elastic scattering in relativistic kinematics, with the knocked-out nucleon assumed to possess a non-negligible initial momentum inside the nucleus. However, it must be noted that the ejected nucleon is an off-shell particle, bound within the nuclear potential. Its virtual mass \( \mu_i \) in the c.m.s. of the nucleus is given by:
 \begin{equation}

@@ -171,6 +171,10 @@ F.~Schindler, {\em Total reaction, charge-changing, and neutron-removal cross
   measured with large acceptance at R3B}.
 \newblock PhD thesis, Technische Universit{\"a}t Darmstadt, 2017.
 
+\bibitem{mayer2013kernphysik}
+T.~Mayer-Kuckuk, {\em {Kernphysik: Eine Einf{\"u}hrung}}.
+\newblock Springer-Verlag, 2013.
+
 \bibitem{chamberlain1952proton}
 O.~Chamberlain and E.~Segr{\`e}, ``{Proton-proton collisions within lithium
   nuclei},'' {\em Physical Review}, vol.~87, no.~1, p.~81, 1952.
@@ -467,6 +471,12 @@ L.~Ponnath, {\em {Precise Measurement of Nuclear Interaction Cross Sections
   \url{https://www.mesytec.com/products/nuclear-physics/MDPP-16.html}.
 \newblock [Online; accessed October 18, 2024].
 
+\bibitem{morfouace2025asymmetric}
+P.~Morfouace, J.~Taieb, A.~Chatillon, L.~Audouin, G.~Blanchon, R.~Bernard,
+  N.~Dubray, N.~Pillet, D.~Regnier, H.~Alvarez-Pol, {\em et~al.}, ``{An
+  asymmetric fission island driven by shell effects in light fragments},'' {\em
+  Nature}, pp.~1--6, 2025.
+
 \bibitem{bertini2013study}
 O.~Bertini, {\em {Study of 3 Lambda H and 4 Lambda H in the reaction of 6 Li+
   12 C at 2 A GeV}}.
@@ -511,10 +521,6 @@ L.~Meitner and O.~R. Frisch, ``{Disintegration of uranium by neutrons: a new
 N.~Bohr and J.~Wheeler, ``{Phys. Rev.},'' {\em Phys. Rev}, vol.~56, no.~426,
   1939.
 
-\bibitem{mayer2013kernphysik}
-T.~Mayer-Kuckuk, {\em {Kernphysik: Eine Einf{\"u}hrung}}.
-\newblock Springer-Verlag, 2013.
-
 \bibitem{bassani2005encyclopedia}
 F.~Bassani, G.~L. Liedl, and P.~Wyder, ``{Encyclopedia of condensed matter
   physics},'' 2005.
@@ -544,12 +550,6 @@ G.~Garc{\'\i}a-Jim{\'e}nez, H.~Alvarez-Pol, A.~Gra{\~n}a-Gonz{\'a}lez,
   L.~Audouin, G.~Authelet, A.~Besteiro, {\em et~al.}, ``{Study of (p, 2p)
   fission reactions in inverse kinematics using the R3B set-up},'' in {\em EPJ
   Web of Conferences}, vol.~290, p.~02009, EDP Sciences, 2023.
-
-\bibitem{morfouace2025asymmetric}
-P.~Morfouace, J.~Taieb, A.~Chatillon, L.~Audouin, G.~Blanchon, R.~Bernard,
-  N.~Dubray, N.~Pillet, D.~Regnier, H.~Alvarez-Pol, {\em et~al.}, ``{An
-  asymmetric fission island driven by shell effects in light fragments},'' {\em
-  Nature}, pp.~1--6, 2025.
 
 \bibitem{sartori2013nuclear}
 E.~Sartori, ``{Nuclear data for radioactive waste management},'' {\em Annals of
