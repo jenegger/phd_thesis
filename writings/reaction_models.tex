@@ -41,7 +41,7 @@ Before introducing the fundamental concepts of scattering theory within the Glau
 
 Two additional composite cross sections are defined:
 
-\begin{align}
+\begin{align}\label{eq:tot_cs_def}
     \sigma_{\mathrm{R}} &= \sigma_{\mathrm{inel}} + \sigma_{\mathrm{I}} \quad \text{(Total reaction cross section)} \\
     \sigma_{\mathrm{T}} &= \sigma_{\mathrm{el}} + \sigma_{\mathrm{R}} = \sigma_{\mathrm{el}} + \sigma_{\mathrm{inel}} + \sigma_{\mathrm{I}} \quad \text{(Total cross section)}
 \end{align}
@@ -134,7 +134,7 @@ f(\theta) & = -2\pi^2 \left( \frac{2\mu}{\hbar^2} \right) \langle \varphi_{\vec{
 
 with  $\psi_{\vec{k}}$ the incoming wave and $\varphi_{\vec{k}'}$ the outgoing spherical wave accordingly, as in equation~\ref{eq:tot_wave}.\\
 The (differential) elastic scattering cross-section can be derived from the scattering amplitude $f(\theta)$ via conservation law of particle current\footnote{A derivation of this equation can be found in~\cite{mayer2013kernphysik}, Section 4.2}.
-\begin{equation}
+\begin{equation}\label{eq:el_scatt_cs}
 \left( \frac{\mathrm{d} \sigma_{el}}{\mathrm{d} \Omega} \right) = |f(\theta)|^2 \qquad \Rightarrow \qquad \sigma_{el} = \int \mathrm{d} \Omega \, |f(\theta)|^2 
 \end{equation}
 
@@ -149,6 +149,7 @@ Inserting the plane wave function from equation~\ref{eq:wave_sol} in the Schr\"o
 \begin{equation}
 \varphi(\mathbf{c}, z) = \exp \left\{ -\frac{i}{\hbar \nu} \int_{-\infty}^{z} V(\mathbf{c}, z') \, dz' \right\}
 \end{equation}
+where $\mathbf{c}$ is the space vector and $z$ the coordinate along the beam direction.  
 This is the aforementioned the phase factor, originating from the distortion due to the potential, called eikonal phase:
 \begin{equation}
 \chi(\vec{c}, z) = - \frac{1}{\hbar v} \int_{-\infty}^{z} V(\vec{c}, z') dz'
@@ -157,11 +158,19 @@ Summarizing the eikonal wave function from eq.~\ref{eq:wave_sol}:
 \begin{equation}
 \psi_k(\vec{r}) = e^{ikz+i\chi(\vec{c},z)}
 \end{equation}
-The scattering amplitude can therefore be written as:
+Upon simplification, see Sec. 8.6 in BERT we get for the scattering amplitude:
 \begin{equation}
-%really short derivation
-%.....
+f(\theta) = -\frac{ik}{2\pi} \int \mathrm{d} \vec{c} \, e^{i \vec{q} \cdot \vec{c}} \left( e^{i \chi(\vec{c})} - 1 \right)
 \end{equation}
+And inserting this in equation~\ref{eq:el_scatt_cs} and following further simplification we finally get for the elastic cross section $\sigma_{el}$:
+\begin{equation}
+\sigma_{el} = \int \left| e^{i \chi(\vec{c})} - 1 \right|^2 \, \mathrm{d} \vec{c}.
+\end{equation}
+Without derivation we present here the \textbf{optical theorem} which relates the scattering amplitude $f(\theta)$ at $\theta = 0$ to the total cross section (see eq.~\ref{eq:tot_cs_def}):
+\begin{equation}
+\sigma_T = \frac{4\pi}{k} \, \text{Im} \left[ f(\theta = 0) \right]
+\end{equation}
+
 %Tell the story about the optical theorem 
 %and give the results for tot. cross section, elastic, and reaction cross section
 %maybe also a short intro why and how this is related to the S-matrix
