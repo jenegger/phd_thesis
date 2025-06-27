@@ -41,9 +41,9 @@ Before introducing the fundamental concepts of scattering theory within the Glau
 
 Two additional composite cross sections are defined:
 
-\begin{align}\label{eq:tot_cs_def}
+\begin{align}
     \sigma_{\mathrm{R}} &= \sigma_{\mathrm{inel}} + \sigma_{\mathrm{I}} \quad \text{(Total reaction cross section)} \\
-    \sigma_{\mathrm{T}} &= \sigma_{\mathrm{el}} + \sigma_{\mathrm{R}} = \sigma_{\mathrm{el}} + \sigma_{\mathrm{inel}} + \sigma_{\mathrm{I}} \quad \text{(Total cross section)}
+    \sigma_{\mathrm{T}} &= \sigma_{\mathrm{el}} + \sigma_{\mathrm{R}} = \sigma_{\mathrm{el}} + \sigma_{\mathrm{inel}} + \sigma_{\mathrm{I}} \quad \text{(Total cross section)} \label{eq:tot_cs_def}
 \end{align}
 
 At high beam energies ($E_{\mathrm{beam}} > 200$~AMeV), the contribution from inelastic nucleon-nucleon reaction channels is small. This allows the approximation:
@@ -106,7 +106,7 @@ Starting point is the quantum mechanical view from the time-independent Schr\"od
 H\psi_{\vec{k}}(\vec{r}) = E\psi_{\vec{k}}(\vec{r}),
 \end{equation}
 given the Hamiltonian:
-\begin{equation}
+\begin{equation}\label{eq:hamiltonian}
 H = -\frac{\hbar^2}{2\mu} \vec{\nabla}^2 + V(\vec{r}).
 \end{equation}
 where $\mu = \frac{m_T \cdot m_P}{m_T+m_P}$ is the  reduced mass of the system, composed of the target nucleus with mass $m_T$ and the projectile with mass $m_P$ .
@@ -125,7 +125,7 @@ And following the derivation in Section 3.3 of Ref.~\cite{bertulani2019introduct
 \end{equation}
 
 which gives for the scattering amplitude $f(\theta)$:
-\begin{equation}
+\begin{equation}\label{eq:sc_amp_pot}
 \begin{split}
 f(\theta) & = -2\pi^2 \left( \frac{2\mu}{\hbar^2} \right) \langle \varphi_{\vec{k}'} | V(\vec{r}) | \psi_{\vec{k}} \rangle \\
  & = -2\pi^2 \left( \frac{2\mu}{\hbar^2} \right) \int \varphi_{\vec{k}'}^*(\vec{r}) V(\vec{r}) \psi_{\vec{k}}(\vec{r}) d\vec{r}
@@ -151,7 +151,7 @@ Inserting the plane wave function from equation~\ref{eq:wave_sol} in the Schr\"o
 \end{equation}
 where $\mathbf{c}$ is the space vector and $z$ the coordinate along the beam direction.  
 This is the aforementioned the phase factor, originating from the distortion due to the potential, called eikonal phase:
-\begin{equation}
+\begin{equation}\label{eq:eikonal_phase}
 \chi(\vec{c}, z) = - \frac{1}{\hbar v} \int_{-\infty}^{z} V(\vec{c}, z') dz'
 \end{equation}
 Summarizing the eikonal wave function from eq.~\ref{eq:wave_sol}:
@@ -159,7 +159,7 @@ Summarizing the eikonal wave function from eq.~\ref{eq:wave_sol}:
 \psi_k(\vec{r}) = e^{ikz+i\chi(\vec{c},z)}
 \end{equation}
 Upon simplification, see Sec. 8.6 in BERT we get for the scattering amplitude:
-\begin{equation}
+\begin{equation}\label{eq:final_sc_amp}
 f(\theta) = -\frac{ik}{2\pi} \int \mathrm{d} \vec{c} \, e^{i \vec{q} \cdot \vec{c}} \left( e^{i \chi(\vec{c})} - 1 \right)
 \end{equation}
 And inserting this in equation~\ref{eq:el_scatt_cs} and following further simplification we finally get for the elastic cross section $\sigma_{el}$:
@@ -170,17 +170,52 @@ Without derivation we present here the \textbf{optical theorem} which relates th
 \begin{equation}
 \sigma_T = \frac{4\pi}{k} \, \text{Im} \left[ f(\theta = 0) \right]
 \end{equation}
-
-%Tell the story about the optical theorem 
-%and give the results for tot. cross section, elastic, and reaction cross section
-%maybe also a short intro why and how this is related to the S-matrix
-
+The optical theorem, formulated in the context of optics -- specifically for the scattering and absorption of light -- was later extended and applied to other wave phenomena, including quantum mechanical scattering of particles.\\
+The name stems from the fact that $\text{Im}\, f(0)$ is related to the imaginary part of the refractive index $n$, which the scattering potential has for the incident wave. We have $\text{Im}\, f(0) = \frac{k^2}{2\pi} \text{Im}\, n$. The imaginary part of the refractive index describes the absorption of the beam. The optical theorem is therefore an an expression of the relationship between absorption in the forward direction and the total cross-section.
+The optical theorem can be derived using the fundamental principle of particle current conservation, see Section 6.4.3 in~\cite{sakurai2020modern}.\\
+From equation~\ref{eq:tot_cs_def}, the scattering amplitude~\ref{eq:final_sc_amp} and the aforemetioned optical theorem relation we can summarize:
+\begin{align}
+\sigma_{T} &=  2 \int \left(1 - \text{Re}\left[e^{i\chi(\vec{c})}\right]\right) d\vec{c} \\
+\sigma_{R} &= \sigma_{T} - \sigma{el}\\
+           &= \int \left(1 - \left|e^{i\chi(\vec{c})}\right|^2\right) d\vec{c} \label{eq:simga_reaction}
+\end{align}
+TODO: add footnote to S-Matrix
 
 \subsubsection{Optical potential and optical limit}
+Now we introduce the so-called "optical potential" $V(\vec{r})$ from the Hamiltionian~\ref{eq:hamiltonian}. A fundamental understanding of this potential would be gained if one could derive it from the nucleon-nucleon interaction using a self-consistency procedure. This is a problem that has only been partially solved to date and is very difficult. Therefore, the optical potential is introduced as an empirical phenomenological potential, fitted to the experimental cross-section data.\\
+There are two main approaches how to build the shape and amplitude of the optical potential:
+It can be modeled -- in analogy to optics with the complex index of refraction with partial transmission and absorpion -- as a complex potential of the form:
+\begin{equation}
+V(r) = U(r)\; + \; iW(r)
+\end{equation}
+where as $U(r)$ a parametrized Wood-Saxon potential is used. The imaginary part $W(r)$, which is responsible for the absorption, is more difficult to model, usually by implementing three different terms "volume", "surface" and "mixture", see Section 8.2.7 in Ref~\cite{obertelli2021modern} and Section 7.6 in Ref ~\cite{mayer2013kernphysik}.\\
+The second approach, whose main concepts will be presented here introduces an optical potential starting from the single inteaction of a projectile nucleon with a target nucleon. This first order optical potential is written as:
+\begin{equation}\label{eq:opt_pot}
+V_{\text{opt}}(\vec{r}) = t_{pn} \rho_n(\vec{r}) + t_{pp} \rho_p(\vec{r})
+\end{equation}
+with $t_{pn}$ and $t_{pp}$ proton-neutron and proton-proton transition elements accordingly. They are related to the scattering amplitude, introduced in equation~\ref{eq:sc_amp_pot}, as:
+\begin{equation}
+t_{pi} \equiv \langle \varphi_{\vec{k}'} | V(\vec{r}) | \psi_{\vec{k}} \rangle \equiv - \frac{\hbar^2}{2\mu} \cdot \frac{1}{2\pi^2} f_{pi}(\theta) \quad i = proton/neutron
+\end{equation}
+Since the ultimative goal is to extend the optical potential~\ref{eq:opt_pot} to a nucleus-nucleus potential, the transition elemens can be isospin averaged to get a NN transistion element:
+\begin{equation}
+- i \, \frac{\hbar \nu}{2} \, \sigma_{NN}
+\end{equation} 
+Considering the spatial expansion of the nucleons within the projectile and target nucleus, equation~\ref{eq:opt_pot} has to be replaced by the integral over the normalized nucleus density distributions $\rho_{P}(\vec{r})$ and $\rho_{T}(\vec{r})$. The optical potential can then be written as:
+\begin{equation} 
+V_{OL}(\vec{b}) = -i \, \frac{\hbar \nu}{2} \, \sigma_{NN} \int \mathrm{d} \vec{r} \, \rho_P(\vec{r}) \, \rho_T(\vec{r} - \vec{b})
+\end{equation}
 
+Inserting this optical potential in the eikonal phase calculation~\ref{eq:eikonal_phase} the total reaction cross section $\sigma_R$ from equation~\ref{eq:simga_reaction} becomes:
+\begin{equation}\label{eq:final_react_cs}
+\sigma_R = 2\pi \int d\vec{b} \left( 1 - \exp\left( -\sigma_{NN} \int d\vec{z}' \int d\vec{r} \, \rho_P(\vec{r}) \rho_T(\vec{r} - \vec{b}) \right) \right)
+\end{equation}
+where $\vec{b}$ is the impact parameter introduced as displacement of the projectile's and target's center of mass, see Fig.~\ref{fig:impact_par_glauber}.
+TODO: what is the formula for the charge changing cross section?
+TODO: explain that Vol is simplified, only imaginary part, this is so for the total reaction cross section....
 
 \subsection{Input to the Glauber Model}
-
+As shown in equation~\ref{eq:final_react_cs} the total reaction cross section only depends from the density distribution of the target and projectile and the averaged free nucleon-nucleon cross section$\sigma_{NN}$.  
 \begin{description}
 \item[Nucleon-Nucleon cross section]
 \item[Nuclear density distribution]
@@ -327,8 +362,14 @@ Summarizing, the QFS-reaction technique in inverse kinematics with exotic nuclei
 For precise cross section measurements of the single particle states $\sigma_{sp}$ the kinematical characteristics of the QFS-reaction products have to be considered for correct identification of QFS-events and clear background subtraction. The following descriptions are already implicitly embedded within the equation \ref{eq:four_mom_cons_qfs}.\newline
 As starting point one compares the QFS-reaction of the two nucleons with the two dimensional non-central collision of free point-like particles in non-relativistic kinematics. Since both kinetic energy and momenta are conserved a  clear signature is expected: the opening angle of the scattered particles is exactly 90$^{\circ}$. 
 
-However, at kinetic energies of 400 AMeV and more, relativistic effects affect the opening angle of the scattered particles\footnote{Relativistic considerations become relevant at velocities $ \beta \gtrapprox 0.1 c$. This corresponds to $\approx$ 4.5 MeV.}. 
-TODO: Formula to calculate directly from beam energy the opening angle...
+However, at kinetic energies of 400 AMeV and more, relativistic effects affect the opening angle of the scattered particles\footnote{Relativistic considerations become relevant at velocities $ \beta \gtrapprox 0.1 c$. This corresponds to $\approx$ 4.5 MeV.}, see Fig.~\ref{fig:correlation_mrunmoy}. 
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth,height=12cm,keepaspectratio=true]{Figures/mrunmoy_correlation.pdf}
+    \caption{Simulated correlations between the polar scattering angles ($\theta_1$,$\theta_2$) of two protons undergoing elastic scattering, shown for beam energies of 10, 100, 300, 500, 700, 900, and 1000 MeV. The uppermost straight line corresponds to a beam energy of 10 MeV, where the opening angle between the two protons is approximately $90^{\circ}$, as expected in the non-relativistic regime. As the beam energy increases, relativistic effects cause a pronounced bending of the correlation curves, particularly in the region of symmetric polar angles. These effects become increasingly significant with higher beam energies. Courtesy: \textit{Mrunmoy Jena}.}
+    \label{fig:correlation_mrunmoy}
+\end{figure}
+
 
 For the final description of the process it has to be considered that the projectile nucleon inside the nucleus has a non negligible momentum (see $P_i$ in equation \ref{eq:miss_mom})  and in addition the separation energy $S_{p/n}$ has to be expended to remove the scattered nucleon of the nuclear potential of the projectile nucleus.\newline
 To account for the nucleon momentum the picture of the Fermi gas model where protons and neutrons freely move inside the nucleus' potential is applied. In the ground state of the nucleus the nucleons can reach a momentum up to the Fermi momentum $p_F$. Except for the light nuclei, the Fermi momentum is almost independent of A and amounts to $ p_f \approx 250$ MeV/c \footnote{For light nuclei like $ ^{12}C$, $p_F \approx 230$ MeV/c can be assumed~\cite{moniz1971nuclear}}. The mean quadratic momenta of the nucleons is related to the Fermi momentum by:
