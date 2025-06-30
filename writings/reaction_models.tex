@@ -182,82 +182,208 @@ From equation~\ref{eq:tot_cs_def}, the scattering amplitude~\ref{eq:final_sc_amp
 TODO: add footnote to S-Matrix
 
 \subsubsection{Optical potential and optical limit}
-Now we introduce the so-called "optical potential" $V(\vec{r})$ from the Hamiltionian~\ref{eq:hamiltonian}. A fundamental understanding of this potential would be gained if one could derive it from the nucleon-nucleon interaction using a self-consistency procedure. This is a problem that has only been partially solved to date and is very difficult. Therefore, the optical potential is introduced as an empirical phenomenological potential, fitted to the experimental cross-section data.\\
-There are two main approaches how to build the shape and amplitude of the optical potential:
-It can be modeled -- in analogy to optics with the complex index of refraction with partial transmission and absorpion -- as a complex potential of the form:
+%Now we introduce the so-called "optical potential" $V(\vec{r})$ from the Hamiltionian~\ref{eq:hamiltonian}. A fundamental understanding of this potential would be gained if one could derive it from the nucleon-nucleon interaction using a self-consistency procedure. This is a problem that has only been partially solved to date and is very difficult. Therefore, the optical potential is introduced as an empirical phenomenological potential, fitted to the experimental cross-section data.\\
+%There are two main approaches how to build the shape and amplitude of the optical potential:
+%It can be modeled -- in analogy to optics with the complex index of refraction with partial transmission and absorpion -- as a complex potential of the form:
+%\begin{equation}
+%V(r) = U(r)\; + \; iW(r)
+%\end{equation}
+%where as $U(r)$ a parametrized Wood-Saxon potential is used. The imaginary part $W(r)$, which is responsible for the absorption, is more difficult to model, usually by implementing three different terms "volume", "surface" and "mixture", see Section 8.2.7 in Ref~\cite{obertelli2021modern} and Section 7.6 in Ref ~\cite{mayer2013kernphysik}.\\
+%The second approach, whose main concepts will be presented here introduces an optical potential starting from the single inteaction of a projectile nucleon with a target nucleon. This first order optical potential is written as:
+%\begin{equation}\label{eq:opt_pot}
+%V_{\text{opt}}(\vec{r}) = t_{pn} \rho_n(\vec{r}) + t_{pp} \rho_p(\vec{r})
+%\end{equation}
+%with $t_{pn}$ and $t_{pp}$ proton-neutron and proton-proton transition elements accordingly. They are related to the scattering amplitude, introduced in equation~\ref{eq:sc_amp_pot}, as:
+%\begin{equation}
+%t_{pi} \equiv \langle \varphi_{\vec{k}'} | V(\vec{r}) | \psi_{\vec{k}} \rangle \equiv - \frac{\hbar^2}{2\mu} \cdot \frac{1}{2\pi^2} f_{pi}(\theta) \quad i = proton/neutron
+%\end{equation}
+%Since the ultimative goal is to extend the optical potential~\ref{eq:opt_pot} to a nucleus-nucleus potential, the transition elemens can be isospin averaged to get a NN transistion element:
+%\begin{equation}
+%- i \, \frac{\hbar \nu}{2} \, \sigma_{NN}
+%\end{equation} 
+%Considering the spatial expansion of the nucleons within the projectile and target nucleus, equation~\ref{eq:opt_pot} has to be replaced by the integral over the normalized nucleus density distributions $\rho_{P}(\vec{r})$ and $\rho_{T}(\vec{r})$. The optical potential can then be written as:
+%\begin{equation} 
+%V_{OL}(\vec{b}) = -i \, \frac{\hbar \nu}{2} \, \sigma_{NN} \int \mathrm{d} \vec{r} \, \rho_P(\vec{r}) \, \rho_T(\vec{r} - \vec{b})
+%\end{equation}
+%
+%Inserting this optical potential in the eikonal phase calculation~\ref{eq:eikonal_phase} the total reaction cross section $\sigma_R$ from equation~\ref{eq:simga_reaction} becomes:
+%\begin{equation}\label{eq:final_react_cs}
+%\sigma_R = 2\pi \int d\vec{b} \left( 1 - \exp\left( -\sigma_{NN} \int d\vec{z}' \int d\vec{r} \, \rho_P(\vec{r}) \rho_T(\vec{r} - \vec{b}) \right) \right)
+%\end{equation}
+%where $\vec{b}$ is the impact parameter introduced as displacement of the projectile's and target's center of mass, see Fig.~\ref{fig:impact_par_glauber}, and $z$ the coordinate along the beam direction. Since the potential is folded both on $\vec{b}$ and $\vec{r}$, it is also often called "double-folded optical potential", see Ref.~\cite{obertelli2021modern},Sec. 8.2.7.\\
+%
+%For sake of completeness, since in this work in Section~\ref{subsec:cc_cs} the charge changing cross section is measured, from the eikonal optical limit derivation we get:
+%\begin{equation}\label{eq:final_ch_ch_cs}
+%\sigma_{\Delta Z} = 2\pi \int d\vec{b} \left( 1 - \exp\left( -\sigma_{NN} \int d\vec{z}' \int d\vec{r} \, \rho_P^{p}(\vec{r}) \rho_T(\vec{r} - \vec{b}) \right) \right)
+%\end{equation}
+%Eq.~\ref{eq:final_ch_ch_cs} differs from the total reaction cross section, Eq.~\ref{eq:final_react_cs}, only by substituting the nucleon densitiy distribution $\rho_P(\vec{r})$ -- which includes both proton and neutron distribution within the nucleus -- by the proton density distribution $\rho_P^{p}(\vec{r})$ within the target, since for the charge changing cross section the focus relies only on the removal of one (or multiple) proton(s).
+%
+%
+%TODO: explain that Vol is simplified, only imaginary part, this is so for the total reaction cross section....
+
+In the following, we introduce the concept of the optical potential \( V(\vec{r}) \), as it appears in the Hamiltonian. 
+A rigorous theoretical understanding of this potential would ideally come from a derivation based on nucleon-nucleon (NN) interactions using a fully self-consistent many-body framework. 
+However, such an \textit{ab initio} treatment remains highly complex and has only been partially addressed in the literature. 
+Therefore, in most practical applications, the optical potential is introduced phenomenologically, with its parameters fitted to elastic and inelastic scattering cross-section data.
+
+There are two main approaches to constructing the optical potential:
+
+\paragraph{1. Phenomenological Optical Potential}
+
+This approach uses an analogy to optics, where a complex index of refraction models both wave transmission and absorption. 
+Similarly, the nuclear optical potential is written as:
+
 \begin{equation}
-V(r) = U(r)\; + \; iW(r)
-\end{equation}
-where as $U(r)$ a parametrized Wood-Saxon potential is used. The imaginary part $W(r)$, which is responsible for the absorption, is more difficult to model, usually by implementing three different terms "volume", "surface" and "mixture", see Section 8.2.7 in Ref~\cite{obertelli2021modern} and Section 7.6 in Ref ~\cite{mayer2013kernphysik}.\\
-The second approach, whose main concepts will be presented here introduces an optical potential starting from the single inteaction of a projectile nucleon with a target nucleon. This first order optical potential is written as:
-\begin{equation}\label{eq:opt_pot}
-V_{\text{opt}}(\vec{r}) = t_{pn} \rho_n(\vec{r}) + t_{pp} \rho_p(\vec{r})
-\end{equation}
-with $t_{pn}$ and $t_{pp}$ proton-neutron and proton-proton transition elements accordingly. They are related to the scattering amplitude, introduced in equation~\ref{eq:sc_amp_pot}, as:
-\begin{equation}
-t_{pi} \equiv \langle \varphi_{\vec{k}'} | V(\vec{r}) | \psi_{\vec{k}} \rangle \equiv - \frac{\hbar^2}{2\mu} \cdot \frac{1}{2\pi^2} f_{pi}(\theta) \quad i = proton/neutron
-\end{equation}
-Since the ultimative goal is to extend the optical potential~\ref{eq:opt_pot} to a nucleus-nucleus potential, the transition elemens can be isospin averaged to get a NN transistion element:
-\begin{equation}
-- i \, \frac{\hbar \nu}{2} \, \sigma_{NN}
-\end{equation} 
-Considering the spatial expansion of the nucleons within the projectile and target nucleus, equation~\ref{eq:opt_pot} has to be replaced by the integral over the normalized nucleus density distributions $\rho_{P}(\vec{r})$ and $\rho_{T}(\vec{r})$. The optical potential can then be written as:
-\begin{equation} 
-V_{OL}(\vec{b}) = -i \, \frac{\hbar \nu}{2} \, \sigma_{NN} \int \mathrm{d} \vec{r} \, \rho_P(\vec{r}) \, \rho_T(\vec{r} - \vec{b})
+V(r) = U(r) + iW(r)
 \end{equation}
 
-Inserting this optical potential in the eikonal phase calculation~\ref{eq:eikonal_phase} the total reaction cross section $\sigma_R$ from equation~\ref{eq:simga_reaction} becomes:
+Here, the real part \( U(r) \) typically takes the form of a Woods-Saxon potential and governs elastic scattering. 
+The imaginary part \( W(r) \), responsible for absorption into non-elastic channels, is more difficult to model and is usually decomposed into volume, surface, and mixed components. 
+Detailed models can be found in Ref.~\cite{obertelli2021modern} and Ref.~\cite{mayer2013kernphysik}.
+
+\paragraph{2. Microscopic Optical Potential and the Optical Limit}
+
+This approach starts from the interaction of a projectile nucleon with individual nucleons in the target. 
+The first-order optical potential is given by:
+
+\begin{equation}
+V_{\text{opt}}(\vec{r}) = t_{pn} \, \rho_n(\vec{r}) + t_{pp} \, \rho_p(\vec{r})
+\end{equation}
+
+Here, \( t_{pn} \) and \( t_{pp} \) are the transition matrix elements for proton-neutron and proton-proton interactions, and \( \rho_n(\vec{r}) \), \( \rho_p(\vec{r}) \) are the local neutron and proton densities in the target. 
+These elements are related to the scattering amplitude by:
+
+\begin{equation}
+t_{pi} = \langle \varphi_{\vec{k}'} | V(\vec{r}) | \psi_{\vec{k}} \rangle = -\frac{\hbar^2}{2\mu} \cdot \frac{1}{2\pi^2} f_{pi}(\theta), \quad \text{with } i = \text{proton, neutron}
+\end{equation}
+
+To extend this to nucleus-nucleus scattering, the transition elements are often averaged over isospin, yielding an effective nucleon-nucleon matrix element:
+
+\begin{equation}
+t_{NN} \approx -i \, \frac{\hbar \nu}{2} \, \sigma_{NN}
+\end{equation}
+
+Taking into account the spatial distributions of nucleons in both the projectile and target nuclei, the point-like approximation must be replaced by an integral over their respective density profiles:
+
+\begin{equation}
+V_{\text{OL}}(\vec{b}) = -i \, \frac{\hbar \nu}{2} \, \sigma_{NN} \int \mathrm{d}^3 r \, \rho_P(\vec{r}) \, \rho_T(\vec{r} - \vec{b})
+\end{equation}
+
+In this formulation, \( \vec{b} \) denotes the impact parameter, i.e., the transverse displacement between the centers of the projectile and target nuclei. 
+The resulting potential is often referred to as a \textit{double-folded optical potential} (see Ref.~\cite{obertelli2021modern}, Sec. 8.2.7).
+
+Substituting this potential into the eikonal phase expression, the total reaction cross-section becomes:
+
 \begin{equation}\label{eq:final_react_cs}
-\sigma_R = 2\pi \int d\vec{b} \left( 1 - \exp\left( -\sigma_{NN} \int d\vec{z}' \int d\vec{r} \, \rho_P(\vec{r}) \rho_T(\vec{r} - \vec{b}) \right) \right)
+\sigma_R = 2\pi \int \mathrm{d} \vec{b} \left[ 1 - \exp \left( -\sigma_{NN} \int \mathrm{d} z' \int \mathrm{d}^3 r \, \rho_P(\vec{r}) \, \rho_T(\vec{r} - \vec{b}) \right) \right]
 \end{equation}
-where $\vec{b}$ is the impact parameter introduced as displacement of the projectile's and target's center of mass, see Fig.~\ref{fig:impact_par_glauber}, and $z$ the coordinate along the beam direction. Since the potential is folded both on $\vec{b}$ and $\vec{r}$, it is also often called "double-folded optical potential", see Ref.~\cite{obertelli2021modern},Sec. 8.2.7.\\
 
-For sake of completeness, since in this work in Section~\ref{subsec:cc_cs} the charge changing cross section is measured, from the eikonal optical limit derivation we get:
-\begin{equation}\label{eq:final_ch_ch_cs}
-\sigma_{\Delta Z} = 2\pi \int d\vec{b} \left( 1 - \exp\left( -\sigma_{NN} \int d\vec{z}' \int d\vec{r} \, \rho_P^{p}(\vec{r}) \rho_T(\vec{r} - \vec{b}) \right) \right)
+For completeness, we also include the expression for the \textit{charge-changing} cross-section \( \sigma_{\Delta Z} \), which is of central importance to this work (see Section~\ref{subsec:cc_cs}). 
+In this case, the reaction is sensitive only to the removal of one or more protons from the projectile. 
+Accordingly, the full projectile density \( \rho_P(\vec{r}) \) is replaced by the proton density distribution \( \rho_P^p(\vec{r}) \):
+
+\begin{equation}
+\sigma_{\Delta Z} = 2\pi \int \mathrm{d} \vec{b} \left[ 1 - \exp \left( -\sigma_{NN} \int \mathrm{d} z' \int \mathrm{d}^3 r \, \rho_P^p(\vec{r}) \, \rho_T(\vec{r} - \vec{b}) \right) \right]
 \end{equation}
-Eq.~\ref{eq:final_ch_ch_cs} differs from the total reaction cross section, Eq.~\ref{eq:final_react_cs}, only by substituting the nucleon densitiy distribution $\rho_P(\vec{r})$ -- which includes both proton and neutron distribution within the nucleus -- by the proton density distribution $\rho_P^{p}(\vec{r})$ within the target, since for the charge changing cross section the focus relies only on the removal of one (or multiple) proton(s).
 
+This expression differs from the total reaction cross-section only by this substitution, which reflects the fact that the observable is sensitive specifically to proton-removal processes.
 
-TODO: explain that Vol is simplified, only imaginary part, this is so for the total reaction cross section....
 
 \subsection{Input to the Glauber Model}
-As shown in equation~\ref{eq:final_react_cs} the total reaction cross section only depends from the density distribution of the target and projectile and the averaged free nucleon-nucleon cross section $\sigma_{NN}$.  
+%As shown in equation~\ref{eq:final_react_cs} the total reaction cross section only depends from the density distribution of the target and projectile and the averaged free nucleon-nucleon cross section $\sigma_{NN}$.  
+%\begin{description}
+%\item[Nucleon-Nucleon cross section]
+%The isospin averaged nucleon-nucleon cross section $\sigma_{NN}$ is calculated based on the proton numbers ($Z_P$ and $Z_T$) and neutron numbers ($N_P$ and $N_T$) of projectile and target nuclei:
+%\begin{equation}
+%\sigma_{NN} = \frac{N_P N_T \sigma_{nn} + Z_P Z_T \sigma_{pp} + (Z_P N_T + N_P Z_T) \sigma_{np}}{A_P A_T}
+%\end{equation}
+%where $\sigma_{nn}$ is the neutron-neutron cross section, $\sigma_{pp}$ the proton-proton cross section and $\sigma_{np}$ the neutron-proton cross section accordingly. Fig.~\ref{fig:nn_lukas} shows the according nucleon-nucleon experimental cross-section data -- omitting the Coulomb scattering -- in red the $\sigma_{pp}$ and in black the $\sigma_{np}$. 
+%As shown the effective nuclear pp cross section is suppressed at low energies -- relative to pn --because for the pp system Coulomb repulsion acts, which obscures the strong force effects at low energies. Moreover pn scattering benefits from stronger interaction channels due to isospin coupling rules, and therefore also contributing to larger cross sections.\\
+%At high energies, we can assume $\sigma_{pp}\; =\; \sigma_{nn}\; =\; \sigma_{np}$. 
+%
+% \begin{figure}[htbp]
+%     \centering
+%     \includegraphics[width=0.8\textwidth]{Figures/nn_cross_section.png}
+%     \caption{Summarized experimental nuclear cross section data, from~\cite{PDG2015} -- omitting Coulomb scattering. The red dots correspond to the pp datapoints, the black dots to the np datapoints. The points are fitted according to the parametrization obtained from~\cite{bertulani2010pauli}. Figure taken from~\cite{ponnath2023precise}}.
+%     \label{fig:nn_lukas}
+% \end{figure}
+%
+%\item[Nuclear density distribution] The second input parameter to the Glauber framework in scattering theory is the nuclear density distribution of the projectile $\rho_P(\vec{r})$ and the target $\rho_T(\vec{r})$. From early Rutherford scattering experiments it has been shown that the nucleus radius is related to the mass number in good approximation by:
+%\begin{equation}
+%R = r_0 A^{\frac{1}{3}}
+%\end{equation}
+%with $r_0 = (1.3\pm0.1 fm$ from Rutherford scattering experiments~\cite{pollard1935nuclear}. In these experiments the actual charge distribution of the protons is measured and matches the density distribution of the nucleus if protons and neutrons have the same spatial distribution. This is a very good approximation for stable nuclei, such as the isotope $^{12}$ which is investigated in this work.\\
+%Experimentally the charge radii are investigated by high energy scattering of electons with nuclei and via spectroscopy of muonic atoms. In the here discussed electron scattering experimental approach the differential cross section for electrons on an extended object, such as a nucleus, is given by:
+%\begin{equation}\label{eq:exp_cs_with_mott}
+%\left( \frac{d\sigma}{d\Omega} \right)_{\text{exp.}} = \left( \frac{d\sigma}{d\Omega} \right)_{\text{Mott}} \cdot \left| F(q^2) \right|^2
+%\end{equation}
+%where the Mott cross section is deduced by the Rutherford cross section and in addition considering the spin dependency of the cross section:
+%\begin{equation}
+%\left( \frac{d\sigma}{d\Omega} \right)^{*}_{\text{Mott}} = \left( \frac{d\sigma}{d\Omega} \right)_{\text{Rutherford}} \cdot \left( 1 - \beta^2 \sin^2 \frac{\theta}{2} \right) \quad \text{with} \quad \beta = \frac{v}{c}
+%\end{equation}
+%and $F(q^2)$ being the nucleus' form factor which again is related to the nuclear charge distribution via a  Fourier transformation:
+%\begin{equation}\label{eq:form_fac_four}
+%F(\mathbf{q}^2) = \int e^{i\mathbf{q}\mathbf{x}/\hbar} \rho(\mathbf{x}) \mathrm{d}^3x \Rightarrow \rho(r) = \frac{1}{(2\pi)^3} \int F(\mathbf{q}^2) e^{-i\mathbf{q}\mathbf{x}/\hbar} \mathrm{d}^3q 
+%\end{equation}
+%This means that by experimental differential cross section measurements with known Mott cross section the Form factor in Eq.~\ref{eq:exp_cs_with_mott} can be extracted and with a Fourier back transformation, as in Eq.~\ref{eq:form_fac_four} the charge distribution can be derived. However, experimentally $F(q^2)$ is only accessible in a small range of the momentum transfer$\mathbf{q}$. 
+%
+%\end{description}
+
+As shown in Eq.~\ref{eq:final_react_cs}, the total reaction cross section depends only on the density distributions of the target and projectile, as well as on the isospin-averaged free nucleon-nucleon cross section, $\sigma_{NN}$.
+
 \begin{description}
-\item[Nucleon-Nucleon cross section]
-The isospin averaged nucleon-nucleon cross section $\sigma_{NN}$ is calculated based on the proton numbers ($Z_P$ and $Z_T$) and neutron numbers ($N_P$ and $N_T$) of projectile and target nuclei:
+
+\item[Nucleon-Nucleon Cross Section]
+
+The isospin-averaged nucleon-nucleon cross section $\sigma_{NN}$ is computed based on the number of protons ($Z_P$, $Z_T$) and neutrons ($N_P$, $N_T$) in the projectile and target nuclei:
+
 \begin{equation}
 \sigma_{NN} = \frac{N_P N_T \sigma_{nn} + Z_P Z_T \sigma_{pp} + (Z_P N_T + N_P Z_T) \sigma_{np}}{A_P A_T}
 \end{equation}
-where $\sigma_{nn}$ is the neutron-neutron cross section, $\sigma_{pp}$ the proton-proton cross section and $\sigma_{np}$ the neutron-proton cross section accordingly. Fig.~\ref{fig:nn_lukas} shows the according nucleon-nucleon experimental cross-section data -- omitting the Coulomb scattering -- in red the $\sigma_{pp}$ and in black the $\sigma_{np}$. 
-As shown the effective nuclear pp cross section is suppressed at low energies -- relative to pn --because for the pp system Coulomb repulsion acts, which obscures the strong force effects at low energies. Moreover pn scattering benefits from stronger interaction channels due to isospin coupling rules, and therefore also contributing to larger cross sections.\\
-At high energies, we can assume $\sigma_{pp}\; =\; \sigma_{nn}\; =\; \sigma_{np}$. 
 
- \begin{figure}[htbp]
-     \centering
-     \includegraphics[width=0.8\textwidth]{Figures/nn_cross_section.png}
-     \caption{Summarized experimental nuclear cross section data, from~\cite{PDG2015} -- omitting Coulomb scattering. The red dots correspond to the pp datapoints, the black dots to the np datapoints. The points are fitted according to the parametrization obtained from~\cite{bertulani2010pauli}. Figure taken from~\cite{ponnath2023precise}}.
-     \label{fig:nn_lukas}
- \end{figure}
+Here, $\sigma_{nn}$, $\sigma_{pp}$, and $\sigma_{np}$ denote the neutron-neutron, proton-proton, and neutron-proton cross sections, respectively. Figure~\ref{fig:nn_lukas} shows the corresponding experimental nucleon-nucleon cross section data, with $\sigma_{pp}$ plotted in red and $\sigma_{np}$ in black. The Coulomb contribution is omitted.
 
-\item[Nuclear density distribution] The second input parameter to the Glauber framework in scattering theory is the nuclear density distribution of the projectile $\rho_P(\vec{r})$ and the target $\rho_T(\vec{r})$. From early Rutherford scattering experiments it has been shown that the nucleus radius is related to the mass number in good approximation by:
+At low energies, the effective $\sigma_{pp}$ cross section is reduced relative to $\sigma_{np}$, primarily due to Coulomb repulsion in the pp system. Additionally, neutron-proton scattering benefits from stronger interaction channels due to isospin coupling, which enhances the total cross section. At high energies, the distinction vanishes, and one can approximate $\sigma_{pp} = \sigma_{nn} = \sigma_{np}$.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Figures/nn_cross_section.png}
+    \caption{Summarized experimental nuclear cross section data, from~\cite{PDG2015}, omitting Coulomb scattering. Red points represent $\sigma_{pp}$, black points represent $\sigma_{np}$. Data are fitted using the parametrization from~\cite{bertulani2010pauli}. Figure taken from~\cite{ponnath2023precise}.}
+    \label{fig:nn_lukas}
+\end{figure}
+
+\item[Nuclear Density Distributions]
+
+The second essential input to the Glauber model is the nuclear density distribution of the projectile, $\rho_P(\vec{r})$, and the target, $\rho_T(\vec{r})$. Early Rutherford scattering experiments established that the nuclear radius scales with mass number as:
+
 \begin{equation}
-R = r_0 A^{\frac{1}{3}}
+R = r_0 A^{1/3}
 \end{equation}
-with $r_0 = (1.3\pm0.1 fm$ from Rutherford scattering experiments~\cite{pollard1935nuclear}. In these experiments the actual charge distribution of the protons is measured and matches the density distribution of the nucleus if protons and neutrons have the same spatial distribution. This is a very good approximation for stable nuclei, such as the isotope $^{12}$ which is investigated in this work.\\
-Experimentally the charge radii are investigated by high energy scattering of electons with nuclei and via spectroscopy of muonic atoms. In the here discussed electron scattering experimental approach the differential cross section for electrons on an extended object, such as a nucleus, is given by:
+
+with $r_0 = (1.3 \pm 0.1)\,\text{fm}$, as determined in~\cite{pollard1935nuclear}. These experiments measure the charge distribution of protons, which, under the assumption of identical spatial distributions for protons and neutrons, represents the total nuclear density. This is a valid approximation for stable nuclei such as $^{12}\text{C}$, which is examined in this work.
+
+Experimentally, charge radii are determined either via high-energy electron scattering or spectroscopy of muonic atoms. In electron scattering experiments, the differential cross section for scattering off an extended object like a nucleus is expressed as:
+
 \begin{equation}\label{eq:exp_cs_with_mott}
 \left( \frac{d\sigma}{d\Omega} \right)_{\text{exp.}} = \left( \frac{d\sigma}{d\Omega} \right)_{\text{Mott}} \cdot \left| F(q^2) \right|^2
 \end{equation}
-where the Mott cross section is deduced by the Rutherford cross section and in addition considering the spin dependency of the cross section:
+
+The Mott cross section is derived from the Rutherford cross section and includes spin-dependent corrections:
+
 \begin{equation}
-\left( \frac{d\sigma}{d\Omega} \right)^{*}_{\text{Mott}} = \left( \frac{d\sigma}{d\Omega} \right)_{\text{Rutherford}} \cdot \left( 1 - \beta^2 \sin^2 \frac{\theta}{2} \right) \quad \text{with} \quad \beta = \frac{v}{c}
+\left( \frac{d\sigma}{d\Omega} \right)^{*}_{\text{Mott}} = \left( \frac{d\sigma}{d\Omega} \right)_{\text{Rutherford}} \cdot \left( 1 - \beta^2 \sin^2 \frac{\theta}{2} \right), \quad \text{with } \beta = \frac{v}{c}
 \end{equation}
-and $F(q^2)$ being the nucleus' form factor which again is related to the nuclear charge distribution via a  Fourier transformation:
+
+The form factor $F(q^2)$ characterizes the spatial charge distribution and is connected to the density via a Fourier transform:
+
 \begin{equation}\label{eq:form_fac_four}
-F(\mathbf{q}^2) = \int e^{i\mathbf{q}\mathbf{x}/\hbar} \rho(\mathbf{x}) \mathrm{d}^3x \Rightarrow \rho(r) = \frac{1}{(2\pi)^3} \int F(\mathbf{q}^2) e^{-i\mathbf{q}\mathbf{x}/\hbar} \mathrm{d}^3q 
+F(\mathbf{q}^2) = \int e^{i\mathbf{q}\cdot\mathbf{x}/\hbar} \rho(\mathbf{x}) \,\mathrm{d}^3x \quad \Rightarrow \quad \rho(r) = \frac{1}{(2\pi)^3} \int F(\mathbf{q}^2) e^{-i\mathbf{q}\cdot\mathbf{x}/\hbar} \,\mathrm{d}^3q 
 \end{equation}
-This means that by experimental differential cross section measurements with known Mott cross section the Form factor in Eq.~\ref{eq:exp_cs_with_mott} can be extracted and with a Fourier back transformation, as in Eq.~\ref{eq:form_fac_four} the charge distribution can be derived. However, experimentally $F(q^2)$ is only accessible in a small range of the momentum transfer$\mathbf{q}$. 
+
+Thus, by measuring the differential cross section and using the known Mott cross section, the form factor can be extracted. A subsequent inverse Fourier transform allows for the reconstruction of the charge density. However, in practice, the form factor is accessible only within a limited range of momentum transfer $\mathbf{q}$.
+
+\end{description}
+
 
 
 
@@ -265,7 +391,6 @@ This means that by experimental differential cross section measurements with kno
 ->approaches with EDF
 
 
-\end{description}
 
 \subsubsection{In medium modification - extension of the Glauber Model}
 \begin{description}
