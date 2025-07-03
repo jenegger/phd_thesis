@@ -1,5 +1,5 @@
-This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: Abstract.aux
 The style file: ieeetr.bst
@@ -30,6 +30,10 @@ Repeated entry---line 1166 of file main.bib
  : @article{agostinelli2003geant4
  :                               ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 1248 of file main.bib
+ : @article{bertulani2010pauli
+ :                            ,
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "agarap2018deep"
 Warning--empty journal in horvat2021evolution
 Warning--empty journal in glauber1959lectures
@@ -42,45 +46,45 @@ Warning--empty journal in serrano2013white
 Warning--empty journal in bassani2005encyclopedia
 Warning--empty journal in popescu2021review
 Warning--can't use both volume and number fields in bertini2011r3broot
-You've used 133 entries,
+You've used 137 entries,
             1876 wiz_defined-function locations,
-            1202 strings with 28666 characters,
-and the built_in function-call counts, 36188 in all, are:
-= -- 3440
-> -- 1867
+            1223 strings with 29215 characters,
+and the built_in function-call counts, 37321 in all, are:
+= -- 3562
+> -- 1900
 < -- 0
-+ -- 681
-- -- 548
-* -- 2532
-:= -- 5249
-add.period$ -- 161
-call.type$ -- 133
-change.case$ -- 115
++ -- 694
+- -- 557
+* -- 2612
+:= -- 5404
+add.period$ -- 165
+call.type$ -- 137
+change.case$ -- 119
 chr.to.int$ -- 0
-cite$ -- 144
-duplicate$ -- 1903
-empty$ -- 3096
-format.name$ -- 548
-if$ -- 8810
+cite$ -- 148
+duplicate$ -- 1967
+empty$ -- 3198
+format.name$ -- 557
+if$ -- 9094
 int.to.chr$ -- 0
-int.to.str$ -- 133
-missing$ -- 124
-newline$ -- 434
-num.names$ -- 125
-pop$ -- 431
+int.to.str$ -- 137
+missing$ -- 128
+newline$ -- 446
+num.names$ -- 129
+pop$ -- 437
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1380
+skip$ -- 1428
 stack$ -- 0
-substring$ -- 1686
-swap$ -- 871
+substring$ -- 1762
+swap$ -- 903
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 11
-while$ -- 299
-width$ -- 136
-write$ -- 1330
-(There were 6 error messages)
+while$ -- 311
+width$ -- 140
+write$ -- 1374
+(There were 7 error messages)

@@ -282,7 +282,7 @@ For completeness, we also include the expression for the \textit{charge-changing
 In this case, the reaction is sensitive only to the removal of one or more protons from the projectile. 
 Accordingly, the full projectile density \( \rho_P(\vec{r}) \) is replaced by the proton density distribution \( \rho_P^p(\vec{r}) \):
 
-\begin{equation}
+\begin{equation}\label{eq:final_cc_formula}
 \sigma_{\Delta Z} = 2\pi \int \mathrm{d} \vec{b} \left[ 1 - \exp \left( -\sigma_{NN} \int \mathrm{d} z' \int \mathrm{d}^3 r \, \rho_P^p(\vec{r}) \, \rho_T(\vec{r} - \vec{b}) \right) \right]
 \end{equation}
 
@@ -380,23 +380,38 @@ The form factor $F(q^2)$ characterizes the spatial charge distribution and is co
 F(\mathbf{q}^2) = \int e^{i\mathbf{q}\cdot\mathbf{x}/\hbar} \rho(\mathbf{x}) \,\mathrm{d}^3x \quad \Rightarrow \quad \rho(r) = \frac{1}{(2\pi)^3} \int F(\mathbf{q}^2) e^{-i\mathbf{q}\cdot\mathbf{x}/\hbar} \,\mathrm{d}^3q 
 \end{equation}
 
-Thus, by measuring the differential cross section and using the known Mott cross section, the form factor can be extracted. A subsequent inverse Fourier transform allows for the reconstruction of the charge density. However, in practice, the form factor is accessible only within a limited range of momentum transfer $\mathbf{q}$.
+Thus, by measuring the differential cross section and using the known Mott cross section, the form factor can be extracted. A subsequent inverse Fourier transform allows for the reconstruction of the charge density. However, in practice, the form factor is accessible only within a limited range of momentum transfer $\mathbf{q}$.\\
+Therefore, a common approach is to choose a model distribution $\rho(r)$ whose parameters are varied so that the calculated form factor agrees with the measured one. The so-called Fermi distribution is often used for this purpose; see Section 2.1 in Ref.~\cite{mayer2013kernphysik}.\\
+Another phenomenological approach is to use the Energy density functional theory (EDF)”. Here functional forms of the Hamiltonian are developed and one determines the parameters of the
+functional forms under constrains of a set of experimental data, such as the charge matter radii. Since EDF is not based on the interactions betweennucleons, but expresses the Hamiltonian by the local one-body density it allows to derive nuclear density distributions and extrapolate predictions for exotic nuclei. More details about the EDF approach can be found in Sec. 3.6 of Ref.~\cite{obertelli2021modern}.
 
 \end{description}
 
-
-
-
-->explain as in kuckuck
-->approaches with EDF
-
-
-
 \subsubsection{In medium modification - extension of the Glauber Model}
+The eikonal otical limit approximation is a useful method for calculating reaction cross sections based on simplified assumptions. However, these assumptions and simplifications neglect certain reaction dynamics, leading to an overestimation of the cross sections compared to experimental data, as shown in Fig. Blabla Corrections to the approximation, including in-medium effects, lower the calculated cross sections and are shortly discussed in the following sections.
 \begin{description}
-\item[Fermi Motion] Reference to section in qfs
 \item[Pauli Blocking]
+The Pauli Exclusion Principle, formulated by Wolfgang Pauli, prohibits two identical fermions -- such as protons or neutrons -- from occupying the same quantum state. As a consequence, in inelastic scattering reactions, certain final states involving nuclear excitation are inaccessible. This restriction reduces the available phase space and thus leads to a suppression of the total reaction cross section.\\
+
+This effect, commonly referred to as \textit{Pauli blocking}, becomes particularly relevant at low incident energies and is discussed in detail in Refs.~\cite{hussein1991microscopic,bertulani1986heavy,bertulani2001density,bertulani2010pauli}. The corresponding reduction of the in-medium nucleon–nucleon cross section due to Pauli blocking is given in Ref.~\cite{teixeira2022nuclear} as:
+\begin{equation}\label{eq:pauli_blocked_cs}
+\sigma_{NN}^{\text{Pauli}}(E, \rho_P, \rho_T) = \sigma_{NN}^{\text{free}}(E)
+\cdot \frac{1}{1 + 1.892 \left( \frac{|\rho_P - \rho_T|}{\tilde{\rho} \rho_0} \right)^{2.75}}
+\cdot
+\begin{cases}
+1 - \frac{37.02 \tilde{\rho}^{2/3}}{E}, & \text{if } E > 46.27 \tilde{\rho}^{2/3}, \\
+\frac{E}{231.38 \tilde{\rho}^{2/3}}, & \text{if } E \leq 46.27 \tilde{\rho}^{2/3},
+\end{cases}
+\end{equation}
+given $\tilde{\rho}$ as: 
+\begin{equation*}
+\tilde{\rho} = \frac{\rho_P + \rho_T}{\rho_0}
+\end{equation*}
+and with $\rho_0 = 0.16 fm^{-3}$ the nuclear saturation density.\\
+To account for the \textit{Pauli Blocking} the free nucleon-nucleon cross section $\sigma_{NN}$ in the total reaction cross section, Eq.~\ref{eq:final_react_cs}, and the charge changing cross section, Eq ~\ref{eq:final_cc_formula}, has to be substituted by the reduced nucleon-nucleon cross section in Eq.~\ref{eq:pauli_blocked_cs}.
+
 \item[Coulomb Repulsion]
+\item[Fermi Motion] Reference to section in qfs
 \end{description}
 
 
