@@ -166,9 +166,9 @@ S.~Agostinelli, J.~Allison, K.~a. Amako, J.~Apostolakis, H.~Araujo, P.~Arce,
   Equipment}, vol.~506, no.~3, pp.~250--303, 2003.
 
 \bibitem{schindler2017total}
-F.~Schindler, {\em Total reaction, charge-changing, and neutron-removal cross
+F.~Schindler, {\em {Total reaction, charge-changing, and neutron-removal cross
   sections of the heavy, neutron-rich nuclei 124Sn, 128Sn, 132Sn, and 134Sn
-  measured with large acceptance at R3B}.
+  measured with large acceptance at R3B}}.
 \newblock PhD thesis, Technische Universit{\"a}t Darmstadt, 2017.
 
 \bibitem{mayer2013kernphysik}
@@ -180,8 +180,8 @@ J.~J. Sakurai and J.~Napolitano, {\em Modern quantum mechanics}.
 \newblock Cambridge University Press, 2020.
 
 \bibitem{PDG2015}
-K.~O. et~al. (Particle Data~Group), ``Review of particle physics,'' {\em Chin.
-  Phys. C}, vol.~38, no.~9, p.~090001, 2014.
+K.~O. et~al. (Particle Data~Group), ``{Review of Particle Physics},'' {\em
+  Chin. Phys. C}, vol.~38, no.~9, p.~090001, 2014.
 \newblock See section on hadronic cross sections at
   \url{https://pdg.lbl.gov/2015/hadronic-xsections/}.
 
@@ -202,14 +202,15 @@ E.~Pollard, ``Nuclear potential barriers: experiment and theory,'' {\em
 \bibitem{takechi2009reaction}
 M.~Takechi, M.~Fukuda, M.~Mihara, K.~Tanaka, T.~Chinda, T.~Matsumasa,
   M.~Nishimoto, R.~Matsumiya, Y.~Nakashima, H.~Matsubara, {\em et~al.},
-  ``Reaction cross sections at intermediate energies and fermi-motion effect,''
-  {\em Physical Review C—Nuclear Physics}, vol.~79, no.~6, p.~061601, 2009.
+  ``{Reaction cross sections at intermediate energies and Fermi-motion
+  effect},'' {\em Physical Review C-Nuclear Physics}, vol.~79, no.~6,
+  p.~061601, 2009.
 
 \bibitem{tanihata1990rnbeams}
-I.~Tanihata, ``Proceedings of the first international conference on radioactive
-  nuclear beams,'' in {\em Radioactive Nuclear Beams: 16--18 October 1989,
-  Lawrence Berkeley Laboratory}, (Singapore), p.~477, World Scientific
-  Publishing Company Incorporated, 1990.
+I.~Tanihata, ``{Proceedings of the First International Conference on
+  Radioactive Nuclear Beams},'' in {\em Radioactive Nuclear Beams: 16--18
+  October 1989, Lawrence Berkeley Laboratory}, (Singapore), p.~477, World
+  Scientific Publishing Company Incorporated, 1990.
 
 \bibitem{ozawa2001measurements}
 A.~Ozawa, O.~Bochkarev, L.~Chulkov, D.~Cortina, H.~Geissel, M.~Hellstr{\"o}m,
