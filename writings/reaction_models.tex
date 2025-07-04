@@ -182,43 +182,6 @@ From equation~\ref{eq:tot_cs_def}, the scattering amplitude~\ref{eq:final_sc_amp
 TODO: add footnote to S-Matrix
 
 \subsubsection{Optical potential and optical limit}
-%Now we introduce the so-called "optical potential" $V(\vec{r})$ from the Hamiltionian~\ref{eq:hamiltonian}. A fundamental understanding of this potential would be gained if one could derive it from the nucleon-nucleon interaction using a self-consistency procedure. This is a problem that has only been partially solved to date and is very difficult. Therefore, the optical potential is introduced as an empirical phenomenological potential, fitted to the experimental cross-section data.\\
-%There are two main approaches how to build the shape and amplitude of the optical potential:
-%It can be modeled -- in analogy to optics with the complex index of refraction with partial transmission and absorpion -- as a complex potential of the form:
-%\begin{equation}
-%V(r) = U(r)\; + \; iW(r)
-%\end{equation}
-%where as $U(r)$ a parametrized Wood-Saxon potential is used. The imaginary part $W(r)$, which is responsible for the absorption, is more difficult to model, usually by implementing three different terms "volume", "surface" and "mixture", see Section 8.2.7 in Ref~\cite{obertelli2021modern} and Section 7.6 in Ref ~\cite{mayer2013kernphysik}.\\
-%The second approach, whose main concepts will be presented here introduces an optical potential starting from the single inteaction of a projectile nucleon with a target nucleon. This first order optical potential is written as:
-%\begin{equation}\label{eq:opt_pot}
-%V_{\text{opt}}(\vec{r}) = t_{pn} \rho_n(\vec{r}) + t_{pp} \rho_p(\vec{r})
-%\end{equation}
-%with $t_{pn}$ and $t_{pp}$ proton-neutron and proton-proton transition elements accordingly. They are related to the scattering amplitude, introduced in equation~\ref{eq:sc_amp_pot}, as:
-%\begin{equation}
-%t_{pi} \equiv \langle \varphi_{\vec{k}'} | V(\vec{r}) | \psi_{\vec{k}} \rangle \equiv - \frac{\hbar^2}{2\mu} \cdot \frac{1}{2\pi^2} f_{pi}(\theta) \quad i = proton/neutron
-%\end{equation}
-%Since the ultimative goal is to extend the optical potential~\ref{eq:opt_pot} to a nucleus-nucleus potential, the transition elemens can be isospin averaged to get a NN transistion element:
-%\begin{equation}
-%- i \, \frac{\hbar \nu}{2} \, \sigma_{NN}
-%\end{equation} 
-%Considering the spatial expansion of the nucleons within the projectile and target nucleus, equation~\ref{eq:opt_pot} has to be replaced by the integral over the normalized nucleus density distributions $\rho_{P}(\vec{r})$ and $\rho_{T}(\vec{r})$. The optical potential can then be written as:
-%\begin{equation} 
-%V_{OL}(\vec{b}) = -i \, \frac{\hbar \nu}{2} \, \sigma_{NN} \int \mathrm{d} \vec{r} \, \rho_P(\vec{r}) \, \rho_T(\vec{r} - \vec{b})
-%\end{equation}
-%
-%Inserting this optical potential in the eikonal phase calculation~\ref{eq:eikonal_phase} the total reaction cross section $\sigma_R$ from equation~\ref{eq:simga_reaction} becomes:
-%\begin{equation}\label{eq:final_react_cs}
-%\sigma_R = 2\pi \int d\vec{b} \left( 1 - \exp\left( -\sigma_{NN} \int d\vec{z}' \int d\vec{r} \, \rho_P(\vec{r}) \rho_T(\vec{r} - \vec{b}) \right) \right)
-%\end{equation}
-%where $\vec{b}$ is the impact parameter introduced as displacement of the projectile's and target's center of mass, see Fig.~\ref{fig:impact_par_glauber}, and $z$ the coordinate along the beam direction. Since the potential is folded both on $\vec{b}$ and $\vec{r}$, it is also often called "double-folded optical potential", see Ref.~\cite{obertelli2021modern},Sec. 8.2.7.\\
-%
-%For sake of completeness, since in this work in Section~\ref{subsec:cc_cs} the charge changing cross section is measured, from the eikonal optical limit derivation we get:
-%\begin{equation}\label{eq:final_ch_ch_cs}
-%\sigma_{\Delta Z} = 2\pi \int d\vec{b} \left( 1 - \exp\left( -\sigma_{NN} \int d\vec{z}' \int d\vec{r} \, \rho_P^{p}(\vec{r}) \rho_T(\vec{r} - \vec{b}) \right) \right)
-%\end{equation}
-%Eq.~\ref{eq:final_ch_ch_cs} differs from the total reaction cross section, Eq.~\ref{eq:final_react_cs}, only by substituting the nucleon densitiy distribution $\rho_P(\vec{r})$ -- which includes both proton and neutron distribution within the nucleus -- by the proton density distribution $\rho_P^{p}(\vec{r})$ within the target, since for the charge changing cross section the focus relies only on the removal of one (or multiple) proton(s).
-%
-%
 %TODO: explain that Vol is simplified, only imaginary part, this is so for the total reaction cross section....
 
 In the following, we introduce the concept of the optical potential \( V(\vec{r}) \), as it appears in the Hamiltonian. 
@@ -290,44 +253,6 @@ This expression differs from the total reaction cross-section only by this subst
 
 
 \subsection{Input to the Glauber Model}
-%As shown in equation~\ref{eq:final_react_cs} the total reaction cross section only depends from the density distribution of the target and projectile and the averaged free nucleon-nucleon cross section $\sigma_{NN}$.  
-%\begin{description}
-%\item[Nucleon-Nucleon cross section]
-%The isospin averaged nucleon-nucleon cross section $\sigma_{NN}$ is calculated based on the proton numbers ($Z_P$ and $Z_T$) and neutron numbers ($N_P$ and $N_T$) of projectile and target nuclei:
-%\begin{equation}
-%\sigma_{NN} = \frac{N_P N_T \sigma_{nn} + Z_P Z_T \sigma_{pp} + (Z_P N_T + N_P Z_T) \sigma_{np}}{A_P A_T}
-%\end{equation}
-%where $\sigma_{nn}$ is the neutron-neutron cross section, $\sigma_{pp}$ the proton-proton cross section and $\sigma_{np}$ the neutron-proton cross section accordingly. Fig.~\ref{fig:nn_lukas} shows the according nucleon-nucleon experimental cross-section data -- omitting the Coulomb scattering -- in red the $\sigma_{pp}$ and in black the $\sigma_{np}$. 
-%As shown the effective nuclear pp cross section is suppressed at low energies -- relative to pn --because for the pp system Coulomb repulsion acts, which obscures the strong force effects at low energies. Moreover pn scattering benefits from stronger interaction channels due to isospin coupling rules, and therefore also contributing to larger cross sections.\\
-%At high energies, we can assume $\sigma_{pp}\; =\; \sigma_{nn}\; =\; \sigma_{np}$. 
-%
-% \begin{figure}[htbp]
-%     \centering
-%     \includegraphics[width=0.8\textwidth]{Figures/nn_cross_section.png}
-%     \caption{Summarized experimental nuclear cross section data, from~\cite{PDG2015} -- omitting Coulomb scattering. The red dots correspond to the pp datapoints, the black dots to the np datapoints. The points are fitted according to the parametrization obtained from~\cite{bertulani2010pauli}. Figure taken from~\cite{ponnath2023precise}}.
-%     \label{fig:nn_lukas}
-% \end{figure}
-%
-%\item[Nuclear density distribution] The second input parameter to the Glauber framework in scattering theory is the nuclear density distribution of the projectile $\rho_P(\vec{r})$ and the target $\rho_T(\vec{r})$. From early Rutherford scattering experiments it has been shown that the nucleus radius is related to the mass number in good approximation by:
-%\begin{equation}
-%R = r_0 A^{\frac{1}{3}}
-%\end{equation}
-%with $r_0 = (1.3\pm0.1 fm$ from Rutherford scattering experiments~\cite{pollard1935nuclear}. In these experiments the actual charge distribution of the protons is measured and matches the density distribution of the nucleus if protons and neutrons have the same spatial distribution. This is a very good approximation for stable nuclei, such as the isotope $^{12}$ which is investigated in this work.\\
-%Experimentally the charge radii are investigated by high energy scattering of electons with nuclei and via spectroscopy of muonic atoms. In the here discussed electron scattering experimental approach the differential cross section for electrons on an extended object, such as a nucleus, is given by:
-%\begin{equation}\label{eq:exp_cs_with_mott}
-%\left( \frac{d\sigma}{d\Omega} \right)_{\text{exp.}} = \left( \frac{d\sigma}{d\Omega} \right)_{\text{Mott}} \cdot \left| F(q^2) \right|^2
-%\end{equation}
-%where the Mott cross section is deduced by the Rutherford cross section and in addition considering the spin dependency of the cross section:
-%\begin{equation}
-%\left( \frac{d\sigma}{d\Omega} \right)^{*}_{\text{Mott}} = \left( \frac{d\sigma}{d\Omega} \right)_{\text{Rutherford}} \cdot \left( 1 - \beta^2 \sin^2 \frac{\theta}{2} \right) \quad \text{with} \quad \beta = \frac{v}{c}
-%\end{equation}
-%and $F(q^2)$ being the nucleus' form factor which again is related to the nuclear charge distribution via a  Fourier transformation:
-%\begin{equation}\label{eq:form_fac_four}
-%F(\mathbf{q}^2) = \int e^{i\mathbf{q}\mathbf{x}/\hbar} \rho(\mathbf{x}) \mathrm{d}^3x \Rightarrow \rho(r) = \frac{1}{(2\pi)^3} \int F(\mathbf{q}^2) e^{-i\mathbf{q}\mathbf{x}/\hbar} \mathrm{d}^3q 
-%\end{equation}
-%This means that by experimental differential cross section measurements with known Mott cross section the Form factor in Eq.~\ref{eq:exp_cs_with_mott} can be extracted and with a Fourier back transformation, as in Eq.~\ref{eq:form_fac_four} the charge distribution can be derived. However, experimentally $F(q^2)$ is only accessible in a small range of the momentum transfer$\mathbf{q}$. 
-%
-%\end{description}
 
 As shown in Eq.~\ref{eq:final_react_cs}, the total reaction cross section depends only on the density distributions of the target and projectile, as well as on the isospin-averaged free nucleon-nucleon cross section, $\sigma_{NN}$.
 
@@ -354,46 +279,138 @@ At low energies, the effective $\sigma_{pp}$ cross section is reduced relative t
 
 \item[Nuclear Density Distributions]
 
-The second essential input to the Glauber model is the nuclear density distribution of the projectile, $\rho_P(\vec{r})$, and the target, $\rho_T(\vec{r})$. Early Rutherford scattering experiments established that the nuclear radius scales with mass number as:
+%The second essential input to the Glauber model is the nuclear density distribution of the projectile, $\rho_P(\vec{r})$, and the target, $\rho_T(\vec{r})$. Early Rutherford scattering experiments established that the nuclear radius scales with mass number as:
+%
+%\begin{equation}
+%R = r_0 A^{1/3}
+%\end{equation}
+%
+%with $r_0 = (1.3 \pm 0.1)\,\text{fm}$, as determined in~\cite{pollard1935nuclear}. These experiments measure the charge distribution of protons, which, under the assumption of identical spatial distributions for protons and neutrons, represents the total nuclear density. This is a valid approximation for stable nuclei such as $^{12}\text{C}$, which is examined in this work.
+%
+%Experimentally, charge radii are determined either via high-energy electron scattering or spectroscopy of muonic atoms. In electron scattering experiments, the differential cross section for scattering off an extended object like a nucleus is expressed as:
+%
+%\begin{equation}\label{eq:exp_cs_with_mott}
+%\left( \frac{d\sigma}{d\Omega} \right)_{\text{exp.}} = \left( \frac{d\sigma}{d\Omega} \right)_{\text{Mott}} \cdot \left| F(q^2) \right|^2
+%\end{equation}
+%
+%The Mott cross section is derived from the Rutherford cross section and includes spin-dependent corrections:
+%
+%\begin{equation}
+%\left( \frac{d\sigma}{d\Omega} \right)^{*}_{\text{Mott}} = \left( \frac{d\sigma}{d\Omega} \right)_{\text{Rutherford}} \cdot \left( 1 - \beta^2 \sin^2 \frac{\theta}{2} \right), \quad \text{with } \beta = \frac{v}{c}
+%\end{equation}
+%
+%The form factor $F(q^2)$ characterizes the spatial charge distribution and is connected to the density via a Fourier transform:
+%
+%\begin{equation}\label{eq:form_fac_four}
+%F(\mathbf{q}^2) = \int e^{i\mathbf{q}\cdot\mathbf{x}/\hbar} \rho(\mathbf{x}) \,\mathrm{d}^3x \quad \Rightarrow \quad \rho(r) = \frac{1}{(2\pi)^3} \int F(\mathbf{q}^2) e^{-i\mathbf{q}\cdot\mathbf{x}/\hbar} \,\mathrm{d}^3q 
+%\end{equation}
+%
+%Thus, by measuring the differential cross section and using the known Mott cross section, the form factor can be extracted. A subsequent inverse Fourier transform allows for the reconstruction of the charge density. However, in practice, the form factor is accessible only within a limited range of momentum transfer $\mathbf{q}$.\\
+%Therefore, a common approach is to choose a model distribution $\rho(r)$ whose parameters are varied so that the calculated form factor agrees with the measured one. The so-called Fermi distribution is often used for this purpose; see Section 2.1 in Ref.~\cite{mayer2013kernphysik}.\\
+%Another phenomenological approach is to use the "Energy density functional theory (EDF)". Here functional forms of the Hamiltonian are developed and one determines the parameters of the
+%functional forms under constrains of a set of experimental data, such as the charge matter radii. Since EDF is not based on the interactions betweennucleons, but expresses the Hamiltonian by the local one-body density it allows to derive nuclear density distributions and extrapolate predictions for exotic nuclei. More details about the EDF approach can be found in Sec. 3.6 of Ref.~\cite{obertelli2021modern}.
 
+The second essential input to the Glauber model is the nuclear density distribution of the projectile, \( \rho_P(\vec{r}) \), and the target, \( \rho_T(\vec{r}) \). The dependence of the nuclear radius on the mass number \( A \) was first established in early Rutherford scattering experiments, which demonstrated that it scales as
 \begin{equation}
 R = r_0 A^{1/3}
 \end{equation}
+where \( r_0 = (1.3 \pm 0.1)\,\text{fm} \), as reported in~\cite{pollard1935nuclear}. These experiments probe the distribution of protons via their electric charge. Assuming that protons and neutrons share an identical spatial distribution, the measured charge density serves as a valid proxy for the total nuclear density. This approximation holds well for stable nuclei such as \( ^{12}\text{C} \), which is investigated in this work.
 
-with $r_0 = (1.3 \pm 0.1)\,\text{fm}$, as determined in~\cite{pollard1935nuclear}. These experiments measure the charge distribution of protons, which, under the assumption of identical spatial distributions for protons and neutrons, represents the total nuclear density. This is a valid approximation for stable nuclei such as $^{12}\text{C}$, which is examined in this work.
-
-Experimentally, charge radii are determined either via high-energy electron scattering or spectroscopy of muonic atoms. In electron scattering experiments, the differential cross section for scattering off an extended object like a nucleus is expressed as:
-
-\begin{equation}\label{eq:exp_cs_with_mott}
-\left( \frac{d\sigma}{d\Omega} \right)_{\text{exp.}} = \left( \frac{d\sigma}{d\Omega} \right)_{\text{Mott}} \cdot \left| F(q^2) \right|^2
-\end{equation}
-
-The Mott cross section is derived from the Rutherford cross section and includes spin-dependent corrections:
-
+Nuclear charge radii are determined experimentally through high-energy electron scattering or through spectroscopy of muonic atoms. In the case of electron scattering, the differential cross section for an extended target such as a nucleus is expressed as
 \begin{equation}
-\left( \frac{d\sigma}{d\Omega} \right)^{*}_{\text{Mott}} = \left( \frac{d\sigma}{d\Omega} \right)_{\text{Rutherford}} \cdot \left( 1 - \beta^2 \sin^2 \frac{\theta}{2} \right), \quad \text{with } \beta = \frac{v}{c}
+\left( \frac{d\sigma}{d\Omega} \right)_{\text{exp}} = \left( \frac{d\sigma}{d\Omega} \right)_{\text{Mott}} \cdot \left| F(q^2) \right|^2
+\end{equation}
+where \( F(q^2) \) is the nuclear form factor and accounts for the finite size and internal structure of the nucleus. The Mott cross section includes relativistic and spin corrections to the Rutherford cross section\footnote{The asterisk denotes that the nuclear recoil is neglected in the given expression for electron–nucleus scattering.}:
+\begin{equation}
+\left( \frac{d\sigma}{d\Omega} \right)^{*}_{\text{Mott}} = \left( \frac{d\sigma}{d\Omega} \right)_{\text{Rutherford}} \cdot \left( 1 - \beta^2 \sin^2 \frac{\theta}{2} \right), \quad \beta = \frac{v}{c}
 \end{equation}
 
-The form factor $F(q^2)$ characterizes the spatial charge distribution and is connected to the density via a Fourier transform:
-
-\begin{equation}\label{eq:form_fac_four}
-F(\mathbf{q}^2) = \int e^{i\mathbf{q}\cdot\mathbf{x}/\hbar} \rho(\mathbf{x}) \,\mathrm{d}^3x \quad \Rightarrow \quad \rho(r) = \frac{1}{(2\pi)^3} \int F(\mathbf{q}^2) e^{-i\mathbf{q}\cdot\mathbf{x}/\hbar} \,\mathrm{d}^3q 
+The form factor \( F(q^2) \) is the Fourier transform of the spatial charge distribution:
+\begin{equation}
+F(\mathbf{q}^2) = \int e^{i\mathbf{q}\cdot\mathbf{x}/\hbar} \rho(\mathbf{x}) \,\mathrm{d}^3x 
+\quad \Rightarrow \quad 
+\rho(r) = \frac{1}{(2\pi)^3} \int F(\mathbf{q}^2) e^{-i\mathbf{q}\cdot\mathbf{x}/\hbar} \,\mathrm{d}^3q 
 \end{equation}
 
-Thus, by measuring the differential cross section and using the known Mott cross section, the form factor can be extracted. A subsequent inverse Fourier transform allows for the reconstruction of the charge density. However, in practice, the form factor is accessible only within a limited range of momentum transfer $\mathbf{q}$.\\
-Therefore, a common approach is to choose a model distribution $\rho(r)$ whose parameters are varied so that the calculated form factor agrees with the measured one. The so-called Fermi distribution is often used for this purpose; see Section 2.1 in Ref.~\cite{mayer2013kernphysik}.\\
-Another phenomenological approach is to use the Energy density functional theory (EDF)”. Here functional forms of the Hamiltonian are developed and one determines the parameters of the
-functional forms under constrains of a set of experimental data, such as the charge matter radii. Since EDF is not based on the interactions betweennucleons, but expresses the Hamiltonian by the local one-body density it allows to derive nuclear density distributions and extrapolate predictions for exotic nuclei. More details about the EDF approach can be found in Sec. 3.6 of Ref.~\cite{obertelli2021modern}.
+Thus, by measuring the differential cross section and comparing it to the known Mott cross section, the form factor can be extracted. An inverse Fourier transform then allows the reconstruction of the nuclear charge density. In practice, however, the accessible range of momentum transfer \( \mathbf{q} \) is limited.
+
+A common approach is therefore to assume a parameterized functional form for \( \rho(r) \), and fit its parameters to best reproduce the experimental form factor. One frequently used choice is the Fermi distribution; see Section 2.1 of Ref.~\cite{mayer2013kernphysik}.
+
+An alternative phenomenological method is the Energy Density Functional (EDF) theory. In this approach, the nuclear Hamiltonian is expressed as a functional of the local one-body density. The parameters of this functional are determined by fitting to experimental observables, such as charge and matter radii. EDF methods are not explicitly based on nucleon–nucleon interactions but enable the derivation of nuclear density profiles and extrapolations to exotic nuclei. A detailed discussion of EDF can be found in Section 3.6 of Ref.~\cite{obertelli2021modern}.
+
+
 
 \end{description}
 
-\subsubsection{In medium modification - extension of the Glauber Model}
-The eikonal otical limit approximation is a useful method for calculating reaction cross sections based on simplified assumptions. However, these assumptions and simplifications neglect certain reaction dynamics, leading to an overestimation of the cross sections compared to experimental data, as shown in Fig. Blabla Corrections to the approximation, including in-medium effects, lower the calculated cross sections and are shortly discussed in the following sections.
-\begin{description}
-\item[Pauli Blocking]
-The Pauli Exclusion Principle, formulated by Wolfgang Pauli, prohibits two identical fermions -- such as protons or neutrons -- from occupying the same quantum state. As a consequence, in inelastic scattering reactions, certain final states involving nuclear excitation are inaccessible. This restriction reduces the available phase space and thus leads to a suppression of the total reaction cross section.\\
+\subsubsection{In-medium Modifications -- Extensions of the Glauber Model}
 
-This effect, commonly referred to as \textit{Pauli blocking}, becomes particularly relevant at low incident energies and is discussed in detail in Refs.~\cite{hussein1991microscopic,bertulani1986heavy,bertulani2001density,bertulani2010pauli}. The corresponding reduction of the in-medium nucleon–nucleon cross section due to Pauli blocking is given in Ref.~\cite{teixeira2022nuclear} as:
+%The eikonal otical limit approximation is a useful method for calculating reaction cross sections based on simplified assumptions. However, these assumptions and simplifications neglect certain reaction dynamics, leading to an overestimation of the cross sections compared to experimental data, as shown in Fig. Blabla Corrections to the approximation, including in-medium effects, lower the calculated cross sections and are shortly discussed in the following sections.
+%\begin{description}
+%\item[Pauli Blocking]
+%The Pauli Exclusion Principle, formulated by Wolfgang Pauli, prohibits two identical fermions -- such as protons or neutrons -- from occupying the same quantum state. As a consequence, in inelastic scattering reactions, certain final states involving nuclear excitation are inaccessible. This restriction reduces the available phase space and thus leads to a suppression of the total reaction cross section.\\
+%
+%This effect, commonly referred to as \textit{Pauli blocking}, becomes particularly relevant at low incident energies and is discussed in detail in Refs.~\cite{hussein1991microscopic,bertulani1986heavy,bertulani2001density,bertulani2010pauli}. The corresponding reduction of the in-medium nucleon–nucleon cross section due to Pauli blocking is given in Ref.~\cite{teixeira2022nuclear} as:
+%\begin{equation}\label{eq:pauli_blocked_cs}
+%\sigma_{NN}^{\text{Pauli}}(E, \rho_P, \rho_T) = \sigma_{NN}^{\text{free}}(E)
+%\cdot \frac{1}{1 + 1.892 \left( \frac{|\rho_P - \rho_T|}{\tilde{\rho} \rho_0} \right)^{2.75}}
+%\cdot
+%\begin{cases}
+%1 - \frac{37.02 \tilde{\rho}^{2/3}}{E}, & \text{if } E > 46.27 \tilde{\rho}^{2/3}, \\
+%\frac{E}{231.38 \tilde{\rho}^{2/3}}, & \text{if } E \leq 46.27 \tilde{\rho}^{2/3},
+%\end{cases}
+%\end{equation}
+%given $\tilde{\rho}$ as: 
+%\begin{equation*}
+%\tilde{\rho} = \frac{\rho_P + \rho_T}{\rho_0}
+%\end{equation*}
+%and with $\rho_0 = 0.16 fm^{-3}$ the nuclear saturation density.\\
+%To account for the \textit{Pauli Blocking} the free nucleon-nucleon cross section $\sigma_{NN}$ in the total reaction cross section, Eq.~\ref{eq:final_react_cs}, and the charge changing cross section, Eq ~\ref{eq:final_cc_formula}, has to be substituted by the reduced nucleon-nucleon cross section $\sigma_{NN}^{\text{Pauli}}$ from Eq.~\ref{eq:pauli_blocked_cs}.
+%
+%\item[Coulomb Repulsion]
+%When both projectile and target are positively charged, as it is the case of $^{12}$C + $^{12}$, the Coulomb potential repels them as they approach. The eikonal wave assumption, that the projectile travels on a straight line, has to be corrected and accounted for the deflection. This deflection has as consequence that it prevents the nuclei from getting close enought to interact via the strong nuclear force and it reduces the number of projectile trajectories (impact parameters) that result in a reaction. As a result, the Coulomb repulsion suppresses the total interaction cross section, especially at low beam energies, where the kinetic energy is comparable to the Coulomb barrier.  
+%The starting point for the correction is to find the distance of closest approach of the projectile and target in a head-on collision. Due to the Coulomb repulsion this is reached when both the kinetic energy of the projectile and the Coulomb potential are same. In non relativistic kinematics the closest approach $r_{min}$ is given by:
+%\begin{equation}
+%\frac{1}{2}mv^{2} = \frac{Z_T Z_P e^{2}}{r} \Rightarrow r_{min} = \frac{2Z_T Z_P e^{2}}{m v^{2}}
+%\end{equation}
+%In the center of mass system of both projectile and target in relativistic kinematics $r_{min}$ is approximated as in Ref~\cite{teixeira2022nuclear}:
+%\begin{equation}
+%r_{min} = \frac{Z_T Z_P e^{2}}{\gamma m v^{2}}
+%\end{equation}
+%with $\gamma$ being the Lorentz factor and $\mu$ the reduced mass of the system.
+%Finally the corrected impact parameter is given as:
+%\begin{equation}
+%b' = r_{min} + \sqrt{r_{min}^2 + b^2}
+%\end{equation},
+%see Ref~\cite{teixeira2022nuclear} for more details.\\
+%So now the integration for the reaction cross section, Eq.~\ref{eq:final_react_cs}, corresponding to the impact parameter $b$ has to be substituted by $b'$, which means instead of integrating from $b = 0 $ to $\inf$ the integration goes from $b'(b=0) = 2r_{min}$ to $\inf$. 
+%
+%
+%\item[Fermi Motion]
+%Up to now in the Glauber model the nucleons both in the projectile nucleus and in the target nucleus were assumed to be at rest. However, all nucleons inside a nucleon undergo relative motion. In the ground state of the nucleus the nucleons can reach a momentum up to the Fermi momentum $p_F \approx 250 MeV/c$ for medium to heavy nuclei. This relative motion changes actually the collision energy and therfore shifts the total interaction cross section. Ref~\cite{teixeira2022nuclear} presents an attempt to consider this internal motion in the total interaction cross section. However it came out that the correction is smaller than 0.1\% for beam energies above 200 AMeV and therefore negligible for high energy measuements as presented in this work. \\
+%However, for quasi-free scattering reactions the inner momentum of the nucleons play a significant role. This will be discussed in more detail in the next chapter. 
+%
+%\end{description}
+
+
+
+The eikonal optical limit approximation provides a convenient framework for calculating reaction cross sections based on simplified assumptions about projectile-target interactions. However, this formalism neglects various dynamical effects, resulting in a systematic overestimation of reaction cross sections when compared to experimental data (see Fig.~\ref{...}). To improve the agreement between theory and experiment, several correction mechanisms have been developed. These include in-medium effects, which effectively reduce the calculated cross sections. The most relevant corrections are briefly summarized below.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Figures/cs_vals_cal_exp.png}
+    \caption{%
+        Total interaction cross sections $\sigma_{\mathrm{I}}$ for the system \textsuperscript{12}C + \textsuperscript{12}C as a function of beam energy per nucleon. Black circles denote predictions from standard Glauber model calculations, while red diamonds include in-medium corrections accounting for Coulomb repulsion and Pauli blocking. Experimental data from previous studies by Takechi et al.~\cite{takechi2009reaction}, Tanihata et al.~\cite{tanihata1990rnbeams}, and Ozawa et al.~\cite{ozawa2001measurements} are shown as blue dots. Recent experimental results obtained by Ponnath et al.~\cite{ponnath2024measurement} are depicted in green, differentiated by target thickness (circles: thin, squares: medium, triangles: thick). A systematic discrepancy remains between the in-medium corrected Glauber calculations and experimental data in the energy range of 800--1000\,AMeV, where the theoretical predictions tend to overestimate the measured cross sections. Figure taken from Ref.~\cite{ponnath2024measurement}.
+    }
+    \label{fig:carbon12_interaction_cs}
+\end{figure}
+
+\begin{description}
+
+\item[Pauli Blocking]
+The Pauli exclusion principle, formulated by Wolfgang Pauli, prohibits identical fermions -- such as protons or neutrons -- from occupying the same quantum state. In the context of nuclear reactions, this principle implies that not all final states in inelastic collisions are accessible, particularly those involving nuclear excitation. Consequently, the available phase space is reduced, leading to a suppression of the total reaction cross section.
+
+This phenomenon, referred to as \textit{Pauli blocking}, becomes especially relevant at low incident energies. A detailed discussion can be found in Refs.~\cite{hussein1991microscopic, bertulani1986heavy, bertulani2001density, bertulani2010pauli}. A quantitative expression for the Pauli-blocked in-medium nucleon-nucleon cross section is given in Ref.~\cite{teixeira2022nuclear} as:
+
 \begin{equation}\label{eq:pauli_blocked_cs}
 \sigma_{NN}^{\text{Pauli}}(E, \rho_P, \rho_T) = \sigma_{NN}^{\text{free}}(E)
 \cdot \frac{1}{1 + 1.892 \left( \frac{|\rho_P - \rho_T|}{\tilde{\rho} \rho_0} \right)^{2.75}}
@@ -403,90 +420,47 @@ This effect, commonly referred to as \textit{Pauli blocking}, becomes particular
 \frac{E}{231.38 \tilde{\rho}^{2/3}}, & \text{if } E \leq 46.27 \tilde{\rho}^{2/3},
 \end{cases}
 \end{equation}
-given $\tilde{\rho}$ as: 
-\begin{equation*}
-\tilde{\rho} = \frac{\rho_P + \rho_T}{\rho_0}
-\end{equation*}
-and with $\rho_0 = 0.16 fm^{-3}$ the nuclear saturation density.\\
-To account for the \textit{Pauli Blocking} the free nucleon-nucleon cross section $\sigma_{NN}$ in the total reaction cross section, Eq.~\ref{eq:final_react_cs}, and the charge changing cross section, Eq ~\ref{eq:final_cc_formula}, has to be substituted by the reduced nucleon-nucleon cross section $\sigma_{NN}^{\text{Pauli}}$ from Eq.~\ref{eq:pauli_blocked_cs}.
+
+with
+\[
+\tilde{\rho} = \frac{\rho_P + \rho_T}{\rho_0}, \quad \rho_0 = 0.16\,\mathrm{fm}^{-3}
+\]
+
+To incorporate Pauli blocking into the Glauber model, the free-space nucleon-nucleon cross section $\sigma_{NN}^{\text{free}}$ must be replaced with the Pauli-suppressed cross section $\sigma_{NN}^{\text{Pauli}}$ in both the total reaction cross section (Eq.~\ref{eq:final_react_cs}) and the charge-changing cross section (Eq.~\ref{eq:final_cc_formula}).
 
 \item[Coulomb Repulsion]
-in eikonal wave approx - > straight line, impact parameter b. However, due to Coulomb at low energies this is distorted
--> bring the stuff from Mayer Kuckuck
--> how does this reduce the cross section? As we integrate b over the full phase space....
+For systems in which both the projectile and the target carry positive charge, such as in $^{12}$C + $^{12}$C collisions, Coulomb repulsion plays a significant role. The eikonal approximation assumes straight-line trajectories, which becomes invalid as the Coulomb force deflects the incoming projectile. This deflection reduces the probability of the nuclei reaching distances where strong nuclear interactions dominate, effectively suppressing the interaction cross section -- particularly at low beam energies where the kinetic energy is comparable to the Coulomb barrier.
 
-\item[Fermi Motion] Reference to section in qfs
-is negligible for high energies, put reference there and also reference to theory part of qfs where I discuss this. 
+In the non-relativistic case, the distance of closest approach in a head-on collision can be calculated by equalizing the kinetic energy of the projectile with the repulsive Coulomb potential:
 
+\begin{equation}
+\frac{1}{2}mv^{2} = \frac{Z_T Z_P e^{2}}{r} \quad \Rightarrow \quad r_{\text{min}} = \frac{2 Z_T Z_P e^{2}}{m v^2}
+\end{equation}
 
+In the relativistic center-of-mass frame, this becomes:
+
+\begin{equation}
+r_{\text{min}} = \frac{Z_T Z_P e^{2}}{\gamma \mu v^2}
+\end{equation}
+with $\gamma$ being the Lorentz factor and $\mu$ the reduced mass of the system.
+The corrected impact parameter is then given as:
+
+\begin{equation}
+b' = a_0 + \sqrt{a_{0}^2 + b^2}
+\end{equation}
+where $a_0 = \frac{r_{min}}{2}$ is the half distance of closest approach. For more details see Ref.~\cite{teixeira2022nuclear}.
+
+As a consequence, the lower limit of the impact parameter integration in the total reaction cross section (Eq.~\ref{eq:final_react_cs}) is modified from $b=0$ to $b'= r_{\text{min}}$.
+
+\item[Fermi Motion]
+In the basic Glauber model, nucleons are assumed to be at rest within the nuclei. However, nucleons in a bound system exhibit intrinsic motion. In the ground state, momenta up to the Fermi momentum ($p_F \approx 250\,\mathrm{MeV}/c$) are possible for medium to heavy nuclei. This motion alters the effective nucleon–nucleon collision energy and can, in principle, influence the reaction cross section.
+
+Ref.~\cite{teixeira2022nuclear} investigates this effect and finds that the correction to the total reaction cross section remains below 0.1\% for beam energies above 200\,AMeV. Therefore, Fermi motion can be neglected in the high-energy context of this work.
+
+However, in quasi-free scattering reactions, the internal momentum distribution of nucleons plays a significant role. This aspect will be discussed in the following section.
 
 \end{description}
 
-
-
-%-> short description of eike , greek blabla, what does this really mean? 
-%show the position of the approximation
-%This introduces simply a phase shift to the outgoing wave
-%write down the final elastic cross section 
-%
-%
-%Then put in the optical theorem, which gives you the total cross section
-%From this you can deduce the total reaction cross section
-
-
-
-
-
-
-
-%Explain path to go:
-%\begin{itemize}
-%\item short intro why we use scattering reactions: to study structure of nuclei (mostly via e. scattering as they only interact via electromagn. force) and refer to chapter. Introduce problems qe account body problem etc
-%\item starting from elastic scattering at low energies going to medium to high energies
-%\item explain glauber: eikonal wave approximations, optical limit which leads to optical potential model, description via nucleon nucleon interaction
-%\end{itemize}
-%\subsection{Elastic scattering at low energies}
-%\begin{itemize}
-%\item Rutherford scattering,poiniering works (alpha particle on gold atoms),description in classical mechanics
-%\item Rutherford scattering only valid if coulomb potential
-%\item at low energies below pion production only elastic cross section
-%\item introduce here the Scattering problem in quantum mechanics (see Schindler, p. 23)
-%\item from classical physics we go to quantum mechanics and use partial wave decomposition with theta being the scattering angle
-%\item include in this picture coulomb and nuclear interaction (as done in Kuk, page 120)
-%\end{itemize}
-%\subsection{Nuclear Density distribution studies via elastic scattering}
-%\begin{itemize}
-%\item Rutherford, Mott and Rosenbluth
-%\item  show something about form Factors
-%\item  are charge radii and nuclear radii measured?
-%\item note approximation for $^{12}C$ that neutron radius same as proton radius
-%\end{itemize}
-%\subsection{Glauber Model for nuclear scattering at high energies}
-%\begin{itemize}
-%\item explain model assumption
-%\item eikonal wave approximation: high incoming momentum,low scattering angle
-%\item Show picture of scattering
-%\item optical limit: - Nucleons at high energy → undeflected due to large momentum (linear trajectory)
-%		   -Nucleus large compared to nucleon-nucleon  force
-%		   -Motion of nucleons independent of nucleus
-%		   -overall cross-section described in terms of nucleon-nucleon cross section
-%\item Description in the Probability Approach (also here I use all the eiconal and optical limit approximation)
-%\item Description in the Eikonal optical-limit approximation
-%\item Comparison of both descriptions methods  for total interaction cross section,should end up with same. Advantage of PA is that you can calculate the cross section for a defined number of removed projectile nucleons (Schindler, p. 49)
-%\end{itemize}
-%\subsubsection{Extensions to the Glauber model}
-%\begin{itemize}
-%\item things which cannot be neglected and influence the cross section
-%\item in medium modifications (see Lukas thesis)
-%\item Coulomb interaction
-%\item Pauli blocking
-%\end{itemize}
-%\subsection{Cross sections for $^{12}C + ^{12}C$}
-%\begin{itemize}
-%\item Total reaction cross section
-%\item charge changing cross section;maybe I have to include lise++ calculations
-%\item isotope corrections- neutron removal; maybe I have to include lise++ calculations
-%\end{itemize}
 
 \subsection{Quasi-Free Scattering (QFS) Reactions}\label{sec:qfs_theo}
 Quasi-free scattering (QFS) reactions, as a subset of direct reactions, are processes where a projectile nucleon interacts with a target nucleon via the strong nuclear force in a single and fast localized event at large momentum transfer which allows for a highly localized vertex. The relative kinetic energies of the participants, typically in the order of  $E_{kin}\gtrsim$ 100 AMeV, are high\footnote{Which is needed for the single nucleon-nucleon interaction.The \textit{de Broglie wavelength} of a 100 MeV proton corresponds to $\lambda \approx 2.79fm$ which is in the order of the proton diameter ($\approx 1.6 fm$)}.\newline
