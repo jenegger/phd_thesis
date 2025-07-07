@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2023.5.31)  4 JUL 2025 18:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2023.5.31)  7 JUL 2025 17:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1543,131 +1543,115 @@ f>]
 File: Figures/geo_acceptance.pdf Graphic file (type pdf)
 <use Figures/geo_acceptance.pdf>
 Package pdftex.def Info: Figures/geo_acceptance.pdf  used on input line 370.
-(pdftex.def)             Requested size: 404.66873pt x 227.61983pt.
+(pdftex.def)             Requested size: 443.57965pt x 249.5066pt.
  [74
 
- <./Figures/geo_acceptance.pdf>]
-Overfull \hbox (38.0447pt too wide) in paragraph at lines 402--403
-[]\T1/cmr/m/n/12 The ob-tained fit func-tion $\OML/cmm/m/it/12 f\OT1/cmr/m/n/12
- (\OML/cmm/m/it/12 y\OT1/cmr/m/n/12 )$ \T1/cmr/m/n/12 is then used to com-pare 
-the data distribution($\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 y\OT
-1/cmr/m/n/12 )[]$\T1/cmr/m/n/12 )
- []
-
-[75]
-<Figures/corig_geo_corr_factor.png, id=1580, 462.528pt x 346.896pt>
-File: Figures/corig_geo_corr_factor.png Graphic file (type png)
-<use Figures/corig_geo_corr_factor.png>
-Package pdftex.def Info: Figures/corig_geo_corr_factor.png  used on input line 
-414.
-(pdftex.def)             Requested size: 303.49796pt x 227.62346pt.
+ <./Figures/geo_acceptance.pdf>] [75]
+<Figures/geo_corr_flipping_thick_target_400amev.png, id=1577, 1589.94pt x 1084.
+05pt>
+File: Figures/geo_corr_flipping_thick_target_400amev.png Graphic file (type png
+)
+<use Figures/geo_corr_flipping_thick_target_400amev.png>
+Package pdftex.def Info: Figures/geo_corr_flipping_thick_target_400amev.png  us
+ed on input line 412.
+(pdftex.def)             Requested size: 443.57848pt x 302.4402pt.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 420.
+LaTeX Warning: Reference `fig:geo_corrections_overview' on page 76 undefined on
+ input line 427.
+
+[76] [77 <./Figures/geo_corr_flipping_thick_target_400amev.png>]
+
+LaTeX Warning: Reference `fig:xsec_prelim' on page 78 undefined on input line 4
+37.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 422.
+LaTeX Warning: Reference `fig:xsec_corrected' on page 78 undefined on input lin
+e 437.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 422.
-
-
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 422.
-
-<Figures/charge_changing_cross_sec_twim_eff_corr.png, id=1582, 433.62pt x 289.0
-8pt>
-File: Figures/charge_changing_cross_sec_twim_eff_corr.png Graphic file (type pn
-g)
-<use Figures/charge_changing_cross_sec_twim_eff_corr.png>
-Package pdftex.def Info: Figures/charge_changing_cross_sec_twim_eff_corr.png  u
-sed on input line 427.
-(pdftex.def)             Requested size: 341.43124pt x 227.62082pt.
-[76 <./Figures/corig_geo_corr_factor.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 436--437
+Underfull \hbox (badness 10000) in paragraph at lines 501--502
 
  []
 
-[77 <./Figures/charge_changing_cross_sec_twim_eff_corr.png>]
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 464.
+Underfull \vbox (badness 2980) has occurred while \output is active []
+
+ [78]
+
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 529.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 464.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 529.
 
-[78]
-Underfull \hbox (badness 10000) in paragraph at lines 503--519
+[79]
+Underfull \hbox (badness 10000) in paragraph at lines 568--584
 
  []
 
-<Figures/mw13_standard_cluster.png, id=1619, 721.69624pt x 518.93875pt>
+<Figures/mw13_standard_cluster.png, id=1613, 721.69624pt x 518.93875pt>
 File: Figures/mw13_standard_cluster.png Graphic file (type png)
 <use Figures/mw13_standard_cluster.png>
 Package pdftex.def Info: Figures/mw13_standard_cluster.png  used on input line 
-524.
+589.
 (pdftex.def)             Requested size: 316.55623pt x 227.6211pt.
-<Figures/mw13_own_cluster.png, id=1621, 679.53876pt x 498.86375pt>
+<Figures/mw13_own_cluster.png, id=1615, 679.53876pt x 498.86375pt>
 File: Figures/mw13_own_cluster.png Graphic file (type png)
 <use Figures/mw13_own_cluster.png>
-Package pdftex.def Info: Figures/mw13_own_cluster.png  used on input line 534.
+Package pdftex.def Info: Figures/mw13_own_cluster.png  used on input line 599.
 (pdftex.def)             Requested size: 310.06161pt x 227.62277pt.
-<Figures/quadrants_mw1_xy_400_thick.png, id=1626, 1072.005pt x 770.88pt>
+<Figures/quadrants_mw1_xy_400_thick.png, id=1620, 1072.005pt x 770.88pt>
 File: Figures/quadrants_mw1_xy_400_thick.png Graphic file (type png)
 <use Figures/quadrants_mw1_xy_400_thick.png>
 Package pdftex.def Info: Figures/quadrants_mw1_xy_400_thick.png  used on input 
-line 545.
+line 610.
 (pdftex.def)             Requested size: 316.53317pt x 227.61935pt.
 
-Overfull \hbox (30.8736pt too wide) in paragraph at lines 541--551
+Overfull \hbox (30.8736pt too wide) in paragraph at lines 606--616
 []\T1/cmr/bx/n/12 MWPC2 and MWPC3 with own clus-ter-ing, quad-rant se-lec-tion 
 in MWPC2:[][][][][] 
  []
 
-[79] [80 <./Figures/mw13_standard_cluster.png> <./Figures/mw13_own_cluster.png>
-] [81 <./Figures/quadrants_mw1_xy_400_thick.png>]
-<Figures/iso_corr_cs_mw23_hit.png, id=1649, 462.528pt x 346.896pt>
+[80 <./Figures/mw13_standard_cluster.png>] [81 <./Figures/mw13_own_cluster.png>
+]
+<Figures/iso_corr_cs_mw23_hit.png, id=1637, 462.528pt x 346.896pt>
 File: Figures/iso_corr_cs_mw23_hit.png Graphic file (type png)
 <use Figures/iso_corr_cs_mw23_hit.png>
-Package pdftex.def Info: Figures/iso_corr_cs_mw23_hit.png  used on input line 5
-59.
+Package pdftex.def Info: Figures/iso_corr_cs_mw23_hit.png  used on input line 6
+24.
 (pdftex.def)             Requested size: 303.49796pt x 227.62346pt.
-<Figures/iso_corr_cs_mw23_own_cluster.png, id=1650, 462.528pt x 346.896pt>
+<Figures/iso_corr_cs_mw23_own_cluster.png, id=1638, 462.528pt x 346.896pt>
 File: Figures/iso_corr_cs_mw23_own_cluster.png Graphic file (type png)
 <use Figures/iso_corr_cs_mw23_own_cluster.png>
 Package pdftex.def Info: Figures/iso_corr_cs_mw23_own_cluster.png  used on inpu
-t line 569.
+t line 634.
 (pdftex.def)             Requested size: 303.49796pt x 227.62346pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures/iso_corr_cs_mw13_hit.png, id=1651, 462.528pt x 346.896pt>
+ [82 <./Figures/quadrants_mw1_xy_400_thick.png> <./Figures/iso_corr_cs_mw23_hit
+.png>]
+<Figures/iso_corr_cs_mw13_hit.png, id=1646, 462.528pt x 346.896pt>
 File: Figures/iso_corr_cs_mw13_hit.png Graphic file (type png)
 <use Figures/iso_corr_cs_mw13_hit.png>
-Package pdftex.def Info: Figures/iso_corr_cs_mw13_hit.png  used on input line 5
-79.
+Package pdftex.def Info: Figures/iso_corr_cs_mw13_hit.png  used on input line 6
+44.
 (pdftex.def)             Requested size: 303.49796pt x 227.62346pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures/iso_corr_cs_mw13_own_cluster.png, id=1652, 462.528pt x 346.896pt>
+<Figures/iso_corr_cs_mw13_own_cluster.png, id=1647, 462.528pt x 346.896pt>
 File: Figures/iso_corr_cs_mw13_own_cluster.png Graphic file (type png)
 <use Figures/iso_corr_cs_mw13_own_cluster.png>
 Package pdftex.def Info: Figures/iso_corr_cs_mw13_own_cluster.png  used on inpu
-t line 589.
+t line 654.
 (pdftex.def)             Requested size: 303.49796pt x 227.62346pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<Figures/iso_corr_cs_mw23_own_cluster_all_quadrants.png, id=1653, 1084.05pt x 5
+ [83 <./Figures/iso_corr_cs_mw23_own_cluster.png> <./Figures/iso_corr_cs_mw13_h
+it.png>]
+<Figures/iso_corr_cs_mw23_own_cluster_all_quadrants.png, id=1656, 1084.05pt x 5
 05.89pt>
 File: Figures/iso_corr_cs_mw23_own_cluster_all_quadrants.png Graphic file (type
  png)
 <use Figures/iso_corr_cs_mw23_own_cluster_all_quadrants.png>
 Package pdftex.def Info: Figures/iso_corr_cs_mw23_own_cluster_all_quadrants.png
-  used on input line 599.
+  used on input line 664.
 (pdftex.def)             Requested size: 443.57016pt x 206.99939pt.
 
-Overfull \hbox (21.87567pt too wide) in paragraph at lines 596--605
+Overfull \hbox (21.87567pt too wide) in paragraph at lines 661--670
 []\T1/cmr/bx/n/12 MWPC2 and MWPC3 with own clus-ter-ing, quad-rant se-lec-tion 
 in MWPC1: 
  []
@@ -1675,29 +1659,29 @@ in MWPC1:
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[82 <./Figures/iso_corr_cs_mw23_hit.png>] [83 <./Figures/iso_corr_cs_mw23_own_c
-luster.png> <./Figures/iso_corr_cs_mw13_hit.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [84 <./Figures/iso_corr_cs_mw13_own_cluster.png> <./Figures/iso_corr_cs_mw23_o
-wn_cluster_all_quadrants.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 624--625
+[84 <./Figures/iso_corr_cs_mw13_own_cluster.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 689--690
 
  []
 
 
-Overfull \hbox (50.40031pt too wide) detected at line 644
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [85 <./Figures/iso_corr_cs_mw23_own_cluster_all_quadrants.png>]
+Overfull \hbox (50.40031pt too wide) detected at line 709
 []\OT1/cmr/m/n/10.95 ^^A\OML/cmm/m/it/10.95 ^^[[] \OT1/cmr/m/n/10.95 = []
  []
 
-[85]
-<Figures/tot_interaction_cs_geo_corr.png, id=1697, 462.528pt x 346.896pt>
+<Figures/tot_interaction_cs_geo_corr.png, id=1682, 462.528pt x 346.896pt>
 File: Figures/tot_interaction_cs_geo_corr.png Graphic file (type png)
 <use Figures/tot_interaction_cs_geo_corr.png>
 Package pdftex.def Info: Figures/tot_interaction_cs_geo_corr.png  used on input
- line 652.
+ line 717.
 (pdftex.def)             Requested size: 303.49796pt x 227.62346pt.
- [86 <./Figures/tot_interaction_cs_geo_corr.png>]) [87]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[86]) [87 <./Figures/tot_interaction_cs_geo_corr.png>]
 (./../writings/analysis_qfs.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -1731,13 +1715,13 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [88]
-<Figures/kick_point_algorithm.png, id=1724, 1214.5375pt x 758.835pt>
+<Figures/kick_point_algorithm.png, id=1713, 1214.5375pt x 758.835pt>
 File: Figures/kick_point_algorithm.png Graphic file (type png)
 <use Figures/kick_point_algorithm.png>
 Package pdftex.def Info: Figures/kick_point_algorithm.png  used on input line 2
 3.
 (pdftex.def)             Requested size: 310.50357pt x 193.99246pt.
-<Figures/intersection_algorithm.png, id=1725, 835.12pt x 796.9775pt>
+<Figures/intersection_algorithm.png, id=1714, 835.12pt x 796.9775pt>
 File: Figures/intersection_algorithm.png Graphic file (type png)
 <use Figures/intersection_algorithm.png>
 Package pdftex.def Info: Figures/intersection_algorithm.png  used on input line
@@ -1755,14 +1739,14 @@ Overfull \hbox (25.98763pt too wide) detected at line 82
  []
 
 [92]
-<Figures/a_over_q_vs_q_plot.png, id=1766, 1316.92pt x 843.15pt>
+<Figures/a_over_q_vs_q_plot.png, id=1754, 1316.92pt x 843.15pt>
 File: Figures/a_over_q_vs_q_plot.png Graphic file (type png)
 <use Figures/a_over_q_vs_q_plot.png>
 Package pdftex.def Info: Figures/a_over_q_vs_q_plot.png  used on input line 113
 .
 (pdftex.def)             Requested size: 443.56721pt x 283.9912pt.
  [93] [94 <./Figures/a_over_q_vs_q_plot.png>]
-<Figures/reaction_qfs_model.png, id=1780, 732.7375pt x 594.22pt>
+<Figures/reaction_qfs_model.png, id=1769, 732.7375pt x 594.22pt>
 File: Figures/reaction_qfs_model.png Graphic file (type png)
 <use Figures/reaction_qfs_model.png>
 Package pdftex.def Info: Figures/reaction_qfs_model.png  used on input line 127
@@ -1773,34 +1757,34 @@ Underfull \hbox (badness 6461) in paragraph at lines 128--128
 []\T1/cmr/m/n/10.95 (a) |Quasi-free scat-ter-ing chan-nel
  []
 
-<Figures/CALIFA2020Front.png, id=1781, 576.1525pt x 645.41125pt>
+<Figures/CALIFA2020Front.png, id=1770, 576.1525pt x 645.41125pt>
 File: Figures/CALIFA2020Front.png Graphic file (type png)
 <use Figures/CALIFA2020Front.png>
 Package pdftex.def Info: Figures/CALIFA2020Front.png  used on input line 131.
 (pdftex.def)             Requested size: 177.42868pt x 198.75577pt.
 [95]
-<Figures/phi12_califa.png, id=1792, 1021.8175pt x 680.5425pt>
+<Figures/phi12_califa.png, id=1781, 1021.8175pt x 680.5425pt>
 File: Figures/phi12_califa.png Graphic file (type png)
 <use Figures/phi12_califa.png>
 Package pdftex.def Info: Figures/phi12_califa.png  used on input line 154.
 (pdftex.def)             Requested size: 332.68385pt x 221.56828pt.
-<Figures/phi12_sim.png, id=1793, 712.6625pt x 472.76625pt>
+<Figures/phi12_sim.png, id=1782, 712.6625pt x 472.76625pt>
 File: Figures/phi12_sim.png Graphic file (type png)
 <use Figures/phi12_sim.png>
 Package pdftex.def Info: Figures/phi12_sim.png  used on input line 158.
 (pdftex.def)             Requested size: 332.68385pt x 220.69247pt.
-<Figures/theta12_califa.png, id=1795, 699.61375pt x 523.9575pt>
+<Figures/theta12_califa.png, id=1784, 699.61375pt x 523.9575pt>
 File: Figures/theta12_califa.png Graphic file (type png)
 <use Figures/theta12_califa.png>
 Package pdftex.def Info: Figures/theta12_califa.png  used on input line 168.
 (pdftex.def)             Requested size: 332.68385pt x 249.15422pt.
-<Figures/theta12_sim.png, id=1796, 705.63625pt x 560.0925pt>
+<Figures/theta12_sim.png, id=1785, 705.63625pt x 560.0925pt>
 File: Figures/theta12_sim.png Graphic file (type png)
 <use Figures/theta12_sim.png>
 Package pdftex.def Info: Figures/theta12_sim.png  used on input line 172.
 (pdftex.def)             Requested size: 332.68385pt x 264.06395pt.
  [96 <./Figures/reaction_qfs_model.png> <./Figures/CALIFA2020Front.png>]
-<Figures/opang.png, id=1806, 925.4575pt x 796.9775pt>
+<Figures/opang.png, id=1795, 925.4575pt x 796.9775pt>
 File: Figures/opang.png Graphic file (type png)
 <use Figures/opang.png>
 Package pdftex.def Info: Figures/opang.png  used on input line 187.
@@ -1810,7 +1794,7 @@ Underfull \hbox (badness 1931) in paragraph at lines 188--188
 []\T1/cmr/m/n/10.95 (a) |Open-ing an-gle dis-tri-bu-tion from
  []
 
-<Figures/opang_sim.png, id=1807, 925.4575pt x 724.7075pt>
+<Figures/opang_sim.png, id=1796, 925.4575pt x 724.7075pt>
 File: Figures/opang_sim.png Graphic file (type png)
 <use Figures/opang_sim.png>
 Package pdftex.def Info: Figures/opang_sim.png  used on input line 191.
@@ -1829,22 +1813,22 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 205.
 
-<Figures/p_miss_tot.png, id=1836, 1007.765pt x 813.0375pt>
+<Figures/p_miss_tot.png, id=1825, 1007.765pt x 813.0375pt>
 File: Figures/p_miss_tot.png Graphic file (type png)
 <use Figures/p_miss_tot.png>
 Package pdftex.def Info: Figures/p_miss_tot.png  used on input line 213.
 (pdftex.def)             Requested size: 399.21791pt x 322.07054pt.
-<Figures/p_miss_x.png, id=1837, 823.075pt x 704.6325pt>
+<Figures/p_miss_x.png, id=1826, 823.075pt x 704.6325pt>
 File: Figures/p_miss_x.png Graphic file (type png)
 <use Figures/p_miss_x.png>
 Package pdftex.def Info: Figures/p_miss_x.png  used on input line 221.
 (pdftex.def)             Requested size: 133.07489pt x 113.9262pt.
-<Figures/p_miss_y.png, id=1838, 803.0pt x 704.6325pt>
+<Figures/p_miss_y.png, id=1827, 803.0pt x 704.6325pt>
 File: Figures/p_miss_y.png Graphic file (type png)
 <use Figures/p_miss_y.png>
 Package pdftex.def Info: Figures/p_miss_y.png  used on input line 227.
 (pdftex.def)             Requested size: 133.07489pt x 116.76468pt.
-<Figures/p_miss_z.png, id=1839, 825.0825pt x 712.6625pt>
+<Figures/p_miss_z.png, id=1828, 825.0825pt x 712.6625pt>
 File: Figures/p_miss_z.png Graphic file (type png)
 <use Figures/p_miss_z.png>
 Package pdftex.def Info: Figures/p_miss_z.png  used on input line 233.
@@ -1880,17 +1864,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 257--258
  []
 
 [102]
-<Figures/cos_angle_2p_11b.png, id=1866, 895.345pt x 815.045pt>
+<Figures/cos_angle_2p_11b.png, id=1855, 895.345pt x 815.045pt>
 File: Figures/cos_angle_2p_11b.png Graphic file (type png)
 <use Figures/cos_angle_2p_11b.png>
 Package pdftex.def Info: Figures/cos_angle_2p_11b.png  used on input line 271.
 (pdftex.def)             Requested size: 399.21791pt x 363.42142pt.
-<Figures/p_x_2p_11b.png, id=1867, 853.1875pt x 728.7225pt>
+<Figures/p_x_2p_11b.png, id=1856, 853.1875pt x 728.7225pt>
 File: Figures/p_x_2p_11b.png Graphic file (type png)
 <use Figures/p_x_2p_11b.png>
 Package pdftex.def Info: Figures/p_x_2p_11b.png  used on input line 281.
 (pdftex.def)             Requested size: 172.99533pt x 147.75452pt.
-<Figures/p_y_2p_11b.png, id=1868, 857.2025pt x 726.715pt>
+<Figures/p_y_2p_11b.png, id=1857, 857.2025pt x 726.715pt>
 File: Figures/p_y_2p_11b.png Graphic file (type png)
 <use Figures/p_y_2p_11b.png>
 Package pdftex.def Info: Figures/p_y_2p_11b.png  used on input line 288.
@@ -1908,7 +1892,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 318.
 
-<Figures/sep_energy_vs_sum_energy.png, id=1874, 954.56625pt x 648.4225pt>
+<Figures/sep_energy_vs_sum_energy.png, id=1863, 954.56625pt x 648.4225pt>
 File: Figures/sep_energy_vs_sum_energy.png Graphic file (type png)
 <use Figures/sep_energy_vs_sum_energy.png>
 Package pdftex.def Info: Figures/sep_energy_vs_sum_energy.png  used on input li
@@ -1932,13 +1916,13 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Underfull \vbox (badness 1024) has occurred while \output is active []
 
  [105 <./Figures/sep_energy_vs_sum_energy.png>]
-<Figures/levelschemaplot.png, id=1898, 547.04375pt x 617.30624pt>
+<Figures/levelschemaplot.png, id=1887, 547.04375pt x 617.30624pt>
 File: Figures/levelschemaplot.png Graphic file (type png)
 <use Figures/levelschemaplot.png>
 Package pdftex.def Info: Figures/levelschemaplot.png  used on input line 359.
 (pdftex.def)             Requested size: 201.71019pt x 227.61792pt.
  [106 <./Figures/levelschemaplot.png>]
-<Figures/gamma_spec_12c_p2p_11b.png, id=1915, 2371.86125pt x 1221.56375pt>
+<Figures/gamma_spec_12c_p2p_11b.png, id=1903, 2371.86125pt x 1221.56375pt>
 File: Figures/gamma_spec_12c_p2p_11b.png Graphic file (type png)
 <use Figures/gamma_spec_12c_p2p_11b.png>
 Package pdftex.def Info: Figures/gamma_spec_12c_p2p_11b.png  used on input line
@@ -1949,7 +1933,7 @@ Package pdftex.def Info: Figures/gamma_spec_12c_p2p_11b.png  used on input line
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [109]
-<Figures/fiss_model_kuckuk.png, id=1940, 1152.305pt x 913.4125pt>
+<Figures/fiss_model_kuckuk.png, id=1929, 1152.305pt x 913.4125pt>
 File: Figures/fiss_model_kuckuk.png Graphic file (type png)
 <use Figures/fiss_model_kuckuk.png>
 Package pdftex.def Info: Figures/fiss_model_kuckuk.png  used on input line 417.
@@ -1961,7 +1945,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 424--426
  []
 
 [110 <./Figures/fiss_model_kuckuk.png>]
-<Figures/liquid_drop.png, id=1956, 971.63pt x 539.01375pt>
+<Figures/liquid_drop.png, id=1945, 971.63pt x 539.01375pt>
 File: Figures/liquid_drop.png Graphic file (type png)
 <use Figures/liquid_drop.png>
 Package pdftex.def Info: Figures/liquid_drop.png  used on input line 429.
@@ -1970,35 +1954,35 @@ Package pdftex.def Info: Figures/liquid_drop.png  used on input line 429.
 
 pdfTeX warning: pdflatex (file ./Figures/overview_exp_2021_s455.pdf): PDF inclu
 sion: found PDF version <1.6>, but at most version <1.5> allowed
-<Figures/overview_exp_2021_s455.pdf, id=1960, 796.67719pt x 448.1309pt>
+<Figures/overview_exp_2021_s455.pdf, id=1949, 796.67719pt x 448.1309pt>
 File: Figures/overview_exp_2021_s455.pdf Graphic file (type pdf)
 <use Figures/overview_exp_2021_s455.pdf>
 Package pdftex.def Info: Figures/overview_exp_2021_s455.pdf  used on input line
  442.
 (pdftex.def)             Requested size: 443.57848pt x 249.51563pt.
 [111 <./Figures/liquid_drop.png>] [112 <./Figures/overview_exp_2021_s455.pdf>]
-<Figures/fission_charge_distr_s455.png, id=2025, 1024.82875pt x 849.1725pt>
+<Figures/fission_charge_distr_s455.png, id=2014, 1024.82875pt x 849.1725pt>
 File: Figures/fission_charge_distr_s455.png Graphic file (type png)
 <use Figures/fission_charge_distr_s455.png>
 Package pdftex.def Info: Figures/fission_charge_distr_s455.png  used on input l
 ine 453.
 (pdftex.def)             Requested size: 343.38622pt x 284.52962pt.
-<Figures/gabriel_1.png, id=2031, 1084.05pt x 756.8275pt>
+<Figures/gabriel_1.png, id=2020, 1084.05pt x 756.8275pt>
 File: Figures/gabriel_1.png Graphic file (type png)
 <use Figures/gabriel_1.png>
 Package pdftex.def Info: Figures/gabriel_1.png  used on input line 466.
 (pdftex.def)             Requested size: 141.94835pt x 99.09546pt.
-<Figures/gabriel_2.png, id=2032, 1055.945pt x 744.7825pt>
+<Figures/gabriel_2.png, id=2021, 1055.945pt x 744.7825pt>
 File: Figures/gabriel_2.png Graphic file (type png)
 <use Figures/gabriel_2.png>
 Package pdftex.def Info: Figures/gabriel_2.png  used on input line 469.
 (pdftex.def)             Requested size: 141.94835pt x 100.10945pt.
-<Figures/gabriel_3.png, id=2033, 1067.99pt x 750.805pt>
+<Figures/gabriel_3.png, id=2022, 1067.99pt x 750.805pt>
 File: Figures/gabriel_3.png Graphic file (type png)
 <use Figures/gabriel_3.png>
 Package pdftex.def Info: Figures/gabriel_3.png  used on input line 472.
 (pdftex.def)             Requested size: 141.94835pt x 99.78477pt.
-<Figures/ff_charge_vs_ff_tot_mass.pdf, id=2040, 796.6487pt x 448.10245pt>
+<Figures/ff_charge_vs_ff_tot_mass.pdf, id=2029, 796.6487pt x 448.10245pt>
 File: Figures/ff_charge_vs_ff_tot_mass.pdf Graphic file (type pdf)
 <use Figures/ff_charge_vs_ff_tot_mass.pdf>
 Package pdftex.def Info: Figures/ff_charge_vs_ff_tot_mass.pdf  used on input li
@@ -2008,7 +1992,7 @@ ne 486.
 [113 <./Figures/fission_charge_distr_s455.png>] [114 <./Figures/gabriel_1.png> 
 <./Figures/gabriel_2.png> <./Figures/gabriel_3.png>]
 <Figures/csm_NuclideChart_with_islands_Foto_PMorfouace_res_47948441f0.png, id=2
-060, 587.19376pt x 363.60844pt>
+049, 587.19376pt x 363.60844pt>
 File: Figures/csm_NuclideChart_with_islands_Foto_PMorfouace_res_47948441f0.png 
 Graphic file (type png)
 <use Figures/csm_NuclideChart_with_islands_Foto_PMorfouace_res_47948441f0.png>
@@ -2050,7 +2034,7 @@ Underfull \vbox (badness 2941) has occurred while \output is active []
  [117
 
 ]
-<Figures/csi_attuenuation.png, id=2105, 722.7pt x 578.16pt>
+<Figures/csi_attuenuation.png, id=2094, 722.7pt x 578.16pt>
 File: Figures/csi_attuenuation.png Graphic file (type png)
 <use Figures/csi_attuenuation.png>
 Package pdftex.def Info: Figures/csi_attuenuation.png  used on input line 21.
@@ -2073,7 +2057,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 pdfTeX warning: pdflatex (file ./Figures/overview_r3b_clustering.pdf): PDF incl
 usion: found PDF version <1.6>, but at most version <1.5> allowed
-<Figures/overview_r3b_clustering.pdf, id=2125, 796.67719pt x 448.1309pt>
+<Figures/overview_r3b_clustering.pdf, id=2114, 796.67719pt x 448.1309pt>
 File: Figures/overview_r3b_clustering.pdf Graphic file (type pdf)
 <use Figures/overview_r3b_clustering.pdf>
 Package pdftex.def Info: Figures/overview_r3b_clustering.pdf  used on input lin
@@ -2094,7 +2078,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
 pdfTeX warning: pdflatex (file ./Figures/true_positive.pdf): PDF inclusion: fou
 nd PDF version <1.6>, but at most version <1.5> allowed
-<Figures/true_positive.pdf, id=2162, 796.67719pt x 448.1309pt>
+<Figures/true_positive.pdf, id=2151, 796.67719pt x 448.1309pt>
 File: Figures/true_positive.pdf Graphic file (type pdf)
 <use Figures/true_positive.pdf>
 Package pdftex.def Info: Figures/true_positive.pdf  used on input line 73.
@@ -2103,7 +2087,7 @@ Package pdftex.def Info: Figures/true_positive.pdf  used on input line 73.
 
 pdfTeX warning: pdflatex (file ./Figures/false_negative.pdf): PDF inclusion: fo
 und PDF version <1.6>, but at most version <1.5> allowed
-<Figures/false_negative.pdf, id=2163, 796.67719pt x 448.1309pt>
+<Figures/false_negative.pdf, id=2152, 796.67719pt x 448.1309pt>
 File: Figures/false_negative.pdf Graphic file (type pdf)
 <use Figures/false_negative.pdf>
 Package pdftex.def Info: Figures/false_negative.pdf  used on input line 79.
@@ -2112,7 +2096,7 @@ Package pdftex.def Info: Figures/false_negative.pdf  used on input line 79.
 
 pdfTeX warning: pdflatex (file ./Figures/false_positive.pdf): PDF inclusion: fo
 und PDF version <1.6>, but at most version <1.5> allowed
-<Figures/false_positive.pdf, id=2164, 796.67719pt x 448.1309pt>
+<Figures/false_positive.pdf, id=2153, 796.67719pt x 448.1309pt>
 File: Figures/false_positive.pdf Graphic file (type pdf)
 <use Figures/false_positive.pdf>
 Package pdftex.def Info: Figures/false_positive.pdf  used on input line 85.
@@ -2121,12 +2105,12 @@ Package pdftex.def Info: Figures/false_positive.pdf  used on input line 85.
 
 pdfTeX warning: pdflatex (file ./Figures/false_mixed.pdf): PDF inclusion: found
  PDF version <1.6>, but at most version <1.5> allowed
-<Figures/false_mixed.pdf, id=2165, 796.67719pt x 448.1309pt>
+<Figures/false_mixed.pdf, id=2154, 796.67719pt x 448.1309pt>
 File: Figures/false_mixed.pdf Graphic file (type pdf)
 <use Figures/false_mixed.pdf>
 Package pdftex.def Info: Figures/false_mixed.pdf  used on input line 91.
 (pdftex.def)             Requested size: 199.60895pt x 112.27861pt.
-<Figures/r3b_agglo_arrows.png, id=2170, 1061.9675pt x 597.23125pt>
+<Figures/r3b_agglo_arrows.png, id=2159, 1061.9675pt x 597.23125pt>
 File: Figures/r3b_agglo_arrows.png Graphic file (type png)
 <use Figures/r3b_agglo_arrows.png>
 Package pdftex.def Info: Figures/r3b_agglo_arrows.png  used on input line 107.
@@ -2166,7 +2150,7 @@ CTION IN THE CALIFA CALORIMETER AT R$[]$B
  []
 
 [124 <./Figures/r3b_agglo_arrows.png>]
-<Figures/spec_2_1agglo_edge_vsr3b.png, id=2247, 578.16pt x 433.62pt>
+<Figures/spec_2_1agglo_edge_vsr3b.png, id=2236, 578.16pt x 433.62pt>
 File: Figures/spec_2_1agglo_edge_vsr3b.png Graphic file (type png)
 <use Figures/spec_2_1agglo_edge_vsr3b.png>
 Package pdftex.def Info: Figures/spec_2_1agglo_edge_vsr3b.png  used on input li
@@ -2176,7 +2160,7 @@ ne 131.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/fig3.png, id=2252, 578.16pt x 578.16pt>
+<Figures/fig3.png, id=2241, 578.16pt x 578.16pt>
 File: Figures/fig3.png Graphic file (type png)
 <use Figures/fig3.png>
 Package pdftex.def Info: Figures/fig3.png  used on input line 168.
@@ -2212,27 +2196,27 @@ CTION IN THE CALIFA CALORIMETER AT R$[]$B
 
 pdfTeX warning: pdflatex (file ./Figures/app_charge_r3b_twin_default.pdf): PDF 
 inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<Figures/app_charge_r3b_twin_default.pdf, id=2304, 796.67719pt x 448.1309pt>
+<Figures/app_charge_r3b_twin_default.pdf, id=2293, 796.67719pt x 448.1309pt>
 File: Figures/app_charge_r3b_twin_default.pdf Graphic file (type pdf)
 <use Figures/app_charge_r3b_twin_default.pdf>
 Package pdftex.def Info: Figures/app_charge_r3b_twin_default.pdf  used on input
  line 7.
 (pdftex.def)             Requested size: 443.57848pt x 249.51563pt.
 [131 <./Figures/app_charge_r3b_twin_default.pdf>]
-<Figures/hyperbolic_squared_secant_function.png, id=2331, 537.00626pt x 444.661
+<Figures/hyperbolic_squared_secant_function.png, id=2320, 537.00626pt x 444.661
 25pt>
 File: Figures/hyperbolic_squared_secant_function.png Graphic file (type png)
 <use Figures/hyperbolic_squared_secant_function.png>
 Package pdftex.def Info: Figures/hyperbolic_squared_secant_function.png  used o
 n input line 35.
 (pdftex.def)             Requested size: 274.89381pt x 227.62234pt.
-<Figures/mw23_default.png, id=2335, 1013.7875pt x 702.625pt>
+<Figures/mw23_default.png, id=2324, 1013.7875pt x 702.625pt>
 File: Figures/mw23_default.png Graphic file (type png)
 <use Figures/mw23_default.png>
 Package pdftex.def Info: Figures/mw23_default.png  used on input line 44.
 (pdftex.def)             Requested size: 328.42514pt x 227.62137pt.
  [132 <./Figures/hyperbolic_squared_secant_function.png>]
-<Figures/own_clustering_mwpcs.png, id=2346, 413.545pt x 296.10625pt>
+<Figures/own_clustering_mwpcs.png, id=2335, 413.545pt x 296.10625pt>
 File: Figures/own_clustering_mwpcs.png Graphic file (type png)
 <use Figures/own_clustering_mwpcs.png>
 Package pdftex.def Info: Figures/own_clustering_mwpcs.png  used on input line 5
@@ -2248,7 +2232,7 @@ File: Figures/own_clustering_mwpcs.png Graphic file (type png)
 Package pdftex.def Info: Figures/own_clustering_mwpcs.png  used on input line 5
 8.
 (pdftex.def)             Requested size: 199.16928pt x 142.61282pt.
-<Figures/mw23_own_clustering.png, id=2350, 917.4275pt x 617.30624pt>
+<Figures/mw23_own_clustering.png, id=2339, 917.4275pt x 617.30624pt>
 File: Figures/mw23_own_clustering.png Graphic file (type png)
 <use Figures/mw23_own_clustering.png>
 Package pdftex.def Info: Figures/mw23_own_clustering.png  used on input line 63
@@ -2256,22 +2240,22 @@ Package pdftex.def Info: Figures/mw23_own_clustering.png  used on input line 63
 (pdftex.def)             Requested size: 338.28096pt x 227.61792pt.
  [133 <./Figures/mw23_default.png>] [134 <./Figures/own_clustering_mwpcs.png> <
 ./Figures/mw23_own_clustering.png>]
-<Figures/mw_no_cut.png, id=2369, 1199.48125pt x 1016.79875pt>
+<Figures/mw_no_cut.png, id=2357, 1199.48125pt x 1016.79875pt>
 File: Figures/mw_no_cut.png Graphic file (type png)
 <use Figures/mw_no_cut.png>
 Package pdftex.def Info: Figures/mw_no_cut.png  used on input line 82.
 (pdftex.def)             Requested size: 199.60895pt x 169.20746pt.
-<Figures/mw_coherent.png, id=2370, 1196.47pt x 1019.81pt>
+<Figures/mw_coherent.png, id=2358, 1196.47pt x 1019.81pt>
 File: Figures/mw_coherent.png Graphic file (type png)
 <use Figures/mw_coherent.png>
 Package pdftex.def Info: Figures/mw_coherent.png  used on input line 89.
 (pdftex.def)             Requested size: 199.60895pt x 170.12871pt.
-<Figures/mw_coherent_less5.png, id=2371, 1190.4475pt x 1014.79124pt>
+<Figures/mw_coherent_less5.png, id=2359, 1190.4475pt x 1014.79124pt>
 File: Figures/mw_coherent_less5.png Graphic file (type png)
 <use Figures/mw_coherent_less5.png>
 Package pdftex.def Info: Figures/mw_coherent_less5.png  used on input line 97.
 (pdftex.def)             Requested size: 199.60895pt x 170.14311pt.
-<Figures/mw_coherent_less4.png, id=2372, 1190.4475pt x 1022.82124pt>
+<Figures/mw_coherent_less4.png, id=2360, 1190.4475pt x 1022.82124pt>
 File: Figures/mw_coherent_less4.png Graphic file (type png)
 <use Figures/mw_coherent_less4.png>
 Package pdftex.def Info: Figures/mw_coherent_less4.png  used on input line 104.
@@ -2279,19 +2263,19 @@ Package pdftex.def Info: Figures/mw_coherent_less4.png  used on input line 104.
 (pdftex.def)             Requested size: 199.60895pt x 171.48944pt.
  [135 <./Figures/mw_no_cut.png> <./Figures/mw_coherent.png> <./Figures/mw_coher
 ent_less5.png> <./Figures/mw_coherent_less4.png>]
-<Figures/cccs_with_out_border_3_5_sigma.png, id=2390, 433.62pt x 289.08pt>
+<Figures/cccs_with_out_border_3_5_sigma.png, id=2379, 433.62pt x 289.08pt>
 File: Figures/cccs_with_out_border_3_5_sigma.png Graphic file (type png)
 <use Figures/cccs_with_out_border_3_5_sigma.png>
 Package pdftex.def Info: Figures/cccs_with_out_border_3_5_sigma.png  used on in
 put line 120.
 (pdftex.def)             Requested size: 341.43124pt x 227.62082pt.
-<Figures/charge_loss_550_thick.png, id=2393, 1114.1625pt x 933.4875pt>
+<Figures/charge_loss_550_thick.png, id=2382, 1114.1625pt x 933.4875pt>
 File: Figures/charge_loss_550_thick.png Graphic file (type png)
 <use Figures/charge_loss_550_thick.png>
 Package pdftex.def Info: Figures/charge_loss_550_thick.png  used on input line 
 130.
 (pdftex.def)             Requested size: 271.67165pt x 227.61678pt.
-<Figures/cccs_gauss_diag_comp_3_5_sigma.png, id=2395, 433.62pt x 289.08pt>
+<Figures/cccs_gauss_diag_comp_3_5_sigma.png, id=2384, 433.62pt x 289.08pt>
 File: Figures/cccs_gauss_diag_comp_3_5_sigma.png Graphic file (type png)
 <use Figures/cccs_gauss_diag_comp_3_5_sigma.png>
 Package pdftex.def Info: Figures/cccs_gauss_diag_comp_3_5_sigma.png  used on in
@@ -2317,14 +2301,14 @@ ECTION AND CHARGE ASSIGNMENT
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/twin_music_cccs_not_all_anodes.pdf, id=2405, 796.6487pt x 448.10245pt>
+<Figures/twin_music_cccs_not_all_anodes.pdf, id=2394, 796.6487pt x 448.10245pt>
 
 File: Figures/twin_music_cccs_not_all_anodes.pdf Graphic file (type pdf)
 <use Figures/twin_music_cccs_not_all_anodes.pdf>
 Package pdftex.def Info: Figures/twin_music_cccs_not_all_anodes.pdf  used on in
 put line 162.
 (pdftex.def)             Requested size: 443.57965pt x 249.5066pt.
-<Figures/cccs_time_vs_engergy_sorted.png, id=2409, 433.62pt x 289.08pt>
+<Figures/cccs_time_vs_engergy_sorted.png, id=2398, 433.62pt x 289.08pt>
 File: Figures/cccs_time_vs_engergy_sorted.png Graphic file (type png)
 <use Figures/cccs_time_vs_engergy_sorted.png>
 Package pdftex.def Info: Figures/cccs_time_vs_engergy_sorted.png  used on input
@@ -2354,13 +2338,15 @@ ECTION AND CHARGE ASSIGNMENT
  []
 
 [140 <./Figures/cccs_time_vs_engergy_sorted.png>]
+<Figures/charge_changing_cross_sec_twim_eff_corr.png, id=2474, 433.62pt x 289.0
+8pt>
 File: Figures/charge_changing_cross_sec_twim_eff_corr.png Graphic file (type pn
 g)
 <use Figures/charge_changing_cross_sec_twim_eff_corr.png>
 Package pdftex.def Info: Figures/charge_changing_cross_sec_twim_eff_corr.png  u
 sed on input line 198.
 (pdftex.def)             Requested size: 341.43124pt x 227.62082pt.
-<Figures/tot_interaction_cs_twim_eff_corr.png, id=2488, 462.528pt x 346.896pt>
+<Figures/tot_interaction_cs_twim_eff_corr.png, id=2478, 462.528pt x 346.896pt>
 File: Figures/tot_interaction_cs_twim_eff_corr.png Graphic file (type png)
 <use Figures/tot_interaction_cs_twim_eff_corr.png>
 Package pdftex.def Info: Figures/tot_interaction_cs_twim_eff_corr.png  used on 
@@ -2372,8 +2358,8 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [141
 
-]
-<Figures/drawings_flightpath.png, id=2499, 871.255pt x 774.895pt>
+ <./Figures/charge_changing_cross_sec_twim_eff_corr.png>]
+<Figures/drawings_flightpath.png, id=2490, 871.255pt x 774.895pt>
 File: Figures/drawings_flightpath.png Graphic file (type png)
 <use Figures/drawings_flightpath.png>
 Package pdftex.def Info: Figures/drawings_flightpath.png  used on input line 22
@@ -2435,7 +2421,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 285.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 285.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 285.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 82581F2E30F0157D8ED5A6DBEF13180E;6148.
+(rerunfilecheck)             Checksum: DB2EFE99A2B441B4C6AEBDD3529A236A;6148.
 
 
 LaTeX Warning: There were undefined references.
@@ -2446,10 +2432,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 285.
  ) 
 Here is how much of TeX's memory you used:
- 24036 strings out of 492982
- 436145 string characters out of 6134896
- 556138 words of memory out of 5000000
- 26560 multiletter control sequences out of 15000+600000
+ 24031 strings out of 492982
+ 436179 string characters out of 6134896
+ 555991 words of memory out of 5000000
+ 26561 multiletter control sequences out of 15000+600000
  563589 words of font info for 107 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,22n,51p,10367b,752s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2496,10 +2482,10 @@ exmf/fonts/type1/public/cm-super/sfti1095.pfb></usr/share/texmf/fonts/type1/pub
 lic/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt100
 0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on main.pdf (168 pages, 28696557 bytes).
+Output written on main.pdf (168 pages, 29099034 bytes).
 PDF statistics:
- 2887 PDF objects out of 2984 (max. 8388607)
- 2288 compressed objects within 23 object streams
- 638 named destinations out of 1000 (max. 500000)
+ 2877 PDF objects out of 2984 (max. 8388607)
+ 2279 compressed objects within 23 object streams
+ 632 named destinations out of 1000 (max. 500000)
  1085 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -367,70 +367,135 @@ For the sake of completeness, Appendix~\ref{app:twin_alternative} presents alter
 During the S444 experiment only an active area of 11 x 11 cm was used, see section~\ref{sec:ionisation_chambers}. Particles which undergo elastic or inelastic scattering or simply exit the target at larger angles due to the multiple scattering process, may therefore not be fully confined in the active volume of the TWIN MUSIC. To visualize the restricted geometric acceptance of the TWIN MUSIC the position in x and y (perpendicular plane to the beam direction) on the MWPC1 in front of the ionization chamber was plotted, for comparison without any conditions on the TWIN MUSIC and with the condition of having identified a carbon isotope (with the 2D Gauss-fit method as described in chapter \ref{subsec:carbon_id}), see figure \ref{fig:mw1_xy}. The large active surface area of 200 x 200 mm$^{2}$ of the MWPC1 affirms a larger acceptance\footnote{This statement does not hold for light fragments as protons or deuterons. Their deflection angle exceeds the geometric acceptance of the MWPC1.} whereas the TWIN MUSIC behind it, with an active surface of 110 x 110 mm$^{2}$ (section 1), is -- as mentioned -- not sensitive to the scattered fragments with large deflection angle.\newline
 \begin{figure}[htpb]
     \centering
-    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/geo_acceptance.pdf}
+    \includegraphics[width=\textwidth,height=12cm,keepaspectratio=true]{Figures/geo_acceptance.pdf}
     \caption{
     Distribution in x and y on MWPC1 for different energies with and without target. 
      }
     \label{fig:mw1_xy}
 \end{figure}
 
-The relative acceptance of the detection system is influenced by both the target thickness and the beam energy. Thicker targets lead to a broader angular distribution of the fragments due to increased multiple scattering and energy loss, thereby reducing the geometric acceptance. In contrast, higher beam energies result in smaller scattering angles owing to relativistic boost effects, which in turn increase the acceptance. Consequently, the acceptance correction must be evaluated and applied individually for each specific beam–target configuration. It is important to note that acceptance effects cannot be corrected by referencing to empty target runs. All these acceptance effects can be observed in figure \ref{fig:mw1_xy}.\newline
-To compensate correctly for the geometric acceptance it has to be considered that for the charge changing cross section measurement only the carbon isotopes after the target are counted in the TWIN MUSIC. Therefore the correction should only be applied to the carbon isotopes (Z = 6) on the x-y distribution on the MWPC1, see figure \ref{fig:mw1_xy}. The geometric efficiency correction is done graphically on the x-y distribution of the MWPC1 for carbon isotopes by following procedure:
+The relative acceptance of the detection system is influenced by both the target thickness and the beam energy. Thicker targets lead to a broader angular distribution of the fragments due to increased multiple scattering and energy loss, thereby reducing the geometric acceptance. In contrast, higher beam energies result in smaller scattering angles owing to relativistic boost effects, which in turn increase the acceptance. Consequently, the acceptance correction must be evaluated and applied individually for each specific beam-target configuration. It is important to note that acceptance effects cannot be corrected by referencing to empty target runs. All these acceptance effects can be observed in figure \ref{fig:mw1_xy}.\newline
+To compensate correctly for the geometric acceptance it has to be considered that for the charge changing cross section measurement only the carbon isotopes after the target are counted in the TWIN MUSIC. Therefore the correction should only be applied to the carbon isotopes (Z = 6) on the x-y distribution on the MWPC1, see figure \ref{fig:mw1_xy}.\\
+A precise correction for the limited geometric acceptance of the TWIN MUSIC detector presents a notable challenge, as the true distribution of carbon fragments in the x- and y- coordinates at the position of MWPC1 is not directly measurable. The expected true distribution results from a convolution of the primary $^{12}C$ beam profile and the Gaussian-like angular broadening caused by multiple scattering processes within the target material.\\
+To reconstruct fragment tracks extending beyond the geometrical acceptance of the TWIN MUSIC detector, a graphical symmetry-based method was applied to the x- and y- distributions separately, as measured by MWPC1. This method avoids the instability and parameter sensitivity of complex fit-based extrapolations (an approach explored for the sake of completeness but ultimately deemed impractical -- see Appendix X). Instead, a binwise comparison approach was used, as described below:
 \begin{enumerate}
-\itemsep0em
-\item \textbf{Correction for the x-position distribution:}
-%\item TODO: insert x-Distribution in MW1 and the fitted functions
-\begin{enumerate}
-\item First fit x-distribution with double-gaussian function with five free parameters and common mean value $\mu_x$
-\begin{equation}
-f(x) = A \cdot exp\left(-\frac{(x-\mu_x)^2}{a^2} \right) + B \cdot exp\left(-\frac{(x-\mu_x)^2}{b^2} \right)
-\end{equation}
-\item Fit again within range $\mu_x \pm \epsilon_x$.The parameter $\epsilon_x$ is fixed by educated guess, TODO.As $\mu_x$ take the value from the fit in the previous step. A fit for the central region of the x-distribution is obtained,\newline
-$f(x)_{central}(A_{central},a_{central},B_{central},b_{central},\mu_{central})$.
-\item The obtained fit function $f(x)_{central}$ is then used to compare with the data distribution($f(x)_{data}$) in the border regions [-100,$\mu_{central}-\epsilon_x$] and [$\mu_{central} + \epsilon_x$,100]. Since only the left border region (low x-positions) is affected by the limited geometric acceptance, the right border region can be used for correction:
-\begin{equation}
-\Delta_{xcorr} = \int_{\mu_{central} + \epsilon_x}^{100} f(x)_{data} - f(x)_{central}\; - \;\int_{-100}^{\mu_{central} - \epsilon_x} f(x)_{data} - f(x)_{central} 
-\end{equation}
+    \item \textbf{Estimation of the symmetry center:}  
+    A first-order estimate of the central value (mean) of the $x$ and $y$ distributions is determined.
+
+    \item \textbf{Mirroring of the unaffected distribution part:}  
+    The section of the distribution assumed to be unaffected by acceptance losses is mirrored across the estimated center. For the $x$-distribution, the right-hand side is flipped onto the left; for the $y$-distribution, the left-hand side is mirrored onto the right. The resulting mirrored distribution is shown in Fig.~\ref{fig:geo_correction} (orange histogram), overlaid on the full measured distribution (blue histogram).
+
+    \item \textbf{Fine-tuning of the mirror axis:}  
+    As the distributions are not perfectly symmetric, the estimated mirror axis is iteratively adjusted to optimize agreement in the central, undistorted region.
+
+    \item \textbf{Bin-by-bin ratio analysis:}  
+    The flipped and measured distributions are compared on a bin-by-bin basis. As illustrated in Fig.~\ref{fig:geo_correction}, lower panel, the ratio between the two distributions drops significantly around $x \approx -20\,\text{mm}$, indicating the onset of acceptance loss. This reduced level persists up to approximately $x \approx -25\,\text{mm}$.
+
+    \item \textbf{Calculation of the correction factor:}  
+    To estimate the number of missing hits due to limited acceptance, the bin contents of both the flipped and measured distributions are summed over the range from the edge of the active area of MWPC1 ($x = -110\,\text{mm}$) up to the approximate limit of reliable detection ($x = -25\,\text{mm}$ or $x = -20\,\text{mm}$). The correction factor is then computed as:
+    \begin{equation}
+        \text{geo\_corr}_{x} = 1 + \frac{\sum_{x = -110}^{-25/-20} (h_{\text{flipped}} - h_{\text{full})}}{\sum_{x = -110}^{ +110} h{\text{full}}}
+    \end{equation}
+    The final value of $\text{geo\_corr}_x$ is taken as the average of the results obtained using $x = -25\,\text{mm}$ and $x = -20\,\text{mm}$ as cutoffs. The uncertainty is estimated from the spread between the minimum, maximum, and mean values in this interval.
+
+    \item \textbf{Application to the $y$-direction:}  
+    The same procedure is applied independently to the $y$-distribution, yielding the corresponding correction factor $\text{geo\_corr}_y$.
 \end{enumerate}
-\item \textbf{Correction for the y-position distribution:}
-%\item TODO: insert y-Distribution in MW1 and the fitted functions
-\begin{enumerate}
-\item First fit y-distribution with double-gaussian function with five free parameters and common mean value $\mu_y$
+
+The final geometric correction factor, accounting for both spatial directions, is then given by:
 \begin{equation}
-f(y)_{fit} = C \cdot exp\left(-\frac{(y-\mu_y)^2}{c^2} \right) + D \cdot exp\left(-\frac{(y-\mu_y)^2}{d^2} \right)
+    \text{geo}_{xy} = \text{geo\_corr}_y \cdot \text{geo\_corr}_y
 \end{equation}
-\item The obtained fit function $f(y)$ is then used to compare the data distribution($f(y)_{data}$) in the border regions [-100,$\mu_y-\epsilon_y$] and [$\mu_y + \epsilon_y$,100]. The parameter $\epsilon_y$ is fixed by educated guess, TODO. As $\mu_y$ take the value from the fit in the previous step. Same as for the x-correction both border regions are compared. The high border region (high y-positions) affected by the limited geometric acceptance while the low border region (low y-positions) has full geometric acceptance.
-\begin{equation}
-\Delta_{ycorr} = \int_{-100}^{\mu_{central} - \epsilon_y} f(y)_{data} - f(y)_{fit} \; - \; \int_{\mu_x + \epsilon_y}^{100} f(y)_{data} - f(y)_{fit} 
-\end{equation}
-\end{enumerate}
-\item To correct the number of survived carbon isotopes $N_2 = N_{carbon}$ both corrections in x and y are applied\footnote{Under the assumption that x and y are uncorrelated where the x-y distribution on the MWPC1 is given by $f(x,y) = f(x)\cdot f(y)$.}
-\begin{equation}
-N_2^{corr} = N_2 +\frac{\Delta_{xcorr}+\Delta_{ycorr}}{N_2}
-\end{equation}
-\end{enumerate}
-\begin{figure}[htpb]
+
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/corig_geo_corr_factor.png}
-    \caption{
-    Geometric correction factors from limited geometric efficiency of TWIN MUSIC. 
-     }
-    \label{fig:geo_corr_twim}
+    \includegraphics[width=\textwidth]{Figures/geo_corr_flipping_thick_target_400amev.png}
+    \caption{Top: Measured $x$-distribution (blue) and mirrored right-hand side distribution (orange) for MWPC1. Bottom: Bin-by-bin ratio between the two distributions. The sudden drop at $x \approx 20\,\text{mm}$ indicates the onset of significant acceptance loss.}
+    \label{fig:geo_correction}
 \end{figure}
-Figure \ref{fig:geo_corr_twim} summarizes the geometric correction factors $\epsilon_{geo\textunderscore corr}$ obtained from the graphical reconstruction of missed TWIN MUSIC events as described above. The correction factor is subsequently applied to the charge-changing cross-section, resulting in the final corrected charge-changing cross-section:
+The described correction procedure must be systematically applied to all target and empty runs for each beam energy. As the onset and extent of geometric distortion may vary with beam conditions, the integration ranges used in the binwise summation must be adapted accordingly on a case-by-case basis.
+
+Once computed, the geometric correction factors can be directly included in the calculation of the charge-changing cross section via Equation~\ref{eq:corr_cross}. As they appear inside the logarithmic term, the multiplicative correction factors translate into additive contributions:
+
 \begin{equation}
-\sigma_{geo\textunderscore corr} = -\frac{1}{N_t} ln(\frac{N_{1}^E}{N_{2}^E}\frac{N_2}{N_1}\cdot \epsilon_{geo\textunderscore corr}) = -\frac{1}{N_t} \left( ln(\frac{N_{1}^E}{N_{2}^E}\frac{N_2}{N_1}) + ln(\epsilon_{geo\textunderscore corr})\right)
-\label{eq:geo_corr_cccs}
+\sigma_{\text{corr}} = -\frac{1}{N_t} \ln(\text{geo}{xy}^{\text{target}}) + \frac{1}{N_t} \ln(\text{geo}{xy}^{\text{empty}})
+\label{eq:geo_corr_sigma}
 \end{equation}
-\begin{figure}[htpb]
-    \centering
-    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/charge_changing_cross_sec_twim_eff_corr.png}
-    \caption{
-    Charge changing cross section with applied geometry corrections. In gray: charge changing cross section measurements before applying corrections, as in figure \ref{fig:cccs_gaus_with_errors}. 
-     }
-    \label{fig:geo_corr_cross_sec}
-\end{figure}
-Figure \ref{fig:geo_corr_cross_sec} shows the measured charge changing cross section once without considering the the limited geometric acceptance of the TWIN MUSIC and once applying the geometric correction factors as presented in equation \ref{eq:geo_corr_cccs}. As expected significantly affected by the  geometric correction are runs with 400 and 550 AMeV beam energy whereas at beam energies of 650 and 800 AMeV the effect is exceptionally small since at high beam energies  the fragments after the target perceive a strong boost effect in beam direction which constrains the distribution in the x-y-plane.
+
+The correction term $\sigma_{\text{corr}}$ accounts for the number of undetected carbon isotopes (Z = 6) after the target due to the limited geometric acceptance of the TWIN MUSIC.
+
+An overview of the resulting correction factors geoxygeoxy​ and the corresponding correction terms σcorrσcorr​ is presented in Fig.~\ref{fig:geo_corrections_overview}, stratified by target material and beam energy. The error bars reflect the uncertainty in the estimated onset of acceptance loss in both the xx- and yy-distributions. Specifically, they are derived from the variation of the correction factor when shifting the integration bounds between, e.g., x=−30 mmx=−30mm and x=−20 mmx=−20mm (and analogously in yy).
+
+\textit{[TODO: Insert formal expression for error propagation of the correction factor here.]}
+
+The correction term σcorrσcorr​ is then subtracted from the preliminary estimate of the charge-changing cross section to yield the final result:
+
+\begin{equation}
+\sigma_{\text{cc}}^{\text{final}} = \sigma_{\text{cc}}^{\text{prelim}} - \sigma_{\text{corr}}
+\end{equation}
+
+Figure~\ref{fig:xsec_prelim} shows the preliminary estimates before applying geometric acceptance corrections, while the fully corrected charge-changing cross sections are presented in Fig.~\ref{fig:xsec_corrected}.\\
+As expected significantly affected by the  geometric correction are runs with 400 and 550 AMeV beam energy whereas at beam energies of 650 and 800 AMeV the effect is exceptionally small since at high beam energies  the fragments after the target perceive a strong boost effect in beam direction which constrains the distribution in the x-y-plane.
+
+%%TODO: put this block back to the appendix!----------------
+%The geometric efficiency correction is done graphically on the x-y distribution of the MWPC1 for carbon isotopes by following procedure:
+%\begin{enumerate}
+%\itemsep0em
+%\item \textbf{Correction for the x-position distribution:}
+%%\item TODO: insert x-Distribution in MW1 and the fitted functions
+%\begin{enumerate}
+%\item First fit x-distribution with double-gaussian function with five free parameters and common mean value $\mu_x$
+%\begin{equation}
+%f(x) = A \cdot exp\left(-\frac{(x-\mu_x)^2}{a^2} \right) + B \cdot exp\left(-\frac{(x-\mu_x)^2}{b^2} \right)
+%\end{equation}
+%\item Fit again within range $\mu_x \pm \epsilon_x$.The parameter $\epsilon_x$ is fixed by educated guess, TODO.As $\mu_x$ take the value from the fit in the previous step. A fit for the central region of the x-distribution is obtained,\newline
+%$f(x)_{central}(A_{central},a_{central},B_{central},b_{central},\mu_{central})$.
+%\item The obtained fit function $f(x)_{central}$ is then used to compare with the data distribution($f(x)_{data}$) in the border regions [-100,$\mu_{central}-\epsilon_x$] and [$\mu_{central} + \epsilon_x$,100]. Since only the left border region (low x-positions) is affected by the limited geometric acceptance, the right border region can be used for correction:
+%\begin{equation}
+%\Delta_{xcorr} = \int_{\mu_{central} + \epsilon_x}^{100} f(x)_{data} - f(x)_{central}\; - \;\int_{-100}^{\mu_{central} - \epsilon_x} f(x)_{data} - f(x)_{central} 
+%\end{equation}
+%\end{enumerate}
+%\item \textbf{Correction for the y-position distribution:}
+%%\item TODO: insert y-Distribution in MW1 and the fitted functions
+%\begin{enumerate}
+%\item First fit y-distribution with double-gaussian function with five free parameters and common mean value $\mu_y$
+%\begin{equation}
+%f(y)_{fit} = C \cdot exp\left(-\frac{(y-\mu_y)^2}{c^2} \right) + D \cdot exp\left(-\frac{(y-\mu_y)^2}{d^2} \right)
+%\end{equation}
+%\item The obtained fit function $f(y)$ is then used to compare the data distribution($f(y)_{data}$) in the border regions [-100,$\mu_y-\epsilon_y$] and [$\mu_y + \epsilon_y$,100]. The parameter $\epsilon_y$ is fixed by educated guess, TODO. As $\mu_y$ take the value from the fit in the previous step. Same as for the x-correction both border regions are compared. The high border region (high y-positions) affected by the limited geometric acceptance while the low border region (low y-positions) has full geometric acceptance.
+%\begin{equation}
+%\Delta_{ycorr} = \int_{-100}^{\mu_{central} - \epsilon_y} f(y)_{data} - f(y)_{fit} \; - \; \int_{\mu_x + \epsilon_y}^{100} f(y)_{data} - f(y)_{fit} 
+%\end{equation}
+%\end{enumerate}
+%\item To correct the number of survived carbon isotopes $N_2 = N_{carbon}$ both corrections in x and y are applied\footnote{Under the assumption that x and y are uncorrelated where the x-y distribution on the MWPC1 is given by $f(x,y) = f(x)\cdot f(y)$.}
+%\begin{equation}
+%N_2^{corr} = N_2 +\frac{\Delta_{xcorr}+\Delta_{ycorr}}{N_2}
+%\end{equation}
+%\end{enumerate}
+%\begin{figure}[htpb]
+%    \centering
+%    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/corig_geo_corr_factor.png}
+%    \caption{
+%    Geometric correction factors from limited geometric efficiency of TWIN MUSIC. 
+%     }
+%    \label{fig:geo_corr_twim}
+%\end{figure}
+%Figure \ref{fig:geo_corr_twim} summarizes the geometric correction factors $\epsilon_{geo\textunderscore corr}$ obtained from the graphical reconstruction of missed TWIN MUSIC events as described above. The correction factor is subsequently applied to the charge-changing cross-section, resulting in the final corrected charge-changing cross-section:
+%\begin{equation}
+%\sigma_{geo\textunderscore corr} = -\frac{1}{N_t} ln(\frac{N_{1}^E}{N_{2}^E}\frac{N_2}{N_1}\cdot \epsilon_{geo\textunderscore corr}) = -\frac{1}{N_t} \left( ln(\frac{N_{1}^E}{N_{2}^E}\frac{N_2}{N_1}) + ln(\epsilon_{geo\textunderscore corr})\right)
+%\label{eq:geo_corr_cccs}
+%\end{equation}
+%\begin{figure}[htpb]
+%    \centering
+%    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/charge_changing_cross_sec_twim_eff_corr.png}
+%    \caption{
+%    Charge changing cross section with applied geometry corrections. In gray: charge changing cross section measurements before applying corrections, as in figure \ref{fig:cccs_gaus_with_errors}. 
+%     }
+%    \label{fig:geo_corr_cross_sec}
+%\end{figure}
+%Figure \ref{fig:geo_corr_cross_sec} shows the measured charge changing cross section once without considering the the limited geometric acceptance of the TWIN MUSIC and once applying the geometric correction factors as presented in equation \ref{eq:geo_corr_cccs}. As expected significantly affected by the  geometric correction are runs with 400 and 550 AMeV beam energy whereas at beam energies of 650 and 800 AMeV the effect is exceptionally small since at high beam energies  the fragments after the target perceive a strong boost effect in beam direction which constrains the distribution in the x-y-plane.
+%-----------------------------
+
 
 \subsection{Isotope Correction - Total Interaction Cross Section}
 The general formulation for the calculation of cross sections in equation \ref{eq:corr_cross} can be used to determine the cross section for specific channels depending on the definition of $N_2$. In the previous subsection \ref{subsec:cc_cs} where the charge changing cross section was measured, $N_2$ had to be sensitive to the charge of the outgoing fragment. Therefore $N_2$  was  defined as the number of survived carbon isotopes, i.e. $N_2 = N_2^{Z=6}$. For the measurement of the total interaction cross section $N_2$ has to be sensitive to both proton and neutron number of the fragments. $N_2$ is herefore restricted to the number of survived  $^{12}$C isotopes, i.e. $N_2 = N_2^{^{12}C}$. Since $N_2^{^{12}C}$ is a subset of $N_2^{Z=6}$, $N_2^{^{12}C}$ can be determined by identifying and disentangling the number of survived $^{12}$C isotopes from the set of events with carbon isotopes $N_2^{Z=6}$. For that reason the positional correlations on the x-coordinate of MWPC2 (upstream to GLAD) and the MWPC3 (downstream to GLAD) are exploited. The GLAD magnet, which acts as a mass spectrometer, deflects the passing through fragment. Depending on its proton to neutron ratio the fragment is deflected more or less, described by the formula for magnetic rigidity:\newline
