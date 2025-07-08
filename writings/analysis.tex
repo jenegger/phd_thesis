@@ -267,7 +267,7 @@ where the number of surviving carbon isotopes, $N_2/N_2^E$, for the target and c
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/cccs_with_stat_errors.png}
     \caption{
     Preliminary estimate of charge-changing cross sections obtained by applying a two-dimensional Gaussian fit to the correlation plot of the reconstructed mean charge from the eight upstream anodes ($\overline{Z_{\text{up}}}$) versus the eight downstream anodes ($\overline{Z_{\text{down}}}$) and considering the borders as in figure \ref{fig:twin_2d_gaus_cut}. Only statistical errors are shown.
-     }
+    TODO: insert the newest pot, where I use $\pm$ 2sigma cut in mwpc0 }
     \label{fig:cccs_gaus_with_errors}
 \end{figure}
 
@@ -389,14 +389,15 @@ To reconstruct fragment tracks extending beyond the geometrical acceptance of th
     As the distributions are not perfectly symmetric, the estimated mirror axis is iteratively adjusted to optimize agreement in the central, undistorted region.
 
     \item \textbf{Bin-by-bin ratio analysis:}  
-    The flipped and measured distributions are compared on a bin-by-bin basis. As illustrated in Fig.~\ref{fig:geo_correction}, lower panel, the ratio between the two distributions drops significantly around $x \approx -20\,\text{mm}$, indicating the onset of acceptance loss. This reduced level persists up to approximately $x \approx -25\,\text{mm}$.
+    The flipped and measured distributions are compared on a bin-by-bin basis. As illustrated in Fig.~\ref{fig:geo_correction}, lower panel, the ratio between the two distributions drops significantly around $x \approx -20\,\text{mm}$, indicating the onset of acceptance loss. This reduced level persists down to approximately $x \approx -25\,\text{mm}$.
 
     \item \textbf{Calculation of the correction factor:}  
-    To estimate the number of missing hits due to limited acceptance, the bin contents of both the flipped and measured distributions are summed over the range from the edge of the active area of MWPC1 ($x = -110\,\text{mm}$) up to the approximate limit of reliable detection ($x = -25\,\text{mm}$ or $x = -20\,\text{mm}$). The correction factor is then computed as:
+    To estimate the number of missing hits due to limited acceptance, the bin contents of both the flipped and measured distributions are summed over the range from the edge of the active area of MWPC1 ($x = -110\,\text{mm}$) up to the observed acceptance drop region ($x = -25\,\text{mm}$ or $x = -20\,\text{mm}$). The correction factor is then computed as:
     \begin{equation}
-        \text{geo\_corr}_{x} = 1 + \frac{\sum_{x = -110}^{-25/-20} (h_{\text{flipped}} - h_{\text{full})}}{\sum_{x = -110}^{ +110} h{\text{full}}}
+        \text{geo}_{x} = 1 + \frac{\sum_{x = -110}^{-25/-20} (h_{\text{flipped}}[x] - h_{\text{full}}[x])}{\sum_{x = -110}^{ +110} h_{\text{full}}[x]}
     \end{equation}
-    The final value of $\text{geo\_corr}_x$ is taken as the average of the results obtained using $x = -25\,\text{mm}$ and $x = -20\,\text{mm}$ as cutoffs. The uncertainty is estimated from the spread between the minimum, maximum, and mean values in this interval.
+    where $h_{\text{full}}[x]$ is the bin-wise histogram content of the full measured histogram (blue histogram in Fig.~\ref{fig:geo_correction}) and $h_{\text{flipped}}[x]$ the according mirrored distribution (orange histogram in Fig.~\ref{fig:geo_correction}). 
+    The final value of $\text{geo}_x$ is taken as the average of the results obtained using $x = -25\,\text{mm}$ and $x = -20\,\text{mm}$ as cutoffs. The uncertainty is estimated from the spread between the minimum, maximum, and mean values in this interval.
 
     \item \textbf{Application to the $y$-direction:}  
     The same procedure is applied independently to the $y$-distribution, yielding the corresponding correction factor $\text{geo\_corr}_y$.
@@ -404,7 +405,7 @@ To reconstruct fragment tracks extending beyond the geometrical acceptance of th
 
 The final geometric correction factor, accounting for both spatial directions, is then given by:
 \begin{equation}
-    \text{geo}_{xy} = \text{geo\_corr}_y \cdot \text{geo\_corr}_y
+    \text{geo}_{xy} = \text{geo}_y \cdot \text{geo}_y
 \end{equation}
 
 \begin{figure}[htbp]
@@ -418,24 +419,38 @@ The described correction procedure must be systematically applied to all target 
 Once computed, the geometric correction factors can be directly included in the calculation of the charge-changing cross section via Equation~\ref{eq:corr_cross}. As they appear inside the logarithmic term, the multiplicative correction factors translate into additive contributions:
 
 \begin{equation}
-\sigma_{\text{corr}} = -\frac{1}{N_t} \ln(\text{geo}{xy}^{\text{target}}) + \frac{1}{N_t} \ln(\text{geo}{xy}^{\text{empty}})
+\sigma_{\text{corr}} = -\frac{1}{N_t} \ln(\text{geo}_{xy}^{\text{T}}) + \frac{1}{N_t} \ln(\text{geo}_{xy}^{\text{E}})
 \label{eq:geo_corr_sigma}
 \end{equation}
 
+
 The correction term $\sigma_{\text{corr}}$ accounts for the number of undetected carbon isotopes (Z = 6) after the target due to the limited geometric acceptance of the TWIN MUSIC.
-
-An overview of the resulting correction factors geoxygeoxy​ and the corresponding correction terms σcorrσcorr​ is presented in Fig.~\ref{fig:geo_corrections_overview}, stratified by target material and beam energy. The error bars reflect the uncertainty in the estimated onset of acceptance loss in both the xx- and yy-distributions. Specifically, they are derived from the variation of the correction factor when shifting the integration bounds between, e.g., x=−30 mmx=−30mm and x=−20 mmx=−20mm (and analogously in yy).
-
-\textit{[TODO: Insert formal expression for error propagation of the correction factor here.]}
-
-The correction term σcorrσcorr​ is then subtracted from the preliminary estimate of the charge-changing cross section to yield the final result:
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[height=8cm,keepaspectratio=true]{Figures/geo_corr_factors_flipping.png}
+    \caption{Overview of the geometric acceptance correction factors $\text{geo}_{xy}$.}
+    \label{fig:geo_corrections_overview}
+\end{figure}
+An overview of the resulting correction factors $\text{geo}_{xy}$ is presented in Fig.~\ref{fig:geo_corrections_overview}, according to target thickness and beam energy. The error bars reflect the uncertainty in the estimated onset of acceptance loss in both the x- and y-distributions. Specifically, they are derived from the variation of the correction factor when shifting the integration bounds between, e.g., x=-25 mm and x=-20 mm (and analogously in y). These errors are propagated to the charge changing cross section correction factor $\sigma_{\text{corr}}$ in Eq.~\ref{eq:geo_corr_sigma} as:
+\begin{equation}
+\Delta_{sys}\sigma_{\text{corr}} = \frac{1}{N_t} \cdot \sqrt{ \left(\frac{\Delta x^T}{\text{geo}_{x}^T} \right)^2 + \left(\frac{\Delta x^E}{\text{geo}_{x}^E} \right)^2 + \left(\frac{\Delta y^T}{\text{geo}_{y}^T} \right)^2 + \left(\frac{\Delta y^E}{\text{geo}_{y}^E} \right)^2 } 
+\end{equation}
+where $\Delta x / \Delta y$ are the factor deviations within the acceptance drop region. The superscripts $T/E$ refer to the target and empty runs accordingly. \\ 
+The negative correction term $\sigma_{\text{corr}}$ is then added to the preliminary estimate of the charge-changing cross section to yield the final result:
 
 \begin{equation}
-\sigma_{\text{cc}}^{\text{final}} = \sigma_{\text{cc}}^{\text{prelim}} - \sigma_{\text{corr}}
+\sigma_{\text{cc}}^{\text{final}} = \sigma_{\text{cc}}^{\text{prelim}} + \sigma_{\text{corr}}
 \end{equation}
 
-Figure~\ref{fig:xsec_prelim} shows the preliminary estimates before applying geometric acceptance corrections, while the fully corrected charge-changing cross sections are presented in Fig.~\ref{fig:xsec_corrected}.\\
+Figure~\ref{fig:cccs_gaus_with_errors} shows the preliminary estimates before applying geometric acceptance corrections, while the fully corrected charge-changing cross sections are presented in Fig.~\ref{fig:cccs_xy_corrected}.\\
 As expected significantly affected by the  geometric correction are runs with 400 and 550 AMeV beam energy whereas at beam energies of 650 and 800 AMeV the effect is exceptionally small since at high beam energies  the fragments after the target perceive a strong boost effect in beam direction which constrains the distribution in the x-y-plane.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\textwidth]{Figures/charge_changing_cross_sec_geo_cut_corr_flipping.png}
+    \caption{Charge changing cross section with applied geometry corrections $\sigma_{\text{corr}}$. In gray: preliminary charge changing cross section measurements before applying corrections, as in Fig.~\ref{fig:cccs_gaus_with_errors}}
+    \label{fig:cccs_xy_corrected}
+\end{figure}
 
 %%TODO: put this block back to the appendix!----------------
 %The geometric efficiency correction is done graphically on the x-y distribution of the MWPC1 for carbon isotopes by following procedure:
