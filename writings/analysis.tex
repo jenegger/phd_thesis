@@ -414,7 +414,14 @@ The final geometric correction factor, accounting for both spatial directions, i
     \caption{Top: Measured $x$-distribution (blue) and mirrored right-hand side distribution (orange) for MWPC1. Bottom: Bin-by-bin ratio between the two distributions. The sudden drop at $x \approx 20\,\text{mm}$ indicates the onset of significant acceptance loss.}
     \label{fig:geo_correction}
 \end{figure}
-The described correction procedure must be systematically applied to all target and empty runs for each beam energy. As the onset and extent of geometric distortion may vary with beam conditions, the integration ranges used in the binwise summation must be adapted accordingly on a case-by-case basis.
+The described correction procedure must be systematically applied to all target and empty runs for each beam energy. As the onset and extent of geometric distortion may vary with beam conditions, the integration ranges used in the binwise summation must be adapted accordingly on a case-by-case basis.\\
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[height=8cm,keepaspectratio=true]{Figures/geo_corr_factors_flipping.png}
+    \caption{Overview of the geometric acceptance correction factors $\text{geo}_{xy}$.}
+    \label{fig:geo_corrections_overview}
+\end{figure}
+An overview of the resulting correction factors $\text{geo}_{xy}$ is presented in Fig.~\ref{fig:geo_corrections_overview}, according to target thickness and beam energy. The error bars reflect the uncertainty in the estimated onset of acceptance loss in both the x- and y-distributions. Specifically, they are derived from the variation of the correction factor when shifting the integration bounds between, e.g., x=-25 mm and x=-20 mm (and analogously in y).
 
 Once computed, the geometric correction factors can be directly included in the calculation of the charge-changing cross section via Equation~\ref{eq:corr_cross}. As they appear inside the logarithmic term, the multiplicative correction factors translate into additive contributions:
 
@@ -424,14 +431,8 @@ Once computed, the geometric correction factors can be directly included in the 
 \end{equation}
 
 
-The correction term $\sigma_{\text{corr}}$ accounts for the number of undetected carbon isotopes (Z = 6) after the target due to the limited geometric acceptance of the TWIN MUSIC.
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[height=8cm,keepaspectratio=true]{Figures/geo_corr_factors_flipping.png}
-    \caption{Overview of the geometric acceptance correction factors $\text{geo}_{xy}$.}
-    \label{fig:geo_corrections_overview}
-\end{figure}
-An overview of the resulting correction factors $\text{geo}_{xy}$ is presented in Fig.~\ref{fig:geo_corrections_overview}, according to target thickness and beam energy. The error bars reflect the uncertainty in the estimated onset of acceptance loss in both the x- and y-distributions. Specifically, they are derived from the variation of the correction factor when shifting the integration bounds between, e.g., x=-25 mm and x=-20 mm (and analogously in y). These errors are propagated to the charge changing cross section correction factor $\sigma_{\text{corr}}$ in Eq.~\ref{eq:geo_corr_sigma} as:
+The correction term $\sigma_{\text{corr}}$ accounts for the number of undetected carbon isotopes (Z = 6) after the target due to the limited geometric acceptance of the TWIN MUSIC.\\
+The aforementioned errors on th egeometric correction factors are propagated to the charge changing cross section correction factor $\sigma_{\text{corr}}$ in Eq.~\ref{eq:geo_corr_sigma} as:
 \begin{equation}
 \Delta_{sys}\sigma_{\text{corr}} = \frac{1}{N_t} \cdot \sqrt{ \left(\frac{\Delta x^T}{\text{geo}_{x}^T} \right)^2 + \left(\frac{\Delta x^E}{\text{geo}_{x}^E} \right)^2 + \left(\frac{\Delta y^T}{\text{geo}_{y}^T} \right)^2 + \left(\frac{\Delta y^E}{\text{geo}_{y}^E} \right)^2 } 
 \end{equation}

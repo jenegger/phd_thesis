@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.24)  8 JUL 2025 11:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.24)  8 JUL 2025 20:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1378,11 +1378,11 @@ File: Figures/geo_corr_flipping_thick_target_400amev.png Graphic file (type png
 Package pdftex.def Info: Figures/geo_corr_flipping_thick_target_400amev.png  us
 ed on input line 413.
 (pdftex.def)             Requested size: 443.57848pt x 302.4402pt.
-<Figures/geo_corr_factors_flipping.png, id=1582, 1084.05pt x 722.7pt>
+<Figures/geo_corr_factors_flipping.png, id=1581, 1084.05pt x 722.7pt>
 File: Figures/geo_corr_factors_flipping.png Graphic file (type png)
 <use Figures/geo_corr_factors_flipping.png>
 Package pdftex.def Info: Figures/geo_corr_factors_flipping.png  used on input l
-ine 430.
+ine 420.
 (pdftex.def)             Requested size: 341.42793pt x 227.62204pt.
  [76] [77 <./Figures/geo_corr_flipping_thick_target_400amev.png> <./Figures/geo
 _corr_factors_flipping.png>]
@@ -1392,22 +1392,22 @@ File: Figures/charge_changing_cross_sec_geo_cut_corr_flipping.png Graphic file
 (type png)
 <use Figures/charge_changing_cross_sec_geo_cut_corr_flipping.png>
 Package pdftex.def Info: Figures/charge_changing_cross_sec_geo_cut_corr_flippin
-g.png  used on input line 450.
+g.png  used on input line 451.
 (pdftex.def)             Requested size: 443.57848pt x 295.71342pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 516--517
+Underfull \hbox (badness 10000) in paragraph at lines 517--518
 
  []
 
 [78] [79 <./Figures/charge_changing_cross_sec_geo_cut_corr_flipping.png>]
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 544.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 545.
 
 
-LaTeX Warning: Command \textunderscore invalid in math mode on input line 544.
+LaTeX Warning: Command \textunderscore invalid in math mode on input line 545.
 
 [80]
-Underfull \hbox (badness 10000) in paragraph at lines 583--599
+Underfull \hbox (badness 10000) in paragraph at lines 584--600
 
  []
 
@@ -1415,22 +1415,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 583--599
 File: Figures/mw13_standard_cluster.png Graphic file (type png)
 <use Figures/mw13_standard_cluster.png>
 Package pdftex.def Info: Figures/mw13_standard_cluster.png  used on input line 
-604.
+605.
 (pdftex.def)             Requested size: 316.55623pt x 227.6211pt.
 <Figures/mw13_own_cluster.png, id=1636, 679.53876pt x 498.86375pt>
 File: Figures/mw13_own_cluster.png Graphic file (type png)
 <use Figures/mw13_own_cluster.png>
-Package pdftex.def Info: Figures/mw13_own_cluster.png  used on input line 614.
+Package pdftex.def Info: Figures/mw13_own_cluster.png  used on input line 615.
 (pdftex.def)             Requested size: 310.06161pt x 227.62277pt.
 [81 <./Figures/mw13_standard_cluster.png>]
 <Figures/quadrants_mw1_xy_400_thick.png, id=1648, 1072.005pt x 770.88pt>
 File: Figures/quadrants_mw1_xy_400_thick.png Graphic file (type png)
 <use Figures/quadrants_mw1_xy_400_thick.png>
 Package pdftex.def Info: Figures/quadrants_mw1_xy_400_thick.png  used on input 
-line 625.
+line 626.
 (pdftex.def)             Requested size: 316.53317pt x 227.61935pt.
 
-Overfull \hbox (30.8736pt too wide) in paragraph at lines 621--631
+Overfull \hbox (30.8736pt too wide) in paragraph at lines 622--632
 []\T1/cmr/bx/n/12 MWPC2 and MWPC3 with own clus-ter-ing, quad-rant se-lec-tion 
 in MWPC2:[][][][][] 
  []
@@ -1440,13 +1440,13 @@ in MWPC2:[][][][][]
 File: Figures/iso_corr_cs_mw23_hit.png Graphic file (type png)
 <use Figures/iso_corr_cs_mw23_hit.png>
 Package pdftex.def Info: Figures/iso_corr_cs_mw23_hit.png  used on input line 6
-39.
+40.
 (pdftex.def)             Requested size: 303.49796pt x 227.62346pt.
 <Figures/iso_corr_cs_mw23_own_cluster.png, id=1658, 462.528pt x 346.896pt>
 File: Figures/iso_corr_cs_mw23_own_cluster.png Graphic file (type png)
 <use Figures/iso_corr_cs_mw23_own_cluster.png>
 Package pdftex.def Info: Figures/iso_corr_cs_mw23_own_cluster.png  used on inpu
-t line 649.
+t line 650.
 (pdftex.def)             Requested size: 303.49796pt x 227.62346pt.
  [83 <./Figures/quadrants_mw1_xy_400_thick.png> <./Figures/iso_corr_cs_mw23_hit
 .png>]
@@ -1454,13 +1454,13 @@ t line 649.
 File: Figures/iso_corr_cs_mw13_hit.png Graphic file (type png)
 <use Figures/iso_corr_cs_mw13_hit.png>
 Package pdftex.def Info: Figures/iso_corr_cs_mw13_hit.png  used on input line 6
-59.
+60.
 (pdftex.def)             Requested size: 303.49796pt x 227.62346pt.
 <Figures/iso_corr_cs_mw13_own_cluster.png, id=1667, 462.528pt x 346.896pt>
 File: Figures/iso_corr_cs_mw13_own_cluster.png Graphic file (type png)
 <use Figures/iso_corr_cs_mw13_own_cluster.png>
 Package pdftex.def Info: Figures/iso_corr_cs_mw13_own_cluster.png  used on inpu
-t line 669.
+t line 670.
 (pdftex.def)             Requested size: 303.49796pt x 227.62346pt.
  [84 <./Figures/iso_corr_cs_mw23_own_cluster.png> <./Figures/iso_corr_cs_mw13_h
 it.png>]
@@ -1470,10 +1470,10 @@ File: Figures/iso_corr_cs_mw23_own_cluster_all_quadrants.png Graphic file (type
  png)
 <use Figures/iso_corr_cs_mw23_own_cluster_all_quadrants.png>
 Package pdftex.def Info: Figures/iso_corr_cs_mw23_own_cluster_all_quadrants.png
-  used on input line 679.
+  used on input line 680.
 (pdftex.def)             Requested size: 443.57016pt x 206.99939pt.
 
-Overfull \hbox (21.87567pt too wide) in paragraph at lines 676--685
+Overfull \hbox (21.87567pt too wide) in paragraph at lines 677--686
 []\T1/cmr/bx/n/12 MWPC2 and MWPC3 with own clus-ter-ing, quad-rant se-lec-tion 
 in MWPC1: 
  []
@@ -1482,7 +1482,7 @@ in MWPC1:
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [85 <./Figures/iso_corr_cs_mw13_own_cluster.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 704--705
+Underfull \hbox (badness 10000) in paragraph at lines 705--706
 
  []
 
@@ -1490,7 +1490,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 704--705
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [86 <./Figures/iso_corr_cs_mw23_own_cluster_all_quadrants.png>]
-Overfull \hbox (50.40031pt too wide) detected at line 724
+Overfull \hbox (50.40031pt too wide) detected at line 725
 [][]\OT1/cmr/m/n/10.95 ^^A\OML/cmm/m/it/10.95 ^^[[] \OT1/cmr/m/n/10.95 = []
  []
 
@@ -1498,7 +1498,7 @@ Overfull \hbox (50.40031pt too wide) detected at line 724
 File: Figures/tot_interaction_cs_geo_corr.png Graphic file (type png)
 <use Figures/tot_interaction_cs_geo_corr.png>
 Package pdftex.def Info: Figures/tot_interaction_cs_geo_corr.png  used on input
- line 732.
+ line 733.
 (pdftex.def)             Requested size: 303.49796pt x 227.62346pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2249,7 +2249,7 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  20847 strings out of 480121
  366925 string characters out of 5892160
- 695775 words of memory out of 5000000
+ 695840 words of memory out of 5000000
  37728 multiletter control sequences out of 15000+600000
  502913 words of font info for 114 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
@@ -2304,7 +2304,7 @@ are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on main.pdf (169 pages, 29318298 bytes).
+Output written on main.pdf (169 pages, 29318380 bytes).
 PDF statistics:
  3844 PDF objects out of 4296 (max. 8388607)
  2320 compressed objects within 24 object streams
