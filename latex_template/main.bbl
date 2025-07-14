@@ -529,6 +529,17 @@ W.~Bethge, ``{Wiedemann, Kernphysik},'' 2007.
   \url{https://www.mesytec.com/products/nuclear-physics/MDPP-16.html}.
 \newblock [Online; accessed October 18, 2024].
 
+\bibitem{summerer2012improved}
+K.~S{\"u}mmerer, ``Improved empirical parametrization of fragmentation cross
+  sections,'' {\em Physical Review C—Nuclear Physics}, vol.~86, no.~1,
+  p.~014601, 2012.
+
+\bibitem{tarasov2008lise++}
+O.~Tarasov and D.~Bazin, ``Lise++: Radioactive beam production with in-flight
+  separators,'' {\em Nuclear Instruments and Methods in Physics Research
+  Section B: Beam Interactions with Materials and Atoms}, vol.~266, no.~19-20,
+  pp.~4657--4664, 2008.
+
 \bibitem{morfouace2025asymmetric}
 P.~Morfouace, J.~Taieb, A.~Chatillon, L.~Audouin, G.~Blanchon, R.~Bernard,
   N.~Dubray, N.~Pillet, D.~Regnier, H.~Alvarez-Pol, {\em et~al.}, ``{An

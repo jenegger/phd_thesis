@@ -397,13 +397,32 @@ B\cdot \rho = \frac{\gamma \cdot m \cdot v}{q}
 Figure~\ref{sfig:mw23x_def} shows the correlation of the $x$ positions measured in MWPC2 and MWPC3 for fragments with atomic number $Z=6$ detected in the 20~mm target run at a beam energy of 400~AMeV. The dominant diagonal structure corresponds to $^{12}$C fragments, which, due to their higher mass-to-charge ratio $(A/Z)$ compared to lighter carbon isotopes, experience the smallest deflection in the GLAD magnetic field. Below this main correlation line, a second, less intense band corresponds to $^{11}$C, and a smaller number of events near the lower edge are identified as $^{10}$C fragments.
 
 The horizontal and vertical bands around $x \approx 0$ and $y \approx 0$ arise from misreconstructed positions in the MWPCs, which can occur in the presence of multiple low-amplitude signals. To address this artifact, a coherent clustering algorithm was developed (see Appendix~\ref{app:coh_cluster}) that selects spatially localized clusters of charge signals. This method was also applied in the geometric acceptance correction described in Section~\ref{sec:geo_corr}. Figure~\ref{sfig:mw23x_coh} illustrates the reconstruction refinement achieved through this approach.
-\begin{figure}%
+%\begin{figure}%
+%    \centering
+%    \subfloat[\centering Default clustering method\label{sfig:mw23x_def}]{{\includegraphics[width=0.45\textwidth]{Figures/mw23_default_rev2.png} }}%
+%    \qquad
+%    \subfloat[\centering Coherent clustering method\label{sfig:mw23x_coh}]{{\includegraphics[width=0.45\textwidth]{Figures/mw23x_own_clustering_rev2.png} }}%
+%    \caption{Comparison of the reconstructed $x$ positions in MWPC2 versus MWPC3 for the 20\,mm carbon target at a beam energy of 400\,AMeV. (a) shows the distribution obtained using the default clustering algorithm, while (b) presents the result using the coherent clustering method described in the text. The coherent clustering improves the correlation by reducing misassigned hits and suppressing unphysical branches.}%
+%    \label{fig:mwpc23_clustering}%
+%\end{figure}
+
+\begin{figure}[ht]
     \centering
-    \subfloat[\centering Default clustering method\label{sfig:mw23x_def}]{{\includegraphics[width=0.45\textwidth]{Figures/mw23_default_rev2.png} }}%
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/mw23_default_rev2.png}
+        \caption{Default clustering method}
+        \label{sfig:mw23x_def}
+    \end{subfigure}
     \qquad
-    \subfloat[\centering Coherent clustering method\label{sfig:mw23x_coh}]{{\includegraphics[width=0.45\textwidth]{Figures/mw23x_own_clustering_rev2.png} }}%
-    \caption{Comparison of the reconstructed $x$ positions in MWPC2 versus MWPC3 for the 20\,mm carbon target at a beam energy of 400\,AMeV. (a) shows the distribution obtained using the default clustering algorithm, while (b) presents the result using the coherent clustering method described in the text. The coherent clustering improves the correlation by reducing misassigned hits and suppressing unphysical branches.}%
-    \label{fig:mwpc23_clustering}%
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/mw23x_own_clustering_rev2.png}
+        \caption{Coherent clustering method}
+        \label{sfig:mw23x_coh}
+    \end{subfigure}
+    \caption{Comparison of the reconstructed \(x\) positions in MWPC2 versus MWPC3 for the 20\,mm carbon target at a beam energy of 400\,AMeV. (a) shows the distribution obtained using the default clustering algorithm, while (b) presents the result using the coherent clustering method described in the text. The coherent clustering improves the correlation by reducing misassigned hits and suppressing unphysical branches.}
+    \label{fig:mwpc23_clustering}
 \end{figure}
 
 Despite the improvements, both reconstruction methods reveal a truncation of the correlation plot at low $x$ values in MWPC2. As discussed in detail in Section~\ref{sec:geo_corr}, this cutoff originates from the limited geometric acceptance of the TWIN MUSIC detector. Since lighter reaction fragments such as $^{11}$C and $^{10}$C exhibit a broader momentum distribution compared to the unreacted $^{12}$C beam particles, they are more affected by the acceptance limitations. Consequently, extracting isotope ratios directly from the uncorrected 2D correlation (e.g., Fig~\ref{sfig:mw23x_coh}) would introduce systematic bias.
@@ -426,13 +445,32 @@ To mitigate this effect, a dedicated procedure was implemented:
 \end{itemize}
 
 
-\begin{figure}%
+%\begin{figure}%
+%    \centering
+%    \subfloat[\centering x-distribution MWPC2 vs MWPC3 selecting only central part (a), see Fig.~\ref{fig:iso_mw1_sections} and and exhibiting correlated hits in MWPC1 and MWPC2. The red line corresponds to the linear fit. \label{sfig:mw23x_central_fit}]{{\includegraphics[width=0.45\textwidth]{Figures/mw23_fit_plot.png} }}%
+%    \qquad
+%    \subfloat[\centering One dimensional projection of the weighted x distribtion in MWPC2 and MWPC3 as described in the text. The resulting projection is retrieved by rotating the distribution according to the slope parameter in Fig.~\ref{sfig:mw23x_central_fit} and projecting it.\label{sfig:mw23x_rot_and_proj}]{{\includegraphics[width=0.45\textwidth]{Figures/rotated_Mw23x.png} }}%
+%    \caption{Detailed illustration of the procedure for analyzing position correlations between MWPC2 and MWPC3, 20~mm target, 400~AMeV}%
+%    \label{fig:mwpc23_proj_procedure}%
+%\end{figure}
+
+\begin{figure}[ht]
     \centering
-    \subfloat[\centering x-distribution MWPC2 vs MWPC3 selecting only central part (a), see Fig.~\ref{fig:iso_mw1_sections} and and exhibiting correlated hits in MWPC1 and MWPC2. The red line corresponds to the linear fit. \label{sfig:mw23x_central_fit}]{{\includegraphics[width=0.45\textwidth]{Figures/mw23_fit_plot.png} }}%
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/mw23_fit_plot.png}
+        \caption{X-distribution MWPC2 vs MWPC3 selecting only the central part (a), see Fig.~\ref{fig:iso_mw1_sections}, and exhibiting correlated hits in MWPC1 and MWPC2. The red line corresponds to the linear fit.}
+        \label{sfig:mw23x_central_fit}
+    \end{subfigure}
     \qquad
-    \subfloat[\centering One dimensional projection of the weighted x distribtion in MWPC2 and MWPC3 as described in the text. The resulting projection is retrieved by rotating the distribution according to the slope parameter in Fig.~\ref{sfig:mw23x_central_fit} and projecting it.\label{sfig:mw23x_rot_and_proj}]{{\includegraphics[width=0.45\textwidth]{Figures/rotated_Mw23x.png} }}%
-    \caption{Detailed illustration of the procedure for analyzing position correlations between MWPC2 and MWPC3, 20~mm target, 400~AMeV}%
-    \label{fig:mwpc23_proj_procedure}%
+    \begin{subfigure}[b]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/rotated_Mw23x.png}
+        \caption{One-dimensional projection of the weighted \(x\)-distribution in MWPC2 and MWPC3 as described in the text. The projection is obtained by rotating the distribution according to the slope parameter in (a) and projecting it.}
+        \label{sfig:mw23x_rot_and_proj}
+    \end{subfigure}
+    \caption{Detailed illustration of the procedure for analyzing position correlations between MWPC2 and MWPC3 using the 20~mm carbon target at 400~AMeV.}
+    \label{fig:mwpc23_proj_procedure}
 \end{figure}
 
 
@@ -454,7 +492,7 @@ The numerical contribution of the isotopic correction to the total cross section
 \begin{figure}[htbp]
     \centering
     \includegraphics[height=10cm,keepaspectratio=true]{Figures/iso_corr_contribution_plot.png}
-    \caption{Iso Corr Contribution}
+    \caption{Isotopic cross section contribution corresponding to the total neutron-removal cross section $\sigma_{\Delta N}$ -- see Section~\ref{sec:reac_model}, shown for the respective target thicknesses. The black diamonds represent cross section predictions from EPAX 3.1a, a universal empirical parametrization for fragmentation cross sections in high-energy heavy-ion reactions~\cite{summerer2012improved}, as implemented in the LISE++ simulation framework~\cite{tarasov2008lise++}. The black error bars indicate systematic uncertainties only.}
     \label{fig:iso_corr_contribution}
 \end{figure}
 
@@ -502,13 +540,17 @@ For viewing the statistical uncertainties of the total interaction cross section
 \normalsize
 \subsubsection{Systematic Uncertainties}
 
+\clearpage
 
 \subsection{ Results Total - Interaction Cross Section}
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/tot_interaction_cs_geo_corr.png}
+    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/result_plot_phd_cross_section.png}
     \caption{
-	Total interaction cross section using the quadrant IV. selection in MWPC1 x-y plot (see figure \ref{fig:mw1_xy_quadrants}) for the isotope correction and applying the geometric correction on the charge changing cross section.}
+	Total interaction cross section for the system $^{12}$C + $^{12}$C as a function of beam energy.  The blue, green, and red circles represent the reaction cross section measurements obtained in the present work using carbon targets of thickness 5.4~mm, 10.86~mm, and 21.98~mm, respectively. The corresponding charge-changing cross sections are shown as semi-transparent stars in the same color coding. Light green symbols denote previous data from L. Ponnath et al.~\cite{ponnath2023precise} for the same target configurations. Purple squares indicate earlier experimental results from the literature: 370~AMeV (Takechi et al.~\cite{takechi2009reaction}), 790~AMeV (Tanihata et al.~\cite{tanihata1990rnbeams}), and 950~AMeV (Ozawa et al.~\cite{ozawa2001measurements}). For comparison, black circles show theoretical predictions based on Glauber model calculations, while red diamonds indicate Glauber calculations including in-medium modifications such as Coulomb and Pauli blocking effects, as discussed in Section~\ref{sec:glauber_ext}.
+}
+
+
     \label{fig:tot_interaction_cs}
 \end{figure}
 %\subsection{reaction cross section Analysis}
