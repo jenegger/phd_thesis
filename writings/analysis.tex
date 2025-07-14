@@ -277,7 +277,7 @@ To get the optimal fit range on the two dimensional Gaussian fit on the reconstr
     \centering
     \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/cccs_vs_sigma_cut.pdf}
     \caption{
-    Preliminary estimate of the charge changing cross sections according to the $\sigma$ fit range applied on the figure \ref{fig:twin_2d_gaus_cut} (with borders) for the different target thicknesses and beam energies.
+    Preliminary estimate of the charge changing cross sections according to the $\sigma$ fit range applied on the figure \ref{fig:twin_2d_gaus_cut} (with borders) for the different target thicknesses and beam energies. The observed decrease in cross section values with increasing fit range is attributed to the energy dependence of the ionization energy loss, described by the Bethe-Bloch formula. At higher fit ranges, the contribution from tails of the energy loss distribution of lighter fragments (e.g., Z=5) becomes increasingly included in the integration window for heavier fragments (e.g., Z=6), leading to an underestimation of the charge-changing cross section. This effect becomes more pronounced at higher beam energies, where the relative resolution decreases due to the flattening of the Bethe-Bloch curve, thereby enhancing the probability of misidentification between adjacent charge states.
      }
     \label{fig:cccs_vs_sigma_cut}
 \end{figure}
@@ -394,21 +394,47 @@ B\cdot \rho = \frac{\gamma \cdot m \cdot v}{q}
     q &\quad \text{is its charge.}
 \end{align*}
 
-Figure~\ref{fig:x_mw23_default} shows the correlation of the $x$ positions measured in MWPC2 and MWPC3 for fragments with atomic number $Z=6$ detected in the 20~mm target run at a beam energy of 400~AMeV. The dominant diagonal structure corresponds to $^{12}$C fragments, which, due to their higher mass-to-charge ratio $(A/Z)$ compared to lighter carbon isotopes, experience the smallest deflection in the GLAD magnetic field. Below this main correlation line, a second, less intense band corresponds to $^{11}$C, and a smaller number of events near the lower edge are identified as $^{10}$C fragments.
+Figure~\ref{sfig:mw23x_def} shows the correlation of the $x$ positions measured in MWPC2 and MWPC3 for fragments with atomic number $Z=6$ detected in the 20~mm target run at a beam energy of 400~AMeV. The dominant diagonal structure corresponds to $^{12}$C fragments, which, due to their higher mass-to-charge ratio $(A/Z)$ compared to lighter carbon isotopes, experience the smallest deflection in the GLAD magnetic field. Below this main correlation line, a second, less intense band corresponds to $^{11}$C, and a smaller number of events near the lower edge are identified as $^{10}$C fragments.
 
-The horizontal and vertical bands around $x \approx 0$ and $y \approx 0$ arise from misreconstructed positions in the MWPCs, which can occur in the presence of multiple low-amplitude signals. To address this artifact, a coherent clustering algorithm was developed (see Appendix~\ref{app:coh_cluster}) that selects spatially localized clusters of charge signals. This method was also applied in the geometric acceptance correction described in Section~\ref{sec:geo_corr}. Figure~X illustrates the data refinement achieved through this approach.
+The horizontal and vertical bands around $x \approx 0$ and $y \approx 0$ arise from misreconstructed positions in the MWPCs, which can occur in the presence of multiple low-amplitude signals. To address this artifact, a coherent clustering algorithm was developed (see Appendix~\ref{app:coh_cluster}) that selects spatially localized clusters of charge signals. This method was also applied in the geometric acceptance correction described in Section~\ref{sec:geo_corr}. Figure~\ref{sfig:mw23x_coh} illustrates the reconstruction refinement achieved through this approach.
+\begin{figure}%
+    \centering
+    \subfloat[\centering Default clustering method\label{sfig:mw23x_def}]{{\includegraphics[width=0.45\textwidth]{Figures/mw23_default_rev2.png} }}%
+    \qquad
+    \subfloat[\centering Coherent clustering method\label{sfig:mw23x_coh}]{{\includegraphics[width=0.45\textwidth]{Figures/mw23x_own_clustering_rev2.png} }}%
+    \caption{Comparison of the reconstructed $x$ positions in MWPC2 versus MWPC3 for the 20\,mm carbon target at a beam energy of 400\,AMeV. (a) shows the distribution obtained using the default clustering algorithm, while (b) presents the result using the coherent clustering method described in the text. The coherent clustering improves the correlation by reducing misassigned hits and suppressing unphysical branches.}%
+    \label{fig:mwpc23_clustering}%
+\end{figure}
 
-Despite the improvements, both reconstruction methods reveal a truncation of the correlation plot at low $x$ values in MWPC2. As discussed in detail in Section~\ref{sec:geo_corr}, this cutoff originates from the limited geometric acceptance of the TWIN MUSIC detector. Since lighter reaction fragments such as $^{11}$C and $^{10}$C exhibit a broader momentum distribution compared to the unreacted $^{12}$C beam particles, they are more affected by the acceptance limitations. Consequently, extracting isotope ratios directly from the uncorrected 2D correlation (e.g., Figure~X) would introduce systematic bias.
+Despite the improvements, both reconstruction methods reveal a truncation of the correlation plot at low $x$ values in MWPC2. As discussed in detail in Section~\ref{sec:geo_corr}, this cutoff originates from the limited geometric acceptance of the TWIN MUSIC detector. Since lighter reaction fragments such as $^{11}$C and $^{10}$C exhibit a broader momentum distribution compared to the unreacted $^{12}$C beam particles, they are more affected by the acceptance limitations. Consequently, extracting isotope ratios directly from the uncorrected 2D correlation (e.g., Fig~\ref{sfig:mw23x_coh}) would introduce systematic bias.
 
 To mitigate this effect, a dedicated procedure was implemented:
 
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[height=8cm,keepaspectratio=true]{Figures/iso_corr_sections.pdf}
+    \caption{Reconstructed $x$-$y$ distribution in MWPC1 using the coherent clustering algorithm described in the text, shown for the 20\,mm target run at a beam energy of 400\,AMeV. The regions labeled (a), (b), (c), and (d) lie entirely within the geometric acceptance of the TWIN MUSIC detector and are therefore unaffected by acceptance limitations. These regions are used as a reference to correct for the acceptance losses in other parts of the detector plane.}
+    \label{fig:iso_mw1_sections}
+\end{figure}
+
 \begin{itemize}
-\item The MWPC1 $x$-$y$ distribution is partitioned into four regions as shown in Figure~Y: the central region (a), the middle-right region (b), the middle-lower region (c), and the lower-right region (d).
+\item The MWPC1 $x$-$y$ distribution is partitioned into four regions as shown in Fig.~\ref{fig:iso_mw1_sections}: the central region (a), the middle-right region (b), the middle-lower region (c), and the lower-right region (d).
 \item The MWPC2 vs. MWPC3 $x$ correlation is recalculated for each region, applying a differential event weighting: region (a) is weighted by 1, regions (b) and (c) by 2, and region (d) by 4. This weighting compensates for asymmetric losses due to acceptance constraints in the upper-left corner of the MWPC1 plane, under the assumption of a symmetric distribution in $x$ and $y$.
-\item The prominent $^{12}$C correlation band is then fitted with a linear function to extract its slope (Figure~Z).
-\item Based on the fitted slope, the histogram is rotated such that the $^{12}$C band is vertically aligned. A 1D projection onto the abscissa is performed (Figure~ZZ).
+\item The prominent $^{12}$C correlation band is then fitted with a linear function to extract its slope (Figure~\ref{sfig:mw23x_central_fit}).
+\item Based on the fitted slope, the histogram is rotated such that the $^{12}$C band is vertically aligned. A 1D projection onto the abscissa is performed (Figure~\ref{sfig:mw23x_rot_and_proj}).
 \item Finally, the resulting 1D distribution is fitted to extract the relative yield of $^{12}$C with respect to the total $Z=6$ fragment population in the MWPC2-MWPC3 correlation space.
 \end{itemize}
+
+
+\begin{figure}%
+    \centering
+    \subfloat[\centering x-distribution MWPC2 vs MWPC3 selecting only central part (a), see Fig.~\ref{fig:iso_mw1_sections} and and exhibiting correlated hits in MWPC1 and MWPC2. The red line corresponds to the linear fit. \label{sfig:mw23x_central_fit}]{{\includegraphics[width=0.45\textwidth]{Figures/mw23_fit_plot.png} }}%
+    \qquad
+    \subfloat[\centering One dimensional projection of the weighted x distribtion in MWPC2 and MWPC3 as described in the text. The resulting projection is retrieved by rotating the distribution according to the slope parameter in Fig.~\ref{sfig:mw23x_central_fit} and projecting it.\label{sfig:mw23x_rot_and_proj}]{{\includegraphics[width=0.45\textwidth]{Figures/rotated_Mw23x.png} }}%
+    \caption{Detailed illustration of the procedure for analyzing position correlations between MWPC2 and MWPC3, 20~mm target, 400~AMeV}%
+    \label{fig:mwpc23_proj_procedure}%
+\end{figure}
+
 
 
 The final correction factor accounting for the isotopic composition of the carbon fragments is defined as:
@@ -424,6 +450,13 @@ The contribution of this isotopic correction to the total interaction cross sect
 where $c_{\text{iso}}^T$ and $c_{\text{iso}}^E$ are the isotopic correction factors for the target and empty runs, respectively, and $N_t$ is the number of target nuclei per unit area.
 
 The numerical contribution of the isotopic correction to the total cross section is illustrated in Figure~\ref{fig:iso_corr_contribution}.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[height=10cm,keepaspectratio=true]{Figures/iso_corr_contribution_plot.png}
+    \caption{Iso Corr Contribution}
+    \label{fig:iso_corr_contribution}
+\end{figure}
 
 
 \newpage
