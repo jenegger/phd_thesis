@@ -264,7 +264,7 @@ where the number of surviving carbon isotopes, $N_2/N_2^E$, for the target and c
 
 \begin{figure}[htpb]
     \centering
-    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/cccs_with_stat_errors.png}
+    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/charge_changing_cross_sec_prelim_no_geo_corr.png}
     \caption{
     Preliminary estimate of charge-changing cross sections obtained by applying a two-dimensional Gaussian fit to the correlation plot of the reconstructed mean charge from the eight upstream anodes ($\overline{Z_{\text{up}}}$) versus the eight downstream anodes ($\overline{Z_{\text{down}}}$) and considering the borders as in figure \ref{fig:twin_2d_gaus_cut}. Only statistical errors are shown.
     TODO: insert the newest pot, where I use $\pm$ 2sigma cut in mwpc0 }
@@ -501,7 +501,7 @@ The numerical contribution of the isotopic correction to the total cross section
 
 
 
-\subsection{Statistical and Systematic Error Analysis}
+\subsection{Statistical and Systematic Error Analysis}\label{sec:err_analysis}
 All three measurements presented in this section, the charge changing cross section, the isotopic cross section correction cross section and the total interaction cross section, rely on the transmission method and the error analysis of those measurements are treated the same accordingly. The generic formula for all three measurements was presented in section \ref{section:transmission_method}, equation \ref{eq:cross_sec}.\newline
 Since all quantities in equation \ref{eq:cross_sec} are mutually independent, the Gaussian error propagation for statistical and systematical uncertainties is given by:
 \begin{equation}
@@ -513,6 +513,16 @@ Since all quantities in equation \ref{eq:cross_sec} are mutually independent, th
 	x_i  &\quad \text{the independent variables ($N_1$,$N_2$,$N_t$; see equation \ref{eq:cross_sec}),} \\
 	\Delta_{x_i} &\quad \text{stat./syst. uncertainties associated to independent variable $x_i$}
 \end{align*}
+
+
+%%%new part
+All three measurements presented in this section, the preliminary estimate charge changing cross section, the geometric correction factor geo$_{\text{xy}}$ and the isotope correction factor $c_{iso}$, finally give the total interaction cross section:
+\begin{equation}
+\sigma_R = -\frac{1}{N_t}ln\left(\frac{N^T_2}{N^T_1} \, \frac{N^E_2}{N^E_1} \cdot \frac{\text{geo}^T_{\text{xy}}}{\text{geo}^E_{\text{xy}}} \cdot \frac{c^T_{iso}}{c^E_{iso}}\right)
+\end{equation}
+where $N^(T/E)_1$ are the number of incoming $^{12}C$ ions and $N^(T/E)_2$ are the number of survived carbon isotopes for target and empty runs accordingly, as described in Section~\ref{subsec:carbon_id}.\\
+This formula for the total interaction cross section, relying on the transmission method, depends on mutually independent quanities and therefore the statistical and systematical uncertainties can be calculated using Gaussian error propagation:
+
 
 
 \subsubsection{Statistical Uncertainties}
