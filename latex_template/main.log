@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.24)  15 JUL 2025 16:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.24)  15 JUL 2025 23:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2161,23 +2161,20 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [145 <./Figures/drawings_flightpath.png>]
-File: Figures/mw23_fit_plot.png Graphic file (type png)
-<use Figures/mw23_fit_plot.png>
-Package pdftex.def Info: Figures/mw23_fit_plot.png  used on input line 264.
-(pdftex.def)             Requested size: 199.60895pt x 177.383pt.
-File: Figures/rotated_Mw23x.png Graphic file (type png)
-<use Figures/rotated_Mw23x.png>
-Package pdftex.def Info: Figures/rotated_Mw23x.png  used on input line 271.
-(pdftex.def)             Requested size: 199.60895pt x 129.31383pt.
- [146]
-Overfull \hbox (31.4088pt too wide) detected at line 292
-\OML/cmm/m/it/12 ^^[ \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 ^^@[]\OML/cmm/m/it/12 l
-n [] []  \OMS/cmsy/m/n/12 ) [] \OT1/cmr/m/n/12 = [] \OMS/cmsy/m/n/12 ^^A \OML/c
-mm/m/it/12 bar[] \OT1/cmr/m/n/12 = [] \OMS/cmsy/m/n/12 ) \OT1/cmr/m/n/12 ^^A[] 
-= []
- []
-
-) [147] [148] (./main.bbl [149] [150] [151] [152] [153] [154] [155]
+<Figures/rate_400_thick.png, id=2563, 1061.9675pt x 597.23125pt>
+File: Figures/rate_400_thick.png Graphic file (type png)
+<use Figures/rate_400_thick.png>
+Package pdftex.def Info: Figures/rate_400_thick.png  used on input line 308.
+(pdftex.def)             Requested size: 199.60895pt x 112.25397pt.
+<Figures/zero_charge_twim_active_area.png, id=2564, 722.7pt x 433.62pt>
+File: Figures/zero_charge_twim_active_area.png Graphic file (type png)
+<use Figures/zero_charge_twim_active_area.png>
+Package pdftex.def Info: Figures/zero_charge_twim_active_area.png  used on inpu
+t line 315.
+(pdftex.def)             Requested size: 199.60895pt x 119.76526pt.
+ [146 <./Figures/rate_400_thick.png> <./Figures/zero_charge_twim_active_area.pn
+g>]) [147] [148] [149] (./main.bbl [150]
+[151] [152] [153] [154] [155] [156]
 Underfull \hbox (badness 1394) in paragraph at lines 413--417
 []\T1/cmr/m/n/12 GSI Helmholtzzen-trum für Schw-e-ri-o-nen-forschung GmbH, ``La
 rge-acceptance
@@ -2189,7 +2186,7 @@ Underfull \hbox (badness 1092) in paragraph at lines 431--435
 he Uni-ver-sität München,
  []
 
-[156]
+[157]
 Underfull \hbox (badness 10000) in paragraph at lines 483--487
 []\T1/cmr/m/n/12 Hamamatsu Pho-ton-ics, ``S8664-1010: Sil-i-con Avalanche Pho-t
 o-di-ode.''
@@ -2213,13 +2210,13 @@ Underfull \hbox (badness 6300) in paragraph at lines 501--504
 on / mbs$[][]\T1/cmr/m/n/12 .  Ac-
  []
 
-[157] [158] [159]
+[158] [159] [160]
 Underfull \hbox (badness 1275) in paragraph at lines 702--705
 []\T1/cmr/m/n/12 X. Am-a-tri-ain, A. Sankar, J. Bing, P. K. Bod-igutla, T. J. H
 azen, and
  []
 
-[160]) [161] (./main.aux (./Abstract.aux))
+[161]) [162] (./main.aux (./Abstract.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -2227,13 +2224,13 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9A7363374A43E1CC62814B184915373D;16291.
+(rerunfilecheck)             Checksum: DABFE4B91C9C84FF3804CCF6EE169859;16291.
  ) 
 Here is how much of TeX's memory you used:
- 20858 strings out of 480121
- 366820 string characters out of 5892160
- 700239 words of memory out of 5000000
- 37741 multiletter control sequences out of 15000+600000
+ 20873 strings out of 480121
+ 367336 string characters out of 5892160
+ 700305 words of memory out of 5000000
+ 37753 multiletter control sequences out of 15000+600000
  502913 words of font info for 114 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  61i,22n,75p,1721b,773s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2287,10 +2284,10 @@ are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on main.pdf (171 pages, 29834292 bytes).
+Output written on main.pdf (172 pages, 30118799 bytes).
 PDF statistics:
- 3889 PDF objects out of 4296 (max. 8388607)
- 2352 compressed objects within 24 object streams
- 636 named destinations out of 1000 (max. 500000)
- 1077 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3899 PDF objects out of 4296 (max. 8388607)
+ 2355 compressed objects within 24 object streams
+ 637 named destinations out of 1000 (max. 500000)
+ 1087 words of extra memory for PDF output out of 10000 (max. 10000000)
 

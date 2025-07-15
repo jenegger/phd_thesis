@@ -71,5 +71,5 @@
 \contentsline {section}{\numberline {D}Alternative methods for TWIN MUSIC hit selection and charge assignment}{138}{appendix.1.D}%
 \contentsline {section}{\numberline {E}TWIN MUSIC Geometric Acceptance Correction via Efficiency Measurement}{143}{appendix.1.E}%
 \contentsline {section}{\numberline {F}Flight-Path Reconstruction}{144}{appendix.1.F}%
-\contentsline {section}{\numberline {G}Dead time uncertainties in TWIN MUSIC}{146}{appendix.1.G}%
-\contentsline {section}{References}{149}{figure.caption.85}%
+\contentsline {section}{\numberline {G}Dead Time Uncertainties in TWIN MUSIC}{146}{appendix.1.G}%
+\contentsline {section}{References}{150}{figure.caption.85}%

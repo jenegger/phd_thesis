@@ -256,46 +256,103 @@ L_{eff} &= 2r\,sin(\frac{\theta_i}{2} + \frac{\theta_o}{2})\,\cdot\, cos\delta \
 \end{aligned}
 \end{equation}
 
-\section{Dead time uncertainties in TWIN MUSIC}\label{app:twin_uncert}
+%\section{Dead time uncertainties in TWIN MUSIC}\label{app:twin_uncert}
+%\begin{figure}[ht]
+%    \centering
+%    \begin{subfigure}[b]{0.45\textwidth}
+%        \centering
+%        \includegraphics[width=\textwidth]{Figures/rate_400_thick.png}
+%        \caption{MWPC1 x-y distribution for events without any singal in TWIN MUSIC. The red rectangle shows the beam spot in the active area of TWIN MUSIC}
+%        \label{sfig:mw1xy_zero_twin}
+%    \end{subfigure}
+%    \qquad
+%    \begin{subfigure}[b]{0.45\textwidth}
+%        \centering
+%        \includegraphics[width=\textwidth]{Figures/zero_charge_twim_active_area.png}
+%        \caption{Rate of events without any signal in TWIN MUSIC active area in relation to incoming ions N1.}
+%        \label{sfig:rate_dead_twin_active}
+%    \end{subfigure}
+%    \caption{Overview events without TWIN MUSIC signal.}
+%    \label{fig:mwpc23_proj_procedure}
+%\end{figure}
+%TWIN MUSIC is only affected by dead time if none of the anodes have registered a signal. 
+%To quantify this the MWPC1 x-y distribution was plotted for no signal registration in TWIN MUSIC, see Fig.~\ref{sfig:mw1xy_zero_twin}. In Fig.~\ref{sfig:mw1xy_zero_twin} the active area of TWIN MUSIC is clearly visible. The occurence of hits in MWPC1 x-y outside the active area is well understood by the geometric acceptance and in detail discussed in Section~\ref{sec:geo_corr}.\\
+%Moreover a clearly defined spot, which corresponds to the beam spot, is visible. These events can be assigned to events, where the TWIN MUSIC data acquisition/electronics is busy and therefore in deadtime. To evaluate and compare the rate of dead-time events it is divided by the number of incoming ions. The rate is displayed in Fig. Y for all target and empty runs. As shown, the according rates are same for the individual energies (with offset), not depending on target thickness, as expected, since the rate of dead-time events should not have anything to do with the target settings.\\
+%This confirms also the expectation that  the rate is independent of the  fragment’s charge (moreover since the threshold of the MWPC1 is higher than the threshold of the TWIN MUSIC no efficiency loss and therefore higher dead-time rate in the TWIN MUSIC is expected). This means we can write:
+%\begin{equation*}
+%r_{dead_time} = \frac{N_1^{active}}{N_1} \approx \frac{N_2^{active}}{N_2}
+%\end{equation*}
+%where $N_1^{active}$ is the number of measured counts within the active area (red rectangle) in Fig.~\ref{sfig:mw1xy_zero_twin}. \\
+%Even though for the different energies the rates seem to be quite close together, there is a systematic uncertainty. To retrieve the uncertainty the mean rate for the different energy settings $\mu_{energy}$ is calculated and the standard deviation $\Delta_{energy}$. Finally a mean value for the standard deviation $\overline{\Delta_{energy}}$ for all energies is calculated.\\
+%This uncertainty  on $N_2$, $\Delta sys_{N_2}$, has also to be considered in the systematic uncertainty measurement of the cross section in the general form for both empty and target runs:
+%\begin{gather*}
+%\sigma = -\frac{1}{N_t}ln\left(\frac{N^T_2}{N^T_1} \,\frac{N^E_1}{N^E_2}\right)\\
+%\Rightarrow \left|\frac{\partial\sigma}{\partial N^T_2} \cdot \overline{\Delta_{energy}}\right| = \frac{1}{N_t}\cdot \overline{\Delta_{energy}} = \left|\frac{\partial\sigma}{\partial N^E_2} \cdot \overline{\Delta_{energy}}\right|\\
+%\Rightarrow \Delta sys_{N_2} = \sqrt{2} \cdot \frac{1}{N_t}\cdot \overline{\Delta_{energy}}
+%\end{gather*}
+%Since this systematic errror does only depend on the target thickness, it does not depend on $N_2$ and $N_1$ and has therefore a fixed value for a given target thickness:
+%\begin{itemize}
+%\item Thin target, 5.4~mm: 0.62~mbarn
+%\item Medium target, 10.86~mm: 0.31~mbarn
+%\item Thick target, 21.98~mm: 0.15~mbarn
+%\end{itemize}
+%This errror, even though not play a central role it is nevertheless considered in the systematic uncertainty analysis in Section~\ref{sec:err_analysis}.
+%
+%% chatgpt refined...
+\section{Dead Time Uncertainties in TWIN MUSIC}\label{app:twin_uncert}
+
 \begin{figure}[ht]
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/mw23_fit_plot.png}
-        \caption{MWPC1 x-y distribution for events without any singal in TWIN MUSIC. The red rectangle shows the beam spot in the active area of TWIN MUSIC}
+        \includegraphics[width=\textwidth]{Figures/rate_400_thick.png}
+        \caption{MWPC1 $x$-$y$ distribution for events without any signal in TWIN MUSIC. The red rectangle marks the beam spot within the active area of TWIN MUSIC.}
         \label{sfig:mw1xy_zero_twin}
     \end{subfigure}
     \qquad
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/rotated_Mw23x.png}
-        \caption{Rate of events without any signal in TWIN MUSIC active area in relation to incoming ions N1.}
+        \includegraphics[width=\textwidth]{Figures/zero_charge_twim_active_area.png}
+        \caption{Rate of events without any signal in the TWIN MUSIC active area, normalized to the number of incoming ions $N_1$.}
         \label{sfig:rate_dead_twin_active}
     \end{subfigure}
-    \caption{Overview events without TWIN MUSIC signal.}
+    \caption{Overview -- Events without signal in TWIN MUSIC.}
     \label{fig:mwpc23_proj_procedure}
 \end{figure}
-TWIN MUSIC is only affected by dead time if none of the anodes have registered a signal. 
-To quantify this the MWPC1 x-y distribution was plotted for no signal registration in TWIN MUSIC, see Fig.~\ref{sfig:mw1xy_zero_twin}. In Fig.~\ref{sfig:mw1xy_zero_twin} the active area of TWIN MUSIC is clearly visible. The occurence of hits in MWPC1 x-y outside the active area is well understood by the geometric acceptance and in detail discussed in Section~\ref{sec:geo_corr}.\\
-Moreover a clearly defined spot, which corresponds to the beam spot, is visible. These events can be assigned to events, where the TWIN MUSIC data acquisition/electronics is busy and therefore in deadtime. To evaluate and compare the rate of dead-time events it is divided by the number of incoming ions. The rate is displayed in Fig. Y for all target and empty runs. As shown, the according rates are same for the individual energies (with offset), not depending on target thickness, as expected, since the rate of dead-time events should not have anything to do with the target settings.\\
-This confirms also the expectation that  the rate is independent of the  fragment’s charge (moreover since the threshold of the MWPC1 is higher than the threshold of the TWIN MUSIC no efficiency loss and therefore higher dead-time rate in the TWIN MUSIC is expected). This means we can write:
+
+TWIN MUSIC registers a valid signal only when at least one anode detects ionization. Events where no anode responds may be attributed to dead time, during which the data acquisition (DAQ) or electronics is temporarily unavailable.
+
+To identify and quantify such occurrences, Fig.~\ref{sfig:mw1xy_zero_twin} presents the $x$-$y$ distribution measured by MWPC1 for events with no corresponding signal in TWIN MUSIC. The active region of TWIN MUSIC is clearly delineated, and the beam spot appears as a concentrated region inside the red rectangle. Events within this region likely correspond to ions traversing the detector while TWIN MUSIC was in dead time. The broader distribution outside the active area is well understood by the limited geometrical acceptance of TWIN MUSIC, discussed in detail in Section~\ref{sec:geo_corr}.
+
+To evaluate the dead time rate quantitatively, the number of events in the active area without a TWIN MUSIC signal, $N_1^{\text{active}}$, is normalized to the total number of incoming ions $N_1$. This ratio is shown for all target and empty runs in Fig.~\ref{sfig:rate_dead_twin_active}. The relative rates are largely consistent across different beam energies and do not exhibit dependence on target thickness, as expected. Since dead time is an intrinsic property of the detector and its readout system, it should be independent of target conditions.
+
+This observation also supports the expectation that the dead time rate does not depend on the fragment's charge. Given that the MWPC1 threshold is higher than that of TWIN MUSIC, events triggering MWPC1 are assumed to be reliably detectable by TWIN MUSIC under nominal conditions. Therefore, we can write:
+
 \begin{equation*}
-r_{dead_time} = \frac{N_1^{active}}{N_1} \approx \frac{N_2^{active}}{N_2}
+r_{\text{dead time}} = \frac{N_1^{\text{active}}}{N_1} \approx \frac{N_2^{\text{active}}}{N_2}
 \end{equation*}
-where $N_1^{active}$ is the number of measured counts within the active area (red rectangle) in Fig.~\ref{sfig:mw1xy_zero_twin}. \\
-Even though for the different energies the rates seem to be quite close together, there is a systematic uncertainty. To retrieve the uncertainty the mean rate for the different energy settings $\mu_{energy}$ is calculated and the standard deviation $\Delta_{energy}$. Finally a mean value for the standard deviation $\bar{\Delta_{energy}}$ for all energies is calculated.\\
-This uncertainty  on $N_2$ has also to be considered in the systematic uncertainty measurement of the cross section in the general form for both empty and target runs:
-\begin{equation*}
-\sigma = -\frac{1}{N_t}ln\left(\frac{N^T_2}{N^T_1} \,\frac{N^E_1}{N^E_2}\right)\\
-\Rightarrow \left|\frac{\partial\sigma}{\partial N^T_2} \cdot \bar{\Delta_{energy}}\right| = \frac{1}{N_t}\cdot bar{\Delta_{energy}} = \left|\frac{\partial\sigma}{\partial N^E_2} \cdot \bar{\Delta_{energy}}\right|
-\Rightarrow \Delta_{N_2} = \sqrt{2} 
-\end{equation*}
-Since this systematic errror does only depend on the target thickness, it does not depend on $N_2$ and $N_1$ and has therefore a fixed value for a given target thickness:
+
+where $N_2^{\text{active}}$ refers to the respective events with survived carbon fragments (Z = 6) with no corresponding signal in TWIM MUSIC.
+
+Although the dead time rates are relatively close across all energy settings, a systematic uncertainty must still be considered. This is estimated by computing the mean rate $\mu_{\text{energy}}$ across energy points and determining the corresponding standard deviation $\Delta_{\text{energy}}$. The average of these standard deviations, $\overline{\Delta_{\text{energy}}}$, is then used to estimate the uncertainty contribution.
+
+This uncertainty, denoted $\Delta^{\text{sys}}_{N_2}$, enters the total systematic error on the cross-section measurement according to:
+
+\begin{gather*}
+\sigma = -\frac{1}{N_t} \ln\left(\frac{N_2^T}{N_1^T} \cdot \frac{N_1^E}{N_2^E} \right)\\
+\Rightarrow \left|\frac{\partial \sigma}{\partial N_2^T} \cdot \overline{\Delta_{\text{energy}}} \right| = \frac{1}{N_t} \cdot \overline{\Delta_{\text{energy}}} = \left|\frac{\partial \sigma}{\partial N_2^E} \cdot \overline{\Delta_{\text{energy}}} \right|\\
+\Rightarrow \Delta^{\text{sys}}_{N_2} = \sqrt{2} \cdot \frac{1}{N_t} \cdot \overline{\Delta_{\text{energy}}}
+\end{gather*}
+
+As this systematic uncertainty depends only on the target thickness and not on $N_1$ or $N_2$, it is constant for each configuration:
+
 \begin{itemize}
-\item Thin target, 5.4~mm: 0.62~mbarn
-\item Medium target, 10.86~mm: 0.31~mbarn
-\item Thick target, 21.98~mm: 0.15~mbarn
+    \item Thin target (5.4~mm): 0.62~mbarn
+    \item Medium target (10.86~mm): 0.31~mbarn
+    \item Thick target (21.98~mm): 0.15~mbarn
 \end{itemize}
-This errror, even though not play a central role it is nevertheless considered in the systematic uncertainty analysis in Section~\ref{sec:err_analysis}.
+
+While this uncertainty does not dominate the error budget, it is nonetheless incorporated into the total systematic uncertainty analysis in Section~\ref{sec:err_analysis}.
+
 
 \end{appendices}
