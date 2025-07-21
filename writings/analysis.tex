@@ -45,7 +45,7 @@ N_t = \frac{\rho \cdot d \cdot N_A}{M}
 \end{equation}
 with $\rho$ the target density\footnote{$\rho = 1.851 g/cm^{3}$, from \cite{ponnath2023precise}}, $N_A$ the Avogadro constant ($6.02214076\cdot10^{23}\,mol^{-1}$) and $M$ the molar mass of the target (for carbon $M = 12.011g \cdot mol^{-1}$).
 \item[$\blacksquare$] \textbf{Number of incoming projectiles ($^{12}$C) $\mathbf{N_1}$}\newline
-For the measurement only events with well identified incoming $^{12}$C projectiles are chosen. Herefore strict cuts on the detectors upstream the target area are set. This strict event selection makes sure that we only consider events with single $^{12}$C within a $\pm 4\mu s$ time window. This will be discussed in more detail in section \ref{subsec:event-sel}.  %TODO finish this sencence 
+For the measurement only events with well identified incoming $^{12}$C projectiles are chosen. Herefore strict cuts on the detectors upstream the target area are set. This strict event selection makes sure that we only consider events with single $^{12}$C within a $\pm 4\mu s$ time window. This will be discussed in more detail in section \ref{subsec:event-sel}. 
 \item[$\blacksquare$] \textbf{Number of unreacted projectiles ($^{12}$C) $\mathbf{N_2}$ after the target}\newline
 Detectors downstream the target area are used to count the number of unreacted projectiles $^{12}$C. To reduce detector specific influences which could distort the result it is advisable to use only as few as requirable detectors for the clear identification of unreacted projectiles. Moreover detector specific efficiencies are canceled out by including both empty and target runs (only in 1st order, as there may be a position dependence) in the cross section calculation(see equation\ref{eq:corr_cross}). For all downstream detectors used in this analysis it is critical to minimize any selection cuts and systematically check their effects on $N_2$.
 \end{enumerate}
@@ -197,7 +197,7 @@ medium & 606578{\footnotesize(*431*)} & 451137{\footnotesize(*27*)} & 500688{\fo
 thick & 655762{\footnotesize(*497*)} & 436457{\footnotesize(*30*)} & 530869{\footnotesize(*29*)} & 479679{\footnotesize(*61*)} \\
 \hline
 \end{tabular}
-\caption{Number of clean selected incoming $^{12}$C ions. In brackets number of rejected events because of missing tref in TWIN MUSIC. TODO: change the bracket notation, looks like error number!!}
+\caption{Number of clean selected incoming $^{12}$C ions. In brackets number of rejected events because of missing tref in TWIN MUSIC.}
 \label{tab:incoming_ions}
 \end{subtable}
 \newline
@@ -267,7 +267,7 @@ where the number of surviving carbon isotopes, $N_2/N_2^E$, for the target and c
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/charge_changing_cross_sec_prelim_no_geo_corr.png}
     \caption{
     Preliminary estimate of charge-changing cross sections obtained by applying a two-dimensional Gaussian fit to the correlation plot of the reconstructed mean charge from the eight upstream anodes ($\overline{Z_{\text{up}}}$) versus the eight downstream anodes ($\overline{Z_{\text{down}}}$) and considering the borders as in figure \ref{fig:twin_2d_gaus_cut}. Only statistical errors are shown.
-    TODO: insert the newest pot, where I use $\pm$ 2sigma cut in mwpc0 }
+    }
     \label{fig:cccs_gaus_with_errors}
 \end{figure}
 

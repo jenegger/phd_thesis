@@ -1,13 +1,27 @@
 \section{Qualitative Analysis - \\Quasi-Free Scattering $^{12}$C(p,2p)$^{11}$B}\label{sec_analysis_qfs}
-Until the S444 experiment in 2020 CALIFA consisted out of a prototype frame filled with up to 64 CsI(Tl) crystals. The geometric coverage was therefore limited. For the S444 experiment CALIFA got its final frame and was fully filled in the forward barrel and 35\%filled in the iPhos region, CEPA was not installed yet. With these improvements it was possible to commission QFS-experiments with CALIFA at R$^3$B. In the follow up experiment S467, also in 2020, the first experimental run to study single-particle structures of neutron-rich Ca isotopes via QFS reactions was carried out.\newline
-Even though great improvements in the detector development  were achieved the correction factors to correct for geometric acceptance would be much too high ( $\approx \mathcal{O}(10)$) for precise cross section measurements for QFS-reactions since the correction factors would in turn rely on a a simplified reaction model. A precise analysis of the acceptance correction factor and the development of a more sophisticated and data driven reaction model is out of the scope of this work.\newline
+%Until the S444 experiment in 2020 CALIFA consisted out of a prototype frame filled with up to 64 CsI(Tl) crystals. The geometric coverage was therefore limited. For the S444 experiment CALIFA got its final frame and was fully filled in the forward barrel and 35\%filled in the iPhos region, CEPA was not installed yet. With these improvements it was possible to commission QFS-experiments with CALIFA at R$^3$B. In the follow up experiment S467, also in 2020, the first experimental run to study single-particle structures of neutron-rich Ca isotopes via QFS reactions was carried out.\newline
+%Even though great improvements in the detector development  were achieved the correction factors to correct for geometric acceptance would be much too high ( $\approx \mathcal{O}(10)$) for precise cross section measurements for QFS-reactions since the correction factors would in turn rely on a a simplified reaction model. A precise analysis of the acceptance correction factor and the development of a more sophisticated and data driven reaction model is out of the scope of this work.\newline
+%
+In the S444 experiment CALIFA was for the first time installed and operated in its final mechanical configuration. The forward barrel, covering polar angles in the range of $43^{\circ} < \theta< 86^{\circ}$, was fully filled. The iPhos region ($19^{\circ} < \theta < 43^{\circ}$) was 35\% filled. At this stage, the CEPA ($7^{\circ} < \theta < 19^{\circ}$) had not yet been installed.\\
+With this setup it was possible to commission QFS-experiments  with CALIFA at R3B.
+The subsequent experiment, S467, also conducted in 2020, marked the first dedicated QFS campaign aimed at probing single-particle structures in neutron-rich calcium isotopes.\\
+While significant progress had been made in the development of the CALIFA detector system, limitations in the geometric acceptance remained. Specifically, the correction factors associated with detector coverage and geometry are of the order of $\mathcal{O}(10)$, depending on the beam energy. A high-precision geometric correction would require an extensive simulation of the CALIFA detector response and a dedicated analysis effort, which falls beyond the scope of the present work.\\
+
+
+
+
 This analysis is dedicated to the identification of quasi-free scattering (QFS) reaction events. A prerequisite for this task is a precisely tuned reconstruction of the flight path of the reaction fragment downstream of the target, enabling unambiguous tagging of the fragment of interest, specifically $^{11}B$. This tagging is essential for the subsequent selection of events characterized by the detection of two high-energy protons in CALIFA.\\
 Subsection~\ref{sec:fission_qfs} will introduce an additional, particularly ambitious application of QFS reactions: the successful pilot experiment S455, which investigated the fission process via the quasi-free scattering reaction $^{238}U(p,2pf)$. This study, along with its complementary Coulomb excitation fission (Coulex Fission) experiment, culminated in a publication in \textit{Nature}~\cite{morfouace2025asymmetric}.
 
-\subsection{Setup-Calibration}
-For setup description refer to section \ref{sec:analysis_cross_sec}. For all detectors except the SOFIA (Study On FIssion with Aladin) Time of Flight Wall the calibration parameters investigated by the respective detector-expert group were adopted. Herefore we will subsequently only describe the Time of Flight Wall calibration in this subsection.
+\subsection{Setup-Calibration \& Fragment Tracking}
+%For setup description refer to section \ref{sec:analysis_cross_sec}. For all detectors except the SOFIA (Study On FIssion with Aladin) Time of Flight Wall the calibration parameters investigated by the respective detector-expert group were adopted. Herefore we will subsequently only describe the Time of Flight Wall calibration in this subsection.
+As outlined in the introduction, the qualitative analysis presented in this work relies critically on the accurate identification of the $^{11}$B reaction fragment. This requires both precise tracking of the fragment's flight path downstream of the target and high-resolution time-of-flight (ToF) measurements, enabled by dedicated detector systems.\\
+A fundamental prerequisite is the proper calibration of the relevant detectors, which is essential to ensure accurate, reliable, and physically meaningful measurements. For all detectors involved in the experiment -- except for the SOFIA (Study On FIssion with Aladin) Time-of-Flight Wall -- the calibration parameters provided by the respective detector expert groups were adopted.
+This subsection therefore focuses on the calibration procedure of the SOFIA ToF Wall and describes in detail the reconstruction algorithm for the reaction fragment's flight path in the first section.
+
 \subsubsection{Flight-Path Reconstruction}\label{subsec:flightpath_reco}
-The procedure to calibrate the Time of Flight (ToF) Wall involves beforehand a precise flight-path reconstruction of the projectile from the entrance of Cave C downstream to the ToF Wall. Since only one tracking detector downstream to GLAD was in operation for the S444 experiment no angle of the deflected fragment/beam $\theta_{out}$ could be directly extracted. Herefore an advanced tracking algorithm was developed, motivated from ref. \cite{bertini2013study} (section 3.4). 
+For accurate flight-path reconstruction, all available tracking detectors -- specifically, the MWPCs, see also Section~\ref{sec_mwpcs} , used in the S444 experiment -- located between the entrance of Cave C and the ToF Wall are utilized.\\
+Since only one tracking detector downstream to GLAD, the MWPC3, was installed for the S444 experiment no angle of the deflected fragment/beam $\theta_{out}$ could be directly extracted. Herefore an advanced tracking algorithm was developed, motivated from ref. \cite{bertini2013study} (section 3.4). 
 \begin{itemize}
 \item The first step is to measure the scattering angle after target, $\theta_{in}$, and draw an extended line from the target position through the effective magnetic field of GLAD.  
 \item Draw a trajectory line from the hit position in MWPC3 to the intersection point C (see figure \ref{fig:sub1_reco_path}) of the "kick-plane-line" and the reconstructed and extended track line upstream to GLAD.
@@ -64,7 +78,7 @@ In the flightpath reconstruction the deflections in the y-dimension were omitted
 
 
 \subsubsection{Time of Flight Calibration}
-For the time of flight measurement in the S444 setup the time is recorded and digitized by the VFTX,  VME-FPGA Time-to-Digital Converter (TDC) Modules based on tapped delay line (TDL) TDCs\cite{bayer2009development}. These modules provide for each detected signal a coarse time, is determined by counting cycles of a 200 MHz readout clock, resulting in a 5 ns binning resolution, and a fine time, which is obtained using an FPGA-based Time-to-Digital Converter (TDC), which employs a tapped delay line (TDL). In this approach, the signal propagates through a series of delayed logic modules within the FPGA until the subsequent clock cycle terminates the sampling process. The number of delay elements traversed by the signal is used to compute the time difference between the signal onset and the end of the clock cycle. The translation of the resulting fine time, with reasonable assumption of an uniform distribution, is achieved via a calibrated linear function. This procedure assigns to each preamplifier signal in the start detector (left/right) and the ToF Wall (up/down) a calibrated raw time \textit{raw\_t}:
+For the time of flight measurement in the S444 setup the time is recorded and digitized by the VFTX,  VME-FPGA Time-to-Digital Converter (TDC) Modules based on tapped delay line (TDL) TDCs\cite{bayer2009development}. These modules provide for each detected signal a coarse time, determined by counting cycles of a 200 MHz readout clock, resulting in a 5 ns binning, and a fine time, which is obtained using an FPGA-based Time-to-Digital Converter (TDC), which employs a tapped delay line (TDL). In this approach, the signal propagates through a series of delayed logic modules within the FPGA until the subsequent clock cycle terminates the sampling process. The number of delay elements traversed by the signal is used to compute the time difference between the signal onset and the end of the clock cycle. The translation of the resulting fine time, with reasonable assumption of an uniform distribution, is achieved via a calibrated linear function. This procedure assigns to each preamplifier signal in the start detector (left/right) and the ToF Wall (up/down) a calibrated raw time \textit{raw\_t}:
 \begin{align*}
 raw\_t &= coarse\_time\_clocks  \cdot 5ns + offset[fine\_time]
 \end{align*}
@@ -87,6 +101,7 @@ To estimate the time of flight resolution for events with hit in ToF Wall bar \t
 \end{align*}
 $\overline{L[i]}$ is the mean pathlength, whereas $L[i]$ and $ToF[i]$ are event-wise selected.
 By reconstructing the fligh-path as described in subsection \ref{subsec:flightpath_reco} and employment of the mentioned time calibration steps the average time resolution $\sigma_t$ results $\approx 90\, ps$\footnote{To remove events with large angular straggling, a cut of $\pm 20mm$ on the beam spot for the y-position on the MWPC3 was applied.}.
+
 
 \subsection{Event Selection}
 For the precise measurement of the total interaction cross section $^{12}C + ^{12}C$, as detailed in the section \ref{sec:analysis_cross_sec}, event selection was of critical importance, requiring stringent cuts on the TPats (see table \ref{tab:tpats}), as well as on the charge and position of the incoming particles. In contrast, for this qualitative QFS analysis, these factors played a minor role, allowing for only minimal cuts on the incoming ions:
@@ -312,7 +327,7 @@ This effect arises from the geometry-dependent resolution of the sub-detectors:
     \label{fig:corr_p_miss_11b}
 \end{figure}
 
-TODO:->Maybe also correlations between fragment and proton pair, see Chulkov.
+%TODO:->Maybe also correlations between fragment and proton pair, see Chulkov.
 
 
 \subsubsection{Proton Separation Energy $S_p$}
