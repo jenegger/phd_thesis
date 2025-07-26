@@ -1,6 +1,6 @@
 \section{Nuclear Scattering Reactions in the \\ Glauber Framework}\label{sec:reac_model}
 Nuclear scattering reactions are central tools for the investigation of the nature of the structure and dynamics of nuclei since the discovery of the nucleus. In 1911 Rutherford, Geiger and Marsden investigated the nature of gold atoms by bombarding them with alpha particles. By their surprise they noticed that the majority of the alpha particles passed through the gold foil, but few were scattered at large angles. This observation of backward scattered particles forced Rutherford to revise the Thomson atom model and the development of the Rutherford atom model with the mass and positive charge concentrated in a small volume, the so called nucleus, 10$^5$ smaller than the atom as a whole~\cite{rutherford1911lxxix}.\\
-Building upon the fundamental insight gained from Rutherford’s pioneering alpha scattering experiment, nuclear scattering experiments have evolved into indispensable tools for probing nuclear matter across a vast range of energies and momentum transfers. This chapter focuses on high-energy scattering reactions, which provide unique access to the internal nucleonic degrees of freedom and enable the study of nuclear structure on short-distance scales. This is primarily facilitated by the inverse relationship between the de Broglie wavelength ($\lambda$) and the incident particle energy ($E$), such that $\lambda \propto 1/\sqrt{E}$. At high energies, the reduced de Broglie wavelength allows for the spatial resolution of short distances, typically on the order of 0.5--1 fm, revealing details beyond the macroscopic properties of nuclei.\\
+Building upon the fundamental insight gained from Rutherford's pioneering alpha scattering experiment, nuclear scattering experiments have evolved into indispensable tools for probing nuclear matter across a vast range of energies and momentum transfers. This chapter focuses on high-energy scattering reactions, which provide unique access to the internal nucleonic degrees of freedom and enable the study of nuclear structure on short-distance scales. This is primarily facilitated by the inverse relationship between the de Broglie wavelength ($\lambda$) and the incident particle energy ($E$), such that $\lambda \propto 1/\sqrt{E}$. At high energies, the reduced de Broglie wavelength allows for the spatial resolution of short distances, typically on the order of 0.5--1 fm, revealing details beyond the macroscopic properties of nuclei.\\
 A significant distinction of pure nuclear scattering experiments, in contrast to electron-nucleus scattering, lies in their ability to directly probe the nuclear force. This permits the detailed investigation of short-range correlations (SRCs) between nucleons, which are crucial for understanding the nuclear equation of state.\\
 High-energy nuclear scattering reactions serve a variety of purposes in nuclear and astroparticle physics, including:
 \begin{itemize}
@@ -21,7 +21,7 @@ An comprehensive overview of various nuclear reactions, including scattering rea
 
 Given the short interaction time characteristic of the high-energy regime, these reactions are often interpreted as singular nuclear interactions and are thus termed "\textit{direct reactions}". Direct reactions encompass several key channels, which can be expressed in short notation (see also Ref.~\cite{obertelli2021modern}):
 \begin{itemize}
-    \item \textbf{Elastic Scattering:} $a + A \rightarrow a + A$, denoted as $A(a, a)A$. In this process, the projectile $a$ scatters off the target nucleus $A$ without any change in their internal states or kinetic energy, apart from that exchanged in the scattering process.
+    \item \textbf{Elastic Scattering:} $a + A \rightarrow a + A$, denoted as $A(a, a)A$. In this process, the projectile $a$ scatters off the target nucleus $A$ without any change in their internal states.
     \item \textbf{Inelastic Scattering:} $a + A \rightarrow a' + A^*$, denoted as $A(a, a')A^*$. Here, the projectile $a$ excites the target nucleus $A$ to an excited state $A^*$, resulting in a change in the internal energy of the target.
     \item \textbf{Particle Transfer Reaction:} $a + A \rightarrow b + B$, denoted as $A(a, b)B$. This involves the exchange of nucleons or clusters of nucleons between the projectile and target, leading to new particles $b$ and $B$.
     \item \textbf{Breakup/Knockout Reaction:} $a + A \rightarrow b + X$, denoted as $A(a, b)X$. In these reactions, one or more nucleons are ejected from the target nucleus, leaving behind a remnant $X$, often accompanied by the projectile $b$.
@@ -29,7 +29,7 @@ Given the short interaction time characteristic of the high-energy regime, these
 
 The accurate interpretation of such high-energy nuclear reactions necessitates a robust theoretical framework capable of addressing complex phenomena such as multiple scattering processes and nuclear transparency effects, particularly when dealing with complex nuclei. The Glauber model, originally formulated in the 1950s, provides an established and widely utilized framework for this purpose.\\
 
-Before introducing the fundamental concepts of scattering theory within the Glauber framework, the key integrated cross sections relevant to this work are briefly defined:
+Before introducing the fundamental concepts of scattering theory within the Glauber framework, the key integrated cross sections relevant for this work are briefly defined:
 
 \begin{itemize}
     \item \boldmath$\sigma_{\mathrm{el}}$\unboldmath{} -- \textit{Total elastic cross section}: The projectile remains in its ground state, and no nucleon is removed.
@@ -85,7 +85,8 @@ The most general implementations of the Glauber Model incorporate the following 
 \end{itemize}
  \begin{figure}[htbp]
      \centering
-     \includegraphics[width=0.8\textwidth]{Figures/impact_parameter.pdf}
+     %\includegraphics[width=0.8\textwidth]{Figures/impact_parameter.pdf}
+     \includegraphics[width=0.8\textwidth]{Figures/impact_par_glauber_name.pdf}
      \caption{Collision of nucleus A with nucleus B at an impact parameter b. Both probability approach (PA) and  eikonal optical-limit approach (EOL) it is assumed that both nuclei transverse on straight lines. The relative distance between the nucleons to scatter is given by b - $\text{b}_{\text{A}}$ + $\text{b}_{\text{B}}$}.
      \label{fig:impact_par_glauber}
  \end{figure}
@@ -93,15 +94,15 @@ The most general implementations of the Glauber Model incorporate the following 
 Two principal approaches are commonly used to derive cross-sections within the Glauber framework:
 
 \begin{enumerate}
-    \item \textbf{Probability Approach (PA):} In this semiclassical method, nucleon-nucleon interactions are treated as independent binary collisions. All combinatorial configurations of these interactions are considered, and the total reaction cross-section is obtained by integrating over all possible impact parameters (see Figure~\ref{fig:impact_par_glauber}). In this picture, nucleons are often approximated as "\textit{billiard balls}"~\cite{bertulani2019introduction}. The \textit{abrasion-ablation model}~\cite{hufner1975abrasion}, which can be extended to incorporate isospin-dependent nucleon-nucleon cross-sections, is a widely used application of the probability approach, for instance in \textsc{Geant4} simulations~\cite{agostinelli2003geant4}. A comprehensive overview of the PA is provided in~\cite{schindler2017total}, with a detailed derivation available in~\cite{bertulani2019introduction}.
+    \item \textbf{Probability Approach (PA):} In this semiclassical method, nucleon-nucleon interactions are treated as independent binary collisions. All combinatorial configurations of these interactions are considered, and the total reaction cross-section is obtained by integrating over all possible impact parameters (see Figure~\ref{fig:impact_par_glauber}). In this picture, nucleons are often approximated as "\textit{billiard balls}"~\cite{bertulani2019introduction}. The \textit{abrasion-ablation model}~\cite{hufner1975abrasion}, which can be extended to incorporate isospin-dependent nucleon-nucleon cross-sections, is a widely used application of the probability approach, for instance in \textsc{Geant4} simulations~\cite{agostinelli2003geant4}. A comprehensive overview of the PA is provided in~\cite{schindler2017total} and more details in~\cite{bertulani2019introduction}.
 
     \item \textbf{Eikonal Optical Limit (EOL):} The present work focuses on the quantum-mechanical formulation known as the EOL approach. It is based on the time-independent Schr\"odinger equation, incorporating the eikonal wave approximation and the introduction of a complex optical potential. This results in a compact and analytically tractable expression for the scattering amplitude, making it particularly suitable for high-energy collisions involving extended targets.
 \end{enumerate}
 
 \subsection{Eikonal optical-limit approximation (EOL)}\label{sec:eol}
-
-For the introduction to this discussion is the elastic scattering process where neither the projectile nor the target gets excited or nucleons get knocked out. A good description of the elastic scattering process allows us to later derive the reaction and the total cross section.\\
-Starting point is the quantum mechanical view from the time-independent Schr\"odinger equation, so a stationary treatment of the elastic scattering process:
+The starting point for this discussion is the elastic scattering process, in which both the projectile and the target remain in their ground states, and no nucleons are removed from either system.
+A good description of the elastic scattering process allows us to later derive the reaction and the total cross section.\\
+Beginning with the quantum mechanical view from the time-independent Schr\"odinger equation as stationary treatment of the elastic scattering process:
 \begin{equation}\label{eq:schroedinger}
 H\psi_{\vec{k}}(\vec{r}) = E\psi_{\vec{k}}(\vec{r}),
 \end{equation}
@@ -110,9 +111,9 @@ given the Hamiltonian:
 H = -\frac{\hbar^2}{2\mu} \vec{\nabla}^2 + V(\vec{r}).
 \end{equation}
 where $\mu = \frac{m_T \cdot m_P}{m_T+m_P}$ is the  reduced mass of the system, composed of the target nucleus with mass $m_T$ and the projectile with mass $m_P$ .
-The objective is to determine  the wavefunction $\psi_{\vec{k}}(\vec{r})$ that satisfies equation~\ref{eq:schroedinger}. This wavefunction consists of the sum of the incoming plane wave $\psi_{\vec{k}}(\vec{r})$ and the outgoing spherical wave $\varphi_{\vec{k}}(\vec{r})$, i.e.:
+The objective is to determine  the wavefunction $\psi_{\vec{k}}(\vec{r})$ that satisfies equation~\ref{eq:schroedinger}. This wavefunction consists of the sum of the incoming plane wave $\varphi_{\vec{k}}(\vec{r})$ and the outgoing scattered spherical wave $\psi^{sc}_{\vec{k}}(\vec{r})$, i.e.:
 \begin{equation}\label{eq:tot_wave}
-\psi_{\vec{k}}(\vec{r}) = A [e^{ikr} + f(\theta) \frac{e^{ikr}}{r}] \equiv  \psi_{\vec{k}}(\vec{r}) + \varphi_{\vec{k}}(\vec{r})
+\psi_{\vec{k}}(\vec{r}) = A [e^{ikr} + f(\theta) \frac{e^{ikr}}{r}] \equiv \varphi_{\vec{k}}(\vec{r}) + \psi_{\vec{k}}(\vec{r})
 \end{equation}
 The factor $f(\theta)$ in front of the outgoing spherical wave is called scattering amplitude. Assuming a spherical central potential the scattering amplitude depends on the polar angle $\theta$ only, the azimuthal angle $\varphi$ does not have to be considered. 
 The integral representation of the Schr\"odinger equation with the implementation of Green's operator G(E) is given by:
@@ -121,7 +122,7 @@ $$
 $$
 And following the derivation in Section 3.3 of Ref.~\cite{bertulani2019introduction} leads to following solution of the wavefunction:
 \begin{equation}
-\psi^-_k(\vec{r}) = \frac{1}{(2\pi)^{3/2}} \left[ e^{i\vec{k}\cdot \vec{r}} + \frac{e^{ikr}}{r} \left( -2\pi^2 \frac{2\mu}{\hbar^2} \right) \langle \varphi_{\vec{k}'} | V(\vec{r}) | \psi_{\vec{k}} \rangle \right] 
+\psi_{\vec{k}}(\vec{r}) = \frac{1}{(2\pi)^{3/2}} \left[ e^{i\vec{k}\cdot \vec{r}} + \frac{e^{ikr}}{r} \left( -2\pi^2 \frac{2\mu}{\hbar^2} \right) \langle \varphi_{\vec{k}'} | V(\vec{r}) | \psi_{\vec{k}} \rangle \right] 
 \end{equation}
 
 which gives for the scattering amplitude $f(\theta)$:
@@ -132,20 +133,20 @@ f(\theta) & = -2\pi^2 \left( \frac{2\mu}{\hbar^2} \right) \langle \varphi_{\vec{
 \end{split}
 \end{equation}
 
-with  $\psi_{\vec{k}}$ the incoming wave and $\varphi_{\vec{k}'}$ the outgoing spherical wave accordingly, as in equation~\ref{eq:tot_wave}.\\
-The (differential) elastic scattering cross-section can be derived from the scattering amplitude $f(\theta)$ via conservation law of particle current\footnote{A derivation of this equation can be found in~\cite{mayer2013kernphysik}, Section 4.2}.
+with $\varphi_{\vec{k}'}$ the incoming wave and $\psi_{\vec{k}}$ the outgoing spherical wave accordingly, as in equation~\ref{eq:tot_wave}.\\
+The (differential) elastic scattering cross-section can be derived from the scattering amplitude $f(\theta)$ via the conservation law of particle current\footnote{A derivation of this equation can be found in~\cite{mayer2013kernphysik}, Section 4.2}.
 \begin{equation}\label{eq:el_scatt_cs}
 \left( \frac{\mathrm{d} \sigma_{el}}{\mathrm{d} \Omega} \right) = |f(\theta)|^2 \qquad \Rightarrow \qquad \sigma_{el} = \int \mathrm{d} \Omega \, |f(\theta)|^2 
 \end{equation}
 
 \subsubsection{Eikonal Wave Approximation}
-The eikonal wave approximation can be applied when the incident particle's energy is much larger than the potential's strength ($ E >> V$) and the potential should vary slowly over the wavelength of the particle. This approximation is most accurate for scattering at small angles. Are those prerequisites given, then the eikonal wave approximation assumes that the scattered particle follows a nearly straight-line trajectory (like a classical particle). The wavefunction is approximated as a plane wave modulated by a phase factor. The term "eikonal" comes from the Greek word for "image" or "likeness," reflecting its origin in optics (ray optics).
+The eikonal wave approximation can be applied when the incident particle's kinetic energy is much larger than the potential's strength ($ E >> V$) and the potential should vary slowly over the wavelength of the particle. This approximation is most accurate for scattering at small angles. Are those prerequisites given, then the eikonal wave approximation assumes that the scattered particle follows a nearly straight-line trajectory (like a classical particle). The wavefunction is approximated as a plane wave modulated by a phase factor. The term "eikonal" comes from the Greek word for "image" or "likeness," reflecting its origin in optics (ray optics).
 Following the derivation of Ref.~\cite{bertulani2019introduction} the solution for the wave function in~\ref{eq:schroedinger} is expressed as:
 \begin{equation}\label{eq:wave_sol}
 \psi_{\mathbf{k}}(\mathbf{r}) = e^{ikz} \varphi(\mathbf{c}, z)
 \end{equation}
-where $e^{ikz}$ is the plane wave in $z$ direction and $\varphi(\mathbf{c}, z)$ the distortion caused by the potential.
-Inserting the plane wave function from equation~\ref{eq:wave_sol} in the Schr\"odinger equation~\ref{eq:schroedinger} and omitting higher order derivative terms, due to the slowly varying potential over the particle's wave length (full derivation can be found in BER04) the distortion $\varphi(\mathbf{c}, z)$ can be simplified by:
+where $e^{ikz}$ is the plane wave in $z$ direction, $\varphi(\mathbf{c}, z)$ the distortion caused by the potential and $\mathbf{c}$ the space vector.
+Inserting the plane wave function from equation~\ref{eq:wave_sol} in the Schr\"odinger equation~\ref{eq:schroedinger} and omitting higher order derivative terms, due to the slowly varying potential over the particle's wave length (full derivation can be found in~\cite{bertulani2019introduction}) the distortion $\varphi(\mathbf{c}, z)$ can be simplified by:
 \begin{equation}
 \varphi(\mathbf{c}, z) = \exp \left\{ -\frac{i}{\hbar \nu} \int_{-\infty}^{z} V(\mathbf{c}, z') \, dz' \right\}
 \end{equation}
@@ -171,7 +172,7 @@ Without derivation we present here the \textbf{optical theorem} which relates th
 \sigma_T = \frac{4\pi}{k} \, \text{Im} \left[ f(\theta = 0) \right]
 \end{equation}
 The optical theorem, formulated in the context of optics -- specifically for the scattering and absorption of light -- was later extended and applied to other wave phenomena, including quantum mechanical scattering of particles.\\
-The name stems from the fact that $\text{Im}\, f(0)$ is related to the imaginary part of the refractive index $n$, which the scattering potential has for the incident wave. We have $\text{Im}\, f(0) = \frac{k^2}{2\pi} \text{Im}\, n$. The imaginary part of the refractive index describes the absorption of the beam. The optical theorem is therefore an an expression of the relationship between absorption in the forward direction and the total cross-section.
+The name stems from the fact that $\text{Im}\, f(0)$ is related to the imaginary part of the refractive index $n$, which the scattering potential has for the incident wave. We have $\text{Im}\, f(0) = \frac{k^2}{2\pi} \text{Im}\, n$. The imaginary part of the refractive index describes the absorption of the beam. The optical theorem is therefore an an expression of the relationship between absorption in the forward direction and the total cross-section~\cite{mayer2013kernphysik}.
 The optical theorem can be derived using the fundamental principle of particle current conservation, see Section 6.4.3 in~\cite{sakurai2020modern}.\\
 From equation~\ref{eq:tot_cs_def}, the scattering amplitude~\ref{eq:final_sc_amp} and the aforementioned optical theorem relation we can summarize:
 \begin{align}
@@ -189,7 +190,7 @@ A rigorous theoretical understanding of this potential would ideally come from a
 However, such an \textit{ab initio} treatment remains highly complex and has only been partially addressed in the literature. 
 Therefore, in most practical applications, the optical potential is introduced phenomenologically, with its parameters fitted to elastic and inelastic scattering cross-section data.
 
-There are two main approaches to constructing the optical potential:
+There are two main approaches to construct the optical potential:
 
 \paragraph{1. Phenomenological Optical Potential}
 
