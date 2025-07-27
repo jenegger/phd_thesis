@@ -311,7 +311,7 @@ At low energies, the effective $\sigma_{pp}$ cross section is reduced relative t
 %Another phenomenological approach is to use the "Energy density functional theory (EDF)". Here functional forms of the Hamiltonian are developed and one determines the parameters of the
 %functional forms under constrains of a set of experimental data, such as the charge matter radii. Since EDF is not based on the interactions betweennucleons, but expresses the Hamiltonian by the local one-body density it allows to derive nuclear density distributions and extrapolate predictions for exotic nuclei. More details about the EDF approach can be found in Sec. 3.6 of Ref.~\cite{obertelli2021modern}.
 
-The second essential input to the Glauber model is the nuclear density distribution of the projectile, \( \rho_P(\vec{r}) \), and the target, \( \rho_T(\vec{r}) \). The dependence of the nuclear radius on the mass number \( A \) was first established in early Rutherford scattering experiments, which demonstrated that it scales as
+The second essential input to the Glauber model is the nuclear density distribution of the projectile, \( \rho_P(\vec{r}) \), and the target, \( \rho_T(\vec{r}) \). The dependence of the nuclear radius on the mass number \( A \) was first established in early Rutherford scattering experiments, which demonstrated that it scales in first order as
 \begin{equation}
 R = r_0 A^{1/3}
 \end{equation}
@@ -321,12 +321,12 @@ Nuclear charge radii are determined experimentally through high-energy electron 
 \begin{equation}
 \left( \frac{d\sigma}{d\Omega} \right)_{\text{exp}} = \left( \frac{d\sigma}{d\Omega} \right)_{\text{Mott}} \cdot \left| F(q^2) \right|^2
 \end{equation}
-where \( F(q^2) \) is the nuclear form factor and accounts for the finite size and internal structure of the nucleus. The Mott cross section includes relativistic and spin corrections to the Rutherford cross section\footnote{The asterisk denotes that the nuclear recoil is neglected in the given expression for electron–nucleus scattering.}:
+where \( F(q^2) \) is the nuclear form factor and accounts for the finite size and internal structure of the nucleus. The Mott cross section includes relativistic and spin corrections to the Rutherford cross section\footnote{The asterisk denotes that the nuclear recoil is neglected in the given expression for electron-nucleus scattering.}:
 \begin{equation}
 \left( \frac{d\sigma}{d\Omega} \right)^{*}_{\text{Mott}} = \left( \frac{d\sigma}{d\Omega} \right)_{\text{Rutherford}} \cdot \left( 1 - \beta^2 \sin^2 \frac{\theta}{2} \right), \quad \beta = \frac{v}{c}
 \end{equation}
 
-The form factor \( F(q^2) \) is the Fourier transform of the spatial charge distribution:
+The form factor \( F(\mathbf{q}^2) \) is the Fourier transform of the spatial charge distribution:
 \begin{equation}
 F(\mathbf{q}^2) = \int e^{i\mathbf{q}\cdot\mathbf{x}/\hbar} \rho(\mathbf{x}) \,\mathrm{d}^3x 
 \quad \Rightarrow \quad 
@@ -337,7 +337,7 @@ Thus, by measuring the differential cross section and comparing it to the known 
 
 A common approach is therefore to assume a parameterized functional form for \( \rho(r) \), and fit its parameters to best reproduce the experimental form factor. One frequently used choice is the Fermi distribution; see Section 2.1 of Ref.~\cite{mayer2013kernphysik}.
 
-An alternative phenomenological method is the Energy Density Functional (EDF) theory. In this approach, the nuclear Hamiltonian is expressed as a functional of the local one-body density. The parameters of this functional are determined by fitting to experimental observables, such as charge and matter radii. EDF methods are not explicitly based on nucleon–nucleon interactions but enable the derivation of nuclear density profiles and extrapolations to exotic nuclei. A detailed discussion of EDF can be found in Section 3.6 of Ref.~\cite{obertelli2021modern}.
+An alternative phenomenological method is the Energy Density Functional (EDF) theory. In this approach, the nuclear Hamiltonian is expressed as a functional of the local one-body density. The parameters of this functional are determined by fitting to experimental observables, such as charge and matter radii. EDF methods are not explicitly based on nucleon-nucleon interactions but enable the derivation of nuclear density profiles and extrapolations to exotic nuclei. A detailed discussion of EDF can be found in Section 3.6 of Ref.~\cite{obertelli2021modern}.
 
 
 
@@ -427,12 +427,12 @@ with
 \tilde{\rho} = \frac{\rho_P + \rho_T}{\rho_0}, \quad \rho_0 = 0.16\,\mathrm{fm}^{-3}
 \]
 
-To incorporate Pauli blocking into the Glauber model, the free-space nucleon-nucleon cross section $\sigma_{NN}^{\text{free}}$ must be replaced with the Pauli-suppressed cross section $\sigma_{NN}^{\text{Pauli}}$ in both the total reaction cross section (Eq.~\ref{eq:final_react_cs}) and the charge-changing cross section (Eq.~\ref{eq:final_cc_formula}).
+To incorporate Pauli blocking into the Glauber model, the free-space nucleon-nucleon cross section $\sigma_{NN}^{\text{free}}$ must be replaced with the Pauli-suppressed cross section $\sigma_{NN}^{\text{Pauli}}$ in both cross section formulae Eq.~\ref{eq:final_react_cs} and Eq.~\ref{eq:final_cc_formula}. 
 
 \item[Coulomb Repulsion]
 For systems in which both the projectile and the target carry positive charge, such as in $^{12}$C + $^{12}$C collisions, Coulomb repulsion plays a significant role. The eikonal approximation assumes straight-line trajectories, which becomes invalid as the Coulomb force deflects the incoming projectile. This deflection reduces the probability of the nuclei reaching distances where strong nuclear interactions dominate, effectively suppressing the interaction cross section -- particularly at low beam energies where the kinetic energy is comparable to the Coulomb barrier.
 
-In the non-relativistic case, the distance of closest approach in a head-on collision can be calculated by equalizing the kinetic energy of the projectile with the repulsive Coulomb potential:
+In the non-relativistic case, the distance of closest approach in a head-on collision can be calculated by setting the kinetic energy of the projectile equal to the repulsive Coulomb potential:
 
 \begin{equation}
 \frac{1}{2}mv^{2} = \frac{Z_T Z_P e^{2}}{r} \quad \Rightarrow \quad r_{\text{min}} = \frac{2 Z_T Z_P e^{2}}{m v^2}
@@ -451,10 +451,12 @@ b' = a_0 + \sqrt{a_{0}^2 + b^2}
 \end{equation}
 where $a_0 = \frac{r_{min}}{2}$ is the half distance of closest approach. For more details see Ref.~\cite{teixeira2022nuclear}.
 
-As a consequence, the lower limit of the impact parameter integration in the total reaction cross section (Eq.~\ref{eq:final_react_cs}) is modified from $b=0$ to $b'= r_{\text{min}}$.
+%As a consequence, the lower limit of the impact parameter integration in the total reaction cross section (Eq.~\ref{eq:final_react_cs}) is modified from $b=0$ to $b'= r_{\text{min}}$.
+
+As a consequence, the lower limit of the integration over the impact parameter in the total reaction and charge changing cross section (Eq.~\ref{eq:final_react_cs} and Eq.~\ref{eq:final_cc_formula}) is modified from $b=0$ to $b'= r_{\text{min}}$.
 
 \item[Fermi Motion]
-In the basic Glauber model, nucleons are assumed to be at rest within the nuclei. However, nucleons in a bound system exhibit intrinsic motion. In the ground state, momenta up to the Fermi momentum ($p_F \approx 250\,\mathrm{MeV}/c$) are possible for medium to heavy nuclei. This motion alters the effective nucleon–nucleon collision energy and can, in principle, influence the reaction cross section.
+In the basic Glauber model, nucleons are assumed to be at rest within the nuclei. However, nucleons in a bound system exhibit intrinsic motion. In the ground state, momenta up to the Fermi momentum ($p_F \approx 250\,\mathrm{MeV}/c$) are possible for medium to heavy nuclei. This motion alters the effective nucleon-nucleon collision energy and can, in principle, influence the reaction cross section.
 
 Ref.~\cite{teixeira2022nuclear} investigates this effect and finds that the correction to the total reaction cross section remains below 0.1\% for beam energies above 200\,AMeV. Therefore, Fermi motion can be neglected in the high-energy context of this work.
 
