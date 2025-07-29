@@ -11,7 +11,7 @@ As detailed in Section~\ref{subsec:event-sel}, a stringent event selection crite
     \label{fig:r3b_vs_twin_charge_def}
 \end{figure}
 
-\section {MWPCs - \textit{cal-to-hit} data processing}
+\section {MWPCs -- \textit{cal-to-hit} data processing}
 
 
 For all MWPCs the standard  \textit{cal-to-hit} step  sorts the calibrated hits in the detector according to the calibrated charge deposited in the pads. The final position (in mm) is determined by selecting the hit with the highest charge deposition $Q_{max}$ and its left ($Q_L$) and right neighbor ($Q_R$) pads\footnote{In case no charge deposition in one or both neighbors the charge value is set to 1 respectively.}. These charge and position values are inserted in the "hyperbolic squared secant" function \cite{lau1995optimization} with the following charge distribution function:
@@ -336,7 +336,7 @@ where $N_2^{\text{active}}$ refers to the respective events with survived carbon
 
 Although the dead time rates are relatively close across all energy settings, a systematic uncertainty must still be considered. This is estimated by computing the mean rate $\mu_{\text{energy}}$ across energy points and determining the corresponding standard deviation $\Delta_{\text{energy}}$. The average of these standard deviations, $\overline{\Delta_{\text{energy}}}$, is then used to estimate the uncertainty contribution.
 
-This uncertainty, denoted $\Delta^{\text{sys}}_{N_2}$, enters the total systematic error on the cross-section measurement according to:
+This uncertainty, denoted $\Delta^{\text{sys}}_{N_2}$, enters the total systematic error on the cross section measurement according to:
 
 \begin{gather*}
 \sigma = -\frac{1}{N_t} \ln\left(\frac{N_2^T}{N_1^T} \cdot \frac{N_1^E}{N_2^E} \right)\\

@@ -1,4 +1,4 @@
-\section{Analysis - \\Total Interaction Cross Section of  $^{12}$C + $^{12}$C}\label{sec:analysis_cross_sec}
+\section{Analysis -- Total Interaction Cross Section $^{12}$C + $^{12}$C}\label{sec:analysis_cross_sec}
 This chapter will go through the  analysis step by step from the unpacking stage to the final results of the interaction cross sections. It will start by a short overview of the transmission method used for the cross section measurements. The next step is  the selection of clean incoming $^{12}$C isotopes. Following the identification of the carbon isotopes after the target - for the measurement of the charge changing cross section - and as final step the interaction cross section measurement. \newline
 All relevant detector related geometrical and efficiency corrections will be addressed and their influence to the final result and its uncertainty will be discussed.
 \subsection{Cross Section Measurement via Transmission Method}\label{section:transmission_method}
@@ -54,28 +54,28 @@ Detectors downstream the target area are used to count the number of unreacted p
     \centering
     \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/SETUP_around_Target.png}
     \caption{
-    Schematic layout of the R$^3$B experimental setup for the S444 experiment. The beam comes from the left, passing through MWPC0, R3B MUSIC (ionization chamber), START detector (orange), and ROLU (green) before interacting in the target chamber. The setup is spatially referenced with z=0 at the end of the target chamber. Measurement directions "Messel side" and "Wixhausen side" are also indicated for (left-right) orientation. Dimensions are given in millimeters. 
+    Schematic layout of the R3B experimental setup for the S444 experiment. The beam comes from the left, passing through MWPC0, R3B MUSIC (ionization chamber), START detector (orange), and ROLU (green) before interacting in the target chamber. The setup is spatially referenced with z=0 at the end of the target chamber. Measurement directions "Messel side" and "Wixhausen side" are also indicated for (left-right) orientation. Dimensions are given in millimeters. 
     }
     \label{fig:setup_target_region}
 \end{figure}
 
-For event selection, all three upstream detectors are utilized: the MWPC0, the R$^3$B MUSIC Ionization Chamber, and the start detector. This selection of correlated signals in these detectors already ensure that individual dead times of the different DAQ systems and the central trigger system are excluded for the dataset and do not have to be considered in the following analysis. To ensure a clean incoming event selection, the following prerequisites must be met:
+For event selection, all three upstream detectors are utilized: the MWPC0, the R3B MUSIC Ionization Chamber, and the start detector. This selection of correlated signals in these detectors already ensure that individual dead times of the different DAQ systems and the central trigger system are excluded for the dataset and do not have to be considered in the following analysis. To ensure a clean incoming event selection, the following prerequisites must be met:
 \begin{enumerate}
 \item \textbf{$^{12}$C identification of incoming projectile by upstream detectors:}\newline
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/charge_val_r3b_start_mw0_cuts.pdf}
     \caption{
-    Charge distribution in R$^3$B MUSIC with predefined calibration parameters with already applied positional cuts on MWPC0 - positioned upstream to the ionization chamber and required coincident signal in the start detector. The rise beyond Z $\ge$ 7.2 originates from pile-up events. The sharp cut on the right at Z $\gtrapprox$ 7.35 is due to the limit of the electronics dynamic range. The fall off at Z $\lessapprox$ 4.8 is due to applied threshold settings on the detector side.
+    Charge distribution in R3B MUSIC with predefined calibration parameters with already applied positional cuts on MWPC0 - positioned upstream to the ionization chamber and required coincident signal in the start detector. The rise beyond Z $\ge$ 7.2 originates from pile-up events. The sharp cut on the right at Z $\gtrapprox$ 7.35 is due to the limit of the electronics dynamic range. The fall off at Z $\lessapprox$ 4.8 is due to applied threshold settings on the detector side.
     }
     \label{fig:r3bmusic_charge}
 \end{figure}
 In the S444 experiment the incoming beam was directly delivered by the SIS18 ring accelerator, which is operated in ultra-high vacuum. Due to the low material budget in this beam line and its narrow p/q acceptance the level of contamination is very low.\newline 
-For the charge identification of the incoming ion the R$^3$B MUSIC ionization chamber is used which is positioned directly after the MWPC0 at the beam entrance in Cave C, see figure \ref{fig:setup_target_region}. The R$^3$B MUSIC detector measures anode-wise the energy loss of the passing-through ion which in the first order is proportional to the square of its charge ($\Delta E \sim Z^{2}$). Herfore the calibration parameters from the online analysis are used\footnote{These are generic parameter values used to the detector performance during the experiment phase.}. Figure \ref{fig:r3bmusic_charge} shows the measured charge distribution in R$^3$B MUSIC. To select $Z = 6$ incoming ions the distribution is fitted with a Gaussian fit function. Only ions with an energy loss within the $\pm 1 \sigma$ range are accepted. Figure \ref{fig:r3bmusic_cuts} summarizes the $\pm 1 \sigma$ cuts on the R$^3$B MUSIC charge for empty/target runs for all beam energies.   
+For the charge identification of the incoming ion the R3B MUSIC ionization chamber is used which is positioned directly after the MWPC0 at the beam entrance in Cave C, see figure \ref{fig:setup_target_region}. The R3B MUSIC detector measures anode-wise the energy loss of the passing-through ion which in the first order is proportional to the square of its charge ($\Delta E \sim Z^{2}$). Herfore the calibration parameters from the online analysis are used\footnote{These are generic parameter values used to the detector performance during the experiment phase.}. Figure \ref{fig:r3bmusic_charge} shows the measured charge distribution in R3B MUSIC. To select $Z = 6$ incoming ions the distribution is fitted with a Gaussian fit function. Only ions with an energy loss within the $\pm 1 \sigma$ range are accepted. Figure \ref{fig:r3bmusic_cuts} summarizes the $\pm 1 \sigma$ cuts on the R3B MUSIC charge for empty/target runs for all beam energies.   
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/r3bmusic_charge_cuts.png}
-\caption{Strict $\pm 1 \sigma$ charge cuts with R$^3$B MUSIC for incoming particle selection. Fixed predefined calibration parameters were used which do not compensate different gain settings between runs. This is in particular the case for the 400 AMeV beam energy runs.}
+\caption{Strict $\pm 1 \sigma$ charge cuts with R3B MUSIC for incoming particle selection. Fixed predefined calibration parameters were used which do not compensate different gain settings between runs. This is in particular the case for the 400 AMeV beam energy runs.}
 \label{fig:r3bmusic_cuts}
 \end{figure}
 \item \textbf{Pileup rejection and TPat selection:}\newline
@@ -120,13 +120,13 @@ To assure that the incoming $^{12}$C ion hits the target it is necessary to sele
 \caption{Overview of $\pm 1\sigma$ cuts in x and y in MWPC0 for empty/target runs.}
 \label{fig:mw0_cuts}
 \end{figure}
-The MWPC0 x-position and the available projectile angle in the x-y plane from the R$^3$B MUSIC is used to propagate the corresponding x-position on the target location to further check that the selected projectiles hit the target parallel to the z-position (= beam direction) and do only have a minimal incident angle, see figure \ref{fig:x_pos_target}. 
+The MWPC0 x-position and the available projectile angle in the x-y plane from the R3B MUSIC is used to propagate the corresponding x-position on the target location to further check that the selected projectiles hit the target parallel to the z-position (= beam direction) and do only have a minimal incident angle, see figure \ref{fig:x_pos_target}. 
 %This can also be seen as a consistency check whether the applied (predefined) calibration parameters are properly set.
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/extrapolated_target_x_pos.pdf}
     \caption{
-   	Propagated x-position on target location from measured x-value on MWPC0 and angle measurement from R$^3$B MUSIC. The target area is 3 x 3 cm. In red the selected events with $\pm 1\sigma$ cut in x and y position in MWPC0 and  $\pm 1\sigma$ charge cut on R3B MUSIC, in blue no cut on incoming events. Thin target run, 550 AMeV.
+   	Propagated x-position on target location from measured x-value on MWPC0 and angle measurement from R3B MUSIC. The target area is 3 x 3 cm. In red the selected events with $\pm 1\sigma$ cut in x and y position in MWPC0 and  $\pm 1\sigma$ charge cut on R3B MUSIC, in blue no cut on incoming events. Thin target run, 550 AMeV.
     }
     \label{fig:x_pos_target}
 \end{figure}
@@ -289,7 +289,7 @@ For the sake of completeness, Appendix~\ref{app:twin_alternative} presents alter
 
 
 \subsection{Geometric Corrections}\label{sec:geo_corr}
-During the S444 experiment only an active area of 11 x 11 cm was used, see section~\ref{sec:ionisation_chambers}. Particles which undergo elastic or inelastic scattering or simply exit the target at larger angles due to the multiple scattering process, may therefore not be fully confined in the active volume of the TWIN MUSIC. To visualize the restricted geometric acceptance of the TWIN MUSIC the position in x and y (perpendicular plane to the beam direction) on the MWPC1 in front of the ionization chamber was plotted, for comparison without any conditions on the TWIN MUSIC and with the condition of having identified a carbon isotope (with the 2D Gauss-fit method as described in chapter \ref{subsec:carbon_id}), see figure \ref{fig:mw1_xy}. The large active surface area of 200 x 200 mm$^{2}$ of the MWPC1 affirms a larger acceptance\footnote{This statement does not hold for light fragments as protons or deuterons. Their deflection angle exceeds the geometric acceptance of the MWPC1.} whereas the TWIN MUSIC behind it, with an active surface of 110 x 110 mm$^{2}$ (section 1), is -- as mentioned -- not sensitive to the scattered fragments with large deflection angle.\newline
+During the S444 experiment only an active area of $11\times11$ cm was used, see section~\ref{sec:ionisation_chambers}. Particles which undergo elastic or inelastic scattering or simply exit the target at larger angles due to the multiple scattering process, may therefore not be fully confined in the active volume of the TWIN MUSIC. To visualize the restricted geometric acceptance of the TWIN MUSIC the position in x and y (perpendicular plane to the beam direction) on the MWPC1 in front of the ionization chamber was plotted, for comparison without any conditions on the TWIN MUSIC and with the condition of having identified a carbon isotope (with the 2D Gauss-fit method as described in chapter \ref{subsec:carbon_id}), see figure \ref{fig:mw1_xy}. The large active surface area of 200 x 200 mm$^{2}$ of the MWPC1 affirms a larger acceptance\footnote{This statement does not hold for light fragments as protons or deuterons. Their deflection angle exceeds the geometric acceptance of the MWPC1.} whereas the TWIN MUSIC behind it, with an active surface of $110\times110\, \text{mm}^{2}$ (section 1), is -- as mentioned -- not sensitive to the scattered fragments with large deflection angle.\newline
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth,height=12cm,keepaspectratio=true]{Figures/geo_acceptance.pdf}
@@ -697,7 +697,7 @@ The statistical and systematic uncertainties associated with the total interacti
 
 \clearpage
 
-\subsection{ Results Total - Interaction Cross Section}
+\subsection{ Results Total -- Interaction Cross Section}
 \begin{figure}[h!]
     \centering
     \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/result_plot_phd_cross_section.png}

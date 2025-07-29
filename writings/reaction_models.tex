@@ -19,7 +19,7 @@ An comprehensive overview of various nuclear reactions, including scattering rea
      \label{fig:NuclearReactionsOverview}
  \end{figure}
 
-Given the short interaction time characteristic of the high-energy regime, these reactions are often interpreted as singular nuclear interactions and are thus termed "\textit{direct reactions}". Direct reactions encompass several key channels, which can be expressed in short notation (see also Ref.~\cite{obertelli2021modern}):
+Given the short interaction time characteristic of the high-energy regime, these reactions are often interpreted as singular nuclear interactions and are thus termed \textit{direct reactions}. Direct reactions encompass several key channels, which can be expressed in short notation (see also Ref.~\cite{obertelli2021modern}):
 \begin{itemize}
     \item \textbf{Elastic Scattering:} $a + A \rightarrow a + A$, denoted as $A(a, a)A$. In this process, the projectile $a$ scatters off the target nucleus $A$ without any change in their internal states.
     \item \textbf{Inelastic Scattering:} $a + A \rightarrow a' + A^*$, denoted as $A(a, a')A^*$. Here, the projectile $a$ excites the target nucleus $A$ to an excited state $A^*$, resulting in a change in the internal energy of the target.
@@ -81,7 +81,7 @@ The most general implementations of the Glauber Model incorporate the following 
     
     \item \textbf{Multiple Scattering Formalism:} The total scattering amplitude is constructed by summing over all possible interactions between the projectile and the individual nucleons of the target. This involves integrating over the spatial distributions of the nucleons, which becomes computationally demanding for large nuclei. To address this, further simplifications are applied, leading to the so-called \textit{optical-limit approximation}, discussed in Subsection~\ref{sec:eol}.
     
-    \item \textbf{Impact Parameter Formalism:} The scattering cross-section is expressed as an integral over the transverse distance (impact parameter) between the centers of the projectile and the target nucleus (see Fig.~\ref{fig:impact_par_glauber}). This semi-classical treatment enables a geometric interpretation of the scattering process and facilitates a probabilistic formulation of nuclear interactions.
+    \item \textbf{Impact Parameter Formalism:} The scattering cross section is expressed as an integral over the transverse distance (impact parameter) between the centers of the projectile and the target nucleus (see Fig.~\ref{fig:impact_par_glauber}). This semi-classical treatment enables a geometric interpretation of the scattering process and facilitates a probabilistic formulation of nuclear interactions.
 \end{itemize}
  \begin{figure}[htbp]
      \centering
@@ -91,10 +91,10 @@ The most general implementations of the Glauber Model incorporate the following 
      \label{fig:impact_par_glauber}
  \end{figure}
 
-Two principal approaches are commonly used to derive cross-sections within the Glauber framework:
+Two principal approaches are commonly used to derive cross sections within the Glauber framework:
 
 \begin{enumerate}
-    \item \textbf{Probability Approach (PA):} In this semiclassical method, nucleon-nucleon interactions are treated as independent binary collisions. All combinatorial configurations of these interactions are considered, and the total reaction cross-section is obtained by integrating over all possible impact parameters (see Figure~\ref{fig:impact_par_glauber}). In this picture, nucleons are often approximated as "\textit{billiard balls}"~\cite{bertulani2019introduction}. The \textit{abrasion-ablation model}~\cite{hufner1975abrasion}, which can be extended to incorporate isospin-dependent nucleon-nucleon cross-sections, is a widely used application of the probability approach, for instance in \textsc{Geant4} simulations~\cite{agostinelli2003geant4}. A comprehensive overview of the PA is provided in~\cite{schindler2017total} and more details in~\cite{bertulani2019introduction}.
+    \item \textbf{Probability Approach (PA):} In this semiclassical method, nucleon-nucleon interactions are treated as independent binary collisions. All combinatorial configurations of these interactions are considered, and the total reaction cross section is obtained by integrating over all possible impact parameters (see Figure~\ref{fig:impact_par_glauber}). In this picture, nucleons are often approximated as \textit{billiard balls}~\cite{bertulani2019introduction}. The \textit{abrasion-ablation model}~\cite{hufner1975abrasion}, which can be extended to incorporate isospin-dependent nucleon-nucleon cross sections, is a widely used application of the probability approach, for instance in \textsc{Geant4} simulations~\cite{agostinelli2003geant4}. A comprehensive overview of the PA is provided in~\cite{schindler2017total} and more details in~\cite{bertulani2019introduction}.
 
     \item \textbf{Eikonal Optical Limit (EOL):} The present work focuses on the quantum-mechanical formulation known as the EOL approach. It is based on the time-independent Schr\"odinger equation, incorporating the eikonal wave approximation and the introduction of a complex optical potential. This results in a compact and analytically tractable expression for the scattering amplitude, making it particularly suitable for high-energy collisions involving extended targets.
 \end{enumerate}
@@ -134,7 +134,7 @@ f(\theta) & = -2\pi^2 \left( \frac{2\mu}{\hbar^2} \right) \langle \varphi_{\vec{
 \end{equation}
 
 with $\varphi_{\vec{k}'}$ the incoming wave and $\psi_{\vec{k}}$ the outgoing spherical wave accordingly, as in equation~\ref{eq:tot_wave}.\\
-The (differential) elastic scattering cross-section can be derived from the scattering amplitude $f(\theta)$ via the conservation law of particle current\footnote{A derivation of this equation can be found in~\cite{mayer2013kernphysik}, Section 4.2}.
+The (differential) elastic scattering cross section can be derived from the scattering amplitude $f(\theta)$ via the conservation law of particle current\footnote{A derivation of this equation can be found in~\cite{mayer2013kernphysik}, Section 4.2}.
 \begin{equation}\label{eq:el_scatt_cs}
 \left( \frac{\mathrm{d} \sigma_{el}}{\mathrm{d} \Omega} \right) = |f(\theta)|^2 \qquad \Rightarrow \qquad \sigma_{el} = \int \mathrm{d} \Omega \, |f(\theta)|^2 
 \end{equation}
@@ -172,7 +172,7 @@ Without derivation we present here the \textbf{optical theorem} which relates th
 \sigma_T = \frac{4\pi}{k} \, \text{Im} \left[ f(\theta = 0) \right]
 \end{equation}
 The optical theorem, formulated in the context of optics -- specifically for the scattering and absorption of light -- was later extended and applied to other wave phenomena, including quantum mechanical scattering of particles.\\
-The name stems from the fact that $\text{Im}\, f(0)$ is related to the imaginary part of the refractive index $n$, which the scattering potential has for the incident wave. We have $\text{Im}\, f(0) = \frac{k^2}{2\pi} \text{Im}\, n$. The imaginary part of the refractive index describes the absorption of the beam. The optical theorem is therefore an an expression of the relationship between absorption in the forward direction and the total cross-section~\cite{mayer2013kernphysik}.
+The name stems from the fact that $\text{Im}\, f(0)$ is related to the imaginary part of the refractive index $n$, which the scattering potential has for the incident wave. We have $\text{Im}\, f(0) = \frac{k^2}{2\pi} \text{Im}\, n$. The imaginary part of the refractive index describes the absorption of the beam. The optical theorem is therefore an an expression of the relationship between absorption in the forward direction and the total cross section~\cite{mayer2013kernphysik}.
 The optical theorem can be derived using the fundamental principle of particle current conservation, see Section 6.4.3 in~\cite{sakurai2020modern}.\\
 From equation~\ref{eq:tot_cs_def}, the scattering amplitude~\ref{eq:final_sc_amp} and the aforementioned optical theorem relation we can summarize:
 \begin{align}
@@ -188,7 +188,7 @@ TODO: add footnote to S-Matrix
 In the following, we introduce the concept of the optical potential \( V(\vec{r}) \), as it appears in the Hamiltonian. 
 A rigorous theoretical understanding of this potential would ideally come from a derivation based on nucleon-nucleon (NN) interactions using a fully self-consistent many-body framework. 
 However, such an \textit{ab initio} treatment remains highly complex and has only been partially addressed in the literature. 
-Therefore, in most practical applications, the optical potential is introduced phenomenologically, with its parameters fitted to elastic and inelastic scattering cross-section data.
+Therefore, in most practical applications, the optical potential is introduced phenomenologically, with its parameters fitted to elastic and inelastic scattering cross section data.
 
 There are two main approaches to construct the optical potential:
 
@@ -236,13 +236,13 @@ V_{\text{OL}}(\vec{b}) = -i \, \frac{\hbar \nu}{2} \, \sigma_{NN} \int \mathrm{d
 In this formulation, \( \vec{b} \) denotes the impact parameter, i.e., the transverse displacement between the centers of the projectile and target nuclei. 
 The resulting potential is often referred to as a \textit{double-folded optical potential} (see Ref.~\cite{obertelli2021modern}, Sec. 8.2.7).
 
-Substituting this potential into the eikonal phase expression, the total reaction cross-section becomes:
+Substituting this potential into the eikonal phase expression, the total reaction cross section becomes:
 
 \begin{equation}\label{eq:final_react_cs}
 \sigma_R = 2\pi \int \mathrm{d} \vec{b} \left[ 1 - \exp \left( -\sigma_{NN} \int \mathrm{d} z' \int \mathrm{d}^3 r \, \rho_P(\vec{r}) \, \rho_T(\vec{r} - \vec{b}) \right) \right]
 \end{equation}
 
-For completeness, we also include the expression for the \textit{charge-changing} cross-section \( \sigma_{\Delta Z} \), which is of central importance to this work (see Section~\ref{subsec:cc_cs}). 
+For completeness, we also include the expression for the \textit{charge-changing} cross section \( \sigma_{\Delta Z} \), which is of central importance to this work (see Section~\ref{subsec:cc_cs}). 
 In this case, the reaction is sensitive only to the removal of one or more protons from the projectile. 
 Accordingly, the full projectile density \( \rho_P(\vec{r}) \) is replaced by the proton density distribution \( \rho_P^p(\vec{r}) \):
 
@@ -250,7 +250,7 @@ Accordingly, the full projectile density \( \rho_P(\vec{r}) \) is replaced by th
 \sigma_{\Delta Z} = 2\pi \int \mathrm{d} \vec{b} \left[ 1 - \exp \left( -\sigma_{NN} \int \mathrm{d} z' \int \mathrm{d}^3 r \, \rho_P^p(\vec{r}) \, \rho_T(\vec{r} - \vec{b}) \right) \right]
 \end{equation}
 
-This expression differs from the total reaction cross-section only by this substitution, which reflects the fact that the observable is sensitive specifically to proton-removal processes.
+This expression differs from the total reaction cross section only by this substitution, which reflects the fact that the observable is sensitive specifically to proton-removal processes.
 
 
 \subsection{Input to the Glauber Model}
@@ -475,7 +475,7 @@ In 1957, Tyr\'en, Maris, and Hillman designed an experiment aimed at fully chara
 In QFS reactions, these parameters can be extracted by analyzing the reaction products, which include the two correlated outgoing protons, the residual nucleus, and any gamma rays emitted during de-excitation of the residual nucleus. The detailed measurements of these observables provide critical insights into the underlying nuclear structure and dynamics.\newline
 The experimental discoveries and theoretical insights from these early studies strongly pushed the advancements in the theoretical modeling of QFS reactions. These models have since become essential tools for understanding nucleon-nucleon interactions within the nuclear medium and for further investigations of nuclear structure and reaction mechanisms.\newline
 \subsubsection{Kinematics of QFS Reactions}\label{sec:kin_qfs}
-A simplified picture, which however explains the essential kinematics of the QFS reaction, can be found in figure \ref{fig:sketch_qfs}: we have an incoming proton knocking out a nuclear constituent (proton/neutron) in a quasi-free nucleon-nucleon collision ending with a final state having the scattered proton, the scattered  off nuclear constituent and the rest nucleus (A-1), which could be either in the ground-state or an excited state. In this picture index \textit{0} is assigned to the incoming proton, \textit{1} to the knocked out nucleon, \textit{2} to the outgoing projectile proton, \textit{A} to the initial nucleus and  \textit{A-1} to the final nucleus accordingly.
+A simplified picture, which however explains the essential kinematics of the QFS reaction, can be found in figure \ref{fig:sketch_qfs}: we have an incoming proton knocking out a nuclear constituent (proton/neutron) in a quasi-free nucleon-nucleon collision ending with a final state having the scattered proton, the scattered  off nuclear constituent and the rest nucleus (A-1), which could be either in the ground-state or an excited state. In this picture index 0 is assigned to the incoming proton, 1 to the knocked out nucleon, 2 to the outgoing projectile proton, A to the initial nucleus and A-1 to the final nucleus accordingly.
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/sketch_qfs.pdf}
@@ -489,12 +489,12 @@ As from standard textbooks (see~\cite[Chapter~6.2]{povh2013teilchen}) the energy
 P_A  +  P_0 = P_1 + P_2 +P_{A-1} 
 \end{equation}
 with $P_i$ the four momentum $(E_i,\mathbf{p_i})$.\newline
-In direct kinematics as presented in figure \ref{fig:sketch_qfs} the separation energy  of the ejected nucleon for a certain final state of the nucleus \textit{A-1} is given by\footnote{In inverse kinematics the four-momentum vectors need to be boosted to the center of mass frame of the initial nucleus via Lorentz transformation.}:
+In direct kinematics as presented in figure \ref{fig:sketch_qfs} the separation energy  of the ejected nucleon for a certain final state of the nucleus A-1 is given by\footnote{In inverse kinematics the four-momentum vectors need to be boosted to the center of mass frame of the initial nucleus via Lorentz transformation.}:
 \begin{equation}
 S = T_0 -(T_1+T_2 +T_{A-1}); \; \text{with $T_i$ the kinetic energy of particle $i$} 
 \label{eq:sep_e}
 \end{equation}
-In the idealized shell model the separation energy equals to the (negative) energy of the nucleus' single-particle state. In the case where the final nucleus \( A-1 \) (corresponding to a one-proton knockout) remains in its ground state, its total energy in the center-of-mass frame of the initial nucleus is given by
+In the idealized shell model the separation energy equals to the (negative) energy of the nucleus' single-particle state. In the case where the final nucleus (A-1) (corresponding to a one-proton knockout) remains in its ground state, its total energy in the center-of-mass frame of the initial nucleus is given by
 \begin{equation}
 E_{A-1} = M_{A-1}c^{2} + T_{A-1},
 \end{equation}
@@ -583,12 +583,12 @@ To knock the bound nucleon out of the nucleus the separation energy has to be ov
 %Moreover limited energy ranges are allowed where the forward nucleon has much higher energy compared to the larger scattered one -> insert image
 %
 
-\subsubsection{Cross Sections for QFS Reactions - Qualitative Considerations}
+\subsubsection{Cross Sections for QFS Reactions -- Qualitative Considerations}
 TO DO: see more in the standard work \cite{cladis1952nucleon}, \cite{MARIS19581}.
 \subsubsection{Application Fields of QFS Reactions}
 Over several decades of experimental and theoretical research, Quasi-Free Scattering (QFS) reactions have been firmly established as a powerful and direct tool for probing the microscopic structure of atomic nuclei. These reactions provide critical insights into nuclear correlations, single-particle properties, and the momentum distributions of nucleons within the nucleus.\newline
 The versatility of QFS extends across various applications, including the study of short-range nucleon-nucleon interactions, exotic nuclear states, and the modification of nucleon properties in nuclear matter. Advances in experimental facilities and state-of-the-art detector systems, have significantly improved the precision and scope of QFS measurements. These developments have enabled in-depth investigations of nuclear dynamics, the structure of unstable isotopes, and fundamental aspects of quantum many-body systems, contributing to a deeper understanding of nuclear and sub-nuclear phenomena.\newline
-This subsection will point out the most exciting and promising application fields of QFS reactions with focus on the applicability in the R$^3$B experimental setup. A detailed review can be found in ref \cite{panin2021quasi}.
+This subsection will point out the most exciting and promising application fields of QFS reactions with focus on the applicability in the R3B experimental setup. A detailed review can be found in ref \cite{panin2021quasi}.
 \begin{description}
 \item[Single-Particle Spectroscopic Strength]As already mentioned in section \ref{sec:kin_qfs} in many experiments a reduction in the spectroscopic strength of about 35\% with respect to the independent particle model (IPM) and shell model predictions was observed. In one-nucleon removal reactions - experiments with isotope beams impinging on a composite nuclear target - the extraction of the missing spectroscopic strength is challenging as the kinematical pattern is highly complex. In contrast, the QFS reactions mechanism in inverse kinematics retains a clear kinematical signature which makes it a valuable tool to study the quenching of the spectroscopic strength which originates from residual correlations between bound nucleons inside the nucleus. \newline
 Several experiments were carried out at the GSI Facility to study the reduction factor of the spectroscopic strength  and its evolution over a broad range in isotopic chains, in light nuclei such as for oxygen shown in figure \ref{fig:red_factor}. With the commissioning of the SIS100 and SuperFRS at GSI it will be achievable to study (p,2p) reactions with very short lived nuclei also in heavier systems at reasonable intensities which will presumably draw even more attention to QFS reaction approach.  
@@ -607,10 +607,10 @@ From gamma spectroscopy the excitation energy E(2+), often the first excited sta
 Single-particle cluster states can be directly accessed via QFS (p,p$\alpha$) reactions. In the low energy regime of 100 AMeV the $^{12}\text{C}(p, p\alpha)^{8}\text{Be}$ reaction, see ref \cite{mabiala2009analyzing}, as benchmark study approved the reaction mechanism and up to a scaling factor the measured cross sections aligned exceptionally well to the free p–$\alpha$ scattering measurements.\newline
 Moreover the QFS mechanism allows to access light nuclei going towards the neutron drip line via (p,pn) reaction. These light nuclei are mostly weakly bound with an extended low density neutron-matter distribution forming a so-called \textit{nuclear-halo}.\newline
 The most prominent candidate for such is $^{11}Li$, often called \textit{Borromean three-body system}, consisting of two neutrons interacting with a core ($^9Li$) via weak, short-range interactions~\cite{johannsen199011li}. First evidence for the correlation  between the two neutron was strongly pushed by experimental studies at GSI, see \cite{simon1999direct}, and theoretical work by Bertulani et. al.\cite{bertulani2007geometry}.\newline
-The latest experiment with the focus on the study of multi-neutron correlations in drip-line nuclei was carried out at R$^3$B in 2022 (experiment S509) probing broad isotopic chains of Li, Be, B, C and N via the QFS mechanism, and first results are expected to be published in the near future.
+The latest experiment with the focus on the study of multi-neutron correlations in drip-line nuclei was carried out at R3B in 2022 (experiment S509) probing broad isotopic chains of Li, Be, B, C and N via the QFS mechanism, and first results are expected to be published in the near future.
 \item[Short Range Correlations(SRC)]Short range correlations refer to elementary nucleon-nucleon interactions within a nucleus and occur over very short distances, typically on the order of 1-2 femtometers.  These correlations are characterized by pairs of nucleons with high relative momentum ($> k_F$, Fermi momentum) and low total momentum. These NN-interactions are treated as good explanatory candidate for observed deviations from mean field approximation. Many phenomena, such as the above discussed reduction in the spectroscopic strength and the EMC effect\cite{xing2023electromagnetic}, the observation that  the cross section for deep inelastic scattering from an atomic nucleus is different from that of the same number of free protons and neutrons, are associated to the short range correlations inside the nucleus.\newline
 From isotopic chain studies\cite{clas2018probing} it has been shown that there is an indication of SRC dependency on isospin, see figure \ref{fig:src_pairs}, where SRC are predominately preferred by p-n pairs than by nn or pp pairs. This again can have significant impact for asymmetric nuclei and imply a stronger quenching of the spectroscopic strength for proton single particle states below the Fermi momentum for neutron rich matter.\newline  
-Since pioneering experiments were made at JLab and Brookhaven via $(e,e'p)$ and $(e,e'n)$ reactions several  experimental campaigns were carried out at GSI with the R$^3$B setup probing the QFS reactions via the strong nuclear force instead of the Coulomb interaction. Also in 2022 the S522 experiment was performed to exploit for the first time the use of short-lived nuclei scattering off a proton probe in inverse kinematics at R$^3$B, followed by the S091 experiment in 2024 with the focus on probing NN-correlations in atomic nuclei via $(p,pd)$ QFS reactions\cite{paschalis2020nucleon}. 
+Since pioneering experiments were made at JLab and Brookhaven via $(e,e'p)$ and $(e,e'n)$ reactions several  experimental campaigns were carried out at GSI with the R3B setup probing the QFS reactions via the strong nuclear force instead of the Coulomb interaction. Also in 2022 the S522 experiment was performed to exploit for the first time the use of short-lived nuclei scattering off a proton probe in inverse kinematics at R3B, followed by the S091 experiment in 2024 with the focus on probing NN-correlations in atomic nuclei via $(p,pd)$ QFS reactions\cite{paschalis2020nucleon}. 
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/src_pn_excess.png}
@@ -621,8 +621,8 @@ Since pioneering experiments were made at JLab and Brookhaven via $(e,e'p)$ and 
 \end{figure}
 
 
-\item[Fission via QFS]Fission induced via quasifree scattering (QFS) provides a powerful method to extract fission barriers on an event-by-event basis. The fundamental concept involves the knockout of a proton or neutron from an incoming exotic ion beam. By measuring the energy  and the angular distribution of the correlated emitted nucleons, it becomes possible to probe the excitation energy transferred to the fissioning system. In cases where deeply bound nucleons are knocked out, the resulting daughter nucleus either evaporates one or multiple neutrons or populates an excited state, which can be experimentally observed. The R$^3$B setup is particularly well-suited for such investigations, as it enables full kinematic reconstruction of the reaction products and hence to pin down the complete reaction mechanism. This approach allows for the detailed exploration of the potential-energy surface and the fission dynamics across a broad range of fissility and excitation energies, taking advantage of relativistic radioactive beams.\newline
-The pilot experiment S455 was conducted in 2021 at R$^3$B using a stable $^{238}$U beam incident on a liquid hydrogen target. The data collected from this experiment provide simultaneous information on several key fission observables, which can be used to constrain theoretical calculations. These calculations aim to describe both the static and dynamic properties of the fission process and enable comparisons with predictions from various theoretical frameworks, including phenomenological approaches, macroscopic-microscopic models, and fully microscopic statistical or time-dependent Hartree-Fock calculations.\newline
+\item[Fission via QFS]Fission induced via quasifree scattering (QFS) provides a powerful method to extract fission barriers on an event-by-event basis. The fundamental concept involves the knockout of a proton or neutron from an incoming exotic ion beam. By measuring the energy  and the angular distribution of the correlated emitted nucleons, it becomes possible to probe the excitation energy transferred to the fissioning system. In cases where deeply bound nucleons are knocked out, the resulting daughter nucleus either evaporates one or multiple neutrons or populates an excited state, which can be experimentally observed. The R3B setup is particularly well-suited for such investigations, as it enables full kinematic reconstruction of the reaction products and hence to pin down the complete reaction mechanism. This approach allows for the detailed exploration of the potential-energy surface and the fission dynamics across a broad range of fissility and excitation energies, taking advantage of relativistic radioactive beams.\newline
+The pilot experiment S455 was conducted in 2021 at R3B using a stable $^{238}$U beam incident on a liquid hydrogen target. The data collected from this experiment provide simultaneous information on several key fission observables, which can be used to constrain theoretical calculations. These calculations aim to describe both the static and dynamic properties of the fission process and enable comparisons with predictions from various theoretical frameworks, including phenomenological approaches, macroscopic-microscopic models, and fully microscopic statistical or time-dependent Hartree-Fock calculations.\newline
 
 \end{description}
 
