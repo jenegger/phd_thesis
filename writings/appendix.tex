@@ -1,7 +1,7 @@
 \begin{appendices}
 \section {Pileup rejection with R3B MUSIC charge cut}\label{app:r3bmusic_pileup}
 
-As detailed in Section~\ref{subsec:event-sel}, a stringent event selection criterion was applied to the incoming ions. This included a precise charge cut, as illustrated in Figure~\ref{fig:r3bmusic_charge}. The application of a rigid $\pm 1 \sigma$ charge cut, in conjunction with the requirement of a single hit in the Start detector, effectively suppresses pileup events. The superior pileup rejection capability of the R3B MUSIC detector, owing to its longer shaping time compared to the TWIN MUSIC detector, is further demonstrated in Figure~\ref{fig:r3b_vs_twin_charge_def}. This extended shaping time ensures that any genuine pileup event will be reliably registered by the R3B MUSIC.
+As detailed in Section~\ref{subsec:event-sel}, a stringent event selection criterion was applied to the incoming ions. This included a precise charge cut, as illustrated in Fig.~\ref{fig:r3bmusic_charge}. The application of a rigid $\pm 1 \sigma$ charge cut, in conjunction with the requirement of a single hit in the Start detector, effectively suppresses pileup events. The superior pileup rejection capability of the R3B MUSIC detector, owing to its longer shaping time compared to the TWIN MUSIC detector, is further demonstrated in Fig.~\ref{fig:r3b_vs_twin_charge_def}. This extended shaping time ensures that any genuine pileup event will be reliably registered by the R3B MUSIC.
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/app_charge_r3b_twin_default.pdf}
@@ -29,7 +29,7 @@ a_3 = \frac{\pi \omega}{\cosh^{-1}\left(0.5 \times \left(\sqrt{\frac{Q_{\text{ma
 \[
 a_2 = \frac{a_3}{\pi} \times \tanh^{-1}\left(\frac{\sqrt{\frac{Q_{\text{max}}}{Q_L}} - \sqrt{\frac{Q_{\text{max}}}{Q_R}}}{2 \sinh\left(\frac{\pi \omega}{a_3}\right)}\right)
 \]
-Figure \ref{fig:hyp_function} shows the "hyperbolic squared secant" function with the inserted values for $Q_{max}$, $Q_R$ and $Q_L$. 
+Fig.~\ref{fig:hyp_function} shows the "hyperbolic squared secant" function with the inserted values for $Q_{max}$, $Q_R$ and $Q_L$. 
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/hyperbolic_squared_secant_function.png}
@@ -38,7 +38,7 @@ Figure \ref{fig:hyp_function} shows the "hyperbolic squared secant" function wit
      }
     \label{fig:hyp_function}
 \end{figure}
-The "hyperbolic squared secant" function is used to determine the x hit position as well as the y hit position for all MWPCs. Figure \ref{fig:x_mw23_default} shows the $x_{mw2}$ versus $x_{mw3}$ distribution of carbon isotopes for the 400 AMeV run with the thick target. The two correlated lines corresponding to the $^{12}$C and $^{11}$C isotopes can clearly be distinguished. The vertical line can be interpreted as amount of events where the incoming centered carbon fragment gets scattered by air or the detector material in place between MWPC2 and MWPC3. The horizontal wide spread line has no physical interpretation and can rather be explained by the \textit{cal-to-hit} step in MWPC2: For events where there is not a spatially constrained hit cluster but sparse hits the hyperbolic squared secant function may pick the wrong $Q_{max}$ and therefore wrongly reconstructs the x position in MWPC2. 
+The "hyperbolic squared secant" function is used to determine the x hit position as well as the y hit position for all MWPCs. Fig.~\ref{fig:x_mw23_default} shows the $x_{mw2}$ versus $x_{mw3}$ distribution of carbon isotopes for the 400 AMeV run with the thick target. The two correlated lines corresponding to the $^{12}$C and $^{11}$C isotopes can clearly be distinguished. The vertical line can be interpreted as amount of events where the incoming centered carbon fragment gets scattered by air or the detector material in place between MWPC2 and MWPC3. The horizontal wide spread line has no physical interpretation and can rather be explained by the \textit{cal-to-hit} step in MWPC2: For events where there is not a spatially constrained hit cluster but sparse hits the hyperbolic squared secant function may pick the wrong $Q_{max}$ and therefore wrongly reconstructs the x position in MWPC2. 
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/mw23_default.png}
@@ -51,13 +51,13 @@ The "hyperbolic squared secant" function is used to determine the x hit position
 
 \subsection {Coherent clustering}\label{app:coh_cluster} 
 
-To overcome the issue with potentially wrong x- or y-position reconstruction in the MWPCs the event selection can be restricted to events where the MWPCs of interest have only one spatially constrained cluster(see figure \ref{fig:own_clustering}) to avoid ambiguities in the position determination.\newline
+To overcome the issue with potentially wrong x- or y-position reconstruction in the MWPCs the event selection can be restricted to events where the MWPCs of interest have only one spatially constrained cluster(see Fig.~\ref{fig:own_clustering}) to avoid ambiguities in the position determination.\newline
 \begin{figure}
 \floatbox[{\capbeside\thisfloatsetup{capbesideposition={left,top},capbesidewidth=6cm}}]{figure}[\FBwidth]
 {\caption{Restricted event selection for MWPC2 and MWPC3: only events with one single coherent (i.e. without any holes) cluster are accepted.}\label{fig:own_clustering}}
 {\includegraphics[width=7cm]{Figures/own_clustering_mwpcs.png}}
 \end{figure}
-Figure \ref{fig:mw23_own_clustering} shows the distribution of x in MWPC2 and MWPC3 using the coherent clustering reconstruction. This reconstruction method removes the uncorrelated horizontal line which was observed in figure \ref{fig:x_mw23_default}. However the statistics are reduced by approximately $35\%$\footnote{Number of entries in the 2D plot for default reconstruction method: 533816, for the coherent clustering reconstruction: 346315 for the 400 AMeV run with thick target.}.
+Fig.~\ref{fig:mw23_own_clustering} shows the distribution of x in MWPC2 and MWPC3 using the coherent clustering reconstruction. This reconstruction method removes the uncorrelated horizontal line which was observed in Fig.~\ref{fig:x_mw23_default}. However the statistics are reduced by approximately $35\%$\footnote{Number of entries in the 2D plot for default reconstruction method: 533816, for the coherent clustering reconstruction: 346315 for the 400 AMeV run with thick target.}.
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/mw23_own_clustering.png}
@@ -124,7 +124,7 @@ To quantify the impact of including or excluding border regions -- i.e., cases w
     \label{fig:cccs_with_out_border_3_5}
 \end{figure}
 
-Another method to assert the number survived carbon ions is to apply a diagonal cut on the 2D $\Delta E$ histogram. To set the slope and offset of the diagonal cut line firstly the two dimensional Gaussian fit is applied, same as discussed in section~\ref{subsec:carbon_id}. Then the intersection point between the 3.5 $\sigma$ ellipse and the identity line ($\Delta E$ upstream anodes = $\Delta E$ downstream anodes) is found. Through this point, perpendicular to the identity line, the diagonal line is drawn. Everything above the diagonal line is considered as survived carbon ions. The borders are considered within the 3.5 $\sigma$ cut, see figure \ref{fig:diagonal_cut_twim}. 
+Another method to assert the number survived carbon ions is to apply a diagonal cut on the 2D $\Delta E$ histogram. To set the slope and offset of the diagonal cut line firstly the two dimensional Gaussian fit is applied, same as discussed in Section~\ref{subsec:carbon_id}. Then the intersection point between the 3.5 $\sigma$ ellipse and the identity line ($\Delta E$ upstream anodes = $\Delta E$ downstream anodes) is found. Through this point, perpendicular to the identity line, the diagonal line is drawn. Everything above the diagonal line is considered as survived carbon ions. The borders are considered within the 3.5 $\sigma$ cut, see Fig.~\ref{fig:diagonal_cut_twim}. 
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/charge_loss_550_thick.png}
@@ -133,7 +133,7 @@ Another method to assert the number survived carbon ions is to apply a diagonal 
      }
     \label{fig:diagonal_cut_twim}
 \end{figure}
-The effects of the two different methods used for the identification of the carbon isotopes for the charge changing cross section is summarized in figure \ref{fig:cccs_gaus_vs_diag}. The differences in the measured cross sections are within the margin of error herefore both methods are comparable, as expected.\newline
+The effects of the two different methods used for the identification of the carbon isotopes for the charge changing cross section is summarized in Fig.~\ref{fig:cccs_gaus_vs_diag}. The differences in the measured cross sections are within the margin of error herefore both methods are comparable, as expected.\newline
 \newline
 \newline
 \begin{figure}[h!]
@@ -152,7 +152,7 @@ To check whether single anodes or groups of anodes are malfunctioning the charge
 \item anodes 5-8 versus anodes 9-12 (central anodes)
 \item anodes 9-12 versus anodes 13-16 (downstream anodes)
 \end{enumerate}
-The results from the measurement are summarized in figure \ref{fig:cccs_gaus_diff_sections}. The difference between the default Gaussian fit method (with 3.5$\sigma$ cut and considering the borders) considering all 16 anodes and applying the same method but omitting the first and last anode is minimal over all four beam energies. When selecting only 8 out of 16 anodes instead the cross sections are systematically lower when going to high beam energies. The energy loss inside the TWIN MUSIC slightly decreases with higher beam energies (400 $\rightarrow$ 800 AMeV), according to the Bethe-Bloch formula~\cite{bethe1930theorie}. The decrease of deposited energy for larger beam energies has as consequence a lower relative resolution in the two dimensional $\Delta E$ loss histogram reflecting the poissonian distribution properties. In addition reducing the number of readout anodes by a factor two degrades the resolution by a factor $\sqrt{2}$\footnote{It can be assumed a similar $\Delta$ E distribution for all anodes. Hence the central limit theorem can be applied where $\sigma = \frac{\sigma_{anode}}{\sqrt(n)}$ with $n =$ number of anodes.}. This has as consequence that the ellipsis with 3.5$\sigma$ cut incorporates a non negligible amount of boron isotopes which are counted as survived carbon isotopes which in turn reduces the measured charge changing cross section.
+The results from the measurement are summarized in Fig.~\ref{fig:cccs_gaus_diff_sections}. The difference between the default Gaussian fit method (with 3.5$\sigma$ cut and considering the borders) considering all 16 anodes and applying the same method but omitting the first and last anode is minimal over all four beam energies. When selecting only 8 out of 16 anodes instead the cross sections are systematically lower when going to high beam energies. The energy loss inside the TWIN MUSIC slightly decreases with higher beam energies (400 $\rightarrow$ 800 AMeV), according to the Bethe-Bloch formula~\cite{bethe1930theorie}. The decrease of deposited energy for larger beam energies has as consequence a lower relative resolution in the two dimensional $\Delta E$ loss histogram reflecting the poissonian distribution properties. In addition reducing the number of readout anodes by a factor two degrades the resolution by a factor $\sqrt{2}$\footnote{It can be assumed a similar $\Delta$ E distribution for all anodes. Hence the central limit theorem can be applied where $\sigma = \frac{\sigma_{anode}}{\sqrt(n)}$ with $n =$ number of anodes.}. This has as consequence that the ellipsis with 3.5$\sigma$ cut incorporates a non negligible amount of boron isotopes which are counted as survived carbon isotopes which in turn reduces the measured charge changing cross section.
 \newline
 \newline
 \newline
@@ -165,7 +165,7 @@ The results from the measurement are summarized in figure \ref{fig:cccs_gaus_dif
      }
     \label{fig:cccs_gaus_diff_sections}
 \end{figure}
-While a time-based selection algorithm for multi-hit anodes was used in both the above measurements and in Section~\ref{subsec:carbon_id}, an energy-based selection method was also tested for comparison. This algorithm selects for multi-hit anodes the hit with the highest energy as physical hit and discards all others, as they are considered as background/noise. Figure \ref{fig:cccs_gaus_time_vs_energy} compares the time based method versus the energy based method. In both cases a two dimensional Gaussian 3.5$\sigma$ cut is applied as in figure \ref{fig:twin_2d_gaus_cut} and the borders are counted as well. The difference in the outcome is negligible. This can be explained since noise or background signal should be both uncorrelated to the event time and at a low energy level and are therefore filtered by both algorithms.
+While a time-based selection algorithm for multi-hit anodes was used in both the above measurements and in Section~\ref{subsec:carbon_id}, an energy-based selection method was also tested for comparison. This algorithm selects for multi-hit anodes the hit with the highest energy as physical hit and discards all others, as they are considered as background/noise. Fig.~\ref{fig:cccs_gaus_time_vs_energy} compares the time based method versus the energy based method. In both cases a two dimensional Gaussian 3.5$\sigma$ cut is applied as in Fig.~\ref{fig:twin_2d_gaus_cut} and the borders are counted as well. The difference in the outcome is negligible. This can be explained since noise or background signal should be both uncorrelated to the event time and at a low energy level and are therefore filtered by both algorithms.
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/cccs_time_vs_engergy_sorted.png}
@@ -187,20 +187,20 @@ While a time-based selection algorithm for multi-hit anodes was used in both the
 
 \clearpage
 \section {TWIN MUSIC Geometric Acceptance Correction via Efficiency Measurement}
-Instead of correcting the limited geometric acceptance of TWIN MUSIC via graphical fitting (see section \ref{sec:geo_corr}) it is also feasible correcting via TWIN MUSIC efficiency measurement. The correction factor is given by:
+Instead of correcting the limited geometric acceptance of TWIN MUSIC via graphical fitting (see Section~\ref{sec:geo_corr}) it is also feasible correcting via TWIN MUSIC efficiency measurement. The correction factor is given by:
 \begin{equation}\label{eq:twin_eff}
 \epsilon_{geo\text{\_}corr} = \frac{N_{MWPC1,MWPC2}}{N_{MWPC1,MWPC2,TWIN}}
 \end{equation}
 where $N_{MWPC1,MWPC2}$ corresponds to the number of events with a hit in MWPC1 and MWPC2 whereas $N_{MWPC1,MWPC2,TWIN}$ imposes the further condition having a hit in TWIN MUSIC too.\newline
-The corresponding correction factor $\epsilon_{geo\text{\_}corr}$ is consequently applied on all target and empty runs. The resulting corrected charge changing cross section is shown in figure \ref{fig:twim_corr_cc_cs}. 
+The corresponding correction factor $\epsilon_{geo\text{\_}corr}$ is consequently applied on all target and empty runs. The resulting corrected charge changing cross section is shown in Fig.~\ref{fig:twim_corr_cc_cs}. 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/charge_changing_cross_sec_twim_eff_corr.png}
     \caption{
-        Charge changing cross section correction due to limited geometric acceptance of TWIN MUSIC via efficiency correction with MWPC1 and MWPC2. In gray: charge changing cross section measurements before applying corrections, as in figure \ref{fig:cccs_gaus_diff_sections}}
+        Charge changing cross section correction due to limited geometric acceptance of TWIN MUSIC via efficiency correction with MWPC1 and MWPC2. In gray: charge changing cross section measurements before applying corrections, as in Fig.~\ref{fig:cccs_gaus_diff_sections}}
     \label{fig:twim_corr_cc_cs}
 \end{figure}
-The same correction factor can be applied to the total interaction cross section as in figure \ref{fig:twim_corr_tot_cs}. 
+The same correction factor can be applied to the total interaction cross section as in Fig.~\ref{fig:twim_corr_tot_cs}. 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=\textwidth,height=12cm,keepaspectratio=true]{Figures/tot_interaction_cs_twim_eff_corr.png}
@@ -222,7 +222,7 @@ The same correction factor can be applied to the total interaction cross section
         Flightpath reconstruction with reference positions $(z_0,x_0)$, $(z_1,x_1)$ and $(z_2,x_2)$. The GLAD magnet is tilted by $\alpha = 14^{\circ}$.}
     \label{fig:draw_flight}
 \end{figure}
-The first step in the radius and flightpath reconstruction is expressing the entrance point on the GLAD field $(z_1,x_1)$ and the exit point $(z_2,x_2)$ with the center of the circle path $(z_0,x_0)$ as reference, see figure \ref{fig:draw_flight}:
+The first step in the radius and flightpath reconstruction is expressing the entrance point on the GLAD field $(z_1,x_1)$ and the exit point $(z_2,x_2)$ with the center of the circle path $(z_0,x_0)$ as reference, see Fig.~\ref{fig:draw_flight}:
 \begin{align*}
 z_1 &= z_0 -r\,cos(90^{\circ}-\theta_i) = z_0 -r\,sin(\theta_i)\\
 x_1 &= x_0 + r\,sin(90^{\circ}-\theta_i) = x_0 + r\,cos(\theta_i)\\
@@ -240,7 +240,7 @@ and with the distance between the two points given by:
 	       &= 4r^2\,sin^2(\frac{\theta_i}{2} +\frac{\theta_o}{2} )\\
 \Rightarrow \Delta_{i/o} &= 2r\,sin(\frac{\theta_i}{2} +\frac{\theta_o}{2})
 \end{align*}
-To describe the distance between $(z_1,x_1)$ and $(z_2,x_2)$ with the given effective GLAD length $L_{eff}$ ($= 2.06\,m$) the tilting angle $\alpha$ (see figure \ref{fig:draw_flight}) of GLAD in relation to the incoming beam line direction has to be considered. Consequential the angle $\delta$ between the trajectory connecting $(z_1,x_1)$ and $(z_2,x_2)$ and the line parallel to the GLAD magnet width $L_{eff}$ can be determined as:
+To describe the distance between $(z_1,x_1)$ and $(z_2,x_2)$ with the given effective GLAD length $L_{eff}$ ($= 2.06\,m$) the tilting angle $\alpha$ (see Fig.~\ref{fig:draw_flight}) of GLAD in relation to the incoming beam line direction has to be considered. Consequential the angle $\delta$ between the trajectory connecting $(z_1,x_1)$ and $(z_2,x_2)$ and the line parallel to the GLAD magnet width $L_{eff}$ can be determined as:
 \begin{flalign*}
 tan(\delta) &= \left| \frac{m_1-m_2}{1+ m_1\cdot m_2} \right|
 \end{flalign*}

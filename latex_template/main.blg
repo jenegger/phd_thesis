@@ -34,6 +34,7 @@ Repeated entry---line 1248 of file main.bib
  : @article{bertulani2010pauli
  :                            ,
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Sec.2.1"
 Warning--I didn't find a database entry for "agarap2018deep"
 Warning--empty journal in horvat2021evolution
 Warning--empty journal in glauber1959lectures
@@ -48,7 +49,7 @@ Warning--empty journal in popescu2021review
 Warning--can't use both volume and number fields in bertini2011r3broot
 You've used 143 entries,
             1876 wiz_defined-function locations,
-            1255 strings with 30595 characters,
+            1257 strings with 30609 characters,
 and the built_in function-call counts, 39350 in all, are:
 = -- 3763
 > -- 1994

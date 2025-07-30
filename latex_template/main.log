@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.24)  30 JUL 2025 10:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.24)  30 JUL 2025 12:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1074,12 +1074,14 @@ File: Figures/sketch_qfs.pdf Graphic file (type pdf)
 Package pdftex.def Info: Figures/sketch_qfs.pdf  used on input line 481.
 (pdftex.def)             Requested size: 404.66873pt x 227.61983pt.
  [24 <./Figures/sketch_qfs.pdf>] [25]
+
+LaTeX Warning: Citation `Sec.2.1' on page 26 undefined on input line 519.
+
 <Figures/spec_factor.png, id=866, 608.2725pt x 710.655pt>
 File: Figures/spec_factor.png Graphic file (type png)
 <use Figures/spec_factor.png>
 Package pdftex.def Info: Figures/spec_factor.png  used on input line 528.
 (pdftex.def)             Requested size: 194.82753pt x 227.62027pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1662,23 +1664,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 272--273
 
  []
 
-[105]
-<Figures/cos_angle_2p_11b.png, id=1931, 895.345pt x 815.045pt>
+<Figures/cos_angle_2p_11b.png, id=1925, 895.345pt x 815.045pt>
 File: Figures/cos_angle_2p_11b.png Graphic file (type png)
 <use Figures/cos_angle_2p_11b.png>
 Package pdftex.def Info: Figures/cos_angle_2p_11b.png  used on input line 286.
 (pdftex.def)             Requested size: 399.21791pt x 363.42142pt.
-<Figures/p_x_2p_11b.png, id=1932, 853.1875pt x 728.7225pt>
+<Figures/p_x_2p_11b.png, id=1926, 853.1875pt x 728.7225pt>
 File: Figures/p_x_2p_11b.png Graphic file (type png)
 <use Figures/p_x_2p_11b.png>
 Package pdftex.def Info: Figures/p_x_2p_11b.png  used on input line 296.
 (pdftex.def)             Requested size: 172.99533pt x 147.75452pt.
-<Figures/p_y_2p_11b.png, id=1933, 857.2025pt x 726.715pt>
+<Figures/p_y_2p_11b.png, id=1927, 857.2025pt x 726.715pt>
 File: Figures/p_y_2p_11b.png Graphic file (type png)
 <use Figures/p_y_2p_11b.png>
 Package pdftex.def Info: Figures/p_y_2p_11b.png  used on input line 303.
 (pdftex.def)             Requested size: 172.99533pt x 146.65997pt.
-
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 333.
@@ -1690,6 +1690,10 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 333.
+
+[105]
+Overfull \vbox (3.36339pt too high) has occurred while \output is active []
+
 
 [106 <./Figures/cos_angle_2p_11b.png> <./Figures/p_x_2p_11b.png> <./Figures/p_y
 _2p_11b.png>]
@@ -1712,21 +1716,21 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 368.
 
-[108 <./Figures/sep_energy_vs_sum_energy.png>]
-<Figures/levelschemaplot.png, id=1962, 547.04375pt x 617.30624pt>
+<Figures/levelschemaplot.png, id=1957, 547.04375pt x 617.30624pt>
 File: Figures/levelschemaplot.png Graphic file (type png)
 <use Figures/levelschemaplot.png>
 Package pdftex.def Info: Figures/levelschemaplot.png  used on input line 374.
 (pdftex.def)             Requested size: 201.71019pt x 227.61792pt.
- [109 <./Figures/levelschemaplot.png>]
-<Figures/gamma_spec_12c_p2p_11b.png, id=1978, 2371.86125pt x 1221.56375pt>
+[108 <./Figures/sep_energy_vs_sum_energy.png>] [109 <./Figures/levelschemaplot.
+png>]
+<Figures/gamma_spec_12c_p2p_11b.png, id=1979, 2371.86125pt x 1221.56375pt>
 File: Figures/gamma_spec_12c_p2p_11b.png Graphic file (type png)
 <use Figures/gamma_spec_12c_p2p_11b.png>
 Package pdftex.def Info: Figures/gamma_spec_12c_p2p_11b.png  used on input line
  396.
 (pdftex.def)             Requested size: 443.57848pt x 228.44617pt.
  [110] [111 <./Figures/gamma_spec_12c_p2p_11b.png (PNG copy)>] [112]
-<Figures/fiss_model_kuckuk.png, id=2004, 1152.305pt x 913.4125pt>
+<Figures/fiss_model_kuckuk.png, id=2007, 1152.305pt x 913.4125pt>
 File: Figures/fiss_model_kuckuk.png Graphic file (type png)
 <use Figures/fiss_model_kuckuk.png>
 Package pdftex.def Info: Figures/fiss_model_kuckuk.png  used on input line 432.
@@ -2231,11 +2235,11 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  24433 strings out of 480121
  471312 string characters out of 5892160
- 779261 words of memory out of 5000000
+ 780255 words of memory out of 5000000
  41294 multiletter control sequences out of 15000+600000
  502913 words of font info for 114 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
- 61i,22n,75p,1715b,1035s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,22n,75p,1726b,1035s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/tobias/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti1095.60
 0pk> </home/tobias/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0600.
 600pk> </home/tobias/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbi172
@@ -2286,9 +2290,9 @@ are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on main.pdf (174 pages, 30138293 bytes).
+Output written on main.pdf (174 pages, 30137821 bytes).
 PDF statistics:
- 3920 PDF objects out of 4296 (max. 8388607)
+ 3925 PDF objects out of 4296 (max. 8388607)
  2375 compressed objects within 24 object streams
  644 named destinations out of 1000 (max. 500000)
  1095 words of extra memory for PDF output out of 10000 (max. 10000000)
