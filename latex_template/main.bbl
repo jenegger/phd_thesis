@@ -566,10 +566,9 @@ E.~Bayer and M.~Traxler, ``{Development of a high-resolution (< 10 ps RMS)
 J.~Serrano, M.~Lipinski, T.~Wlostowski, E.~Gousiou, E.~van~der Bij, M.~Cattin,
   and G.~Daniluk, ``{The white rabbit project},'' 2013.
 
-\bibitem{iaea_nuclide_chart}
-{International Atomic Energy Agency}, ``Iaea live chart of nuclides.''
-  \url{https://www-nds.iaea.org/relnsd/vcharthtml/VChartHTML.html}, 2024.
-\newblock Accessed: 2025-05-16.
+\bibitem{nndc11B}
+{National Nuclear Data Center (NNDC)}, ``{Level Scheme of $^{11}$B}.''
+  \url{https://www.nndc.bnl.gov/ensnds/11/B/adopted.pdf}, 2025.
 
 \bibitem{van1988weak}
 G.~Van Der~Steenhoven, H.~Blok, E.~Jans, L.~Lapik{\'a}s, E.~Quint, and P.~D.~W.

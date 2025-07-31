@@ -510,17 +510,18 @@ For mutually independent quantities, the Gaussian error propagation for statisti
 \text{with:}
 \begin{align*}
 	f(x_1,x_2,..,x_n) &\quad \text{the error prone cross section function,} \\
-	x_i  &\quad \text{the independent variables ($N_1$,$N_2$,$N_t$; see equation \ref{eq:cross_sec}),} \\
+	x_i  &\quad \text{the independent variables ($N^{(E)}_1$,$N^{(E)}_2$,$N_t$; see equation \ref{eq:cross_sec}),} \\
 	\Delta_{x_i} &\quad \text{stat./syst. uncertainties associated to independent variable $x_i$}
 \end{align*}
 
 
 %%%new part
+Here, the superscript $^E$ refers to the quantities obtained from empty target runs.
 All three measurements presented in this section, the preliminary estimate charge changing cross section, the geometric correction factor geo$_{\text{xy}}$ and the isotope correction factor $c_{iso}$, finally give the total interaction cross section:
 \begin{equation}
 \sigma_R = -\frac{1}{N_t}ln\left(\frac{N^T_2}{N^T_1} \, \frac{N^E_2}{N^E_1} \cdot \frac{\text{geo}^T_{\text{xy}}}{\text{geo}^E_{\text{xy}}} \cdot \frac{c^T_{iso}}{c^E_{iso}}\right)
 \end{equation}
-where $N^(T/E)_1$ are the number of incoming $^{12}C$ ions and $N^(T/E)_2$ are the number of survived carbon isotopes for target and empty runs accordingly, as described in Section~\ref{subsec:carbon_id}.\\
+where $N^(E)_1$ are the number of incoming $^{12}C$ ions and $N^(E)_2$ are the number of survived carbon isotopes for target and empty runs accordingly, as described in Section~\ref{subsec:carbon_id}.\\
 %This formula for the total interaction cross section, relying on the transmission method, depends on mutually independent quanities and therefore the statistical and systematical uncertainties can be calculated using Gaussian error propagation:
 
 
@@ -590,10 +591,10 @@ where $N^(T/E)_1$ are the number of incoming $^{12}C$ ions and $N^(T/E)_2$ are t
 \textbf{Statistical Uncertainty} \\
 The statistical uncertainty associated with the charge-changing cross section, after applying geometry corrections, includes contributions from the standard error of binomially distributed variables.
 
-The charge-changing cross section is derived from survival probabilities of carbon isotopes, namely $P_{\text{surv}|\text{cc}}$ and $P^{(E)}_{\text{surv}|\text{cc}}$, both of which follow binomial statistics. The total statistical uncertainty is given by:
+The charge-changing cross section is derived from survival probabilities of carbon isotopes, namely $P_{\text{surv}|\text{cc}}$ and $P^{E}_{\text{surv}|\text{cc}}$, both of which follow binomial statistics. The total statistical uncertainty is given by:
 \begin{equation}
 \label{eq:stat_cc_}
-\Delta\sigma_{\text{stat}|\text{cc}} = \sqrt{\left(\frac{\partial \sigma_{\text{cc}}}{\partial P_{\text{surv}|\text{cc}}} \Delta P_{\text{surv}|\text{cc}}\right)^2 + \left(\frac{\partial \sigma_{\text{cc}}}{\partial P^{(E)}_{\text{surv}|\text{cc}}} \Delta P^{(E)}_{\text{surv}|\text{cc}}\right)^2}
+\Delta\sigma_{\text{stat}|\text{cc}} = \sqrt{\left(\frac{\partial \sigma_{\text{cc}}}{\partial P_{\text{surv}|\text{cc}}} \Delta P_{\text{surv}|\text{cc}}\right)^2 + \left(\frac{\partial \sigma_{\text{cc}}}{\partial P^{E}_{\text{surv}|\text{cc}}} \Delta P^{E}_{\text{surv}|\text{cc}}\right)^2}
 \end{equation}
 
 The survival probability $P_{\text{surv}|\text{cc}}$, defined as the probability of observing a carbon isotope in the final state, is based on $N_1$ independent trials with binary outcomes (survived or not). The efficiency-corrected survival probability $P^{(E)}_{\text{surv}|\text{cc}}$ is calculated as the ratio $N^{(E)}_2 / N^{(E)}_1$ and its uncertainty is given by:
@@ -603,7 +604,7 @@ The survival probability $P_{\text{surv}|\text{cc}}$, defined as the probability
 
 Substituting into Equation~\ref{eq:stat_cc_} yields:
 \begin{equation}
-\Delta\sigma_{\text{stat}|\text{cc}} = \sqrt{ \frac{1}{N_t^2} \left( \frac{1 - P_{\text{surv}|\text{cc}}}{P_{\text{surv}|\text{cc}} N_1} + \frac{1 - P^{(E)}_{\text{surv}|\text{cc}}}{P^{(E)}_{\text{surv}|\text{cc}} N^{(E)}_1} \right) }
+\Delta\sigma_{\text{stat}|\text{cc}} = \sqrt{ \frac{1}{N_t^2} \left( \frac{1 - P_{\text{surv}|\text{cc}}}{P_{\text{surv}|\text{cc}} N_1} + \frac{1 - P^{E}_{\text{surv}|\text{cc}}}{P^{E}_{\text{surv}|\text{cc}} N^{E}_1} \right) }
 \end{equation}
 
 \textbf{Systematic Uncertainty} \\
@@ -709,5 +710,37 @@ The statistical and systematic uncertainties associated with the total interacti
     \label{fig:tot_interaction_cs}
 \end{figure}
 %\subsection{reaction cross section Analysis}
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{Beam Energy} & \textbf{\(^{12}\)C target} & \(\sigma_I\) [mb] & \(\Delta\sigma_\text{stat.}\) [mb] & \(\Delta\sigma_\text{sys.}\) [mb] \\
+\textbf{[MeV/nucleon]} & & & & \\
+\hline
+\multirow{3}{*}{400} 
+& thin    & 765.2(65) & 5.41 & 3.60 \\
+& medium  & 769.2(42) & 3.75 & 1.92 \\
+& thick   & 763.2(25) & 1.86 & 1.69 \\
+\hline
+\multirow{3}{*}{550} 
+& thin    & 796.6(86) & 8.15 & 2.86 \\
+& medium  & 800.5(52) & 4.74 & 2.07 \\
+& thick   & 801.8(26) & 2.47 & 0.92 \\
+\hline
+\multirow{3}{*}{650} 
+& thin    & 818.0(67) & 6.24 & 2.42 \\
+& medium  & 816.3(56) & 5.36 & 1.69 \\
+& thick   & 819.9(25) & 2.30 & 1.07 \\
+\hline
+\multirow{2}{*}{800} 
+& thin    & 818.0(67) & 6.24 & 2.42 \\
+& medium  & 834.5(58) & 5.26 & 2.34 \\
+& thick   & 836.2(32) & 2.97 & 1.29 \\
+\hline
+\end{tabular}
+\caption{Measured interaction cross sections \(\sigma_I\) with statistical and systematic uncertainties for \(^{12}\)C targets of various thicknesses at different beam energies.}
+\end{table}
+
+
 \newpage
 
