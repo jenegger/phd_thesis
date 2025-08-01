@@ -521,7 +521,7 @@ All three measurements presented in this section, the preliminary estimate charg
 \begin{equation}
 \sigma_R = -\frac{1}{N_t}ln\left(\frac{N^T_2}{N^T_1} \, \frac{N^E_2}{N^E_1} \cdot \frac{\text{geo}^T_{\text{xy}}}{\text{geo}^E_{\text{xy}}} \cdot \frac{c^T_{iso}}{c^E_{iso}}\right)
 \end{equation}
-where $N^(E)_1$ are the number of incoming $^{12}C$ ions and $N^(E)_2$ are the number of survived carbon isotopes for target and empty runs accordingly, as described in Section~\ref{subsec:carbon_id}.\\
+where $N^{(E)}_1$ are the number of incoming $^{12}C$ ions and $N^{(E)}_2$ are the number of survived carbon isotopes for target and empty runs accordingly, as described in Section~\ref{subsec:carbon_id}.\\
 %This formula for the total interaction cross section, relying on the transmission method, depends on mutually independent quanities and therefore the statistical and systematical uncertainties can be calculated using Gaussian error propagation:
 
 
@@ -597,7 +597,7 @@ The charge-changing cross section is derived from survival probabilities of carb
 \Delta\sigma_{\text{stat}|\text{cc}} = \sqrt{\left(\frac{\partial \sigma_{\text{cc}}}{\partial P_{\text{surv}|\text{cc}}} \Delta P_{\text{surv}|\text{cc}}\right)^2 + \left(\frac{\partial \sigma_{\text{cc}}}{\partial P^{E}_{\text{surv}|\text{cc}}} \Delta P^{E}_{\text{surv}|\text{cc}}\right)^2}
 \end{equation}
 
-The survival probability $P_{\text{surv}|\text{cc}}$, defined as the probability of observing a carbon isotope in the final state, is based on $N_1$ independent trials with binary outcomes (survived or not). The efficiency-corrected survival probability $P^{(E)}_{\text{surv}|\text{cc}}$ is calculated as the ratio $N^{(E)}_2 / N^{(E)}_1$ and its uncertainty is given by:
+The survival probability $P^{(E)}_{\text{surv}|\text{cc}}$, defined as the probability of observing a carbon isotope in the final state, is based on $N_1$ independent trials with binary outcomes (survived or not). The survival probability $P^{(E)}_{\text{surv}|\text{cc}}$ is given by the ratio $N^{(E)}_2 / N^{(E)}_1$ and its uncertainty is:
 \begin{equation}
 \Delta P^{(E)}_{\text{surv}|\text{cc}} = \sqrt{ \frac{P^{(E)}_{\text{surv}|\text{cc}} \cdot \left(1 - P^{(E)}_{\text{surv}|\text{cc}}\right)}{N^{(E)}_1} }
 \end{equation}
@@ -621,52 +621,52 @@ The total systematic uncertainty is then expressed as:
 \end{equation}
 
 
-\subsubsection{Isotopic Cross Section}
+\subsubsection{Isotope Correction Contribution}
 
 \textbf{Statistical Uncertainty} \\
-The statistical uncertainty of the isotopic cross section includes contributions from both the statistical uncertainty of the charge-changing cross section and the standard error associated with the binomial distribution of the number of detected $^{12}\mathrm{C}$ isotopes.
-
-The total uncertainty is obtained through Gaussian error propagation using the survival probabilities $P_{\text{surv}|^{12}\mathrm{C}}$ and $P^{(E)}_{\text{surv}|^{12}\mathrm{C}}$, the latter being derived from the efficiency-corrected ratio $N^{(E)}_{^{12}\mathrm{C}} / N^{(E)}_2$. Both probabilities are treated as binomially distributed variables, resulting in the following expression:
-
+The statistical uncertainty of the isotope correction includes contributions from both the statistical uncertainty of the charge-changing cross section and the standard error associated with the binomial distribution of the number of detected $^{12}\mathrm{C}$ isotopes, latter given by:
+%The total uncertainty is obtained through Gaussian error propagation using the survival probabilities $P_{\text{surv}|^{12}\mathrm{C}}$ and $P^{(E)}_{\text{surv}|^{12}\mathrm{C}}$, the latter being derived from the efficiency-corrected ratio $N^{(E)}_{^{12}\mathrm{C}} / N^{(E)}_2$. Both probabilities are treated as binomially distributed variables, resulting in the following expression:
 \begin{equation}
 \label{eq:stat_12c_iso}
-\Delta\sigma_{\text{stat}|\:^{12}\mathrm{C}} = \sqrt{\left(\frac{\partial \sigma_{^{12}\mathrm{C}}}{\partial P_{\text{surv}|^{12}\mathrm{C}}} \Delta P_{\text{surv}|^{12}\mathrm{C}}\right)^2 + \left(\frac{\partial \sigma_{^{12}\mathrm{C}}}{\partial P^{(E)}_{\text{surv}|^{12}\mathrm{C}}} \Delta P^{(E)}_{\text{surv}|^{12}\mathrm{C}}\right)^2}
+\Delta\sigma_{\text{stat}|\:^{12}\mathrm{C}} = \sqrt{\left(\frac{\partial \sigma_{^{12}\mathrm{C}}}{\partial P_{\text{surv}|^{12}\mathrm{C}}} \Delta P_{\text{surv}|^{12}\mathrm{C}}\right)^2 + \left(\frac{\partial \sigma_{^{12}\mathrm{C}}}{\partial P^{E}_{\text{surv}|^{12}\mathrm{C}}} \Delta P^{E}_{\text{surv}|^{12}\mathrm{C}}\right)^2}
 \end{equation}
 
-Inserting the binomial standard deviations yields:
+where the survival probability $P^{(E)}_{\text{surv}|^{12}\mathrm{C}}$, defined as probability of detecting $^{12}$C isotopes in the final state, is based on $N_2$, the total number of identified carbon isotopes after the target. It is determined by the ratio:
+\begin{equation}
+P^{(E)}_{\text{surv}|^{12}\mathrm{C}} = \frac{N_{^{12}C}}{N_2}
+\end{equation}
+where $N_{^{12}C}$ denotes the number of detected $^{12}$C isotopes. Since the measurement represents a binomial process, the associated statistical uncertainty is given by:
+\begin{equation}\label{eq:delta12c}
+\Delta P^{(E)}_{\text{surv}|^{12}\mathrm{C}} = \sqrt{\frac{P^{(E)}_{\text{surv}|^{12}\mathrm{C}} (1-P^{(E)}_{\text{surv}|^{12}\mathrm{C}})}{N_2}}
+\end{equation}
+Inserting it into Eq.~\ref{eq:stat_12c_iso} leads to:
 
 \begin{equation}
-\Delta\sigma_{\text{stat}|\:^{12}\mathrm{C}} = \sqrt{ \frac{1}{N_t^2} \left( \frac{1 - P_{\text{surv}|^{12}\mathrm{C}}}{P_{\text{surv}|^{12}\mathrm{C}} N_2} + \frac{1 - P^{(E)}_{\text{surv}|^{12}\mathrm{C}}}{P^{(E)}_{\text{surv}|^{12}\mathrm{C}} N_2^E} \right) }
+\Delta\sigma_{\text{stat}|\:^{12}\mathrm{C}} = \sqrt{ \frac{1}{N_t^2} \left( \frac{1 - P_{\text{surv}|^{12}\mathrm{C}}}{P_{\text{surv}|^{12}\mathrm{C}} N_2} + \frac{1 - P^{E}_{\text{surv}|^{12}\mathrm{C}}}{P^{E}_{\text{surv}|^{12}\mathrm{C}} N_2^E} \right) }
 \end{equation}
 
-Combining with the charge-changing uncertainty yields the total statistical uncertainty of the isotopic cross section:
+Combining with the charge-changing uncertainty yields the total statistical uncertainty of the isotope correction contribution:
 
 \begin{equation}
-\Delta\sigma_{\text{stat}|\:\text{iso}} = \sqrt{ \frac{1}{N_t^2} \left( \frac{1 - P_{\text{surv}|cc}}{P_{\text{surv}|cc} N_1} + \frac{1 - P^{(E)}_{\text{surv}|cc}}{P^{(E)}_{\text{surv}|cc} N_1^E} \right) + \frac{1}{N_t^2} \left( \frac{1 - P_{\text{surv}|^{12}\mathrm{C}}}{P_{\text{surv}|^{12}\mathrm{C}} N_2} + \frac{1 - P^{(E)}_{\text{surv}|^{12}\mathrm{C}}}{P^{(E)}_{\text{surv}|^{12}\mathrm{C}} N_2^E} \right) }
+\Delta\sigma_{\text{stat}|\:\text{iso}} = \sqrt{ \frac{1}{N_t^2} \left( \frac{1 - P_{\text{surv}|cc}}{P_{\text{surv}|cc} N_1} + \frac{1 - P^{E}_{\text{surv}|cc}}{P^{E}_{\text{surv}|cc} N_1^E} \right) + \frac{1}{N_t^2} \left( \frac{1 - P_{\text{surv}|^{12}\mathrm{C}}}{P_{\text{surv}|^{12}\mathrm{C}} N_2} + \frac{1 - P^{E}_{\text{surv}|^{12}\mathrm{C}}}{P^{E}_{\text{surv}|^{12}\mathrm{C}} N_2^E} \right) }
 \end{equation}
 
-\textbf{Systematic Uncertainty} \\
+\vskip 0.2in
+\noindent\textbf{Systematic Uncertainty} \\
 The systematic uncertainty of the isotopic cross section includes the contributions from:
-
-\begin{itemize}
+\begin{enumerate}[label=(\alph*)]
     \item the systematic uncertainty of the charge-changing cross section,
-    \item the fit uncertainty of the number of $^{12}\mathrm{C}$ events used to extract the correction factor $c_{\text{iso}}$, defined as
-    \begin{equation*}
-    c_{\text{iso}} = \frac{N_{^{12}\mathrm{C}}}{N_C}
-    \end{equation*}
-\end{itemize}
+	\item the uncertainty associated with the fit of the $^{12}\mathrm{C}$ peak, illustrated in Fig.~\ref{sfig:mw23x_rot_and_proj}, from which the number of surviving $^{12}$C isotopes is extracted to get the correction factor $c_{\text{iso}} = N_{^{12}C}/N_C$. 
+\end{enumerate}
 
-The fit uncertainty $\Delta N_{^{12}\mathrm{C}}$ is taken from the standard errors of the fit parameters used in the isotope separation procedure (see Section~\ref{sec:isotope_corr}).
-
-The total systematic uncertainty is therefore:
-
+\noindent The fit uncertainty $\Delta N_{^{12}\mathrm{C}}$ is derived from the propagated errors of the fitted peak parameters, as obtained from the covariance matrix of the fit (see Section~\ref{sec:isotope_corr}). The total systematic uncertainty is therefore:
 \begin{equation}
 \Delta\sigma_{\text{sys}|\:\text{iso}} = \sqrt{ \left( \frac{\partial \sigma_{cc}}{\partial N_t} \Delta N_t \right)^2 + \left( \Delta^{\text{sys}}_{N_2} \right)^2 + \left( \Delta_{\text{sys}} \sigma_{\text{corr}} \right)^2 + \frac{1}{N_t^2} \left( \frac{\Delta N_{^{12}\mathrm{C}}}{N_C} \right)^2 }
 \end{equation}
 
 \subsubsection{Total Interaction Cross Section}
 
-The statistical and systematic uncertainties associated with the total interaction cross section are identical in form to those described for the isotopic cross section. They include contributions from both the charge-changing cross section and the isotopic correction procedure, as detailed in the previous section.
+The statistical and systematic uncertainties associated with the total interaction cross section are identical in form to those described for the isotope correction contribution. They include contributions from both the charge-changing cross section and the isotopic correction procedure, as detailed in the previous section.
 
 
 
