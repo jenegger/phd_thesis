@@ -272,10 +272,19 @@ where the number of surviving carbon isotopes, $N_2/N_2^E$, for the target and c
 \end{figure}
 
 
-To get the optimal fit range on the two dimensional Gaussian fit on the reconstructed charges of the upstream anodes versus downstream anodes the charge changing cross section for all targets and all energies was systematically measured for $\sigma$-fit ranges between one and five $\sigma$, see Fig.~\ref{fig:cccs_vs_sigma_cut}. In the region around 3.5$\sigma$ the variation of the cross section is minimal.\newline
+To get the optimal fit range on the two dimensional Gaussian fit on the reconstructed charges of the upstream anodes versus downstream anodes the charge changing cross section for all targets and all energies was systematically measured for $\sigma$-fit ranges between one and five $\sigma$, see Fig.~\ref{fig:cccs_vs_sigma_cut}. In the region around 3.5~$\sigma$ the variation of the cross section is minimal.\newline
+
+As shown in Fig.~\ref{fig:cccs_vs_sigma_cut}, the extracted cross sections decrease with increasing beam energy, particularly for large $\sigma$ fit ranges. This behaviour is primarily attributed to the change in energy deposition characteristics at higher beam energies. The energy resolution of the TWIN MUSIC detector is  limited by statistical (Poissonian) fluctuations in ionisation, which scale as:
+\begin{equation*}
+\frac{\Delta E}{E} \propto \frac{1}{\sqrt{E}}
+\end{equation*}
+However, in the beam energy range considered here ($400 - 800$~AMeV), the energy deposited in the detector follows an approximate $\frac{1}{\beta^2}$ dependence\footnote{A detailed description of the energy loss of charged particles via ionisation is provided in Ref.~\cite{kolanoski2016teilchendetektoren}, Section 3.2.}. As a result the deposited energy decreases with increasing beam energy, leading to a degradation of the energy resolution at higher beam energies. This has as consequence that at higher beam energies and for wide  $\sigma$ fit ranges a non-negligible fraction of Z = 5 fragments may be incorrectly identified as carbon isotopes (Z = 6), due to the diminished peak separation in the energy-loss spectra. This resulting overlap leads then to a systematic overestimation of survived carbon isotopes and thus to an underestimation of the charge changing cross section.\\
+
+
 \begin{figure}[htpb]
     \centering
-    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/cccs_vs_sigma_cut.pdf}
+    %\includegraphics[width=\textwidth,keepaspectratio=true]{Figures/cccs_vs_sigma_cut.pdf} %%old version
+    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/cccs_vs_sigma_cut.png}
     \caption{
     Preliminary estimate of the charge changing cross sections according to the $\sigma$ fit range applied on the Fig.~\ref{fig:twin_2d_gaus_cut} (with borders) for the different target thicknesses and beam energies. The observed decrease in cross section values with increasing fit range is attributed to the energy dependence of the ionization energy loss, described by the Bethe-Bloch formula. At higher fit ranges, the contribution from tails of the energy loss distribution of lighter fragments (e.g., Z = 5) becomes increasingly included in the integration window for heavier fragments (e.g., Z = 6), leading to an underestimation of the charge-changing cross section. This effect becomes more pronounced at higher beam energies, where the relative resolution decreases due to the flattening of the Bethe-Bloch curve, thereby enhancing the probability of misidentification between adjacent charge states.
      }

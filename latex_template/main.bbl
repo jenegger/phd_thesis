@@ -534,6 +534,10 @@ W.~Bethge, ``{Wiedemann, Kernphysik},'' 2007.
   \url{https://www.mesytec.com/products/nuclear-physics/MDPP-16.html}.
 \newblock [Online; accessed October 18, 2024].
 
+\bibitem{kolanoski2016teilchendetektoren}
+H.~Kolanoski and N.~Wermes, {\em Teilchendetektoren}, ch.~13.5.2.
+\newblock Springer, 2016.
+
 \bibitem{summerer2012improved}
 K.~S{\"u}mmerer, ``Improved empirical parametrization of fragmentation cross
   sections,'' {\em Physical Review C—Nuclear Physics}, vol.~86, no.~1,
@@ -631,10 +635,6 @@ E.~Sartori, ``{Nuclear data for radioactive waste management},'' {\em Annals of
 \bibitem{schopper2013excited}
 H.~Schopper, ``{Excited Nuclear States: Nuclei with Z= 48-60},'' {\em Excited
   Nuclear States: Nuclei with Z= 48-60}, 2013.
-
-\bibitem{kolanoski2016teilchendetektoren}
-H.~Kolanoski and N.~Wermes, {\em Teilchendetektoren}, ch.~13.5.2.
-\newblock Springer, 2016.
 
 \bibitem{seltzer2010xcom}
 S.~Seltzer, ``{XCOM-Photon Cross Sections Database, NIST Standard Reference
