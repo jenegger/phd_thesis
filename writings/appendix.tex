@@ -69,7 +69,7 @@ Fig.~\ref{fig:mw23_own_clustering} shows the distribution of x in MWPC2 and MWPC
 
 \section {MWPC0 selection cuts}\label{app:mw0_cuts}
 
-As outlined in Section~\ref{subsec:event-sel}, only events with hits in MWPC0 within a $\pm1\sigma$ around the beam spot center in both the $x$ and $y$ directions were selected, in order to ensure the selection of well-focused incoming particles. The standard \textit{cal-to-hit} procedure was applied to determine the spatial coordinates of the hits.\newline
+As outlined in Section~\ref{subsec:event-sel}, only events with hits in MWPC0 within a $\pm2\sigma$ around the beam spot center in both the $x$ and $y$ directions were selected, in order to ensure the selection of well-focused incoming particles. The standard \textit{cal-to-hit} procedure was applied to determine the spatial coordinates of the hits.\newline
 For completeness, additional strategies were investigated to suppress misreconstructed positions, which manifest as horizontal and vertical bars in Fig.~\ref{fig:mw0_xy_overview}. These strategies included:
 \begin{itemize}
     \item a coherent-clustering cut, restricted to events where the MWPCs of interest exhibit only one spatially confined cluster, and
@@ -79,30 +79,30 @@ For completeness, additional strategies were investigated to suppress misreconst
 \begin{subfigure}{.45\textwidth}
   \centering
   % include first image
-  \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/mw_no_cut.png}
-  \caption{\textit{cal-to-hit} only. Events within $\pm1\sigma$: 901298}
+  \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/mw_no_cut_2sigma.png}
+  \caption{\textit{cal-to-hit} only. Events within $\pm2\sigma$: $1.6949e+06$}
   \label{fig:sub-first}
 \end{subfigure}
 \begin{subfigure}{.45\textwidth}
   \centering
   % include second image
-  \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/mw_coherent.png}
-  \caption{Coherent clustering. Events within $\pm1\sigma$: 716002}
+  \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/mw_coherent_2sigma.png}
+  \caption{Coherent clustering. Events within $\pm2\sigma$: $1.34349e+06$}
   \label{fig:sub-second}
 \end{subfigure}
 
 \begin{subfigure}{.45\textwidth}
   \centering
   % include third image
-  \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/mw_coherent_less5.png}
-  \caption{Coherent clustering \& less than 5 hits in x \& y. Events within $\pm1\sigma$: 514124}
+  \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/mw_coherent_less5_2sigma.png}
+  \caption{Coherent clustering \& less than 5 hits in x \& y. Events within $\pm2\sigma$: 956816}
   \label{fig:sub-third}
 \end{subfigure}
 \begin{subfigure}{.45\textwidth}
   \centering
   % include fourth image
-  \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/mw_coherent_less4.png}
-  \caption{Coherent clustering \& less than 4 hits in x \& y. Events within $\pm1\sigma$\protect\footnotemark: 165144}
+  \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/mw_coherent_less4_2sigma.png}
+  \caption{Coherent clustering \& less than 4 hits in x \& y. Events within $\pm2\sigma$\protect\footnotemark: 304668}
   \label{fig:sub-fourth}
 \end{subfigure}
 \caption{Overview of methods and cuts to clean up x \& y distribution on MWPC0 from misreconstruction.}
@@ -110,7 +110,7 @@ For completeness, additional strategies were investigated to suppress misreconst
 \end{figure}
 \footnotetext{The ripples in the y-reconstruction reflect the dimension of the readout pads in y-direction}
 The effectiveness of these approaches is illustrated in Fig.~\ref{fig:mw0_approaches}. While both methods,when combined, significantly reduce the number of misreconstructed events and improve the spatial hit distribution, they lead to a substantial loss in statistics of more than 40\% (for coherent clustering \& less than 5 hits in x \& y).\newline
-Since the $\pm1\sigma$ position cuts were already chosen to be sufficiently tight for the analysis, no additional selection criteria were applied for the MWPC0 event selection.
+Since the $\pm2\sigma$ position cuts were already chosen to be sufficiently tight for the analysis, no additional selection criteria were applied for the MWPC0 event selection.
 
 
 \section {Alternative methods for TWIN MUSIC hit selection and charge assignment} \label{app:twin_alternative}

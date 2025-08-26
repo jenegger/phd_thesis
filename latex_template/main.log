@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.24)  26 AUG 2025 17:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.24)  26 AUG 2025 22:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2044,35 +2044,37 @@ Package pdftex.def Info: Figures/mw23_own_clustering.png  used on input line 63
 (pdftex.def)             Requested size: 338.28096pt x 227.61792pt.
  [137 <./Figures/mw23_default.png>] [138 <./Figures/own_clustering_mwpcs.png> <
 ./Figures/mw23_own_clustering.png>]
-<Figures/mw_no_cut.png, id=2449, 1199.48125pt x 1016.79875pt>
-File: Figures/mw_no_cut.png Graphic file (type png)
-<use Figures/mw_no_cut.png>
-Package pdftex.def Info: Figures/mw_no_cut.png  used on input line 82.
-(pdftex.def)             Requested size: 199.60895pt x 169.20746pt.
-<Figures/mw_coherent.png, id=2450, 1196.47pt x 1019.81pt>
-File: Figures/mw_coherent.png Graphic file (type png)
-<use Figures/mw_coherent.png>
-Package pdftex.def Info: Figures/mw_coherent.png  used on input line 89.
-(pdftex.def)             Requested size: 199.60895pt x 170.12871pt.
-<Figures/mw_coherent_less5.png, id=2451, 1190.4475pt x 1014.79124pt>
-File: Figures/mw_coherent_less5.png Graphic file (type png)
-<use Figures/mw_coherent_less5.png>
-Package pdftex.def Info: Figures/mw_coherent_less5.png  used on input line 97.
-(pdftex.def)             Requested size: 199.60895pt x 170.14311pt.
-<Figures/mw_coherent_less4.png, id=2452, 1190.4475pt x 1022.82124pt>
-File: Figures/mw_coherent_less4.png Graphic file (type png)
-<use Figures/mw_coherent_less4.png>
-Package pdftex.def Info: Figures/mw_coherent_less4.png  used on input line 104.
+<Figures/mw_no_cut_2sigma.png, id=2449, 690.4194pt x 495.7722pt>
+File: Figures/mw_no_cut_2sigma.png Graphic file (type png)
+<use Figures/mw_no_cut_2sigma.png>
+Package pdftex.def Info: Figures/mw_no_cut_2sigma.png  used on input line 82.
+(pdftex.def)             Requested size: 199.60895pt x 143.33148pt.
+<Figures/mw_coherent_2sigma.png, id=2450, 679.338pt x 490.7133pt>
+File: Figures/mw_coherent_2sigma.png Graphic file (type png)
+<use Figures/mw_coherent_2sigma.png>
+Package pdftex.def Info: Figures/mw_coherent_2sigma.png  used on input line 89.
 
-(pdftex.def)             Requested size: 199.60895pt x 171.48944pt.
- [139 <./Figures/mw_no_cut.png> <./Figures/mw_coherent.png> <./Figures/mw_coher
-ent_less5.png> <./Figures/mw_coherent_less4.png>]
-<Figures/cccs_with_out_border_3_5_sigma.png, id=2469, 433.62pt x 289.08pt>
+(pdftex.def)             Requested size: 199.60895pt x 144.18262pt.
+<Figures/mw_coherent_less5_2sigma.png, id=2451, 680.7834pt x 498.663pt>
+File: Figures/mw_coherent_less5_2sigma.png Graphic file (type png)
+<use Figures/mw_coherent_less5_2sigma.png>
+Package pdftex.def Info: Figures/mw_coherent_less5_2sigma.png  used on input li
+ne 97.
+(pdftex.def)             Requested size: 199.60895pt x 146.20644pt.
+<Figures/mw_coherent_less4_2sigma.png, id=2452, 675.7245pt x 495.7722pt>
+File: Figures/mw_coherent_less4_2sigma.png Graphic file (type png)
+<use Figures/mw_coherent_less4_2sigma.png>
+Package pdftex.def Info: Figures/mw_coherent_less4_2sigma.png  used on input li
+ne 104.
+(pdftex.def)             Requested size: 199.60895pt x 146.44821pt.
+<Figures/cccs_with_out_border_3_5_sigma.png, id=2458, 433.62pt x 289.08pt>
 File: Figures/cccs_with_out_border_3_5_sigma.png Graphic file (type png)
 <use Figures/cccs_with_out_border_3_5_sigma.png>
 Package pdftex.def Info: Figures/cccs_with_out_border_3_5_sigma.png  used on in
 put line 120.
 (pdftex.def)             Requested size: 341.43124pt x 227.62082pt.
+ [139 <./Figures/mw_no_cut_2sigma.png> <./Figures/mw_coherent_2sigma.png> <./Fi
+gures/mw_coherent_less5_2sigma.png> <./Figures/mw_coherent_less4_2sigma.png>]
 <Figures/charge_loss_550_thick.png, id=2472, 1114.1625pt x 933.4875pt>
 File: Figures/charge_loss_550_thick.png Graphic file (type png)
 <use Figures/charge_loss_550_thick.png>
@@ -2105,14 +2107,14 @@ ECTION AND CHARGE ASSIGNMENT
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/twin_music_cccs_not_all_anodes.pdf, id=2484, 796.6487pt x 448.10245pt>
+<Figures/twin_music_cccs_not_all_anodes.pdf, id=2486, 796.6487pt x 448.10245pt>
 
 File: Figures/twin_music_cccs_not_all_anodes.pdf Graphic file (type pdf)
 <use Figures/twin_music_cccs_not_all_anodes.pdf>
 Package pdftex.def Info: Figures/twin_music_cccs_not_all_anodes.pdf  used on in
 put line 162.
 (pdftex.def)             Requested size: 443.57965pt x 249.5066pt.
-<Figures/cccs_time_vs_engergy_sorted.png, id=2488, 433.62pt x 289.08pt>
+<Figures/cccs_time_vs_engergy_sorted.png, id=2490, 433.62pt x 289.08pt>
 File: Figures/cccs_time_vs_engergy_sorted.png Graphic file (type png)
 <use Figures/cccs_time_vs_engergy_sorted.png>
 Package pdftex.def Info: Figures/cccs_time_vs_engergy_sorted.png  used on input
@@ -2135,14 +2137,8 @@ ECTION AND CHARGE ASSIGNMENT
  []
 
 [142 <./Figures/cccs_gauss_diag_comp_3_5_sigma.png>] [143 <./Figures/twin_music
-_cccs_not_all_anodes.pdf>]
-Overfull \hbox (111.80748pt too wide) has occurred while \output is active
-\T1/cmr/m/n/12 144 \T1/cmr/m/sl/12 D ALTERNATIVE METHODS FOR TWIN MUSIC HIT SEL
-ECTION AND CHARGE ASSIGNMENT
- []
-
-[144 <./Figures/cccs_time_vs_engergy_sorted.png>]
-<Figures/charge_changing_cross_sec_twim_eff_corr.png, id=2566, 433.62pt x 289.0
+_cccs_not_all_anodes.pdf> <./Figures/cccs_time_vs_engergy_sorted.png>]
+<Figures/charge_changing_cross_sec_twim_eff_corr.png, id=2562, 433.62pt x 289.0
 8pt>
 File: Figures/charge_changing_cross_sec_twim_eff_corr.png Graphic file (type pn
 g)
@@ -2150,7 +2146,7 @@ g)
 Package pdftex.def Info: Figures/charge_changing_cross_sec_twim_eff_corr.png  u
 sed on input line 198.
 (pdftex.def)             Requested size: 341.43124pt x 227.62082pt.
-<Figures/tot_interaction_cs_twim_eff_corr.png, id=2570, 462.528pt x 346.896pt>
+<Figures/tot_interaction_cs_twim_eff_corr.png, id=2566, 462.528pt x 346.896pt>
 File: Figures/tot_interaction_cs_twim_eff_corr.png Graphic file (type png)
 <use Figures/tot_interaction_cs_twim_eff_corr.png>
 Package pdftex.def Info: Figures/tot_interaction_cs_twim_eff_corr.png  used on 
@@ -2160,10 +2156,16 @@ input line 206.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[145
+
+Overfull \hbox (116.29779pt too wide) has occurred while \output is active
+\T1/cmr/m/n/12 144 \T1/cmr/m/sl/12 E TWIN MUSIC GEOMETRIC ACCEPTANCE CORRECTION
+ VIA EFFICIENCY MEASUREMENT
+ []
+
+[144
 
  <./Figures/charge_changing_cross_sec_twim_eff_corr.png>]
-<Figures/drawings_flightpath.png, id=2581, 871.255pt x 774.895pt>
+<Figures/drawings_flightpath.png, id=2577, 871.255pt x 774.895pt>
 File: Figures/drawings_flightpath.png Graphic file (type png)
 <use Figures/drawings_flightpath.png>
 Package pdftex.def Info: Figures/drawings_flightpath.png  used on input line 22
@@ -2173,24 +2175,24 @@ Package pdftex.def Info: Figures/drawings_flightpath.png  used on input line 22
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[146 <./Figures/tot_interaction_cs_twim_eff_corr.png>]
+[145 <./Figures/tot_interaction_cs_twim_eff_corr.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [147 <./Figures/drawings_flightpath.png>]
-<Figures/rate_400_thick.png, id=2596, 1061.9675pt x 597.23125pt>
+ [146 <./Figures/drawings_flightpath.png>]
+<Figures/rate_400_thick.png, id=2591, 1061.9675pt x 597.23125pt>
 File: Figures/rate_400_thick.png Graphic file (type png)
 <use Figures/rate_400_thick.png>
 Package pdftex.def Info: Figures/rate_400_thick.png  used on input line 308.
 (pdftex.def)             Requested size: 199.60895pt x 112.25397pt.
-<Figures/zero_charge_twim_active_area.png, id=2597, 722.7pt x 433.62pt>
+<Figures/zero_charge_twim_active_area.png, id=2592, 722.7pt x 433.62pt>
 File: Figures/zero_charge_twim_active_area.png Graphic file (type png)
 <use Figures/zero_charge_twim_active_area.png>
 Package pdftex.def Info: Figures/zero_charge_twim_active_area.png  used on inpu
 t line 315.
 (pdftex.def)             Requested size: 199.60895pt x 119.76526pt.
- [148 <./Figures/rate_400_thick.png> <./Figures/zero_charge_twim_active_area.pn
-g>] [149]) [150] [151] (./main.bbl [152]
-[153] [154] [155] [156] [157] [158]
+ [147 <./Figures/rate_400_thick.png> <./Figures/zero_charge_twim_active_area.pn
+g>] [148]) [149] [150] (./main.bbl [151]
+[152] [153] [154] [155] [156] [157]
 Underfull \hbox (badness 1394) in paragraph at lines 418--422
 []\T1/cmr/m/n/12 GSI Helmholtzzen-trum für Schw-e-ri-o-nen-forschung GmbH, ``La
 rge-acceptance
@@ -2202,7 +2204,7 @@ Underfull \hbox (badness 1092) in paragraph at lines 436--440
 he Uni-ver-sität München,
  []
 
-[159]
+[158]
 Underfull \hbox (badness 10000) in paragraph at lines 488--492
 []\T1/cmr/m/n/12 Hamamatsu Pho-ton-ics, ``S8664-1010: Sil-i-con Avalanche Pho-t
 o-di-ode.''
@@ -2226,13 +2228,13 @@ Underfull \hbox (badness 6300) in paragraph at lines 506--509
 on / mbs$[][]\T1/cmr/m/n/12 .  Ac-
  []
 
-[160] [161] [162] [163]
+[159] [160] [161] [162]
 Underfull \hbox (badness 1275) in paragraph at lines 706--709
 []\T1/cmr/m/n/12 X. Am-a-tri-ain, A. Sankar, J. Bing, P. K. Bod-igutla, T. J. H
 azen, and
  []
 
-) [164] (./main.aux (./Abstract.aux))
+) [163] (./main.aux (./Abstract.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -2243,9 +2245,9 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 3FA96164AE5EA4B9D3D929F4AA86EB85;17117.
  ) 
 Here is how much of TeX's memory you used:
- 24447 strings out of 480121
- 471483 string characters out of 5892160
- 779389 words of memory out of 5000000
+ 24446 strings out of 480121
+ 471671 string characters out of 5892160
+ 779415 words of memory out of 5000000
  41298 multiletter control sequences out of 15000+600000
  502913 words of font info for 114 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
@@ -2300,10 +2302,10 @@ are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on main.pdf (174 pages, 30182335 bytes).
+Output written on main.pdf (173 pages, 30635234 bytes).
 PDF statistics:
- 3941 PDF objects out of 4296 (max. 8388607)
- 2394 compressed objects within 24 object streams
- 654 named destinations out of 1000 (max. 500000)
+ 3936 PDF objects out of 4296 (max. 8388607)
+ 2391 compressed objects within 24 object streams
+ 653 named destinations out of 1000 (max. 500000)
  1111 words of extra memory for PDF output out of 10000 (max. 10000000)
 
