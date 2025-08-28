@@ -107,17 +107,17 @@ For the MWPC0 which is mounted right at the beam entrance of Cave C no hit multi
 \label{fig:start_good_event_sel}
 \end{figure}
 \item \textbf{Projectile's focus on the target region:}\newline
-To assure that the incoming $^{12}$C ion hits the target it is necessary to select only events where the projectile is focused to the target region. Therefore strict cuts on the MWPC0 x and y position are applied. This was achieved by fitting the x and y distribution of the MWPC0 (without any restrictions on it) by a Gaussian function. The selection of \textit{focused} incoming projectiles was then restricted to events with hits in MWPC0 within the $\pm 1\sigma$ region in the x and y position around the beam spot center, see Fig.~\ref{fig:mw0_xy_overview} and \ref{fig:mw0_cuts}.\newline
+To assure that the incoming $^{12}$C ion hits the target it is necessary to select only events where the projectile is focused to the target region. Therefore strict cuts on the MWPC0 x and y position are applied. This was achieved by fitting the x and y distribution of the MWPC0 (without any restrictions on it) by a Gaussian function. The selection of \textit{focused} incoming projectiles was then restricted to events with hits in MWPC0 within the $\pm 2\sigma$ region in the x and y position around the beam spot center, see Fig.~\ref{fig:mw0_xy_overview} and \ref{fig:mw0_cuts}.\newline
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/mw0_xy_cut.pdf}
-\caption{Reconstructed \(x\)-\(y\) position of incoming ions on MWPC0 without applying a charge selection on the R3B MUSIC detector. The position reconstruction was performed without enforcing any multiplicity cut on the number of hits in MWPC0. However, a strict selection of \(\pm1\sigma\) around the beam spot center was applied independently in \(x\) and \(y\), as indicated by the red rectangular region. A detailed description of the MWPC0 hit selection procedure is provided in Appendix~\ref{app:mw0_cuts}.}
+\includegraphics[width=\textwidth,height=10cm,keepaspectratio=true]{Figures/mw0_xy_cut_2sigma.pdf}
+\caption{Reconstructed \(x\)-\(y\) position of incoming ions on MWPC0 without applying a charge selection on the R3B MUSIC detector. The position reconstruction was performed without enforcing any multiplicity cut on the number of hits in MWPC0. However, a strict selection of \(\pm2\sigma\) around the beam spot center was applied independently in \(x\) and \(y\), as indicated by the red rectangular region. A detailed description of the MWPC0 hit selection procedure is provided in Appendix~\ref{app:mw0_cuts}.}
 \label{fig:mw0_xy_overview}
 \end{figure}
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/mwpc0_cutxy.png}
-\caption{Overview of $\pm 1\sigma$ cuts in x and y in MWPC0 for empty/target runs.}
+\caption{Overview of $\pm 2\sigma$ cuts in x and y in MWPC0 for empty/target runs.}
 \label{fig:mw0_cuts}
 \end{figure}
 The MWPC0 x-position and the available projectile angle in the x-y plane from the R3B MUSIC is used to propagate the corresponding x-position on the target location to further check that the selected projectiles hit the target parallel to the z-position (= beam direction) and do only have a minimal incident angle, see Fig.~\ref{fig:x_pos_target}. 
@@ -126,7 +126,7 @@ The MWPC0 x-position and the available projectile angle in the x-y plane from th
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/extrapolated_target_x_pos.pdf}
     \caption{
-   	Propagated x-position on target location from measured x-value on MWPC0 and angle measurement from R3B MUSIC. The target area is 3 x 3 cm. In red the selected events with $\pm 1\sigma$ cut in x and y position in MWPC0 and  $\pm 1\sigma$ charge cut on R3B MUSIC, in blue no cut on incoming events. Thin target run, 550 AMeV.
+   	Propagated x-position on target location from measured x-value on MWPC0 and angle measurement from R3B MUSIC. The target area is 3 x 3 cm. In red the selected events with $\pm 2\sigma$ cut in x and y position in MWPC0 and  $\pm 1\sigma$ charge cut on R3B MUSIC, in blue no cut on incoming events. Thin target run, 550 AMeV.
     }
     \label{fig:x_pos_target}
 \end{figure}
