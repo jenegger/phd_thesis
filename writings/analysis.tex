@@ -485,7 +485,7 @@ This procedure is carried out for all analysed runs separately.
 \subsubsection{Distribution fitting}
 The fitting procedure of the one-dimensional distribution described in the previous section is performed in two steps:
 \begin{enumerate}[label=(\roman*)]
-    \item In the first step, the left side of the distribution, which is dominated by the contribution from $^{12}\mathrm{C}$ fragments, is fitted in the range $[-150, 10]~\mathrm{mm}$. The fit is performed using the sum of a Voigt profile---defined as the convolution of a Cauchy--Lorentz and a Gaussian distribution---and an additional Gaussian function.
+    \item In the first step, the left side of the distribution, which is dominated by the contribution from $^{12}\mathrm{C}$ fragments, is fitted in the range $[-150, 10]~\mathrm{mm}$. The fit is performed using the sum of a Voigt profile---defined as the convolution of a Cauchy--Lorentz and a Gaussian distribution~\footnote{The implementation of the Voigt profile in the ROOT framework is based on the FORTRAN code presented in~\cite{wells1999rapid}}---and an additional Gaussian function.
 
     \item In the second step, a global fit of the full distribution is performed. In this fit, the parameters of the Voigt profile and Gaussian function obtained from step (i) are kept fixed. The peaks corresponding to $^{11}\mathrm{C}$ and $^{10}\mathrm{C}$ are modeled by Gaussian functions. The only constraint imposed on these Gaussians is on the ratio of their widths, given by
     \begin{equation}
@@ -493,7 +493,14 @@ The fitting procedure of the one-dimensional distribution described in the previ
     \end{equation}
 \end{enumerate}
 
-An example of the resulting combined fit is shown in Fig.~X for the thick-target run at a beam energy of 650~AMeV. A complete set of fits for all analyzed runs is provided in Appendix~X.\newline
+An example of the resulting combined fit is shown in Fig.~\ref{fig:example_histo_fit} for the thick-target run at a beam energy of 400~AMeV. A complete set of fits for all analyzed runs is provided in Appendix~\ref{app:fit_carbon}.\newline
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[height=10cm,keepaspectratio=true]{Figures/pic_left_fit_first_c_2198_400_0183_0001.png}
+    \caption{Fitted one-dimensional projection of the rotated $x$-distribution in MWPC2 and MWPC3. The prominent $^{12}\mathrm{C}$ peak is fitted by a voigt profile (blue) and Gaussian distribution (black). The $^{11}\mathrm{C}$ and $^{10}\mathrm{C}$ peaks are fitted with Gaussian functions, shown in green and cyan, respectively.}
+    \label{fig:example_histo_fit}
+\end{figure}
 
 
 The correction factor accounting for the isotopic composition of the carbon fragments is then defined as
@@ -509,14 +516,37 @@ The contribution of this isotopic correction to the total interaction cross sect
 \end{equation}
 where $c_{\text{iso}}^T$ and $c_{\text{iso}}^E$ are the isotopic correction factors for the target and empty runs, respectively, and $N_t$ is the number of target nuclei per unit area.
 
-The numerical contribution of the isotopic correction to the total cross section is illustrated in Fig.~\ref{fig:iso_corr_contribution}.
-
 \begin{figure}[htbp]
     \centering
     \includegraphics[height=10cm,keepaspectratio=true]{Figures/iso_corr_contribution_plot_final.png}
     \caption{Isotopic cross section contribution, shown for the respective target thicknesses. The black diamonds represent cross section predictions from EPAX 3.1a, a universal empirical parametrization for fragmentation cross sections in high-energy heavy-ion reactions~\cite{summerer2012improved}, as implemented in the LISE++ simulation framework~\cite{tarasov2008lise++}. The black error bars indicate systematic uncertainties only.}
     \label{fig:iso_corr_contribution}
 \end{figure}
+
+The numerical contribution of the isotopic correction to the total cross section as a function of target thickness is shown in Fig.~\ref{fig:iso_corr_contribution}.\\
+The observed differences in the contributions for the respective target thicknesses originate from efficiency uncertainties and position-dependent effects in MWPC3. The variation in energy loss depending on the target thickness leads to small variations in the magnetic deflection. Consequently, the reconstructed $x$-position on MWPC3 shifts slightly with target thickness. To account for these effects, a weighted arithmetic mean is calculated for each beam energy using the three data points obtained for the different target thicknesses. The weights are defined according to the variances, such that the weight assigned to data point $i$ is given by
+\begin{equation}
+w_i = \frac{1}{\sigma_i^2},
+\end{equation}
+where $\sigma_i$ denotes the total uncertainty of data point $i$ (see the error bars in Fig.~\ref{fig:iso_corr_contribution}). The resulting weighted mean of the isotope cross section contribution is then defined as  
+\begin{equation}
+\bar{\sigma}_{iso,w} = \frac{\sum_i w_i \sigma_{iso,i}}{\sum_i w_i},
+\end{equation}
+where the summation over $i$ extends over the three target thicknesses. The resulting weighted means for each beam energy are presented in Fig.~\ref{fig:iso_corr_weighted_mean}.
+The uncertainty associated with the weighted mean is composed of two contributions. First, the largest uncertainty from histogram fitting (see Fig.~\ref{fig:example_histo_fit}) among the three input data points is added to the error bar. Second, the statistical uncertainty of the weighted mean is included, defined as
+
+\begin{equation}
+\Delta_w = \sqrt{\frac{1}{\sum_i w_i}}.
+\end{equation}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[height=10cm,keepaspectratio=true]{Figures/iso_corr_contribution_weighted_ar_mean.png}
+    \caption{Weighted means of the isotopic correction contributions to the total cross section as a function of beam energy. While the mean value is fixed for all three target thicknesses for the different beam energies, the systematic and statistical uncertainties vary with respect to the analyzed runs, as indicated by the error bars.}
+    \label{fig:iso_corr_weighted_mean}
+\end{figure}
+
+
 
 
 \newpage
