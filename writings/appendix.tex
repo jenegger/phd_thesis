@@ -11,7 +11,9 @@ As detailed in Section~\ref{subsec:event-sel}, a stringent event selection crite
     \label{fig:r3b_vs_twin_charge_def}
 \end{figure}
 
-\section {MWPCs -- \textit{cal-to-hit} data processing}
+\clearpage
+
+\section {MWPCs -- \textit{cal-to-hit} data processing}\label{app:mwpcs_proc}
 
 
 For all MWPCs the standard  \textit{cal-to-hit} step  sorts the calibrated hits in the detector according to the calibrated charge deposited in the pads. The final position (in mm) is determined by selecting the hit with the highest charge deposition $Q_{max}$ and its left ($Q_L$) and right neighbor ($Q_R$) pads\footnote{In case no charge deposition in one or both neighbors the charge value is set to 1 respectively.}. These charge and position values are inserted in the "hyperbolic squared secant" function \cite{lau1995optimization} with the following charge distribution function:
@@ -67,6 +69,49 @@ Fig.~\ref{fig:mw23_own_clustering} shows the distribution of x in MWPC2 and MWPC
     \label{fig:mw23_own_clustering}
 \end{figure}
 
+\clearpage
+
+\section{MWPCs -- Efficiency Analysis}\label{app:mwpcs_eff}
+
+The efficiency analysis presented here is restricted to carbon isotopes (\(Z = 6\)), which were previously identified with the TWIN MUSIC detector. The efficiencies are determined according to
+
+\begin{equation}
+\varepsilon = \frac{N_{\text{MWPC}}}{N_{\text{TWIN MUSIC}}} \, ,
+\end{equation}
+
+where \(N_{\text{MWPC}}\) denotes the number of carbon isotopes identified by the respective MWPC(s), and \(N_{\text{TWIN MUSIC}}\) is the total number of incoming carbon isotopes identified by the TWIN MUSIC detector.  
+
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/eff_plot_mwpcs_labels.png}
+    \caption{
+	Efficiencies of MWPC1, MWPC2, and MWPC3 obtained with the default and the coherent clustering algorithms. For MWPC1 and MWPC2, a reduction in efficiency is observed at a beam energy of 550 AMeV. In contrast, MWPC3 exhibits a pronounced efficiency loss at 800 AMeV. This behavior can be attributed to the decreasing signal amplitude with increasing beam energy, resulting in signals falling below the detection threshold.
+     }
+    \label{fig:eff_plot_mwpcs}
+\end{figure}
+
+Fig.~\ref{fig:eff_plot_mwpcs} displays the efficiencies of the individual MWPCs: MWPC1 and MWPC2, located upstream of GLAD, and MWPC3, located downstream. The efficiencies are compared for two calibration-to-hit (cal-to-hit) processing algorithms, as described in Appendix~\ref{app:mwpcs_proc}:  
+\begin{itemize}
+    \item the \textit{default processing}, in which also events with sparse hits are considered, and  
+    \item the \textit{coherent clustering} method, in which only spatially correlated hit clusters are retained.  
+\end{itemize}
+
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/combined_eff_plot_mwpcs_labels.png}
+    \caption{
+	Efficiencies for the requirement of particle position identification (in $x$ and $y$)  in multiple MWPCs obtained with the default and the coherent clustering algorithms. Subfigure d) shows the ratio of used events for the isotope correction factor, as described in Section~\ref{sec:iso_corr}, compared to the number of identified carbon isotopes with TWIN MUSIC.
+     }
+    \label{fig:eff_plot_mwpcs_comb}
+\end{figure}
+
+Fig.~\ref{fig:eff_plot_mwpcs_comb} presents the efficiencies obtained when requiring coincident hits in multiple MWPCs, both for the reconstruction of the \(x\)- and \(y\)-positions. The comparison is again performed for both processing algorithms.  
+
+Finally, Subfig.~\ref{fig:eff_plot_mwpcs_comb}.d illustrates the ratio of the events used for the isotope correction relative to the total number of carbon isotopes identified by the TWIN MUSIC detector.  
+
+
+\clearpage
+
 \section {MWPC0 selection cuts}\label{app:mw0_cuts}
 
 As outlined in Section~\ref{subsec:event-sel}, only events with hits in MWPC0 within a $\pm2\sigma$ around the beam spot center in both the $x$ and $y$ directions were selected, in order to ensure the selection of well-focused incoming particles. The standard \textit{cal-to-hit} procedure was applied to determine the spatial coordinates of the hits.\newline
@@ -112,6 +157,7 @@ For completeness, additional strategies were investigated to suppress misreconst
 The effectiveness of these approaches is illustrated in Fig.~\ref{fig:mw0_approaches}. While both methods,when combined, significantly reduce the number of misreconstructed events and improve the spatial hit distribution, they lead to a substantial loss in statistics of more than 40\% (for coherent clustering \& less than 5 hits in x \& y).\newline
 Since the $\pm2\sigma$ position cuts were already chosen to be sufficiently tight for the analysis, no additional selection criteria were applied for the MWPC0 event selection.
 
+\clearpage
 
 \section {Alternative methods for TWIN MUSIC hit selection and charge assignment} \label{app:twin_alternative}
 To quantify the impact of including or excluding border regions -- i.e., cases where either $\overline{Z_{\text{up}}} = 0$ or $\overline{Z_{\text{down}}} = 0$ as illustrated in Fig.~\ref{fig:twin_2d_gaus_cut} -- on the preliminary estimation of charge-changing cross sections, both scenarios were evaluated and the corresponding results are presented in Fig.~\ref{fig:cccs_with_out_border_3_5}. The observed differences are minor. Excluding the border regions leads to a slightly increased spread in the data points for the given beam energies.\newline
@@ -186,6 +232,7 @@ While a time-based selection algorithm for multi-hit anodes was used in both the
 %\end{figure}
 
 \clearpage
+
 \section {TWIN MUSIC Geometric Acceptance Correction via Efficiency Measurement}
 Instead of correcting the limited geometric acceptance of TWIN MUSIC via graphical fitting (see Section~\ref{sec:geo_corr}) it is also feasible correcting via TWIN MUSIC efficiency measurement. The correction factor is given by:
 \begin{equation}\label{eq:twin_eff}
@@ -213,6 +260,8 @@ The same correction factor can be applied to the total interaction cross section
 
 
 %\section {Overview of isotope correction methods - selection cuts on the MWPC1/2/3}
+
+\clearpage
 
 \section{Flight-Path Reconstruction}\label{app:flightpath}
 \begin{figure}[h!]
@@ -299,6 +348,9 @@ L_{eff} &= 2r\,sin(\frac{\theta_i}{2} + \frac{\theta_o}{2})\,\cdot\, cos\delta \
 %This errror, even though not play a central role it is nevertheless considered in the systematic uncertainty analysis in Section~\ref{sec:err_analysis}.
 %
 %% chatgpt refined...
+
+\clearpage
+
 \section{Dead Time Uncertainties in TWIN MUSIC}\label{app:twin_uncert}
 
 \begin{figure}[ht]
@@ -355,6 +407,7 @@ As this systematic uncertainty depends only on the target thickness and not on $
 While this uncertainty does not dominate the error budget, it is nonetheless incorporated into the total systematic uncertainty analysis in Section~\ref{sec:err_analysis}.
 
 
+\clearpage
 
 \section{Charge changing cross sections}
 
