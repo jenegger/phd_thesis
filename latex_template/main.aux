@@ -488,6 +488,8 @@
 \newlabel{eq:stat_cc_}{{75}{90}{Charge-Changing Cross Section}{equation.4.75}{}}
 \newlabel{eq:stat_cc_@cref}{{[equation][75][]75}{[1][90][]90}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {4.6.2}Isotope Correction Contribution}{91}{subsubsection.4.6.2}}
+\newlabel{sec:iso_corr}{{4.6.2}{91}{Isotope Correction Contribution}{subsubsection.4.6.2}{}}
+\newlabel{sec:iso_corr@cref}{{[subsubsection][2][4,6]4.6.2}{[1][91][]91}}
 \newlabel{eq:stat_12c_iso}{{79}{91}{Isotope Correction Contribution}{equation.4.79}{}}
 \newlabel{eq:stat_12c_iso@cref}{{[equation][79][]79}{[1][91][]91}}
 \newlabel{eq:delta12c}{{81}{92}{Isotope Correction Contribution}{equation.4.81}{}}
@@ -733,7 +735,6 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {64}{\ignorespaces Example of a simulated event involving three primary gamma photons, illustrating the performance difference between the Agglo+Edge clustering method and the geometrical R3B clustering approach. Each marker represents a detected hit, plotted as a function of the polar angle \(\theta \) and the azimuthal angle \(\varphi \). The edge color of each circle indicates the true cluster assignment (ground truth), while the fill color denotes the cluster assignment according to the geometrical R3B clustering. The size of each circle reflects the energy deposited in the detector segment. Numbers adjacent to the hits represent the normalized hit times. In this event, the geometrical R3B clustering incorrectly assigns the hit at \((\theta \approx 0.6\tmspace  +\thinmuskip {.1667em}\mathrm  {rad},\tmspace  +\thinmuskip {.1667em} \varphi \approx 2.7\tmspace  +\thinmuskip {.1667em}\mathrm  {rad})\), with a normalized time of 0.69 (blue edge, yellow fill), to a separate cluster, resulting in a \textit  {False Negative} (FN). In contrast, the Agglo+Edge method correctly assigns all hits to their respective clusters.\relax }}{136}{figure.caption.71}}
 \newlabel{fig:comparison_r3b_agglo_edge}{{64}{136}{Example of a simulated event involving three primary gamma photons, illustrating the performance difference between the Agglo+Edge clustering method and the geometrical R3B clustering approach. Each marker represents a detected hit, plotted as a function of the polar angle \(\theta \) and the azimuthal angle \(\varphi \). The edge color of each circle indicates the true cluster assignment (ground truth), while the fill color denotes the cluster assignment according to the geometrical R3B clustering. The size of each circle reflects the energy deposited in the detector segment. Numbers adjacent to the hits represent the normalized hit times. In this event, the geometrical R3B clustering incorrectly assigns the hit at \((\theta \approx 0.6\,\mathrm {rad},\, \varphi \approx 2.7\,\mathrm {rad})\), with a normalized time of 0.69 (blue edge, yellow fill), to a separate cluster, resulting in a \textit {False Negative} (FN). In contrast, the Agglo+Edge method correctly assigns all hits to their respective clusters.\relax }{figure.caption.71}{}}
 \newlabel{fig:comparison_r3b_agglo_edge@cref}{{[figure][64][]64}{[1][133][]136}}
-\citation{lau1995optimization}
 \@writefile{toc}{\contentsline {section}{Appendices}{139}{section*.72}}
 \@writefile{toc}{\contentsline {section}{\numberline {A}Pileup rejection with R3B MUSIC charge cut}{139}{Appendix.1.A}}
 \newlabel{app:r3bmusic_pileup}{{A}{139}{Pileup rejection with R3B MUSIC charge cut}{Appendix.1.A}{}}
@@ -741,177 +742,189 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {65}{\ignorespaces  Charge distribution in R3B MUSIC vs TWIN MUSIC. The strict charge cut -- only events within the two horizontal lines are selected for the analysis -- on R3B MUSIC fully suppresses pileup events. For this plot positional cuts on the MWPC0 and the requirement of a single hit in the Start detector are applied. Target run, 550 AMeV. \relax }}{139}{figure.caption.73}}
 \newlabel{fig:r3b_vs_twin_charge_def}{{65}{139}{Charge distribution in R3B MUSIC vs TWIN MUSIC. The strict charge cut -- only events within the two horizontal lines are selected for the analysis -- on R3B MUSIC fully suppresses pileup events. For this plot positional cuts on the MWPC0 and the requirement of a single hit in the Start detector are applied. Target run, 550 AMeV. \relax }{figure.caption.73}{}}
 \newlabel{fig:r3b_vs_twin_charge_def@cref}{{[figure][65][2147483647]65}{[1][139][]139}}
-\@writefile{toc}{\contentsline {section}{\numberline {B}MWPCs -- \textit  {cal-to-hit} data processing}{139}{Appendix.1.B}}
+\citation{lau1995optimization}
 \citation{martin2021fission}
 \citation{martin2021fission}
-\@writefile{lof}{\contentsline {figure}{\numberline {66}{\ignorespaces  Figure taken from \cite  {martin2021fission}, with w being the with of the cathode pads of the MWPC and $a_2$ the final position value of the hit determined by the hyperbolic squared secant function (in red). In black the measured charge deposition distribution in the MWPC. \relax }}{140}{figure.caption.74}}
-\newlabel{fig:hyp_function}{{66}{140}{Figure taken from \cite {martin2021fission}, with w being the with of the cathode pads of the MWPC and $a_2$ the final position value of the hit determined by the hyperbolic squared secant function (in red). In black the measured charge deposition distribution in the MWPC. \relax }{figure.caption.74}{}}
-\newlabel{fig:hyp_function@cref}{{[figure][66][2147483647]66}{[1][140][]140}}
+\@writefile{toc}{\contentsline {section}{\numberline {B}MWPCs -- \textit  {cal-to-hit} data processing}{140}{Appendix.1.B}}
+\newlabel{app:mwpcs_proc}{{B}{140}{MWPCs -- \textit {cal-to-hit} data processing}{Appendix.1.B}{}}
+\newlabel{app:mwpcs_proc@cref}{{[appendix][2][2147483647]B}{[1][140][]140}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.1}Coherent clustering}{140}{subsection.1.B.1}}
+\newlabel{app:coh_cluster}{{B.1}{140}{Coherent clustering}{subsection.1.B.1}{}}
+\newlabel{app:coh_cluster@cref}{{[subappendix][1][2147483647,2]B.1}{[1][140][]140}}
+\@writefile{lof}{\contentsline {figure}{\numberline {66}{\ignorespaces  Figure taken from \cite  {martin2021fission}, with w being the with of the cathode pads of the MWPC and $a_2$ the final position value of the hit determined by the hyperbolic squared secant function (in red). In black the measured charge deposition distribution in the MWPC. \relax }}{141}{figure.caption.74}}
+\newlabel{fig:hyp_function}{{66}{141}{Figure taken from \cite {martin2021fission}, with w being the with of the cathode pads of the MWPC and $a_2$ the final position value of the hit determined by the hyperbolic squared secant function (in red). In black the measured charge deposition distribution in the MWPC. \relax }{figure.caption.74}{}}
+\newlabel{fig:hyp_function@cref}{{[figure][66][2147483647]66}{[1][140][]141}}
 \@writefile{lof}{\contentsline {figure}{\numberline {67}{\ignorespaces  Distribution of x in MWPC2 and MWPC3 for the 400 AMeV run with thick target. The green line acts as reference line for the isotope separation between $^{12}$C and $^{11}$C/$^{10}$C. \relax }}{141}{figure.caption.75}}
 \newlabel{fig:x_mw23_default}{{67}{141}{Distribution of x in MWPC2 and MWPC3 for the 400 AMeV run with thick target. The green line acts as reference line for the isotope separation between $^{12}$C and $^{11}$C/$^{10}$C. \relax }{figure.caption.75}{}}
 \newlabel{fig:x_mw23_default@cref}{{[figure][67][2147483647]67}{[1][140][]141}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {B.1}Coherent clustering}{141}{subsection.1.B.1}}
-\newlabel{app:coh_cluster}{{B.1}{141}{Coherent clustering}{subsection.1.B.1}{}}
-\newlabel{app:coh_cluster@cref}{{[subappendix][1][2147483647,2]B.1}{[1][141][]141}}
 \@writefile{lof}{\contentsline {figure}{\numberline {68}{\ignorespaces Restricted event selection for MWPC2 and MWPC3: only events with one single coherent (i.e. without any holes) cluster are accepted.\relax }}{142}{figure.caption.77}}
 \newlabel{fig:own_clustering}{{68}{142}{Restricted event selection for MWPC2 and MWPC3: only events with one single coherent (i.e. without any holes) cluster are accepted.\relax }{figure.caption.77}{}}
-\newlabel{fig:own_clustering@cref}{{[figure][68][2147483647]68}{[1][141][]142}}
+\newlabel{fig:own_clustering@cref}{{[figure][68][2147483647]68}{[1][140][]142}}
 \@writefile{lof}{\contentsline {figure}{\numberline {69}{\ignorespaces  Distribution of x in MWPC2 and MWPC3 using the coherent clustering reconstruction. Thick target run, beam energy 400 AMeV. The green line acts as reference line for the isotope separation between $^{12}$C and $^{11}$C/$^{10}$C. \relax }}{142}{figure.caption.78}}
 \newlabel{fig:mw23_own_clustering}{{69}{142}{Distribution of x in MWPC2 and MWPC3 using the coherent clustering reconstruction. Thick target run, beam energy 400 AMeV. The green line acts as reference line for the isotope separation between $^{12}$C and $^{11}$C/$^{10}$C. \relax }{figure.caption.78}{}}
-\newlabel{fig:mw23_own_clustering@cref}{{[figure][69][2147483647]69}{[1][141][]142}}
-\@writefile{toc}{\contentsline {section}{\numberline {C}MWPC0 selection cuts}{142}{Appendix.1.C}}
-\newlabel{app:mw0_cuts}{{C}{142}{MWPC0 selection cuts}{Appendix.1.C}{}}
-\newlabel{app:mw0_cuts@cref}{{[appendix][3][2147483647]C}{[1][142][]142}}
-\newlabel{fig:sub-first}{{70a}{143}{\textit {cal-to-hit} only. Events within $\pm 2\sigma $: $1.6949e+06$\relax }{figure.caption.79}{}}
-\newlabel{fig:sub-first@cref}{{[subfigure][1][2147483647,70]70a}{[1][143][]143}}
-\newlabel{sub@fig:sub-first}{{a}{143}{\textit {cal-to-hit} only. Events within $\pm 2\sigma $: $1.6949e+06$\relax }{figure.caption.79}{}}
-\newlabel{sub@fig:sub-first@cref}{{[subfigure][1][2147483647,70]70a}{[1][143][]143}}
-\newlabel{fig:sub-second}{{70b}{143}{Coherent clustering. Events within $\pm 2\sigma $: $1.34349e+06$\relax }{figure.caption.79}{}}
-\newlabel{fig:sub-second@cref}{{[subfigure][2][2147483647,70]70b}{[1][143][]143}}
-\newlabel{sub@fig:sub-second}{{b}{143}{Coherent clustering. Events within $\pm 2\sigma $: $1.34349e+06$\relax }{figure.caption.79}{}}
-\newlabel{sub@fig:sub-second@cref}{{[subfigure][2][2147483647,70]70b}{[1][143][]143}}
-\newlabel{fig:sub-third}{{70c}{143}{Coherent clustering \& less than 5 hits in x \& y. Events within $\pm 2\sigma $: 956816\relax }{figure.caption.79}{}}
-\newlabel{fig:sub-third@cref}{{[subfigure][3][2147483647,70]70c}{[1][143][]143}}
-\newlabel{sub@fig:sub-third}{{c}{143}{Coherent clustering \& less than 5 hits in x \& y. Events within $\pm 2\sigma $: 956816\relax }{figure.caption.79}{}}
-\newlabel{sub@fig:sub-third@cref}{{[subfigure][3][2147483647,70]70c}{[1][143][]143}}
-\newlabel{fig:sub-fourth}{{70d}{143}{Coherent clustering \& less than 4 hits in x \& y. Events within $\pm 2\sigma $\protect \footnotemark : 304668\relax }{figure.caption.79}{}}
-\newlabel{fig:sub-fourth@cref}{{[subfigure][4][2147483647,70]70d}{[1][143][]143}}
-\newlabel{sub@fig:sub-fourth}{{d}{143}{Coherent clustering \& less than 4 hits in x \& y. Events within $\pm 2\sigma $\protect \footnotemark : 304668\relax }{figure.caption.79}{}}
-\newlabel{sub@fig:sub-fourth@cref}{{[subfigure][4][2147483647,70]70d}{[1][143][]143}}
-\@writefile{lof}{\contentsline {figure}{\numberline {70}{\ignorespaces Overview of methods and cuts to clean up x \& y distribution on MWPC0 from misreconstruction.\relax }}{143}{figure.caption.79}}
-\newlabel{fig:mw0_approaches}{{70}{143}{Overview of methods and cuts to clean up x \& y distribution on MWPC0 from misreconstruction.\relax }{figure.caption.79}{}}
-\newlabel{fig:mw0_approaches@cref}{{[figure][70][2147483647]70}{[1][143][]143}}
-\@writefile{toc}{\contentsline {section}{\numberline {D}Alternative methods for TWIN MUSIC hit selection and charge assignment}{144}{Appendix.1.D}}
-\newlabel{app:twin_alternative}{{D}{144}{Alternative methods for TWIN MUSIC hit selection and charge assignment}{Appendix.1.D}{}}
-\newlabel{app:twin_alternative@cref}{{[appendix][4][2147483647]D}{[1][143][]144}}
-\@writefile{lof}{\contentsline {figure}{\numberline {71}{\ignorespaces  Preliminary estimation of charge-changing cross sections without geometry corrections. The red data points result from considering also events with only hits in the upstream or downstream anodes, the blue data points don't take these events in consideration. \relax }}{144}{figure.caption.80}}
-\newlabel{fig:cccs_with_out_border_3_5}{{71}{144}{Preliminary estimation of charge-changing cross sections without geometry corrections. The red data points result from considering also events with only hits in the upstream or downstream anodes, the blue data points don't take these events in consideration. \relax }{figure.caption.80}{}}
-\newlabel{fig:cccs_with_out_border_3_5@cref}{{[figure][71][2147483647]71}{[1][143][]144}}
+\newlabel{fig:mw23_own_clustering@cref}{{[figure][69][2147483647]69}{[1][140][]142}}
+\@writefile{toc}{\contentsline {section}{\numberline {C}MWPCs -- Efficiency Analysis}{143}{Appendix.1.C}}
+\newlabel{app:mwpcs_eff}{{C}{143}{MWPCs -- Efficiency Analysis}{Appendix.1.C}{}}
+\newlabel{app:mwpcs_eff@cref}{{[appendix][3][2147483647]C}{[1][143][]143}}
+\@writefile{lof}{\contentsline {figure}{\numberline {70}{\ignorespaces  Efficiencies of MWPC1, MWPC2, and MWPC3 obtained with the default and the coherent clustering algorithms. For MWPC1 and MWPC2, a reduction in efficiency is observed at a beam energy of 550 AMeV. In contrast, MWPC3 exhibits a pronounced efficiency loss at 800 AMeV. This behavior can be attributed to the decreasing signal amplitude with increasing beam energy, resulting in signals falling below the detection threshold. \relax }}{143}{figure.caption.79}}
+\newlabel{fig:eff_plot_mwpcs}{{70}{143}{Efficiencies of MWPC1, MWPC2, and MWPC3 obtained with the default and the coherent clustering algorithms. For MWPC1 and MWPC2, a reduction in efficiency is observed at a beam energy of 550 AMeV. In contrast, MWPC3 exhibits a pronounced efficiency loss at 800 AMeV. This behavior can be attributed to the decreasing signal amplitude with increasing beam energy, resulting in signals falling below the detection threshold. \relax }{figure.caption.79}{}}
+\newlabel{fig:eff_plot_mwpcs@cref}{{[figure][70][2147483647]70}{[1][143][]143}}
+\@writefile{lof}{\contentsline {figure}{\numberline {71}{\ignorespaces  Efficiencies for the requirement of particle position identification (in $x$ and $y$) in multiple MWPCs obtained with the default and the coherent clustering algorithms. Subfigure d) shows the ratio of used events for the isotope correction factor, as described in Section~\ref  {sec:iso_corr} , compared to the number of identified carbon isotopes with TWIN MUSIC. \relax }}{144}{figure.caption.80}}
+\newlabel{fig:eff_plot_mwpcs_comb}{{71}{144}{Efficiencies for the requirement of particle position identification (in $x$ and $y$) in multiple MWPCs obtained with the default and the coherent clustering algorithms. Subfigure d) shows the ratio of used events for the isotope correction factor, as described in Section~\ref {sec:iso_corr} , compared to the number of identified carbon isotopes with TWIN MUSIC. \relax }{figure.caption.80}{}}
+\newlabel{fig:eff_plot_mwpcs_comb@cref}{{[figure][71][2147483647]71}{[1][144][]144}}
+\@writefile{toc}{\contentsline {section}{\numberline {D}MWPC0 selection cuts}{145}{Appendix.1.D}}
+\newlabel{app:mw0_cuts}{{D}{145}{MWPC0 selection cuts}{Appendix.1.D}{}}
+\newlabel{app:mw0_cuts@cref}{{[appendix][4][2147483647]D}{[1][145][]145}}
+\newlabel{fig:sub-first}{{72a}{146}{\textit {cal-to-hit} only. Events within $\pm 2\sigma $: $1.6949e+06$\relax }{figure.caption.81}{}}
+\newlabel{fig:sub-first@cref}{{[subfigure][1][2147483647,72]72a}{[1][145][]146}}
+\newlabel{sub@fig:sub-first}{{a}{146}{\textit {cal-to-hit} only. Events within $\pm 2\sigma $: $1.6949e+06$\relax }{figure.caption.81}{}}
+\newlabel{sub@fig:sub-first@cref}{{[subfigure][1][2147483647,72]72a}{[1][145][]146}}
+\newlabel{fig:sub-second}{{72b}{146}{Coherent clustering. Events within $\pm 2\sigma $: $1.34349e+06$\relax }{figure.caption.81}{}}
+\newlabel{fig:sub-second@cref}{{[subfigure][2][2147483647,72]72b}{[1][145][]146}}
+\newlabel{sub@fig:sub-second}{{b}{146}{Coherent clustering. Events within $\pm 2\sigma $: $1.34349e+06$\relax }{figure.caption.81}{}}
+\newlabel{sub@fig:sub-second@cref}{{[subfigure][2][2147483647,72]72b}{[1][145][]146}}
+\newlabel{fig:sub-third}{{72c}{146}{Coherent clustering \& less than 5 hits in x \& y. Events within $\pm 2\sigma $: 956816\relax }{figure.caption.81}{}}
+\newlabel{fig:sub-third@cref}{{[subfigure][3][2147483647,72]72c}{[1][145][]146}}
+\newlabel{sub@fig:sub-third}{{c}{146}{Coherent clustering \& less than 5 hits in x \& y. Events within $\pm 2\sigma $: 956816\relax }{figure.caption.81}{}}
+\newlabel{sub@fig:sub-third@cref}{{[subfigure][3][2147483647,72]72c}{[1][145][]146}}
+\newlabel{fig:sub-fourth}{{72d}{146}{Coherent clustering \& less than 4 hits in x \& y. Events within $\pm 2\sigma $\protect \footnotemark : 304668\relax }{figure.caption.81}{}}
+\newlabel{fig:sub-fourth@cref}{{[subfigure][4][2147483647,72]72d}{[1][145][]146}}
+\newlabel{sub@fig:sub-fourth}{{d}{146}{Coherent clustering \& less than 4 hits in x \& y. Events within $\pm 2\sigma $\protect \footnotemark : 304668\relax }{figure.caption.81}{}}
+\newlabel{sub@fig:sub-fourth@cref}{{[subfigure][4][2147483647,72]72d}{[1][145][]146}}
+\@writefile{lof}{\contentsline {figure}{\numberline {72}{\ignorespaces Overview of methods and cuts to clean up x \& y distribution on MWPC0 from misreconstruction.\relax }}{146}{figure.caption.81}}
+\newlabel{fig:mw0_approaches}{{72}{146}{Overview of methods and cuts to clean up x \& y distribution on MWPC0 from misreconstruction.\relax }{figure.caption.81}{}}
+\newlabel{fig:mw0_approaches@cref}{{[figure][72][2147483647]72}{[1][145][]146}}
+\@writefile{toc}{\contentsline {section}{\numberline {E}Alternative methods for TWIN MUSIC hit selection and charge assignment}{147}{Appendix.1.E}}
+\newlabel{app:twin_alternative}{{E}{147}{Alternative methods for TWIN MUSIC hit selection and charge assignment}{Appendix.1.E}{}}
+\newlabel{app:twin_alternative@cref}{{[appendix][5][2147483647]E}{[1][147][]147}}
+\@writefile{lof}{\contentsline {figure}{\numberline {73}{\ignorespaces  Preliminary estimation of charge-changing cross sections without geometry corrections. The red data points result from considering also events with only hits in the upstream or downstream anodes, the blue data points don't take these events in consideration. \relax }}{147}{figure.caption.82}}
+\newlabel{fig:cccs_with_out_border_3_5}{{73}{147}{Preliminary estimation of charge-changing cross sections without geometry corrections. The red data points result from considering also events with only hits in the upstream or downstream anodes, the blue data points don't take these events in consideration. \relax }{figure.caption.82}{}}
+\newlabel{fig:cccs_with_out_border_3_5@cref}{{[figure][73][2147483647]73}{[1][147][]147}}
 \citation{bethe1930theorie}
-\@writefile{lof}{\contentsline {figure}{\numberline {72}{\ignorespaces  Diagonal cut on identified carbon isotopes along the Gaussian 3.5 $\sigma $ cut with borders. All hits above the diagonal line are counted as carbon isotopes. Histogram from thick target run, 550 AMeV beam energy. \relax }}{145}{figure.caption.81}}
-\newlabel{fig:diagonal_cut_twim}{{72}{145}{Diagonal cut on identified carbon isotopes along the Gaussian 3.5 $\sigma $ cut with borders. All hits above the diagonal line are counted as carbon isotopes. Histogram from thick target run, 550 AMeV beam energy. \relax }{figure.caption.81}{}}
-\newlabel{fig:diagonal_cut_twim@cref}{{[figure][72][2147483647]72}{[1][144][]145}}
-\@writefile{lof}{\contentsline {figure}{\numberline {73}{\ignorespaces  Comparison of the preliminary estimation of charge-changing cross sections measured via 2D Gaussian fit cut and diagonal cut. The differences are within the margin of error. \relax }}{146}{figure.caption.82}}
-\newlabel{fig:cccs_gaus_vs_diag}{{73}{146}{Comparison of the preliminary estimation of charge-changing cross sections measured via 2D Gaussian fit cut and diagonal cut. The differences are within the margin of error. \relax }{figure.caption.82}{}}
-\newlabel{fig:cccs_gaus_vs_diag@cref}{{[figure][73][2147483647]73}{[1][144][]146}}
-\@writefile{lof}{\contentsline {figure}{\numberline {74}{\ignorespaces  Measurement of charge changing cross sections using different anode sections to make the two dimensional Gaussian fit on the identified carbon isotopes. Red: using all 16 anodes. Blue: the various combinations. \relax }}{147}{figure.caption.83}}
-\newlabel{fig:cccs_gaus_diff_sections}{{74}{147}{Measurement of charge changing cross sections using different anode sections to make the two dimensional Gaussian fit on the identified carbon isotopes. Red: using all 16 anodes. Blue: the various combinations. \relax }{figure.caption.83}{}}
-\newlabel{fig:cccs_gaus_diff_sections@cref}{{[figure][74][2147483647]74}{[1][145][]147}}
-\@writefile{lof}{\contentsline {figure}{\numberline {75}{\ignorespaces  Comparison of charge changing cross section measurements when using time sorting algorithm(red) and energy sorting algorithm(blue) for multi-hit anodes. \relax }}{147}{figure.caption.84}}
-\newlabel{fig:cccs_gaus_time_vs_energy}{{75}{147}{Comparison of charge changing cross section measurements when using time sorting algorithm(red) and energy sorting algorithm(blue) for multi-hit anodes. \relax }{figure.caption.84}{}}
-\newlabel{fig:cccs_gaus_time_vs_energy@cref}{{[figure][75][2147483647]75}{[1][145][]147}}
-\@writefile{toc}{\contentsline {section}{\numberline {E}TWIN MUSIC Geometric Acceptance Correction via Efficiency Measurement}{148}{Appendix.1.E}}
-\newlabel{eq:twin_eff}{{93}{148}{TWIN MUSIC Geometric Acceptance Correction via Efficiency Measurement}{equation.1.E.93}{}}
-\newlabel{eq:twin_eff@cref}{{[equation][93][2147483647]93}{[1][148][]148}}
-\@writefile{lof}{\contentsline {figure}{\numberline {76}{\ignorespaces  Charge changing cross section correction due to limited geometric acceptance of TWIN MUSIC via efficiency correction with MWPC1 and MWPC2. In gray: charge changing cross section measurements before applying corrections, as in Fig.~\ref  {fig:cccs_gaus_diff_sections}\relax }}{148}{figure.caption.85}}
-\newlabel{fig:twim_corr_cc_cs}{{76}{148}{Charge changing cross section correction due to limited geometric acceptance of TWIN MUSIC via efficiency correction with MWPC1 and MWPC2. In gray: charge changing cross section measurements before applying corrections, as in Fig.~\ref {fig:cccs_gaus_diff_sections}\relax }{figure.caption.85}{}}
-\newlabel{fig:twim_corr_cc_cs@cref}{{[figure][76][2147483647]76}{[1][148][]148}}
-\@writefile{lof}{\contentsline {figure}{\numberline {77}{\ignorespaces  Total interaction cross section of $^{12}$C + $^{12}$C using the TWIN MUSIC efficiency correction factor, see equation \ref  {eq:twin_eff}, to compensate for the limited geometric acceptance in TWIN MUSIC.\relax }}{149}{figure.caption.86}}
-\newlabel{fig:twim_corr_tot_cs}{{77}{149}{Total interaction cross section of $^{12}$C + $^{12}$C using the TWIN MUSIC efficiency correction factor, see equation \ref {eq:twin_eff}, to compensate for the limited geometric acceptance in TWIN MUSIC.\relax }{figure.caption.86}{}}
-\newlabel{fig:twim_corr_tot_cs@cref}{{[figure][77][2147483647]77}{[1][148][]149}}
-\@writefile{toc}{\contentsline {section}{\numberline {F}Flight-Path Reconstruction}{149}{Appendix.1.F}}
-\newlabel{app:flightpath}{{F}{149}{Flight-Path Reconstruction}{Appendix.1.F}{}}
-\newlabel{app:flightpath@cref}{{[appendix][6][2147483647]F}{[1][149][]149}}
-\@writefile{lof}{\contentsline {figure}{\numberline {78}{\ignorespaces  Flightpath reconstruction with reference positions $(z_0,x_0)$, $(z_1,x_1)$ and $(z_2,x_2)$. The GLAD magnet is tilted by $\alpha = 14^{\circ }$.\relax }}{150}{figure.caption.87}}
-\newlabel{fig:draw_flight}{{78}{150}{Flightpath reconstruction with reference positions $(z_0,x_0)$, $(z_1,x_1)$ and $(z_2,x_2)$. The GLAD magnet is tilted by $\alpha = 14^{\circ }$.\relax }{figure.caption.87}{}}
-\newlabel{fig:draw_flight@cref}{{[figure][78][2147483647]78}{[1][149][]150}}
-\@writefile{toc}{\contentsline {section}{\numberline {G}Dead Time Uncertainties in TWIN MUSIC}{151}{Appendix.1.G}}
-\newlabel{app:twin_uncert}{{G}{151}{Dead Time Uncertainties in TWIN MUSIC}{Appendix.1.G}{}}
-\newlabel{app:twin_uncert@cref}{{[appendix][7][2147483647]G}{[1][151][]151}}
-\newlabel{sfig:mw1xy_zero_twin}{{79a}{151}{MWPC1 $x$-$y$ distribution for events without any signal in TWIN MUSIC. The red rectangle marks the beam spot within the active area of TWIN MUSIC.\relax }{figure.caption.88}{}}
-\newlabel{sfig:mw1xy_zero_twin@cref}{{[subfigure][1][2147483647,79]79a}{[1][151][]151}}
-\newlabel{sub@sfig:mw1xy_zero_twin}{{a}{151}{MWPC1 $x$-$y$ distribution for events without any signal in TWIN MUSIC. The red rectangle marks the beam spot within the active area of TWIN MUSIC.\relax }{figure.caption.88}{}}
-\newlabel{sub@sfig:mw1xy_zero_twin@cref}{{[subfigure][1][2147483647,79]79a}{[1][151][]151}}
-\newlabel{sfig:rate_dead_twin_active}{{79b}{151}{Rate of events without any signal in the TWIN MUSIC active area, normalized to the number of incoming ions $N_1$.\relax }{figure.caption.88}{}}
-\newlabel{sfig:rate_dead_twin_active@cref}{{[subfigure][2][2147483647,79]79b}{[1][151][]151}}
-\newlabel{sub@sfig:rate_dead_twin_active}{{b}{151}{Rate of events without any signal in the TWIN MUSIC active area, normalized to the number of incoming ions $N_1$.\relax }{figure.caption.88}{}}
-\newlabel{sub@sfig:rate_dead_twin_active@cref}{{[subfigure][2][2147483647,79]79b}{[1][151][]151}}
-\@writefile{lof}{\contentsline {figure}{\numberline {79}{\ignorespaces Overview -- Events without signal in TWIN MUSIC.\relax }}{151}{figure.caption.88}}
-\newlabel{fig:mwpc23_proj_procedure}{{79}{151}{Overview -- Events without signal in TWIN MUSIC.\relax }{figure.caption.88}{}}
-\newlabel{fig:mwpc23_proj_procedure@cref}{{[figure][79][2147483647]79}{[1][151][]151}}
-\@writefile{toc}{\contentsline {section}{\numberline {H}Charge changing cross sections}{153}{Appendix.1.H}}
-\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Measured charge changing cross sections $\sigma _{\text  {cc}}$ with statistical and systematic uncertainties for \(^{12}\)C targets of various thicknesses at different beam energies.\relax }}{153}{table.caption.89}}
-\@writefile{toc}{\contentsline {section}{\numberline {I}Carbon isotopes fitting}{154}{Appendix.1.I}}
-\newlabel{app:fit_carbon}{{I}{154}{Carbon isotopes fitting}{Appendix.1.I}{}}
-\newlabel{app:fit_carbon@cref}{{[appendix][9][2147483647]I}{[1][154][]154}}
-\newlabel{fig:a}{{80a}{154}{Empty target\relax }{figure.caption.90}{}}
-\newlabel{fig:a@cref}{{[subfigure][1][2147483647,80]80a}{[1][154][]154}}
-\newlabel{sub@fig:a}{{a}{154}{Empty target\relax }{figure.caption.90}{}}
-\newlabel{sub@fig:a@cref}{{[subfigure][1][2147483647,80]80a}{[1][154][]154}}
-\newlabel{fig:b}{{80b}{154}{Thin target, 0.54~cm\relax }{figure.caption.90}{}}
-\newlabel{fig:b@cref}{{[subfigure][2][2147483647,80]80b}{[1][154][]154}}
-\newlabel{sub@fig:b}{{b}{154}{Thin target, 0.54~cm\relax }{figure.caption.90}{}}
-\newlabel{sub@fig:b@cref}{{[subfigure][2][2147483647,80]80b}{[1][154][]154}}
-\newlabel{fig:c}{{80c}{154}{Medium target, 1.08~cm\relax }{figure.caption.90}{}}
-\newlabel{fig:c@cref}{{[subfigure][3][2147483647,80]80c}{[1][154][]154}}
-\newlabel{sub@fig:c}{{c}{154}{Medium target, 1.08~cm\relax }{figure.caption.90}{}}
-\newlabel{sub@fig:c@cref}{{[subfigure][3][2147483647,80]80c}{[1][154][]154}}
-\newlabel{fig:d}{{80d}{154}{Thick target, 2.19~cm\relax }{figure.caption.90}{}}
-\newlabel{fig:d@cref}{{[subfigure][4][2147483647,80]80d}{[1][154][]154}}
-\newlabel{sub@fig:d}{{d}{154}{Thick target, 2.19~cm\relax }{figure.caption.90}{}}
-\newlabel{sub@fig:d@cref}{{[subfigure][4][2147483647,80]80d}{[1][154][]154}}
-\@writefile{lof}{\contentsline {figure}{\numberline {80}{\ignorespaces Histogram fits for runs with 400 AMeV beam energy\relax }}{154}{figure.caption.90}}
-\newlabel{Label}{{80}{154}{Histogram fits for runs with 400 AMeV beam energy\relax }{figure.caption.90}{}}
-\newlabel{Label@cref}{{[figure][80][2147483647]80}{[1][154][]154}}
-\newlabel{fig:a}{{81a}{155}{Empty target\relax }{figure.caption.91}{}}
-\newlabel{fig:a@cref}{{[subfigure][1][2147483647,81]81a}{[1][154][]155}}
-\newlabel{sub@fig:a}{{a}{155}{Empty target\relax }{figure.caption.91}{}}
-\newlabel{sub@fig:a@cref}{{[subfigure][1][2147483647,81]81a}{[1][154][]155}}
-\newlabel{fig:b}{{81b}{155}{Thin target, 0.54~cm\relax }{figure.caption.91}{}}
-\newlabel{fig:b@cref}{{[subfigure][2][2147483647,81]81b}{[1][154][]155}}
-\newlabel{sub@fig:b}{{b}{155}{Thin target, 0.54~cm\relax }{figure.caption.91}{}}
-\newlabel{sub@fig:b@cref}{{[subfigure][2][2147483647,81]81b}{[1][154][]155}}
-\newlabel{fig:c}{{81c}{155}{Medium target, 1.08~cm\relax }{figure.caption.91}{}}
-\newlabel{fig:c@cref}{{[subfigure][3][2147483647,81]81c}{[1][154][]155}}
-\newlabel{sub@fig:c}{{c}{155}{Medium target, 1.08~cm\relax }{figure.caption.91}{}}
-\newlabel{sub@fig:c@cref}{{[subfigure][3][2147483647,81]81c}{[1][154][]155}}
-\newlabel{fig:d}{{81d}{155}{Thick target, 2.19~cm\relax }{figure.caption.91}{}}
-\newlabel{fig:d@cref}{{[subfigure][4][2147483647,81]81d}{[1][154][]155}}
-\newlabel{sub@fig:d}{{d}{155}{Thick target, 2.19~cm\relax }{figure.caption.91}{}}
-\newlabel{sub@fig:d@cref}{{[subfigure][4][2147483647,81]81d}{[1][154][]155}}
-\@writefile{lof}{\contentsline {figure}{\numberline {81}{\ignorespaces Histogram fits for runs with 550 AMeV beam energy\relax }}{155}{figure.caption.91}}
-\newlabel{Label}{{81}{155}{Histogram fits for runs with 550 AMeV beam energy\relax }{figure.caption.91}{}}
-\newlabel{Label@cref}{{[figure][81][2147483647]81}{[1][154][]155}}
-\newlabel{fig:a}{{82a}{155}{Empty target\relax }{figure.caption.92}{}}
-\newlabel{fig:a@cref}{{[subfigure][1][2147483647,82]82a}{[1][154][]155}}
-\newlabel{sub@fig:a}{{a}{155}{Empty target\relax }{figure.caption.92}{}}
-\newlabel{sub@fig:a@cref}{{[subfigure][1][2147483647,82]82a}{[1][154][]155}}
-\newlabel{fig:b}{{82b}{155}{Thin target, 0.54~cm\relax }{figure.caption.92}{}}
-\newlabel{fig:b@cref}{{[subfigure][2][2147483647,82]82b}{[1][154][]155}}
-\newlabel{sub@fig:b}{{b}{155}{Thin target, 0.54~cm\relax }{figure.caption.92}{}}
-\newlabel{sub@fig:b@cref}{{[subfigure][2][2147483647,82]82b}{[1][154][]155}}
-\newlabel{fig:c}{{82c}{155}{Medium target, 1.08~cm\relax }{figure.caption.92}{}}
-\newlabel{fig:c@cref}{{[subfigure][3][2147483647,82]82c}{[1][154][]155}}
-\newlabel{sub@fig:c}{{c}{155}{Medium target, 1.08~cm\relax }{figure.caption.92}{}}
-\newlabel{sub@fig:c@cref}{{[subfigure][3][2147483647,82]82c}{[1][154][]155}}
-\newlabel{fig:d}{{82d}{155}{Thick target, 2,19~cm\relax }{figure.caption.92}{}}
-\newlabel{fig:d@cref}{{[subfigure][4][2147483647,82]82d}{[1][154][]155}}
-\newlabel{sub@fig:d}{{d}{155}{Thick target, 2,19~cm\relax }{figure.caption.92}{}}
-\newlabel{sub@fig:d@cref}{{[subfigure][4][2147483647,82]82d}{[1][154][]155}}
-\@writefile{lof}{\contentsline {figure}{\numberline {82}{\ignorespaces Histogram fits for runs with 650 AMeV beam energy\relax }}{155}{figure.caption.92}}
-\newlabel{Label}{{82}{155}{Histogram fits for runs with 650 AMeV beam energy\relax }{figure.caption.92}{}}
-\newlabel{Label@cref}{{[figure][82][2147483647]82}{[1][154][]155}}
-\newlabel{fig:a}{{83a}{156}{Empty target\relax }{figure.caption.93}{}}
-\newlabel{fig:a@cref}{{[subfigure][1][2147483647,83]83a}{[1][154][]156}}
-\newlabel{sub@fig:a}{{a}{156}{Empty target\relax }{figure.caption.93}{}}
-\newlabel{sub@fig:a@cref}{{[subfigure][1][2147483647,83]83a}{[1][154][]156}}
-\newlabel{fig:b}{{83b}{156}{Thin target, 0.54~cm\relax }{figure.caption.93}{}}
-\newlabel{fig:b@cref}{{[subfigure][2][2147483647,83]83b}{[1][154][]156}}
-\newlabel{sub@fig:b}{{b}{156}{Thin target, 0.54~cm\relax }{figure.caption.93}{}}
-\newlabel{sub@fig:b@cref}{{[subfigure][2][2147483647,83]83b}{[1][154][]156}}
-\newlabel{fig:c}{{83c}{156}{Medium target, 1.08~cm\relax }{figure.caption.93}{}}
-\newlabel{fig:c@cref}{{[subfigure][3][2147483647,83]83c}{[1][154][]156}}
-\newlabel{sub@fig:c}{{c}{156}{Medium target, 1.08~cm\relax }{figure.caption.93}{}}
-\newlabel{sub@fig:c@cref}{{[subfigure][3][2147483647,83]83c}{[1][154][]156}}
-\newlabel{fig:d}{{83d}{156}{Thick target, 2.19~cm\relax }{figure.caption.93}{}}
-\newlabel{fig:d@cref}{{[subfigure][4][2147483647,83]83d}{[1][154][]156}}
-\newlabel{sub@fig:d}{{d}{156}{Thick target, 2.19~cm\relax }{figure.caption.93}{}}
-\newlabel{sub@fig:d@cref}{{[subfigure][4][2147483647,83]83d}{[1][154][]156}}
-\@writefile{lof}{\contentsline {figure}{\numberline {83}{\ignorespaces Histogram fits for runs with 800 AMeV beam energy\relax }}{156}{figure.caption.93}}
-\newlabel{Label}{{83}{156}{Histogram fits for runs with 800 AMeV beam energy\relax }{figure.caption.93}{}}
-\newlabel{Label@cref}{{[figure][83][2147483647]83}{[1][154][]156}}
-\@writefile{toc}{\contentsline {section}{\numberline {J}Isotope correction contributions}{157}{Appendix.1.J}}
-\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Measured isotope correction contribution $\sigma _{\text  {iso}}$ with statistical and systematic uncertainties for \(^{12}\)C targets of various thicknesses at different beam energies.\relax }}{157}{table.caption.94}}
+\@writefile{lof}{\contentsline {figure}{\numberline {74}{\ignorespaces  Diagonal cut on identified carbon isotopes along the Gaussian 3.5 $\sigma $ cut with borders. All hits above the diagonal line are counted as carbon isotopes. Histogram from thick target run, 550 AMeV beam energy. \relax }}{148}{figure.caption.83}}
+\newlabel{fig:diagonal_cut_twim}{{74}{148}{Diagonal cut on identified carbon isotopes along the Gaussian 3.5 $\sigma $ cut with borders. All hits above the diagonal line are counted as carbon isotopes. Histogram from thick target run, 550 AMeV beam energy. \relax }{figure.caption.83}{}}
+\newlabel{fig:diagonal_cut_twim@cref}{{[figure][74][2147483647]74}{[1][147][]148}}
+\@writefile{lof}{\contentsline {figure}{\numberline {75}{\ignorespaces  Comparison of the preliminary estimation of charge-changing cross sections measured via 2D Gaussian fit cut and diagonal cut. The differences are within the margin of error. \relax }}{149}{figure.caption.84}}
+\newlabel{fig:cccs_gaus_vs_diag}{{75}{149}{Comparison of the preliminary estimation of charge-changing cross sections measured via 2D Gaussian fit cut and diagonal cut. The differences are within the margin of error. \relax }{figure.caption.84}{}}
+\newlabel{fig:cccs_gaus_vs_diag@cref}{{[figure][75][2147483647]75}{[1][147][]149}}
+\@writefile{lof}{\contentsline {figure}{\numberline {76}{\ignorespaces  Measurement of charge changing cross sections using different anode sections to make the two dimensional Gaussian fit on the identified carbon isotopes. Red: using all 16 anodes. Blue: the various combinations. \relax }}{150}{figure.caption.85}}
+\newlabel{fig:cccs_gaus_diff_sections}{{76}{150}{Measurement of charge changing cross sections using different anode sections to make the two dimensional Gaussian fit on the identified carbon isotopes. Red: using all 16 anodes. Blue: the various combinations. \relax }{figure.caption.85}{}}
+\newlabel{fig:cccs_gaus_diff_sections@cref}{{[figure][76][2147483647]76}{[1][148][]150}}
+\@writefile{lof}{\contentsline {figure}{\numberline {77}{\ignorespaces  Comparison of charge changing cross section measurements when using time sorting algorithm(red) and energy sorting algorithm(blue) for multi-hit anodes. \relax }}{150}{figure.caption.86}}
+\newlabel{fig:cccs_gaus_time_vs_energy}{{77}{150}{Comparison of charge changing cross section measurements when using time sorting algorithm(red) and energy sorting algorithm(blue) for multi-hit anodes. \relax }{figure.caption.86}{}}
+\newlabel{fig:cccs_gaus_time_vs_energy@cref}{{[figure][77][2147483647]77}{[1][148][]150}}
+\@writefile{toc}{\contentsline {section}{\numberline {F}TWIN MUSIC Geometric Acceptance Correction via Efficiency Measurement}{151}{Appendix.1.F}}
+\newlabel{eq:twin_eff}{{94}{151}{TWIN MUSIC Geometric Acceptance Correction via Efficiency Measurement}{equation.1.F.94}{}}
+\newlabel{eq:twin_eff@cref}{{[equation][94][2147483647]94}{[1][151][]151}}
+\@writefile{lof}{\contentsline {figure}{\numberline {78}{\ignorespaces  Charge changing cross section correction due to limited geometric acceptance of TWIN MUSIC via efficiency correction with MWPC1 and MWPC2. In gray: charge changing cross section measurements before applying corrections, as in Fig.~\ref  {fig:cccs_gaus_diff_sections}\relax }}{151}{figure.caption.87}}
+\newlabel{fig:twim_corr_cc_cs}{{78}{151}{Charge changing cross section correction due to limited geometric acceptance of TWIN MUSIC via efficiency correction with MWPC1 and MWPC2. In gray: charge changing cross section measurements before applying corrections, as in Fig.~\ref {fig:cccs_gaus_diff_sections}\relax }{figure.caption.87}{}}
+\newlabel{fig:twim_corr_cc_cs@cref}{{[figure][78][2147483647]78}{[1][151][]151}}
+\@writefile{lof}{\contentsline {figure}{\numberline {79}{\ignorespaces  Total interaction cross section of $^{12}$C + $^{12}$C using the TWIN MUSIC efficiency correction factor, see equation \ref  {eq:twin_eff}, to compensate for the limited geometric acceptance in TWIN MUSIC.\relax }}{152}{figure.caption.88}}
+\newlabel{fig:twim_corr_tot_cs}{{79}{152}{Total interaction cross section of $^{12}$C + $^{12}$C using the TWIN MUSIC efficiency correction factor, see equation \ref {eq:twin_eff}, to compensate for the limited geometric acceptance in TWIN MUSIC.\relax }{figure.caption.88}{}}
+\newlabel{fig:twim_corr_tot_cs@cref}{{[figure][79][2147483647]79}{[1][151][]152}}
+\@writefile{toc}{\contentsline {section}{\numberline {G}Flight-Path Reconstruction}{153}{Appendix.1.G}}
+\newlabel{app:flightpath}{{G}{153}{Flight-Path Reconstruction}{Appendix.1.G}{}}
+\newlabel{app:flightpath@cref}{{[appendix][7][2147483647]G}{[1][153][]153}}
+\@writefile{lof}{\contentsline {figure}{\numberline {80}{\ignorespaces  Flightpath reconstruction with reference positions $(z_0,x_0)$, $(z_1,x_1)$ and $(z_2,x_2)$. The GLAD magnet is tilted by $\alpha = 14^{\circ }$.\relax }}{153}{figure.caption.89}}
+\newlabel{fig:draw_flight}{{80}{153}{Flightpath reconstruction with reference positions $(z_0,x_0)$, $(z_1,x_1)$ and $(z_2,x_2)$. The GLAD magnet is tilted by $\alpha = 14^{\circ }$.\relax }{figure.caption.89}{}}
+\newlabel{fig:draw_flight@cref}{{[figure][80][2147483647]80}{[1][153][]153}}
+\@writefile{toc}{\contentsline {section}{\numberline {H}Dead Time Uncertainties in TWIN MUSIC}{155}{Appendix.1.H}}
+\newlabel{app:twin_uncert}{{H}{155}{Dead Time Uncertainties in TWIN MUSIC}{Appendix.1.H}{}}
+\newlabel{app:twin_uncert@cref}{{[appendix][8][2147483647]H}{[1][155][]155}}
+\newlabel{sfig:mw1xy_zero_twin}{{81a}{155}{MWPC1 $x$-$y$ distribution for events without any signal in TWIN MUSIC. The red rectangle marks the beam spot within the active area of TWIN MUSIC.\relax }{figure.caption.90}{}}
+\newlabel{sfig:mw1xy_zero_twin@cref}{{[subfigure][1][2147483647,81]81a}{[1][155][]155}}
+\newlabel{sub@sfig:mw1xy_zero_twin}{{a}{155}{MWPC1 $x$-$y$ distribution for events without any signal in TWIN MUSIC. The red rectangle marks the beam spot within the active area of TWIN MUSIC.\relax }{figure.caption.90}{}}
+\newlabel{sub@sfig:mw1xy_zero_twin@cref}{{[subfigure][1][2147483647,81]81a}{[1][155][]155}}
+\newlabel{sfig:rate_dead_twin_active}{{81b}{155}{Rate of events without any signal in the TWIN MUSIC active area, normalized to the number of incoming ions $N_1$.\relax }{figure.caption.90}{}}
+\newlabel{sfig:rate_dead_twin_active@cref}{{[subfigure][2][2147483647,81]81b}{[1][155][]155}}
+\newlabel{sub@sfig:rate_dead_twin_active}{{b}{155}{Rate of events without any signal in the TWIN MUSIC active area, normalized to the number of incoming ions $N_1$.\relax }{figure.caption.90}{}}
+\newlabel{sub@sfig:rate_dead_twin_active@cref}{{[subfigure][2][2147483647,81]81b}{[1][155][]155}}
+\@writefile{lof}{\contentsline {figure}{\numberline {81}{\ignorespaces Overview -- Events without signal in TWIN MUSIC.\relax }}{155}{figure.caption.90}}
+\newlabel{fig:mwpc23_proj_procedure}{{81}{155}{Overview -- Events without signal in TWIN MUSIC.\relax }{figure.caption.90}{}}
+\newlabel{fig:mwpc23_proj_procedure@cref}{{[figure][81][2147483647]81}{[1][155][]155}}
+\@writefile{toc}{\contentsline {section}{\numberline {I}Charge changing cross sections}{157}{Appendix.1.I}}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Measured charge changing cross sections $\sigma _{\text  {cc}}$ with statistical and systematic uncertainties for \(^{12}\)C targets of various thicknesses at different beam energies.\relax }}{157}{table.caption.91}}
+\@writefile{toc}{\contentsline {section}{\numberline {J}Carbon isotopes fitting}{158}{Appendix.1.J}}
+\newlabel{app:fit_carbon}{{J}{158}{Carbon isotopes fitting}{Appendix.1.J}{}}
+\newlabel{app:fit_carbon@cref}{{[appendix][10][2147483647]J}{[1][158][]158}}
+\newlabel{fig:a}{{82a}{158}{Empty target\relax }{figure.caption.92}{}}
+\newlabel{fig:a@cref}{{[subfigure][1][2147483647,82]82a}{[1][158][]158}}
+\newlabel{sub@fig:a}{{a}{158}{Empty target\relax }{figure.caption.92}{}}
+\newlabel{sub@fig:a@cref}{{[subfigure][1][2147483647,82]82a}{[1][158][]158}}
+\newlabel{fig:b}{{82b}{158}{Thin target, 0.54~cm\relax }{figure.caption.92}{}}
+\newlabel{fig:b@cref}{{[subfigure][2][2147483647,82]82b}{[1][158][]158}}
+\newlabel{sub@fig:b}{{b}{158}{Thin target, 0.54~cm\relax }{figure.caption.92}{}}
+\newlabel{sub@fig:b@cref}{{[subfigure][2][2147483647,82]82b}{[1][158][]158}}
+\newlabel{fig:c}{{82c}{158}{Medium target, 1.08~cm\relax }{figure.caption.92}{}}
+\newlabel{fig:c@cref}{{[subfigure][3][2147483647,82]82c}{[1][158][]158}}
+\newlabel{sub@fig:c}{{c}{158}{Medium target, 1.08~cm\relax }{figure.caption.92}{}}
+\newlabel{sub@fig:c@cref}{{[subfigure][3][2147483647,82]82c}{[1][158][]158}}
+\newlabel{fig:d}{{82d}{158}{Thick target, 2.19~cm\relax }{figure.caption.92}{}}
+\newlabel{fig:d@cref}{{[subfigure][4][2147483647,82]82d}{[1][158][]158}}
+\newlabel{sub@fig:d}{{d}{158}{Thick target, 2.19~cm\relax }{figure.caption.92}{}}
+\newlabel{sub@fig:d@cref}{{[subfigure][4][2147483647,82]82d}{[1][158][]158}}
+\@writefile{lof}{\contentsline {figure}{\numberline {82}{\ignorespaces Histogram fits for runs with 400 AMeV beam energy\relax }}{158}{figure.caption.92}}
+\newlabel{Label}{{82}{158}{Histogram fits for runs with 400 AMeV beam energy\relax }{figure.caption.92}{}}
+\newlabel{Label@cref}{{[figure][82][2147483647]82}{[1][158][]158}}
+\newlabel{fig:a}{{83a}{159}{Empty target\relax }{figure.caption.93}{}}
+\newlabel{fig:a@cref}{{[subfigure][1][2147483647,83]83a}{[1][158][]159}}
+\newlabel{sub@fig:a}{{a}{159}{Empty target\relax }{figure.caption.93}{}}
+\newlabel{sub@fig:a@cref}{{[subfigure][1][2147483647,83]83a}{[1][158][]159}}
+\newlabel{fig:b}{{83b}{159}{Thin target, 0.54~cm\relax }{figure.caption.93}{}}
+\newlabel{fig:b@cref}{{[subfigure][2][2147483647,83]83b}{[1][158][]159}}
+\newlabel{sub@fig:b}{{b}{159}{Thin target, 0.54~cm\relax }{figure.caption.93}{}}
+\newlabel{sub@fig:b@cref}{{[subfigure][2][2147483647,83]83b}{[1][158][]159}}
+\newlabel{fig:c}{{83c}{159}{Medium target, 1.08~cm\relax }{figure.caption.93}{}}
+\newlabel{fig:c@cref}{{[subfigure][3][2147483647,83]83c}{[1][158][]159}}
+\newlabel{sub@fig:c}{{c}{159}{Medium target, 1.08~cm\relax }{figure.caption.93}{}}
+\newlabel{sub@fig:c@cref}{{[subfigure][3][2147483647,83]83c}{[1][158][]159}}
+\newlabel{fig:d}{{83d}{159}{Thick target, 2.19~cm\relax }{figure.caption.93}{}}
+\newlabel{fig:d@cref}{{[subfigure][4][2147483647,83]83d}{[1][158][]159}}
+\newlabel{sub@fig:d}{{d}{159}{Thick target, 2.19~cm\relax }{figure.caption.93}{}}
+\newlabel{sub@fig:d@cref}{{[subfigure][4][2147483647,83]83d}{[1][158][]159}}
+\@writefile{lof}{\contentsline {figure}{\numberline {83}{\ignorespaces Histogram fits for runs with 550 AMeV beam energy\relax }}{159}{figure.caption.93}}
+\newlabel{Label}{{83}{159}{Histogram fits for runs with 550 AMeV beam energy\relax }{figure.caption.93}{}}
+\newlabel{Label@cref}{{[figure][83][2147483647]83}{[1][158][]159}}
+\newlabel{fig:a}{{84a}{159}{Empty target\relax }{figure.caption.94}{}}
+\newlabel{fig:a@cref}{{[subfigure][1][2147483647,84]84a}{[1][158][]159}}
+\newlabel{sub@fig:a}{{a}{159}{Empty target\relax }{figure.caption.94}{}}
+\newlabel{sub@fig:a@cref}{{[subfigure][1][2147483647,84]84a}{[1][158][]159}}
+\newlabel{fig:b}{{84b}{159}{Thin target, 0.54~cm\relax }{figure.caption.94}{}}
+\newlabel{fig:b@cref}{{[subfigure][2][2147483647,84]84b}{[1][158][]159}}
+\newlabel{sub@fig:b}{{b}{159}{Thin target, 0.54~cm\relax }{figure.caption.94}{}}
+\newlabel{sub@fig:b@cref}{{[subfigure][2][2147483647,84]84b}{[1][158][]159}}
+\newlabel{fig:c}{{84c}{159}{Medium target, 1.08~cm\relax }{figure.caption.94}{}}
+\newlabel{fig:c@cref}{{[subfigure][3][2147483647,84]84c}{[1][158][]159}}
+\newlabel{sub@fig:c}{{c}{159}{Medium target, 1.08~cm\relax }{figure.caption.94}{}}
+\newlabel{sub@fig:c@cref}{{[subfigure][3][2147483647,84]84c}{[1][158][]159}}
+\newlabel{fig:d}{{84d}{159}{Thick target, 2,19~cm\relax }{figure.caption.94}{}}
+\newlabel{fig:d@cref}{{[subfigure][4][2147483647,84]84d}{[1][158][]159}}
+\newlabel{sub@fig:d}{{d}{159}{Thick target, 2,19~cm\relax }{figure.caption.94}{}}
+\newlabel{sub@fig:d@cref}{{[subfigure][4][2147483647,84]84d}{[1][158][]159}}
+\@writefile{lof}{\contentsline {figure}{\numberline {84}{\ignorespaces Histogram fits for runs with 650 AMeV beam energy\relax }}{159}{figure.caption.94}}
+\newlabel{Label}{{84}{159}{Histogram fits for runs with 650 AMeV beam energy\relax }{figure.caption.94}{}}
+\newlabel{Label@cref}{{[figure][84][2147483647]84}{[1][158][]159}}
+\newlabel{fig:a}{{85a}{160}{Empty target\relax }{figure.caption.95}{}}
+\newlabel{fig:a@cref}{{[subfigure][1][2147483647,85]85a}{[1][158][]160}}
+\newlabel{sub@fig:a}{{a}{160}{Empty target\relax }{figure.caption.95}{}}
+\newlabel{sub@fig:a@cref}{{[subfigure][1][2147483647,85]85a}{[1][158][]160}}
+\newlabel{fig:b}{{85b}{160}{Thin target, 0.54~cm\relax }{figure.caption.95}{}}
+\newlabel{fig:b@cref}{{[subfigure][2][2147483647,85]85b}{[1][158][]160}}
+\newlabel{sub@fig:b}{{b}{160}{Thin target, 0.54~cm\relax }{figure.caption.95}{}}
+\newlabel{sub@fig:b@cref}{{[subfigure][2][2147483647,85]85b}{[1][158][]160}}
+\newlabel{fig:c}{{85c}{160}{Medium target, 1.08~cm\relax }{figure.caption.95}{}}
+\newlabel{fig:c@cref}{{[subfigure][3][2147483647,85]85c}{[1][158][]160}}
+\newlabel{sub@fig:c}{{c}{160}{Medium target, 1.08~cm\relax }{figure.caption.95}{}}
+\newlabel{sub@fig:c@cref}{{[subfigure][3][2147483647,85]85c}{[1][158][]160}}
+\newlabel{fig:d}{{85d}{160}{Thick target, 2.19~cm\relax }{figure.caption.95}{}}
+\newlabel{fig:d@cref}{{[subfigure][4][2147483647,85]85d}{[1][158][]160}}
+\newlabel{sub@fig:d}{{d}{160}{Thick target, 2.19~cm\relax }{figure.caption.95}{}}
+\newlabel{sub@fig:d@cref}{{[subfigure][4][2147483647,85]85d}{[1][158][]160}}
+\@writefile{lof}{\contentsline {figure}{\numberline {85}{\ignorespaces Histogram fits for runs with 800 AMeV beam energy\relax }}{160}{figure.caption.95}}
+\newlabel{Label}{{85}{160}{Histogram fits for runs with 800 AMeV beam energy\relax }{figure.caption.95}{}}
+\newlabel{Label@cref}{{[figure][85][2147483647]85}{[1][158][]160}}
+\@writefile{toc}{\contentsline {section}{\numberline {K}Isotope correction contributions}{161}{Appendix.1.K}}
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Measured isotope correction contribution $\sigma _{\text  {iso}}$ with statistical and systematic uncertainties for \(^{12}\)C targets of various thicknesses at different beam energies.\relax }}{161}{table.caption.96}}
 \bibstyle{ieeetr}
 \bibdata{main}
 \bibcite{wimmer2010discovery}{1}
@@ -924,7 +937,7 @@
 \bibcite{tsang2024constraining}{8}
 \bibcite{wang2020study}{9}
 \bibcite{jhang2021symmetry}{10}
-\@writefile{toc}{\contentsline {section}{References}{159}{table.caption.94}}
+\@writefile{toc}{\contentsline {section}{References}{163}{table.caption.96}}
 \bibcite{bogdanov2021constraining}{11}
 \bibcite{nattila2017neutron}{12}
 \bibcite{radice2019multimessenger}{13}

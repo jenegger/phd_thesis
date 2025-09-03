@@ -67,14 +67,15 @@
 \contentsline {subsection}{\numberline {6.7}Outlook}{135}{subsection.6.7}
 \contentsline {section}{Appendices}{139}{section*.72}
 \contentsline {section}{\numberline {A}Pileup rejection with R3B MUSIC charge cut}{139}{Appendix.1.A}
-\contentsline {section}{\numberline {B}MWPCs -- \textit {cal-to-hit} data processing}{139}{Appendix.1.B}
-\contentsline {subsection}{\numberline {B.1}Coherent clustering}{141}{subsection.1.B.1}
-\contentsline {section}{\numberline {C}MWPC0 selection cuts}{142}{Appendix.1.C}
-\contentsline {section}{\numberline {D}Alternative methods for TWIN MUSIC hit selection and charge assignment}{144}{Appendix.1.D}
-\contentsline {section}{\numberline {E}TWIN MUSIC Geometric Acceptance Correction via Efficiency Measurement}{148}{Appendix.1.E}
-\contentsline {section}{\numberline {F}Flight-Path Reconstruction}{149}{Appendix.1.F}
-\contentsline {section}{\numberline {G}Dead Time Uncertainties in TWIN MUSIC}{151}{Appendix.1.G}
-\contentsline {section}{\numberline {H}Charge changing cross sections}{153}{Appendix.1.H}
-\contentsline {section}{\numberline {I}Carbon isotopes fitting}{154}{Appendix.1.I}
-\contentsline {section}{\numberline {J}Isotope correction contributions}{157}{Appendix.1.J}
-\contentsline {section}{References}{159}{table.caption.94}
+\contentsline {section}{\numberline {B}MWPCs -- \textit {cal-to-hit} data processing}{140}{Appendix.1.B}
+\contentsline {subsection}{\numberline {B.1}Coherent clustering}{140}{subsection.1.B.1}
+\contentsline {section}{\numberline {C}MWPCs -- Efficiency Analysis}{143}{Appendix.1.C}
+\contentsline {section}{\numberline {D}MWPC0 selection cuts}{145}{Appendix.1.D}
+\contentsline {section}{\numberline {E}Alternative methods for TWIN MUSIC hit selection and charge assignment}{147}{Appendix.1.E}
+\contentsline {section}{\numberline {F}TWIN MUSIC Geometric Acceptance Correction via Efficiency Measurement}{151}{Appendix.1.F}
+\contentsline {section}{\numberline {G}Flight-Path Reconstruction}{153}{Appendix.1.G}
+\contentsline {section}{\numberline {H}Dead Time Uncertainties in TWIN MUSIC}{155}{Appendix.1.H}
+\contentsline {section}{\numberline {I}Charge changing cross sections}{157}{Appendix.1.I}
+\contentsline {section}{\numberline {J}Carbon isotopes fitting}{158}{Appendix.1.J}
+\contentsline {section}{\numberline {K}Isotope correction contributions}{161}{Appendix.1.K}
+\contentsline {section}{References}{163}{table.caption.96}
