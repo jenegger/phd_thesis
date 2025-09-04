@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2023.5.31)  3 SEP 2025 16:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2023.5.31)  4 SEP 2025 09:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2556,22 +2556,23 @@ Package pdftex.def Info: Figures/mw23_own_clustering.png  used on input line 65
 ] [141 <./Figures/hyperbolic_squared_secant_function.png> <./Figures/mw23_defau
 lt.png>] [142 <./Figures/own_clustering_mwpcs.png> <./Figures/mw23_own_clusteri
 ng.png>]
-<Figures/eff_plot_mwpcs_labels.png, id=2500, 1293.1512pt x 932.283pt>
-File: Figures/eff_plot_mwpcs_labels.png Graphic file (type png)
-<use Figures/eff_plot_mwpcs_labels.png>
-Package pdftex.def Info: Figures/eff_plot_mwpcs_labels.png  used on input line 
-86.
+<Figures/eff_plot_mwpcs_labels_c.png, id=2500, 1293.1512pt x 932.283pt>
+File: Figures/eff_plot_mwpcs_labels_c.png Graphic file (type png)
+<use Figures/eff_plot_mwpcs_labels_c.png>
+Package pdftex.def Info: Figures/eff_plot_mwpcs_labels_c.png  used on input lin
+e 86.
 (pdftex.def)             Requested size: 443.57848pt x 319.78867pt.
  [143
 
- <./Figures/eff_plot_mwpcs_labels.png>]
-<Figures/combined_eff_plot_mwpcs_labels.png, id=2510, 1293.1512pt x 932.283pt>
-File: Figures/combined_eff_plot_mwpcs_labels.png Graphic file (type png)
-<use Figures/combined_eff_plot_mwpcs_labels.png>
-Package pdftex.def Info: Figures/combined_eff_plot_mwpcs_labels.png  used on in
-put line 101.
+ <./Figures/eff_plot_mwpcs_labels_c.png>]
+<Figures/combined_eff_plot_mwpcs_labels_c.png, id=2510, 1293.1512pt x 932.283pt
+>
+File: Figures/combined_eff_plot_mwpcs_labels_c.png Graphic file (type png)
+<use Figures/combined_eff_plot_mwpcs_labels_c.png>
+Package pdftex.def Info: Figures/combined_eff_plot_mwpcs_labels_c.png  used on 
+input line 101.
 (pdftex.def)             Requested size: 443.57848pt x 319.78867pt.
- [144 <./Figures/combined_eff_plot_mwpcs_labels.png>]
+ [144 <./Figures/combined_eff_plot_mwpcs_labels_c.png>]
 <Figures/mw_no_cut_2sigma.png, id=2524, 690.4194pt x 495.7722pt>
 File: Figures/mw_no_cut_2sigma.png Graphic file (type png)
 <use Figures/mw_no_cut_2sigma.png>
@@ -2930,8 +2931,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 285.
  ) 
 Here is how much of TeX's memory you used:
  26499 strings out of 492982
- 507577 string characters out of 6134896
- 612912 words of memory out of 5000000
+ 507597 string characters out of 6134896
+ 612911 words of memory out of 5000000
  28933 multiletter control sequences out of 15000+600000
  567834 words of font info for 125 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2981,7 +2982,7 @@ usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/font
 s/type1/public/cm-super/sftt1000.pfb></usr/share/texmf/fonts/type1/public/cm-su
 per/sftt1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.p
 fb>
-Output written on main.pdf (185 pages, 33827578 bytes).
+Output written on main.pdf (185 pages, 33827580 bytes).
 PDF statistics:
  3118 PDF objects out of 3580 (max. 8388607)
  2457 compressed objects within 25 object streams
