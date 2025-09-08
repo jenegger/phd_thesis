@@ -18,7 +18,24 @@ Directly related to the scientific objectives at R3B is the exploration of the e
 
 \subsubsection{Study of the EoS at R3B}
 
-While various models agree at saturation density $n_0 \approx 0.16 fm^{-3}$  ("natural packing density" of nucleons inside a nucleus) at high baryon number density, as it is the case in neutron stars there are significant differences between the models. Fig X shows the EoS description for different models and their divergences by plotting the binding energy and the symmetry energy -- which will be introduced in the next paragraph -- versus the baryon number density. 
+While various models agree at saturation density $n_0 \approx 0.16 fm^{-3}$  ("natural packing density" of nucleons inside a nucleus) at high baryon number density, as it is the case in neutron stars there are significant differences between the models. Fig.~\ref{fig:eos_relations} shows the EoS description for different models and their divergences by plotting the binding energy and the symmetry energy -- which will be introduced in the next paragraph -- versus the baryon number density. 
+
+\begin{figure}
+\centering
+\begin{subfigure}[t]{.45\textwidth}
+  \centering
+  \includegraphics[width=0.95\textwidth,keepaspectratio=true]{Figures/binding_e_vs_dens_label.png}
+  \label{fig:eos_binding_dens}
+\end{subfigure}%
+\begin{subfigure}[t]{.45\textwidth}
+  \centering
+  \includegraphics[width=0.95\textwidth,keepaspectratio=true]{Figures/symm_e_vs_density_label.png}
+  \label{fig:eos_symm_dens}
+\end{subfigure}
+\caption{a)Equation of state of symmetric nuclear matter ($\delta = 0$) as a function of binding energy with respect to nuclear density. The different curves represent predictions from various point-coupling functional models, illustrating the range of symmetry energies at saturation, $J = 29{-}36 \,\mathrm{MeV}$. b)Symmetry energy as a function of nuclear density, calculated using the same set of point-coupling functional models as in (a). Further details on the models and applied constraints are provided in Ref.~\cite{yuksel2021nuclear}. Both figures are taken from Ref.~\cite{yuksel2021nuclear}.}
+\label{fig:eos_relations}
+\end{figure}
+
 Huge efforts are made to constrain the EoS for highly asymmetric or pure neutron matter. \newline
 In modeling the nuclear equation of state, it is common to perform a Taylor expansion of the energy per nucleon with respect to the isospin asymmetry parameter $\delta = \frac{n_n -n_p}{n_n + n_p}$ where $n_n$ and $n_p$ denote the neutron and proton number densities, respectively, at a fixed baryon density $n_B = n_n +n_p$. In this approach, the energy per nucleon is written as:
 \begin{equation}\label{eq:eos}

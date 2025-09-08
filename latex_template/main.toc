@@ -1,80 +1,80 @@
-\babel@toc {english}{}\relax 
-\contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
-\contentsline {subsection}{\numberline {1.1}R3B Experiment -- "The Universe in the Lab"}{2}{subsection.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.1}Scientific Objectives and Research Program of the R3B Experiment at FAIR}{2}{subsubsection.1.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.2}Study of the EoS at R3B}{3}{subsubsection.1.1.2}%
-\contentsline {section}{\numberline {2}Nuclear Scattering Reactions in the \\ Glauber Framework}{8}{section.2}%
-\contentsline {subsection}{\numberline {2.1}The Glauber model}{11}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Eikonal optical-limit approximation (EOL)}{13}{subsection.2.2}%
-\contentsline {subsubsection}{\numberline {2.2.1}Eikonal Wave Approximation}{14}{subsubsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}Optical potential and optical limit}{16}{subsubsection.2.2.2}%
-\contentsline {paragraph}{1. Phenomenological Optical Potential}{16}{subsubsection.2.2.2}%
-\contentsline {paragraph}{2. Microscopic Optical Potential and the Optical Limit}{16}{equation.2.24}%
-\contentsline {subsection}{\numberline {2.3}Input to the Glauber Model}{17}{subsection.2.3}%
-\contentsline {subsubsection}{\numberline {2.3.1}In-medium Modifications -- Extensions of the Glauber Model}{19}{subsubsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.4}Quasi-Free Scattering (QFS) Reactions}{23}{subsection.2.4}%
-\contentsline {subsubsection}{\numberline {2.4.1}Kinematics of QFS Reactions}{24}{subsubsection.2.4.1}%
-\contentsline {subsubsection}{\numberline {2.4.2}Application Fields of QFS Reactions}{30}{subsubsection.2.4.2}%
-\contentsline {section}{\numberline {3}Experiment}{36}{section.3}%
-\contentsline {subsection}{\numberline {3.1}GSI facility}{37}{subsection.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.1}FAIR Project}{38}{subsubsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.2}R3B Setup}{38}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Detector Setup in S444 Commissioning Experiment 2020}{39}{subsection.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.1}Multi Wire Proportional Chambers (MWPC)}{40}{subsubsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.2}Ionization Chambers -- R3B MUSIC/TWIN MUSIC}{42}{subsubsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.3}Sofia Start Detector}{44}{subsubsection.3.3.3}%
-\contentsline {subsubsection}{\numberline {3.3.4}GLAD Magnet}{45}{subsubsection.3.3.4}%
-\contentsline {subsubsection}{\numberline {3.3.5}CALIFA Calorimeter}{45}{subsubsection.3.3.5}%
-\contentsline {subsubsection}{\numberline {3.3.6}Sofia Time of Flight Wall}{54}{subsubsection.3.3.6}%
-\contentsline {subsubsection}{\numberline {3.3.7}NeuLAND Detector}{54}{subsubsection.3.3.7}%
-\contentsline {section}{\numberline {4}Analysis -- Total Interaction Cross Section $^{12}$C + $^{12}$C}{57}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Cross Section Measurement via Transmission Method}{57}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Event Selection}{59}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Charge Changing Cross Section Measurement}{64}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}TWIN MUSIC Calibration}{66}{subsubsection.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.3.2}TWIN MUSIC Event Selection}{67}{subsubsection.4.3.2}%
-\contentsline {subsubsection}{\numberline {4.3.3}Carbon Identification}{69}{subsubsection.4.3.3}%
-\contentsline {subsection}{\numberline {4.4}Geometric Corrections}{75}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Isotope Correction}{81}{subsection.4.5}%
-\contentsline {subsubsection}{\numberline {4.5.1}Distribution fitting}{84}{subsubsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.6}Statistical and Systematic Error Analysis}{90}{subsection.4.6}%
-\contentsline {subsubsection}{\numberline {4.6.1}Charge-Changing Cross Section}{90}{subsubsection.4.6.1}%
-\contentsline {subsubsection}{\numberline {4.6.2}Isotope Correction Contribution}{91}{subsubsection.4.6.2}%
-\contentsline {subsubsection}{\numberline {4.6.3}Total Interaction Cross Section}{92}{subsubsection.4.6.3}%
-\contentsline {subsection}{\numberline {4.7} Results Total -- Interaction Cross Section}{93}{subsection.4.7}%
-\contentsline {section}{\numberline {5}Qualitative Analysis -- \\Quasi-Free Scattering $^{12}$C(p,2p)$^{11}$B}{95}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Setup-Calibration \& Fragment Tracking}{95}{subsection.5.1}%
-\contentsline {subsubsection}{\numberline {5.1.1}Flight-Path Reconstruction}{96}{subsubsection.5.1.1}%
-\contentsline {subsubsection}{\numberline {5.1.2}Time of Flight Calibration}{98}{subsubsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.2}Event Selection}{99}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Fragment Identification}{100}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}QFS-Protons}{102}{subsection.5.4}%
-\contentsline {subsubsection}{\numberline {5.4.1}Missing Momentum $\mathbf {p_{miss}}$ Reconstruction}{105}{subsubsection.5.4.1}%
-\contentsline {subsubsection}{\numberline {5.4.2}Correlations between $^{11}B$ Fragment and the reconstructed inner Proton }{109}{subsubsection.5.4.2}%
-\contentsline {subsubsection}{\numberline {5.4.3}Proton Separation Energy $S_p$}{110}{subsubsection.5.4.3}%
-\contentsline {subsection}{\numberline {5.5}Reconstruction of excited$ ^{11}$B states}{112}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}Fission via Quasi-Free Scattering reaction}{116}{subsection.5.6}%
-\contentsline {section}{\numberline {6}Machine Learning for the Cluster Reconstruction in the CALIFA Calorimeter at R$^3$B}{125}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Challenges in Relativistic Gamma Spectroscopy}{126}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}The Geometrical R3B Clustering Algorithm}{128}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Data Simulation and Selection}{128}{subsection.6.3}%
-\contentsline {subsubsection}{\numberline {6.3.1}Simulation Setup}{128}{subsubsection.6.3.1}%
-\contentsline {subsubsection}{\numberline {6.3.2}Performance Metrics}{130}{subsubsection.6.3.2}%
-\contentsline {subsection}{\numberline {6.4}Agglomerative Clustering Model}{130}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Edge Detection Neural Network}{131}{subsection.6.5}%
-\contentsline {subsection}{\numberline {6.6}Discussion}{133}{subsection.6.6}%
-\contentsline {subsection}{\numberline {6.7}Outlook}{135}{subsection.6.7}%
-\contentsline {section}{Appendices}{139}{section*.72}%
-\contentsline {section}{\numberline {A}Pileup rejection with R3B MUSIC charge cut}{139}{appendix.1.A}%
-\contentsline {section}{\numberline {B}MWPCs -- \textit {cal-to-hit} data processing}{140}{appendix.1.B}%
-\contentsline {subsection}{\numberline {B.1}Coherent clustering}{140}{subsection.1.B.1}%
-\contentsline {section}{\numberline {C}MWPCs -- Efficiency Analysis}{143}{appendix.1.C}%
-\contentsline {section}{\numberline {D}MWPC0 selection cuts}{145}{appendix.1.D}%
-\contentsline {section}{\numberline {E}Alternative methods for TWIN MUSIC hit selection and charge assignment}{147}{appendix.1.E}%
-\contentsline {section}{\numberline {F}TWIN MUSIC Geometric Acceptance Correction via Efficiency Measurement}{151}{appendix.1.F}%
-\contentsline {section}{\numberline {G}Flight-Path Reconstruction}{153}{appendix.1.G}%
-\contentsline {section}{\numberline {H}Dead Time Uncertainties in TWIN MUSIC}{155}{appendix.1.H}%
-\contentsline {section}{\numberline {I}Charge changing cross sections}{157}{appendix.1.I}%
-\contentsline {section}{\numberline {J}Carbon isotopes fitting}{158}{appendix.1.J}%
-\contentsline {section}{\numberline {K}Isotope correction contributions}{161}{appendix.1.K}%
-\contentsline {section}{References}{163}{table.caption.96}%
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}R3B Experiment -- "The Universe in the Lab"}{2}{subsection.1.1}
+\contentsline {subsubsection}{\numberline {1.1.1}Scientific Objectives and Research Program of the R3B Experiment at FAIR}{2}{subsubsection.1.1.1}
+\contentsline {subsubsection}{\numberline {1.1.2}Study of the EoS at R3B}{3}{subsubsection.1.1.2}
+\contentsline {section}{\numberline {2}Nuclear Scattering Reactions in the \\ Glauber Framework}{8}{section.2}
+\contentsline {subsection}{\numberline {2.1}The Glauber model}{11}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Eikonal optical-limit approximation (EOL)}{13}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Eikonal Wave Approximation}{14}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Optical potential and optical limit}{16}{subsubsection.2.2.2}
+\contentsline {paragraph}{1. Phenomenological Optical Potential}{16}{subsubsection.2.2.2}
+\contentsline {paragraph}{2. Microscopic Optical Potential and the Optical Limit}{16}{equation.2.24}
+\contentsline {subsection}{\numberline {2.3}Input to the Glauber Model}{17}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}In-medium Modifications -- Extensions of the Glauber Model}{19}{subsubsection.2.3.1}
+\contentsline {subsection}{\numberline {2.4}Quasi-Free Scattering (QFS) Reactions}{23}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Kinematics of QFS Reactions}{24}{subsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}Application Fields of QFS Reactions}{30}{subsubsection.2.4.2}
+\contentsline {section}{\numberline {3}Experiment}{36}{section.3}
+\contentsline {subsection}{\numberline {3.1}GSI facility}{37}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}FAIR Project}{38}{subsubsection.3.1.1}
+\contentsline {subsection}{\numberline {3.2}R3B Setup}{38}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Detector Setup in S444 Commissioning Experiment 2020}{39}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Multi Wire Proportional Chambers (MWPC)}{40}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Ionization Chambers -- R3B MUSIC/TWIN MUSIC}{42}{subsubsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3}Sofia Start Detector}{44}{subsubsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.4}GLAD Magnet}{45}{subsubsection.3.3.4}
+\contentsline {subsubsection}{\numberline {3.3.5}CALIFA Calorimeter}{45}{subsubsection.3.3.5}
+\contentsline {subsubsection}{\numberline {3.3.6}Sofia Time of Flight Wall}{54}{subsubsection.3.3.6}
+\contentsline {subsubsection}{\numberline {3.3.7}NeuLAND Detector}{54}{subsubsection.3.3.7}
+\contentsline {section}{\numberline {4}Analysis -- Total Interaction Cross Section $^{12}$C + $^{12}$C}{57}{section.4}
+\contentsline {subsection}{\numberline {4.1}Cross Section Measurement via Transmission Method}{57}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Event Selection}{59}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Charge Changing Cross Section Measurement}{64}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}TWIN MUSIC Calibration}{66}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}TWIN MUSIC Event Selection}{67}{subsubsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3}Carbon Identification}{69}{subsubsection.4.3.3}
+\contentsline {subsection}{\numberline {4.4}Geometric Corrections}{75}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Isotope Correction}{81}{subsection.4.5}
+\contentsline {subsubsection}{\numberline {4.5.1}Distribution fitting}{84}{subsubsection.4.5.1}
+\contentsline {subsection}{\numberline {4.6}Statistical and Systematic Error Analysis}{90}{subsection.4.6}
+\contentsline {subsubsection}{\numberline {4.6.1}Charge-Changing Cross Section}{90}{subsubsection.4.6.1}
+\contentsline {subsubsection}{\numberline {4.6.2}Isotope Correction Contribution}{91}{subsubsection.4.6.2}
+\contentsline {subsubsection}{\numberline {4.6.3}Total Interaction Cross Section}{92}{subsubsection.4.6.3}
+\contentsline {subsection}{\numberline {4.7} Results Total -- Interaction Cross Section}{93}{subsection.4.7}
+\contentsline {section}{\numberline {5}Qualitative Analysis -- \\Quasi-Free Scattering $^{12}$C(p,2p)$^{11}$B}{95}{section.5}
+\contentsline {subsection}{\numberline {5.1}Setup-Calibration \& Fragment Tracking}{95}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Flight-Path Reconstruction}{96}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}Time of Flight Calibration}{98}{subsubsection.5.1.2}
+\contentsline {subsection}{\numberline {5.2}Event Selection}{99}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Fragment Identification}{100}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}QFS-Protons}{102}{subsection.5.4}
+\contentsline {subsubsection}{\numberline {5.4.1}Missing Momentum $\mathbf {p_{miss}}$ Reconstruction}{105}{subsubsection.5.4.1}
+\contentsline {subsubsection}{\numberline {5.4.2}Correlations between $^{11}B$ Fragment and the reconstructed inner Proton }{109}{subsubsection.5.4.2}
+\contentsline {subsubsection}{\numberline {5.4.3}Proton Separation Energy $S_p$}{110}{subsubsection.5.4.3}
+\contentsline {subsection}{\numberline {5.5}Reconstruction of excited$ ^{11}$B states}{112}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.6}Fission via Quasi-Free Scattering reaction}{116}{subsection.5.6}
+\contentsline {section}{\numberline {6}Machine Learning for the Cluster Reconstruction in the CALIFA Calorimeter at R$^3$B}{125}{section.6}
+\contentsline {subsection}{\numberline {6.1}Challenges in Relativistic Gamma Spectroscopy}{126}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}The Geometrical R3B Clustering Algorithm}{128}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Data Simulation and Selection}{128}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}Simulation Setup}{128}{subsubsection.6.3.1}
+\contentsline {subsubsection}{\numberline {6.3.2}Performance Metrics}{130}{subsubsection.6.3.2}
+\contentsline {subsection}{\numberline {6.4}Agglomerative Clustering Model}{130}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Edge Detection Neural Network}{131}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}Discussion}{133}{subsection.6.6}
+\contentsline {subsection}{\numberline {6.7}Outlook}{135}{subsection.6.7}
+\contentsline {section}{Appendices}{139}{section*.73}
+\contentsline {section}{\numberline {A}Pileup rejection with R3B MUSIC charge cut}{139}{Appendix.1.A}
+\contentsline {section}{\numberline {B}MWPCs -- \textit {cal-to-hit} data processing}{140}{Appendix.1.B}
+\contentsline {subsection}{\numberline {B.1}Coherent clustering}{140}{subsection.1.B.1}
+\contentsline {section}{\numberline {C}MWPCs -- Efficiency Analysis}{143}{Appendix.1.C}
+\contentsline {section}{\numberline {D}MWPC0 selection cuts}{145}{Appendix.1.D}
+\contentsline {section}{\numberline {E}Alternative methods for TWIN MUSIC hit selection and charge assignment}{147}{Appendix.1.E}
+\contentsline {section}{\numberline {F}TWIN MUSIC Geometric Acceptance Correction via Efficiency Measurement}{151}{Appendix.1.F}
+\contentsline {section}{\numberline {G}Flight-Path Reconstruction}{153}{Appendix.1.G}
+\contentsline {section}{\numberline {H}Dead Time Uncertainties in TWIN MUSIC}{155}{Appendix.1.H}
+\contentsline {section}{\numberline {I}Charge changing cross sections}{157}{Appendix.1.I}
+\contentsline {section}{\numberline {J}Carbon isotopes fitting}{158}{Appendix.1.J}
+\contentsline {section}{\numberline {K}Isotope correction contributions}{161}{Appendix.1.K}
+\contentsline {section}{References}{163}{table.caption.97}
