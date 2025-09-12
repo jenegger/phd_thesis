@@ -686,6 +686,10 @@ S.~Imambi, K.~B. Prakash, and G.~Kanagachidambaresan, ``Pytorch,'' {\em
   Programming with TensorFlow: solution for edge computing applications},
   pp.~87--104, 2021.
 
+\bibitem{agarap2018deep}
+A.~F. Agarap, ``Deep learning using rectified linear units (relu),'' {\em arXiv
+  preprint arXiv:1803.08375}, 2018.
+
 \bibitem{mannor2005cross}
 S.~Mannor, D.~Peleg, and R.~Rubinstein, ``{The cross entropy method for
   classification},'' in {\em Proceedings of the 22nd international conference
