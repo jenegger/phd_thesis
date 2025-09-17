@@ -29,8 +29,8 @@ The final formula for the cross section for a so called transmission measurement
 \label{eq:corr_cross}
 	\end{split}
 \end{equation}
-It should be emphasized that this represents a first-order approximation, as in Equation~\ref{eq:corr_cross} the setup-specific detection efficiency $\epsilon_{setup}$ and transmission factor $t_{setup}$ are assumed to be identical for both the empty and target runs. This assumption enables the cancellation of these factors in the ratio, thereby simplifying the analysis.\newline
-From the Equation~\ref{eq:corr_cross} it is evident that for cross section measurements with the transmission method three types of observables have to be measured:\newline
+It should be emphasized that this represents a first-order approximation, as in Eq.~\ref{eq:corr_cross} the setup-specific detection efficiency $\epsilon_{setup}$ and transmission factor $t_{setup}$ are assumed to be identical for both the empty and target runs. This assumption enables the cancellation of these factors in the ratio, thereby simplifying the analysis.\newline
+From the Eq.~\ref{eq:corr_cross} it is evident that for cross section measurements with the transmission method three types of observables have to be measured:\newline
 \begin{enumerate}
 \item[$\blacksquare$] \textbf{Number of scattering centers $\mathbf{N_t}$}\newline
 The number of scattering centers per unit area of the target is a target specific number. It depends from the target thickness and and its density. The values herefore are taken from \cite{ponnath2023precise}\footnote{For the purpose of this work the target thicknesses were remeasured at GSI with a chromatic sensor giving 2D depth profiles of each target.}:
@@ -314,7 +314,7 @@ During the S444 experiment only an active area of $11\times11$ cm was used, see 
 The relative acceptance of the detection system is influenced by both the target thickness and the beam energy. Thicker targets lead to a broader angular distribution of the fragments due to increased multiple scattering and energy loss, thereby reducing the geometric acceptance. In contrast, higher beam energies result in smaller scattering angles owing to relativistic boost effects, which in turn increase the acceptance. Consequently, the acceptance correction must be evaluated and applied individually for each specific beam-target configuration. It is important to note that acceptance effects cannot be corrected by referencing to empty target runs. All these acceptance effects can be observed in Fig.~\ref{fig:mw1_xy}.\newline
 To compensate correctly for the geometric acceptance it has to be considered that for the charge changing cross section measurement only the carbon isotopes after the target are counted in the TWIN MUSIC. Therefore the correction should only be applied to the carbon isotopes (Z = 6) on the x-y distribution on the MWPC1, see Fig.~\ref{fig:mw1_xy}.\\
 A precise correction for the limited geometric acceptance of the TWIN MUSIC detector presents a notable challenge, as the true distribution of carbon fragments in the x- and y- coordinates at the position of MWPC1 is not directly measurable. The expected true distribution results from a convolution of the primary $^{12}C$ beam profile and the Gaussian-like angular broadening caused by multiple scattering processes within the target material.\\
-To reconstruct fragment tracks extending beyond the geometrical acceptance of the TWIN MUSIC detector, a graphical symmetry-based method was applied to the x- and y- distributions separately, as measured by MWPC1. This method avoids the instability and parameter sensitivity of complex fit-based extrapolations (an approach explored for the sake of completeness but ultimately deemed impractical -- see Appendix X). Instead, a binwise comparison approach was used, as described below:
+To reconstruct fragment tracks extending beyond the geometrical acceptance of the TWIN MUSIC detector, a graphical symmetry-based method was applied to the x- and y- distributions separately, as measured by MWPC1. This method avoids the instability and parameter sensitivity of complex fit-based extrapolations. Instead, a binwise comparison approach was used, as described below:
 \begin{enumerate}
     \item \textbf{Estimation of the symmetry center:}  
     A first-order estimate of the central value (mean) of the $x$ and $y$ distributions is determined.
@@ -360,7 +360,7 @@ The described correction procedure must be systematically applied to all target 
 \end{figure}
 An overview of the resulting correction factors $\text{geo}_{xy}$ is presented in Fig.~\ref{fig:geo_corrections_overview}, according to target thickness and beam energy. The error bars reflect the uncertainty in the estimated onset of acceptance loss in both the x- and y-distributions. Specifically, they are derived from the variation of the correction factor when shifting the integration bounds between, e.g., x=-25 mm and x=-20 mm (and analogously in y).
 
-Once computed, the geometric correction factors can be directly included in the calculation of the charge-changing cross section via Equation~\ref{eq:corr_cross}. As they appear inside the logarithmic term, the multiplicative correction factors translate into additive contributions:
+Once computed, the geometric correction factors can be directly included in the calculation of the charge-changing cross section via Eq.~\ref{eq:corr_cross}. As they appear inside the logarithmic term, the multiplicative correction factors translate into additive contributions:
 
 \begin{equation}
 \sigma_{\text{corr}} = -\frac{1}{N_t} \ln(\text{geo}_{xy}^{\text{T}}) + \frac{1}{N_t} \ln(\text{geo}_{xy}^{\text{E}})
@@ -657,7 +657,7 @@ The survival probability $P^{(E)}_{\text{surv}|\text{cc}}$, defined as the proba
 \Delta P^{(E)}_{\text{surv}|\text{cc}} = \sqrt{ \frac{P^{(E)}_{\text{surv}|\text{cc}} \cdot \left(1 - P^{(E)}_{\text{surv}|\text{cc}}\right)}{N^{(E)}_1} }
 \end{equation}
 
-Substituting into Equation~\ref{eq:stat_cc_} yields:
+Substituting into Eq.~\ref{eq:stat_cc_} yields:
 \begin{equation}
 \Delta\sigma_{\text{stat}|\text{cc}} = \sqrt{ \frac{1}{N_t^2} \left( \frac{1 - P_{\text{surv}|\text{cc}}}{P_{\text{surv}|\text{cc}} N_1} + \frac{1 - P^{E}_{\text{surv}|\text{cc}}}{P^{E}_{\text{surv}|\text{cc}} N^{E}_1} \right) }
 \end{equation}

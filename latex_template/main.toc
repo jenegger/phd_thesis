@@ -18,15 +18,15 @@
 \contentsline {section}{\numberline {3}Experiment}{36}{section.3}
 \contentsline {subsection}{\numberline {3.1}GSI facility}{37}{subsection.3.1}
 \contentsline {subsubsection}{\numberline {3.1.1}FAIR Project}{38}{subsubsection.3.1.1}
-\contentsline {subsection}{\numberline {3.2}R3B Setup}{38}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Detector Setup in S444 Commissioning Experiment 2020}{39}{subsection.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1}Multi Wire Proportional Chambers (MWPC)}{40}{subsubsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.2}Ionization Chambers -- R3B MUSIC/TWIN MUSIC}{43}{subsubsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.3}Sofia Start Detector}{44}{subsubsection.3.3.3}
-\contentsline {subsubsection}{\numberline {3.3.4}GLAD Magnet}{45}{subsubsection.3.3.4}
-\contentsline {subsubsection}{\numberline {3.3.5}CALIFA Calorimeter}{45}{subsubsection.3.3.5}
-\contentsline {subsubsection}{\numberline {3.3.6}Sofia Time of Flight Wall}{54}{subsubsection.3.3.6}
-\contentsline {subsubsection}{\numberline {3.3.7}NeuLAND Detector}{54}{subsubsection.3.3.7}
+\contentsline {subsection}{\numberline {3.2}R3B Setup}{39}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Detector Setup in S444 Commissioning Experiment 2020}{40}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Multi Wire Proportional Chambers (MWPC)}{41}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Ionization Chambers -- R3B MUSIC/TWIN MUSIC}{42}{subsubsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3}Sofia Start Detector}{45}{subsubsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.4}GLAD Magnet}{46}{subsubsection.3.3.4}
+\contentsline {subsubsection}{\numberline {3.3.5}CALIFA Calorimeter}{46}{subsubsection.3.3.5}
+\contentsline {subsubsection}{\numberline {3.3.6}Sofia Time of Flight Wall}{55}{subsubsection.3.3.6}
+\contentsline {subsubsection}{\numberline {3.3.7}NeuLAND Detector}{55}{subsubsection.3.3.7}
 \contentsline {section}{\numberline {4}Analysis -- Total Interaction Cross Section $^{12}$C + $^{12}$C}{57}{section.4}
 \contentsline {subsection}{\numberline {4.1}Cross Section Measurement via Transmission Method}{57}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Event Selection}{60}{subsection.4.2}
@@ -64,17 +64,16 @@
 \contentsline {subsection}{\numberline {6.5}Edge Detection Neural Network}{131}{subsection.6.5}
 \contentsline {subsection}{\numberline {6.6}Discussion}{133}{subsection.6.6}
 \contentsline {subsection}{\numberline {6.7}Outlook}{135}{subsection.6.7}
-\contentsline {section}{Appendices}{139}{section*.73}
+\contentsline {section}{Appendices}{139}{section*.74}
 \contentsline {section}{\numberline {A}Pileup rejection with R3B MUSIC charge cut}{139}{Appendix.1.A}
 \contentsline {section}{\numberline {B}MWPCs -- \textit {cal-to-hit} data processing}{140}{Appendix.1.B}
 \contentsline {subsection}{\numberline {B.1}Coherent clustering}{140}{subsection.1.B.1}
 \contentsline {section}{\numberline {C}MWPCs -- Efficiency Analysis}{143}{Appendix.1.C}
 \contentsline {section}{\numberline {D}MWPC0 selection cuts}{145}{Appendix.1.D}
 \contentsline {section}{\numberline {E}Alternative methods for TWIN MUSIC hit selection and charge assignment}{147}{Appendix.1.E}
-\contentsline {section}{\numberline {F}TWIN MUSIC Geometric Acceptance Correction via Efficiency Measurement}{151}{Appendix.1.F}
-\contentsline {section}{\numberline {G}Flight-Path Reconstruction}{153}{Appendix.1.G}
-\contentsline {section}{\numberline {H}Dead Time Uncertainties in TWIN MUSIC}{155}{Appendix.1.H}
-\contentsline {section}{\numberline {I}Charge changing cross sections}{157}{Appendix.1.I}
-\contentsline {section}{\numberline {J}Carbon isotopes fitting}{158}{Appendix.1.J}
-\contentsline {section}{\numberline {K}Isotope correction contributions}{161}{Appendix.1.K}
-\contentsline {section}{References}{163}{table.caption.97}
+\contentsline {section}{\numberline {F}Flight-Path Reconstruction}{151}{Appendix.1.F}
+\contentsline {section}{\numberline {G}Dead Time Uncertainties in TWIN MUSIC}{153}{Appendix.1.G}
+\contentsline {section}{\numberline {H}Charge changing cross sections}{155}{Appendix.1.H}
+\contentsline {section}{\numberline {I}Carbon isotopes fitting}{156}{Appendix.1.I}
+\contentsline {section}{\numberline {J}Isotope correction contributions}{159}{Appendix.1.J}
+\contentsline {section}{References}{161}{table.caption.96}
