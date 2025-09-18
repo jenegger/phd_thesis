@@ -50,7 +50,7 @@ with $\rho$ the target density\footnote{$\rho = 1.851 g/cm^{3}$, from \cite{ponn
 \item[$\blacksquare$] \textbf{Number of incoming projectiles ($^{12}$C) $\mathbf{N_1}$}\newline
 For the measurement only events with well identified incoming $^{12}$C projectiles are chosen. Herefore strict cuts on the detectors upstream the target area are set. This strict event selection makes sure that we only consider events with single $^{12}$C within a $\pm 4\mu s$ time window. This will be discussed in more detail in Section~\ref{subsec:event-sel}. 
 \item[$\blacksquare$] \textbf{Number of unreacted projectiles ($^{12}$C) $\mathbf{N_2}$ after the target}\newline
-Detectors downstream the target area are used to count the number of unreacted projectiles $^{12}$C. To reduce detector specific influences which could distort the result it is advisable to use only as few as requirable detectors for the clear identification of unreacted projectiles. Moreover detector specific efficiencies are canceled out by including both empty and target runs (only in 1st order, as there may be a position dependence) in the cross section calculation(see equation\ref{eq:corr_cross}). For all downstream detectors used in this analysis it is critical to minimize any selection cuts and systematically check their effects on $N_2$.
+Detectors downstream the target area are used to count the number of unreacted projectiles $^{12}$C. To reduce detector specific influences which could distort the result it is advisable to use only as few as necessary detectors for the clear identification of unreacted projectiles. Moreover detector specific efficiencies are canceled out by including both empty and target runs (only in 1st order, as there may be a position dependence) in the cross section calculation(see equation\ref{eq:corr_cross}). For all downstream detectors used in this analysis it is critical to minimize any selection cuts and systematically check their effects on $N_2$.
 \end{enumerate}
 \subsection{Event Selection}\label{subsec:event-sel}
 \begin{figure}[htpb]
@@ -369,7 +369,7 @@ Once computed, the geometric correction factors can be directly included in the 
 
 
 The correction term $\sigma_{\text{corr}}$ accounts for the number of undetected carbon isotopes (Z = 6) after the target due to the limited geometric acceptance of the TWIN MUSIC.\\
-The aforementioned errors on th egeometric correction factors are propagated to the charge changing cross section correction factor $\sigma_{\text{corr}}$ in Eq.~\ref{eq:geo_corr_sigma} as:
+The aforementioned errors on the geometric correction factors are propagated to the charge changing cross section correction factor $\sigma_{\text{corr}}$ in Eq.~\ref{eq:geo_corr_sigma} as:
 \begin{equation}
 \Delta_{sys}\sigma_{\text{corr}} = \frac{1}{N_t} \cdot \sqrt{ \left(\frac{\Delta x^T}{\text{geo}_{x}^T} \right)^2 + \left(\frac{\Delta x^E}{\text{geo}_{x}^E} \right)^2 + \left(\frac{\Delta y^T}{\text{geo}_{y}^T} \right)^2 + \left(\frac{\Delta y^E}{\text{geo}_{y}^E} \right)^2 } 
 \end{equation}
@@ -433,7 +433,7 @@ The horizontal and vertical bands around $x \approx 0$ and $y \approx 0$ arise f
         \caption{Coherent clustering method}
         \label{sfig:mw23x_coh}
     \end{subfigure}
-    \caption{Comparison of the reconstructed \(x\) positions in MWPC2 versus MWPC3 for the 20\,mm carbon target at a beam energy of 400\,AMeV. (a) shows the distribution obtained using the default clustering algorithm, while (b) presents the result using the coherent clustering method described in the text. The coherent clustering improves the correlation by reducing misassigned hits and suppressing unphysical branches.}
+    \caption{Comparison of the reconstructed \(x\) positions in MWPC2 versus MWPC3 for the 20\,mm carbon target at a beam energy of 400\,AMeV. (a) shows the distribution obtained using the default clustering algorithm, while (b) presents the result using the coherent clustering method described in the text. The coherent clustering improves the correlation by reducing misassigned hits and suppressing nonphysical branches.}
     \label{fig:mwpc23_clustering}
 \end{figure}
 
@@ -450,7 +450,7 @@ To mitigate this effect, a dedicated procedure was implemented:
 
 \begin{itemize}
 \item The MWPC1 $x$-$y$ distribution of the carbon isotopes of interest is partitioned into four regions as shown in Fig.~\ref{fig:iso_mw1_sections}: the central region (a), the middle-right region (b), the middle-lower region (c), and the lower-right region (d).
-\item The MWPC2 vs. MWPC3 $x$ correlation is recalculated for each region, applying a differential event weighting: region (a) is weighted by 1, regions (b) and (c) by 2, and region (d) by 4. Events with hits outside these regions (upper left corner) are omitted. The idea behind the partitioning is to  subsitute the upper left side of the distribution -- affected by the limited geometric acceptance -- by the lower right side  (region (b), (c) and (d)), assuming a symmetric distribution in both $x$ and $y$ with respect to the central region (a). 
+\item The MWPC2 vs. MWPC3 $x$ correlation is recalculated for each region, applying a differential event weighting: region (a) is weighted by 1, regions (b) and (c) by 2, and region (d) by 4. Events with hits outside these regions (upper left corner) are omitted. The idea behind the partitioning is to  substitute the upper left side of the distribution -- affected by the limited geometric acceptance -- by the lower right side  (region (b), (c) and (d)), assuming a symmetric distribution in both $x$ and $y$ with respect to the central region (a). 
 \item The prominent $^{12}$C correlation band is then fitted with a linear function to extract its slope (Fig.~\ref{sfig:mw23x_central_fit}).
 \item Based on the fitted slope, the histogram is rotated such that the $^{12}$C band is vertically aligned. A 1D projection onto the abscissa is performed (Fig.~\ref{sfig:mw23x_rot_and_proj}).
 \item Finally, the resulting 1D distribution is fitted to extract the relative yield of $^{12}$C with respect to the total Z = 6 fragment population in the $x$ MWPC2-MWPC3 correlation space.
@@ -501,7 +501,7 @@ An example of the resulting combined fit is shown in Fig.~\ref{fig:example_histo
 \begin{figure}[htbp]
     \centering
     \includegraphics[height=10cm,keepaspectratio=true]{Figures/pic_left_fit_first_c_2198_400_0183_0001.png}
-    \caption{Fitted one-dimensional projection of the rotated $x$-distribution in MWPC2 and MWPC3. The prominent $^{12}\mathrm{C}$ peak is fitted by a voigt profile (blue) and Gaussian distribution (black). The $^{11}\mathrm{C}$ and $^{10}\mathrm{C}$ peaks are fitted with Gaussian functions, shown in green and cyan, respectively.}
+    \caption{Fitted one-dimensional projection of the rotated $x$-distribution in MWPC2 and MWPC3. The prominent $^{12}\mathrm{C}$ peak is fitted by a Voigt profile (blue) and Gaussian distribution (black). The $^{11}\mathrm{C}$ and $^{10}\mathrm{C}$ peaks are fitted with Gaussian functions, shown in green and cyan, respectively.}
     \label{fig:example_histo_fit}
 \end{figure}
 

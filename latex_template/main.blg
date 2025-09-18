@@ -1,5 +1,5 @@
-This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: Abstract.aux
 The style file: ieeetr.bst
@@ -38,7 +38,6 @@ You're missing a field name---line 1330 of file main.bib
  :   year = {2025}, 
  :                  % Or the year you accessed it, or the last updated year if available on the site
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Sec.2.1"
 Warning--empty journal in horvat2021evolution
 Warning--empty journal in glauber1959lectures
 Warning--empty journal in sitenko1990theory
@@ -51,45 +50,45 @@ Warning--empty journal in serrano2013white
 Warning--empty journal in bassani2005encyclopedia
 Warning--empty journal in popescu2021review
 Warning--can't use both volume and number fields in bertini2011r3broot
-You've used 147 entries,
+You've used 146 entries,
             1876 wiz_defined-function locations,
-            1275 strings with 31352 characters,
-and the built_in function-call counts, 40333 in all, are:
-= -- 3835
-> -- 2066
+            1270 strings with 31230 characters,
+and the built_in function-call counts, 40120 in all, are:
+= -- 3814
+> -- 2058
 < -- 0
-+ -- 754
-- -- 607
-* -- 2837
-:= -- 5842
-add.period$ -- 174
-call.type$ -- 147
-change.case$ -- 129
++ -- 751
+- -- 605
+* -- 2822
+:= -- 5810
+add.period$ -- 173
+call.type$ -- 146
+change.case$ -- 128
 chr.to.int$ -- 0
-cite$ -- 159
-duplicate$ -- 2134
-empty$ -- 3447
-format.name$ -- 607
-if$ -- 9820
+cite$ -- 158
+duplicate$ -- 2121
+empty$ -- 3427
+format.name$ -- 605
+if$ -- 9766
 int.to.chr$ -- 0
-int.to.str$ -- 147
-missing$ -- 138
-newline$ -- 475
-num.names$ -- 139
-pop$ -- 468
+int.to.str$ -- 146
+missing$ -- 137
+newline$ -- 472
+num.names$ -- 138
+pop$ -- 466
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1550
+skip$ -- 1542
 stack$ -- 0
-substring$ -- 1904
-swap$ -- 982
+substring$ -- 1900
+swap$ -- 977
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 12
-while$ -- 335
-width$ -- 150
-write$ -- 1474
+while$ -- 333
+width$ -- 149
+write$ -- 1463
 (There were 8 error messages)
