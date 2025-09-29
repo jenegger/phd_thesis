@@ -159,13 +159,19 @@ For the analysis of reaction fragments, the reconstructed charge \(\overline{Z}\
 \end{equation}
 where \(E_i\) is the energy signal recorded by the \(i\)-th anode, \(c_i\) is its corresponding calibration factor, and \(n\) is the number of anodes with valid signals contributing to the event.
 
-\begin{figure}
+\begin{figure}[ht]
      \centering
      \begin{subfigure}[t]{0.75\textwidth}
          \centering
          \includegraphics[width=\textwidth]{Figures/twim_raw_550_target.png}
          \caption{
-	 Uncalibrated raw energy-loss ($\Delta E$) distributions for all 16 TWIN anodes recorded during the thick-target run at a beam energy of 550~AMeV. The eight upstream anodes are shown in color, while the eight downstream anodes are displayed in shades of gray. No charge selection based on the R3B MUSIC detector or position cut using MWPC0 was applied, which accounts for the extended high-energy tail caused by pileup events. The sharp cut-off at 8192~a.u.\ corresponds to the upper limit of the digitizer's dynamic range, while the steep drop around 1500~a.u.\ results from the applied electronic thresholds. The last six anodes exhibit a slightly different amplification factor.
+Raw, uncalibrated $\Delta E$ distributions from all 16 TWIN anodes 
+  recorded during the thick-target run at 550~AMeV. Upstream anodes are shown in 
+  color, downstream in gray. No charge selection (R3B MUSIC) or position cut 
+  (MWPC0) was applied, leading to the extended high-energy tail from pileup events. 
+  The cut-off at 8192~a.u.\ marks the digitizer’s dynamic range, while the drop 
+  around 1500~a.u.\ stems from electronic thresholds. The last six anodes have a 
+  slightly different amplification.
 	 }
          \label{fig:raw_twim}
      \end{subfigure}
@@ -173,7 +179,10 @@ where \(E_i\) is the energy signal recorded by the \(i\)-th anode, \(c_i\) is it
      \begin{subfigure}[t]{0.75\textwidth}
          \centering
          \includegraphics[width=\textwidth]{Figures/twim_cal_550_target.png}
-         \caption{Calibrated energy-loss ($\Delta E$) distributions for all 16 TWIN anodes after applying strict event selection criteria on R3B MUSIC and MWPC0 position distribution. A Gaussian fit was performed on the raw $\Delta E$ spectra for each anode, and the resulting peaks were aligned by applying individual shifts, ensuring a consistent energy scale across all channels.}
+         \caption{Calibrated energy-loss ($\Delta E$) distributions for all 16 TWIN 
+  anodes after applying selection cuts on R3B MUSIC and MWPC0. Gaussian fits to 
+  the raw spectra were used to align the peaks, ensuring a consistent energy scale 
+  across all channels.}
          \label{fig:cal_twim_one}
      \end{subfigure}
      \hfill

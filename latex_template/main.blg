@@ -2,6 +2,7 @@ This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: Abstract.aux
+A level-1 auxiliary file: Abstract_de.aux
 The style file: ieeetr.bst
 Database file #1: main.bib
 Warning--entry type for "MDPP-16" isn't style-file defined
@@ -52,7 +53,7 @@ Warning--empty journal in popescu2021review
 Warning--can't use both volume and number fields in bertini2011r3broot
 You've used 146 entries,
             1876 wiz_defined-function locations,
-            1270 strings with 31230 characters,
+            1271 strings with 31245 characters,
 and the built_in function-call counts, 40120 in all, are:
 = -- 3814
 > -- 2058

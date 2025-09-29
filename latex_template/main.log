@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2023.5.31)  29 SEP 2025 12:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2023.5.31)  29 SEP 2025 17:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -23,6 +23,324 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0100 (decimal 256)
+   defining Unicode char U+0101 (decimal 257)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+0108 (decimal 264)
+   defining Unicode char U+0109 (decimal 265)
+   defining Unicode char U+010A (decimal 266)
+   defining Unicode char U+010B (decimal 267)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0112 (decimal 274)
+   defining Unicode char U+0113 (decimal 275)
+   defining Unicode char U+0114 (decimal 276)
+   defining Unicode char U+0115 (decimal 277)
+   defining Unicode char U+0116 (decimal 278)
+   defining Unicode char U+0117 (decimal 279)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011C (decimal 284)
+   defining Unicode char U+011D (decimal 285)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0120 (decimal 288)
+   defining Unicode char U+0121 (decimal 289)
+   defining Unicode char U+0122 (decimal 290)
+   defining Unicode char U+0123 (decimal 291)
+   defining Unicode char U+0124 (decimal 292)
+   defining Unicode char U+0125 (decimal 293)
+   defining Unicode char U+0128 (decimal 296)
+   defining Unicode char U+0129 (decimal 297)
+   defining Unicode char U+012A (decimal 298)
+   defining Unicode char U+012B (decimal 299)
+   defining Unicode char U+012C (decimal 300)
+   defining Unicode char U+012D (decimal 301)
+   defining Unicode char U+012E (decimal 302)
+   defining Unicode char U+012F (decimal 303)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0134 (decimal 308)
+   defining Unicode char U+0135 (decimal 309)
+   defining Unicode char U+0136 (decimal 310)
+   defining Unicode char U+0137 (decimal 311)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013B (decimal 315)
+   defining Unicode char U+013C (decimal 316)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0145 (decimal 325)
+   defining Unicode char U+0146 (decimal 326)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+014C (decimal 332)
+   defining Unicode char U+014D (decimal 333)
+   defining Unicode char U+014E (decimal 334)
+   defining Unicode char U+014F (decimal 335)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0156 (decimal 342)
+   defining Unicode char U+0157 (decimal 343)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015C (decimal 348)
+   defining Unicode char U+015D (decimal 349)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+0168 (decimal 360)
+   defining Unicode char U+0169 (decimal 361)
+   defining Unicode char U+016A (decimal 362)
+   defining Unicode char U+016B (decimal 363)
+   defining Unicode char U+016C (decimal 364)
+   defining Unicode char U+016D (decimal 365)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0172 (decimal 370)
+   defining Unicode char U+0173 (decimal 371)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+01CD (decimal 461)
+   defining Unicode char U+01CE (decimal 462)
+   defining Unicode char U+01CF (decimal 463)
+   defining Unicode char U+01D0 (decimal 464)
+   defining Unicode char U+01D1 (decimal 465)
+   defining Unicode char U+01D2 (decimal 466)
+   defining Unicode char U+01D3 (decimal 467)
+   defining Unicode char U+01D4 (decimal 468)
+   defining Unicode char U+01E2 (decimal 482)
+   defining Unicode char U+01E3 (decimal 483)
+   defining Unicode char U+01E6 (decimal 486)
+   defining Unicode char U+01E7 (decimal 487)
+   defining Unicode char U+01E8 (decimal 488)
+   defining Unicode char U+01E9 (decimal 489)
+   defining Unicode char U+01EA (decimal 490)
+   defining Unicode char U+01EB (decimal 491)
+   defining Unicode char U+01F0 (decimal 496)
+   defining Unicode char U+01F4 (decimal 500)
+   defining Unicode char U+01F5 (decimal 501)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+0232 (decimal 562)
+   defining Unicode char U+0233 (decimal 563)
+   defining Unicode char U+1E02 (decimal 7682)
+   defining Unicode char U+1E03 (decimal 7683)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2010 (decimal 8208)
+   defining Unicode char U+2011 (decimal 8209)
+   defining Unicode char U+2012 (decimal 8210)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2015 (decimal 8213)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+1E20 (decimal 7712)
+   defining Unicode char U+1E21 (decimal 7713)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AD (decimal 173)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
 (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 
@@ -43,8 +361,11 @@ Package: babel 2018/02/14 3.18 The Babel package
 (/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
 File: switch.def 2018/02/14 3.18 Babel switching mechanism
 )
-(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
-Language: english 2017/06/06 v3.3r English support from the babel system
+(/usr/share/texlive/texmf-dist/tex/generic/babel-german/ngerman.ldf
+Language: ngerman 2016/11/02 v2.9 German support for babel (new orthography)
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel-german/ngermanb.ldf
+Language: ngermanb 2016/11/02 v2.9 German support for babel (new orthography)
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2018/02/14 3.18 Babel common definitions
@@ -54,6 +375,10 @@ File: babel.def 2018/02/14 3.18 Babel common definitions
 (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@dirlevel=\count89
 )
+Package babel Info: Making " an active character on input line 125.
+))
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
@@ -63,7 +388,7 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks14
+\KV@toks@=\toks16
 )
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
@@ -86,7 +411,7 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutheight=\dimen110
 \Gm@layouthoffset=\dimen111
 \Gm@layoutvoffset=\dimen112
-\Gm@dimlist=\toks15
+\Gm@dimlist=\toks17
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
@@ -127,7 +452,7 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks16
+\@emptytoks=\toks18
 \ex@=\dimen113
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -157,21 +482,21 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \dotsspace@=\muskip11
 \c@parentequation=\count100
 \dspbrk@lvl=\count101
-\tag@help=\toks17
+\tag@help=\toks19
 \row@=\count102
 \column@=\count103
 \maxfields@=\count104
-\andhelp@=\toks18
+\andhelp@=\toks20
 \eqnshift@=\dimen116
 \alignsep@=\dimen117
 \tagshift@=\dimen118
 \tagwidth@=\dimen119
 \totwidth@=\dimen120
 \lineht@=\dimen121
-\@envbody=\toks19
+\@envbody=\toks21
 \multlinegap=\skip55
 \multlinetaggap=\skip56
-\mathdisplay@stack=\toks20
+\mathdisplay@stack=\toks22
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
@@ -263,6 +588,8 @@ Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count107
 
@@ -569,7 +896,7 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \aftertitleunit=\skip78
 \ttl@plus=\dimen165
 \ttl@minus=\dimen166
-\ttl@toksa=\toks21
+\ttl@toksa=\toks23
 \titlewidth=\dimen167
 \titlewidthlast=\dimen168
 \titlewidthfirst=\dimen169
@@ -600,7 +927,7 @@ Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip79
 \enit@outerparindent=\dimen177
-\enit@toks=\toks22
+\enit@toks=\toks24
 \enit@inbox=\box45
 \enitdp@description=\count280
 )
@@ -619,7 +946,7 @@ Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
 Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \col@sep=\dimen178
 \extrarowheight=\dimen179
-\NC@list=\toks23
+\NC@list=\toks25
 \extratabsurround=\skip82
 \backup@length=\skip83
 )
@@ -629,7 +956,7 @@ Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \TX@target=\dimen183
 \TX@delta=\dimen184
 \TX@cols=\count284
-\TX@ftn=\toks24
+\TX@ftn=\toks26
 )
 (/usr/share/texlive/texmf-dist/tex/latex/sidecap/sidecap.sty
 Package: sidecap 2003/06/06 v1.6f SideCap Package (RN/HjG)
@@ -648,7 +975,7 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 \rotheadsize=\dimen189
 \c@nlinenum=\count286
-\TeXr@lab=\toks25
+\TeXr@lab=\toks27
 )
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/hypcap.sty
 Package: hypcap 2016/05/16 v1.12 Adjusting the anchors of captions (HO)
@@ -660,10 +987,10 @@ Style option: `fancybox' v1.4 <2010/05/15> (tvz)
 \@fancybox=\box47
 \shadowsize=\dimen190
 \@Sbox=\box48
-\do@VerbBox=\toks26
-\the@fancyput=\toks27
-\this@fancyput=\toks28
-\EndVerbatimTokens=\toks29
+\do@VerbBox=\toks28
+\the@fancyput=\toks29
+\this@fancyput=\toks30
+\EndVerbatimTokens=\toks31
 \Verbatim@Outfile=\write3
 \Verbatim@Infile=\read1
 ) (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
@@ -696,8 +1023,8 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 File: pppdftex.def 2017/10/31 v0.5l Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box49
-\AM@global@opts=\toks30
-\AM@toc@title=\toks31
+\AM@global@opts=\toks32
+\AM@toc@title=\toks33
 \c@AM@survey=\count287
 \AM@templatesizebox=\box50
 )
@@ -729,13 +1056,13 @@ Package cleveref Info: always capitalise cross-reference names on input line 77
 (/usr/share/texlive/texmf-dist/tex/latex/floatrow/floatrow.sty
 Package: floatrow 2008/08/02 v0.3b floatrow: float package extension
 \c@float@type=\count288
-\float@exts=\toks32
+\float@exts=\toks34
 \float@box=\box51
 \@floatcapt=\box52
 Package floatrow Info: Modified float package code loaded on input line 455.
 Package floatrow Info: Modified rotfloat package code loaded on input line 473.
 
-\FR@everyfloat=\toks33
+\FR@everyfloat=\toks35
 \flrow@foot=\insert252
 \FB@wd=\dimen193
 \FBo@wd=\dimen194
@@ -762,7 +1089,7 @@ Package floatrow Info: Modified rotfloat package code loaded on input line 473.
 \LTright=\skip95
 \LTleft=\skip96
 \LTright=\skip97
-\flrow@types=\toks34
+\flrow@types=\toks36
 )
 (/usr/share/texlive/texmf-dist/tex/latex/esdiff/esdiff.sty
 Package: esdiff 
@@ -935,7 +1262,7 @@ Package: siunitx 2017/11/26 v2.7k A comprehensive (SI) units package
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator.sty
 Package: translator 2018/01/04 v1.12 Easy translation of strings in LaTeX
 ))
-(./main.aux (./Abstract.aux)
+(./main.aux (./Abstract.aux) (./Abstract_de.aux)
 
 LaTeX Warning: Label `fig:drop_shell_model' multiply defined.
 
@@ -1113,20 +1440,20 @@ LaTeX Warning: Label `Label@cref' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1169,12 +1496,12 @@ LaTeX Font Info:    ... okay on input line 52.
 \scratchbox=\box61
 \nofMPsegments=\count316
 \nofMParguments=\count317
-\everyMPshowfont=\toks35
+\everyMPshowfont=\toks37
 \MPscratchCnt=\count318
 \MPscratchDim=\dimen266
 \MPnumerator=\count319
 \makeMPintoPDFobject=\count320
-\everyMPtoPDFconversion=\toks36
+\everyMPtoPDFconversion=\toks38
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1193,7 +1520,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box62
-Package hyperref Info: Link coloring ON on input line 52.
+Package hyperref Info: Link coloring ON on input line 53.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1203,9 +1530,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count321
 )
-LaTeX Info: Redefining \ref on input line 52.
-LaTeX Info: Redefining \pageref on input line 52.
-LaTeX Info: Redefining \nameref on input line 52.
+LaTeX Info: Redefining \ref on input line 53.
+LaTeX Info: Redefining \pageref on input line 53.
+LaTeX Info: Redefining \nameref on input line 53.
 
 (./main.out) (./main.out)
 \@outlinefile=\write4
@@ -1214,7 +1541,7 @@ LaTeX Info: Redefining \nameref on input line 52.
 .................................................
 . chemgreek info: "mapping-activated"
 . 
-. Activating mapping `default' on line 52.
+. Activating mapping `default' on line 53.
 .................................................
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: floatrow package is loaded.
@@ -1256,6 +1583,81 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.dfu
+File: ts1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+)
 (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary
 -English.dict
 Dictionary: translator-basic-dictionary, Language: English 
@@ -1264,12 +1666,12 @@ Dictionary: translator-basic-dictionary, Language: English
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 )
 \c__siunitx_mathsf_int=\count322
-LaTeX Font Info:    Try loading font information for U+msa on input line 52.
+LaTeX Font Info:    Try loading font information for U+msa on input line 53.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 52.
+LaTeX Font Info:    Try loading font information for U+msb on input line 53.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1281,7 +1683,7 @@ File: Figures/TUMLogo_oZ_Outline_blau_CMYK-eps-converted-to.pdf Graphic file (t
 ype pdf)
 <use Figures/TUMLogo_oZ_Outline_blau_CMYK-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/TUMLogo_oZ_Outline_blau_CMYK-eps-converted-to.
-pdf  used on input line 58.
+pdf  used on input line 59.
 (pdftex.def)             Requested size: 110.8946pt x 59.56181pt.
  [1
 
@@ -1324,13 +1726,13 @@ File: Figures/TUMLogo_oZ_Outline_blau_CMYK-eps-converted-to.pdf Graphic file (t
 ype pdf)
 <use Figures/TUMLogo_oZ_Outline_blau_CMYK-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/TUMLogo_oZ_Outline_blau_CMYK-eps-converted-to.
-pdf  used on input line 153.
+pdf  used on input line 154.
 (pdftex.def)             Requested size: 140.92793pt x 75.70404pt.
 <Figures/PH_CMYK-eps-converted-to.pdf, id=325, 30.1125pt x 30.1125pt>
 File: Figures/PH_CMYK-eps-converted-to.pdf Graphic file (type pdf)
 <use Figures/PH_CMYK-eps-converted-to.pdf>
 Package pdftex.def Info: Figures/PH_CMYK-eps-converted-to.pdf  used on input li
-ne 214.
+ne 215.
 (pdftex.def)             Requested size: 70.46037pt x 70.46706pt.
  [3
 
@@ -1376,14 +1778,64 @@ ne 214.
 
 ] [6
 
+]
+\openout2 = `Abstract_de.aux'.
+
+ (./Abstract_de.tex
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(51.21495pt, 511.8651pt, 51.21495pt)
+* v-part:(T,H,B)=(45.5244pt, 703.92119pt, 45.5244pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=511.8651pt
+* \textheight=703.92119pt
+* \oddsidemargin=-21.05504pt
+* \evensidemargin=-21.05504pt
+* \topmargin=-63.74559pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=49.79231pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+)
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 237.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 237.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 237.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 237.
+ [7
+
+
+] [8
+
 ] (./main.toc [1
 
 ] [2])
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [3]
-(./../writings/introduction.tex
+
+[3] (./../writings/introduction.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -1415,13 +1867,13 @@ been already used, duplicate ignored
                    \relax 
 l.18 
       [2]
-<Figures/binding_e_vs_dens_label.png, id=480, 190.0701pt x 145.5036pt>
+<Figures/binding_e_vs_dens_label.png, id=488, 190.0701pt x 145.5036pt>
 File: Figures/binding_e_vs_dens_label.png Graphic file (type png)
 <use Figures/binding_e_vs_dens_label.png>
 Package pdftex.def Info: Figures/binding_e_vs_dens_label.png  used on input lin
 e 27.
 (pdftex.def)             Requested size: 189.62788pt x 145.1702pt.
-<Figures/symm_e_vs_density_label.png, id=481, 232.9503pt x 180.675pt>
+<Figures/symm_e_vs_density_label.png, id=489, 232.9503pt x 180.675pt>
 File: Figures/symm_e_vs_density_label.png Graphic file (type png)
 <use Figures/symm_e_vs_density_label.png>
 Package pdftex.def Info: Figures/symm_e_vs_density_label.png  used on input lin
@@ -1462,22 +1914,22 @@ been already used, duplicate ignored
                    \relax 
 l.62 
       [4]
-<Figures/neutron_skin_vs_L.png, id=532, 1276.77pt x 852.18375pt>
+<Figures/neutron_skin_vs_L.png, id=539, 1276.77pt x 852.18375pt>
 File: Figures/neutron_skin_vs_L.png Graphic file (type png)
 <use Figures/neutron_skin_vs_L.png>
 Package pdftex.def Info: Figures/neutron_skin_vs_L.png  used on input line 69.
 (pdftex.def)             Requested size: 341.03094pt x 227.62206pt.
-<Figures/n_rem_cs_vs_a.png, id=540, 1177.39874pt x 864.22874pt>
+<Figures/n_rem_cs_vs_a.png, id=547, 1177.39874pt x 864.22874pt>
 File: Figures/n_rem_cs_vs_a.png Graphic file (type png)
 <use Figures/n_rem_cs_vs_a.png>
 Package pdftex.def Info: Figures/n_rem_cs_vs_a.png  used on input line 77.
-(pdftex.def)             Requested size: 189.62788pt x 139.18933pt.
-<Figures/overview_thickness_L.png, id=543, 955.57pt x 998.73125pt>
+(pdftex.def)             Requested size: 206.48741pt x 151.55878pt.
+<Figures/overview_thickness_L.png, id=550, 955.57pt x 998.73125pt>
 File: Figures/overview_thickness_L.png Graphic file (type png)
 <use Figures/overview_thickness_L.png>
 Package pdftex.def Info: Figures/overview_thickness_L.png  used on input line 8
 2.
-(pdftex.def)             Requested size: 189.62788pt x 198.1883pt.
+(pdftex.def)             Requested size: 206.48741pt x 215.80502pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 66--90
 
@@ -1517,11 +1969,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7 <./Figures/n_rem_cs_vs_a.png> <./Figures/overview_thickness_L.png>])
-(./../writings/reaction_models.tex
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 1.
+pdfTeX warning (ext4): destination with the same identifier (name{page.7}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.93 \clearpage
+                [7 <./Figures/n_rem_cs_vs_a.png> <./Figures/overview_thickness_
+L.png>]) (./../writings/reaction_models.tex
+Overfull \hbox (0.73358pt too wide) in paragraph at lines 1--1
+|[]\T1/cmr/bx/n/17.28 Nuclear Scat-ter-ing Re-ac-tions in the Glauber Frame-
+ []
 
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 7.
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
@@ -1536,14 +1993,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8
+pdfTeX warning (ext4): destination with the same identifier (name{page.8}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.11 \end{itemize}
+                   [8
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
 
-<Figures/overview_nuclear_reactions.png, id=591, 1553.805pt x 1104.125pt>
+<Figures/overview_nuclear_reactions.png, id=597, 1553.805pt x 1104.125pt>
 File: Figures/overview_nuclear_reactions.png Graphic file (type png)
 <use Figures/overview_nuclear_reactions.png>
 Package pdftex.def Info: Figures/overview_nuclear_reactions.png  used on input 
@@ -1551,7 +2013,7 @@ line 17.
 (pdftex.def)             Requested size: 354.86412pt x 252.15756pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 27.11469pt.
+ Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
@@ -1593,22 +2055,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [11]
+<Figures/impact_parameter_cut.png, id=635, 594.72188pt x 337.26pt>
+File: Figures/impact_parameter_cut.png Graphic file (type png)
+<use Figures/impact_parameter_cut.png>
+Package pdftex.def Info: Figures/impact_parameter_cut.png  used on input line 8
+9.
+(pdftex.def)             Requested size: 354.86412pt x 201.23569pt.
 
-pdfTeX warning: pdflatex (file ./Figures/impact_par_glauber_name.pdf): PDF incl
-usion: found PDF version <1.6>, but at most version <1.5> allowed
-<Figures/impact_par_glauber_name.pdf, id=630, 796.67719pt x 448.1309pt>
-File: Figures/impact_par_glauber_name.pdf Graphic file (type pdf)
-<use Figures/impact_par_glauber_name.pdf>
-Package pdftex.def Info: Figures/impact_par_glauber_name.pdf  used on input lin
-e 89.
-(pdftex.def)             Requested size: 354.86412pt x 199.61249pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[12 <./Figures/impact_par_glauber_name.pdf>]
+[12 <./Figures/impact_parameter_cut.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1644,10 +2104,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [17]
-<Figures/nn_cross_section.png, id=741, 1794.705pt x 1332.98pt>
+<Figures/nn_cross_section.png, id=731, 1794.705pt x 1332.98pt>
 File: Figures/nn_cross_section.png Graphic file (type png)
 <use Figures/nn_cross_section.png>
-Package pdftex.def Info: Figures/nn_cross_section.png  used on input line 275.
+Package pdftex.def Info: Figures/nn_cross_section.png  used on input line 276.
 (pdftex.def)             Requested size: 354.86412pt x 263.56067pt.
 
 
@@ -1664,10 +2124,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [19]
-<Figures/cs_vals_cal_exp.png, id=771, 889.3225pt x 672.5125pt>
+<Figures/cs_vals_cal_exp.png, id=761, 889.3225pt x 672.5125pt>
 File: Figures/cs_vals_cal_exp.png Graphic file (type png)
 <use Figures/cs_vals_cal_exp.png>
-Package pdftex.def Info: Figures/cs_vals_cal_exp.png  used on input line 400.
+Package pdftex.def Info: Figures/cs_vals_cal_exp.png  used on input line 401.
 (pdftex.def)             Requested size: 354.86412pt x 268.34348pt.
 
 
@@ -1677,7 +2137,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [20 <./Figures/cs_vals_cal_exp.png>]
-Overfull \hbox (17.52742pt too wide) detected at line 422
+Overfull \hbox (17.52742pt too wide) detected at line 423
 []\OML/cmm/m/it/12 ^^[[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 E; ^^Z[]; ^^Z[]\OT1/c
 mr/m/n/12 ) = \OML/cmm/m/it/12 ^^[[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 E\OT1/cmr
 /m/n/12 ) \OMS/cmsy/m/n/12 ^^A [] ^^A []
@@ -1697,7 +2157,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 469--476
+Underfull \hbox (badness 10000) in paragraph at lines 470--477
 
  []
 
@@ -1713,10 +2173,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 pdfTeX warning: pdflatex (file ./Figures/sketch_qfs.pdf): PDF inclusion: found 
 PDF version <1.6>, but at most version <1.5> allowed
-<Figures/sketch_qfs.pdf, id=834, 796.67719pt x 448.1309pt>
+<Figures/sketch_qfs.pdf, id=824, 796.67719pt x 448.1309pt>
 File: Figures/sketch_qfs.pdf Graphic file (type pdf)
 <use Figures/sketch_qfs.pdf>
-Package pdftex.def Info: Figures/sketch_qfs.pdf  used on input line 480.
+Package pdftex.def Info: Figures/sketch_qfs.pdf  used on input line 481.
 (pdftex.def)             Requested size: 404.65889pt x 227.6206pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1732,10 +2192,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [25]
-<Figures/spec_factor.png, id=885, 608.2725pt x 710.655pt>
+<Figures/spec_factor.png, id=875, 608.2725pt x 710.655pt>
 File: Figures/spec_factor.png Graphic file (type png)
 <use Figures/spec_factor.png>
-Package pdftex.def Info: Figures/spec_factor.png  used on input line 527.
+Package pdftex.def Info: Figures/spec_factor.png  used on input line 528.
 (pdftex.def)             Requested size: 194.82753pt x 227.62027pt.
 
 
@@ -1748,11 +2208,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [26]
-<Figures/mrunmoy_correlation.pdf, id=903, 796.6487pt x 448.10245pt>
+<Figures/mrunmoy_correlation.pdf, id=894, 796.6487pt x 448.10245pt>
 File: Figures/mrunmoy_correlation.pdf Graphic file (type pdf)
 <use Figures/mrunmoy_correlation.pdf>
-Package pdftex.def Info: Figures/mrunmoy_correlation.pdf  used on input line 53
-9.
+Package pdftex.def Info: Figures/mrunmoy_correlation.pdf  used on input line 54
+0.
 (pdftex.def)             Requested size: 443.57965pt x 249.5066pt.
 
 
@@ -1772,7 +2232,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [28 <./Figures/mrunmoy_correlation.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 559--561
+Underfull \hbox (badness 10000) in paragraph at lines 560--562
 
  []
 
@@ -1783,10 +2243,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [29]
-<Figures/spec_red_factors.png, id=968, 1330.9725pt x 879.285pt>
+<Figures/spec_red_factors.png, id=958, 1330.9725pt x 879.285pt>
 File: Figures/spec_red_factors.png Graphic file (type png)
 <use Figures/spec_red_factors.png>
-Package pdftex.def Info: Figures/spec_red_factors.png  used on input line 596.
+Package pdftex.def Info: Figures/spec_red_factors.png  used on input line 597.
 (pdftex.def)             Requested size: 344.54182pt x 227.61586pt.
 
 
@@ -1803,13 +2263,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [31 <./Figures/spec_red_factors.png>]
-<Figures/src_pn_excess.png, id=994, 966.61125pt x 767.86874pt>
+<Figures/src_pn_excess.png, id=984, 966.61125pt x 767.86874pt>
 File: Figures/src_pn_excess.png Graphic file (type png)
 <use Figures/src_pn_excess.png>
-Package pdftex.def Info: Figures/src_pn_excess.png  used on input line 615.
+Package pdftex.def Info: Figures/src_pn_excess.png  used on input line 616.
 (pdftex.def)             Requested size: 286.53429pt x 227.62068pt.
 
-Overfull \hbox (14.54854pt too wide) in paragraph at lines 610--621
+Overfull \hbox (14.54854pt too wide) in paragraph at lines 611--622
 []\T1/cmr/m/n/12 Short range cor-re-la-tions re-fer to el-e-men-tary nucleon-
  []
 
@@ -1820,7 +2280,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [32]
-Underfull \hbox (badness 10000) in paragraph at lines 623--625
+Underfull \hbox (badness 10000) in paragraph at lines 624--626
 
  []
 
@@ -1854,7 +2314,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [36]
-<Figures/final_fair_gsi_overview1.png, id=1049, 797.98125pt x 548.0475pt>
+<Figures/final_fair_gsi_overview1.png, id=1039, 797.98125pt x 548.0475pt>
 File: Figures/final_fair_gsi_overview1.png Graphic file (type png)
 <use Figures/final_fair_gsi_overview1.png>
 Package pdftex.def Info: Figures/final_fair_gsi_overview1.png  used on input li
@@ -1871,7 +2331,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [37]
-<Figures/r3b_setup_sketch.png, id=1061, 701.7417pt x 330.9966pt>
+<Figures/r3b_setup_sketch.png, id=1051, 701.7417pt x 330.9966pt>
 File: Figures/r3b_setup_sketch.png Graphic file (type png)
 <use Figures/r3b_setup_sketch.png>
 Package pdftex.def Info: Figures/r3b_setup_sketch.png  used on input line 39.
@@ -1895,7 +2355,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--54
 
  []
 
-<Figures/mwpcs_operation.png, id=1084, 706.64pt x 796.9775pt>
+<Figures/mwpcs_operation.png, id=1075, 706.64pt x 796.9775pt>
 File: Figures/mwpcs_operation.png Graphic file (type png)
 <use Figures/mwpcs_operation.png>
 Package pdftex.def Info: Figures/mwpcs_operation.png  used on input line 63.
@@ -1954,7 +2414,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [45]
-<Figures/glad_magnet.jpg, id=1131, 853.5087pt x 521.3076pt>
+<Figures/glad_magnet.jpg, id=1122, 853.5087pt x 521.3076pt>
 File: Figures/glad_magnet.jpg Graphic file (type jpg)
 <use Figures/glad_magnet.jpg>
 Package pdftex.def Info: Figures/glad_magnet.jpg  used on input line 204.
@@ -1975,7 +2435,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 214--215
 
  []
 
-<Figures/califa_section_overview.png, id=1146, 724.7075pt x 556.0775pt>
+<Figures/califa_section_overview.png, id=1136, 724.7075pt x 556.0775pt>
 File: Figures/califa_section_overview.png Graphic file (type png)
 <use Figures/califa_section_overview.png>
 Package pdftex.def Info: Figures/califa_section_overview.png  used on input lin
@@ -1995,7 +2455,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [48 <./Figures/califa_section_overview.png>]
-<Figures/hec_zeitrausch.jpeg, id=1170, 1156.32pt x 650.43pt>
+<Figures/hec_zeitrausch.jpeg, id=1160, 1156.32pt x 650.43pt>
 File: Figures/hec_zeitrausch.jpeg Graphic file (type jpg)
 <use Figures/hec_zeitrausch.jpeg>
 Package pdftex.def Info: Figures/hec_zeitrausch.jpeg  used on input line 246.
@@ -2018,7 +2478,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 pdfTeX warning: pdflatex (file ./Figures/qpid_overview.pdf): PDF inclusion: fou
 nd PDF version <1.6>, but at most version <1.5> allowed
-<Figures/qpid_overview.pdf, id=1203, 796.67719pt x 448.1309pt>
+<Figures/qpid_overview.pdf, id=1194, 796.67719pt x 448.1309pt>
 File: Figures/qpid_overview.pdf Graphic file (type pdf)
 <use Figures/qpid_overview.pdf>
 Package pdftex.def Info: Figures/qpid_overview.pdf  used on input line 269.
@@ -2061,7 +2521,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [54]
-<Figures/sof_tofw.png, id=1292, 2246.3925pt x 2062.70625pt>
+<Figures/sof_tofw.png, id=1282, 2246.3925pt x 2062.70625pt>
 File: Figures/sof_tofw.png Graphic file (type png)
 <use Figures/sof_tofw.png>
 Package pdftex.def Info: Figures/sof_tofw.png  used on input line 329.
@@ -2135,7 +2595,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [59]
-<Figures/SETUP_around_Target.png, id=1344, 1927.2pt x 1084.05pt>
+<Figures/SETUP_around_Target.png, id=1334, 1927.2pt x 1084.05pt>
 File: Figures/SETUP_around_Target.png Graphic file (type png)
 <use Figures/SETUP_around_Target.png>
 Package pdftex.def Info: Figures/SETUP_around_Target.png  used on input line 58
@@ -2145,13 +2605,13 @@ Package pdftex.def Info: Figures/SETUP_around_Target.png  used on input line 58
 
 pdfTeX warning: pdflatex (file ./Figures/charge_val_r3b_start_mw0_cuts.pdf): PD
 F inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<Figures/charge_val_r3b_start_mw0_cuts.pdf, id=1345, 796.67719pt x 448.1309pt>
+<Figures/charge_val_r3b_start_mw0_cuts.pdf, id=1335, 796.67719pt x 448.1309pt>
 File: Figures/charge_val_r3b_start_mw0_cuts.pdf Graphic file (type pdf)
 <use Figures/charge_val_r3b_start_mw0_cuts.pdf>
 Package pdftex.def Info: Figures/charge_val_r3b_start_mw0_cuts.pdf  used on inp
 ut line 70.
 (pdftex.def)             Requested size: 404.65889pt x 227.6206pt.
-<Figures/r3bmusic_charge_cuts.png, id=1350, 1011.78pt x 578.16pt>
+<Figures/r3bmusic_charge_cuts.png, id=1340, 1011.78pt x 578.16pt>
 File: Figures/r3bmusic_charge_cuts.png Graphic file (type png)
 <use Figures/r3bmusic_charge_cuts.png>
 Package pdftex.def Info: Figures/r3bmusic_charge_cuts.png  used on input line 8
@@ -2174,7 +2634,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 pdfTeX warning: pdflatex (file ./Figures/t_diff_start.pdf): PDF inclusion: foun
 d PDF version <1.6>, but at most version <1.5> allowed
-<Figures/t_diff_start.pdf, id=1382, 796.67719pt x 448.1309pt>
+<Figures/t_diff_start.pdf, id=1372, 796.67719pt x 448.1309pt>
 File: Figures/t_diff_start.pdf Graphic file (type pdf)
 <use Figures/t_diff_start.pdf>
 Package pdftex.def Info: Figures/t_diff_start.pdf  used on input line 108.
@@ -2186,18 +2646,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [62 <./Figures/r3bmusic_charge_cuts.png>]
-<Figures/mw0_xy_cut_2sigma.pdf, id=1393, 796.6487pt x 448.10245pt>
+<Figures/mw0_xy_cut_2sigma.pdf, id=1384, 796.6487pt x 448.10245pt>
 File: Figures/mw0_xy_cut_2sigma.pdf Graphic file (type pdf)
 <use Figures/mw0_xy_cut_2sigma.pdf>
 Package pdftex.def Info: Figures/mw0_xy_cut_2sigma.pdf  used on input line 116.
 
 (pdftex.def)             Requested size: 443.57965pt x 249.5066pt.
-<Figures/mwpc0_cutxy.png, id=1396, 1011.78pt x 578.16pt>
+<Figures/mwpc0_cutxy.png, id=1387, 1011.78pt x 578.16pt>
 File: Figures/mwpc0_cutxy.png Graphic file (type png)
 <use Figures/mwpc0_cutxy.png>
 Package pdftex.def Info: Figures/mwpc0_cutxy.png  used on input line 122.
 (pdftex.def)             Requested size: 398.32872pt x 227.61641pt.
-<Figures/extrapolated_target_x_pos.pdf, id=1398, 796.6487pt x 448.10245pt>
+<Figures/extrapolated_target_x_pos.pdf, id=1389, 796.6487pt x 448.10245pt>
 File: Figures/extrapolated_target_x_pos.pdf Graphic file (type pdf)
 <use Figures/extrapolated_target_x_pos.pdf>
 Package pdftex.def Info: Figures/extrapolated_target_x_pos.pdf  used on input l
@@ -2237,24 +2697,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [66 <./Figures/extrapolated_target_x_pos.pdf>]
-<Figures/twim_raw_550_target.png, id=1480, 2121.9275pt x 1357.07pt>
+<Figures/twim_raw_550_target.png, id=1470, 1955.305pt x 1228.59pt>
 File: Figures/twim_raw_550_target.png Graphic file (type png)
 <use Figures/twim_raw_550_target.png>
 Package pdftex.def Info: Figures/twim_raw_550_target.png  used on input line 16
 6.
-(pdftex.def)             Requested size: 332.68385pt x 212.76642pt.
-<Figures/twim_cal_550_target.png, id=1481, 2121.9275pt x 1357.07pt>
+(pdftex.def)             Requested size: 332.68385pt x 209.02626pt.
+<Figures/twim_cal_550_target.png, id=1471, 1951.29pt x 1224.575pt>
 File: Figures/twim_cal_550_target.png Graphic file (type png)
 <use Figures/twim_cal_550_target.png>
-Package pdftex.def Info: Figures/twim_cal_550_target.png  used on input line 17
-5.
-(pdftex.def)             Requested size: 332.68385pt x 212.76642pt.
+Package pdftex.def Info: Figures/twim_cal_550_target.png  used on input line 18
+1.
+(pdftex.def)             Requested size: 332.68385pt x 208.77293pt.
 
-
-LaTeX Warning: Float too large for page by 57.49884pt on input line 182.
-
-
-Overfull \hbox (37.39558pt too wide) in paragraph at lines 209--223
+Overfull \hbox (37.39558pt too wide) in paragraph at lines 218--232
  [][] 
  []
 
@@ -2262,7 +2718,7 @@ Overfull \hbox (37.39558pt too wide) in paragraph at lines 209--223
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 230--234
+Underfull \hbox (badness 10000) in paragraph at lines 239--243
 
  []
 
@@ -2279,7 +2735,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[68 <./Figures/twim_raw_550_target.png> <./Figures/twim_cal_550_target.png>]
+[68]
+<Figures/twim_up_down_calibrated.pdf, id=1489, 796.6487pt x 448.10245pt>
+File: Figures/twim_up_down_calibrated.pdf Graphic file (type pdf)
+<use Figures/twim_up_down_calibrated.pdf>
+Package pdftex.def Info: Figures/twim_up_down_calibrated.pdf  used on input lin
+e 258.
+(pdftex.def)             Requested size: 404.66873pt x 227.61983pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -2287,13 +2750,30 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [69]
-<Figures/twim_up_down_calibrated.pdf, id=1503, 796.6487pt x 448.10245pt>
-File: Figures/twim_up_down_calibrated.pdf Graphic file (type pdf)
-<use Figures/twim_up_down_calibrated.pdf>
-Package pdftex.def Info: Figures/twim_up_down_calibrated.pdf  used on input lin
-e 249.
-(pdftex.def)             Requested size: 404.66873pt x 227.61983pt.
+<Figures/charge_changing_cross_sec_prelim_no_geo_corr.png, id=1508, 923.3697pt 
+x 609.9588pt>
+File: Figures/charge_changing_cross_sec_prelim_no_geo_corr.png Graphic file (ty
+pe png)
+<use Figures/charge_changing_cross_sec_prelim_no_geo_corr.png>
+Package pdftex.def Info: Figures/charge_changing_cross_sec_prelim_no_geo_corr.p
+ng  used on input line 279.
+(pdftex.def)             Requested size: 344.57205pt x 227.61713pt.
 
+Underfull \hbox (badness 10000) in paragraph at lines 287--288
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 292--294
+
+ []
+
+<Figures/cccs_vs_sigma_cut.png, id=1515, 1219.9176pt x 347.8596pt>
+File: Figures/cccs_vs_sigma_cut.png Graphic file (type png)
+<use Figures/cccs_vs_sigma_cut.png>
+Package pdftex.def Info: Figures/cccs_vs_sigma_cut.png  used on input line 299.
+
+(pdftex.def)             Requested size: 443.57848pt x 126.48203pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -2307,55 +2787,27 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[71 <./Figures/twim_up_down_calibrated.pdf>]
-<Figures/charge_changing_cross_sec_prelim_no_geo_corr.png, id=1542, 923.3697pt 
-x 609.9588pt>
-File: Figures/charge_changing_cross_sec_prelim_no_geo_corr.png Graphic file (ty
-pe png)
-<use Figures/charge_changing_cross_sec_prelim_no_geo_corr.png>
-Package pdftex.def Info: Figures/charge_changing_cross_sec_prelim_no_geo_corr.p
-ng  used on input line 270.
-(pdftex.def)             Requested size: 344.57205pt x 227.61713pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 278--279
-
- []
-
+[71 <./Figures/twim_raw_550_target.png (PNG copy)> <./Figures/twim_cal_550_targ
+et.png (PNG copy)>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[72 <./Figures/charge_changing_cross_sec_prelim_no_geo_corr.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 283--285
-
- []
-
-<Figures/cccs_vs_sigma_cut.png, id=1556, 1219.9176pt x 347.8596pt>
-File: Figures/cccs_vs_sigma_cut.png Graphic file (type png)
-<use Figures/cccs_vs_sigma_cut.png>
-Package pdftex.def Info: Figures/cccs_vs_sigma_cut.png  used on input line 290.
-
-(pdftex.def)             Requested size: 443.57848pt x 126.48203pt.
+[72 <./Figures/twim_up_down_calibrated.pdf>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[73 <./Figures/cccs_vs_sigma_cut.png>]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[74]
-<Figures/geo_acceptance.pdf, id=1575, 796.6487pt x 448.10245pt>
+[73 <./Figures/charge_changing_cross_sec_prelim_no_geo_corr.png> <./Figures/ccc
+s_vs_sigma_cut.png>]
+<Figures/geo_acceptance.pdf, id=1561, 796.6487pt x 448.10245pt>
 File: Figures/geo_acceptance.pdf Graphic file (type pdf)
 <use Figures/geo_acceptance.pdf>
-Package pdftex.def Info: Figures/geo_acceptance.pdf  used on input line 307.
+Package pdftex.def Info: Figures/geo_acceptance.pdf  used on input line 316.
 (pdftex.def)             Requested size: 443.57965pt x 249.5066pt.
 
 
@@ -2364,7 +2816,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[75
+[74
 
  <./Figures/geo_acceptance.pdf>]
 
@@ -2373,20 +2825,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[76]
-<Figures/geo_corr_flipping_thick_target_400amev.png, id=1624, 1589.94pt x 1084.
+[75]
+<Figures/geo_corr_flipping_thick_target_400amev.png, id=1610, 1589.94pt x 1084.
 05pt>
 File: Figures/geo_corr_flipping_thick_target_400amev.png Graphic file (type png
 )
 <use Figures/geo_corr_flipping_thick_target_400amev.png>
 Package pdftex.def Info: Figures/geo_corr_flipping_thick_target_400amev.png  us
-ed on input line 350.
+ed on input line 359.
 (pdftex.def)             Requested size: 443.57848pt x 302.4402pt.
-<Figures/geo_corr_factors_flipping.png, id=1625, 1084.05pt x 722.7pt>
+<Figures/geo_corr_factors_flipping.png, id=1611, 1084.05pt x 722.7pt>
 File: Figures/geo_corr_factors_flipping.png Graphic file (type png)
 <use Figures/geo_corr_factors_flipping.png>
 Package pdftex.def Info: Figures/geo_corr_factors_flipping.png  used on input l
-ine 357.
+ine 366.
 (pdftex.def)             Requested size: 341.42793pt x 227.62204pt.
 
 
@@ -2395,22 +2847,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[77]
+[76]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[78 <./Figures/geo_corr_flipping_thick_target_400amev.png> <./Figures/geo_corr_
+[77 <./Figures/geo_corr_flipping_thick_target_400amev.png> <./Figures/geo_corr_
 factors_flipping.png>]
-<Figures/charge_changing_cross_sec_geo_cut_corr_flipping.png, id=1648, 923.3697
+<Figures/charge_changing_cross_sec_geo_cut_corr_flipping.png, id=1633, 923.3697
 pt x 609.9588pt>
 File: Figures/charge_changing_cross_sec_geo_cut_corr_flipping.png Graphic file 
 (type png)
 <use Figures/charge_changing_cross_sec_geo_cut_corr_flipping.png>
 Package pdftex.def Info: Figures/charge_changing_cross_sec_geo_cut_corr_flippin
-g.png  used on input line 388.
+g.png  used on input line 397.
 (pdftex.def)             Requested size: 443.57848pt x 293.01889pt.
 
 
@@ -2419,15 +2871,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[79]
+[78]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[80 <./Figures/charge_changing_cross_sec_geo_cut_corr_flipping.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 395--396
+[79 <./Figures/charge_changing_cross_sec_geo_cut_corr_flipping.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 404--405
 
  []
 
@@ -2437,28 +2889,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[81]
-<Figures/mw23_default_rev2.png, id=1675, 1451.4225pt x 1110.1475pt>
+[80]
+<Figures/mw23_default_rev2.png, id=1662, 1451.4225pt x 1110.1475pt>
 File: Figures/mw23_default_rev2.png Graphic file (type png)
 <use Figures/mw23_default_rev2.png>
-Package pdftex.def Info: Figures/mw23_default_rev2.png  used on input line 425.
+Package pdftex.def Info: Figures/mw23_default_rev2.png  used on input line 434.
 
 (pdftex.def)             Requested size: 199.60895pt x 152.67538pt.
-<Figures/mw23x_own_clustering_rev2.png, id=1676, 1459.4525pt x 1109.14375pt>
+<Figures/mw23x_own_clustering_rev2.png, id=1663, 1459.4525pt x 1109.14375pt>
 File: Figures/mw23x_own_clustering_rev2.png Graphic file (type png)
 <use Figures/mw23x_own_clustering_rev2.png>
 Package pdftex.def Info: Figures/mw23x_own_clustering_rev2.png  used on input l
-ine 432.
+ine 441.
 (pdftex.def)             Requested size: 199.60895pt x 151.69115pt.
 
 
 pdfTeX warning: pdflatex (file ./Figures/iso_corr_sections_corrected.pdf): PDF 
 inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<Figures/iso_corr_sections_corrected.pdf, id=1679, 796.67719pt x 448.1309pt>
+<Figures/iso_corr_sections_corrected.pdf, id=1666, 796.67719pt x 448.1309pt>
 File: Figures/iso_corr_sections_corrected.pdf Graphic file (type pdf)
 <use Figures/iso_corr_sections_corrected.pdf>
 Package pdftex.def Info: Figures/iso_corr_sections_corrected.pdf  used on input
- line 446.
+ line 455.
 (pdftex.def)             Requested size: 404.65889pt x 227.62204pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2466,7 +2918,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[82 <./Figures/mw23_default_rev2.png> <./Figures/mw23x_own_clustering_rev2.png>
+[81 <./Figures/mw23_default_rev2.png> <./Figures/mw23x_own_clustering_rev2.png>
 ]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2474,19 +2926,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[83 <./Figures/iso_corr_sections_corrected.pdf>]
-<Figures/mw23_fit_plot.png, id=1724, 1407.2575pt x 1250.6725pt>
+[82 <./Figures/iso_corr_sections_corrected.pdf>]
+<Figures/mw23_fit_plot.png, id=1710, 1407.2575pt x 1250.6725pt>
 File: Figures/mw23_fit_plot.png Graphic file (type png)
 <use Figures/mw23_fit_plot.png>
-Package pdftex.def Info: Figures/mw23_fit_plot.png  used on input line 473.
+Package pdftex.def Info: Figures/mw23_fit_plot.png  used on input line 482.
 (pdftex.def)             Requested size: 199.60895pt x 177.383pt.
-<Figures/rotated_Mw23x.png, id=1727, 1832.8475pt x 1187.43625pt>
+<Figures/rotated_Mw23x.png, id=1713, 1832.8475pt x 1187.43625pt>
 File: Figures/rotated_Mw23x.png Graphic file (type png)
 <use Figures/rotated_Mw23x.png>
-Package pdftex.def Info: Figures/rotated_Mw23x.png  used on input line 480.
+Package pdftex.def Info: Figures/rotated_Mw23x.png  used on input line 489.
 (pdftex.def)             Requested size: 199.60895pt x 129.31383pt.
 
-Underfull \hbox (badness 1874) in paragraph at lines 481--481
+Underfull \hbox (badness 1874) in paragraph at lines 490--490
 []\T1/cmr/m/n/10.95 (b) |One-dimensional pro-jec-tion of the
  []
 
@@ -2496,35 +2948,35 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[84 <./Figures/mw23_fit_plot.png> <./Figures/rotated_Mw23x.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 499--500
+[83 <./Figures/mw23_fit_plot.png> <./Figures/rotated_Mw23x.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 508--509
 
  []
 
-<Figures/pic_left_fit_first_c_2198_400_0183_0001.png, id=1739, 2003.485pt x 117
+<Figures/pic_left_fit_first_c_2198_400_0183_0001.png, id=1725, 2003.485pt x 117
 6.395pt>
 File: Figures/pic_left_fit_first_c_2198_400_0183_0001.png Graphic file (type pn
 g)
 <use Figures/pic_left_fit_first_c_2198_400_0183_0001.png>
 Package pdftex.def Info: Figures/pic_left_fit_first_c_2198_400_0183_0001.png  u
-sed on input line 503.
+sed on input line 512.
 (pdftex.def)             Requested size: 484.57585pt x 284.52756pt.
 
-Overfull \hbox (40.99738pt too wide) in paragraph at lines 503--504
+Overfull \hbox (40.99738pt too wide) in paragraph at lines 512--513
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 512--514
+Underfull \hbox (badness 10000) in paragraph at lines 521--523
 
  []
 
-<Figures/iso_corr_contribution_plot_final.png, id=1740, 910.602pt x 609.9588pt>
+<Figures/iso_corr_contribution_plot_final.png, id=1726, 910.602pt x 609.9588pt>
 
 File: Figures/iso_corr_contribution_plot_final.png Graphic file (type png)
 <use Figures/iso_corr_contribution_plot_final.png>
 Package pdftex.def Info: Figures/iso_corr_contribution_plot_final.png  used on 
-input line 524.
+input line 533.
 (pdftex.def)             Requested size: 424.77333pt x 284.52756pt.
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2532,28 +2984,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[85]
+[84]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[86 <./Figures/pic_left_fit_first_c_2198_400_0183_0001.png>]
+[85 <./Figures/pic_left_fit_first_c_2198_400_0183_0001.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[87 <./Figures/iso_corr_contribution_plot_final.png>]
-<Figures/iso_corr_contribution_weighted_ar_mean.png, id=1773, 910.602pt x 609.9
+[86 <./Figures/iso_corr_contribution_plot_final.png>]
+<Figures/iso_corr_contribution_weighted_ar_mean.png, id=1760, 910.602pt x 609.9
 588pt>
 File: Figures/iso_corr_contribution_weighted_ar_mean.png Graphic file (type png
 )
 <use Figures/iso_corr_contribution_weighted_ar_mean.png>
 Package pdftex.def Info: Figures/iso_corr_contribution_weighted_ar_mean.png  us
-ed on input line 547.
+ed on input line 556.
 (pdftex.def)             Requested size: 424.77333pt x 284.52756pt.
 
 
@@ -2562,18 +3014,25 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[88]
+[87]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[89 <./Figures/iso_corr_contribution_weighted_ar_mean.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 578--581
+[88 <./Figures/iso_corr_contribution_weighted_ar_mean.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 587--590
 
  []
 
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[89]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -2588,18 +3047,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [91]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[92]
-<Figures/result_plot_phd_cross_section.png, id=1832, 900.7251pt x 583.9416pt>
+<Figures/result_plot_phd_cross_section.png, id=1818, 900.7251pt x 583.9416pt>
 File: Figures/result_plot_phd_cross_section.png Graphic file (type png)
 <use Figures/result_plot_phd_cross_section.png>
 Package pdftex.def Info: Figures/result_plot_phd_cross_section.png  used on inp
-ut line 759.
+ut line 768.
 (pdftex.def)             Requested size: 443.57848pt x 287.56844pt.
 
 
@@ -2608,13 +3060,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[93
+[92
 
- <./Figures/result_plot_phd_cross_section.png>]) [94]
+ <./Figures/result_plot_phd_cross_section.png>]) [93]
 (./../writings/analysis_qfs.tex
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 1.
+Overfull \hbox (45.12587pt too wide) in paragraph at lines 1--1
+|[]\T1/cmr/bx/n/17.28 Qualitative Anal-y-sis -- Quasi-Free Scat-ter-ing $[]$C(p
+,2p)$[]$B| 
+ []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -2647,18 +3100,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--9
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 27.11469pt.
+ Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[95]
-<Figures/kick_point_algorithm.png, id=1867, 1214.5375pt x 758.835pt>
+[94]
+<Figures/kick_point_algorithm.png, id=1853, 1214.5375pt x 758.835pt>
 File: Figures/kick_point_algorithm.png Graphic file (type png)
 <use Figures/kick_point_algorithm.png>
 Package pdftex.def Info: Figures/kick_point_algorithm.png  used on input line 3
 7.
 (pdftex.def)             Requested size: 310.50357pt x 193.99246pt.
-<Figures/intersection_algorithm.png, id=1868, 835.12pt x 796.9775pt>
+<Figures/intersection_algorithm.png, id=1854, 835.12pt x 796.9775pt>
 File: Figures/intersection_algorithm.png Graphic file (type png)
 <use Figures/intersection_algorithm.png>
 Package pdftex.def Info: Figures/intersection_algorithm.png  used on input line
@@ -2675,14 +3128,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[96]
+[95]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[97 <./Figures/kick_point_algorithm.png> <./Figures/intersection_algorithm.png>
+[96 <./Figures/kick_point_algorithm.png> <./Figures/intersection_algorithm.png>
 ]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2690,7 +3143,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[98]
+[97]
 Overfull \hbox (25.98763pt too wide) detected at line 96
 []
  []
@@ -2701,29 +3154,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[99]
+[98]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[100]
-<Figures/a_over_q_vs_q_plot.png, id=1916, 1316.92pt x 843.15pt>
+[99]
+<Figures/a_over_q_vs_q_plot.png, id=1901, 1316.92pt x 843.15pt>
 File: Figures/a_over_q_vs_q_plot.png Graphic file (type png)
 <use Figures/a_over_q_vs_q_plot.png>
 Package pdftex.def Info: Figures/a_over_q_vs_q_plot.png  used on input line 128
 .
 (pdftex.def)             Requested size: 443.56721pt x 283.9912pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[101 <./Figures/a_over_q_vs_q_plot.png>]
-<Figures/reaction_qfs_model.png, id=1923, 732.7375pt x 594.22pt>
+<Figures/reaction_qfs_model.png, id=1903, 732.7375pt x 594.22pt>
 File: Figures/reaction_qfs_model.png Graphic file (type png)
 <use Figures/reaction_qfs_model.png>
 Package pdftex.def Info: Figures/reaction_qfs_model.png  used on input line 142
@@ -2734,34 +3179,45 @@ Underfull \hbox (badness 6461) in paragraph at lines 143--143
 []\T1/cmr/m/n/10.95 (a) |Quasi-free scat-ter-ing chan-nel
  []
 
-<Figures/CALIFA2020Front.png, id=1924, 576.1525pt x 645.41125pt>
+<Figures/CALIFA2020Front.png, id=1904, 576.1525pt x 645.41125pt>
 File: Figures/CALIFA2020Front.png Graphic file (type png)
 <use Figures/CALIFA2020Front.png>
 Package pdftex.def Info: Figures/CALIFA2020Front.png  used on input line 146.
 (pdftex.def)             Requested size: 177.42868pt x 198.75577pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[102 <./Figures/reaction_qfs_model.png> <./Figures/CALIFA2020Front.png>]
-<Figures/phi12_califa.png, id=1936, 1021.8175pt x 680.5425pt>
+[100 <./Figures/a_over_q_vs_q_plot.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[101 <./Figures/reaction_qfs_model.png> <./Figures/CALIFA2020Front.png>]
+<Figures/phi12_califa.png, id=1922, 1021.8175pt x 680.5425pt>
 File: Figures/phi12_califa.png Graphic file (type png)
 <use Figures/phi12_califa.png>
 Package pdftex.def Info: Figures/phi12_califa.png  used on input line 169.
 (pdftex.def)             Requested size: 332.68385pt x 221.56828pt.
-<Figures/phi12_sim.png, id=1937, 712.6625pt x 472.76625pt>
+<Figures/phi12_sim.png, id=1923, 712.6625pt x 472.76625pt>
 File: Figures/phi12_sim.png Graphic file (type png)
 <use Figures/phi12_sim.png>
 Package pdftex.def Info: Figures/phi12_sim.png  used on input line 173.
 (pdftex.def)             Requested size: 332.68385pt x 220.69247pt.
-<Figures/theta12_califa.png, id=1939, 699.61375pt x 523.9575pt>
+<Figures/theta12_califa.png, id=1925, 699.61375pt x 523.9575pt>
 File: Figures/theta12_califa.png Graphic file (type png)
 <use Figures/theta12_califa.png>
 Package pdftex.def Info: Figures/theta12_califa.png  used on input line 183.
 (pdftex.def)             Requested size: 332.68385pt x 249.15422pt.
-<Figures/theta12_sim.png, id=1940, 705.63625pt x 560.0925pt>
+<Figures/theta12_sim.png, id=1926, 705.63625pt x 560.0925pt>
 File: Figures/theta12_sim.png Graphic file (type png)
 <use Figures/theta12_sim.png>
 Package pdftex.def Info: Figures/theta12_sim.png  used on input line 187.
@@ -2773,15 +3229,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[103]
+[102]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[104 <./Figures/phi12_califa.png> <./Figures/phi12_sim.png>]
-<Figures/opang.png, id=1957, 925.4575pt x 796.9775pt>
+[103 <./Figures/phi12_califa.png> <./Figures/phi12_sim.png>]
+<Figures/opang.png, id=1943, 925.4575pt x 796.9775pt>
 File: Figures/opang.png Graphic file (type png)
 <use Figures/opang.png>
 Package pdftex.def Info: Figures/opang.png  used on input line 202.
@@ -2791,7 +3247,7 @@ Underfull \hbox (badness 1931) in paragraph at lines 203--203
 []\T1/cmr/m/n/10.95 (a) |Open-ing an-gle dis-tri-bu-tion from
  []
 
-<Figures/opang_sim.png, id=1958, 925.4575pt x 724.7075pt>
+<Figures/opang_sim.png, id=1944, 925.4575pt x 724.7075pt>
 File: Figures/opang_sim.png Graphic file (type png)
 <use Figures/opang_sim.png>
 Package pdftex.def Info: Figures/opang_sim.png  used on input line 206.
@@ -2808,22 +3264,22 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 220.
 
-<Figures/p_miss_tot.png, id=1965, 1007.765pt x 813.0375pt>
+<Figures/p_miss_tot.png, id=1951, 1007.765pt x 813.0375pt>
 File: Figures/p_miss_tot.png Graphic file (type png)
 <use Figures/p_miss_tot.png>
 Package pdftex.def Info: Figures/p_miss_tot.png  used on input line 228.
 (pdftex.def)             Requested size: 399.21791pt x 322.07054pt.
-<Figures/p_miss_x.png, id=1966, 823.075pt x 704.6325pt>
+<Figures/p_miss_x.png, id=1952, 823.075pt x 704.6325pt>
 File: Figures/p_miss_x.png Graphic file (type png)
 <use Figures/p_miss_x.png>
 Package pdftex.def Info: Figures/p_miss_x.png  used on input line 236.
 (pdftex.def)             Requested size: 133.07489pt x 113.9262pt.
-<Figures/p_miss_y.png, id=1967, 803.0pt x 704.6325pt>
+<Figures/p_miss_y.png, id=1953, 803.0pt x 704.6325pt>
 File: Figures/p_miss_y.png Graphic file (type png)
 <use Figures/p_miss_y.png>
 Package pdftex.def Info: Figures/p_miss_y.png  used on input line 242.
 (pdftex.def)             Requested size: 133.07489pt x 116.76468pt.
-<Figures/p_miss_z.png, id=1968, 825.0825pt x 712.6625pt>
+<Figures/p_miss_z.png, id=1954, 825.0825pt x 712.6625pt>
 File: Figures/p_miss_z.png Graphic file (type png)
 <use Figures/p_miss_z.png>
 Package pdftex.def Info: Figures/p_miss_z.png  used on input line 248.
@@ -2834,28 +3290,28 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[105]
+[104]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[106 <./Figures/theta12_califa.png> <./Figures/theta12_sim.png>]
+[105 <./Figures/theta12_califa.png> <./Figures/theta12_sim.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[107 <./Figures/opang.png> <./Figures/opang_sim.png>]
+[106 <./Figures/opang.png> <./Figures/opang_sim.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[108 <./Figures/p_miss_tot.png> <./Figures/p_miss_x.png> <./Figures/p_miss_y.pn
+[107 <./Figures/p_miss_tot.png> <./Figures/p_miss_x.png> <./Figures/p_miss_y.pn
 g> <./Figures/p_miss_z.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -2884,17 +3340,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 272--273
 
  []
 
-<Figures/cos_angle_2p_11b.png, id=2004, 895.345pt x 815.045pt>
+<Figures/cos_angle_2p_11b.png, id=1990, 895.345pt x 815.045pt>
 File: Figures/cos_angle_2p_11b.png Graphic file (type png)
 <use Figures/cos_angle_2p_11b.png>
 Package pdftex.def Info: Figures/cos_angle_2p_11b.png  used on input line 286.
 (pdftex.def)             Requested size: 399.21791pt x 363.42142pt.
-<Figures/p_x_2p_11b.png, id=2005, 853.1875pt x 728.7225pt>
+<Figures/p_x_2p_11b.png, id=1991, 853.1875pt x 728.7225pt>
 File: Figures/p_x_2p_11b.png Graphic file (type png)
 <use Figures/p_x_2p_11b.png>
 Package pdftex.def Info: Figures/p_x_2p_11b.png  used on input line 296.
 (pdftex.def)             Requested size: 172.99533pt x 147.75452pt.
-<Figures/p_y_2p_11b.png, id=2006, 857.2025pt x 726.715pt>
+<Figures/p_y_2p_11b.png, id=1992, 857.2025pt x 726.715pt>
 File: Figures/p_y_2p_11b.png Graphic file (type png)
 <use Figures/p_y_2p_11b.png>
 Package pdftex.def Info: Figures/p_y_2p_11b.png  used on input line 303.
@@ -2917,7 +3373,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[109]
+[108]
 Overfull \vbox (3.36339pt too high) has occurred while \output is active []
 
 
@@ -2927,9 +3383,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[110 <./Figures/cos_angle_2p_11b.png> <./Figures/p_x_2p_11b.png> <./Figures/p_y
+[109 <./Figures/cos_angle_2p_11b.png> <./Figures/p_x_2p_11b.png> <./Figures/p_y
 _2p_11b.png>]
-<Figures/sep_energy_vs_sum_energy.png, id=2024, 954.56625pt x 648.4225pt>
+<Figures/sep_energy_vs_sum_energy.png, id=2010, 954.56625pt x 648.4225pt>
 File: Figures/sep_energy_vs_sum_energy.png Graphic file (type png)
 <use Figures/sep_energy_vs_sum_energy.png>
 Package pdftex.def Info: Figures/sep_energy_vs_sum_energy.png  used on input li
@@ -2942,7 +3398,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[111]
+[110]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 368.
@@ -2955,7 +3411,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 368.
 
-<Figures/own_11b_level_scheme.png, id=2035, 430.7292pt x 603.4545pt>
+<Figures/own_11b_level_scheme.png, id=2022, 430.7292pt x 603.4545pt>
 File: Figures/own_11b_level_scheme.png Graphic file (type png)
 <use Figures/own_11b_level_scheme.png>
 Package pdftex.def Info: Figures/own_11b_level_scheme.png  used on input line 3
@@ -2967,15 +3423,15 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[112 <./Figures/sep_energy_vs_sum_energy.png>]
+[111 <./Figures/sep_energy_vs_sum_energy.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[113 <./Figures/own_11b_level_scheme.png>]
-<Figures/gamma_spec_12c_p2p_11b.png, id=2057, 2371.86125pt x 1221.56375pt>
+[112 <./Figures/own_11b_level_scheme.png>]
+<Figures/gamma_spec_12c_p2p_11b.png, id=2043, 2371.86125pt x 1221.56375pt>
 File: Figures/gamma_spec_12c_p2p_11b.png Graphic file (type png)
 <use Figures/gamma_spec_12c_p2p_11b.png>
 Package pdftex.def Info: Figures/gamma_spec_12c_p2p_11b.png  used on input line
@@ -2988,22 +3444,22 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[114]
+[113]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[115 <./Figures/gamma_spec_12c_p2p_11b.png (PNG copy)>]
+[114 <./Figures/gamma_spec_12c_p2p_11b.png (PNG copy)>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[116]
-<Figures/fiss_model_kuckuk.png, id=2084, 1152.305pt x 913.4125pt>
+[115]
+<Figures/fiss_model_kuckuk.png, id=2070, 1152.305pt x 913.4125pt>
 File: Figures/fiss_model_kuckuk.png Graphic file (type png)
 <use Figures/fiss_model_kuckuk.png>
 Package pdftex.def Info: Figures/fiss_model_kuckuk.png  used on input line 434.
@@ -3020,8 +3476,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[117 <./Figures/fiss_model_kuckuk.png>]
-<Figures/liquid_drop.png, id=2099, 971.63pt x 539.01375pt>
+[116 <./Figures/fiss_model_kuckuk.png>]
+<Figures/liquid_drop.png, id=2086, 971.63pt x 539.01375pt>
 File: Figures/liquid_drop.png Graphic file (type png)
 <use Figures/liquid_drop.png>
 Package pdftex.def Info: Figures/liquid_drop.png  used on input line 446.
@@ -3030,7 +3486,7 @@ Package pdftex.def Info: Figures/liquid_drop.png  used on input line 446.
 
 pdfTeX warning: pdflatex (file ./Figures/overview_exp_2021_s455.pdf): PDF inclu
 sion: found PDF version <1.6>, but at most version <1.5> allowed
-<Figures/overview_exp_2021_s455.pdf, id=2103, 796.67719pt x 448.1309pt>
+<Figures/overview_exp_2021_s455.pdf, id=2090, 796.67719pt x 448.1309pt>
 File: Figures/overview_exp_2021_s455.pdf Graphic file (type pdf)
 <use Figures/overview_exp_2021_s455.pdf>
 Package pdftex.def Info: Figures/overview_exp_2021_s455.pdf  used on input line
@@ -3042,29 +3498,29 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[118 <./Figures/liquid_drop.png>]
-<Figures/fission_charge_distr_s455.png, id=2119, 1024.82875pt x 849.1725pt>
+[117 <./Figures/liquid_drop.png>]
+<Figures/fission_charge_distr_s455.png, id=2105, 1024.82875pt x 849.1725pt>
 File: Figures/fission_charge_distr_s455.png Graphic file (type png)
 <use Figures/fission_charge_distr_s455.png>
 Package pdftex.def Info: Figures/fission_charge_distr_s455.png  used on input l
 ine 470.
 (pdftex.def)             Requested size: 343.38622pt x 284.52962pt.
-<Figures/gabriel_1.png, id=2125, 1084.05pt x 756.8275pt>
+<Figures/gabriel_1.png, id=2111, 1084.05pt x 756.8275pt>
 File: Figures/gabriel_1.png Graphic file (type png)
 <use Figures/gabriel_1.png>
 Package pdftex.def Info: Figures/gabriel_1.png  used on input line 483.
 (pdftex.def)             Requested size: 141.94835pt x 99.09546pt.
-<Figures/gabriel_2.png, id=2126, 1055.945pt x 744.7825pt>
+<Figures/gabriel_2.png, id=2112, 1055.945pt x 744.7825pt>
 File: Figures/gabriel_2.png Graphic file (type png)
 <use Figures/gabriel_2.png>
 Package pdftex.def Info: Figures/gabriel_2.png  used on input line 486.
 (pdftex.def)             Requested size: 141.94835pt x 100.10945pt.
-<Figures/gabriel_3.png, id=2127, 1067.99pt x 750.805pt>
+<Figures/gabriel_3.png, id=2113, 1067.99pt x 750.805pt>
 File: Figures/gabriel_3.png Graphic file (type png)
 <use Figures/gabriel_3.png>
 Package pdftex.def Info: Figures/gabriel_3.png  used on input line 489.
 (pdftex.def)             Requested size: 141.94835pt x 99.78477pt.
-<Figures/ff_charge_vs_ff_tot_mass.pdf, id=2134, 796.6487pt x 448.10245pt>
+<Figures/ff_charge_vs_ff_tot_mass.pdf, id=2120, 796.6487pt x 448.10245pt>
 File: Figures/ff_charge_vs_ff_tot_mass.pdf Graphic file (type pdf)
 <use Figures/ff_charge_vs_ff_tot_mass.pdf>
 Package pdftex.def Info: Figures/ff_charge_vs_ff_tot_mass.pdf  used on input li
@@ -3077,21 +3533,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[119 <./Figures/overview_exp_2021_s455.pdf>]
+[118 <./Figures/overview_exp_2021_s455.pdf>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[120 <./Figures/fission_charge_distr_s455.png>]
+[119 <./Figures/fission_charge_distr_s455.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[121 <./Figures/gabriel_1.png> <./Figures/gabriel_2.png> <./Figures/gabriel_3.p
+[120 <./Figures/gabriel_1.png> <./Figures/gabriel_2.png> <./Figures/gabriel_3.p
 ng>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3099,9 +3555,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[122 <./Figures/ff_charge_vs_ff_tot_mass.pdf>]
+[121 <./Figures/ff_charge_vs_ff_tot_mass.pdf>]
 <Figures/csm_NuclideChart_with_islands_Foto_PMorfouace_res_47948441f0.png, id=2
-223, 587.19376pt x 363.60844pt>
+209, 587.19376pt x 363.60844pt>
 File: Figures/csm_NuclideChart_with_islands_Foto_PMorfouace_res_47948441f0.png 
 Graphic file (type png)
 <use Figures/csm_NuclideChart_with_islands_Foto_PMorfouace_res_47948441f0.png>
@@ -3125,14 +3581,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[123]
+[122]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[124 <./Figures/csm_NuclideChart_with_islands_Foto_PMorfouace_res_47948441f0.pn
+[123 <./Figures/csm_NuclideChart_with_islands_Foto_PMorfouace_res_47948441f0.pn
 g>]) (./../writings/califa_odsl_clustering.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -3156,10 +3612,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[125
+[124
 
 ]
-<Figures/csi_attuenuation.png, id=2252, 722.7pt x 578.16pt>
+<Figures/csi_attuenuation.png, id=2238, 722.7pt x 578.16pt>
 File: Figures/csi_attuenuation.png Graphic file (type png)
 <use Figures/csi_attuenuation.png>
 Package pdftex.def Info: Figures/csi_attuenuation.png  used on input line 21.
@@ -3175,17 +3631,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[126]
+[125]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
+ Make it at least 27.11469pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[127 <./Figures/csi_attuenuation.png>]
+[126 <./Figures/csi_attuenuation.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 34--36
 
  []
@@ -3194,7 +3650,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--36
 
 pdfTeX warning: pdflatex (file ./Figures/overview_r3b_clustering.pdf): PDF incl
 usion: found PDF version <1.6>, but at most version <1.5> allowed
-<Figures/overview_r3b_clustering.pdf, id=2271, 796.67719pt x 448.1309pt>
+<Figures/overview_r3b_clustering.pdf, id=2257, 796.67719pt x 448.1309pt>
 File: Figures/overview_r3b_clustering.pdf Graphic file (type pdf)
 <use Figures/overview_r3b_clustering.pdf>
 Package pdftex.def Info: Figures/overview_r3b_clustering.pdf  used on input lin
@@ -3206,17 +3662,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[128]
+[127]
 Underfull \vbox (badness 2735) has occurred while \output is active []
 
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
+ Make it at least 27.11469pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[129 <./Figures/overview_r3b_clustering.pdf>]
+[128 <./Figures/overview_r3b_clustering.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 73--74
 
  []
@@ -3225,7 +3681,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 73--74
 
 pdfTeX warning: pdflatex (file ./Figures/true_positive.pdf): PDF inclusion: fou
 nd PDF version <1.6>, but at most version <1.5> allowed
-<Figures/true_positive.pdf, id=2310, 796.67719pt x 448.1309pt>
+<Figures/true_positive.pdf, id=2297, 796.67719pt x 448.1309pt>
 File: Figures/true_positive.pdf Graphic file (type pdf)
 <use Figures/true_positive.pdf>
 Package pdftex.def Info: Figures/true_positive.pdf  used on input line 78.
@@ -3234,7 +3690,7 @@ Package pdftex.def Info: Figures/true_positive.pdf  used on input line 78.
 
 pdfTeX warning: pdflatex (file ./Figures/false_negative.pdf): PDF inclusion: fo
 und PDF version <1.6>, but at most version <1.5> allowed
-<Figures/false_negative.pdf, id=2311, 796.67719pt x 448.1309pt>
+<Figures/false_negative.pdf, id=2298, 796.67719pt x 448.1309pt>
 File: Figures/false_negative.pdf Graphic file (type pdf)
 <use Figures/false_negative.pdf>
 Package pdftex.def Info: Figures/false_negative.pdf  used on input line 84.
@@ -3243,7 +3699,7 @@ Package pdftex.def Info: Figures/false_negative.pdf  used on input line 84.
 
 pdfTeX warning: pdflatex (file ./Figures/false_positive.pdf): PDF inclusion: fo
 und PDF version <1.6>, but at most version <1.5> allowed
-<Figures/false_positive.pdf, id=2312, 796.67719pt x 448.1309pt>
+<Figures/false_positive.pdf, id=2299, 796.67719pt x 448.1309pt>
 File: Figures/false_positive.pdf Graphic file (type pdf)
 <use Figures/false_positive.pdf>
 Package pdftex.def Info: Figures/false_positive.pdf  used on input line 90.
@@ -3252,12 +3708,12 @@ Package pdftex.def Info: Figures/false_positive.pdf  used on input line 90.
 
 pdfTeX warning: pdflatex (file ./Figures/false_mixed.pdf): PDF inclusion: found
  PDF version <1.6>, but at most version <1.5> allowed
-<Figures/false_mixed.pdf, id=2313, 796.67719pt x 448.1309pt>
+<Figures/false_mixed.pdf, id=2300, 796.67719pt x 448.1309pt>
 File: Figures/false_mixed.pdf Graphic file (type pdf)
 <use Figures/false_mixed.pdf>
 Package pdftex.def Info: Figures/false_mixed.pdf  used on input line 96.
 (pdftex.def)             Requested size: 199.60895pt x 112.27861pt.
-<Figures/r3b_agglo_arrows.png, id=2318, 1061.9675pt x 597.23125pt>
+<Figures/r3b_agglo_arrows.png, id=2305, 1061.9675pt x 597.23125pt>
 File: Figures/r3b_agglo_arrows.png Graphic file (type png)
 <use Figures/r3b_agglo_arrows.png>
 Package pdftex.def Info: Figures/r3b_agglo_arrows.png  used on input line 112.
@@ -3268,17 +3724,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[130]
+[129]
 Underfull \vbox (badness 2452) has occurred while \output is active []
 
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
+ Make it at least 27.11469pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[131 <./Figures/true_positive.pdf> <./Figures/false_negative.pdf
+[130 <./Figures/true_positive.pdf> <./Figures/false_negative.pdf
 
 pdfTeX warning: pdflatex (file ./Figures/false_negative.pdf): PDF inclusion: mu
 ltiple pdfs with page group included in a single page
@@ -3301,8 +3757,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[132 <./Figures/r3b_agglo_arrows.png>]
-<Figures/spec_2_1agglo_edge_vsr3b.png, id=2396, 578.16pt x 433.62pt>
+[131 <./Figures/r3b_agglo_arrows.png>]
+<Figures/spec_2_1agglo_edge_vsr3b.png, id=2382, 578.16pt x 433.62pt>
 File: Figures/spec_2_1agglo_edge_vsr3b.png Graphic file (type png)
 <use Figures/spec_2_1agglo_edge_vsr3b.png>
 Package pdftex.def Info: Figures/spec_2_1agglo_edge_vsr3b.png  used on input li
@@ -3311,15 +3767,15 @@ ne 136.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
+ Make it at least 27.11469pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[133]
+[132]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/fig3.png, id=2412, 578.16pt x 578.16pt>
+<Figures/fig3.png, id=2398, 578.16pt x 578.16pt>
 File: Figures/fig3.png Graphic file (type png)
 <use Figures/fig3.png>
 Package pdftex.def Info: Figures/fig3.png  used on input line 175.
@@ -3330,17 +3786,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[134 <./Figures/spec_2_1agglo_edge_vsr3b.png>]
+[133 <./Figures/spec_2_1agglo_edge_vsr3b.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
+ Make it at least 27.11469pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[135]
+[134]
 Underfull \vbox (badness 1005) has occurred while \output is active []
 
 
@@ -3350,25 +3806,25 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[136 <./Figures/fig3.png>])
+[135 <./Figures/fig3.png>])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 27.11469pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[136]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[137]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[138] (./../writings/appendix.tex
+[137] (./../writings/appendix.tex
 
 pdfTeX warning: pdflatex (file ./Figures/app_charge_r3b_twin_default.pdf): PDF 
 inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<Figures/app_charge_r3b_twin_default.pdf, id=2456, 796.67719pt x 448.1309pt>
+<Figures/app_charge_r3b_twin_default.pdf, id=2442, 796.67719pt x 448.1309pt>
 File: Figures/app_charge_r3b_twin_default.pdf Graphic file (type pdf)
 <use Figures/app_charge_r3b_twin_default.pdf>
 Package pdftex.def Info: Figures/app_charge_r3b_twin_default.pdf  used on input
@@ -3380,20 +3836,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[139 <./Figures/app_charge_r3b_twin_default.pdf>]
-<Figures/hyperbolic_squared_secant_function.png, id=2482, 537.00626pt x 444.661
+[138 <./Figures/app_charge_r3b_twin_default.pdf>]
+<Figures/hyperbolic_squared_secant_function.png, id=2468, 537.00626pt x 444.661
 25pt>
 File: Figures/hyperbolic_squared_secant_function.png Graphic file (type png)
 <use Figures/hyperbolic_squared_secant_function.png>
 Package pdftex.def Info: Figures/hyperbolic_squared_secant_function.png  used o
 n input line 37.
 (pdftex.def)             Requested size: 274.89381pt x 227.62234pt.
-<Figures/mw23_default.png, id=2486, 1013.7875pt x 702.625pt>
+<Figures/mw23_default.png, id=2472, 1013.7875pt x 702.625pt>
 File: Figures/mw23_default.png Graphic file (type png)
 <use Figures/mw23_default.png>
 Package pdftex.def Info: Figures/mw23_default.png  used on input line 46.
 (pdftex.def)             Requested size: 328.42514pt x 227.62137pt.
-<Figures/own_clustering_mwpcs.png, id=2488, 413.545pt x 296.10625pt>
+<Figures/own_clustering_mwpcs.png, id=2474, 413.545pt x 296.10625pt>
 File: Figures/own_clustering_mwpcs.png Graphic file (type png)
 <use Figures/own_clustering_mwpcs.png>
 Package pdftex.def Info: Figures/own_clustering_mwpcs.png  used on input line 6
@@ -3409,7 +3865,7 @@ File: Figures/own_clustering_mwpcs.png Graphic file (type png)
 Package pdftex.def Info: Figures/own_clustering_mwpcs.png  used on input line 6
 0.
 (pdftex.def)             Requested size: 199.16928pt x 142.61282pt.
-<Figures/mw23_own_clustering.png, id=2492, 917.4275pt x 617.30624pt>
+<Figures/mw23_own_clustering.png, id=2478, 917.4275pt x 617.30624pt>
 File: Figures/mw23_own_clustering.png Graphic file (type png)
 <use Figures/mw23_own_clustering.png>
 Package pdftex.def Info: Figures/mw23_own_clustering.png  used on input line 65
@@ -3422,7 +3878,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[140
+[139
 
 ]
 
@@ -3431,7 +3887,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[141 <./Figures/hyperbolic_squared_secant_function.png> <./Figures/mw23_default
+[140 <./Figures/hyperbolic_squared_secant_function.png> <./Figures/mw23_default
 .png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3439,8 +3895,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[142 <./Figures/own_clustering_mwpcs.png> <./Figures/mw23_own_clustering.png>]
-<Figures/eff_plot_mwpcs.png, id=2520, 1280.3835pt x 920.238pt>
+[141 <./Figures/own_clustering_mwpcs.png> <./Figures/mw23_own_clustering.png>]
+<Figures/eff_plot_mwpcs.png, id=2506, 1280.3835pt x 920.238pt>
 File: Figures/eff_plot_mwpcs.png Graphic file (type png)
 <use Figures/eff_plot_mwpcs.png>
 Package pdftex.def Info: Figures/eff_plot_mwpcs.png  used on input line 87.
@@ -3452,10 +3908,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[143
+[142
 
  <./Figures/eff_plot_mwpcs.png>]
-<Figures/combined_eff_plot_mwpcs.png, id=2531, 1280.3835pt x 486.618pt>
+<Figures/combined_eff_plot_mwpcs.png, id=2516, 1280.3835pt x 486.618pt>
 File: Figures/combined_eff_plot_mwpcs.png Graphic file (type png)
 <use Figures/combined_eff_plot_mwpcs.png>
 Package pdftex.def Info: Figures/combined_eff_plot_mwpcs.png  used on input lin
@@ -3468,25 +3924,25 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[144 <./Figures/combined_eff_plot_mwpcs.png>]
-<Figures/mw_no_cut_2sigma.png, id=2544, 690.4194pt x 495.7722pt>
+[143 <./Figures/combined_eff_plot_mwpcs.png>]
+<Figures/mw_no_cut_2sigma.png, id=2530, 690.4194pt x 495.7722pt>
 File: Figures/mw_no_cut_2sigma.png Graphic file (type png)
 <use Figures/mw_no_cut_2sigma.png>
 Package pdftex.def Info: Figures/mw_no_cut_2sigma.png  used on input line 129.
 (pdftex.def)             Requested size: 199.60895pt x 143.33148pt.
-<Figures/mw_coherent_2sigma.png, id=2545, 679.338pt x 490.7133pt>
+<Figures/mw_coherent_2sigma.png, id=2531, 679.338pt x 490.7133pt>
 File: Figures/mw_coherent_2sigma.png Graphic file (type png)
 <use Figures/mw_coherent_2sigma.png>
 Package pdftex.def Info: Figures/mw_coherent_2sigma.png  used on input line 136
 .
 (pdftex.def)             Requested size: 199.60895pt x 144.18262pt.
-<Figures/mw_coherent_less5_2sigma.png, id=2546, 680.7834pt x 498.663pt>
+<Figures/mw_coherent_less5_2sigma.png, id=2532, 680.7834pt x 498.663pt>
 File: Figures/mw_coherent_less5_2sigma.png Graphic file (type png)
 <use Figures/mw_coherent_less5_2sigma.png>
 Package pdftex.def Info: Figures/mw_coherent_less5_2sigma.png  used on input li
 ne 144.
 (pdftex.def)             Requested size: 199.60895pt x 146.20644pt.
-<Figures/mw_coherent_less4_2sigma.png, id=2547, 675.7245pt x 495.7722pt>
+<Figures/mw_coherent_less4_2sigma.png, id=2533, 675.7245pt x 495.7722pt>
 File: Figures/mw_coherent_less4_2sigma.png Graphic file (type png)
 <use Figures/mw_coherent_less4_2sigma.png>
 Package pdftex.def Info: Figures/mw_coherent_less4_2sigma.png  used on input li
@@ -3499,7 +3955,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[145
+[144
 
 ]
 
@@ -3508,21 +3964,21 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[146 <./Figures/mw_no_cut_2sigma.png> <./Figures/mw_coherent_2sigma.png> <./Fig
+[145 <./Figures/mw_no_cut_2sigma.png> <./Figures/mw_coherent_2sigma.png> <./Fig
 ures/mw_coherent_less5_2sigma.png> <./Figures/mw_coherent_less4_2sigma.png>]
-<Figures/cccs_with_out_border_3_5_sigma.png, id=2568, 433.62pt x 289.08pt>
+<Figures/cccs_with_out_border_3_5_sigma.png, id=2554, 433.62pt x 289.08pt>
 File: Figures/cccs_with_out_border_3_5_sigma.png Graphic file (type png)
 <use Figures/cccs_with_out_border_3_5_sigma.png>
 Package pdftex.def Info: Figures/cccs_with_out_border_3_5_sigma.png  used on in
 put line 168.
 (pdftex.def)             Requested size: 341.43124pt x 227.62082pt.
-<Figures/charge_loss_550_thick.png, id=2571, 1114.1625pt x 933.4875pt>
+<Figures/charge_loss_550_thick.png, id=2557, 1114.1625pt x 933.4875pt>
 File: Figures/charge_loss_550_thick.png Graphic file (type png)
 <use Figures/charge_loss_550_thick.png>
 Package pdftex.def Info: Figures/charge_loss_550_thick.png  used on input line 
 178.
 (pdftex.def)             Requested size: 271.67165pt x 227.61678pt.
-<Figures/cccs_gauss_diag_comp_3_5_sigma.png, id=2573, 433.62pt x 289.08pt>
+<Figures/cccs_gauss_diag_comp_3_5_sigma.png, id=2559, 433.62pt x 289.08pt>
 File: Figures/cccs_gauss_diag_comp_3_5_sigma.png Graphic file (type png)
 <use Figures/cccs_gauss_diag_comp_3_5_sigma.png>
 Package pdftex.def Info: Figures/cccs_gauss_diag_comp_3_5_sigma.png  used on in
@@ -3544,20 +4000,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[147
+[146
 
  <./Figures/cccs_with_out_border_3_5_sigma.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<Figures/twin_music_cccs_not_all_anodes.pdf, id=2585, 796.6487pt x 448.10245pt>
+<Figures/twin_music_cccs_not_all_anodes.pdf, id=2572, 796.6487pt x 448.10245pt>
 
 File: Figures/twin_music_cccs_not_all_anodes.pdf Graphic file (type pdf)
 <use Figures/twin_music_cccs_not_all_anodes.pdf>
 Package pdftex.def Info: Figures/twin_music_cccs_not_all_anodes.pdf  used on in
 put line 210.
 (pdftex.def)             Requested size: 443.57965pt x 249.5066pt.
-<Figures/cccs_time_vs_engergy_sorted.png, id=2589, 433.62pt x 289.08pt>
+<Figures/cccs_time_vs_engergy_sorted.png, id=2576, 433.62pt x 289.08pt>
 File: Figures/cccs_time_vs_engergy_sorted.png Graphic file (type png)
 <use Figures/cccs_time_vs_engergy_sorted.png>
 Package pdftex.def Info: Figures/cccs_time_vs_engergy_sorted.png  used on input
@@ -3579,23 +4035,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[148 <./Figures/charge_loss_550_thick.png>]
+[147 <./Figures/charge_loss_550_thick.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[149 <./Figures/cccs_gauss_diag_comp_3_5_sigma.png>]
+[148 <./Figures/cccs_gauss_diag_comp_3_5_sigma.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[150 <./Figures/twin_music_cccs_not_all_anodes.pdf> <./Figures/cccs_time_vs_eng
+[149 <./Figures/twin_music_cccs_not_all_anodes.pdf> <./Figures/cccs_time_vs_eng
 ergy_sorted.png>]
-<Figures/drawings_flightpath.png, id=2658, 871.255pt x 774.895pt>
+<Figures/drawings_flightpath.png, id=2644, 871.255pt x 774.895pt>
 File: Figures/drawings_flightpath.png Graphic file (type png)
 <use Figures/drawings_flightpath.png>
 Package pdftex.def Info: Figures/drawings_flightpath.png  used on input line 27
@@ -3611,7 +4067,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[151
+[150
 
  <./Figures/drawings_flightpath.png>]
 
@@ -3620,13 +4076,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[152]
-<Figures/rate_400_thick.png, id=2672, 1061.9675pt x 597.23125pt>
+[151]
+<Figures/rate_400_thick.png, id=2658, 1061.9675pt x 597.23125pt>
 File: Figures/rate_400_thick.png Graphic file (type png)
 <use Figures/rate_400_thick.png>
 Package pdftex.def Info: Figures/rate_400_thick.png  used on input line 361.
 (pdftex.def)             Requested size: 199.60895pt x 112.25397pt.
-<Figures/zero_charge_twim_active_area.png, id=2673, 722.7pt x 433.62pt>
+<Figures/zero_charge_twim_active_area.png, id=2659, 722.7pt x 433.62pt>
 File: Figures/zero_charge_twim_active_area.png Graphic file (type png)
 <use Figures/zero_charge_twim_active_area.png>
 Package pdftex.def Info: Figures/zero_charge_twim_active_area.png  used on inpu
@@ -3639,7 +4095,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[153
+[152
 
  <./Figures/rate_400_thick.png> <./Figures/zero_charge_twim_active_area.png>]
 
@@ -3648,17 +4104,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[154]
+[153]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[155
+[154
 
 ]
-<Figures/pic_left_fit_first_empty_400_0187_0001.png, id=2696, 2003.485pt x 1176
+<Figures/pic_left_fit_first_empty_400_0187_0001.png, id=2682, 2003.485pt x 1176
 .395pt>
 File: Figures/pic_left_fit_first_empty_400_0187_0001.png Graphic file (type png
 )
@@ -3666,7 +4122,7 @@ File: Figures/pic_left_fit_first_empty_400_0187_0001.png Graphic file (type png
 Package pdftex.def Info: Figures/pic_left_fit_first_empty_400_0187_0001.png  us
 ed on input line 451.
 (pdftex.def)             Requested size: 212.91577pt x 125.00601pt.
-<Figures/pic_left_fit_first_c_54_400_0179_0001.png, id=2697, 2003.485pt x 1176.
+<Figures/pic_left_fit_first_c_54_400_0179_0001.png, id=2683, 2003.485pt x 1176.
 395pt>
 File: Figures/pic_left_fit_first_c_54_400_0179_0001.png Graphic file (type png)
 
@@ -3674,7 +4130,7 @@ File: Figures/pic_left_fit_first_c_54_400_0179_0001.png Graphic file (type png)
 Package pdftex.def Info: Figures/pic_left_fit_first_c_54_400_0179_0001.png  use
 d on input line 457.
 (pdftex.def)             Requested size: 212.91577pt x 125.00601pt.
-<Figures/pic_left_fit_first_c_1086_400_0181_0001.png, id=2698, 2003.485pt x 117
+<Figures/pic_left_fit_first_c_1086_400_0181_0001.png, id=2684, 2003.485pt x 117
 6.395pt>
 File: Figures/pic_left_fit_first_c_1086_400_0181_0001.png Graphic file (type pn
 g)
@@ -3688,7 +4144,7 @@ g)
 Package pdftex.def Info: Figures/pic_left_fit_first_c_2198_400_0183_0001.png  u
 sed on input line 470.
 (pdftex.def)             Requested size: 212.91577pt x 125.00601pt.
-<Figures/pic_left_fit_first_empty_550_0106_0001.png, id=2699, 2003.485pt x 1176
+<Figures/pic_left_fit_first_empty_550_0106_0001.png, id=2685, 2003.485pt x 1176
 .395pt>
 File: Figures/pic_left_fit_first_empty_550_0106_0001.png Graphic file (type png
 )
@@ -3696,7 +4152,7 @@ File: Figures/pic_left_fit_first_empty_550_0106_0001.png Graphic file (type png
 Package pdftex.def Info: Figures/pic_left_fit_first_empty_550_0106_0001.png  us
 ed on input line 482.
 (pdftex.def)             Requested size: 212.91577pt x 125.00601pt.
-<Figures/pic_left_fit_first_c_54_550_0099_0001.png, id=2700, 2003.485pt x 1176.
+<Figures/pic_left_fit_first_c_54_550_0099_0001.png, id=2686, 2003.485pt x 1176.
 395pt>
 File: Figures/pic_left_fit_first_c_54_550_0099_0001.png Graphic file (type png)
 
@@ -3704,7 +4160,7 @@ File: Figures/pic_left_fit_first_c_54_550_0099_0001.png Graphic file (type png)
 Package pdftex.def Info: Figures/pic_left_fit_first_c_54_550_0099_0001.png  use
 d on input line 488.
 (pdftex.def)             Requested size: 212.91577pt x 125.00601pt.
-<Figures/pic_left_fit_first_c_1086_550_0101_0001.png, id=2701, 2003.485pt x 117
+<Figures/pic_left_fit_first_c_1086_550_0101_0001.png, id=2687, 2003.485pt x 117
 6.395pt>
 File: Figures/pic_left_fit_first_c_1086_550_0101_0001.png Graphic file (type pn
 g)
@@ -3712,7 +4168,7 @@ g)
 Package pdftex.def Info: Figures/pic_left_fit_first_c_1086_550_0101_0001.png  u
 sed on input line 495.
 (pdftex.def)             Requested size: 212.91577pt x 125.00601pt.
-<Figures/pic_left_fit_first_c_2198_550_0103_0001.png, id=2702, 2003.485pt x 117
+<Figures/pic_left_fit_first_c_2198_550_0103_0001.png, id=2688, 2003.485pt x 117
 6.395pt>
 File: Figures/pic_left_fit_first_c_2198_550_0103_0001.png Graphic file (type pn
 g)
@@ -3720,7 +4176,7 @@ g)
 Package pdftex.def Info: Figures/pic_left_fit_first_c_2198_550_0103_0001.png  u
 sed on input line 501.
 (pdftex.def)             Requested size: 212.91577pt x 125.00601pt.
-<Figures/pic_left_fit_first_empty_650_0124_0001.png, id=2703, 2003.485pt x 1176
+<Figures/pic_left_fit_first_empty_650_0124_0001.png, id=2689, 2003.485pt x 1176
 .395pt>
 File: Figures/pic_left_fit_first_empty_650_0124_0001.png Graphic file (type png
 )
@@ -3728,7 +4184,7 @@ File: Figures/pic_left_fit_first_empty_650_0124_0001.png Graphic file (type png
 Package pdftex.def Info: Figures/pic_left_fit_first_empty_650_0124_0001.png  us
 ed on input line 513.
 (pdftex.def)             Requested size: 212.91577pt x 125.00601pt.
-<Figures/pic_left_fit_first_c_54_650_0126_0001.png, id=2704, 2003.485pt x 1176.
+<Figures/pic_left_fit_first_c_54_650_0126_0001.png, id=2690, 2003.485pt x 1176.
 395pt>
 File: Figures/pic_left_fit_first_c_54_650_0126_0001.png Graphic file (type png)
 
@@ -3736,7 +4192,7 @@ File: Figures/pic_left_fit_first_c_54_650_0126_0001.png Graphic file (type png)
 Package pdftex.def Info: Figures/pic_left_fit_first_c_54_650_0126_0001.png  use
 d on input line 519.
 (pdftex.def)             Requested size: 212.91577pt x 125.00601pt.
-<Figures/pic_left_fit_first_c_1086_650_0127_0001.png, id=2705, 2003.485pt x 117
+<Figures/pic_left_fit_first_c_1086_650_0127_0001.png, id=2691, 2003.485pt x 117
 6.395pt>
 File: Figures/pic_left_fit_first_c_1086_650_0127_0001.png Graphic file (type pn
 g)
@@ -3744,7 +4200,7 @@ g)
 Package pdftex.def Info: Figures/pic_left_fit_first_c_1086_650_0127_0001.png  u
 sed on input line 526.
 (pdftex.def)             Requested size: 212.91577pt x 125.00601pt.
-<Figures/pic_left_fit_first_c_2198_650_0130_0001.png, id=2706, 2003.485pt x 117
+<Figures/pic_left_fit_first_c_2198_650_0130_0001.png, id=2692, 2003.485pt x 117
 6.395pt>
 File: Figures/pic_left_fit_first_c_2198_650_0130_0001.png Graphic file (type pn
 g)
@@ -3752,7 +4208,7 @@ g)
 Package pdftex.def Info: Figures/pic_left_fit_first_c_2198_650_0130_0001.png  u
 sed on input line 532.
 (pdftex.def)             Requested size: 212.91577pt x 125.00601pt.
-<Figures/pic_left_fit_first_empty_800_0173_0001.png, id=2707, 2003.485pt x 1176
+<Figures/pic_left_fit_first_empty_800_0173_0001.png, id=2693, 2003.485pt x 1176
 .395pt>
 File: Figures/pic_left_fit_first_empty_800_0173_0001.png Graphic file (type png
 )
@@ -3760,7 +4216,7 @@ File: Figures/pic_left_fit_first_empty_800_0173_0001.png Graphic file (type png
 Package pdftex.def Info: Figures/pic_left_fit_first_empty_800_0173_0001.png  us
 ed on input line 544.
 (pdftex.def)             Requested size: 212.91577pt x 125.00601pt.
-<Figures/pic_left_fit_first_c_54_800_0166_0001.png, id=2708, 2003.485pt x 1176.
+<Figures/pic_left_fit_first_c_54_800_0166_0001.png, id=2694, 2003.485pt x 1176.
 395pt>
 File: Figures/pic_left_fit_first_c_54_800_0166_0001.png Graphic file (type png)
 
@@ -3768,7 +4224,7 @@ File: Figures/pic_left_fit_first_c_54_800_0166_0001.png Graphic file (type png)
 Package pdftex.def Info: Figures/pic_left_fit_first_c_54_800_0166_0001.png  use
 d on input line 550.
 (pdftex.def)             Requested size: 212.91577pt x 125.00601pt.
-<Figures/pic_left_fit_first_c_1086_800_0168_0001.png, id=2709, 2003.485pt x 117
+<Figures/pic_left_fit_first_c_1086_800_0168_0001.png, id=2695, 2003.485pt x 117
 6.395pt>
 File: Figures/pic_left_fit_first_c_1086_800_0168_0001.png Graphic file (type pn
 g)
@@ -3776,7 +4232,7 @@ g)
 Package pdftex.def Info: Figures/pic_left_fit_first_c_1086_800_0168_0001.png  u
 sed on input line 557.
 (pdftex.def)             Requested size: 212.91577pt x 125.00601pt.
-<Figures/pic_left_fit_first_c_2198_800_0170_0001.png, id=2710, 2003.485pt x 117
+<Figures/pic_left_fit_first_c_2198_800_0170_0001.png, id=2696, 2003.485pt x 117
 6.395pt>
 File: Figures/pic_left_fit_first_c_2198_800_0170_0001.png Graphic file (type pn
 g)
@@ -3791,7 +4247,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[156
+[155
 
  <./Figures/pic_left_fit_first_empty_400_0187_0001.png> <./Figures/pic_left_fit
 _first_c_54_400_0179_0001.png> <./Figures/pic_left_fit_first_c_1086_400_0181_00
@@ -3802,7 +4258,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[157 <./Figures/pic_left_fit_first_empty_550_0106_0001.png> <./Figures/pic_left
+[156 <./Figures/pic_left_fit_first_empty_550_0106_0001.png> <./Figures/pic_left
 _fit_first_c_54_550_0099_0001.png> <./Figures/pic_left_fit_first_c_1086_550_010
 1_0001.png> <./Figures/pic_left_fit_first_c_2198_550_0103_0001.png> <./Figures/
 pic_left_fit_first_empty_650_0124_0001.png> <./Figures/pic_left_fit_first_c_54_
@@ -3814,7 +4270,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[158 <./Figures/pic_left_fit_first_empty_800_0173_0001.png> <./Figures/pic_left
+[157 <./Figures/pic_left_fit_first_empty_800_0173_0001.png> <./Figures/pic_left
 _fit_first_c_54_800_0166_0001.png> <./Figures/pic_left_fit_first_c_1086_800_016
 8_0001.png> <./Figures/pic_left_fit_first_c_2198_800_0170_0001.png>])
 
@@ -3823,9 +4279,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[159
+[158
 
-] [160] (./main.bbl
+] [159] (./main.bbl
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[160]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -3868,13 +4331,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [166]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[167]
 Underfull \hbox (badness 1394) in paragraph at lines 425--429
 []\T1/cmr/m/n/12 GSI Helmholtzzen-trum für Schw-e-ri-o-nen-forschung GmbH, ``La
 rge-acceptance
@@ -3892,7 +4348,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[168]
+[167]
 Underfull \hbox (badness 10000) in paragraph at lines 495--499
 []\T1/cmr/m/n/12 Hamamatsu Pho-ton-ics, ``S8664-1010: Sil-i-con Avalanche Pho-t
 o-di-ode.''
@@ -3922,6 +4378,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
+[168]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 [169]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -3937,6 +4400,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [171]
+Underfull \hbox (badness 1275) in paragraph at lines 722--725
+[]\T1/cmr/m/n/12 X. Am-a-tri-ain, A. Sankar, J. Bing, P. K. Bod-igutla, T. J. H
+azen, and
+ []
+
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 312.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -3944,39 +4415,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [172]
-Underfull \hbox (badness 1275) in paragraph at lines 722--725
-[]\T1/cmr/m/n/12 X. Am-a-tri-ain, A. Sankar, J. Bing, P. K. Bod-igutla, T. J. H
-azen, and
- []
-
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 295.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[173]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 295.
- (./main.aux (./Abstract.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 295.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 295.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 312.
+ (./main.aux (./Abstract.aux) (./Abstract_de.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 312.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 312.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 1D85BE9F35163132474D4FA3E23B276E;6209.
+(rerunfilecheck)             Checksum: AA2FADED40021B92DFA98E25713B27CD;6205.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 295.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 312.
  ) 
 Here is how much of TeX's memory you used:
- 26507 strings out of 492982
- 507796 string characters out of 6134896
- 613892 words of memory out of 5000000
- 28942 multiletter control sequences out of 15000+600000
- 567834 words of font info for 125 fonts, out of 8000000 for 9000
+ 26968 strings out of 492982
+ 512175 string characters out of 6134896
+ 618819 words of memory out of 5000000
+ 29371 multiletter control sequences out of 15000+600000
+ 567013 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,22n,51p,10367b,980s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
@@ -4018,16 +4474,15 @@ onts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm
 nts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-
 super/sfrm1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb><
 /usr/share/texmf/fonts/type1/public/cm-super/sfrm2488.pfb></usr/share/texmf/fon
-ts/type1/public/cm-super/sfsl1200.pfb></usr/share/texmf/fonts/type1/public/cm-s
-uper/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1095.pfb></
-usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/font
-s/type1/public/cm-super/sftt1000.pfb></usr/share/texmf/fonts/type1/public/cm-su
-per/sftt1200.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.p
-fb>
-Output written on main.pdf (182 pages, 34105272 bytes).
+ts/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-s
+uper/sfti1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></
+usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf/font
+s/type1/public/cm-super/sftt1200.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/urw/zapfding/uzdr.pfb>
+Output written on main.pdf (183 pages, 34115920 bytes).
 PDF statistics:
- 3114 PDF objects out of 3580 (max. 8388607)
- 2447 compressed objects within 25 object streams
- 683 named destinations out of 1000 (max. 500000)
+ 3097 PDF objects out of 3580 (max. 8388607)
+ 2435 compressed objects within 25 object streams
+ 684 named destinations out of 1000 (max. 500000)
  1219 words of extra memory for PDF output out of 10000 (max. 10000000)
 
