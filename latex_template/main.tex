@@ -44,6 +44,8 @@
 \newfloatcommand{capbtabbox}{table}[\tiny][\FBwidth]
 \newcommand{\textoverline}[1]{$\overline{\mbox{#1}}$}
 \usepackage{siunitx}
+
+
 \title{Introduction}
 \author{Tobias}
 
@@ -229,7 +231,7 @@
 
 \include{Abstract}
 
-\newpage\null\thispagestyle{empty}\newpage
+%\newpage\null\thispagestyle{empty}\newpage
 
 %\include{Zusammenfassung}
 
@@ -243,7 +245,12 @@
 \newpage
 \pagenumbering{arabic}
 \pagestyle{headings}
-%\pagestyle{fancy}
+\pagestyle{fancy}
+\fancyhead[L]{%
+  \thepage\quad%
+  \parbox[t]{0.7\textwidth}{\nouppercase{\leftmark}}%
+}
+\fancyfoot[C]{\thepage}
 %\fancyfoot{}
 \input{./../writings/introduction}
 \input{./../writings/reaction_models}
@@ -256,6 +263,9 @@
 %\input{./../writings/results}
 \newpage
 \appendix
+\fancyhf{}
+\fancyhead[L]{\thepage}
+\fancyfoot[C]{\thepage}
 \input{./../writings/appendix}
 %\include{Introduction}
 %\newpage\null\thispagestyle{empty}\newpage
