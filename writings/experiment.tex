@@ -263,10 +263,11 @@ Although the the energy calibration of CsI(Tl) crystals for charged particles is
 L(t) = \frac{N_f}{\tau_s} exp(-\frac{t}{\tau_f}) + \frac{N_s}{\tau_s} exp(-\frac{t}{\tau_s})
 \end{equation}
 Where $N_{f}$ is the amplitude of the fast component and $N_{s}$ the amplitude of the slow component. Accordingly $\tau_{f}$ the life time of the fast component ($\tau_{f} \approx 650-770 ns$ ) and $\tau_{s}$ the lifetime of the slow component ($\tau_{s} \approx 3.2 - 3.5\mu s$). It has been found that the proportion between the two components is energy and particle dependent. This property can be used to identify isotopes by extracting the $N_{f}$ and $N_{s}$ values from pulse shape analysis (PSA) on the according light emission response\footnote{The method has been implemented in the CALIFA Firmware as \textit{Quick Particle Identification} -- QPID. For more information see \cite{winkel2011implementierung} and \cite{winkel2016komplexe}}, as shown in Fig.~\ref{fig:qpid_califa}.\newline  
-\begin{figure}[htpb]
+%\begin{figure}[htpb]
+\begin{figure}[ht!]
     \centering
-    %\includegraphics[width=\textwidth,height=10cm,keepaspectratio=true]{Figures/qpid_plot.png}
-    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/qpid_overview.pdf}
+    %\includegraphics[width=\textwidth,keepaspectratio=true]{Figures/qpid_overview.pdf}
+    \includegraphics[width=0.65\textwidth,keepaspectratio=true]{Figures/qpid_overview_cut.png}
     \caption{
     Quick Particle Identification(QPID) via fast and slow component $N_{f} / N_{s}$. Each correlation band corresponds to a nuclide, from Ref.~\cite{winkel2016komplexe}.
     }
@@ -323,7 +324,7 @@ This system ensures robust, synchronized acquisition for complex multi-detector 
 \subsubsection{Sofia Time of Flight Wall}
 The Sofia Time of Flight Wall (or "Stop detector") is positioned at the very end of the heavy-ion flight-path downstream of the GLAD magnet, behind the MWPC 3 (see Subsection~\ref{sec_mwpcs}), at approximately 6.6 m distance from the target position. It consists of a plane of 28 vertically aligned scintillator bars, each of dimension 32x600x5 mm. The scintillator plastics are numbered from 0 to 27 from left to right (when looking in beam direction). The time of flight of the ions between Start and ToFW can be measured by subtracting the time measurement of  the Start detector from the ToFW. In optimal operating conditions, the combined time resolution of the Start and ToFW detectors can reach $\sigma_{tot} < 40$ps, enabling precise time-of-flight measurements, for an average time of flight of 30 ns\cite{martin2021fission}. For the technical specifications of the Sofia ToFW, see Fig.~\ref{fig:sof_tofw_pic} and reference \cite{bail2011time}.
 
-\begin{figure}[htbp]
+\begin{figure}[h!]
     \centering
     % The figure (image)
     \includegraphics[width=0.7\textwidth]{Figures/sof_tofw.png}
@@ -349,5 +350,4 @@ The Sofia Time of Flight Wall (or "Stop detector") is positioned at the very end
 For the detection of neutrons emitted from the forward going fragments  the New Large-Area Neutron Detector (NeuLAND) is installed at zero degrees after GLAD. In its final design it will consist of 30 double planes with each 100 plastic scintillators of size $5\times5\times250~\text{cm}^3$ providing an active detector surface of $2.5\times2.5~\text{m}^2$ and thickness of 3~m. Its high detection efficiency, a time resolution of $\sigma_t \le 150\,ps$ and high multi-neutron efficiency are crucial detector features for complete kinematics experiments at R3B. A comprehensive analysis of the detector's resolution and efficiency is provided in Refs.~\cite{boretzky2021neuland, boretzky2014neuland}.\newline
 For the S444 commissioning experiment in 2020 13 double-planes of the NeuLAND detector have been used. 
 \newpage
-
-
+\clearpage
