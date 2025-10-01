@@ -1,5 +1,5 @@
-This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
-Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: Abstract.aux
 A level-1 auxiliary file: Abstract_de.aux
@@ -39,6 +39,12 @@ You're missing a field name---line 1330 of file main.bib
  :   year = {2025}, 
  :                  % Or the year you accessed it, or the last updated year if available on the site
 I'm skipping whatever remains of this entry
+Warning--entry type for "UTAustin:Scattering" isn't style-file defined
+--line 1374 of file main.bib
+I was expecting a `,' or a `}'---line 1380 of file main.bib
+ :   urldate = {2025-10-01} 
+ :                          % Today's access date: YYYY-MM-DD
+I'm skipping whatever remains of this entry
 Warning--empty journal in horvat2021evolution
 Warning--empty journal in glauber1959lectures
 Warning--empty journal in sitenko1990theory
@@ -51,36 +57,36 @@ Warning--empty journal in serrano2013white
 Warning--empty journal in bassani2005encyclopedia
 Warning--empty journal in popescu2021review
 Warning--can't use both volume and number fields in bertini2011r3broot
-You've used 146 entries,
+You've used 148 entries,
             1876 wiz_defined-function locations,
-            1271 strings with 31245 characters,
-and the built_in function-call counts, 40120 in all, are:
-= -- 3814
-> -- 2058
+            1282 strings with 31527 characters,
+and the built_in function-call counts, 40404 in all, are:
+= -- 3838
+> -- 2073
 < -- 0
-+ -- 751
-- -- 605
-* -- 2822
-:= -- 5810
-add.period$ -- 173
-call.type$ -- 146
-change.case$ -- 128
++ -- 757
+- -- 609
+* -- 2835
+:= -- 5852
+add.period$ -- 176
+call.type$ -- 148
+change.case$ -- 130
 chr.to.int$ -- 0
-cite$ -- 158
-duplicate$ -- 2121
-empty$ -- 3427
-format.name$ -- 605
-if$ -- 9766
+cite$ -- 160
+duplicate$ -- 2129
+empty$ -- 3463
+format.name$ -- 609
+if$ -- 9837
 int.to.chr$ -- 0
-int.to.str$ -- 146
+int.to.str$ -- 148
 missing$ -- 137
-newline$ -- 472
-num.names$ -- 138
-pop$ -- 466
+newline$ -- 479
+num.names$ -- 140
+pop$ -- 480
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1542
+skip$ -- 1549
 stack$ -- 0
 substring$ -- 1900
 swap$ -- 977
@@ -89,7 +95,7 @@ text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 12
-while$ -- 333
-width$ -- 149
-write$ -- 1463
-(There were 8 error messages)
+while$ -- 335
+width$ -- 151
+write$ -- 1479
+(There were 9 error messages)

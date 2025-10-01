@@ -551,7 +551,7 @@ The uncertainty associated with the weighted mean is composed of two contributio
 \Delta_w = \sqrt{\frac{1}{\sum_i w_i}}.
 \end{equation}
 
-\begin{figure}[htbp]
+\begin{figure}[h!]
     \centering
     \includegraphics[height=10cm,keepaspectratio=true]{Figures/iso_corr_contribution_weighted_ar_mean.png}
     \caption{Weighted means of the isotopic correction contributions to the total cross section as a function of beam energy. While the mean value is fixed for all three target thicknesses for the different beam energies, the systematic and statistical uncertainties vary with respect to the analyzed runs, as indicated by the error bars.}
@@ -560,17 +560,53 @@ The uncertainty associated with the weighted mean is composed of two contributio
 
 
 \subsubsection{Acceptance Depencency}
-The large geometrical acceptance of the TWIN MUSIC detector system (although somewhat limited in the outermost region on one side, see Section X), together with the MWPC detectors located upstream of GLAD as well as MWPC3 placed downstream, enables a detailed investigation of the isotope-correction contribution as a function of the fragment scattering angle with respect to the target position.
-
-Unreacted $^{12}$C fragments are only marginally influenced by angular straggling due to Coulomb deflections. Their transverse deviation can be estimated within a semiclassical framework by employing the Rutherford scattering formula for two point charges, expressed as:
+The large geometrical acceptance of the TWIN MUSIC detector system (although somewhat limited in the outermost region on one side, see Section~\ref{sec:geo_corr}), together with the MWPC detectors located upstream of GLAD as well as MWPC3 placed downstream, enables a detailed investigation of the isotope-correction contribution as a function of the fragment scattering angle with respect to the target position.\newline
+Unreacted $^{12}$C fragments are only marginally influenced by angular straggling due to Coulomb deflections. Their transverse deviation can be estimated within a semiclassical framework by employing the Rutherford scattering formula for two point-like charges, expressed as~\footnote{A full derivation of the here presented Rutherford scattering formula can be found in Chapter 3, Ref.~\cite{safko2002classical}.} :
 \begin{equation}
-%\theta = 2\arctan\left( \pi\right)
-\theta = 2 \atan\left(\frac{Z_1 Z_2 e^2}{4\pi \varepsilon_0 \cdot E_{rel} \cdot b}\right)
+\theta = 2 \arctan\left(\frac{Z_1 Z_2 e^2}{4\pi \varepsilon_0 \cdot E_{rel} \cdot b}\right)
 \end{equation}
 This expression provides the relation between the impact parameter $b$ and the scattering angle $\theta$ in the center-of-mass frame. For the case of $^{12}$C + $^{12}$C scattering, the charge numbers are $Z_1 = Z_2= 6$, and the value $\frac{e^2}{4 \pi \varepsilon_0} \approx 1.44$ MeV$\cdot$fm is used.
-For identical masses, the relative kinetic energy in the center-of-mass system is related to the laboratory-frame kinetic energy by $E_{rel} = E_{lab}/2$.
+For identical masses, the relative kinetic energy in the center-of-mass system is related to the laboratory-frame kinetic energy by $E_{rel} = E_{lab}/2$.\newline
+Calculating the scattering angles for three representative cases:
+\begin{enumerate}
+\item Central collision $b = 1.21 \cdot \sqrt[^3]{6}\cdot 2 \approx 5\,fm \approx 2\cdot R_{^{12}C}$: $\theta \approx 4 mrad$ 
+\item Peripheral $b = 10\,fm$: $\theta \approx 2.2 mrad$
+\item Very peripheral $b = 20\,fm$: $\theta \approx 1.1 mrad$ 
+\end{enumerate}
+The here presented scattering angle $\theta$ is in the center-of-mass system. Translated to the lab system gives $\theta_{lab} = \frac{\theta_{cm}}{2}$~\footnote{This approximation is valid for two-body scattering where the interacting particles are of equal mass ($m_1 = m_2$). A detailed derivation is provided in Ref.~\cite{UTAustin:Scattering}.}, which means that the deflections originating from Coulomb scattering are of the order of 0.5 to 2 mrad for beam energies of 400 AMeV. These values are very small in comparison to typical knockout or recoil deflections and decrease further with increasing beam energy. The smallness of these deflections supports the validity of the assumptions made within the Glauber framework for high-energy reactions, particularly in the context of the eikonal approximation. In this approach, the projectile is assumed to traverse the target along a straight-line trajectory, experiencing only small-angle deviations.\newline
+In contrast, the neutron removal (knockout) reaction leads to significantly larger angular deflections of the $^{11}$C fragment. For the estimation, it is assumed that the removed neutron carries a transverse momentum $p_{t}$ (with respect to the beam direction) sampled from the nucleon Fermi momentum distribution, with a typical magnitude of $p_t \approx 250 MeV/c$. By momentum conservation, the $^{11}$C fragment receives the same absolute transverse momentum, but in the opposite direction.
+Neglecting small binding-energy corrections, the longitudinal momentum of the $^{11}$C fragment at 400 AMeV beam energy is $ P_{frag} \approx 10.47\,GeV/c$ and the scattering angle can be approximated by:
+\begin{equation}
+\theta  = \frac{p_t}{P_{frag}}
+\end{equation}
+For a plausible range of $p_t$:
+\begin{itemize}
+\item $p_t = 150 MeV/c \rightarrow \theta \approx 14\, mrad$
+\item $p_t = 300 MeV/c \rightarrow \theta \approx 29\, mrad$
+\end{itemize}
 
+The comparison between the angular straggling due to Coulomb (elastic) scattering of unreacted $^{12}$C fragments and the angular broadening of the $^{11}$C fragment resulting from neutron knockout highlights the distinct differences in their angular and positional distributions. This underlines the necessity of employing a large angular-acceptance detector setup in order to achieve precise isotope correction.\newline
+The dependence of the isotope correction on the $x$-$y$ position acceptance at MWPC1 is presented in Fig.~\ref{fig:iso_acc}. Fig.~\ref{sfig:iso_acc_sigma} shows the isotope correction as a function of the standard deviation of the $x$-$y$-position distribution at MWPC1. Here, both the standard deviation and the central position are determined by fitting the central region of the $x$-$y$-distribution with a Gaussian function in both dimensions. Fig.~\ref{sfig:iso_acc_mrad} presents the corresponding dependence in terms of the scattering angle, which is obtained from the distance between the target and MWPC1 together with the measured transverse displacement in $x$ relative to the fitted central position. For cases where the standard deviation (or corresponding opening angle) exceeds $3\sigma$, the two-dimensional $x$-$y$ distribution in MWPC1 is reconstructed, as described in Fig.~\ref{fig:iso_mw1_sections}, to account for the limited geometric acceptance of the TWIN MUSIC detector.\newline
+In both Fig.~\ref{sfig:iso_acc_sigma} and Fig.~\ref{sfig:iso_acc_mrad}, it is evident that the dominant contribution to the isotope correction arises from the tails of the $x$- (and $y$-) position distributions. These tails reflect the sudden neutron knockout process, which, as estimated above, corresponds to angular scatterings in the range of approximately 15-30 mrad. The presence of non-negligible contributions beyond this range can be attributed to the finite transverse beam size at the target position (see also Fig.~\ref{fig:x_pos_target}). Consequently, the distribution width shown in Fig.~\ref{fig:iso_acc} results from a convolution of the intrinsic beam profile at the target with the scattering distributions originating from both knockout and Coulomb processes, as discussed above.
 
+\begin{figure}[ht]
+    \centering
+    \begin{subfigure}[t]{0.44\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/iso_acc_sigma.png}
+        \caption{Isotope correction as a function of the standard deviation of the $x$-$y$ position distribution at MWPC1. The vertical line indicates the 3$\sigma$ limit. For corrections exceeding this limit, the $x$-$y$ distribution at MWPC1 is reconstructed as described in Fig.~\ref{fig:iso_mw1_sections}.}
+        \label{sfig:iso_acc_sigma}
+    \end{subfigure}
+    \qquad
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{Figures/iso_acc_mrad.png}
+        \caption{Isotope correction as a function of the calculated scattering angle, derived solely from the deflections measured in the $x$-position at MWPC1. The same data points as in (a) are used.}
+        \label{sfig:iso_acc_mrad}
+    \end{subfigure}
+    \caption{Analysis of the isotope correction with respect to the geometrical acceptance at MWPC1.}
+    \label{fig:iso_acc}
+\end{figure}
 
 
 
