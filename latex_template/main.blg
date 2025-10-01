@@ -39,12 +39,6 @@ You're missing a field name---line 1330 of file main.bib
  :   year = {2025}, 
  :                  % Or the year you accessed it, or the last updated year if available on the site
 I'm skipping whatever remains of this entry
-Warning--entry type for "UTAustin:Scattering" isn't style-file defined
---line 1374 of file main.bib
-I was expecting a `,' or a `}'---line 1380 of file main.bib
- :   urldate = {2025-10-01} 
- :                          % Today's access date: YYYY-MM-DD
-I'm skipping whatever remains of this entry
 Warning--empty journal in horvat2021evolution
 Warning--empty journal in glauber1959lectures
 Warning--empty journal in sitenko1990theory
@@ -98,4 +92,4 @@ warning$ -- 12
 while$ -- 335
 width$ -- 151
 write$ -- 1479
-(There were 9 error messages)
+(There were 8 error messages)
