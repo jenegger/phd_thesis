@@ -51,45 +51,45 @@ Warning--empty journal in serrano2013white
 Warning--empty journal in bassani2005encyclopedia
 Warning--empty journal in popescu2021review
 Warning--can't use both volume and number fields in bertini2011r3broot
-You've used 148 entries,
+You've used 151 entries,
             1876 wiz_defined-function locations,
-            1282 strings with 31527 characters,
-and the built_in function-call counts, 40404 in all, are:
-= -- 3838
-> -- 2073
+            1302 strings with 32163 characters,
+and the built_in function-call counts, 41116 in all, are:
+= -- 3915
+> -- 2085
 < -- 0
-+ -- 757
-- -- 609
-* -- 2835
-:= -- 5852
-add.period$ -- 176
-call.type$ -- 148
-change.case$ -- 130
++ -- 763
+- -- 612
+* -- 2872
+:= -- 5946
+add.period$ -- 179
+call.type$ -- 151
+change.case$ -- 133
 chr.to.int$ -- 0
-cite$ -- 160
-duplicate$ -- 2129
-empty$ -- 3463
-format.name$ -- 609
-if$ -- 9837
+cite$ -- 163
+duplicate$ -- 2178
+empty$ -- 3533
+format.name$ -- 612
+if$ -- 10025
 int.to.chr$ -- 0
-int.to.str$ -- 148
-missing$ -- 137
-newline$ -- 479
-num.names$ -- 140
-pop$ -- 480
+int.to.str$ -- 151
+missing$ -- 140
+newline$ -- 488
+num.names$ -- 143
+pop$ -- 488
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1549
+skip$ -- 1586
 stack$ -- 0
-substring$ -- 1900
-swap$ -- 977
+substring$ -- 1933
+swap$ -- 1002
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 12
-while$ -- 335
-width$ -- 151
-write$ -- 1479
+while$ -- 342
+width$ -- 154
+write$ -- 1509
 (There were 8 error messages)

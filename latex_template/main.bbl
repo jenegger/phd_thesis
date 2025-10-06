@@ -569,6 +569,15 @@ S.~F. {Brandt}, ``{Kinematics of Elastic Scattering}.''
   \url{https://farside.ph.utexas.edu/teaching/336k/Newton/node52.html}.
 \newblock Accessed: 2025-10-01.
 
+\bibitem{hoyle1954nuclear}
+F.~Hoyle, ``On nuclear reactions occuring in very hot stars. i. the synthesis
+  of elements from carbon to nickel.,'' {\em Astrophysical Journal Supplement,
+  vol. 1, p. 121 (1954)}, vol.~1, p.~121, 1954.
+
+\bibitem{FREER20141}
+{M. Freer and H.O.U. Fynbo}, ``{The Hoyle state in 12C},'' {\em {Progress in
+  Particle and Nuclear Physics}}, vol.~78, pp.~1--23, 2014.
+
 \bibitem{morfouace2025asymmetric}
 P.~Morfouace, J.~Taieb, A.~Chatillon, L.~Audouin, G.~Blanchon, R.~Bernard,
   N.~Dubray, N.~Pillet, D.~Regnier, H.~Alvarez-Pol, {\em et~al.}, ``{An
@@ -747,6 +756,13 @@ X.~Ju, D.~Murnane, P.~Calafiura, N.~Choma, S.~Conlon, S.~Farrell, Y.~Xu,
 S.~Van~Stroud, P.~Duckett, M.~Hart, N.~Pond, S.~Rettie, G.~Facini, and
   T.~Scanlon, ``{Transformers for Charged Particle Track Reconstruction in High
   Energy Physics},'' {\em arXiv preprint arXiv:2411.07149}, 2024.
+
+\bibitem{JENEGGER2026171048}
+{T. Jenegger, N. Hartman, R. Gernhäuser, L. Fabbietti and L. Heinrich},
+  ``{Machine learning for the cluster reconstruction in the CALIFA calorimeter
+  at R3B},'' {\em {Nuclear Instruments and Methods in Physics Research Section
+  A: Accelerators, Spectrometers, Detectors and Associated Equipment}},
+  vol.~1082, p.~171048, 2026.
 
 \bibitem{lau1995optimization}
 K.~Lau and J.~Pyrlik, ``{Optimization of centroid-finding algorithms for
