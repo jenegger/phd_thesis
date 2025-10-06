@@ -23,10 +23,6 @@ Repeated entry---line 576 of file main.bib
  : @article{moniz1971nuclear
  :                          ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 1140 of file main.bib
- :   author={Sitenko, Alekse{\u\i}} 
- :                                  Grigorʹevich},
-I'm skipping whatever remains of this entry
 Repeated entry---line 1166 of file main.bib
  : @article{agostinelli2003geant4
  :                               ,
@@ -41,8 +37,6 @@ You're missing a field name---line 1330 of file main.bib
 I'm skipping whatever remains of this entry
 Warning--empty journal in horvat2021evolution
 Warning--empty journal in glauber1959lectures
-Warning--empty journal in sitenko1990theory
-Warning--empty year in sitenko1990theory
 Warning--empty author in clas2018probing
 Warning--empty booktitle in fair_reinmann
 Warning--empty journal in hartigevolution
@@ -53,43 +47,43 @@ Warning--empty journal in popescu2021review
 Warning--can't use both volume and number fields in bertini2011r3broot
 You've used 151 entries,
             1876 wiz_defined-function locations,
-            1302 strings with 32164 characters,
-and the built_in function-call counts, 41116 in all, are:
-= -- 3915
+            1306 strings with 32429 characters,
+and the built_in function-call counts, 41142 in all, are:
+= -- 3921
 > -- 2085
 < -- 0
 + -- 763
 - -- 612
-* -- 2872
-:= -- 5946
-add.period$ -- 179
+* -- 2870
+:= -- 5952
+add.period$ -- 183
 call.type$ -- 151
-change.case$ -- 133
+change.case$ -- 132
 chr.to.int$ -- 0
-cite$ -- 163
+cite$ -- 161
 duplicate$ -- 2178
-empty$ -- 3533
+empty$ -- 3536
 format.name$ -- 612
-if$ -- 10025
+if$ -- 10035
 int.to.chr$ -- 0
 int.to.str$ -- 151
-missing$ -- 140
-newline$ -- 488
+missing$ -- 141
+newline$ -- 489
 num.names$ -- 143
-pop$ -- 488
+pop$ -- 485
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1586
+skip$ -- 1585
 stack$ -- 0
 substring$ -- 1933
-swap$ -- 1002
+swap$ -- 1003
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 12
+warning$ -- 10
 while$ -- 342
 width$ -- 154
-write$ -- 1509
-(There were 8 error messages)
+write$ -- 1514
+(There were 7 error messages)

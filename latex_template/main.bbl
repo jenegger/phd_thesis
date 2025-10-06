@@ -153,7 +153,8 @@ A.~Obertelli and H.~Sagawa, {\em Modern nuclear physics}.
 R.~Glauber {\em et~al.}, ``Lectures in theoretical physics,'' 1959.
 
 \bibitem{sitenko1990theory}
-A.~Sitenko, ``Theory of nuclear reactions,''
+A.~G. Sitenko, {\em Theory of nuclear reactions}.
+\newblock Teaneck, NJ (USA); World Scientific Pub. Co., 1989.
 
 \bibitem{lilley2013nuclear}
 J.~Lilley, {\em Nuclear physics: principles and applications}.
@@ -392,10 +393,12 @@ C.~E. D{\"u}llmann, M.~Block, F.~P. He{\ss}berger, J.~Khuyagbaatar, B.~Kindler,
 
 \bibitem{ion_sources_web}
 ``{Starting point of the GSI accelerator facility: Ion sources}.''
+  \url{https://www.gsi.de/en/researchaccelerators/accelerator_facility/ion_sources/starting_point_of_the_gsi_accelerator_facility_ion_sources}.
 \newblock Accessed: 2025-04-03.
 
 \bibitem{sis18_web}
 ``{Ring accelerator SIS18 - the record holder}.''
+  \url{https://www.gsi.de/en/researchaccelerators/accelerator_facility/ring_accelerator}.
 \newblock Accessed: 2025-04-03.
 
 \bibitem{fair_reinmann}
