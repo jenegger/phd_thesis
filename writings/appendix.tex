@@ -71,49 +71,6 @@ Fig.~\ref{fig:mw23_own_clustering} shows the distribution of x in MWPC2 and MWPC
 
 \clearpage
 
-\section{MWPCs -- Efficiency Analysis}\label{app:mwpcs_eff}
-
-The efficiency analysis presented here is restricted to carbon isotopes (\(Z = 6\)), which were previously identified with the TWIN MUSIC detector. The efficiencies are determined according to
-
-\begin{equation}
-\varepsilon = \frac{N_{\text{MWPC}}}{N_{\text{TWIN MUSIC}}} \, ,
-\end{equation}
-
-where \(N_{\text{MWPC}}\) denotes the number of carbon isotopes identified by the respective MWPC(s), and \(N_{\text{TWIN MUSIC}}\) is the total number of incoming carbon isotopes identified by the TWIN MUSIC detector.  
-
-\begin{figure}[htpb]
-    \centering
-    %\includegraphics[width=\textwidth,keepaspectratio=true]{Figures/eff_plot_mwpcs_labels_c.png}
-    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/eff_plot_mwpcs.png}
-    \caption{
-	Efficiencies of MWPC1, MWPC2, and MWPC3 obtained with the default and the coherent clustering algorithms. For MWPC1 and MWPC2, a reduction in efficiency is observed at a beam energy of 550 AMeV. In contrast, MWPC3 exhibits a pronounced efficiency loss at 800 AMeV. This behavior can be attributed to the decreasing signal amplitude with increasing beam energy, resulting in signals falling below the detection threshold.
-     }
-    \label{fig:eff_plot_mwpcs}
-\end{figure}
-
-Fig.~\ref{fig:eff_plot_mwpcs} displays the efficiencies of the individual MWPCs: MWPC1 and MWPC2, located upstream of GLAD, and MWPC3, located downstream. The efficiencies are compared for two calibration-to-hit (cal-to-hit) processing algorithms, as described in Appendix~\ref{app:mwpcs_proc}:  
-\begin{itemize}
-    \item the \textit{default processing}, in which also events with sparse hits are considered, and  
-    \item the \textit{coherent clustering} method, in which only spatially correlated hit clusters are retained.  
-\end{itemize}
-
-\begin{figure}[htpb]
-    \centering
-    %\includegraphics[width=\textwidth,keepaspectratio=true]{Figures/combined_eff_plot_mwpcs_labels_c.png}
-    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/combined_eff_plot_mwpcs.png}
-    \caption{
-	Efficiencies of the particle position identification (in $x$ and $y$)  in multiple MWPCs obtained with the default and the coherent clustering algorithms. The rightmost plot shows the ratio of used events for the isotope correction factor, as described in Section~\ref{sec:iso_corr}, compared to the number of identified carbon isotopes with TWIN MUSIC.
-     }
-    \label{fig:eff_plot_mwpcs_comb}
-\end{figure}
-
-Fig.~\ref{fig:eff_plot_mwpcs_comb} presents the efficiencies obtained when requiring coincident hits in multiple MWPCs, both for the reconstruction of the \(x\)- and \(y\)-positions. The comparison is again performed for both processing algorithms.  
-
-Finally, the rightmost plot in Fig.~\ref{fig:eff_plot_mwpcs_comb} illustrates the ratio of the events used for the isotope correction relative to the total number of carbon isotopes identified by the TWIN MUSIC detector.  
-
-
-\clearpage
-
 \section {MWPC0 selection cuts}\label{app:mw0_cuts}
 
 As outlined in Section~\ref{subsec:event-sel}, only events with hits in MWPC0 within a $\pm2\sigma$ around the beam spot center in both the $x$ and $y$ directions were selected, in order to ensure the selection of well-focused incoming particles. The standard \textit{cal-to-hit} procedure was applied to determine the spatial coordinates of the hits.\newline
@@ -160,6 +117,97 @@ The effectiveness of these approaches is illustrated in Fig.~\ref{fig:mw0_approa
 Since the $\pm2\sigma$ position cuts were already chosen to be sufficiently tight for the analysis, no additional selection criteria were applied for the MWPC0 event selection.
 
 \clearpage
+
+
+\section{MWPCs -- Efficiency Analysis}\label{app:mwpcs_eff}
+
+The efficiency analysis presented here is restricted to carbon isotopes (\(Z = 6\)), which were previously identified with the TWIN MUSIC detector. The efficiencies are determined according to
+
+\begin{equation}
+\varepsilon = \frac{N_{\text{MWPC}}}{N_{\text{TWIN MUSIC}}} \, ,
+\end{equation}
+
+where \(N_{\text{MWPC}}\) denotes the number of carbon isotopes identified by the respective MWPC(s), and \(N_{\text{TWIN MUSIC}}\) is the total number of incoming carbon isotopes identified by the TWIN MUSIC detector.  
+
+\begin{figure}[htpb]
+    \centering
+    %\includegraphics[width=\textwidth,keepaspectratio=true]{Figures/eff_plot_mwpcs_labels_c.png}
+    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/eff_plot_mwpcs.png}
+    \caption{
+	Efficiencies of MWPC1, MWPC2, and MWPC3 obtained with the default and the coherent clustering algorithms. For MWPC1 and MWPC2, a reduction in efficiency is observed at a beam energy of 550 AMeV. In contrast, MWPC3 exhibits a pronounced efficiency loss at 800 AMeV. This behavior can be attributed to the decreasing signal amplitude with increasing beam energy, resulting in signals falling below the detection threshold.
+     }
+    \label{fig:eff_plot_mwpcs}
+\end{figure}
+
+Fig.~\ref{fig:eff_plot_mwpcs} displays the efficiencies of the individual MWPCs: MWPC1 and MWPC2, located upstream of GLAD, and MWPC3, located downstream. The efficiencies are compared for two calibration-to-hit (cal-to-hit) processing algorithms, as described in Appendix~\ref{app:mwpcs_proc}:  
+\begin{itemize}
+    \item the \textit{default processing}, in which also events with sparse hits are considered, and  
+    \item the \textit{coherent clustering} method, in which only spatially correlated hit clusters are retained.  
+\end{itemize}
+
+\begin{figure}[htpb]
+    \centering
+    %\includegraphics[width=\textwidth,keepaspectratio=true]{Figures/combined_eff_plot_mwpcs_labels_c.png}
+    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/combined_eff_plot_mwpcs.png}
+    \caption{
+	Efficiencies of the particle position identification (in $x$ and $y$)  in multiple MWPCs obtained with the default and the coherent clustering algorithms. The rightmost plot shows the ratio of used events for the isotope correction factor, as described in Section~\ref{sec:iso_corr}, compared to the number of identified carbon isotopes with TWIN MUSIC.
+     }
+    \label{fig:eff_plot_mwpcs_comb}
+\end{figure}
+
+Fig.~\ref{fig:eff_plot_mwpcs_comb} presents the efficiencies obtained when requiring coincident hits in multiple MWPCs, both for the reconstruction of the \(x\)- and \(y\)-positions. The comparison is again performed for both processing algorithms.  
+
+Finally, the rightmost plot in Fig.~\ref{fig:eff_plot_mwpcs_comb} illustrates the ratio of the events used for the isotope correction relative to the total number of carbon isotopes identified by the TWIN MUSIC detector.  
+
+
+\clearpage
+
+%\section {MWPC0 selection cuts}\label{app:mw0_cuts}
+%
+%As outlined in Section~\ref{subsec:event-sel}, only events with hits in MWPC0 within a $\pm2\sigma$ around the beam spot center in both the $x$ and $y$ directions were selected, in order to ensure the selection of well-focused incoming particles. The standard \textit{cal-to-hit} procedure was applied to determine the spatial coordinates of the hits.\newline
+%For completeness, additional strategies were investigated to suppress misreconstructed positions, which manifest as horizontal and vertical bars in Fig.~\ref{fig:mw0_xy_overview}. These strategies included:
+%\begin{itemize}
+%    \item a coherent-clustering cut, restricted to events where the MWPCs of interest exhibit only one spatially confined cluster, and
+%    \item cuts on the maximum number of reconstructed hits in $x$ and $y$.
+%\end{itemize}
+%\begin{figure}
+%\begin{subfigure}{.45\textwidth}
+%  \centering
+%  % include first image
+%  \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/mw_no_cut_2sigma.png}
+%  \caption{\textit{cal-to-hit} only. Events within $\pm2\sigma$: $1.6949e+06$}
+%  \label{fig:sub-first}
+%\end{subfigure}
+%\begin{subfigure}{.45\textwidth}
+%  \centering
+%  % include second image
+%  \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/mw_coherent_2sigma.png}
+%  \caption{Coherent clustering. Events within $\pm2\sigma$: $1.34349e+06$}
+%  \label{fig:sub-second}
+%\end{subfigure}
+%
+%\begin{subfigure}{.45\textwidth}
+%  \centering
+%  % include third image
+%  \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/mw_coherent_less5_2sigma.png}
+%  \caption{Coherent clustering \& less than 5 hits in x \& y. Events within $\pm2\sigma$: 956816}
+%  \label{fig:sub-third}
+%\end{subfigure}
+%\begin{subfigure}{.45\textwidth}
+%  \centering
+%  % include fourth image
+%  \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/mw_coherent_less4_2sigma.png}
+%  \caption{Coherent clustering \& less than 4 hits in x \& y. Events within $\pm2\sigma$\protect\footnotemark: 304668}
+%  \label{fig:sub-fourth}
+%\end{subfigure}
+%\caption{Overview of methods and cuts to clean up x \& y distribution on MWPC0 from misreconstruction.}
+%\label{fig:mw0_approaches}
+%\end{figure}
+%\footnotetext{The ripples in the y-reconstruction reflect the dimension of the readout pads in y-direction}
+%The effectiveness of these approaches is illustrated in Fig.~\ref{fig:mw0_approaches}. While both methods,when combined, significantly reduce the number of misreconstructed events and improve the spatial hit distribution, they lead to a substantial loss in statistics of more than 40\% (for coherent clustering \& less than 5 hits in x \& y).\newline
+%Since the $\pm2\sigma$ position cuts were already chosen to be sufficiently tight for the analysis, no additional selection criteria were applied for the MWPC0 event selection.
+%
+%\clearpage
 
 \section {Alternative methods for TWIN MUSIC hit selection and charge assignment} \label{app:twin_alternative}
 To quantify the impact of including or excluding border regions -- i.e., cases where either $\overline{Z_{\text{up}}} = 0$ or $\overline{Z_{\text{down}}} = 0$ as illustrated in Fig.~\ref{fig:twin_2d_gaus_cut} -- on the preliminary estimation of charge-changing cross sections, both scenarios were evaluated and the corresponding results are presented in Fig.~\ref{fig:cccs_with_out_border_3_5}. The observed differences are minor. Excluding the border regions leads to a slightly increased spread in the data points for the given beam energies.\newline
@@ -264,93 +312,93 @@ While a time-based selection algorithm for multi-hit anodes was used in both the
 
 
 
-\section{Flight-Path Reconstruction}\label{app:flightpath}
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=\textwidth]{Figures/drawings_flightpath.png}
-    \caption{
-        Flightpath reconstruction with reference positions $(z_0,x_0)$, $(z_1,x_1)$ and $(z_2,x_2)$. The GLAD magnet is tilted by $\alpha = 14^{\circ}$.}
-    \label{fig:draw_flight}
-\end{figure}
-The first step in the radius and flightpath reconstruction is expressing the entrance point on the GLAD field $(z_1,x_1)$ and the exit point $(z_2,x_2)$ with the center of the circle path $(z_0,x_0)$ as reference, see Fig.~\ref{fig:draw_flight}:
-\begin{align*}
-z_1 &= z_0 -r\,cos(90^{\circ}-\theta_i) = z_0 -r\,sin(\theta_i)\\
-x_1 &= x_0 + r\,sin(90^{\circ}-\theta_i) = x_0 + r\,cos(\theta_i)\\
-\hspace{1cm}
-z_2 &= z_0 + r\,cos(90^{\circ}-\theta_o) = z_0 + r\,sin(\theta_o)\\
-x_2 &= x_0 + r\,sin(90^{\circ}-\theta_o) = x_0 + r\,cos(\theta_o) 
-\end{align*}
-The slope $m_1$ of the intersection line between $(z_1,x_1)$ and $(z_2,x_2)$ is given by:
-\begin{align*}
-m_1 &= \frac{x_2-x_1}{z_2 -z_1} = \frac{cos(\theta_o) - cos(\theta_i)}{sin(\theta_o)+sin(\theta_i)}
-\end{align*}
-and with the distance between the two points given by:
-\begin{align*}
-\Delta^2_{i/o} &= r^2 \, \left[(cos\theta_o - cos\theta_i)^2 + (sin\theta_o + sin\theta_i)^2 \right]\\
-	       &= 4r^2\,sin^2(\frac{\theta_i}{2} +\frac{\theta_o}{2} )\\
-\Rightarrow \Delta_{i/o} &= 2r\,sin(\frac{\theta_i}{2} +\frac{\theta_o}{2})
-\end{align*}
-To describe the distance between $(z_1,x_1)$ and $(z_2,x_2)$ with the given effective GLAD length $L_{eff}$ ($= 2.06\,m$) the tilting angle $\alpha$ (see Fig.~\ref{fig:draw_flight}) of GLAD in relation to the incoming beam line direction has to be considered. Consequential the angle $\delta$ between the trajectory connecting $(z_1,x_1)$ and $(z_2,x_2)$ and the line parallel to the GLAD magnet width $L_{eff}$ can be determined as:
-\begin{flalign*}
-tan(\delta) &= \left| \frac{m_1-m_2}{1+ m_1\cdot m_2} \right|
-\end{flalign*}
-with $m_2 = -tan(\alpha)$:
-\begin{align*}
-\delta = atan \left( \frac{\frac{cos\theta_o - cos\theta_i}{sin\theta_o + sin\theta_i} + tan\alpha}{1-\frac{cos\theta_o - cos\theta_i}{sin\theta_o + sin\theta_i}\,\cdot\, tan\alpha} \right)
-\end{align*}
-The final relation between $L_{eff}$ and the bending radius $r$ of the fragment within GLAD can be written as:
-\begin{equation}
-\begin{aligned}
-L_{eff} &= 2r\,sin(\frac{\theta_i}{2} + \frac{\theta_o}{2})\,\cdot\, cos\delta \\
-	&= 2r\,sin(\frac{\theta_i}{2} + \frac{\theta_o}{2})\,\cdot\,\frac{1}{\sqrt{\delta^2+1}}
-\end{aligned}
-\end{equation}
-
-%\section{Dead time uncertainties in TWIN MUSIC}\label{app:twin_uncert}
-%\begin{figure}[ht]
+%\section{Flight-Path Reconstruction}\label{app:flightpath}
+%\begin{figure}[h!]
 %    \centering
-%    \begin{subfigure}[b]{0.45\textwidth}
-%        \centering
-%        \includegraphics[width=\textwidth]{Figures/rate_400_thick.png}
-%        \caption{MWPC1 x-y distribution for events without any singal in TWIN MUSIC. The red rectangle shows the beam spot in the active area of TWIN MUSIC}
-%        \label{sfig:mw1xy_zero_twin}
-%    \end{subfigure}
-%    \qquad
-%    \begin{subfigure}[b]{0.45\textwidth}
-%        \centering
-%        \includegraphics[width=\textwidth]{Figures/zero_charge_twim_active_area.png}
-%        \caption{Rate of events without any signal in TWIN MUSIC active area in relation to incoming ions N1.}
-%        \label{sfig:rate_dead_twin_active}
-%    \end{subfigure}
-%    \caption{Overview events without TWIN MUSIC signal.}
-%    \label{fig:mwpc23_proj_procedure}
+%    \includegraphics[width=\textwidth]{Figures/drawings_flightpath.png}
+%    \caption{
+%        Flightpath reconstruction with reference positions $(z_0,x_0)$, $(z_1,x_1)$ and $(z_2,x_2)$. The GLAD magnet is tilted by $\alpha = 14^{\circ}$.}
+%    \label{fig:draw_flight}
 %\end{figure}
-%TWIN MUSIC is only affected by dead time if none of the anodes have registered a signal. 
-%To quantify this the MWPC1 x-y distribution was plotted for no signal registration in TWIN MUSIC, see Fig.~\ref{sfig:mw1xy_zero_twin}. In Fig.~\ref{sfig:mw1xy_zero_twin} the active area of TWIN MUSIC is clearly visible. The occurence of hits in MWPC1 x-y outside the active area is well understood by the geometric acceptance and in detail discussed in Section~\ref{sec:geo_corr}.\\
-%Moreover a clearly defined spot, which corresponds to the beam spot, is visible. These events can be assigned to events, where the TWIN MUSIC data acquisition/electronics is busy and therefore in deadtime. To evaluate and compare the rate of dead-time events it is divided by the number of incoming ions. The rate is displayed in Fig. Y for all target and empty runs. As shown, the according rates are same for the individual energies (with offset), not depending on target thickness, as expected, since the rate of dead-time events should not have anything to do with the target settings.\\
-%This confirms also the expectation that  the rate is independent of the  fragment’s charge (moreover since the threshold of the MWPC1 is higher than the threshold of the TWIN MUSIC no efficiency loss and therefore higher dead-time rate in the TWIN MUSIC is expected). This means we can write:
-%\begin{equation*}
-%r_{dead_time} = \frac{N_1^{active}}{N_1} \approx \frac{N_2^{active}}{N_2}
-%\end{equation*}
-%where $N_1^{active}$ is the number of measured counts within the active area (red rectangle) in Fig.~\ref{sfig:mw1xy_zero_twin}. \\
-%Even though for the different energies the rates seem to be quite close together, there is a systematic uncertainty. To retrieve the uncertainty the mean rate for the different energy settings $\mu_{energy}$ is calculated and the standard deviation $\Delta_{energy}$. Finally a mean value for the standard deviation $\overline{\Delta_{energy}}$ for all energies is calculated.\\
-%This uncertainty  on $N_2$, $\Delta sys_{N_2}$, has also to be considered in the systematic uncertainty measurement of the cross section in the general form for both empty and target runs:
-%\begin{gather*}
-%\sigma = -\frac{1}{N_t}ln\left(\frac{N^T_2}{N^T_1} \,\frac{N^E_1}{N^E_2}\right)\\
-%\Rightarrow \left|\frac{\partial\sigma}{\partial N^T_2} \cdot \overline{\Delta_{energy}}\right| = \frac{1}{N_t}\cdot \overline{\Delta_{energy}} = \left|\frac{\partial\sigma}{\partial N^E_2} \cdot \overline{\Delta_{energy}}\right|\\
-%\Rightarrow \Delta sys_{N_2} = \sqrt{2} \cdot \frac{1}{N_t}\cdot \overline{\Delta_{energy}}
-%\end{gather*}
-%Since this systematic errror does only depend on the target thickness, it does not depend on $N_2$ and $N_1$ and has therefore a fixed value for a given target thickness:
-%\begin{itemize}
-%\item Thin target, 5.4~mm: 0.62~mbarn
-%\item Medium target, 10.86~mm: 0.31~mbarn
-%\item Thick target, 21.98~mm: 0.15~mbarn
-%\end{itemize}
-%This errror, even though not play a central role it is nevertheless considered in the systematic uncertainty analysis in Section~\ref{sec:err_analysis}.
+%The first step in the radius and flightpath reconstruction is expressing the entrance point on the GLAD field $(z_1,x_1)$ and the exit point $(z_2,x_2)$ with the center of the circle path $(z_0,x_0)$ as reference, see Fig.~\ref{fig:draw_flight}:
+%\begin{align*}
+%z_1 &= z_0 -r\,cos(90^{\circ}-\theta_i) = z_0 -r\,sin(\theta_i)\\
+%x_1 &= x_0 + r\,sin(90^{\circ}-\theta_i) = x_0 + r\,cos(\theta_i)\\
+%\hspace{1cm}
+%z_2 &= z_0 + r\,cos(90^{\circ}-\theta_o) = z_0 + r\,sin(\theta_o)\\
+%x_2 &= x_0 + r\,sin(90^{\circ}-\theta_o) = x_0 + r\,cos(\theta_o) 
+%\end{align*}
+%The slope $m_1$ of the intersection line between $(z_1,x_1)$ and $(z_2,x_2)$ is given by:
+%\begin{align*}
+%m_1 &= \frac{x_2-x_1}{z_2 -z_1} = \frac{cos(\theta_o) - cos(\theta_i)}{sin(\theta_o)+sin(\theta_i)}
+%\end{align*}
+%and with the distance between the two points given by:
+%\begin{align*}
+%\Delta^2_{i/o} &= r^2 \, \left[(cos\theta_o - cos\theta_i)^2 + (sin\theta_o + sin\theta_i)^2 \right]\\
+%	       &= 4r^2\,sin^2(\frac{\theta_i}{2} +\frac{\theta_o}{2} )\\
+%\Rightarrow \Delta_{i/o} &= 2r\,sin(\frac{\theta_i}{2} +\frac{\theta_o}{2})
+%\end{align*}
+%To describe the distance between $(z_1,x_1)$ and $(z_2,x_2)$ with the given effective GLAD length $L_{eff}$ ($= 2.06\,m$) the tilting angle $\alpha$ (see Fig.~\ref{fig:draw_flight}) of GLAD in relation to the incoming beam line direction has to be considered. Consequential the angle $\delta$ between the trajectory connecting $(z_1,x_1)$ and $(z_2,x_2)$ and the line parallel to the GLAD magnet width $L_{eff}$ can be determined as:
+%\begin{flalign*}
+%tan(\delta) &= \left| \frac{m_1-m_2}{1+ m_1\cdot m_2} \right|
+%\end{flalign*}
+%with $m_2 = -tan(\alpha)$:
+%\begin{align*}
+%\delta = atan \left( \frac{\frac{cos\theta_o - cos\theta_i}{sin\theta_o + sin\theta_i} + tan\alpha}{1-\frac{cos\theta_o - cos\theta_i}{sin\theta_o + sin\theta_i}\,\cdot\, tan\alpha} \right)
+%\end{align*}
+%The final relation between $L_{eff}$ and the bending radius $r$ of the fragment within GLAD can be written as:
+%\begin{equation}
+%\begin{aligned}
+%L_{eff} &= 2r\,sin(\frac{\theta_i}{2} + \frac{\theta_o}{2})\,\cdot\, cos\delta \\
+%	&= 2r\,sin(\frac{\theta_i}{2} + \frac{\theta_o}{2})\,\cdot\,\frac{1}{\sqrt{\delta^2+1}}
+%\end{aligned}
+%\end{equation}
 %
-%% chatgpt refined...
-
-\clearpage
+%%\section{Dead time uncertainties in TWIN MUSIC}\label{app:twin_uncert}
+%%\begin{figure}[ht]
+%%    \centering
+%%    \begin{subfigure}[b]{0.45\textwidth}
+%%        \centering
+%%        \includegraphics[width=\textwidth]{Figures/rate_400_thick.png}
+%%        \caption{MWPC1 x-y distribution for events without any singal in TWIN MUSIC. The red rectangle shows the beam spot in the active area of TWIN MUSIC}
+%%        \label{sfig:mw1xy_zero_twin}
+%%    \end{subfigure}
+%%    \qquad
+%%    \begin{subfigure}[b]{0.45\textwidth}
+%%        \centering
+%%        \includegraphics[width=\textwidth]{Figures/zero_charge_twim_active_area.png}
+%%        \caption{Rate of events without any signal in TWIN MUSIC active area in relation to incoming ions N1.}
+%%        \label{sfig:rate_dead_twin_active}
+%%    \end{subfigure}
+%%    \caption{Overview events without TWIN MUSIC signal.}
+%%    \label{fig:mwpc23_proj_procedure}
+%%\end{figure}
+%%TWIN MUSIC is only affected by dead time if none of the anodes have registered a signal. 
+%%To quantify this the MWPC1 x-y distribution was plotted for no signal registration in TWIN MUSIC, see Fig.~\ref{sfig:mw1xy_zero_twin}. In Fig.~\ref{sfig:mw1xy_zero_twin} the active area of TWIN MUSIC is clearly visible. The occurence of hits in MWPC1 x-y outside the active area is well understood by the geometric acceptance and in detail discussed in Section~\ref{sec:geo_corr}.\\
+%%Moreover a clearly defined spot, which corresponds to the beam spot, is visible. These events can be assigned to events, where the TWIN MUSIC data acquisition/electronics is busy and therefore in deadtime. To evaluate and compare the rate of dead-time events it is divided by the number of incoming ions. The rate is displayed in Fig. Y for all target and empty runs. As shown, the according rates are same for the individual energies (with offset), not depending on target thickness, as expected, since the rate of dead-time events should not have anything to do with the target settings.\\
+%%This confirms also the expectation that  the rate is independent of the  fragment’s charge (moreover since the threshold of the MWPC1 is higher than the threshold of the TWIN MUSIC no efficiency loss and therefore higher dead-time rate in the TWIN MUSIC is expected). This means we can write:
+%%\begin{equation*}
+%%r_{dead_time} = \frac{N_1^{active}}{N_1} \approx \frac{N_2^{active}}{N_2}
+%%\end{equation*}
+%%where $N_1^{active}$ is the number of measured counts within the active area (red rectangle) in Fig.~\ref{sfig:mw1xy_zero_twin}. \\
+%%Even though for the different energies the rates seem to be quite close together, there is a systematic uncertainty. To retrieve the uncertainty the mean rate for the different energy settings $\mu_{energy}$ is calculated and the standard deviation $\Delta_{energy}$. Finally a mean value for the standard deviation $\overline{\Delta_{energy}}$ for all energies is calculated.\\
+%%This uncertainty  on $N_2$, $\Delta sys_{N_2}$, has also to be considered in the systematic uncertainty measurement of the cross section in the general form for both empty and target runs:
+%%\begin{gather*}
+%%\sigma = -\frac{1}{N_t}ln\left(\frac{N^T_2}{N^T_1} \,\frac{N^E_1}{N^E_2}\right)\\
+%%\Rightarrow \left|\frac{\partial\sigma}{\partial N^T_2} \cdot \overline{\Delta_{energy}}\right| = \frac{1}{N_t}\cdot \overline{\Delta_{energy}} = \left|\frac{\partial\sigma}{\partial N^E_2} \cdot \overline{\Delta_{energy}}\right|\\
+%%\Rightarrow \Delta sys_{N_2} = \sqrt{2} \cdot \frac{1}{N_t}\cdot \overline{\Delta_{energy}}
+%%\end{gather*}
+%%Since this systematic errror does only depend on the target thickness, it does not depend on $N_2$ and $N_1$ and has therefore a fixed value for a given target thickness:
+%%\begin{itemize}
+%%\item Thin target, 5.4~mm: 0.62~mbarn
+%%\item Medium target, 10.86~mm: 0.31~mbarn
+%%\item Thick target, 21.98~mm: 0.15~mbarn
+%%\end{itemize}
+%%This errror, even though not play a central role it is nevertheless considered in the systematic uncertainty analysis in Section~\ref{sec:err_analysis}.
+%%
+%%% chatgpt refined...
+%
+%\clearpage
 
 \section{Dead Time Uncertainties in TWIN MUSIC}\label{app:twin_uncert}
 
@@ -605,5 +653,47 @@ Beam Energy & \(^{12}\)C target & \(\sigma_{iso}\) [mb] & \(\Delta\sigma_\text{s
 \caption{Measured isotope correction contribution $\sigma_{\text{iso}}$ with statistical and systematic uncertainties for \(^{12}\)C targets of various thicknesses at different beam energies.}
 \end{table}
 
+\section{Flight-Path Reconstruction}\label{app:flightpath}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{Figures/drawings_flightpath.png}
+    \caption{
+        Flightpath reconstruction with reference positions $(z_0,x_0)$, $(z_1,x_1)$ and $(z_2,x_2)$. The GLAD magnet is tilted by $\alpha = 14^{\circ}$.}
+    \label{fig:draw_flight}
+\end{figure}
+The first step in the radius and flightpath reconstruction is expressing the entrance point on the GLAD field $(z_1,x_1)$ and the exit point $(z_2,x_2)$ with the center of the circle path $(z_0,x_0)$ as reference, see Fig.~\ref{fig:draw_flight}:
+\begin{align*}
+z_1 &= z_0 -r\,cos(90^{\circ}-\theta_i) = z_0 -r\,sin(\theta_i)\\
+x_1 &= x_0 + r\,sin(90^{\circ}-\theta_i) = x_0 + r\,cos(\theta_i)\\
+\hspace{1cm}
+z_2 &= z_0 + r\,cos(90^{\circ}-\theta_o) = z_0 + r\,sin(\theta_o)\\
+x_2 &= x_0 + r\,sin(90^{\circ}-\theta_o) = x_0 + r\,cos(\theta_o) 
+\end{align*}
+The slope $m_1$ of the intersection line between $(z_1,x_1)$ and $(z_2,x_2)$ is given by:
+\begin{align*}
+m_1 &= \frac{x_2-x_1}{z_2 -z_1} = \frac{cos(\theta_o) - cos(\theta_i)}{sin(\theta_o)+sin(\theta_i)}
+\end{align*}
+and with the distance between the two points given by:
+\begin{align*}
+\Delta^2_{i/o} &= r^2 \, \left[(cos\theta_o - cos\theta_i)^2 + (sin\theta_o + sin\theta_i)^2 \right]\\
+	       &= 4r^2\,sin^2(\frac{\theta_i}{2} +\frac{\theta_o}{2} )\\
+\Rightarrow \Delta_{i/o} &= 2r\,sin(\frac{\theta_i}{2} +\frac{\theta_o}{2})
+\end{align*}
+To describe the distance between $(z_1,x_1)$ and $(z_2,x_2)$ with the given effective GLAD length $L_{eff}$ ($= 2.06\,m$) the tilting angle $\alpha$ (see Fig.~\ref{fig:draw_flight}) of GLAD in relation to the incoming beam line direction has to be considered. Consequential the angle $\delta$ between the trajectory connecting $(z_1,x_1)$ and $(z_2,x_2)$ and the line parallel to the GLAD magnet width $L_{eff}$ can be determined as:
+\begin{flalign*}
+tan(\delta) &= \left| \frac{m_1-m_2}{1+ m_1\cdot m_2} \right|
+\end{flalign*}
+with $m_2 = -tan(\alpha)$:
+\begin{align*}
+\delta = atan \left( \frac{\frac{cos\theta_o - cos\theta_i}{sin\theta_o + sin\theta_i} + tan\alpha}{1-\frac{cos\theta_o - cos\theta_i}{sin\theta_o + sin\theta_i}\,\cdot\, tan\alpha} \right)
+\end{align*}
+The final relation between $L_{eff}$ and the bending radius $r$ of the fragment within GLAD can be written as:
+\begin{equation}
+\begin{aligned}
+L_{eff} &= 2r\,sin(\frac{\theta_i}{2} + \frac{\theta_o}{2})\,\cdot\, cos\delta \\
+	&= 2r\,sin(\frac{\theta_i}{2} + \frac{\theta_o}{2})\,\cdot\,\frac{1}{\sqrt{\delta^2+1}}
+\end{aligned}
+\end{equation}
+\clearpage
 
 \end{appendices}

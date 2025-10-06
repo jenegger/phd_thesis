@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2023.5.31)  6 OCT 2025 11:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2023.5.31)  6 OCT 2025 15:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4003,11 +4003,29 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [146 <./Figures/own_clustering_mwpcs.png> <./Figures/mw23_own_clustering.png>]
-<Figures/eff_plot_mwpcs.png, id=2566, 1280.3835pt x 920.238pt>
-File: Figures/eff_plot_mwpcs.png Graphic file (type png)
-<use Figures/eff_plot_mwpcs.png>
-Package pdftex.def Info: Figures/eff_plot_mwpcs.png  used on input line 87.
-(pdftex.def)             Requested size: 443.57848pt x 318.80237pt.
+<Figures/mw_no_cut_2sigma.png, id=2568, 690.4194pt x 495.7722pt>
+File: Figures/mw_no_cut_2sigma.png Graphic file (type png)
+<use Figures/mw_no_cut_2sigma.png>
+Package pdftex.def Info: Figures/mw_no_cut_2sigma.png  used on input line 86.
+(pdftex.def)             Requested size: 199.60895pt x 143.33148pt.
+<Figures/mw_coherent_2sigma.png, id=2569, 679.338pt x 490.7133pt>
+File: Figures/mw_coherent_2sigma.png Graphic file (type png)
+<use Figures/mw_coherent_2sigma.png>
+Package pdftex.def Info: Figures/mw_coherent_2sigma.png  used on input line 93.
+
+(pdftex.def)             Requested size: 199.60895pt x 144.18262pt.
+<Figures/mw_coherent_less5_2sigma.png, id=2570, 680.7834pt x 498.663pt>
+File: Figures/mw_coherent_less5_2sigma.png Graphic file (type png)
+<use Figures/mw_coherent_less5_2sigma.png>
+Package pdftex.def Info: Figures/mw_coherent_less5_2sigma.png  used on input li
+ne 101.
+(pdftex.def)             Requested size: 199.60895pt x 146.20644pt.
+<Figures/mw_coherent_less4_2sigma.png, id=2571, 675.7245pt x 495.7722pt>
+File: Figures/mw_coherent_less4_2sigma.png Graphic file (type png)
+<use Figures/mw_coherent_less4_2sigma.png>
+Package pdftex.def Info: Figures/mw_coherent_less4_2sigma.png  used on input li
+ne 108.
+(pdftex.def)             Requested size: 199.60895pt x 146.44821pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -4017,44 +4035,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [147
 
- <./Figures/eff_plot_mwpcs.png>]
-<Figures/combined_eff_plot_mwpcs.png, id=2576, 1280.3835pt x 486.618pt>
-File: Figures/combined_eff_plot_mwpcs.png Graphic file (type png)
-<use Figures/combined_eff_plot_mwpcs.png>
-Package pdftex.def Info: Figures/combined_eff_plot_mwpcs.png  used on input lin
-e 103.
-(pdftex.def)             Requested size: 443.57848pt x 168.58134pt.
-
+]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[148 <./Figures/combined_eff_plot_mwpcs.png>]
-<Figures/mw_no_cut_2sigma.png, id=2589, 690.4194pt x 495.7722pt>
-File: Figures/mw_no_cut_2sigma.png Graphic file (type png)
-<use Figures/mw_no_cut_2sigma.png>
-Package pdftex.def Info: Figures/mw_no_cut_2sigma.png  used on input line 129.
-(pdftex.def)             Requested size: 199.60895pt x 143.33148pt.
-<Figures/mw_coherent_2sigma.png, id=2590, 679.338pt x 490.7133pt>
-File: Figures/mw_coherent_2sigma.png Graphic file (type png)
-<use Figures/mw_coherent_2sigma.png>
-Package pdftex.def Info: Figures/mw_coherent_2sigma.png  used on input line 136
-.
-(pdftex.def)             Requested size: 199.60895pt x 144.18262pt.
-<Figures/mw_coherent_less5_2sigma.png, id=2591, 680.7834pt x 498.663pt>
-File: Figures/mw_coherent_less5_2sigma.png Graphic file (type png)
-<use Figures/mw_coherent_less5_2sigma.png>
-Package pdftex.def Info: Figures/mw_coherent_less5_2sigma.png  used on input li
-ne 144.
-(pdftex.def)             Requested size: 199.60895pt x 146.20644pt.
-<Figures/mw_coherent_less4_2sigma.png, id=2592, 675.7245pt x 495.7722pt>
-File: Figures/mw_coherent_less4_2sigma.png Graphic file (type png)
-<use Figures/mw_coherent_less4_2sigma.png>
-Package pdftex.def Info: Figures/mw_coherent_less4_2sigma.png  used on input li
-ne 151.
-(pdftex.def)             Requested size: 199.60895pt x 146.44821pt.
+[148 <./Figures/mw_no_cut_2sigma.png> <./Figures/mw_coherent_2sigma.png> <./Fig
+ures/mw_coherent_less5_2sigma.png> <./Figures/mw_coherent_less4_2sigma.png>]
+<Figures/eff_plot_mwpcs.png, id=2590, 1280.3835pt x 920.238pt>
+File: Figures/eff_plot_mwpcs.png Graphic file (type png)
+<use Figures/eff_plot_mwpcs.png>
+Package pdftex.def Info: Figures/eff_plot_mwpcs.png  used on input line 135.
+(pdftex.def)             Requested size: 443.57848pt x 318.80237pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -4064,40 +4058,46 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [149
 
-]
+ <./Figures/eff_plot_mwpcs.png>]
+<Figures/combined_eff_plot_mwpcs.png, id=2600, 1280.3835pt x 486.618pt>
+File: Figures/combined_eff_plot_mwpcs.png Graphic file (type png)
+<use Figures/combined_eff_plot_mwpcs.png>
+Package pdftex.def Info: Figures/combined_eff_plot_mwpcs.png  used on input lin
+e 151.
+(pdftex.def)             Requested size: 443.57848pt x 168.58134pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[150 <./Figures/mw_no_cut_2sigma.png> <./Figures/mw_coherent_2sigma.png> <./Fig
-ures/mw_coherent_less5_2sigma.png> <./Figures/mw_coherent_less4_2sigma.png>]
+[150 <./Figures/combined_eff_plot_mwpcs.png>]
 <Figures/cccs_with_out_border_3_5_sigma.png, id=2613, 433.62pt x 289.08pt>
 File: Figures/cccs_with_out_border_3_5_sigma.png Graphic file (type png)
 <use Figures/cccs_with_out_border_3_5_sigma.png>
 Package pdftex.def Info: Figures/cccs_with_out_border_3_5_sigma.png  used on in
-put line 168.
+put line 216.
 (pdftex.def)             Requested size: 341.43124pt x 227.62082pt.
 <Figures/charge_loss_550_thick.png, id=2616, 1114.1625pt x 933.4875pt>
 File: Figures/charge_loss_550_thick.png Graphic file (type png)
 <use Figures/charge_loss_550_thick.png>
 Package pdftex.def Info: Figures/charge_loss_550_thick.png  used on input line 
-178.
+226.
 (pdftex.def)             Requested size: 271.67165pt x 227.61678pt.
 <Figures/cccs_gauss_diag_comp_3_5_sigma.png, id=2618, 433.62pt x 289.08pt>
 File: Figures/cccs_gauss_diag_comp_3_5_sigma.png Graphic file (type png)
 <use Figures/cccs_gauss_diag_comp_3_5_sigma.png>
 Package pdftex.def Info: Figures/cccs_gauss_diag_comp_3_5_sigma.png  used on in
-put line 189.
+put line 237.
 (pdftex.def)             Requested size: 341.43124pt x 227.62082pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--196
+Underfull \hbox (badness 10000) in paragraph at lines 223--244
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 175--196
+Underfull \hbox (badness 10000) in paragraph at lines 223--244
 
  []
 
@@ -4118,21 +4118,21 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 File: Figures/twin_music_cccs_not_all_anodes.pdf Graphic file (type pdf)
 <use Figures/twin_music_cccs_not_all_anodes.pdf>
 Package pdftex.def Info: Figures/twin_music_cccs_not_all_anodes.pdf  used on in
-put line 210.
+put line 258.
 (pdftex.def)             Requested size: 443.57965pt x 249.5066pt.
 <Figures/cccs_time_vs_engergy_sorted.png, id=2634, 433.62pt x 289.08pt>
 File: Figures/cccs_time_vs_engergy_sorted.png Graphic file (type png)
 <use Figures/cccs_time_vs_engergy_sorted.png>
 Package pdftex.def Info: Figures/cccs_time_vs_engergy_sorted.png  used on input
- line 219.
+ line 267.
 (pdftex.def)             Requested size: 341.43124pt x 227.62082pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--235
+Underfull \hbox (badness 10000) in paragraph at lines 251--283
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--235
+Underfull \hbox (badness 10000) in paragraph at lines 251--283
 
  []
 
@@ -4158,15 +4158,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [154 <./Figures/twin_music_cccs_not_all_anodes.pdf> <./Figures/cccs_time_vs_eng
 ergy_sorted.png>]
-<Figures/drawings_flightpath.png, id=2704, 871.255pt x 774.895pt>
-File: Figures/drawings_flightpath.png Graphic file (type png)
-<use Figures/drawings_flightpath.png>
-Package pdftex.def Info: Figures/drawings_flightpath.png  used on input line 27
-0.
-(pdftex.def)             Requested size: 443.57848pt x 394.51726pt.
-
-Underfull \vbox (badness 1248) has occurred while \output is active []
-
+<Figures/rate_400_thick.png, id=2704, 1061.9675pt x 597.23125pt>
+File: Figures/rate_400_thick.png Graphic file (type png)
+<use Figures/rate_400_thick.png>
+Package pdftex.def Info: Figures/rate_400_thick.png  used on input line 409.
+(pdftex.def)             Requested size: 199.60895pt x 112.25397pt.
+<Figures/zero_charge_twim_active_area.png, id=2705, 722.7pt x 433.62pt>
+File: Figures/zero_charge_twim_active_area.png Graphic file (type png)
+<use Figures/zero_charge_twim_active_area.png>
+Package pdftex.def Info: Figures/zero_charge_twim_active_area.png  used on inpu
+t line 416.
+(pdftex.def)             Requested size: 199.60895pt x 119.76526pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -4176,7 +4178,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [155
 
- <./Figures/drawings_flightpath.png>]
+ <./Figures/rate_400_thick.png> <./Figures/zero_charge_twim_active_area.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -4184,18 +4186,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [156]
-<Figures/rate_400_thick.png, id=2718, 1061.9675pt x 597.23125pt>
-File: Figures/rate_400_thick.png Graphic file (type png)
-<use Figures/rate_400_thick.png>
-Package pdftex.def Info: Figures/rate_400_thick.png  used on input line 361.
-(pdftex.def)             Requested size: 199.60895pt x 112.25397pt.
-<Figures/zero_charge_twim_active_area.png, id=2719, 722.7pt x 433.62pt>
-File: Figures/zero_charge_twim_active_area.png Graphic file (type png)
-<use Figures/zero_charge_twim_active_area.png>
-Package pdftex.def Info: Figures/zero_charge_twim_active_area.png  used on inpu
-t line 368.
-(pdftex.def)             Requested size: 199.60895pt x 119.76526pt.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -4204,148 +4194,132 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [157
 
- <./Figures/rate_400_thick.png> <./Figures/zero_charge_twim_active_area.png>]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[158]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[159
-
 ]
-<Figures/pic_left_fit_first_empty_400_0187_0001.png, id=2741, 2003.485pt x 1176
+<Figures/pic_left_fit_first_empty_400_0187_0001.png, id=2726, 2003.485pt x 1176
 .395pt>
 File: Figures/pic_left_fit_first_empty_400_0187_0001.png Graphic file (type png
 )
 <use Figures/pic_left_fit_first_empty_400_0187_0001.png>
 Package pdftex.def Info: Figures/pic_left_fit_first_empty_400_0187_0001.png  us
-ed on input line 451.
+ed on input line 499.
 (pdftex.def)             Requested size: 212.91577pt x 125.00601pt.
-<Figures/pic_left_fit_first_c_54_400_0179_0001.png, id=2742, 2003.485pt x 1176.
+<Figures/pic_left_fit_first_c_54_400_0179_0001.png, id=2727, 2003.485pt x 1176.
 395pt>
 File: Figures/pic_left_fit_first_c_54_400_0179_0001.png Graphic file (type png)
 
 <use Figures/pic_left_fit_first_c_54_400_0179_0001.png>
 Package pdftex.def Info: Figures/pic_left_fit_first_c_54_400_0179_0001.png  use
-d on input line 457.
+d on input line 505.
 (pdftex.def)             Requested size: 212.91577pt x 125.00601pt.
-<Figures/pic_left_fit_first_c_1086_400_0181_0001.png, id=2743, 2003.485pt x 117
+<Figures/pic_left_fit_first_c_1086_400_0181_0001.png, id=2728, 2003.485pt x 117
 6.395pt>
 File: Figures/pic_left_fit_first_c_1086_400_0181_0001.png Graphic file (type pn
 g)
 <use Figures/pic_left_fit_first_c_1086_400_0181_0001.png>
 Package pdftex.def Info: Figures/pic_left_fit_first_c_1086_400_0181_0001.png  u
-sed on input line 464.
+sed on input line 512.
 (pdftex.def)             Requested size: 212.91577pt x 125.00601pt.
 File: Figures/pic_left_fit_first_c_2198_400_0183_0001.png Graphic file (type pn
 g)
 <use Figures/pic_left_fit_first_c_2198_400_0183_0001.png>
 Package pdftex.def Info: Figures/pic_left_fit_first_c_2198_400_0183_0001.png  u
-sed on input line 470.
+sed on input line 518.
 (pdftex.def)             Requested size: 212.91577pt x 125.00601pt.
-<Figures/pic_left_fit_first_empty_550_0106_0001.png, id=2744, 2003.485pt x 1176
+<Figures/pic_left_fit_first_empty_550_0106_0001.png, id=2729, 2003.485pt x 1176
 .395pt>
 File: Figures/pic_left_fit_first_empty_550_0106_0001.png Graphic file (type png
 )
 <use Figures/pic_left_fit_first_empty_550_0106_0001.png>
 Package pdftex.def Info: Figures/pic_left_fit_first_empty_550_0106_0001.png  us
-ed on input line 482.
+ed on input line 530.
 (pdftex.def)             Requested size: 212.91577pt x 125.00601pt.
-<Figures/pic_left_fit_first_c_54_550_0099_0001.png, id=2745, 2003.485pt x 1176.
+<Figures/pic_left_fit_first_c_54_550_0099_0001.png, id=2730, 2003.485pt x 1176.
 395pt>
 File: Figures/pic_left_fit_first_c_54_550_0099_0001.png Graphic file (type png)
 
 <use Figures/pic_left_fit_first_c_54_550_0099_0001.png>
 Package pdftex.def Info: Figures/pic_left_fit_first_c_54_550_0099_0001.png  use
-d on input line 488.
+d on input line 536.
 (pdftex.def)             Requested size: 212.91577pt x 125.00601pt.
-<Figures/pic_left_fit_first_c_1086_550_0101_0001.png, id=2746, 2003.485pt x 117
+<Figures/pic_left_fit_first_c_1086_550_0101_0001.png, id=2731, 2003.485pt x 117
 6.395pt>
 File: Figures/pic_left_fit_first_c_1086_550_0101_0001.png Graphic file (type pn
 g)
 <use Figures/pic_left_fit_first_c_1086_550_0101_0001.png>
 Package pdftex.def Info: Figures/pic_left_fit_first_c_1086_550_0101_0001.png  u
-sed on input line 495.
+sed on input line 543.
 (pdftex.def)             Requested size: 212.91577pt x 125.00601pt.
-<Figures/pic_left_fit_first_c_2198_550_0103_0001.png, id=2747, 2003.485pt x 117
+<Figures/pic_left_fit_first_c_2198_550_0103_0001.png, id=2732, 2003.485pt x 117
 6.395pt>
 File: Figures/pic_left_fit_first_c_2198_550_0103_0001.png Graphic file (type pn
 g)
 <use Figures/pic_left_fit_first_c_2198_550_0103_0001.png>
 Package pdftex.def Info: Figures/pic_left_fit_first_c_2198_550_0103_0001.png  u
-sed on input line 501.
+sed on input line 549.
 (pdftex.def)             Requested size: 212.91577pt x 125.00601pt.
-<Figures/pic_left_fit_first_empty_650_0124_0001.png, id=2748, 2003.485pt x 1176
+<Figures/pic_left_fit_first_empty_650_0124_0001.png, id=2733, 2003.485pt x 1176
 .395pt>
 File: Figures/pic_left_fit_first_empty_650_0124_0001.png Graphic file (type png
 )
 <use Figures/pic_left_fit_first_empty_650_0124_0001.png>
 Package pdftex.def Info: Figures/pic_left_fit_first_empty_650_0124_0001.png  us
-ed on input line 513.
+ed on input line 561.
 (pdftex.def)             Requested size: 212.91577pt x 125.00601pt.
-<Figures/pic_left_fit_first_c_54_650_0126_0001.png, id=2749, 2003.485pt x 1176.
+<Figures/pic_left_fit_first_c_54_650_0126_0001.png, id=2734, 2003.485pt x 1176.
 395pt>
 File: Figures/pic_left_fit_first_c_54_650_0126_0001.png Graphic file (type png)
 
 <use Figures/pic_left_fit_first_c_54_650_0126_0001.png>
 Package pdftex.def Info: Figures/pic_left_fit_first_c_54_650_0126_0001.png  use
-d on input line 519.
+d on input line 567.
 (pdftex.def)             Requested size: 212.91577pt x 125.00601pt.
-<Figures/pic_left_fit_first_c_1086_650_0127_0001.png, id=2750, 2003.485pt x 117
+<Figures/pic_left_fit_first_c_1086_650_0127_0001.png, id=2735, 2003.485pt x 117
 6.395pt>
 File: Figures/pic_left_fit_first_c_1086_650_0127_0001.png Graphic file (type pn
 g)
 <use Figures/pic_left_fit_first_c_1086_650_0127_0001.png>
 Package pdftex.def Info: Figures/pic_left_fit_first_c_1086_650_0127_0001.png  u
-sed on input line 526.
+sed on input line 574.
 (pdftex.def)             Requested size: 212.91577pt x 125.00601pt.
-<Figures/pic_left_fit_first_c_2198_650_0130_0001.png, id=2751, 2003.485pt x 117
+<Figures/pic_left_fit_first_c_2198_650_0130_0001.png, id=2736, 2003.485pt x 117
 6.395pt>
 File: Figures/pic_left_fit_first_c_2198_650_0130_0001.png Graphic file (type pn
 g)
 <use Figures/pic_left_fit_first_c_2198_650_0130_0001.png>
 Package pdftex.def Info: Figures/pic_left_fit_first_c_2198_650_0130_0001.png  u
-sed on input line 532.
+sed on input line 580.
 (pdftex.def)             Requested size: 212.91577pt x 125.00601pt.
-<Figures/pic_left_fit_first_empty_800_0173_0001.png, id=2752, 2003.485pt x 1176
+<Figures/pic_left_fit_first_empty_800_0173_0001.png, id=2737, 2003.485pt x 1176
 .395pt>
 File: Figures/pic_left_fit_first_empty_800_0173_0001.png Graphic file (type png
 )
 <use Figures/pic_left_fit_first_empty_800_0173_0001.png>
 Package pdftex.def Info: Figures/pic_left_fit_first_empty_800_0173_0001.png  us
-ed on input line 544.
+ed on input line 592.
 (pdftex.def)             Requested size: 212.91577pt x 125.00601pt.
-<Figures/pic_left_fit_first_c_54_800_0166_0001.png, id=2753, 2003.485pt x 1176.
+<Figures/pic_left_fit_first_c_54_800_0166_0001.png, id=2738, 2003.485pt x 1176.
 395pt>
 File: Figures/pic_left_fit_first_c_54_800_0166_0001.png Graphic file (type png)
 
 <use Figures/pic_left_fit_first_c_54_800_0166_0001.png>
 Package pdftex.def Info: Figures/pic_left_fit_first_c_54_800_0166_0001.png  use
-d on input line 550.
+d on input line 598.
 (pdftex.def)             Requested size: 212.91577pt x 125.00601pt.
-<Figures/pic_left_fit_first_c_1086_800_0168_0001.png, id=2754, 2003.485pt x 117
+<Figures/pic_left_fit_first_c_1086_800_0168_0001.png, id=2739, 2003.485pt x 117
 6.395pt>
 File: Figures/pic_left_fit_first_c_1086_800_0168_0001.png Graphic file (type pn
 g)
 <use Figures/pic_left_fit_first_c_1086_800_0168_0001.png>
 Package pdftex.def Info: Figures/pic_left_fit_first_c_1086_800_0168_0001.png  u
-sed on input line 557.
+sed on input line 605.
 (pdftex.def)             Requested size: 212.91577pt x 125.00601pt.
-<Figures/pic_left_fit_first_c_2198_800_0170_0001.png, id=2755, 2003.485pt x 117
+<Figures/pic_left_fit_first_c_2198_800_0170_0001.png, id=2740, 2003.485pt x 117
 6.395pt>
 File: Figures/pic_left_fit_first_c_2198_800_0170_0001.png Graphic file (type pn
 g)
 <use Figures/pic_left_fit_first_c_2198_800_0170_0001.png>
 Package pdftex.def Info: Figures/pic_left_fit_first_c_2198_800_0170_0001.png  u
-sed on input line 563.
+sed on input line 611.
 (pdftex.def)             Requested size: 212.91577pt x 125.00601pt.
 
 
@@ -4354,7 +4328,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[160
+[158
 
  <./Figures/pic_left_fit_first_empty_400_0187_0001.png> <./Figures/pic_left_fit
 _first_c_54_400_0179_0001.png> <./Figures/pic_left_fit_first_c_1086_400_0181_00
@@ -4365,7 +4339,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[161 <./Figures/pic_left_fit_first_empty_550_0106_0001.png> <./Figures/pic_left
+[159 <./Figures/pic_left_fit_first_empty_550_0106_0001.png> <./Figures/pic_left
 _fit_first_c_54_550_0099_0001.png> <./Figures/pic_left_fit_first_c_1086_550_010
 1_0001.png> <./Figures/pic_left_fit_first_c_2198_550_0103_0001.png> <./Figures/
 pic_left_fit_first_empty_650_0124_0001.png> <./Figures/pic_left_fit_first_c_54_
@@ -4377,18 +4351,47 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[162 <./Figures/pic_left_fit_first_empty_800_0173_0001.png> <./Figures/pic_left
+[160 <./Figures/pic_left_fit_first_empty_800_0173_0001.png> <./Figures/pic_left
 _fit_first_c_54_800_0166_0001.png> <./Figures/pic_left_fit_first_c_1086_800_016
-8_0001.png> <./Figures/pic_left_fit_first_c_2198_800_0170_0001.png>])
+8_0001.png> <./Figures/pic_left_fit_first_c_2198_800_0170_0001.png>]
+<Figures/drawings_flightpath.png, id=2758, 871.255pt x 774.895pt>
+File: Figures/drawings_flightpath.png Graphic file (type png)
+<use Figures/drawings_flightpath.png>
+Package pdftex.def Info: Figures/drawings_flightpath.png  used on input line 65
+9.
+(pdftex.def)             Requested size: 443.57848pt x 394.51726pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[163
+[161
 
-] [164] (./main.bbl
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[162 <./Figures/drawings_flightpath.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[163]) [164
+
+] (./main.bbl
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -4519,7 +4522,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [177])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 312.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[178] (./../writings/acknowledgement.tex)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 314.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--314
+
+ []
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -4527,13 +4541,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[178]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 312.
+[179]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 314.
  (./main.aux (./Abstract.aux) (./Abstract_de.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 312.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 312.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 314.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 314.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 721644FBF491157E7763B9ED8F08B46C;6286.
+(rerunfilecheck)             Checksum: 1BEFAA80E35C85E04708F0554FE60434;6281.
 
 
 LaTeX Warning: There were undefined references.
@@ -4541,12 +4555,12 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 312.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 314.
  ) 
 Here is how much of TeX's memory you used:
- 27014 strings out of 492982
- 513000 string characters out of 6134896
- 620669 words of memory out of 5000000
+ 27019 strings out of 492982
+ 513095 string characters out of 6134896
+ 620670 words of memory out of 5000000
  29395 multiletter control sequences out of 15000+600000
  567013 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -4595,10 +4609,10 @@ uper/sfti1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></
 usr/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texmf/font
 s/type1/public/cm-super/sftt1200.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/zapfding/uzdr.pfb>
-Output written on main.pdf (189 pages, 34449492 bytes).
+Output written on main.pdf (190 pages, 34452419 bytes).
 PDF statistics:
- 3167 PDF objects out of 3580 (max. 8388607)
- 2500 compressed objects within 25 object streams
- 704 named destinations out of 1000 (max. 500000)
+ 3173 PDF objects out of 3580 (max. 8388607)
+ 2504 compressed objects within 26 object streams
+ 706 named destinations out of 1000 (max. 500000)
  1237 words of extra memory for PDF output out of 10000 (max. 10000000)
 

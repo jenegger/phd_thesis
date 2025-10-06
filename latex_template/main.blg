@@ -53,7 +53,7 @@ Warning--empty journal in popescu2021review
 Warning--can't use both volume and number fields in bertini2011r3broot
 You've used 151 entries,
             1876 wiz_defined-function locations,
-            1302 strings with 32163 characters,
+            1302 strings with 32164 characters,
 and the built_in function-call counts, 41116 in all, are:
 = -- 3915
 > -- 2085
