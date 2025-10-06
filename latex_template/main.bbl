@@ -126,10 +126,12 @@ T.~Aumann, C.~Bertulani, F.~Schindler, and S.~Typel, ``{Peeling off neutron
   neutron-removal cross sections},'' {\em Physical Review Letters}, vol.~119,
   no.~26, p.~262501, 2017.
 
-\bibitem{r3b2024measurements}
-R.~Collaboration {\em et~al.}, ``{Measurements of the reaction cross sections
-  of neutron-rich Sn isotopes at the R3B setup},'' {\em Acta Physica Polonica
-  B, Proceedings Supplement}, vol.~17, no.~3, pp.~3--A18, 2024.
+\bibitem{kudaibergenova2024measurements}
+E.~Kudaibergenova, I.~Lihtar, M.~Feijoo-Font{\'a}n, T.~Aumann, C.~Bertulani,
+  I.~Ga{\v{s}}pari{\'c}, A.~Horvat, V.~Panin, J.~Rodr{\'\i}guez-S{\'a}nchez,
+  D.~Rossi, {\em et~al.}, ``Measurements of the reaction cross sections of
+  neutron-rich sn isotopes at the r3b setup,'' {\em Acta Physica Polonica B,
+  Proceedings Supplement}, 2024.
 
 \bibitem{gross2013density}
 E.~K. Gross and R.~M. Dreizler, {\em Density functional theory}, vol.~337.
@@ -428,7 +430,7 @@ J.-F. Martin, J.~Ta{\"\i}eb, G.~Boutoux, A.~Chatillon, T.~Gorbinet,
 {GSI Helmholtzzentrum f\"ur Schwerionenforschung GmbH}, ``Large-acceptance
   dipole magnet glad.''
   \url{https://www.gsi.de/fileadmin/Kernreaktionen/GLAD_in_CaveC.jpg}, 2013.
-\newblock [Online; accessed September 09, 2024].
+\newblock Accessed: 2024-09-09.
 
 \bibitem{tdr:barrel}
 ``Technical report for the design, construction and commissioning of the califa
@@ -492,7 +494,7 @@ M.~O. Winkel, {\em {Komplexe Pulsformalgorithmen und Teilchenidentifikation zur
 
 \bibitem{hartigevolution}
 A.-L. Hartig, ``{Evolution of CALIFA: From single detector modules to benchmark
-  reactions},''
+  reactions},'' 2021.
 
 \bibitem{hamamatsuS8664}
 {Hamamatsu Photonics}, ``{S8664-1010: Silicon Avalanche Photodiode}.''
@@ -502,7 +504,7 @@ A.-L. Hartig, ``{Evolution of CALIFA: From single detector modules to benchmark
 
 \bibitem{mesytec-home}
 ``Mesytec.'' \url{https://www.mesytec.com/}.
-\newblock [Online; accessed September 29, 2024].
+\newblock Accessed: 2024-09-29.
 
 \bibitem{pklenze}
 K.~Philipp, {\em {Gamma detection with CALIFA}}.
@@ -542,7 +544,7 @@ W.~Bethge, ``{Wiedemann, Kernphysik},'' 2007.
 \bibitem{MDPP-16}
 ``{MDPP-16 Detector Readout Systems, Mesytec}.''
   \url{https://www.mesytec.com/products/nuclear-physics/MDPP-16.html}.
-\newblock [Online; accessed October 18, 2024].
+\newblock Accessed: 2024-10-18.
 
 \bibitem{kolanoski2016teilchendetektoren}
 H.~Kolanoski and N.~Wermes, {\em Teilchendetektoren}, ch.~13.5.2.
