@@ -710,21 +710,37 @@ where $N^{(E)}_1$ are the number of incoming $^{12}C$ ions and $N^{(E)}_2$ are t
 \textbf{Statistical Uncertainty} \\
 The statistical uncertainty associated with the charge-changing cross section, after applying geometry corrections, includes contributions from the standard error of binomially distributed variables.
 
-The charge-changing cross section is derived from survival probabilities of carbon isotopes, namely $P_{\text{surv}|\text{cc}}$ and $P^{E}_{\text{surv}|\text{cc}}$, both of which follow binomial statistics. The total statistical uncertainty is given by:
+%The charge-changing cross section is derived from survival probabilities of carbon isotopes, namely $P_{\text{surv}|\text{cc}}$ and $P^{E}_{\text{surv}|\text{cc}}$, both of which follow binomial statistics. The total statistical uncertainty is given by:
+%\begin{equation}
+%\label{eq:stat_cc_}
+%\Delta\sigma_{\text{stat}|\text{cc}} = \sqrt{\left(\frac{\partial \sigma_{\text{cc}}}{\partial P_{\text{surv}|\text{cc}}} \Delta P_{\text{surv}|\text{cc}}\right)^2 + \left(\frac{\partial \sigma_{\text{cc}}}{\partial P^{E}_{\text{surv}|\text{cc}}} \Delta P^{E}_{\text{surv}|\text{cc}}\right)^2}
+%\end{equation}
+%
+%The survival probability $P^{(E)}_{\text{surv}|\text{cc}}$, defined as the probability of observing a carbon isotope in the final state, is based on $N_1$ independent trials with binary outcomes (survived or not). The survival probability $P^{(E)}_{\text{surv}|\text{cc}}$ is given by the ratio $N^{(E)}_2 / N^{(E)}_1$ and its uncertainty is:
+%\begin{equation}
+%\Delta P^{(E)}_{\text{surv}|\text{cc}} = \sqrt{ \frac{P^{(E)}_{\text{surv}|\text{cc}} \cdot \left(1 - P^{(E)}_{\text{surv}|\text{cc}}\right)}{N^{(E)}_1} }
+%\end{equation}
+%
+%Substituting into Eq.~\ref{eq:stat_cc_} yields:
+%\begin{equation}
+%\Delta\sigma_{\text{stat}|\text{cc}} = \sqrt{ \frac{1}{N_t^2} \left( \frac{1 - P_{\text{surv}|\text{cc}}}{P_{\text{surv}|\text{cc}} N_1} + \frac{1 - P^{E}_{\text{surv}|\text{cc}}}{P^{E}_{\text{surv}|\text{cc}} N^{E}_1} \right) }
+%\end{equation}
+
+The charge-changing cross section is derived from survival probabilities of carbon isotopes, namely $P_{\text{surv}|\text{cc}}$ and $P^{E}_{\text{surv}|\text{cc}}$.
+The survival probability $P^{(E)}_{\text{surv}|\text{cc}}$, defined as the probability of observing a carbon isotope in the final state, is based on $N_1$ independent trials with binary outcomes (survived or not). The survival probability $P^{(E)}_{\text{surv}|\text{cc}}$ is given by the ratio $N^{(E)}_2 / N^{(E)}_1$ and its uncertainty derived from binomial statistics:
+\begin{equation}\label{eq:surv_prob}
+\Delta P^{(E)}_{\text{surv}|\text{cc}} = \sqrt{ \frac{P^{(E)}_{\text{surv}|\text{cc}} \cdot \left(1 - P^{(E)}_{\text{surv}|\text{cc}}\right)}{N^{(E)}_1} }
+\end{equation}
+The total statistical uncertainty is given by:
 \begin{equation}
 \label{eq:stat_cc_}
 \Delta\sigma_{\text{stat}|\text{cc}} = \sqrt{\left(\frac{\partial \sigma_{\text{cc}}}{\partial P_{\text{surv}|\text{cc}}} \Delta P_{\text{surv}|\text{cc}}\right)^2 + \left(\frac{\partial \sigma_{\text{cc}}}{\partial P^{E}_{\text{surv}|\text{cc}}} \Delta P^{E}_{\text{surv}|\text{cc}}\right)^2}
 \end{equation}
-
-The survival probability $P^{(E)}_{\text{surv}|\text{cc}}$, defined as the probability of observing a carbon isotope in the final state, is based on $N_1$ independent trials with binary outcomes (survived or not). The survival probability $P^{(E)}_{\text{surv}|\text{cc}}$ is given by the ratio $N^{(E)}_2 / N^{(E)}_1$ and its uncertainty is:
-\begin{equation}
-\Delta P^{(E)}_{\text{surv}|\text{cc}} = \sqrt{ \frac{P^{(E)}_{\text{surv}|\text{cc}} \cdot \left(1 - P^{(E)}_{\text{surv}|\text{cc}}\right)}{N^{(E)}_1} }
-\end{equation}
-
-Substituting into Eq.~\ref{eq:stat_cc_} yields:
+By inserting Eq.~\ref{eq:surv_prob} in Eq.~\ref{eq:stat_cc_} we obtain:
 \begin{equation}
 \Delta\sigma_{\text{stat}|\text{cc}} = \sqrt{ \frac{1}{N_t^2} \left( \frac{1 - P_{\text{surv}|\text{cc}}}{P_{\text{surv}|\text{cc}} N_1} + \frac{1 - P^{E}_{\text{surv}|\text{cc}}}{P^{E}_{\text{surv}|\text{cc}} N^{E}_1} \right) }
 \end{equation}
+
 
 \textbf{Systematic Uncertainty} \\
 The systematic uncertainty comprises the following contributions:
@@ -819,7 +835,7 @@ The statistical and systematic uncertainties associated with the total interacti
 
 \subsection{ Results and Discussion}
 The S444 experiment -- although originally conceived as a commissioning run, during which several detector systems were being optimized for the subsequent full experimental campaign -- already enabled highly successful studies of the $^{12}$C+$^{12}$C reaction. The analysis particularly benefited from the large geometrical acceptance of all downstream detectors, which not only facilitated the central observable, the measurement of the total interaction cross section, but also permitted the determination of the charge-changing cross section as well as the isotope correction.\newline
-The final results for the total interaction and charge-changing cross sections obtained in this work are presented in Fig.~\ref{fig:final_res_cc_ti}, together with results from previous experiments and theoretical predictions. As a stringent consistency check, the extracted cross sections are shown for all three target thicknesses employed. Within uncertainties, the three independent measurements agree entirely, thereby demonstrating the robustness and reliability of the applied methodologies.\newline
+The final results for the total interaction and charge-changing cross sections obtained in this work are presented in Fig.~\ref{fig:final_res_cc_ti}, together with results from previous experiments and theoretical predictions. As a stringent consistency check, the extracted cross sections are shown for all three target thicknesses employed. Within uncertainties, the three independent measurements agree entirely, thereby demonstrating the robustness and reliability of the applied analyis methods.\newline
 The precise numerical values of the total interaction cross sections are summarized in Table~\ref{tab:fin_res}, including both systematic and statistical uncertainties. The statistical component dominates, especially for the thinnest targets, as expected. Nevertheless, the achieved precision is remarkable: with uncertainties reaching down to 0.39\%, the R3B setup enabled high-accuracy measurements of fundamental scattering observables.\newline
 Such precision is of considerable importance, as it provides stringent benchmarks for nuclear reaction models and thereby contributes directly to constraining key parameters of the nuclear Equation of State, in particular the slope parameter L of the symmetry energy. The success of this commissioning run thus underlines both the capability of the experimental setup and the scientific relevance of the present measurements.\newline
 
@@ -869,7 +885,7 @@ Beam Energy & \(^{12}\)C target & \(\sigma_I\) [mb] & \(\Delta\sigma_\text{stat.
 
 
 In Fig.~\ref{fig:final_res_cc_ti}, the resulting charge-changing cross sections and total interaction cross sections are displayed as red and blue data points, respectively. A direct comparison with previous measurements, in particular the recent results by Ponnath et al.~\cite{ponnath2024measurement,ponnath2023precise} (green data points), demonstrates very good agreement at 550 and 650 AMeV beam energy for the total interaction cross section. At 800 AMeV, the present results appear slightly quenched. This effect may be attributed to a reduced efficiency of MWPC3, which has been investigated in detail in Appendix~\ref{app:mwpcs_eff}. However, in the absence of redundant position-sensitive detectors, a potential efficiency loss could not be compensated for, such that no definitive conclusion can be drawn.\newline
-The largest deviation between this work and the results of Ref.~\cite{ponnath2024measurement} is observed for the 400~AMeV run. This specific setting was most affected by limited acceptance, both in the present experiment and even more so in Ref.~\cite{ponnath2024measurement}. Consequently, several acceptance corrections had to be applied, as outlined in this section. At the same time, the 400 AMeV run provided the most favorable conditions for charge identification with the TWIN-MUSIC detector, leading to excellent charge separation of the fragments. Therefore, no firm conclusion can be drawn for this data point. Nevertheless, both the present results and those of Ref.~\cite{ponnath2024measurement} remain consistent, within uncertainties, with the earlier measurements by Takechi et al.~\cite{takechi2009reaction}.\newline
+The largest deviation between this work and the results of Ref.~\cite{ponnath2024measurement} is observed for the 400~AMeV run. This specific setting was most affected by limited acceptance, both in the present experiment and even more so in Ref.~\cite{ponnath2024measurement}. Consequently, several acceptance corrections had to be applied, as outlined in this section. At the same time, the 400 AMeV run provided the most favorable conditions for charge identification with the TWIN-MUSIC detector, leading to excellent charge separation of the fragments. Therefore, no firm conclusion can be drawn for this data point. Nevertheless, both the present results and those of Ref.~\cite{ponnath2024measurement} remain consistent, within uncertainties, with the earlier measurements by Takechi et al.~\cite{takechi2009reaction} (purple data point at 370 MeV in Fig.~\ref{fig:final_res_cc_ti}).\newline
 Due to the enhanced value obtained at 400~AMeV the data points in this work do not reproduce the expected slope of the theoretical predictions shown in Fig.~\ref{fig:final_res_cc_ti}, represented by gray dots (Glauber calculations) and gray diamonds (including Coulomb repulsion and Pauli blocking). However, this study confirms the flattening of the total interaction cross section at higher beam energies ($ > 650$ AMeV), as already reported in Ref.~\cite{ponnath2024measurement}. This underlines the robustness of the present results and highlights the need for further experimental and theoretical investigations to assess the validity of current model predictions.\newline
 
 Possible explanations for the observed quenching of the total interaction cross section in the present work, as well as in the previous measurements by Ponnath et al.~\cite{ponnath2024measurement}, have been discussed in that reference and are further considered here. One potential origin is the clusterization of carbon nuclei into $\alpha$-clusters. Such cluster structures were first predicted and experimentally confirmed in the 1950s, most notably through the identification of the so-called Hoyle state~\cite{hoyle1954nuclear,FREER20141}. These in-medium structural modifications, which are not yet incorporated into the reaction models employed in this work, could lead to a reduction of the total interaction cross section at higher beam energies.\newline
