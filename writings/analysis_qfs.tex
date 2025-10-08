@@ -104,7 +104,7 @@ By reconstructing the fligh-path as described in Subsection~\ref{subsec:flightpa
 
 
 \subsection{Event Selection}
-For the precise measurement of the total interaction cross section $^{12}C + ^{12}C$, as detailed in the Section~\ref{sec:analysis_cross_sec}, event selection was of critical importance, requiring stringent cuts on the TPats (see table \ref{tab:tpats}), as well as on the charge and position of the incoming particles. In contrast, for this qualitative QFS analysis, these factors played a minor role, allowing for only minimal cuts on the incoming ions:
+For the precise measurement of the total interaction cross section $^{12}C + ^{12}C$, as detailed in the Section~\ref{sec:analysis_cross_sec}, event selection was of critical importance, requiring stringent cuts on the TPats (see Table \ref{tab:tpats}), as well as on the charge and position of the incoming particles. In contrast, for this qualitative QFS analysis, these factors played a minor role, allowing for only minimal cuts on the incoming ions:
 \begin{itemize}
 \item Both left and right preamplifiers of the start detector have seen a coincident signal.
 \item Exactly one hit in MWPC0 in the hit-level data.
@@ -119,8 +119,8 @@ However, for the identification of fragments downstream of the target, various d
 The first step for the identification of the QFS-reaction channel $^{12}C(p,2p)^{11}B$ is the identification of the fragment $^{11}B$ via the formula for the magnetic rigidity: $ B\cdot r = \gamma\beta \, m /q$ where the $\gamma$ factor accounts for the increase in momentum for relativistic particles. From the flightpath reconstruction and the ToF measurement as described in previous sections $r$, $\beta$ and $\gamma$ are obtained whereas the charge of the fragment $q$ is measured by the energy loss ($\Delta E \sim Z^2$) in the TWIN MUSIC detector.\newline
 The measured values for $\frac{A}{q}$ and $q$ are shown in Fig.~\ref{fig:a_q_vs_q} where the fragment of interest $^{11}B$ is expected to be at $\frac{A}{q} = 11/5 \approx 2.2$ and $q = 5$. The correlation plot exhibits a broad distribution in $\frac{A}{q}$, which may result from misidentification of hit positions in one of the MWPC tracking detectors when multiple signal hits occur. Even minor deviations in MWPC1 and MWPC2 can significantly affect the radius reconstruction, thereby impacting the accuracy of the $\frac{A}{q}$ determination.\newline
 An intriguing feature is the distinct cluster observed at $Z \approx 8.5$ and $\frac{A}{q} \approx 2$, which corresponds to pileup events. These occur when two ion signals arrive within a short time window in the TWIN MUSIC detector, preventing them from being resolved as separate events and instead being reconstructed as a single signal\footnote{For instance, if two carbon ions ($Z=6$) interact simultaneously, the total energy loss within TWIN MUSIC is approximately twice that of a single ion. Since the energy loss follows the relation $\Delta E \sim Z^2$, the reconstructed charge is given by $\sqrt(2)\,Z_{carbon} \approx 8.5 $.}.
-Moreover attention should be paid that it seems to be there a cut from analyis side at $Z \approx 4$. This is actually not the case. The TWIN MUSIC was optimized for the subsequent experimental run S467 with $Ca$ isotopes and herefore the charge measurement was optimized for $Z\approx 20$. Everything below $Z \approx 4$ was below the signal threshold of TWIN MUSIC.
-
+%Moreover attention should be paid that it seems to be there a cut from analyis side at $Z \approx 4$. This is actually not the case. The TWIN MUSIC was optimized for the subsequent experimental run S467 with $Ca$ isotopes and herefore the charge measurement was optimized for $Z\approx 20$. Everything below $Z \approx 4$ was below the signal threshold of TWIN MUSIC.
+%
 Furthermore, it is important to note the apparent cut at $Z \approx 4$ in the data. However, this is not an artifact of the analysis but rather a consequence of the experimental setup. The TWIN MUSIC detector was optimized for the subsequent S467 experiment, which focused on calcium isotopic chain ($Z = 20$). As a result, the charge measurement was calibrated for $Z \approx 20$, and signals corresponding to $Z \lesssim 4$ fell below the detection threshold of TWIN MUSIC.
 
 \begin{figure}[htpb]
@@ -132,11 +132,14 @@ Furthermore, it is important to note the apparent cut at $Z \approx 4$ in the da
     \label{fig:a_q_vs_q}
 \end{figure}
 For this qualitative analysis, the upper charge bound of $^{11}B$ was determined by locating the intersection point of the Gaussian-fitted distributions corresponding to the $Z=5$ and $Z=6$ peaks. The lower bound was set by applying an offset of minus one unit.\newline
-A similar approach was employed to select the specific boron isotope $^{11}B$. The charge selection was performed using the previously defined boundary cuts. To isolate the $^{11}B$ isotopes, the lower bound was determined by identifying the intersection point of the Gaussian-fitted distributions corresponding to the $^{10}B$ and $^{11}B$ peaks. The upper bound was established by measuring the distance from this intersection point to the peak of $^{11}B$.
+A similar method was applied to select the specific boron isotope \(^{11}\mathrm{B}\). 
+The lower boundary of the selection range was defined by the intersection point of the Gaussian-fitted distributions corresponding to the \(^{10}\mathrm{B}\) and \(^{11}\mathrm{B}\) peaks. 
+The upper boundary was determined by measuring the distance between this intersection point and the \(^{11}\mathrm{B}\) peak maximum, and extending the same distance to the right side of the \(^{11}\mathrm{B}\) distribution.
+
 
 \subsection{QFS-Protons}\label{sec:qfs_protons}
 Following the identification of the fragments through precise flight path reconstruction and time measurement, as detailed in the previous subsection, and the subsequent selection of the $^{11}B$ isotope, the analysis focuses on the two correlated protons to fully characterize the quasi-free scattering channel $^{12}C(p,2p)^{11}B$.\newline
-For a proper interpretation of the data, it is essential to consider the geometric acceptance of CALIFA during the S444 experiment in 2020. The central \textit{BARREL} region (Ring 3 and Ring 4), covering the polar angular range from $43^{\circ}$ to $88^{\circ}$, was fully operational. In contrast, the forward region, referred to as \textit{iPhos} ($19^{\circ}$ to $43^{\circ}$), was only partially equipped, with a coverage of approximately $35\%$. The forward endcap, known as \textit{CEPA}, was not installed, and the backward barrel remained unoccupied. The corresponding geometry is illustrated in Fig.~\ref{fig:qfs_reac_and_geo}.\newline
+For a proper interpretation of the data, it is essential to consider the geometric acceptance of CALIFA during the S444 experiment in 2020. The central \textit{BARREL} region, covering the polar angular range from $43^{\circ}$ to $88^{\circ}$, was fully operational. In contrast, the forward region, referred to as \textit{iPhos} ($19^{\circ}$ to $43^{\circ}$), was only partially equipped, with a coverage of approximately $35\%$. The forward endcap, known as \textit{CEPA}, was not installed, and the backward barrel remained unoccupied. The corresponding geometry is illustrated in Fig.~\ref{fig:qfs_reac_and_geo}.\newline
 \begin{figure}[htpb]
 	\begin{subfigure}[t]{.4\linewidth}
     \includegraphics[width=\textwidth]{Figures/reaction_qfs_model.png}
@@ -163,7 +166,7 @@ For an accurate proton selection and the application of appropriate cuts, it is 
 The \textit{cal}-level data is structured as in the \textit{mapped}-level, however with calibrated energy by applying the calibration parameters from calibration run to each crystal channel.\newline
 For the calibration runs a $^{22}Na$ (with peaks at $511\,keV$ and $1275\,keV$) or a $^{60}Co$ (with peaks at $1173\,keV$ and $1332\,keV$) source is used. For each crystal channel a linear fit on the two photo-peaks is performed. Using this fitting function, the uncalibrated energy, expressed in energy channels, can be converted into calibrated energy values.\newline
 For the final \textit{hit}-level data, the energy-calibrated hits from the \textit{cal}-level are merged into clusters. High-energy proton hits ($E_{hit} > 15 MeV$) and low-energy $\gamma$ hits are first listed and sorted in descending energy order. Clusters are then formed using a cone-shaped approach, where each cluster is centered around the highest-energy hit with a half-opening angle of $\theta_c = 14.3^{\circ}$. All hits within this angular region are merged into the cluster. This process is iteratively repeated until both the high- and low-energy lists are empty. To improve the signal-to-noise ratio in this analysis, hits with energy values below the threshold of $E_{thr} = 100\,keV$ are discarded during clustering.\newline
-The resulting correlations in azimuthal and polar angles,with the only cut to have at least two high energy clusters with energy larger 15 MeV, with respect to the simulated \textit{p2p}-simulations are shown in Fig.~\ref{fig:azimuth_corr} and Fig.~\ref{fig:polar_corr} accordingly.\newline
+The resulting correlations in azimuthal and polar angles, with the only cut to have at least two high energy clusters with energy larger 15 MeV, with respect to the simulated \textit{p2p}-simulations are shown in Fig.~\ref{fig:azimuth_corr} and Fig.~\ref{fig:polar_corr} accordingly.\newline
 \begin{figure}[htpb]
 	\begin{subfigure}[t]{.75\linewidth}
     \includegraphics[width=\textwidth]{Figures/phi12_califa.png}
@@ -234,19 +237,19 @@ As discussed in Section~\ref{sec:qfs_theo}, the momentum of the knocked-out prot
     \begin{subfigure}[b]{0.3\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/p_miss_x.png} % Replace with your image file
-        \caption{Reconstructed\newline x-component of $\mathbf{p_{miss}}$.}
+        \caption{Reconstructed\newline $x$-component of $\mathbf{p_{miss}}$.}
         \label{fig:p_miss_x}
     \end{subfigure}
     \begin{subfigure}[b]{0.3\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/p_miss_y.png} % Replace with your image file
-        \caption{Reconstructed\newline y-component of $\mathbf{p_{miss}}$.}
+        \caption{Reconstructed\newline $y$-component of $\mathbf{p_{miss}}$.}
         \label{fig:p_miss_y}
     \end{subfigure}
     \begin{subfigure}[b]{0.3\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/p_miss_z.png} % Replace with your image file
-        \caption{Reconstructed\newline z-component of $\mathbf{p_{miss}}$.}
+        \caption{Reconstructed\newline $z$-component of $\mathbf{p_{miss}}$.}
         \label{fig:p_miss_z}
     \end{subfigure}
 
@@ -257,7 +260,7 @@ As discussed in Section~\ref{sec:qfs_theo}, the momentum of the knocked-out prot
 Compared to previous experimental results, such as those reported in Ref.~\cite{moniz1971nuclear}, where the measured Fermi momentum for $^{12}C$ was determined to be $221 \mp 5$ MeV/c, corresponding to a mean internal proton momentum of $171$ MeV/c, the reconstructed mean value in the present analysis is found to be $156$ MeV/c.\newline
 While this value is slightly lower than the reference, it is important to consider the specific experimental conditions. The geometric acceptance of CALIFA, particularly in the forward region, was not fully instrumented, which may introduce some distortions in the reconstructed $\mathbf{p_{miss}}$ distribution. Nevertheless, the obtained results remain consistent within the expected systematic uncertainties.\newline
 Furthermore, the beam energy, assumed to be constant at $400, A\text{MeV}$, plays a crucial role in transforming the reconstructed proton momenta into the center-of-mass frame of the $^{12}C$ nucleus. Small variations in the actual beam energy could have a non-negligible impact on the missing momentum reconstruction. Since no precise event-by-event beam energy information was available for this analysis, a constant value of $400$ AMeV was used.\newline
-Additionally, as shown in Fig.~\ref{fig:p_miss_z}, the distribution of the z-component of $\mathbf{p_{miss}}$ exhibits a slight asymmetry, with a tail extending toward lower values. Since the z-component is particularly sensitive to deviations in the mean beam energy, this effect further contributes to the shift of the mean $\mathbf{p_{miss}}$ value toward lower values. Future studies with improved acceptance corrections and access to event-wise beam energy measurements could further refine the results and enhance the accuracy of the $\mathbf{p_{miss}}$ reconstruction.
+Additionally, as shown in Fig.~\ref{fig:p_miss_z}, the distribution of the $z$-component of $\mathbf{p_{miss}}$ exhibits a slight asymmetry, with a tail extending toward lower values. Since the $z$-component is particularly sensitive to deviations in the mean beam energy, this effect further contributes to the shift of the mean $\mathbf{p_{miss}}$ value toward lower values. Future studies with improved acceptance corrections and access to event-wise beam energy measurements could further refine the results and enhance the accuracy of the $\mathbf{p_{miss}}$ reconstruction.
 
 
 \subsubsection{Correlations between $^{11}B$ Fragment and the reconstructed inner Proton }
@@ -269,13 +272,13 @@ In Subsection \ref{sec:p_miss}, the momentum of the inner proton, $\mathbf{p_{mi
 
 Since the total momentum in the rest frame must be zero by definition, the momentum vectors of the inner proton and the $^{11}B$ fragment should be directed oppositely. Consequently, the cosine of the angle $\gamma$ between these two constituents should be approximately $-1$, which is confirmed by the experimental data, as shown in Fig.~\ref{fig:cos_gamma}.\newline
 
-Furthermore, Fig.~\ref{fig:x_corr_p_miss_11b} and \ref{fig:y_corr_p_miss_11b} illustrate the correlation between the x- and y-components of $\mathbf{p_{miss}}$ and the corresponding components of the $^{11}B$ fragment. A strong anti-correlation is observed in both cases. While the correlation in the y-component is relatively sharp, the x-component exhibits a more blurred distribution.\newline
+Furthermore, Fig.~\ref{fig:x_corr_p_miss_11b} and \ref{fig:y_corr_p_miss_11b} illustrate the correlation between the $x$- and $y$-components of $\mathbf{p_{miss}}$ and the corresponding components of the $^{11}B$ fragment. A strong anti-correlation is observed in both cases. While the correlation in the $y$-component is relatively sharp, the $x$-component exhibits a more blurred distribution.\newline
 
 This effect arises from the geometry-dependent resolution of the sub-detectors:
 \begin{itemize}
-\item[--]For the x-component, it is important to consider that only the lateral halves of CALIFA were instrumented in the \textit{iPhos} region ($\varphi_{1/2}$ within $\pm 45^{\circ}$ and $157.5^{\circ}$ to $202.5^{\circ}$). The azimuthal resolution is moderate ($\approx \frac{6^{\circ}}{\sqrt{12}}$), and since the x-component is reconstructed as $\propto \cos(\varphi)$, the derivative $\sin(\varphi)$ remains small for $\varphi \approx 0$, leading to lower sensitivity in this region.
-\item[--] The x-component of the $^{11}B$ fragment is reconstructed from position measurements immediately after the target, where the lever arm for momentum reconstruction is relatively short.
-\item[--]In contrast, the y-component of the $^{11}B$ fragment is determined from its position in MWPC3 after GLAD, where the larger lever arm improves resolution. Moreover, the y-component remains largely unaffected by the GLAD magnet, further enhancing its reconstruction accuracy.
+\item[--]For the $x$-component, it is important to consider that only the lateral halves of CALIFA were instrumented in the \textit{iPhos} region ($\varphi_{1/2}$ within $\pm 45^{\circ}$ and $157.5^{\circ}$ to $202.5^{\circ}$). The azimuthal resolution is moderate ($\approx \frac{6^{\circ}}{\sqrt{12}}$), and since the $x$-component is reconstructed as $\propto \cos(\varphi)$, the derivative $\sin(\varphi)$ remains small for $\varphi \approx 0$, leading to lower sensitivity in this region.
+\item[--] The $x$-component of the $^{11}B$ fragment is reconstructed from position measurements immediately after the target, where the lever arm for momentum reconstruction is relatively short.
+\item[--]In contrast, the $y$-component of the $^{11}B$ fragment is determined from its position in MWPC3 after GLAD, where the larger lever arm improves resolution. Moreover, the $y$-component remains largely unaffected by the GLAD magnet, further enhancing its reconstruction accuracy.
 \end{itemize}
 
 \begin{figure}[!htb]
@@ -294,14 +297,14 @@ This effect arises from the geometry-dependent resolution of the sub-detectors:
     \begin{subfigure}[b]{0.39\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/p_x_2p_11b.png} % Replace with actual image
-        \caption{x-component correlation between inner proton and $^{11}B$.}
+        \caption{$x$-component correlation between inner proton and $^{11}B$.}
         \label{fig:x_corr_p_miss_11b}
     \end{subfigure}
     \hspace{0.2cm} % Adjust horizontal spacing
     \begin{subfigure}[b]{0.39\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/p_y_2p_11b.png} % Replace with actual image
-        \caption{y-component correlation between inner proton and $^{11}B$.}
+        \caption{$y$-component correlation between inner proton and $^{11}B$.}
         \label{fig:y_corr_p_miss_11b}
     \end{subfigure}
 
