@@ -14,7 +14,7 @@ An comprehensive overview of various nuclear reactions, including scattering rea
 
  \begin{figure}[htbp]
      \centering
-     \includegraphics[width=0.8\textwidth]{Figures/overview_nuclear_reactions.png}
+     \includegraphics[width=0.95\textwidth]{Figures/overview_nuclear_reactions.png}
      \caption{Overview of nuclear reactions in terms of impact parameter and incident energy, taken from Ref.~\cite{obertelli2021modern}.}
      \label{fig:NuclearReactionsOverview}
  \end{figure}
@@ -86,7 +86,7 @@ The most general implementations of the Glauber Model incorporate the following 
  \begin{figure}[htbp]
      \centering
      %\includegraphics[width=0.8\textwidth]{Figures/impact_parameter.pdf}
-     \includegraphics[width=0.8\textwidth]{Figures/impact_parameter_cut.png}
+     \includegraphics[width=0.95\textwidth]{Figures/impact_parameter_cut.png}
      %\includegraphics[width=0.8\textwidth]{Figures/impact_par_glauber_name.pdf}
      \caption{Collision of nucleus A with nucleus B at an impact parameter b. Both probability approach (PA) and  eikonal optical-limit approach (EOL) it is assumed that both nuclei transverse on straight lines. The relative distance between the nucleons to scatter is given by b - $\text{b}_{\text{B}}$ + $\text{b}_{\text{A}}$}.
      \label{fig:impact_par_glauber}
@@ -273,7 +273,7 @@ At low energies, the effective $\sigma_{pp}$ cross section is reduced relative t
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.8\textwidth]{Figures/nn_cross_section.png}
+    \includegraphics[width=\textwidth]{Figures/nn_cross_section.png}
     \caption{Summarized experimental nuclear cross section data, from~\cite{PDG2015}, omitting Coulomb scattering. Red points represent $\sigma_{pp}$, black points represent $\sigma_{np}$. Data are fitted using the parametrization from~\cite{bertulani2010pauli}. Figure taken from~\cite{ponnath2023precise}.}
     \label{fig:nn_lukas}
 \end{figure}
@@ -398,7 +398,8 @@ The eikonal optical limit approximation provides a convenient framework for calc
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.8\textwidth]{Figures/cs_vals_cal_exp.png}
+    %\includegraphics[width=0.95\textwidth]{Figures/cs_vals_cal_exp.png}
+    \includegraphics[width=\textwidth]{Figures/results_lukas_p.png}
     \caption{%
         Total interaction cross sections $\sigma_{\mathrm{I}}$ for the system \textsuperscript{12}C + \textsuperscript{12}C as a function of beam energy per nucleon. Black circles denote predictions from standard Glauber model calculations, while red diamonds include in-medium corrections accounting for Coulomb repulsion and Pauli blocking. Experimental data from previous studies by Takechi et al.~\cite{takechi2009reaction}, Tanihata et al.~\cite{tanihata1990rnbeams}, and Ozawa et al.~\cite{ozawa2001measurements} are shown as blue dots. Recent experimental results obtained by Ponnath et al.~\cite{ponnath2024measurement} are depicted in green, differentiated by target thickness (circles: thin, squares: medium, triangles: thick). A systematic discrepancy remains between the in-medium corrected Glauber calculations and experimental data in the energy range of 800--1000\,AMeV, where the theoretical predictions tend to overestimate the measured cross sections. Figure taken from Ref.~\cite{ponnath2024measurement}.
     }
@@ -478,7 +479,8 @@ The experimental discoveries and theoretical insights from these early studies s
 A simplified picture, which however explains the essential kinematics of the QFS reaction, can be found in Fig.~\ref{fig:sketch_qfs}: we have an incoming proton knocking out a nuclear constituent (proton/neutron) in a quasi-free nucleon-nucleon collision ending with a final state having the scattered proton, the scattered  off nuclear constituent and the rest nucleus (A-1), which could be either in the ground-state or an excited state. In this picture index 0 is assigned to the incoming proton, 1 to the knocked out nucleon, 2 to the outgoing projectile proton, A to the initial nucleus and A-1 to the final nucleus accordingly.
 \begin{figure}[htpb]
     \centering
-    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/sketch_qfs.pdf}
+    %\includegraphics[width=0.95\textwidth,keepaspectratio=true]{Figures/sketch_qfs.pdf}
+    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/sketch_qfs.png}
     \caption{
    	Simplified picture of the QFS reaction process in direct kinematics.  
     }
@@ -525,7 +527,7 @@ where $\sigma_{sp}$ are the theoretical cross sections for the normalized wave f
 From this considerations the spectroscopic factor can be used to probe the theoretical shell predictions. In past this was already done with direct QFS-reactions $(e,e'p)$. Results for the spectroscopic factor with data obtained at the NIKHEF facility are shown in Fig.~\ref{fig:spec_fac}. The substantial reduction of the spectroscopic factor with respect to the independent particle model (IPM) or mean field of $\approx 35\%$ indicates a substantial depletion of the single-particle states and inferring from this a refined model prediction has to be applied\footnote{The mean field potential does not consider spin-spin interaction $V_{ss}$, non central tensor-potential $V_T$ or spin-orbit interaction $V_{LS}$.}.\newline
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/spec_factor.png}
+    \includegraphics[width=0.65\textwidth,keepaspectratio=true]{Figures/spec_factor.png}
     \caption{Normalized spectroscopic factors from the $(e,e'p)$ reaction as a function of target mass taken from~\cite{DICKHOFF2004377}. As input for the theoretical cross sections the prediction from mean field models were used. }
     \label{fig:spec_fac}
 \end{figure}
@@ -594,7 +596,7 @@ This subsection will point out the most exciting and promising application field
 Several experiments were carried out at the GSI Facility to study the reduction factor of the spectroscopic strength  and its evolution over a broad range in isotopic chains, in light nuclei such as for oxygen shown in figure \ref{fig:red_factor}. With the commissioning of the SIS100 and SuperFRS at GSI it will be achievable to study (p,2p) reactions with very short lived nuclei also in heavier systems at reasonable intensities which will presumably draw even more attention to QFS reaction approach.  
 \begin{figure}[htpb]
     \centering
-    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/spec_red_factors.png}
+    \includegraphics[width=0.95\textwidth,keepaspectratio=true]{Figures/spec_red_factors.png}
     \caption{
    	Extracted reduction factors of the spectroscopic strength from (p,2p) measurements (circles and square) as a function of the difference between proton and neutron separation energy $S_p$/$S_n$. The blue triangles correspond to the predictions from self-consistent green functions (SCGF). The shaded area indicates a trend from an analysis of one-nucleon removal cross sections in other reactions and which lead to an intense discussion in the field. From Ref.~\cite{atar2018quasifree}.   
     }
@@ -613,7 +615,7 @@ From isotopic chain studies~\cite{clas2018probing} it has been shown that there 
 Since pioneering experiments were made at JLab and Brookhaven via $(e,e'p)$ and $(e,e'n)$ reactions several  experimental campaigns were carried out at GSI with the R3B setup probing the QFS reactions via the strong nuclear force instead of the Coulomb interaction. Also in 2022 the S522 experiment was performed to exploit for the first time the use of short-lived nuclei scattering off a proton probe in inverse kinematics at R3B, followed by the S091 experiment in 2024 with the focus on probing NN-correlations in atomic nuclei via $(p,pd)$ QFS reactions~\cite{paschalis2020nucleon}. 
 \begin{figure}[htpb]
     \centering
-    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/src_pn_excess.png}
+    \includegraphics[width=0.75\textwidth,height=8cm,keepaspectratio=true]{Figures/src_pn_excess.png}
     \caption{
    	Fraction of high-momentum neutrons and protons with respect to the N/Z ratio for several carbon isotopes. A clear trend towards high momentum proton distribution for neutron rich carbon isotopes (red line) is shown, while the high momentum neutron distribution stays constant with respect to the N/Z ratio (blue line). From Ref.~\cite{clas2018probing}. 
     }

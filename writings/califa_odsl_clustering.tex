@@ -75,25 +75,25 @@ These metrics allow a comprehensive evaluation of clustering accuracy, robustnes
 \begin{figure}[htbp]
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
-        \includegraphics[width=\textwidth]{Figures/true_positive.pdf}
+        \includegraphics[width=\textwidth]{Figures/true_positive.png}
         \caption{}
         \label{fig:sub1}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
-        \includegraphics[width=\textwidth]{Figures/false_negative.pdf}
+        \includegraphics[width=\textwidth]{Figures/false_negative.png}
         \caption{}
         \label{fig:sub2}
     \end{subfigure}
     \vskip\baselineskip
     \begin{subfigure}[b]{0.45\textwidth}
-        \includegraphics[width=\textwidth]{Figures/false_positive.pdf}
+        \includegraphics[width=\textwidth]{Figures/false_positive.png}
         \caption{}
         \label{fig:sub3}
     \end{subfigure}
     \hfill
     \begin{subfigure}[b]{0.45\textwidth}
-        \includegraphics[width=\textwidth]{Figures/false_mixed.pdf}
+        \includegraphics[width=\textwidth]{Figures/false_mixed.png}
         \caption{}
         \label{fig:sub4}
     \end{subfigure}
@@ -172,7 +172,7 @@ The \textit{Agglo + Edge} model demonstrates superior performance across all eva
 A visual representation of an example event, contrasting the incorrectly merged hits from the geometrical R3B clustering with the correctly reconstructed clustering using the Agglo+Edge model, is shown in Fig.~\ref{fig:comparison_r3b_agglo_edge}.\newline
 \begin{figure}[!htb]
         \centering
-        \includegraphics[width=0.90\textwidth]{Figures/fig3.png}
+        \includegraphics[width=0.9\textwidth]{Figures/fig3.png}
 	\caption{
                 Example of a simulated event involving three primary photons, illustrating the performance difference between the Agglo+Edge clustering method and the geometrical R3B clustering approach. Each marker represents a detected hit, plotted as a function of the polar angle  \(\theta\) and the azimuthal angle \(\varphi\). The edge color of each circle indicates the true cluster assignment (ground truth), while the fill color denotes the cluster assignment according to the geometrical R3B clustering. The size of each circle reflects the energy deposited in the detector segment. Numbers adjacent to the hits represent the normalized hit times. In this event, the geometrical R3B clustering incorrectly assigns the two hits at \((\theta \approx 0.8\,\mathrm{rad},\, \varphi \approx 1.8\,\mathrm{rad})\), with normalized times of 0.85 and 0.87 (blue edge, yellow fill) respectively, to a separate cluster, resulting in a \textit{False Negative} (FN). In contrast, the Agglo+Edge method correctly assigns all hits to their respective clusters.
                 }
@@ -194,5 +194,5 @@ Subsequent work could consider also adding a subsequent cluster splitting step i
 From a computational standpoint, both the geometrical R3B clustering and the agglomerative clustering algorithms scale quadratically with the number of input hits, exhibiting a time complexity of \(\mathcal{O}(N^2)\), where \(N\) denotes the number of detector hits per event. The combined methods --R3B + Edge and Agglo + Edge -- induce additional computational overhead due to the Edge Detection Neural Network (NN) employed in the second stage. The current network architecture comprises three fully connected hidden layers with up to \(10^3\) neurons each, resulting in large matrix operations that dominate the runtime for typical events with \(N \sim \mathcal{O}(10^2)\). Consequently, future work will focus on optimizing the Edge Detection NN by significantly reducing the model size to enable faster execution while improving performance compared to the conventional geometrical R3B clustering.\newline
 Additionally, transformer-based models \cite{vaswani2017attention} -- capable of analyzing full event topologies -- may offer further improvements in clustering accuracy by capturing complex, global features.\newline
 The methods developed in this work can be directly integrated into the R3B data analysis chain as analysis tasks within the R3BRoot framework. Their application is of particular relevance for heavy-ion experiments where the signal reconstruction is challenged by large background contributions, the production of $\delta$-electrons, and the simultaneous emission of a large number of neutrons and gamma-rays. In such scenarios, the improved reconstruction performance is expected to enhance the precision of invariant-mass spectroscopy and kinematical reconstruction, thereby contributing directly to the scientific output of the R3B program.\newline
-This analysis has been documented and published in the NIM-A journal, see~\cite{JENEGGER2026171048}. For a more comprehensive discussion of the methodology, refer to the aforementioned publication.
+This analysis has been thoroughly documented and published in the journal Nuclear Instruments and Methods in Physics Research Section A (NIM-A)~\cite{JENEGGER2026171048}. A detailed description of the applied methodology can be found in the referenced publication.
 

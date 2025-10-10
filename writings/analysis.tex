@@ -70,7 +70,7 @@ To ensure a clean incoming event selection, the following prerequisites must be 
 \item \textbf{$^{12}$C identification of incoming projectile by upstream detectors:}\newline
 \begin{figure}[htpb]
     \centering
-    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/charge_val_r3b_start_mw0_cuts.pdf}
+    \includegraphics[width=\textwidth,height=9cm,keepaspectratio=true]{Figures/charge_val_r3b_start_mw0_cuts.pdf}
     \caption{
     Charge distribution in R3B MUSIC with predefined calibration parameters with already applied positional cuts on MWPC0 - positioned upstream to the ionization chamber and required coincident signal in the start detector. The rise beyond Z $\ge$ 7.2 originates from pile-up events. The sharp cut on the right at Z $\gtrapprox$ 7.35 is due to the limit of the electronics dynamic range. The fall off at Z $\lessapprox$ 4.8 is due to applied threshold settings on the detector side.
     }
@@ -116,13 +116,13 @@ For the MWPC0 which is mounted right at the beam entrance of Cave C no hit multi
 To assure that the incoming $^{12}$C ion hits the target it is necessary to select only events where the projectile is focused to the target region. Therefore strict cuts on the MWPC0 $x$ and $y$ position are applied. This was achieved by fitting the $x$ and $y$ distribution of the MWPC0 by a Gaussian function. The selection of \textit{focused} incoming projectiles was then restricted to events with hits in MWPC0 within the $\pm 2\sigma$ region in the $x$ and $y$ position around the beam spot center, see Fig.~\ref{fig:mw0_xy_overview} and \ref{fig:mw0_cuts}.\newline
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth,height=10cm,keepaspectratio=true]{Figures/mw0_xy_cut_2sigma.pdf}
+\includegraphics[width=\textwidth,keepaspectratio=true]{Figures/mw0_xy_cut_2sigma.pdf}
 \caption{Reconstructed \(x\)-\(y\) position of incoming ions on MWPC0 without applying a charge selection on the R3B MUSIC detector. The position reconstruction was performed without enforcing any multiplicity cut on the number of hits in MWPC0. However, a strict selection of \(\pm2\sigma\) around the beam spot center was applied independently in \(x\) and \(y\), as indicated by the red rectangular region. A detailed description of the MWPC0 hit selection procedure is provided in Appendix~\ref{app:mw0_cuts}.}
 \label{fig:mw0_xy_overview}
 \end{figure}
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/mwpc0_cutxy.png}
+\includegraphics[width=\textwidth,keepaspectratio=true]{Figures/mwpc0_cutxy.png}
 \caption{Overview of $\pm 2\sigma$ cuts in x and y in MWPC0 for empty/target runs.}
 \label{fig:mw0_cuts}
 \end{figure}
@@ -168,13 +168,7 @@ where \(E_i\) is the energy signal recorded by the \(i\)-th anode, \(c_i\) is it
          \centering
          \includegraphics[width=\textwidth]{Figures/twim_raw_550_target.png}
          \caption{
-Raw, uncalibrated $\Delta E$ distributions from all 16 TWIN anodes 
-  recorded during the thick-target run at 550~AMeV. Upstream anodes are shown in 
-  color, downstream in gray. No charge selection (R3B MUSIC) or position cut 
-  (MWPC0) was applied, leading to the extended high-energy tail from pileup events. 
-  The cut-off at 8192~a.u.\ marks the digitizer’s dynamic range, while the drop 
-  around 1500~a.u.\ stems from electronic thresholds. The last six anodes have a 
-  slightly different amplification.
+Raw, uncalibrated $\Delta E$ distributions from all 16 TWIN anodes, 550~AMeV thick target run. Upstream anodes are shown in color, downstream in gray. No charge selection (R3B MUSIC) or position cut (MWPC0) was applied, leading to the extended high-energy tail from pileup events. The cut-off at 8192~a.u.\ marks the digitizer’s dynamic range, while the drop around 1500~a.u.\ stems from electronic thresholds. The last six anodes have a slightly different amplification.
 	 }
          \label{fig:raw_twim}
      \end{subfigure}
@@ -258,7 +252,8 @@ t_{mean\_down} & \text{for i} \geq 9 \\
 \begin{figure}[htpb]
     \centering
     %\includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/charge_cut_with_out_borders.png}
-    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/twim_up_down_calibrated.pdf}
+    %\includegraphics[width=\textwidth,keepaspectratio=true]{Figures/twim_up_down_calibrated.pdf}
+    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/twim_up_down_calibrated.png}
     \caption{
     Two dimensional Gaussian fit with 3.5$\sigma$ fit range on identified carbon isotopes in TWIN MUSIC. The horizontal and vertical side bars contain events where either the eight upstream anodes or downstream anodes have no hit entry. The cluster at $\overline{Z} \approx$ 4.5 corresponds to boron isotopes (Z = 5). The broad cluster observed for $\overline{Z} \leq 3.5$ originates from events in which the $^{12}$C ion undergoes fragmentation into multiple light charged particles. In such cases, the total energy loss of the resulting particle combinations is measured in the TWIN MUSIC, which does not permit their individual separation. 
     }
@@ -316,7 +311,7 @@ For the sake of completeness, Appendix~\ref{app:twin_alternative} presents alter
 During the S444 experiment only section 1 of the TWIN MUSIC with an active area of $11\times11$ cm$^2$ was used, see Section~\ref{sec:ionisation_chambers}. Particles which undergo elastic or inelastic scattering or simply exit the target at larger angles due to the multiple scattering process, may therefore not be fully confined in the active volume of the TWIN MUSIC. To visualize the restricted geometric acceptance of the TWIN MUSIC the position in $x$ and $y$ (perpendicular plane to the beam direction) on the MWPC1 in front of the ionization chamber was plotted, for comparison without any conditions on the TWIN MUSIC and with the condition of having identified a carbon isotope (with the 2D Gauss-fit method as described in Section~\ref{subsec:carbon_id}), see Fig.~\ref{fig:mw1_xy}. The large active surface area of $20\times20$ cm$^{2}$ of the MWPC1 affirms a larger acceptance\footnote{This statement does not hold for light fragments as protons or deuterons. Their deflection angle exceeds the geometric acceptance of the MWPC1.} whereas the TWIN MUSIC behind it, with an active surface of $11\times11\text{cm}^{2}$, is -- as mentioned -- not sensitive to the scattered fragments with large deflection angle.\newline
 \begin{figure}[htpb]
     \centering
-    \includegraphics[width=\textwidth,height=12cm,keepaspectratio=true]{Figures/geo_acceptance.pdf}
+    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/geo_acceptance.pdf}
     \caption{
     Distribution in $x$ and $y$ on MWPC1 for different energies with and without target. 
      }
@@ -559,7 +554,7 @@ The uncertainty associated with the weighted mean is composed of two contributio
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[height=10cm,keepaspectratio=true]{Figures/iso_corr_contribution_weighted_ar_mean.png}
+    \includegraphics[height=8cm,keepaspectratio=true]{Figures/iso_corr_contribution_weighted_ar_mean.png}
     \caption{Weighted means of the isotopic correction contributions to the total cross section as a function of beam energy. While the mean value is fixed for all three target thicknesses for the different beam energies, the systematic and statistical uncertainties vary with respect to the analyzed runs, as indicated by the error bars.}
     \label{fig:iso_corr_weighted_mean}
 \end{figure}

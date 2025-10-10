@@ -29,10 +29,10 @@ Since only one tracking detector downstream to GLAD, the MWPC3, was installed fo
 \item As in Fig.~\ref{fig:sub2_reco_path} shown, fit the data-points from previous step with a linear fit function and find the corresponding $\theta_{out}$ value where the fit line intersects with the abscissa. This corresponds to the case where $d1 = d2$. This is the approximated "kickpoint" in GLAD. 
 \item Previous steps need to be executed for all events accordingly.
 \end{itemize}
-\begin{figure}[ht]
+\begin{figure}[htbp]
     \centering
     % First subfigure
-    \begin{subfigure}[b]{0.70\textwidth}
+    \begin{subfigure}[b]{\textwidth}
 		\centering
         \includegraphics[width=\textwidth]{Figures/kick_point_algorithm.png}
         \caption{Flightpath reconstruction with "Leff" being the effective active width of the magnetic field of GLAD}
@@ -40,9 +40,9 @@ Since only one tracking detector downstream to GLAD, the MWPC3, was installed fo
     \end{subfigure}
     %\hfill % Optional: adds horizontal space between the figures
     % Second subfigure
-    \begin{subfigure}[b]{0.25\textwidth}
+    \begin{subfigure}[b]{\textwidth}
 		\centering
-        \includegraphics[width=\textwidth]{Figures/intersection_algorithm.png}
+        \includegraphics[width=0.40\textwidth]{Figures/intersection_algorithm.png}
         \caption{$\theta_{out}$ approximation. For detailed information see text.}
         \label{fig:sub2_reco_path}
     \end{subfigure}
@@ -125,7 +125,7 @@ Furthermore, it is important to note the apparent cut at $Z \approx 4$ in the da
 
 \begin{figure}[htpb]
     \centering
-    \includegraphics[width=\textwidth,height=12cm,keepaspectratio=true]{Figures/a_over_q_vs_q_plot.png}
+    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/a_over_q_vs_q_plot.png}
     \caption{
 	Fragment identification is performed using the correlation between the atomic number $Z$ and the mass-to-charge ratio $\frac{A}{q}$. For the quasi-free scattering (QFS) analysis of the reaction $^{12}C(p,2p)^{11}B$, the fragment of interest is $^{11}B$, which is emphasized with a bold red circle.
     }
@@ -141,13 +141,14 @@ The upper boundary was determined by measuring the distance between this interse
 Following the identification of the fragments through precise flight path reconstruction and time measurement, as detailed in the previous subsection, and the subsequent selection of the $^{11}B$ isotope, the analysis focuses on the two correlated protons to fully characterize the quasi-free scattering channel $^{12}C(p,2p)^{11}B$.\newline
 For a proper interpretation of the data, it is essential to consider the geometric acceptance of CALIFA during the S444 experiment in 2020. The central \textit{BARREL} region, covering the polar angular range from $43^{\circ}$ to $88^{\circ}$, was fully operational. In contrast, the forward region, referred to as \textit{iPhos} ($19^{\circ}$ to $43^{\circ}$), was only partially equipped, with a coverage of approximately $35\%$. The forward endcap, known as \textit{CEPA}, was not installed, and the backward barrel remained unoccupied. The corresponding geometry is illustrated in Fig.~\ref{fig:qfs_reac_and_geo}.\newline
 \begin{figure}[htpb]
-	\begin{subfigure}[t]{.4\linewidth}
+	\begin{subfigure}[t]{.45\linewidth}
     \includegraphics[width=\textwidth]{Figures/reaction_qfs_model.png}
-	\caption{Quasi-free scattering channel $^{12}C(p,2p)^{11}B$}
+	\caption[width=0.75\textwidth]{Quasi-free scattering channel $^{12}C(p,2p)^{11}B$}
 	\end{subfigure}
-	\begin{subfigure}[t]{.4\linewidth}
+	\hspace{2em}
+	\begin{subfigure}[t]{.45\linewidth}
     \includegraphics[width=\textwidth]{Figures/CALIFA2020Front.png}
-	\caption{Simulated front view of the CALIFA calorimeter in 2020.}
+	\caption[width=0.75\textwidth]{Simulated front view of the CALIFA calorimeter in 2020.}
 	\end{subfigure}
     \caption{Tagging the $^{12}C(p,2p)^{11}B$ channel with only partly filled CALIFA calorimeter for the detection of the two correlated protons.}%
     \label{fig:qfs_reac_and_geo}%
@@ -201,11 +202,12 @@ The information of azimuthal and polar angles of the two protons can merged in t
 \end{equation}
 
 \begin{figure}[htpb]
-	\begin{subfigure}[t]{.43\linewidth}
+	\begin{subfigure}[t]{.73\linewidth}
     \includegraphics[width=\textwidth]{Figures/opang.png}
 	\caption{Opening angle distribution from S444 experimental data}
 	\end{subfigure}
-	\begin{subfigure}[t]{.47\linewidth}
+	\hspace{2em}
+	\begin{subfigure}[t]{.75\linewidth}
     \includegraphics[width=\textwidth]{Figures/opang_sim.png}
 	\caption{Simulated opening angle $\theta_{p2p}$ based on QFS kinematical code by Leonid Chulkov, GSI.}
 	\end{subfigure}
@@ -296,14 +298,14 @@ This effect arises from the geometry-dependent resolution of the sub-detectors:
     % Row for two smaller subfigures
     \begin{subfigure}[b]{0.39\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/p_x_2p_11b.png} % Replace with actual image
+        \includegraphics[width=\textwidth]{Figures/p_x_2p_11b_xl.png} % Replace with actual image
         \caption{$x$-component correlation between inner proton and $^{11}B$.}
         \label{fig:x_corr_p_miss_11b}
     \end{subfigure}
     \hspace{0.2cm} % Adjust horizontal spacing
     \begin{subfigure}[b]{0.39\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/p_y_2p_11b.png} % Replace with actual image
+        \includegraphics[width=\textwidth]{Figures/p_y_2p_11b_xl.png} % Replace with actual image
         \caption{$y$-component correlation between inner proton and $^{11}B$.}
         \label{fig:y_corr_p_miss_11b}
     \end{subfigure}
@@ -361,7 +363,7 @@ Since no target-detector tracking system was available for the S444 experiment, 
 The best way to visualize the separation energy $S_p$ is to plot it against the summed energy of the two protons in the $^{12}C$ rest frame as shown in Fig.~\ref{fig:sep_energy}. Two vertical lines are visible. They correspond to the two QFS-reaction types within the $CH_2$ target: the proton within the $^{12}C$ projectile can either scatter on the hydrogen (proton-like) part of on the carbon part of the plastic target. For the first case only the separation energy $S_p$ as derived in Eq.~\ref{eq:sep_energy} is necessary to remove the proton of the projectile within the $^{12}C$ nucleus. In the second case the QFS-reaction is between two protons both bound within a carbon nucleus -- the projectile carbon and the target carbon part. Herefore more energy is needed to free both protons from their nuclear bond. This corresponds to the left vertical line in Fig.~\ref{fig:sep_energy}. It should be noted that the reconstructed one-proton separation energy $S_p$ is shifted with respect to the mean value of $\approx 16 MeV$. For a precise measurement the accurate position of the target and the reaction vertex would be needed, as well as a precise measurement of the kinetic energy of the incoming $^{12}C$ would be required (for the actual measurements the beam energy value was set to $400 AMeV$). 
 \begin{figure}[htpb]
     \centering
-    \includegraphics[width=\textwidth,height=10cm,keepaspectratio=true]{Figures/sep_energy_vs_sum_energy.png}
+    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/sep_energy_vs_sum_energy.png}
     \caption{
 	Sum of the kinetic energies of the two correlated protons ($T_1/T_2$) versus the one proton separation energy $S_p$. Since this energy is needed to solve the proton from the nucleus' core, its value has conventionally a negative sign.  	 
     }
@@ -375,7 +377,7 @@ $\gamma$-ray spectroscopy serves as a sensitive probe for investigating the popu
 \begin{figure}[htpb]
     \centering
     %\includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/levelschemaplot.png}
-    \includegraphics[width=\textwidth,height=10cm,keepaspectratio=true]{Figures/own_11b_level_scheme.png}
+    \includegraphics[width=\textwidth,height=12cm,keepaspectratio=true]{Figures/own_11b_level_scheme.png}
     \caption{
 %%Level scheme of $^{11}\mathrm{B}$ taken from~\cite{iaea_nuclide_chart}.
 Partial level scheme of $^{11}\mathrm{B}$, showing the ground state and the first four excited states with their respective excitation energies and spin-parity assignments. A comprehensive level scheme for $^{11}\mathrm{B}$ is available in Ref.~\cite{nndc11B}.
@@ -435,7 +437,7 @@ Q = (m_i -m_f)c^2 = T_f - T_a
 where $m_i$ is the initial mass of the fissile nucleus and $m_f$ the sum of the masses of the fission products. Fig.~\ref{fig:fission_kuckuk} shows the potential curve for the fission process into two fission fragments.\newline
 \begin{figure}[htpb]
     \centering
-    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/fiss_model_kuckuk.png}
+    \includegraphics[width=\textwidth,height=10cm,keepaspectratio=true]{Figures/fiss_model_kuckuk.png}
     \caption{
 Energy levels and potential profile during fission. \textit{Left:} Energy diagram. \textit{Right:} Potential profile according to the liquid drop model. \textit{Top inset:} Detail of the potential barrier for a more realistic description using the fission hybrid model. The ground state is deformed in this case. Figure taken from~\cite{mayer2013kernphysik}.
     }
@@ -462,7 +464,7 @@ In the S455 experiment, as proof of principle, for fission via quasi-free scatte
     \centering
     \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/overview_exp_2021_s455.pdf}
     \caption{
-    Overview of reaction mechanism $^{238}U$(p,2pf) in inverse kinematics.
+    Overview of the reaction mechanism $^{238}U$(p,2pf) in inverse kinematics.
     }
     \label{fig:overview_s455}
 \end{figure}
@@ -471,7 +473,7 @@ The central detector used for the simultaneous charge measurement of the fission
 
 \begin{figure}[htpb]
     \centering
-    \includegraphics[width=\textwidth,height=10cm,keepaspectratio=true]{Figures/fission_charge_distr_s455.png}
+    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/fission_charge_distr_s455.png}
     \caption{
     Charge distribution of the charges $\text{Z}_1$ and $\text{Z}_2$ of both fission fragments for all fissioning systems. The inset shows the fissioning system distribution. The red diagonal frame shows the charge distribution when selecting the fissioning system $\text{Z}_1 + \text{Z}_2 = 91$. Figure taken from~\cite{grana2023fission}.
     }
@@ -484,14 +486,16 @@ After successful assignment of the CALIFA detector data, it was possible to extr
 A significant observation is that the opening angle between the two protons -- an observable directly related to the excitation energy available for fission -- shows a strong correlation with the charge distribution of the resulting fission fragments, as illustrated in Fig.~\ref{fig:qfs_fission}.
 \begin{figure}[htpb]
     \centering
-    \begin{subfigure}[b]{0.32\textwidth}
-    \includegraphics[width=\textwidth]{Figures/gabriel_1.png}
+    \begin{subfigure}[b]{0.75\textwidth}
+    \includegraphics[width=\textwidth]{Figures/gabriel_theta12.png}
     \end{subfigure}
-    \begin{subfigure}[b]{0.32\textwidth}
-    \includegraphics[width=\textwidth]{Figures/gabriel_2.png}
+    \begin{subfigure}[b]{0.45\textwidth}
+    %\includegraphics[width=\textwidth]{Figures/gabriel_2.png}
+    \includegraphics[width=\textwidth]{Figures/gabriel_asymm.png}
     \end{subfigure}
-    \begin{subfigure}[b]{0.32\textwidth}
-    \includegraphics[width=\textwidth]{Figures/gabriel_3.png}
+    \begin{subfigure}[b]{0.46\textwidth}
+    %\includegraphics[width=\textwidth]{Figures/gabriel_3.png}
+    \includegraphics[width=\textwidth]{Figures/gabriel_symm.png}
     \end{subfigure}
     \caption{
 	(a) Polar angle correlation between the two protons emitted in fission events following quasi-free scattering (QFS) conditions. 
@@ -505,8 +509,8 @@ Specifically, events characterized by large proton opening angles, corresponding
 A clear transition from asymmetric to symmetric fission with increasing excitation energy is observed in Fig.~\ref{fig:ff_charge_mass}. The excitation energy, represented by the color scale in Fig.~\ref{fig:ff_charge_mass}, was reconstructed from the detected protons in the CALIFA calorimeter, originating from the $(p,2pf)$ reaction channel. Furthermore, Fig.~\ref{fig:ff_charge_mass} indicates that higher excitation energies are correlated with an increased probability of multi-neutron knockout and/or evaporation processes. These processes result in a reduced total mass of the detected fission fragments, reflecting the enhanced emission of neutrons prior to or during fission at higher excitation energies.\\
 \begin{figure}[hb]
     \centering
-    \includegraphics[width=0.9\textwidth]{Figures/ff_charge_vs_ff_tot_mass.pdf}
-    %\caption{Correlation between the sum of the fission fragment charges and the total fission fragment mass ($\mathrm{FF}_1 + \mathrm{FF}_2$) for the $(p,2pf)$ reaction channel. The data indicate a transition from asymmetric to symmetric fission modes with increasing excitation energy, reconstructed via proton detection in CALIFA. A clear trend toward reduced total fragment mass at higher excitation energies is observed, consistent with enhanced multi-neutron emission.}
+    %\includegraphics[width=\textwidth]{Figures/ff_charge_vs_ff_tot_mass.pdf}
+    \includegraphics[width=\textwidth]{Figures/ff_charge_vs_ff_tot_mass.png}
     \caption{Correlation between the fission fragment charges and the total fission fragment mass $M_{\text{tot}} = M_{\text{FF1}} + M_{\text{FF2}}$ for the $(p,2pf)$ reaction channel. The excitation energy (in MeV) is represented by the color scale. Higher excitation energies lead to increased neutron evaporation, resulting in a reduced total fission fragment mass. Lower values of $M_{\text{tot}}$ are associated with a more symmetric charge split, demonstrating a clear transition from predominantly asymmetric to symmetric fission with increasing excitation energy (i.e.\ decreasing total mass).}
     \label{fig:ff_charge_mass}
 \end{figure}
@@ -517,7 +521,7 @@ These isotopes were produced via the fragmentation of a relativistic  1 AGeV  $^
 The systematic study of the data collected during ten days of experiment, revealed a transition toward increasingly asymmetric fission in neutron-deficient heavy nuclei. This marks the discovery of a new ``island of asymmetric fission'' in the nuclear chart, characterized by a surprising dominance of light fission fragments with atomic number Z = 36, corresponding to krypton, see Fig.~\ref{fig:asymmetric_fission_islands}.\newline
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.85\textwidth]{Figures/csm_NuclideChart_with_islands_Foto_PMorfouace_res_47948441f0.png}
+    \includegraphics[width=\textwidth]{Figures/csm_NuclideChart_with_islands_Foto_PMorfouace_res_47948441f0.png}
     \caption{Three-dimensional chart of nuclides illustrating the evolution of asymmetric fission, with asymmetry \( A \) shown as a color scale. The red circles indicate two distinct regions-so-called ``islands''-of asymmetric fission. The region in the upper right corresponds to the well-established asymmetric fission in the actinide range (atomic numbers \( Z = 89\text{--}103 \)), where the process is stabilized by the formation of a heavy fragment near xenon (\( Z = 54 \)). In contrast, the region in the lower left highlights the recently discovered asymmetric fission of lighter nuclei around mercury (\( Z = 80 \)), stabilized by the formation of a light fragment near krypton (\( Z = 36 \)). The black squares indicate the valley of stable nuclei. \textit{Image credit: Pierre Morfouace,CEA,DAM,DIF,Arpajon, France.}}
     \label{fig:asymmetric_fission_islands}
 \end{figure}
