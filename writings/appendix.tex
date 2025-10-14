@@ -4,7 +4,8 @@
 As detailed in Section~\ref{subsec:event-sel}, a stringent event selection criterion was applied to the incoming ions. This included a precise charge cut, as illustrated in Fig.~\ref{fig:r3bmusic_charge}. The application of a rigid $\pm 1 \sigma$ charge cut, in conjunction with the requirement of a single hit in the Start detector, effectively suppresses pileup events. The superior pileup rejection capability of the R3B MUSIC detector, owing to its longer shaping time compared to the TWIN MUSIC detector, is further demonstrated in Fig.~\ref{fig:r3b_vs_twin_charge_def}. This extended shaping time ensures that any genuine pileup event will be reliably registered by the R3B MUSIC.
 \begin{figure}[htpb]
     \centering
-    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/app_charge_r3b_twin_default.pdf}
+    %\includegraphics[width=\textwidth,keepaspectratio=true]{Figures/app_charge_r3b_twin_default.pdf}
+    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/app_charge_r3b_twin_default.png}
     \caption{
 	Charge distribution in R3B MUSIC vs TWIN MUSIC. The strict charge cut -- only events within the two horizontal lines are selected for the analysis -- on R3B MUSIC fully suppresses pileup events. For this plot positional cuts on the MWPC0  and the requirement of a single hit in the Start detector are applied. Target run, 550 AMeV. 
     }
@@ -36,16 +37,16 @@ Fig.~\ref{fig:hyp_function} shows the "hyperbolic squared secant" function with 
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/hyperbolic_squared_secant_function.png}
     \caption{
-   	 Figure taken from \cite{martin2021fission}, with w being the with of the cathode pads of the MWPC and $a_2$ the final position value of the hit determined by the hyperbolic squared secant function (in red). In black the measured charge deposition distribution in the MWPC. 
+   	 Figure taken from~\cite{martin2021fission}, with $w$ being the with of the cathode pads of the MWPC and $a_2$ the final position value of the hit determined by the hyperbolic squared secant function (in red). In black the measured charge deposition distribution in the MWPC. 
      }
     \label{fig:hyp_function}
 \end{figure}
 The "hyperbolic squared secant" function is used to determine the x hit position as well as the y hit position for all MWPCs. Fig.~\ref{fig:x_mw23_default} shows the $x_{mw2}$ versus $x_{mw3}$ distribution of carbon isotopes for the 400 AMeV run with the thick target. The two correlated lines corresponding to the $^{12}$C and $^{11}$C isotopes can clearly be distinguished. The vertical line can be interpreted as amount of events where the incoming centered carbon fragment gets scattered by air or the detector material in place between MWPC2 and MWPC3. The horizontal wide spread line has no physical interpretation and can rather be explained by the \textit{cal-to-hit} step in MWPC2: For events where there is not a spatially constrained hit cluster but sparse hits the hyperbolic squared secant function may pick the wrong $Q_{max}$ and therefore wrongly reconstructs the x position in MWPC2. 
 \begin{figure}[htpb]
     \centering
-    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/mw23_default.png}
+    \includegraphics[width=\textwidth,height=10cm,keepaspectratio=true]{Figures/mw23_default.png}
     \caption{
-   	 Distribution of x in MWPC2 and MWPC3 for the 400 AMeV run with thick target. The green line acts as reference line for the isotope separation between $^{12}$C and $^{11}$C/$^{10}$C.
+   	 $x$-distribution in MWPC2 and MWPC3 for the 400 AMeV run with thick target. The green line acts as reference line for the isotope separation between $^{12}$C and $^{11}$C/$^{10}$C.
      }
     \label{fig:x_mw23_default}
 \end{figure}
@@ -57,14 +58,14 @@ To overcome the issue with potentially wrong x- or y-position reconstruction in 
 \begin{figure}
 \floatbox[{\capbeside\thisfloatsetup{capbesideposition={left,top},capbesidewidth=6cm}}]{figure}[\FBwidth]
 {\caption{Restricted event selection for MWPC2 and MWPC3: only events with one single coherent (i.e. without any holes) cluster are accepted.}\label{fig:own_clustering}}
-{\includegraphics[width=7cm]{Figures/own_clustering_mwpcs.png}}
+{\includegraphics[width=9cm]{Figures/own_clustering_mwpcs.png}}
 \end{figure}
 Fig.~\ref{fig:mw23_own_clustering} shows the distribution of x in MWPC2 and MWPC3 using the coherent clustering reconstruction. This reconstruction method removes the uncorrelated horizontal line which was observed in Fig.~\ref{fig:x_mw23_default}. However the statistics are reduced by approximately $35\%$\footnote{Number of entries in the 2D plot for default reconstruction method: 533816, for the coherent clustering reconstruction: 346315 for the 400 AMeV run with thick target.}.
 \begin{figure}[htpb]
     \centering
-    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/mw23_own_clustering.png}
+    \includegraphics[width=\textwidth,height=9cm,keepaspectratio=true]{Figures/mw23_own_clustering.png}
     \caption{
-   	 Distribution of x in MWPC2 and MWPC3 using the coherent clustering reconstruction. Thick target run, beam energy 400 AMeV. The green line acts as reference line for the isotope separation between $^{12}$C and $^{11}$C/$^{10}$C.
+   	 $x$-distribution in MWPC2 and MWPC3 using the coherent clustering reconstruction. Thick target run, beam energy 400 AMeV. The green line acts as reference line for the isotope separation between $^{12}$C and $^{11}$C/$^{10}$C.
      }
     \label{fig:mw23_own_clustering}
 \end{figure}
@@ -94,7 +95,7 @@ For completeness, additional strategies were investigated to suppress misreconst
   \caption{Coherent clustering. Events within $\pm2\sigma$: $1.34349e+06$}
   \label{fig:sub-second}
 \end{subfigure}
-
+\qquad
 \begin{subfigure}{.45\textwidth}
   \centering
   % include third image
@@ -131,8 +132,35 @@ where \(N_{\text{MWPC}}\) denotes the number of carbon isotopes identified by th
 
 \begin{figure}[htpb]
     \centering
-    %\includegraphics[width=\textwidth,keepaspectratio=true]{Figures/eff_plot_mwpcs_labels_c.png}
-    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/eff_plot_mwpcs.png}
+    %\includegraphics[width=\textwidth,keepaspectratio=true]{Figures/eff_plot_mwpcs.png}
+    %MW1
+    \begin{subfigure}{.47\textwidth}
+    \centering
+    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/mw1_xandy_default_clustering.png}
+    \end{subfigure}
+    \begin{subfigure}{.47\textwidth}
+    \centering
+    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/mw1_xandy_coherent_clustering.png}
+    \end{subfigure}
+    %MW2
+    \begin{subfigure}{.47\textwidth}
+    \centering
+    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/mw2_xandy_default_clustering.png}
+    \end{subfigure}
+    \begin{subfigure}{.47\textwidth}
+    \centering
+    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/mw2_xandy_coherent_clustering.png}
+    \end{subfigure}
+    %MW3
+    \begin{subfigure}{.47\textwidth}
+    \centering
+    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/mw3_xandy_default_clustering.png}
+    \end{subfigure}
+    \begin{subfigure}{.47\textwidth}
+    \centering
+    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/mw3_xandy_coherent_clustering.png}
+    \end{subfigure}
+
     \caption{
 	Efficiencies of MWPC1, MWPC2, and MWPC3 obtained with the default and the coherent clustering algorithms. For MWPC1 and MWPC2, a reduction in efficiency is observed at a beam energy of 550 AMeV. In contrast, MWPC3 exhibits a pronounced efficiency loss at 800 AMeV. This behavior can be attributed to the decreasing signal amplitude with increasing beam energy, resulting in signals falling below the detection threshold.
      }
@@ -150,7 +178,7 @@ Fig.~\ref{fig:eff_plot_mwpcs} displays the efficiencies of the individual MWPCs:
     %\includegraphics[width=\textwidth,keepaspectratio=true]{Figures/combined_eff_plot_mwpcs_labels_c.png}
     \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/combined_eff_plot_mwpcs.png}
     \caption{
-	Efficiencies of the particle position identification (in $x$ and $y$)  in multiple MWPCs obtained with the default and the coherent clustering algorithms. The rightmost plot shows the ratio of used events for the isotope correction factor, as described in Section~\ref{sec:iso_corr}, compared to the number of identified carbon isotopes with TWIN MUSIC.
+	Efficiencies of the particle position identification (in $x$ and $y$)  in multiple MWPCs obtained with the default and the coherent clustering algorithms. The bottom plot shows the ratio of used events for the isotope correction factor, as described in Section~\ref{sec:iso_corr}, compared to the number of identified carbon isotopes with TWIN MUSIC.
      }
     \label{fig:eff_plot_mwpcs_comb}
 \end{figure}
@@ -223,7 +251,7 @@ To quantify the impact of including or excluding border regions -- i.e., cases w
 Another method to assert the number survived carbon ions is to apply a diagonal cut on the 2D $\Delta E$ histogram. To set the slope and offset of the diagonal cut line firstly the two dimensional Gaussian fit is applied, same as discussed in Section~\ref{subsec:carbon_id}. Then the intersection point between the 3.5 $\sigma$ ellipse and the identity line ($\Delta E$ upstream anodes = $\Delta E$ downstream anodes) is found. Through this point, perpendicular to the identity line, the diagonal line is drawn. Everything above the diagonal line is considered as survived carbon ions. The borders are considered within the 3.5 $\sigma$ cut, see Fig.~\ref{fig:diagonal_cut_twim}. 
 \begin{figure}[htpb]
     \centering
-    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/charge_loss_550_thick.png}
+    \includegraphics[width=\textwidth,height=9cm,keepaspectratio=true]{Figures/charge_loss_550_thick.png}
     \caption{
     Diagonal cut on identified carbon isotopes along the Gaussian 3.5 $\sigma$ cut with borders. All hits above the diagonal line are counted as carbon isotopes. Histogram from thick target run, 550 AMeV beam energy.
      }
@@ -255,7 +283,15 @@ The results from the measurement are summarized in Fig.~\ref{fig:cccs_gaus_diff_
 \begin{figure}[htpb]
     \centering
     %\includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/cccs_various_sections_2dgauss_border.png}
-    \includegraphics[width=\textwidth,height=12cm,keepaspectratio=true]{Figures/twin_music_cccs_not_all_anodes.pdf}
+    %\includegraphics[width=\textwidth,height=12cm,keepaspectratio=true]{Figures/twin_music_cccs_not_all_anodes.pdf}
+    \begin{subfigure}{.78\textwidth}
+    \centering
+    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/select_anodes_a_b.png}
+    \end{subfigure}
+    \begin{subfigure}{.78\textwidth}
+    \centering
+    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/select_anodes_c_d.png}
+    \end{subfigure}
     \caption{
    	Measurement of charge changing cross sections using different anode sections to make the two dimensional Gaussian fit on the identified carbon isotopes. Red: using all 16 anodes. Blue: the various combinations. 
      }
@@ -402,18 +438,17 @@ While a time-based selection algorithm for multi-hit anodes was used in both the
 
 \section{Dead Time Uncertainties in TWIN MUSIC}\label{app:twin_uncert}
 
-\begin{figure}[ht]
+\begin{figure}[ht!]
     \centering
-    \begin{subfigure}[t]{0.45\textwidth}
+    \begin{subfigure}[t]{0.65\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/rate_400_thick.png}
+        \includegraphics[width=\textwidth]{Figures/rate_400_thick_xl.png}
         \caption{MWPC1 $x$-$y$ distribution for events without any signal in TWIN MUSIC. The red rectangle marks the beam spot within the active area of TWIN MUSIC.}
         \label{sfig:mw1xy_zero_twin}
-    \end{subfigure}
-    \qquad
-    \begin{subfigure}[t]{0.45\textwidth}
+    \end{subfigure}\vspace{1em}
+    \begin{subfigure}[t]{0.65\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/zero_charge_twim_active_area.png}
+        \includegraphics[width=\textwidth]{Figures/zero_charge_twim_active_area_xl.png}
         \caption{Rate of events without any signal in the TWIN MUSIC active area, normalized to the number of incoming ions $N_1$.}
         \label{sfig:rate_dead_twin_active}
     \end{subfigure}
