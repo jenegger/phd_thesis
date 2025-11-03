@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.24)  30 OCT 2025 15:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.24)  3 NOV 2025 17:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1213,22 +1213,6 @@ File: Figures/neutron_skin_vs_L.png Graphic file (type png)
 Package pdftex.def Info: Figures/neutron_skin_vs_L.png  used on input line 70.
 (pdftex.def)             Requested size: 383.65738pt x 256.0732pt.
 
-Package caption Warning: \label without proper reference on input line 103.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:sub_nrem_vs_a' on page 5 undefined on input line 
-74.
-
-
-Package caption Warning: \label without proper reference on input line 114.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:sub_thickness_vs_l' on page 5 undefined on input 
-line 74.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 67--90
 
  []
@@ -1264,38 +1248,22 @@ l.90
 <Figures/n_rem_cs_vs_a.png, id=563, 1177.39874pt x 864.22874pt>
 File: Figures/n_rem_cs_vs_a.png Graphic file (type png)
 <use Figures/n_rem_cs_vs_a.png>
-Package pdftex.def Info: Figures/n_rem_cs_vs_a.png  used on input line 102.
+Package pdftex.def Info: Figures/n_rem_cs_vs_a.png  used on input line 104.
 (pdftex.def)             Requested size: 310.50357pt x 227.9118pt.
 <Figures/overview_thickness_L.png, id=564, 955.57pt x 998.73125pt>
 File: Figures/overview_thickness_L.png Graphic file (type png)
 <use Figures/overview_thickness_L.png>
 Package pdftex.def Info: Figures/overview_thickness_L.png  used on input line 1
-13.
+17.
 (pdftex.def)             Requested size: 266.14978pt x 278.16461pt.
 
 
-LaTeX Warning: Float too large for page by 16.91455pt on input line 118.
+LaTeX Warning: Float too large for page by 14.91455pt on input line 122.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--125
+Underfull \hbox (badness 10000) in paragraph at lines 128--129
 
  []
-
-
-Package caption Warning: \label without proper reference on input line 103.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:sub_nrem_vs_a' on page 7 undefined on input line 
-126.
-
-
-Package caption Warning: \label without proper reference on input line 114.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:sub_thickness_vs_l' on page 7 undefined on input 
-line 126.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1309,7 +1277,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.7}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.128 \clearpage
+l.132 \clearpage
                  [7]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1323,7 +1291,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.8}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.128 \clearpage
+l.132 \clearpage
                  [8 <./Figures/n_rem_cs_vs_a.png> <./Figures/overview_thickness
 _L.png>]) (./../writings/reaction_models.tex
 Overfull \hbox (0.73358pt too wide) in paragraph at lines 1--1
@@ -4305,19 +4273,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [188] (./main.aux (./Abstract.aux) (./Abstract_de.aux))
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41CBAEE1EBBED99B8BD6A373DBD0C1A;16896.
  ) 
 Here is how much of TeX's memory you used:
- 25137 strings out of 480121
- 498187 string characters out of 5892160
- 796482 words of memory out of 5000000
- 41884 multiletter control sequences out of 15000+600000
+ 25141 strings out of 480121
+ 498299 string characters out of 5892160
+ 797579 words of memory out of 5000000
+ 41888 multiletter control sequences out of 15000+600000
  502092 words of font info for 113 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  61i,22n,75p,1726b,1022s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -4371,9 +4336,9 @@ ve/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/f
 onts/type1/public/tex-gyre/qhvr.pfb></usr/share/texmf/fonts/type1/public/tex-gy
 re/qtmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on main.pdf (199 pages, 34849175 bytes).
+Output written on main.pdf (199 pages, 34848819 bytes).
 PDF statistics:
- 3965 PDF objects out of 4296 (max. 8388607)
+ 3964 PDF objects out of 4296 (max. 8388607)
  2459 compressed objects within 25 object streams
  711 named destinations out of 1000 (max. 500000)
  1267 words of extra memory for PDF output out of 10000 (max. 10000000)
