@@ -234,13 +234,14 @@ thick & 1124243{\footnotesize(15.467\%)} & 801157{\footnotesize(15.886\%)} & 925
 \label{tab:overview_nr_cccs}
 \end{table}
 \subsubsection{Carbon Identification}\label{subsec:carbon_id}
-The identification of carbon isotopes in TWIN MUSIC is done by reconstructing fragments with charge Z = 6 from 2D plots where coincident mean reconstructed charge values for different anode combinations are plotted. Since the TWIN MUSIC is multi-hit capable various strategies were developed to deal with multi-hit events, i.e. when having anodes with multiple hits, decide which hit originates from the final state products from the reaction and which from background and noise. It is important to emphasize that these multi-hit events are not associated with pile-up phenomena, as such events are effectively identified due to the longer shaping time of the R3B MUSIC detector and are already excluded by the stringent charge selection applied in the R3B MUSIC data preprocessing.\newline
-The default strategy is to use the time information for single hit selection in multi-hit anodes. It has to be remarked that for the S444 experiment the TWIN MUSIC was read out by two independent MDPP modules~\cite{MDPP-16}. The signals from the first reference anode and the first eight upstream anodes were sent to module 1, the ones from the last eight downstream anodes and the second reference anode were forwarded to module 2. For the first eight upstream anodes the drift time is calculated by subtracting the hit time in each anode by the reference time from the first reference anode and for the last eight downstream anodes accordingly the second reference anode was used.\newline
-The time based selection algorithm for multi-hit anodes works as follows:\newline
+The most important requirement for measuring absolute cross sections is a clear separation of the unreacted beam from heavy fragments originating from any reaction in the target or other parts of the setup.\\
+The identification of carbon isotopes in TWIN MUSIC is done by a multi-sampling analysis within the segmented detector. This means that the energy loss pattern in one subset of segments must coincide with the pattern in another subset. Since the TWIN MUSIC is multi-hit capable various strategies were developed to deal with multi-hit events, i.e. when having anodes with multiple hits, decide which hit originates from the final state products of the reaction and which from background or noise. It is important to emphasize that these multi-hit events are not associated with pile-up phenomena, as such events are effectively identified due to the longer shaping time of the R3B MUSIC detector and are already excluded by the stringent charge selection applied in the R3B MUSIC data preprocessing.\newline
+The default strategy is to use the time information for single hit selection in multiple hit anodes. It has to be remarked that for the S444 experiment the TWIN MUSIC was read out by two independent MDPP modules~\cite{MDPP-16}. The signals from the first reference anode and the first eight upstream anodes were sent to module 1, the ones from the last eight downstream anodes and the second reference anode were forwarded to module 2. For the first eight upstream anodes the drift time is calculated by subtracting the hit time in each anode by the reference time from the first reference anode and for the last eight downstream anodes accordingly the second reference anode was used.\newline
+The time based selection algorithm for multiple hit anodes works iteratively:\newline
 \begin{enumerate}
 \itemsep0em
-\item Get the mean drift time for the eight upstream anodes($t_{mean\_up}$) and the eight downstream anodes($t_{mean\_down}$)\footnote{For the case all eight downstream anodes have multiple hits, set $t_{mean\_down} = t_{mean\_up}$ and vice versa}. Anodes with multiple hits do not contribute to this calculation.
-\item If there are anodes with multiple hits compare the hit time with the according mean drift time ($t_{mean\_up}$ for any of the eight upstream anodes, $t_{mean\_down}$ for any of the eight downstream anodes). Calculate the absolute difference between mean drift time and each hit time:
+\item Get a good estimate of the mean drift time for the eight upstream anodes($t_{mean\_up}$) and the eight downstream anodes($t_{mean\_down}$)\footnote{For the case all eight downstream anodes have multiple hits, set $t_{mean\_down} = t_{mean\_up}$ and vice versa}, without considering anodes with multiple hits, typically originating from electronics noise.
+\item To determine the real hit for anodes with multiple hits compare the hit time with the according mean drift time ($t_{mean\_up}$ for any of the eight upstream anodes, $t_{mean\_down}$ for any of the eight downstream anodes). Calculate the absolute difference between mean drift time and each hit time:
 \begin{equation}
 \Delta t = | \bar{t} - {t^i}_{drift}|; \, \text{i = anodeID (1-16) with} \quad \bar{t} = 
 \begin{cases}
@@ -248,7 +249,7 @@ t_{mean\_up} & \text{for i} \leq 8\\
 t_{mean\_down} & \text{for i} \geq 9 \\
 \end{cases}
 \end{equation}
-\item For each anodes with multiple hits select the hit with lowest drift time difference to the mean drift time.
+For each anodes with multiple hits select the hit with lowest drift time difference to the mean drift time.
 \end{enumerate}
 \begin{figure}[htpb]
     \centering
@@ -268,9 +269,9 @@ f(x) = A e^{-\frac{1}{2}((\frac{x - \bar{x}}{\sigma_{x}})^2 +(\frac{y - \bar{y}}
 \end{equation}
 where $x$ is the mean re-scaled energy loss of the first upstream anodes and $y$ the according eight downstream anodes. The number of survived carbon isotopes is given by the integral of events within the 2D Gaussian fit. Since the anodes were read out by two independent MDPP modules with slightly different thresholds also events along the histogram axes with no hit entry in either the upstream anodes or downstream anodes are analyzed. For those events a one dimensional Gaussian cut is applied using the parameters from Eq.~\ref{eq:gauss_fit} (see horizontal and vertical bars in Fig.~\ref{fig:twin_2d_gaus_cut}).\newline
 A preliminary estimate of the charge changing cross section, neglecting the influence of the geometrical acceptance of the TWIN MUSIC detector, can be derived from the raw event numbers using Eq.~\ref{eq:corr_cross}:
-\[
+\begin{equation}
     \sigma = -\frac{1}{N_t} \ln\left(\frac{N_1^E}{N_2^E} \cdot \frac{N_2}{N_1}\right),
-\]
+\end{equation}
 where the number of surviving carbon isotopes, $N_2/N_2^E$, for the target and corresponding empty-target runs is obtained via the two-dimensional Gaussian fit shown in Fig.~\ref{fig:twin_2d_gaus_cut}. The preliminary results are presented in Fig.~\ref{fig:cccs_gaus_with_errors}, where the fit range in the 2D distribution was fixed to $3.5\sigma$.
 
 \begin{figure}[htpb]
@@ -285,11 +286,11 @@ where the number of surviving carbon isotopes, $N_2/N_2^E$, for the target and c
 
 To get the optimal fit range on the two dimensional Gaussian fit on the reconstructed charges of the upstream anodes versus downstream anodes the charge changing cross section for all targets and all energies was systematically measured for $\sigma$-fit ranges between one and five $\sigma$, see Fig.~\ref{fig:cccs_vs_sigma_cut}. In the region around 3.5$\sigma$ the variation of the cross section is minimal.\newline
 
-As shown in Fig.~\ref{fig:cccs_vs_sigma_cut}, the extracted cross sections decrease with increasing beam energy, particularly for large $\sigma$ fit ranges. This behaviour is primarily attributed to the change in energy deposition characteristics at higher beam energies. The energy resolution of the TWIN MUSIC detector is  limited by statistical (Poissonian) fluctuations in ionisation, which scale as:
+As shown in Fig.~\ref{fig:cccs_vs_sigma_cut}, the extracted cross sections decrease with increasing beam energy, particularly for large fit ranges. This behaviour is primarily attributed to the change in energy deposition characteristics at higher beam energies. The energy resolution of the TWIN MUSIC detector is  limited by statistical (Poissonian) fluctuations in ionisation, which scale as:
 \begin{equation*}
 \frac{\Delta E}{E} \propto \frac{1}{\sqrt{E}}
 \end{equation*}
-However, in the beam energy range considered here ($400 - 800$~AMeV), the energy deposited in the detector follows an approximate $\frac{1}{\beta^2}$ dependence\footnote{A detailed description of the energy loss of charged particles via ionisation is provided in Ref.~\cite{kolanoski2016teilchendetektoren}, Section 3.2.}. As a result the deposited energy decreases with increasing beam energy, leading to a degradation of the energy resolution at higher beam energies. This has as consequence that at higher beam energies and for wide  $\sigma$ fit ranges a non-negligible fraction of Z = 5 fragments may be incorrectly identified as carbon isotopes (Z = 6), due to the diminished peak separation in the energy-loss spectra. This resulting overlap leads then to a systematic overestimation of survived carbon isotopes and thus to an underestimation of the charge changing cross section.\\
+However, in the beam energy range considered here ($400 - 800$~AMeV), the energy deposited in the detector follows an approximate $\frac{1}{\beta^2}$ dependence\footnote{A detailed description of the energy loss of charged particles via ionisation is provided in Ref.~\cite{kolanoski2016teilchendetektoren}, Section 3.2.}. As a result the deposited energy decreases with increasing beam energy, leading to a degradation of the energy resolution at higher beam energies. This has as consequence that at higher beam energies and for wide fit ranges a non-negligible fraction of Z = 5 fragments may be incorrectly identified as carbon isotopes (Z = 6), due to the diminished peak separation in the energy-loss spectra. This resulting overlap leads then to a systematic overestimation of survived carbon isotopes and thus to an underestimation of the charge changing cross section. This is clearly visible in Fig.~\ref{fig:cccs_vs_sigma_cut} for fit ranges larger than 4.5.\\
 
 
 \begin{figure}[htpb]
@@ -302,7 +303,7 @@ However, in the beam energy range considered here ($400 - 800$~AMeV), the energy
     \label{fig:cccs_vs_sigma_cut}
 \end{figure}
 
-For the sake of completeness, Appendix~\ref{app:twin_alternative} presents alternative methods for hit selection in multi-hit events in the TWIN MUSIC detector -- such as selecting the hit with the highest energy deposition in multi-hit anodes -- as well as different strategies for defining the charge selection cuts around $Z = 6$. Nevertheless, the approach presented in this section has proven to be the most stable and robust for the present analysis.
+For the sake of completeness, Appendix~\ref{app:twin_alternative} presents alternative methods for hit selection in multi-hit events in the TWIN MUSIC detector -- such as selecting the hit with the highest energy deposition in multi-hit anodes -- as well as different strategies for defining the charge selection cuts around $Z = 6$. Nevertheless, the approach presented in this section has proven to be the most stable and robust  and was used for the present analysis.
 
 \clearpage
 
