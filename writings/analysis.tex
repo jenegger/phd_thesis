@@ -267,25 +267,39 @@ After selecting the appropriate hit for both single- and multi-hit anodes, the m
 f(x) = A e^{-\frac{1}{2}((\frac{x - \bar{x}}{\sigma_{x}})^2 +(\frac{y - \bar{y}}{\sigma_{y}})^2)}
 \label{eq:gauss_fit}
 \end{equation}
-where $x$ is the mean re-scaled energy loss of the first upstream anodes and $y$ the according eight downstream anodes. The number of survived carbon isotopes is given by the integral of events within the 2D Gaussian fit. Since the anodes were read out by two independent MDPP modules with slightly different thresholds also events along the histogram axes with no hit entry in either the upstream anodes or downstream anodes are analyzed. For those events a one dimensional Gaussian cut is applied using the parameters from Eq.~\ref{eq:gauss_fit} (see horizontal and vertical bars in Fig.~\ref{fig:twin_2d_gaus_cut}).\newline
-A preliminary estimate of the charge changing cross section, neglecting the influence of the geometrical acceptance of the TWIN MUSIC detector, can be derived from the raw event numbers using Eq.~\ref{eq:corr_cross}:
-\begin{equation}
+where $x$ is the mean re-scaled energy loss of the first upstream anodes and $y$ the according eight downstream anodes.\\ 
+The number of surviving carbon isotopes -- for both empty and target runs -- is determined by as the integral of events within the ellipsoidal contour defined by the 2D Gaussian fit in the ($\overline{Z_{\text{up}}}$,$\overline{Z_{\text{down}}}$) plane (see Fig.~\ref{fig:twin_2d_gaus_cut}).
+Because the upstream and downstream anodes were read out by two independent MDPP modules with slightly different thresholds, some events appear only along one of the two histogram axes (i.e. events for which only the upstream or only the downstream anode produced a registered charge signal). To ensure that these valid carbon events are not lost, the selection is extended as follows:
+\begin{itemize}
+\item If both upstream and downstream anodes record a hit, the event is counted as a surviving carbon isotope when ($\overline{Z_{\text{up}}}$,$\overline{Z_{\text{down}}}$) lies inside the 2D Gaussian ellipsoid.
+\item If only one of the two anodes records a hit, the event is retained provided that its single recorded charge value lies within the corresponding 1D Gaussian projection of the fitted 2D distribution.
+\end{itemize}
+A raw estimate of the charge changing cross section, neglecting the influence of the geometrical acceptance of the TWIN MUSIC detector, can be derived from the raw event numbers using Eq.~\ref{eq:corr_cross}:
+\begin{equation}\label{eq:cs_cc_show}
     \sigma = -\frac{1}{N_t} \ln\left(\frac{N_1^E}{N_2^E} \cdot \frac{N_2}{N_1}\right),
 \end{equation}
-where the number of surviving carbon isotopes, $N_2/N_2^E$, for the target and corresponding empty-target runs is obtained via the two-dimensional Gaussian fit shown in Fig.~\ref{fig:twin_2d_gaus_cut}. The preliminary results are presented in Fig.~\ref{fig:cccs_gaus_with_errors}, where the fit range in the 2D distribution was fixed to $3.5\sigma$.
-
+where $N_2$ and $N_2^E$ are the numbers of surviving carbon isotopes determined for the target and corresponding empty-target measurement, respectively.\\
+Preliminary results are shown in Fig.~\ref{fig:cccs_gaus_with_errors}, where the fit range of the two-dimensional Gaussian was fixed to 3.5 standard deviations (SD) of the Gaussian fit. To determine an optimal and stable fit region, the charge-changing cross section was evaluated systematically for fit ranges between 1 and 5 SD for all beam energies and targets (Fig.~\ref{fig:cccs_vs_sigma_cut}). A broad plateau with minimal dependence of the extracted cross section is observed around 3.5 SD, which is therefore chosen as the standard selection range throughout the analysis.
+%The number of survived carbon isotopes is given by the integral of events within the 2D Gaussian fit. Since the anodes were read out by two independent MDPP modules with slightly different thresholds also events along the histogram axes with no hit entry in either the upstream anodes or downstream anodes are analyzed. For those events a one dimensional Gaussian cut is applied using the parameters from Eq.~\ref{eq:gauss_fit} (see horizontal and vertical bars in Fig.~\ref{fig:twin_2d_gaus_cut}).\newline
+%A preliminary estimate of the charge changing cross section, neglecting the influence of the geometrical acceptance of the TWIN MUSIC detector, can be derived from the raw event numbers using Eq.~\ref{eq:corr_cross}:
+%\begin{equation}
+%    \sigma = -\frac{1}{N_t} \ln\left(\frac{N_1^E}{N_2^E} \cdot \frac{N_2}{N_1}\right),
+%\end{equation}
+%where the number of surviving carbon isotopes, $N_2/N_2^E$, for the target and corresponding empty-target runs is obtained via the two-dimensional Gaussian fit shown in Fig.~\ref{fig:twin_2d_gaus_cut}. The preliminary results are presented in Fig.~\ref{fig:cccs_gaus_with_errors}, where the fit range in the 2D distribution was fixed to $3.5\sigma$.
+%
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/charge_changing_cross_sec_prelim_no_geo_corr.png}
     \caption{
-    Preliminary estimate of charge-changing cross sections obtained by applying a two-dimensional Gaussian fit to the correlation plot of the reconstructed mean charge from the eight upstream anodes ($\overline{Z_{\text{up}}}$) versus the eight downstream anodes ($\overline{Z_{\text{down}}}$) and considering the borders as in Fig.~\ref{fig:twin_2d_gaus_cut}. Only statistical errors are shown.
+    %Raw estimate of charge-changing cross sections obtained by applying a two-dimensional Gaussian fit to the correlation plot of the reconstructed mean charge from the eight upstream anodes ($\overline{Z_{\text{up}}}$) versus the eight downstream anodes ($\overline{Z_{\text{down}}}$) and considering the borders as in Fig.~\ref{fig:twin_2d_gaus_cut}. Only statistical errors are shown.
+    Raw estimate of the charge-changing cross sections. The number of surviving carbon ions is obtained from the correlation distribution of the reconstructed mean charge measured in the upstream and downstream anodes, by integrating all events within the two-dimensional Gaussian fit contour. Events for which only one of the anode planes produced a valid signal are included when their single charge value falls within the corresponding one-dimensional Gaussian projection of the same fit. The resulting surviving carbon isotope yields for target and empty-target runs are used to derive the raw charge-changing cross section, see Eq.~\ref{eq:cs_cc_show}. Only statistical uncertainties are displayed.
     }
     \label{fig:cccs_gaus_with_errors}
 \end{figure}
 
 
-To get the optimal fit range on the two dimensional Gaussian fit on the reconstructed charges of the upstream anodes versus downstream anodes the charge changing cross section for all targets and all energies was systematically measured for $\sigma$-fit ranges between one and five $\sigma$, see Fig.~\ref{fig:cccs_vs_sigma_cut}. In the region around 3.5$\sigma$ the variation of the cross section is minimal.\newline
-
+%To get the optimal fit range on the two dimensional Gaussian fit on the reconstructed charges of the upstream anodes versus downstream anodes the charge changing cross section for all targets and all energies was systematically measured for $\sigma$-fit ranges between one and five $\sigma$, see Fig.~\ref{fig:cccs_vs_sigma_cut}. In the region around 3.5$\sigma$ the variation of the cross section is minimal.\newline
+%
 As shown in Fig.~\ref{fig:cccs_vs_sigma_cut}, the extracted cross sections decrease with increasing beam energy, particularly for large fit ranges. This behaviour is primarily attributed to the change in energy deposition characteristics at higher beam energies. The energy resolution of the TWIN MUSIC detector is  limited by statistical (Poissonian) fluctuations in ionisation, which scale as:
 \begin{equation*}
 \frac{\Delta E}{E} \propto \frac{1}{\sqrt{E}}
@@ -298,7 +312,7 @@ However, in the beam energy range considered here ($400 - 800$~AMeV), the energy
     %\includegraphics[width=\textwidth,keepaspectratio=true]{Figures/cccs_vs_sigma_cut.pdf} %%old version
     \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/cccs_vs_sigma_cut.png}
     \caption{
-    Preliminary estimate of the charge changing cross sections according to the $\sigma$ fit range applied on the Fig.~\ref{fig:twin_2d_gaus_cut} (with borders) for the different target thicknesses and beam energies. The observed decrease in cross section values with increasing fit range is attributed to the energy dependence of the ionization energy loss, described by the Bethe-Bloch formula. At higher fit ranges, the contribution from tails of the energy loss distribution of lighter fragments (e.g., Z = 5) becomes increasingly included in the integration window for heavier fragments (e.g., Z = 6), leading to an underestimation of the charge-changing cross section. This effect becomes more pronounced at higher beam energies, where the relative resolution decreases due to the flattening of the Bethe-Bloch curve, thereby enhancing the probability of misidentification between adjacent charge states.
+    Estimate of the charge changing cross sections depending on the fit range applied on the Fig.~\ref{fig:twin_2d_gaus_cut} for the different target thicknesses and beam energies. The observed decrease in cross section values with increasing fit range is attributed to the energy dependence of the ionization energy loss. At higher fit ranges, the contribution from tails of the energy loss distribution of lighter fragments (e.g., Z = 5) becomes increasingly included in the integration window for heavier fragments (e.g., Z = 6), leading to an underestimation of the charge-changing cross section. This effect becomes more pronounced at higher beam energies, where the relative resolution decreases due to the flattening of the Bethe-Bloch curve, thereby enhancing the probability of misidentification between adjacent charge states.
      }
     \label{fig:cccs_vs_sigma_cut}
 \end{figure}
