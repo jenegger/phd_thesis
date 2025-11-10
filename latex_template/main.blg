@@ -1,5 +1,5 @@
-This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
-Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: Abstract.aux
 A level-1 auxiliary file: Abstract_de.aux
@@ -39,40 +39,39 @@ Warning--empty journal in horvat2021evolution
 Warning--empty author in clas2018probing
 Warning--empty booktitle in fair_reinmann
 Warning--empty journal in hartigevolution
-Warning--empty journal in serrano2013white
 Warning--empty journal in bassani2005encyclopedia
 Warning--empty journal in popescu2021review
 Warning--can't use both volume and number fields in bertini2011r3broot
 You've used 148 entries,
             1876 wiz_defined-function locations,
-            1288 strings with 32128 characters,
-and the built_in function-call counts, 40485 in all, are:
+            1288 strings with 32027 characters,
+and the built_in function-call counts, 40384 in all, are:
 = -- 3843
-> -- 2083
+> -- 2064
 < -- 0
-+ -- 761
-- -- 613
-* -- 2831
-:= -- 5872
-add.period$ -- 180
++ -- 755
+- -- 607
+* -- 2812
+:= -- 5849
+add.period$ -- 181
 call.type$ -- 148
-change.case$ -- 129
+change.case$ -- 128
 chr.to.int$ -- 0
-cite$ -- 156
-duplicate$ -- 2144
-empty$ -- 3462
-format.name$ -- 613
-if$ -- 9866
+cite$ -- 155
+duplicate$ -- 2139
+empty$ -- 3460
+format.name$ -- 607
+if$ -- 9850
 int.to.chr$ -- 0
 int.to.str$ -- 148
-missing$ -- 139
-newline$ -- 479
+missing$ -- 138
+newline$ -- 480
 num.names$ -- 140
 pop$ -- 473
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1558
+skip$ -- 1560
 stack$ -- 0
 substring$ -- 1879
 swap$ -- 990
@@ -80,8 +79,8 @@ text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 8
+warning$ -- 7
 while$ -- 333
 width$ -- 151
-write$ -- 1485
+write$ -- 1486
 (There were 7 error messages)
