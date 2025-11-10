@@ -1,5 +1,5 @@
-This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: Abstract.aux
 A level-1 auxiliary file: Abstract_de.aux
@@ -43,36 +43,36 @@ Warning--empty journal in serrano2013white
 Warning--empty journal in bassani2005encyclopedia
 Warning--empty journal in popescu2021review
 Warning--can't use both volume and number fields in bertini2011r3broot
-You've used 150 entries,
+You've used 148 entries,
             1876 wiz_defined-function locations,
-            1299 strings with 32410 characters,
-and the built_in function-call counts, 40769 in all, are:
-= -- 3867
-> -- 2098
+            1288 strings with 32128 characters,
+and the built_in function-call counts, 40485 in all, are:
+= -- 3843
+> -- 2083
 < -- 0
-+ -- 767
-- -- 617
-* -- 2844
-:= -- 5914
-add.period$ -- 183
-call.type$ -- 150
-change.case$ -- 131
++ -- 761
+- -- 613
+* -- 2831
+:= -- 5872
+add.period$ -- 180
+call.type$ -- 148
+change.case$ -- 129
 chr.to.int$ -- 0
-cite$ -- 158
-duplicate$ -- 2152
-empty$ -- 3498
-format.name$ -- 617
-if$ -- 9937
+cite$ -- 156
+duplicate$ -- 2144
+empty$ -- 3462
+format.name$ -- 613
+if$ -- 9866
 int.to.chr$ -- 0
-int.to.str$ -- 150
+int.to.str$ -- 148
 missing$ -- 139
-newline$ -- 486
-num.names$ -- 142
-pop$ -- 487
+newline$ -- 479
+num.names$ -- 140
+pop$ -- 473
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1565
+skip$ -- 1558
 stack$ -- 0
 substring$ -- 1879
 swap$ -- 990
@@ -81,7 +81,7 @@ text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 8
-while$ -- 335
-width$ -- 153
-write$ -- 1501
+while$ -- 333
+width$ -- 151
+write$ -- 1485
 (There were 7 error messages)
