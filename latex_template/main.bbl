@@ -591,14 +591,16 @@ E.~Bayer and M.~Traxler, ``{Development of a high-resolution (< 10 ps RMS)
 L.~Chulkov, 2024.
 \newblock private communication.
 
+\bibitem{NNDC_11B_level_scheme_2025}
+{National Nuclear Data Center (NNDC)}, ``Level scheme of {$^{11}$B}
+  (nudat\,3).''
+  \url{https://www.nndc.bnl.gov/nudat3/NuDatBandPlotServlet?nucleus=11B&unc=NDS},
+  2025.
+\newblock Accessed: 2025-11-11.
+
 \bibitem{nndc11B}
 {National Nuclear Data Center (NNDC)}, ``{Level Scheme of $^{11}$B}.''
   \url{https://www.nndc.bnl.gov/ensnds/11/B/adopted.pdf}, 2025.
-
-\bibitem{van1988weak}
-G.~Van Der~Steenhoven, H.~Blok, E.~Jans, L.~Lapik{\'a}s, E.~Quint, and P.~D.~W.
-  Huberts, ``{Weak transitions in the quasi-elastic reaction 12C (e,ép)
-  11B},'' {\em Nuclear Physics A}, vol.~484, no.~3-4, pp.~445--475, 1988.
 
 \bibitem{krane1987}
 K.~S. Krane, {\em {Introductory Nuclear Physics}}.

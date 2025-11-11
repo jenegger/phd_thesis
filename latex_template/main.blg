@@ -44,43 +44,43 @@ Warning--empty journal in popescu2021review
 Warning--can't use both volume and number fields in bertini2011r3broot
 You've used 148 entries,
             1876 wiz_defined-function locations,
-            1288 strings with 32027 characters,
-and the built_in function-call counts, 40384 in all, are:
-= -- 3843
-> -- 2064
+            1288 strings with 32023 characters,
+and the built_in function-call counts, 40136 in all, are:
+= -- 3819
+> -- 2048
 < -- 0
-+ -- 755
-- -- 607
-* -- 2812
-:= -- 5849
-add.period$ -- 181
++ -- 750
+- -- 602
+* -- 2785
+:= -- 5814
+add.period$ -- 182
 call.type$ -- 148
 change.case$ -- 128
 chr.to.int$ -- 0
 cite$ -- 155
-duplicate$ -- 2139
-empty$ -- 3460
-format.name$ -- 607
-if$ -- 9850
+duplicate$ -- 2126
+empty$ -- 3448
+format.name$ -- 602
+if$ -- 9794
 int.to.chr$ -- 0
 int.to.str$ -- 148
-missing$ -- 138
-newline$ -- 480
+missing$ -- 137
+newline$ -- 481
 num.names$ -- 140
-pop$ -- 473
+pop$ -- 478
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1560
+skip$ -- 1549
 stack$ -- 0
-substring$ -- 1879
-swap$ -- 990
+substring$ -- 1847
+swap$ -- 981
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 7
-while$ -- 333
+while$ -- 330
 width$ -- 151
-write$ -- 1486
+write$ -- 1485
 (There were 7 error messages)

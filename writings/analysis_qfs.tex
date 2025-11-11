@@ -12,7 +12,7 @@ A fundamental prerequisite is the proper calibration of the relevant detectors. 
 This subsection therefore focuses on the calibration procedure of the SOFIA ToF Wall and describes in detail the reconstruction algorithm for the reaction fragment's flight path.
 
 \subsubsection{Flight-Path Reconstruction}\label{subsec:flightpath_reco}
-For accurate flight-path reconstruction, all available tracking detectors -- specifically, the MWPCs, see also Section~\ref{sec_mwpcs} , used in the S444 experiment -- located between the entrance of Cave C and the ToF Wall are utilized.\\
+For accurate flightpath reconstruction, all available tracking detectors -- specifically, the MWPCs, see also Section~\ref{sec_mwpcs} , used in the S444 experiment -- located between the entrance of Cave C and the ToF Wall are utilized.\\
 In this analysis, all angles are defined within the $z$-$x$ plane, where the $z$-axis corresponds to the beam direction. Deflections in the $y$-direction are not taken into account. Due to a lack of operational tracking detectors the tracking of the incoming beam onto the target did not allow for a sufficient precise reconstruction of the vertex in the 3 $\times$ 3 cm target. The scattering angle $\theta_{in}$ between the target and the entrance of GLAD is determined from the measured particle positions in MWPC1 and MWPC2. Since only one tracking detector downstream to GLAD, the MWPC3, was installed for the S444 experiment no angle of the deflected fragment/beam $\theta_{out}$ could be directly extracted. Herefore an advanced tracking algorithm was developed, motivated from Ref.~\cite{bertini2013study} (Sec. 3.4), the following steps describe the logics chain: 
 \begin{itemize}
 \item Measure the scattering angle after target, $\theta_{in}$, and draw an extended line from the target position through the effective magnetic field of GLAD.  
@@ -28,7 +28,7 @@ In this analysis, all angles are defined within the $z$-$x$ plane, where the $z$
 		\centering
         %\includegraphics[width=\textwidth]{Figures/kick_point_algorithm.png}
         \includegraphics[width=\textwidth]{Figures/best_flightpath_reco.png}
-        \caption{Flightpath reconstruction with "Leff" being the effective active width of the magnetic field of GLAD}
+        \caption{Flightpath reconstruction with $L_{eff}$ being the effective active width of the magnetic field of GLAD}
         \label{fig:sub1_reco_path}
     \end{subfigure}
     %\hfill % Optional: adds horizontal space between the figures
@@ -202,9 +202,9 @@ The information of azimuthal and polar angles of the two protons can be merged i
 	\hspace{2em}
 	\begin{subfigure}[t]{.75\linewidth}
     \includegraphics[width=\textwidth]{Figures/opang_sim.png}
-	\caption{Simulated opening angle $\theta_{p2p}$ based on QFS kinematical code by Leonid Chulkov, GSI.}
+	\caption{Simulated opening angle $\theta_{p2p}$ based on QFS kinematical code by Leonid Chulkov, GSI~\cite{chulkov_private_2024}.}
 	\end{subfigure}
-    \caption{Reconstruction of the opening angle $\theta_{p2p}$ as in Eq.~\ref{eq:opang} from the two clusters with highest energy in CALIFA }
+    \caption{Reconstruction of the opening angle $\theta_{p2p}$ as in Eq.~\ref{eq:opang} from the two clusters with highest energy in CALIFA. (a) Experimental data, (b) simulation of the ideal situation.}
     \label{fig:opang}
 \end{figure}
 
@@ -261,8 +261,7 @@ More importantly, no inner target tracking detectors were available, and thus a 
 \subsubsection{Correlations between $^{11}B$ Fragment and the reconstructed missing momentum}
 In Subsection \ref{sec:p_miss}, the momentum of the inner proton, $\mathbf{p_{miss}}$, was reconstructed in the calorimeter only from both protons emitted in the (p,2p) reaction. This reconstructed momentum can be correlated with the momentum of the $^{11}B$ fragment in the rest frame of the $^{12}C$ nucleus in this two-body kinematics.\newline
 Since the total momentum in the rest frame must be zero by definition, the momentum vectors of the inner proton and the $^{11}B$ fragment should be pointing back to back. Consequently, the cosine of the angle $\gamma$ between these two constituents should be approximately -1, which is confirmed by the experimental data, as shown in Fig.~\ref{fig:cos_gamma}.\newline
-
-Furthermore, Fig.~\ref{fig:x_corr_p_miss_11b} and \ref{fig:y_corr_p_miss_11b} illustrate the correlation between the $x$- and $y$-components of $\mathbf{p_{miss}}$ and the corresponding components of the $^{11}B$ fragment. A strong anti-correlation is observed in both cases. While the correlation in the $y$-component is relatively sharp, the $x$-component exhibits a more blurred distribution.\newline
+Furthermore, Fig.~\ref{fig:x_corr_p_miss_11b} and \ref{fig:y_corr_p_miss_11b} illustrate the correlation between both transverse components of $\mathbf{p_{miss}}$ and the corresponding components of the $^{11}B$ fragment. A strong anti-correlation is observed in both cases. While the correlation in the $y$-component is relatively sharp, the $x$-component exhibits a more blurred distribution.\newline
 
 This effect arises from the geometry-dependent resolution of the sub-detectors:
 \begin{itemize}
@@ -274,7 +273,7 @@ This effect arises from the geometry-dependent resolution of the sub-detectors:
 \begin{figure}[!htb]
     \centering
     % Large subfigure on the left
-    \begin{subfigure}[b]{0.9\textwidth}
+    \begin{subfigure}[b]{0.95\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/cos_angle_2p_11b.png} % Replace with actual image
         \caption{Cosine of the angle $\gamma$ between inner proton and $^{11}B$.}
@@ -284,38 +283,20 @@ This effect arises from the geometry-dependent resolution of the sub-detectors:
     \vspace{0.3cm} % Adjust vertical spacing
 
     % Row for two smaller subfigures
-    \begin{subfigure}[b]{0.39\textwidth}
+    \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/p_x_2p_11b_xl.png} % Replace with actual image
         \caption{$x$-component correlation between inner proton and $^{11}B$.}
         \label{fig:x_corr_p_miss_11b}
     \end{subfigure}
-    \hspace{0.2cm} % Adjust horizontal spacing
-    \begin{subfigure}[b]{0.39\textwidth}
+    \hspace{1em} % Adjust horizontal spacing
+    \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{Figures/p_y_2p_11b_xl.png} % Replace with actual image
         \caption{$y$-component correlation between inner proton and $^{11}B$.}
         \label{fig:y_corr_p_miss_11b}
     \end{subfigure}
 
-    %% Small subfigures stacked on the right
-    %\begin{subfigure}[b]{0.9\textwidth}
-    %    \centering
-    %    \begin{subfigure}[b]{0.9\textwidth}
-    %        \centering
-    %        \includegraphics[width=0.45\textwidth]{Figures/p_x_2p_11b.png} % Replace with actual image
-    %        \caption{x-component correlation between inner proton and $^{11}B$.}
-    %        \label{fig:x_corr_p_miss_11b}
-    %    \end{subfigure}
-    %    \vspace{0.2cm}
-    %    \begin{subfigure}[b]{0.9\textwidth}
-    %        \centering
-    %        \includegraphics[width=0.45\textwidth]{Figures/p_y_2p_11b.png} % Replace with actual image
-    %        \caption{y-component correlation between inner proton and $^{11}B$.}
-    %        \label{fig:y_corr_p_miss_11b}
-    %    \end{subfigure}
-    %\end{subfigure}
-    
     \caption{Correlation plots between inner proton and $^{11}B$ in the $^{12}C$ rest frame.}
     \label{fig:corr_p_miss_11b}
 \end{figure}
@@ -329,9 +310,9 @@ The proton separation energy $S_p$ of $^{12}C$ from the reaction channel $^{12}C
 M_{^{12}C} + \gamma \cdot m_p = E_1^* + E_2^* + (M_{^{11}B} + E_{ex})  + T_{^{11}B^*}
 \end{equation}
 where $E_1^*$ and $E_2^*$ are total energies of the two protons in the $^{12}C$ rest frame, $E_{ex}$ is residual excitation in $^{11}B$ and $T_{^{11}B^*}$ the kinetic energy of the $^{11}B$ in the $^{12}C$ rest frame.\newline
-Using this equation, one can express the total binding energy $B$ of the knocked out nucleon:
+Using this equation, one can express the proton separation energy $S_p$ as:
 \begin{equation}
-B = S_p - E_{ex} = M_{^{12}C} - M_{^{11}B} - E_{ex} - m_p = E_1^* + E_2^* + T_{^{11}B^*} - \gamma \cdot m_p - m_p
+S_p = M_{^{12}C} - M_{^{11}B} - E_{ex} - m_p = E_1^* + E_2^* + T_{^{11}B^*} - \gamma \cdot m_p - m_p
 \end{equation}
 Using Lorentz transformation from lab to 12C rest frame one can obtain for $E_1^*/E_2^*$:
 \begin{align*}
@@ -342,13 +323,12 @@ The kinetic energy of the $^{11}B$ in the $^{12}C$ rest frame can be written as:
 T_{^{11}B^*} &= \frac{p_i^2}{2 \cdot M_{^{11}B}}
 \end{align*}
 with $p_i$ the inner momentum of the proton knocked out of the $^{12}C$ projectile, see Eq.~\ref{eq:miss_mom}.
-By inserting this into the  previous equation, one finally obtains for the binding energy $B$:
+By inserting this into the  previous equation, one finally obtains for the one proton separation energy $S_p$:
 \begin{equation}
-B = (\gamma - 1)\cdot m_p + \gamma \cdot (T_1+T_2) - \beta \cdot \gamma \cdot(p_1*cos(\theta_1) + p_2*cos(\theta_2)) + T_{^{11}B}
+S_p = (\gamma - 1)\cdot m_p + \gamma \cdot (T_1+T_2) - \beta \cdot \gamma \cdot(p_1*cos(\theta_1) + p_2*cos(\theta_2)) + T_{^{11}B}
 \end{equation}\label{eq:sep_energy}
-For $E_{ex} = 0$, i.e. the fragment $^{11}B$ in the ground state, the binding energy $B$ is equal to the one proton separation energy $S_p$\footnote{Since the $^{11}B$ fragment predominantly remains in its ground state -- implying that, in most cases, the outermost protons are removed---the binding energy $B$ and the proton separation energy $S_p$ are used interchangeably, also due to the limited energy resolution.}. \newline
-Since no target-detector tracking system was available for the S444 experiment, the energies as well as the azimuthal ($\varphi$) and polar ($\theta$) angles of the two correlated protons had to be fully reconstructed using the CALIFA calorimeter. The calorimeter provides an energy resolution of $\frac{\Delta E}{E}(@100MeV) \lesssim 1 \%/\sqrt{E[\text{MeV}]}$, along with angular resolutions of approximately  $\Delta \varphi \approx \frac{6^{\circ}}{\sqrt{12}}$, and $\Delta \theta \approx \frac{2^{\circ}}{\sqrt{12}}$.
-The best way to visualize the separation energy $S_p$ is to plot it against the summed energy of the two protons in the $^{12}C$ rest frame as shown in Fig.~\ref{fig:sep_energy}. Two vertical lines are visible. They correspond to the two QFS-reaction types within the $CH_2$ target: the proton within the $^{12}C$ projectile can either scatter on the hydrogen (proton-like) part of on the carbon part of the plastic target. For the first case only the separation energy $S_p$ as derived in Eq.~\ref{eq:sep_energy} is necessary to remove the proton of the projectile within the $^{12}C$ nucleus. In the second case the QFS-reaction is between two protons both bound within a carbon nucleus -- the projectile carbon and the target carbon part. Herefore more energy is needed to free both protons from their nuclear bond. This corresponds to the left vertical line in Fig.~\ref{fig:sep_energy}. It should be noted that the reconstructed one-proton separation energy $S_p$ is shifted with respect to the mean value of $\approx 16 MeV$. For a precise measurement the accurate position of the target and the reaction vertex would be needed, as well as a precise measurement of the kinetic energy of the incoming $^{12}C$ would be required (for the actual measurements the beam energy value was set to $400 AMeV$). 
+Since no target-detector tracking system was available for the S444 experiment, the energies as well as the azimuthal ($\varphi$) and polar ($\theta$) angles of the two correlated protons are reconstructed just with the granularity of the CALIFA calorimeter. The calorimeter provides an energy resolution of $\frac{\Delta E}{E}(@100MeV) \lesssim 1 \%/\sqrt{E[\text{MeV}]}$, along with angular resolutions of approximately  $\Delta \varphi \approx \frac{6^{\circ}}{\sqrt{12}}$, and $\Delta \theta \approx \frac{2^{\circ}}{\sqrt{12}}$.
+The best way to visualize the separation energy $S_p$ is to plot it against the summed energy of the two protons in the $^{12}C$ rest frame as shown in Fig.~\ref{fig:sep_energy}. An indication of two vertical bumps is visible. They correspond to the two QFS-reaction types within the $CH_2$ target: the proton within the $^{12}C$ projectile can either scatter on the hydrogen (proton-like) part of on the carbon part of the plastic target. For the first case only the separation energy $S_p$ as derived in Eq.~\ref{eq:sep_energy} is necessary to remove the proton of the projectile within the $^{12}C$ nucleus. In the second case the QFS-reaction is between two protons both bound within a carbon nucleus -- the projectile carbon and the target carbon part. Herefore more energy is needed to free both protons from their nuclear bond. This corresponds to the left vertical structure in Fig.~\ref{fig:sep_energy}. It should be noted that the reconstructed one-proton separation energy $S_p$ is shifted with respect to the mean value of $\approx 16 MeV$. For a precise measurement the absolute position of the target and the reaction vertex would be needed. 
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/sep_energy_vs_sum_energy.png}
@@ -360,8 +340,7 @@ The best way to visualize the separation energy $S_p$ is to plot it against the 
 
 \subsection{Reconstruction of excited$ ^{11}$B states}
 In order to achieve a complete kinematic reconstruction of the reaction products, the use of the CALIFA detector as a $\gamma$-ray spectrometer in the low-energy regime (down to $E_\gamma \geq 100\,\mathrm{keV}$) is essential. This is particularly relevant for reactions such as $^{12}\mathrm{C}(p,2p)^{11}\mathrm{B}$ in quasi-free scattering (QFS) kinematics. In such cases, it is possible to simultaneously identify and measure the energy of the two correlated protons (as demonstrated in previous sections) as well as detect $\gamma$-rays emitted during the de-excitation of $^{11}\mathrm{B}$ from excited states to its ground state ($3/2^-$).
-
-$\gamma$-ray spectroscopy serves as a sensitive probe for investigating the population of low-lying discrete nuclear states. In the case of exotic nuclei, this allows the exploration of previously uncharted excited states. For well-known nuclei such as $^{11}\mathrm{B}$, it provides an opportunity to test theoretical shell-model predictions and extract spectroscopic factors with high precision. The established level scheme of $^{11}\mathrm{B}$ is illustrated in Fig.~\ref{fig:11B_levels}.
+$\gamma$-ray spectroscopy serves as a sensitive probe for investigating the population of discrete nuclear states. In the case of exotic nuclei, this allows the exploration of previously uncharted excited states. For well-known nuclei such as $^{11}\mathrm{B}$, it provides an opportunity to test theoretical shell-model predictions and extract spectroscopic factors with high precision. The established level scheme of $^{11}\mathrm{B}$~\cite{NNDC_11B_level_scheme_2025} is illustrated in Fig.~\ref{fig:11B_levels}.
 \begin{figure}[htpb]
     \centering
     %\includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/levelschemaplot.png}
@@ -373,9 +352,9 @@ Partial level scheme of $^{11}\mathrm{B}$, showing the ground state and the firs
     \label{fig:11B_levels}
 \end{figure}
 
-Assuming the ground-state proton configuration of $^{12}\mathrm{C}$ as $(s_{1/2})^2(p_{3/2})^4$, the removal of a single proton from the $p$-shell is expected to result in a hole state with quantum numbers corresponding to either $3/2^-$ or $1/2^-$. The population of higher angular momentum states is strongly suppressed due to the absence of significant contributions from indirect two-step processes and the limiting influence of ground-state correlations in $^{12}\mathrm{C}$~\cite{van1988weak}.
-
-Some excited states of $^{11}\mathrm{B}$, such as the $5/2^-$ state with a known transition energy of 4.4~MeV, are not expected to be populated under QFS conditions. This state arises from the coupling of angular momenta of multiple unpaired nucleons (e.g., two nucleons in the $p_{3/2}$ orbital coupled to $J_{12} = 2$, and a third nucleon in $p_{1/2}$ with $J_3 = 1/2$). The population of such states via a QFS reaction would contradict the fundamental mechanism of QFS, which involves the interaction of the probe (typically a proton) with a single nucleon, while the remaining $A-1$ nucleons act as spectators.
+%Assuming the ground-state proton configuration of $^{12}\mathrm{C}$ as $(s_{1/2})^2(p_{3/2})^4$, the removal of a single proton from the $p$-shell is expected to result in a hole state with quantum numbers corresponding to either $3/2^-$ or $1/2^-$. The population of higher angular momentum states is strongly suppressed due to the absence of significant contributions from indirect two-step processes and the limiting influence of ground-state correlations in $^{12}\mathrm{C}$~\cite{van1988weak}.
+In an ideal single-particle shell-model picture, the ground-state proton configuration of $^{12}\mathrm{C}$ is $(1s_{1/2})^{2}(1p_{3/2})^{4}$. Quasi-free proton removal in the $(p,2p)$ reaction therefore predominantly creates a proton hole in the $1p_{3/2}$ orbital, populating low-lying $3/2^{-}$ states in $^{11}\mathrm{B}$. However, configuration mixing, pair breaking, and residual nucleon--nucleon interactions can redistribute the spectroscopic strength, allowing population of states involving the $1p_{1/2}$ orbital and more complex $3/2^{-}$ configurations at higher excitation energies.
+Some excited states of $^{11}\mathrm{B}$, such as the $5/2^-$ state with a known transition energy of 4.4~MeV, are not expected to be populated directly under QFS conditions. This state arises from the coupling of angular momenta of multiple unpaired nucleons (e.g., two nucleons in the $p_{3/2}$ orbital coupled to $J_{12} = 2$, and a third nucleon in $p_{1/2}$ with $J_3 = 1/2$). The population of such states via a QFS reaction would contradict the fundamental mechanism, which involves the interaction of the probe (typically a proton) with a single nucleon, while the remaining $A-1$ nucleons act as spectators.
 
 As the $^{11}\mathrm{B}$ fragments produced in the reaction carry nearly the full beam energy and move predominantly in the forward direction, the emitted $\gamma$-rays from their de-excitation experience relativistic Doppler shifts. Therefore, Doppler correction must be applied to the measured $\gamma$-ray energies. Following standard textbooks (e.g.,~\cite{krane1987}), the relation between the observed $\gamma$-ray energy in the laboratory frame and the rest-frame energy of the emitting nucleus is given by:
 
@@ -384,33 +363,27 @@ As the $^{11}\mathrm{B}$ fragments produced in the reaction carry nearly the ful
 	\label{eq:doppler}
 \end{equation}
 
-where $E_0$ is the intrinsic $\gamma$-ray energy in the rest frame of $^{11}\mathrm{B}$ (approximately the same as the rest frame of the incoming $^{12}\mathrm{C}$), $\gamma = 1/\sqrt{1 - \beta^2}$ is the Lorentz factor, $\beta = v/c$ is the velocity of the $^{11}\mathrm{B}$ fragment normalized to the speed of light, and $\theta$ is the polar angle of the emitted $\gamma$-ray with respect to the beam axis in the laboratory frame\footnote{Since the excited state $1/2^-$ of $^{11}\mathrm{B}$ has a lifetime $T_{1/2} = 3.8\,$fs (which corresponds to a width of $\Gamma = 0.117$eV, see level scheme in Fig.~\ref{fig:11B_levels}) it is an immediate transition already occurring in the target region.}.\newline
+where $E_0$ is the intrinsic $\gamma$-ray energy in the rest frame of $^{11}\mathrm{B}$ (approximately the same as the rest frame of the incoming $^{12}\mathrm{C}$), $\gamma = 1/\sqrt{1 - \beta^2}$ is the Lorentz factor, $\beta = v/c$ is the velocity of the $^{11}\mathrm{B}$ fragment normalized to the speed of light, and $\theta$ is the polar angle of the emitted $\gamma$-ray with respect to the velocity vector of the outgoing fragment\footnote{Since the excited state $1/2^-$ of $^{11}\mathrm{B}$ has a lifetime $T_{1/2} = 3.8\,$fs (which corresponds to a width of $\Gamma = 0.117$eV, see level scheme in Fig.~\ref{fig:11B_levels}) it is an immediate transition already occurring in the target region.}.\newline
 The high granularity of the CALIFA calorimeter enables a precise determination of the emission angle $\theta$ of detected $\gamma$-rays. For each $\gamma$-ray event, the angle $\theta$ is defined by the position of the individual crystal within the $\gamma$-cluster that recorded the maximum deposited energy. This crystal is assumed to represent the most probable direction of the primary $\gamma$-ray emission. The angle is then used -- relative to the known target position -- to perform the Doppler correction and reconstruct the rest-frame $\gamma$-ray energy $E_0$, according to the relativistic transformation described in Eq.~\eqref{eq:doppler}.
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/gamma_spec_12c_p2p_11b_xl.png}
     \caption{
-Doppler-corrected $\gamma$-ray spectrum in coincidence with the $^{12}\mathrm{C}(p,2p)^{11}\mathrm{B}$ quasi-free scattering reaction. The prominent peak at $E_{\gamma} \approx 2.1\,\mathrm{MeV}$ corresponds to the de-excitation of the $^{11}\mathrm{B}$ nucleus from its first excited state ($1/2^-$) to the ground state. This peak is fitted with a Gaussian function (blue), while the underlying background is described by an exponential distribution (green). A broader and less well-defined structure is observed at $E_{\gamma} \approx 5\,\mathrm{MeV}$, associated with the de-excitation of the $3/2^-$ state.
+Doppler-corrected $\gamma$-ray spectrum in coincidence with the $^{12}\mathrm{C}(p,2p)^{11}\mathrm{B}$ quasi-free scattering reaction in the 2~cm CH$_2$ target. The prominent peak at $E_{\gamma} \approx 2.1\,\mathrm{MeV}$ corresponds to the de-excitation of the $^{11}\mathrm{B}$ nucleus from its first excited state ($1/2^-$) to the ground state. This peak is fitted with a Gaussian function (blue), while the underlying background is described by an exponential distribution (green). A broader and less well-defined structure is observed at $E_{\gamma} \approx 5\,\mathrm{MeV}$, associated with the de-excitation of the $3/2^-$ state and its corresponding single escape peak. Due to the still rather incomplete geometry of CALIFA this high energy signal is slightly shifted to lower energies due to loss of energy by Bremsstrahlung.
     }
     \label{fig:gamma_spec_12c_p2p_11b}
 \end{figure}
-The resulting Doppler-corrected $\gamma$-ray spectrum is presented in Fig.~\ref{fig:gamma_spec_12c_p2p_11b}, which was obtained after applying the following reaction selection criteria:
+The resulting Doppler-corrected $\gamma$-ray spectrum is presented in Fig.~\ref{fig:gamma_spec_12c_p2p_11b}, which was obtained after applying the following selection criteria:
 \begin{itemize}
-  \item Identification of the $^{11}\mathrm{B}$ fragment via time-of-flight measurements between the START detector and the TOFW (Sofia), as detailed in Section~\ref{sec:frag_ident}.
-  \item Detection of two high-energy hits corresponding to protons, each with an energy deposition $E_{\text{hit}} > 30\,\mathrm{MeV}$.
+  \item Identification of the $^{11}\mathrm{B}$ fragment, as detailed in Section~\ref{sec:frag_ident}.
+  \item Detection of two high-energy hits corresponding to protons, each with an energy deposition $E_{\text{hit}} > 30\,\mathrm{MeV}$, in CALIFA.
 \end{itemize}
-In Fig.~\ref{fig:gamma_spec_12c_p2p_11b}, both peaks associated with the de-excitation of the $^{11}\mathrm{B}$ nucleus from the $1/2^-$ and $3/2^-$ excited states are visible. From the fit to the $1/2^-$ peak, an energy resolution of approximately $0.24\,\mathrm{MeV}$ (FWHM) is extracted.
+In Fig.~\ref{fig:gamma_spec_12c_p2p_11b}, both peaks associated with the de-excitation of the $^{11}\mathrm{B}$ nucleus from the $1/2^-$ and $3/2^-$ excited states are visible. From the fit to the $1/2^-$ peak, an energy resolution of $\Delta E = 0.24\,\mathrm{MeV}$ (FWHM) is extracted.
 
-According to the detector specifications, the expected crystal-wise relative energy resolution in the gamma-ray energy regime is given by $\frac{\Delta E}{E}$ $\sim$ 6\%/$\sqrt{E[\text{MeV}]}$, which for a $2.1\,\mathrm{MeV}$ $\gamma$-ray corresponds to an ideal resolution of about $0.09\,\mathrm{MeV}$ (FWHM). The observed deviation from this expected value is non-negligible and can be attributed to several experimental and geometrical effects.
-
-First, the Doppler correction relies on the reconstructed polar angle $\theta$ of the $\gamma$-ray, derived from the position of the crystal with the highest energy deposition within the detected cluster. However, this may not correspond to the actual primary interaction point of the photon within the scintillator. This spatial uncertainty becomes increasingly relevant for large opening angles, leading to additional broadening of the reconstructed energy peak.
-
-Second, mechanical factors such as slight tilts or misalignments of the CALIFA detector halves, as well as minor displacements of individual crystals within the carbon alveolar frame, may further contribute to the degradation of energy resolution.
-
-The broader and less well-defined peak at $E_{\gamma} \approx 5\,\mathrm{MeV}$, associated with the $3/2^-$ state, was not fitted due to its complex structure. This broadening is likely a result of reduced cluster reconstruction efficiency for higher-energy $\gamma$-rays. In particular, for photon energies exceeding the pair production threshold (\(E_{\gamma} > 2 m_e c^2 \approx 1.022\,\mathrm{MeV}\)), electron-positron pair production becomes a significant interaction mechanism. Above \(E_{\gamma} \gtrsim 6\,\mathrm{MeV}\), it becomes dominant. These interactions can result in spatially separated energy depositions or partial energy loss due to annihilation photons escaping detection. Consequently, this can impair both the accuracy of cluster reconstruction and the effectiveness of Doppler correction, leading to a smeared peak structure.
-
-As anticipated, no enhancement is observed around $4.4\,\mathrm{MeV}$, which would correspond to the population of the $5/2^-$ state. This is consistent with the quasi-free scattering mechanism, which does not favor the population of such states involving complex multi-nucleon configurations.
-
+According to the detector specifications, the expected crystal-wise relative energy resolution in the gamma-ray energy regime is given by $\frac{\Delta E}{E}$ $\sim$ 6\%/$\sqrt{E[\text{MeV}]}$, which for a $2.1\,\mathrm{MeV}$ $\gamma$-ray corresponds to an ideal resolution of about $0.09\,\mathrm{MeV}$ (FWHM). A major contribution is related to the geometric uncertainty for the Doppler correction introduced by the target thickness of 2~cm and the size of the crystals~\cite{tdr:barrel} which add up to a broadening of $\frac{\Delta E}{E}$ $\sim$ 9\%/$\sqrt{E[\text{MeV}]}$. 
+In addition the Doppler correction is derived from the position of the crystal with the highest energy deposition within the detected cluster. However, this may not correspond to the actual primary interaction point of the photon within the scintillator, especially in this energy region of $E_{\gamma} \approx 2$MeV dominated by Compton scattering.
+Mechanical factors such as slight tilts or misalignments of the CALIFA detector halves, as well as displacements of individual crystals within the carbon alveolar frame could not be corrected due to limited statistics.\\
+The broader and less well-defined peak at $E_{\gamma} \approx 5\,\mathrm{MeV}$, associated with the $3/2^-$ state, was not fitted due to its complex structure. This broadening is likely a result of reduced cluster reconstruction efficiency for higher-energy $\gamma$-rays. In particular electron-positron pair production becomes the dominant interaction mechanism in this energy regime. These interactions can result in spatially separated energy depositions or partial energy loss due to annihilation photons escaping detection and a larger energy loss due to Bremsstrahlung. Consequently, this can impair both the accuracy of cluster reconstruction and the effectiveness of Doppler correction, leading to a smeared peak structure.
 It should be emphasized that this experiment represents the first measurement campaign using CALIFA in its final mechanical configuration. The successful reconstruction of Doppler-corrected $\gamma$-ray spectra in coincidence with the $^{12}\mathrm{C}(p,2p)^{11}\mathrm{B}$ reaction serves as a proof of concept, demonstrating the capability of CALIFA as a key instrument for performing correlated measurements of $\gamma$-rays and light charged particles. These results contribute significantly to the overarching goal of achieving full kinematic reconstruction of nuclear reactions under investigation.
 
 
@@ -427,7 +400,7 @@ where $m_i$ is the initial mass of the fissile nucleus and $m_f$ the sum of the 
     \centering
     \includegraphics[width=\textwidth,height=10cm,keepaspectratio=true]{Figures/fiss_model_kuckuk.png}
     \caption{
-Energy levels and potential profile during fission. \textit{Left:} Energy diagram. \textit{Right:} Potential profile according to the liquid drop model. \textit{Top inset:} Detail of the potential barrier for a more realistic description using the fission hybrid model. The ground state is deformed in this case. Figure taken from~\cite{mayer2013kernphysik}.
+Energy levels and potential profile during fission. \textit{Left:} Energy diagram. \textit{Right:} Potential profile according to the liquid drop model. \textit{Top inset:} Detail of the potential barrier for a more realistic description using the fission hybrid model. The ground state is deformed in this case. Figure adopted from~\cite{mayer2013kernphysik}.
     }
     \label{fig:fission_kuckuk}
 \end{figure}
@@ -463,7 +436,7 @@ The central detector used for the simultaneous charge measurement of the fission
     \centering
     \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/fission_charge_distr_s455.png}
     \caption{
-    Charge distribution of the charges $\text{Z}_1$ and $\text{Z}_2$ of both fission fragments for all fissioning systems. The inset shows the fissioning system distribution. The red diagonal frame shows the charge distribution when selecting the fissioning system $\text{Z}_1 + \text{Z}_2 = 91$. Figure taken from~\cite{grana2023fission}.
+    Charge distribution of the charges $\text{Z}_1$ and $\text{Z}_2$ of both fission fragments for all fissioning systems. The inset shows the fissioning system distribution. The red diagonal frame shows the charge distribution when selecting the fissioning system $\text{Z}_1 + \text{Z}_2 = 91$. Figure adopted from~\cite{grana2023fission}.
     }
     \label{fig:charge_distr_s455}
 \end{figure}
