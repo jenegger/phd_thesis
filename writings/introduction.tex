@@ -3,25 +3,24 @@ The abundance of the heavy elements observed throughout the universe is a finger
 The foundation for modern nuclear structure theory was laid by the atomic shell model, first introduced by Niels Bohr in 1913. This model, while initially developed for electrons in atoms, inspired the formulation of the nuclear shell model by Maria Goeppert Mayer and J. Hans D. Jensen in 1949. Their key innovation was the inclusion of a significant spin-orbit interaction term in the nuclear mean-field potential. Unlike the atomic case -- where spin-orbit coupling appears as a relatively small fine-structure correction -- in the nuclear shell model, the spin-orbit interaction is of comparable magnitude to the primary energy level gaps and carries an inverted sign. This results in the $j = l + 1/2$ states lying energetically below the $j = l - 1/2$  states.\newline
 This critical adjustment enabled the nuclear shell model to accurately reproduce the so-called "magic numbers" (2, 8, 20, 28, 50, 82, and 126), which correspond to closed shells of protons or neutrons associated with exceptional nuclear stability. Notable examples include isotopes such as those of tin (Z = 50) and  lead ( Z = 82), where large energy gaps between filled and unfilled shells lead to enhanced binding energies and structural rigidity.\newline
 While the shell model has proven highly successful in describing nuclei close to stability, recent experiments have shown, that the magic shells can be substantially modified in case of exotic species, like $^{32}$Mg \cite{wimmer2010discovery} or $^{28}$O \cite{kanungo2009one}. For heavier nuclei, experimental data remain scarce, and the shell model must be extended or augmented to account for collective phenomena and configuration mixing. These nuclei play a central role in rapid neutron-capture processes (r-process), which are responsible for the formation of approximately half of the heavy elements beyond iron. In particular, the fate of the r-process path -- its termination via fission and the possible emergence of a predicted "island of stability" in the superheavy region -- depends critically on the structural properties of such exotic nuclei.\newline
-This chapter introduces the scientific objectives and research program of the R3B experiment. In particular, we highlight the role of nuclear structure studies in constraining the nuclear equation of state (EOS), especially for highly asymmetric nuclear matter. Nuclear scattering reactions studied at R3B provide a powerful tool to investigate these systems. An overview of the theoretical framework for their interpretation, along with  the relevant reaction mechanisms, will be presented in Chapter~\ref{sec:reac_model}.
+This chapter outlines the scientific objectives and research program of the R$^3$B experiment. A central focus is placed on the role of nuclear structure studies in constraining the nuclear equation of state (EOS), particularly for highly asymmetric nuclear matter. High-precision measurements of nuclear scattering reactions performed within the R$^3$B framework provide a powerful tool to probe such systems under controlled experimental conditions. An overview of the theoretical framework employed for their interpretation, together with a discussion of the relevant reaction mechanisms, is presented in Chapter~\ref{sec:reac_model}.\newline
+Among these reaction mechanisms, the quasi-free scattering (QFS) process represents a key experimental approach to explore single-particle properties in exotic nuclei. As a test case for validating this approach, the $^{12}\mathrm{C}(p,2p)^{11}\mathrm{B}$ reaction has been analyzed in detail, as discussed in Chapter~\ref{sec_analysis_qfs}.\newline
+The QFS reaction mechanism also provides a gateway to investigate more complex processes such as nuclear fission, which constitutes the second major topic addressed in this chapter. The study of fission and its underlying dynamics is essential for understanding the termination of the r-process in astrophysical environments. Measurements of fission barriers and fragment yields are of particular importance, as the resulting fission products act as new seed nuclei for subsequent r-process cycles. This phenomenon, known as \textit{fission recycling}, plays a decisive role in determining the heavy-element abundances observed in the universe. Two complementary experimental campaigns and their corresponding analyses, are presented in Chapter~\ref{sec:fission_qfs}.
 
-
-\subsection*{R3B Experiment -- "The Universe in the Lab"}
+\subsection{R3B Experiment -- "The Universe in the Lab"}
 The R3B experiment (Reactions with Relativistic Radioactive Beams) is a key component of the nuclear astrophysics program at the Facility for Antiproton and Ion Research (FAIR) in Darmstadt and major experiment of the NUSTAR (Nuclear STructure, Astrophysics and Reactions) collaboration~\cite{krucken2005nustar}.\newline
-As part of the broader research initiative \textit{"The Universe in the Lab"}, R3B aims to provide a comprehensive understanding of the fundamental nuclear processes that govern the formation of elements in the universe.
-
-\subsubsection*{Scientific Objectives and Research Program of the R3B Experiment at FAIR}
+As part of the broader research initiative \textit{"The Universe in the Lab"}, R3B aims to provide a comprehensive understanding of the fundamental nuclear processes that govern the formation of elements in the universe.\newline
 The central scientific objective of R3B is the investigation of the structure and reaction dynamics of exotic, short-lived nuclei far from the valley of stability, particularly those involved in the rapid neutron-capture process (r-process) and other astrophysical nucleosynthesis pathways~\cite{horowitz2019r}. This includes the determination of key nuclear properties such as masses, lifetimes, decay modes, and reaction cross sections, as well as branching ratios and transition probabilities.\newline
 To address these goals, R3B employs high-intensity, relativistic radioactive ion beams in conjunction with a versatile and high-resolution detectors capable of performing kinematically complete measurements of both, incoming and outgoing reaction products. The experimental program covers a wide variety of reaction mechanisms, including fragmentation, Coulomb excitation, knockout, and charge-exchange reactions in inverse kinematics.\newline
-As part of this thesis, one focus is placed on the quasi-free scattering reaction mechanism as a tool to study nuclear properties. A detailed discussion of the underlying reaction mechanism is provided in Section~\ref{sec:qfs_theo}, while the corresponding data analysis based on the S444 experiment is presented in Chapter~\ref{sec_analysis_qfs}.\newline
-The R3B setup is specifically optimized for operation at beam energies of several hundred~MeV per nucleon (AMeV). It provides precise tracking and unambiguous particle identification, with excellent resolution in time, energy, and position of charged particles and neutrons emitted from the reaction vertex~\cite{heil2022new}. These capabilities are essential for disentangling complex reaction channels and for extracting high-precision nuclear data that serve as critical input to astrophysical models of nucleosynthesis.\newline
-Directly related to the scientific objectives at R3B is the exploration of the equation of state (EoS) of asymmetric nuclear matter under extreme conditions. The EoS describes how nuclear matter behaves as a function of parameters such as density, temperature, and isospin asymmetry, and it plays a pivotal role in understanding a wide range of astrophysical phenomena, including the structure and evolution of neutron stars, core-collapse supernovae, and neutron star mergers.\newline
+%As part of this thesis, one focus is placed on the quasi-free scattering reaction mechanism as a tool to study nuclear properties. A detailed discussion of the underlying reaction mechanism is provided in Section~\ref{sec:qfs_theo}, while the corresponding data analysis based on the S444 experiment is presented in Chapter~\ref{sec_analysis_qfs}.\newline
+%The R3B setup is specifically optimized for operation at beam energies of several hundred~MeV per nucleon (AMeV). It provides precise tracking and unambiguous particle identification, with excellent resolution in time, energy, and position of charged particles and neutrons emitted from the reaction vertex~\cite{heil2022new}. These capabilities are essential for disentangling complex reaction channels and for extracting high-precision nuclear data that serve as critical input to astrophysical models of nucleosynthesis.\newline
+%Directly related to the scientific objectives at R3B is the exploration of the equation of state (EoS) of asymmetric nuclear matter under extreme conditions. The EoS describes how nuclear matter behaves as a function of parameters such as density, temperature, and isospin asymmetry, and it plays a pivotal role in understanding a wide range of astrophysical phenomena, including the structure and evolution of neutron stars, core-collapse supernovae, and neutron star mergers.\newline
 
-\subsubsection*{Study of the Equation of State (EoS) at R3B}
+\subsection{Study of the Equation of State (EoS) at R3B}
 
 While various models agree at saturation density ("natural packing density" of nucleons inside a nucleus, $n_0 \approx 0.16 fm^{-3}$) at high baryon number density, as e.g. in the core of neutron stars there are significant differences between the models. Fig.~\ref{fig:eos_relations} shows the EoS description for different models and their divergences by plotting the binding energy and the symmetry energy -- which will be introduced in the next paragraph -- versus the baryon number density. 
 
-\begin{figure}
+\begin{figure}[!htb]
 \centering
 \begin{subfigure}[t]{.48\textwidth}
   \centering
@@ -43,7 +42,7 @@ In modeling the nuclear equation of state, it is common to perform a Taylor expa
 E(n_B,\delta)=E(n_B,0)+S(n_B)\delta^2+\mathcal{O}(\delta^4)
 \end{equation}
 with $E(n_B,0)$ the energy per nucleon of symmetric nuclear matter ($n_n$ = $n_p$) as a function of baryon density. At the saturation density $n_B$ $\approx$ 0.16 $fm^{-3}$, the value of $E(n_B,0)$ -- the energy per nucleon of symmetric nuclear matter -- is approximately –16 MeV, meaning that each nucleon is bound by about 16 MeV relative to a free nucleon.\\
-The second term on the left side of equation~\ref{eq:eos}  is called the asymmetry term. With the symmetry energy:
+The second term on the left side of Eq.~\ref{eq:eos}  is called the asymmetry term. With the symmetry energy:
 \begin{equation}
 S(n_B) = \frac{1}{2} \left. \frac{\partial^2 E(n, \delta)}{\partial \delta^2} \right|_{\delta = 0}
 \end{equation}
@@ -66,7 +65,7 @@ As first pointed out by Reinhard and Nazarewicz~\cite{reinhard2010information} t
 \quad \textbf{Neutron skin thickness $\Delta r_{np}$}: quantifies the difference between the root-mean-square (rms) radii of the neutron ($R_n$) and proton ($R_p$) distributions in a nucleus, i.e., $\Delta r_{np} = R_n - R_p$. This quantity provides crucial insights into the Equation of State (EoS) of asymmetric nuclear matter, particularly the density dependence of the symmetry energy.
 
 It has been shown by the seminal work of X. Roca-Maza et al.~\cite{roca2011neutron} that the neutron skin thickness $\Delta r_{np}$ linearly correlates with the slope parameter L of the nuclear symmetry energy, as illustrated in Fig.~\ref{fig:skin_thickness_vs_L}. This strong correlation implies that a precise measurement of $\Delta r_{np}$ can significantly constrain the value of L. Current experimental constraints on L are primarily derived from experiments such as the PREX (Lead Radius Experiment)~\cite{yuksel2023implications}, which utilized parity-violating electron scattering to measure the weak charge distribution of $^{208}$Pb. The PREX experiment measured the parity-violating asymmetry $A_{PV}$ in polarized electron scattering on $^{208}$Pb with an accuracy of 3\%, resulting in a constraint on $L$ of $\pm 40$ MeV~\cite{roca2011neutron}.\\
-\begin{figure}[htpb]
+\begin{figure}[!htb]
 \centering
 \includegraphics[width=\textwidth,height=9cm,keepaspectratio=true]{Figures/neutron_skin_vs_L.png}
 \caption{Correlation between $\Delta r_{np}$ and parameter L, from analysis in~\cite{roca2011neutron} for the neutron skin of $^{208}$Pb. Relativistic and non-relativistic models with different relativistic grounds are displayed. Figure adopted from~\cite{roca2011neutron}.}
@@ -74,44 +73,96 @@ It has been shown by the seminal work of X. Roca-Maza et al.~\cite{roca2011neutr
 \end{figure}
 Recent advancements in experimental techniques, as highlighted by the groundbreaking work of T. Aumann, C.A. Bertulani et al.~\cite{aumann2017peeling}, have demonstrated that the neutron skin thickness is experimentally accessible and highly sensitive to the neutron-removal cross section for heavy, neutron-rich nuclei. The proposed experimental approach involves measuring the neutron-removal cross section $\sigma_{\Delta N}$ for the isotopic chain of Sn isotopes. These experimentally determined cross sections can then be directly compared with predictions from theoretical nuclear density distributions, typically derived from relativistic mean-field calculations, which exhibit a direct correlation with the slope parameter $L$, as presented in Fig.~\ref{fig:sub_nrem_vs_a} and Fig.~\ref{fig:sub_thickness_vs_l}. Aumann et al. have shown that with a 2\% experimental precision on the measured neutron-removal cross sections, combined with refined theoretical calculations, the slope parameter $L$ can be constrained to $\pm 10$ MeV. This level of precision would represent a substantial improvement over existing constraints and significantly advance our understanding of the nuclear Equation of State.\\
 
-\begin{figure}[t]
-    \centering
-    
-    % --- First Subfigure ---
-    \subcaptionbox{Neutron-skin thickness $\Delta r_{np}$ (left) and corresponding neutron-removal cross section $\sigma_{\Delta N}$ (right) for $^{124-134}$Sn isotopes from relativistic mean-field calculations. The different colors (from blue to red) display the variations in the input of the slope parameter L from 25 MeV (DD2$^{--}$) to 100 MeV((DD2$^{+++}$).
-    	\label{fig:sub_nrem_vs_a}
-	}
-        [\textwidth]% <-- This sets the width of the box (and thus the caption) to \textwidth
-		{
-        \centering
-		
-        \includegraphics[width=0.7\linewidth]{Figures/n_rem_cs_vs_a.png}% <-- The image is set to 70% of the *outer* figure width
-    }
-    %\label{fig:sub_nrem_vs_a}
-    
-    \vspace{1em} % Vertical space between subfigures
-    
-    % --- Second Subfigure ---
-    \subcaptionbox{Correlation of the neutron-removal cross section $\sigma_{\Delta N}$ and the neutron-skin thickness $\Delta r_{np}$ according to the slope parameter L. The black lines indicate the required sensitivity to constrain L in the range of $\pm 10$ MeV.
-    	\label{fig:sub_thickness_vs_l}
-    	}
-        [\textwidth]% <-- Again, set the box/caption width to \textwidth
-		{
-        \centering
-        \includegraphics[width=0.6\linewidth]{Figures/overview_thickness_L.png}
-    }
-    %\label{fig:sub_thickness_vs_l}
-    
-    \caption{Constraining slope parameter L via neutron removal cross section. Figures adopted from Ref.~\cite{aumann2017peeling}.}
-    \label{fig:subfigures}
+%\begin{figure}[H]
+%    \centering
+%    
+%    % --- First Subfigure ---
+%    \subcaptionbox{Neutron-skin thickness $\Delta r_{np}$ (left) and corresponding neutron-removal cross section $\sigma_{\Delta N}$ (right) for $^{124-134}$Sn isotopes from relativistic mean-field calculations. The different colors (from blue to red) display the variations in the input of the slope parameter L from 25 MeV (DD2$^{--}$) to 100 MeV((DD2$^{+++}$).
+%    	\label{fig:sub_nrem_vs_a}
+%	}
+%        [\textwidth]% <-- This sets the width of the box (and thus the caption) to \textwidth
+%		{
+%        \centering
+%		
+%        \includegraphics[width=0.7\linewidth]{Figures/n_rem_cs_vs_a.png}% <-- The image is set to 70% of the *outer* figure width
+%    }
+%    %\label{fig:sub_nrem_vs_a}
+%    
+%    \vspace{1em} % Vertical space between subfigures
+%    
+%    % --- Second Subfigure ---
+%    \subcaptionbox{Correlation of the neutron-removal cross section $\sigma_{\Delta N}$ and the neutron-skin thickness $\Delta r_{np}$ according to the slope parameter L. The black lines indicate the required sensitivity to constrain L in the range of $\pm 10$ MeV.
+%    	\label{fig:sub_thickness_vs_l}
+%    	}
+%        [\textwidth]% <-- Again, set the box/caption width to \textwidth
+%		{
+%        \centering
+%        \includegraphics[width=0.6\linewidth]{Figures/overview_thickness_L.png}
+%    }
+%    %\label{fig:sub_thickness_vs_l}
+%    
+%    \caption{Constraining slope parameter L via neutron removal cross section. Figures adopted from Ref.~\cite{aumann2017peeling}.}
+%    \label{fig:subfigures}
+%\end{figure}
+\begin{figure}[htp]
+  \centering
+
+  \begin{subfigure}[b]{\linewidth}
+	\captionsetup{width=\textwidth}
+	\centering
+    \includegraphics[clip,width=0.7\linewidth]{Figures/n_rem_cs_vs_a.png}
+    \caption{Neutron-skin thickness $\Delta r_{np}$ (left) and neutron-removal cross section $\sigma_{\Delta N}$ (right) for $^{124-134}$Sn isotopes from relativistic mean-field calculations. The different colors (from blue to red) display the variations in the input of the slope parameter L from 25 MeV (DD2$^{--}$) to 100 MeV (DD2$^{+++}$).}
+    \label{fig:sub_nrem_vs_a}
+  \end{subfigure}
+
+  \hfill
+
+  \begin{subfigure}[b]{\linewidth}
+	\captionsetup{width=\textwidth}
+	\centering
+    \includegraphics[clip,width=0.6\linewidth]{Figures/overview_thickness_L.png}
+    \caption{Correlation of the neutron-removal cross section $\sigma_{\Delta N}$ and the neutron-skin thickness $\Delta r_{np}$ according to the slope parameter L. The black lines indicate the required sensitivity to constrain L to $\pm 10$ MeV.}
+    \label{fig:sub_thickness_vs_l}
+  \end{subfigure}
+
+  \caption{Constraining slope parameter L via neutron removal cross section. Figures adopted from Ref.~\cite{aumann2017peeling}.}
+  \label{fig:subfigures}
 \end{figure}
-
-
-
-
-
 The R3B Setup which allows high precision particle spectroscopy is well suited for such kind of experimental approach. In 2018 the pilot experiment S473 was carried out with stable $^{120}$Sn beam on a carbon target and in 2021 the follow up experiment S515 with $^{124,128,132,134}$Sn beams. First experimental results are shown in Ref.~\cite{kudaibergenova2024measurements}.\\
-
 The predicted neutron removal cross sections shown in Fig.~\ref{fig:sub_nrem_vs_a} and~\ref{fig:sub_thickness_vs_l} are calculated using the Glauber scattering model (see Chapter~\ref{sec:reac_model} for details). These calculations employ as input parameters the total nucleon-nucleon cross sections, obtained from fits to experimental data, and the proton and neutron density distributions derived from density functional theory (DFT)~\footnote{DFT is a computational quantum mechanical method used to study the properties of many-body systems by focusing on the nucleon density rather than the many-body wave function. See~\cite{gross2013density,colo2020nuclear}}.
 To validate the reaction mechanism and the applicability of DFT-based densities, measurements of total interaction cross sections provide a sensitive probe. One of the goals of this work is to investigate this experimentally. In particular, the measurement of the total interaction cross section for the system $^{12}\mathrm{C} + ^{12}\mathrm{C}$ serves as a robust test case. Owing to its stability and the extensive existing data, $^{12}$C offers excellent experimental control and serves as a reliable benchmark for testing the assumptions underlying the DFT input.
+\clearpage
+\subsection{Termination of the r-process via Fission}
+Since the discovery of the nuclear fission by O. Hahn and F. Stra{\ss}mann 1939~\cite{hahn1939nachweis} and the first interpretations of the underlying process by Lise Meitner and R. O. Frisch~\cite{meitner1939disintegration} and the theoretical approach of Bohr and Wheeler~\cite{bohr1939phys} with help of the liquid drop model numerous fission experiments were carried out for better understanding of fission as consequence of a dynamic instability of the considered nucleus.\newline
+To induce fission an activation energy $T_a$ has to be supplied to overcome the Coulomb barrier. The final energy released in form of kinetic energy of the fission products $T_f$ is given by:
+\[
+Q = (m_i -m_f)c^2 = T_f - T_a
+\]
+where $m_i$ is the initial mass of the fissile nucleus and $m_f$ the sum of the masses of the fission products. Fig.~\ref{fig:fission_kuckuk} shows the potential curve for the fission process into two fission fragments.\newline
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=\textwidth,height=10cm,keepaspectratio=true]{Figures/fiss_model_kuckuk.png}
+    \caption{
+Energy levels and potential profile during fission. \textit{Left:} Energy diagram. \textit{Right:} Potential profile according to the liquid drop model. \textit{Top inset:} Detail of the potential barrier for a more realistic description using the fission hybrid model. The ground state is deformed in this case. Figure adopted from~\cite{mayer2013kernphysik}.
+    }
+    \label{fig:fission_kuckuk}
+\end{figure}
+
+In case of low fission barriers $T_a$ \textit{spontaneous fission}(s.f.) may occur. For many other nuclei a higher potential wall is expected  where no spontaneous fission is observed. In that case a relatively small energy $T_a$ needs to be supplied to \textit{induce fission}.
+From previous fission experiments fission yields for a large range of exotic nuclei were measured together with the mass/charge distribution of the (two) fission fragments. It has been observed that there are distinct regions of symmetric mass distribution and as well as asymmetric regions which cannot be understood by liquid drop model approximations. Moreover many different processes associated with fission have shown that the fission barrier does not always have a single maximum as predicted by the liquid drop model~\cite{bassani2005encyclopedia}. Within the framework of theoretical models, the description must generally combine concepts from both the liquid-drop model and the shell model giving high importance to the fine structure of the topography of the potential-energy surface (PES) as shown in Fig.~\ref{fig:drop_shell_model}, implemented in scission models which focuses on the specific configuration of the fissioning nucleus just before it splits into fragments, considering factors like potential energy and shell effects~\cite{pacsca2016possible,andreev2012mass,moller2012calculated}.\newline
+
+\begin{figure}[htpb]
+    \centering
+    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/liquid_drop.png}
+    \caption{
+    Most probable fission paths (red arrows) in the a) liquid drop model which postulates symmetric fission fragment masses. b) includes shell effects introducing asymmetry in the fragment's mass distribution. Figure from~\cite{popescu2021review}.
+    }
+    \label{fig:drop_shell_model}
+\end{figure}
+
+However, when microscopic effects -- such as nuclear shell corrections and pairing interactions -- are taken into account, the PES becomes substantially more complex and requires higher-resolution experimental techniques for validation.\newline
+To test these theoretical predictions, a detailed and differential mapping of the PES is necessary. A PES, as shown in Fig.~\ref{fig:drop_shell_model}b, ideally could be mapped by measuring fission yields at different well defined excitation energies.\newline
+Fission induced via QFS reactions offers a promising experimental approach for this purpose. In QFS-induced fission, the projectile interacts with an individual nucleon within the target nucleus, leading to controlled excitation of the residual system. The reconstruction of the excitation energy just from kinematics of the outgoing protons, as shown in Section~\ref{sec:fission_qfs}, allows for event-by-event measurement of the fission process, enabling a direct correlation between the excitation energy and the resulting fission fragment charge and mass distributions, as well as the fission probabilities.\newline
+Such differential data facilitate a more precise determination of the excitation energy dependence of the fission process and the underlying fission barrier heights for exotic, neutron-rich heavy nuclei. By systematically analyzing these correlations, QFS-induced fission can provide critical constraints on theoretical models of the PES and improve our understanding of fission dynamics far from stability.\newline
+
 \clearpage

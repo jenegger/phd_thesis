@@ -25,12 +25,6 @@ C.~J. Horowitz, A.~Arcones, B.~Cote, I.~Dillmann, W.~Nazarewicz, I.~U.
   the cosmos},'' {\em Journal of Physics G: Nuclear and Particle Physics},
   vol.~46, no.~8, p.~083001, 2019.
 
-\bibitem{heil2022new}
-M.~Heil, A.~Keli{\'c}-Heil, L.~Bott, T.~Almusidi, H.~Alvarez-Pol, L.~Atar,
-  L.~Atkins, T.~Aumann, J.~Benlliure, K.~Boretzky, {\em et~al.}, ``{A new
-  Time-of-flight detector for the R 3 B setup},'' {\em The European Physical
-  Journal A}, vol.~58, no.~12, p.~248, 2022.
-
 \bibitem{yuksel2021nuclear}
 E.~Y{\"u}ksel, T.~Oishi, and N.~Paar, ``Nuclear equation of state in the
   relativistic point-coupling model constrained by excitations in finite
@@ -136,6 +130,48 @@ E.~K. Gross and R.~M. Dreizler, {\em Density functional theory}, vol.~337.
 G.~Col{\`o}, ``Nuclear density functional theory,'' {\em Advances in Physics:
   X}, vol.~5, no.~1, p.~1740061, 2020.
 
+\bibitem{hahn1939nachweis}
+O.~Hahn and F.~Strassmann, ``{Nachweis der Entstehung aktiver Bariumisotope aus
+  Uran und Thorium durch Neutronenbestrahlung; Nachweis weiterer aktiver
+  Bruchst{\"u}cke bei der Uranspaltung},'' {\em Naturwissenschaften}, vol.~27,
+  pp.~89--95, 1939.
+
+\bibitem{meitner1939disintegration}
+L.~Meitner and O.~R. Frisch, ``{Disintegration of uranium by neutrons: a new
+  type of nuclear reaction},'' {\em Nature}, vol.~143, no.~3615, pp.~239--240,
+  1939.
+
+\bibitem{bohr1939phys}
+N.~Bohr and J.~Wheeler, ``{Phys. Rev.},'' {\em Phys. Rev}, vol.~56, no.~426,
+  1939.
+
+\bibitem{mayer2013kernphysik}
+T.~Mayer-Kuckuk, {\em {Kernphysik: Eine Einf{\"u}hrung}}.
+\newblock Springer-Verlag, 2013.
+
+\bibitem{bassani2005encyclopedia}
+F.~Bassani, G.~L. Liedl, and P.~Wyder, ``{Encyclopedia of condensed matter
+  physics},'' 2005.
+
+\bibitem{pacsca2016possible}
+H.~Pa{\c{s}}ca, A.~Andreev, G.~Adamian, and N.~Antonenko, ``{Possible origin of
+  transition from symmetric to asymmetric fission},'' {\em Physics Letters B},
+  vol.~760, pp.~800--806, 2016.
+
+\bibitem{andreev2012mass}
+A.~Andreev, G.~Adamian, and N.~Antonenko, ``{Mass distributions for induced
+  fission of different Hg isotopes},'' {\em Physical Review C-Nuclear Physics},
+  vol.~86, no.~4, p.~044315, 2012.
+
+\bibitem{moller2012calculated}
+P.~M{\"o}ller, J.~Randrup, and A.~J. Sierk, ``{Calculated fission yields of
+  neutron-deficient mercury isotopes},'' {\em Physical Review C-Nuclear
+  Physics}, vol.~85, no.~2, p.~024306, 2012.
+
+\bibitem{popescu2021review}
+V.~A. Popescu, ``{Review of mass and charge distributions in low energy fission
+  for 235,238 U and 239Pu},'' 2021.
+
 \bibitem{rutherford1911lxxix}
 E.~Rutherford, ``{LXXIX. The scattering of $\alpha$ and $\beta$ particles by
   matter and the structure of the atom},'' {\em The London, Edinburgh, and
@@ -178,10 +214,6 @@ F.~Schindler, {\em {Total reaction, charge-changing, and neutron-removal cross
   sections of the heavy, neutron-rich nuclei 124Sn, 128Sn, 132Sn, and 134Sn
   measured with large acceptance at R3B}}.
 \newblock PhD thesis, Technische Universit{\"a}t Darmstadt, 2017.
-
-\bibitem{mayer2013kernphysik}
-T.~Mayer-Kuckuk, {\em {Kernphysik: Eine Einf{\"u}hrung}}.
-\newblock Springer-Verlag, 2013.
 
 \bibitem{sakurai2020modern}
 J.~J. Sakurai and J.~Napolitano, {\em Modern quantum mechanics}.
@@ -356,30 +388,6 @@ W.~Xing, X.-G. Wang, and A.~W. Thomas, ``{Electromagnetic form factors for
 S.~Paschalis, M.~Petri, A.~Macchiavelli, O.~Hen, and E.~Piasetzky,
   ``{Nucleon-nucleon correlations and the single-particle strength in atomic
   nuclei},'' {\em Physics Letters B}, vol.~800, p.~135110, 2020.
-
-\bibitem{gerl2009nuclear}
-J.~Gerl, ``{NUCLEAR SPECTROSCOPY STUDIES AT GSI--FROM RISING TO
-  HISPEC/DESPEC.},'' {\em Acta Physica Polonica B}, vol.~40, no.~3, 2009.
-
-\bibitem{ackermann2007superheavy}
-D.~Ackermann, ``{Superheavy elements at GSI-present and future},'' {\em Nuclear
-  Physics A}, vol.~787, no.~1-4, pp.~353--362, 2007.
-
-\bibitem{galatyuk2014hades}
-T.~Galatyuk, H.~Collaboration, {\em et~al.}, ``{HADES overview},'' {\em Nuclear
-  Physics A}, vol.~931, pp.~41--51, 2014.
-
-\bibitem{kluge2008hitrap}
-H.-J. Kluge, T.~Beier, K.~Blaum, L.~Dahl, S.~Eliseev, F.~Herfurth, B.~Hofmann,
-  O.~Kester, S.~Koszudowski, C.~Kozhuharov, {\em et~al.}, ``{HITRAP: a facility
-  at GSI for highly charged ions},'' {\em Advances in Quantum Chemistry},
-  vol.~53, pp.~83--98, 2008.
-
-\bibitem{major2024high}
-Z.~Major, U.~Eisenbarth, B.~Zielbauer, C.~Brabetz, J.~Ohland, Y.~Zobus,
-  S.~Roeder, D.~Reemts, S.~Kunzer, S.~G{\"o}tte, {\em et~al.}, ``{High-energy
-  laser facility PHELIX at GSI: latest advances and extended capabilities},''
-  {\em High Power Laser Science and Engineering}, vol.~12, p.~e39, 2024.
 
 \bibitem{dullmann2022five}
 C.~E. D{\"u}llmann, M.~Block, F.~P. He{\ss}berger, J.~Khuyagbaatar, B.~Kindler,
@@ -605,44 +613,6 @@ L.~Chulkov, 2024.
 \bibitem{krane1987}
 K.~S. Krane, {\em {Introductory Nuclear Physics}}.
 \newblock John Wiley \& Sons, 1987.
-
-\bibitem{hahn1939nachweis}
-O.~Hahn and F.~Strassmann, ``{Nachweis der Entstehung aktiver Bariumisotope aus
-  Uran und Thorium durch Neutronenbestrahlung; Nachweis weiterer aktiver
-  Bruchst{\"u}cke bei der Uranspaltung},'' {\em Naturwissenschaften}, vol.~27,
-  pp.~89--95, 1939.
-
-\bibitem{meitner1939disintegration}
-L.~Meitner and O.~R. Frisch, ``{Disintegration of uranium by neutrons: a new
-  type of nuclear reaction},'' {\em Nature}, vol.~143, no.~3615, pp.~239--240,
-  1939.
-
-\bibitem{bohr1939phys}
-N.~Bohr and J.~Wheeler, ``{Phys. Rev.},'' {\em Phys. Rev}, vol.~56, no.~426,
-  1939.
-
-\bibitem{bassani2005encyclopedia}
-F.~Bassani, G.~L. Liedl, and P.~Wyder, ``{Encyclopedia of condensed matter
-  physics},'' 2005.
-
-\bibitem{pacsca2016possible}
-H.~Pa{\c{s}}ca, A.~Andreev, G.~Adamian, and N.~Antonenko, ``{Possible origin of
-  transition from symmetric to asymmetric fission},'' {\em Physics Letters B},
-  vol.~760, pp.~800--806, 2016.
-
-\bibitem{andreev2012mass}
-A.~Andreev, G.~Adamian, and N.~Antonenko, ``{Mass distributions for induced
-  fission of different Hg isotopes},'' {\em Physical Review C-Nuclear Physics},
-  vol.~86, no.~4, p.~044315, 2012.
-
-\bibitem{moller2012calculated}
-P.~M{\"o}ller, J.~Randrup, and A.~J. Sierk, ``{Calculated fission yields of
-  neutron-deficient mercury isotopes},'' {\em Physical Review C-Nuclear
-  Physics}, vol.~85, no.~2, p.~024306, 2012.
-
-\bibitem{popescu2021review}
-V.~A. Popescu, ``{Review of mass and charge distributions in low energy fission
-  for 235,238 U and 239Pu},'' 2021.
 
 \bibitem{garcia2023study}
 G.~Garc{\'\i}a-Jim{\'e}nez, H.~Alvarez-Pol, A.~Gra{\~n}a-Gonz{\'a}lez,
