@@ -44,24 +44,24 @@ Warning--empty journal in hartigevolution
 Warning--can't use both volume and number fields in bertini2011r3broot
 You've used 142 entries,
             1876 wiz_defined-function locations,
-            1257 strings with 30868 characters,
-and the built_in function-call counts, 38286 in all, are:
-= -- 3660
-> -- 1928
+            1255 strings with 30651 characters,
+and the built_in function-call counts, 38114 in all, are:
+= -- 3654
+> -- 1897
 < -- 0
-+ -- 707
-- -- 565
-* -- 2629
-:= -- 5521
++ -- 697
+- -- 555
+* -- 2607
+:= -- 5488
 add.period$ -- 177
 call.type$ -- 142
 change.case$ -- 121
 chr.to.int$ -- 0
 cite$ -- 149
-duplicate$ -- 2035
-empty$ -- 3303
-format.name$ -- 565
-if$ -- 9365
+duplicate$ -- 2033
+empty$ -- 3300
+format.name$ -- 555
+if$ -- 9333
 int.to.chr$ -- 0
 int.to.str$ -- 142
 missing$ -- 130
@@ -71,10 +71,10 @@ pop$ -- 467
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1495
+skip$ -- 1492
 stack$ -- 0
-substring$ -- 1755
-swap$ -- 942
+substring$ -- 1747
+swap$ -- 940
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
