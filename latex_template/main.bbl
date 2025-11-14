@@ -630,14 +630,6 @@ C.~Bertulani and G.~Baur, ``Relativistic coulomb collisions and the virtual
   radiation spectrum,'' {\em Nuclear Physics A}, vol.~442, no.~3, pp.~739--752,
   1985.
 
-\bibitem{sartori2013nuclear}
-E.~Sartori, ``{Nuclear data for radioactive waste management},'' {\em Annals of
-  Nuclear Energy}, vol.~62, pp.~579--589, 2013.
-
-\bibitem{schopper2013excited}
-H.~Schopper, ``{Excited Nuclear States: Nuclei with Z= 48-60},'' {\em Excited
-  Nuclear States: Nuclei with Z= 48-60}, 2013.
-
 \bibitem{seltzer2010xcom}
 S.~Seltzer, ``{XCOM-Photon Cross Sections Database, NIST Standard Reference
   Database 8}.'' \url{http://www.nist.gov/pml/data/xcom/index.cfm}, 2010.
@@ -697,6 +689,13 @@ D.~Newton, R.~Pasupathy, and F.~Yousefian, ``{Recent trends in stochastic
   gradient descent for machine learning and Big Data},'' in {\em 2018 Winter
   Simulation Conference (WSC)}, pp.~366--380, IEEE, 2018.
 
+\bibitem{JENEGGER2026171048}
+{T. Jenegger, N. Hartman, R. Gernhäuser, L. Fabbietti and L. Heinrich},
+  ``{Machine learning for the cluster reconstruction in the CALIFA calorimeter
+  at R3B},'' {\em {Nuclear Instruments and Methods in Physics Research Section
+  A: Accelerators, Spectrometers, Detectors and Associated Equipment}},
+  vol.~1082, p.~171048, 2026.
+
 \bibitem{battaglia2018relational}
 P.~W. Battaglia, J.~B. Hamrick, V.~Bapst, A.~Sanchez-Gonzalez, V.~Zambaldi,
   M.~Malinowski, A.~Tacchetti, D.~Raposo, A.~Santoro, R.~Faulkner, {\em
@@ -729,13 +728,6 @@ X.~Ju, D.~Murnane, P.~Calafiura, N.~Choma, S.~Conlon, S.~Farrell, Y.~Xu,
 S.~Van~Stroud, P.~Duckett, M.~Hart, N.~Pond, S.~Rettie, G.~Facini, and
   T.~Scanlon, ``{Transformers for Charged Particle Track Reconstruction in High
   Energy Physics},'' {\em arXiv preprint arXiv:2411.07149}, 2024.
-
-\bibitem{JENEGGER2026171048}
-{T. Jenegger, N. Hartman, R. Gernhäuser, L. Fabbietti and L. Heinrich},
-  ``{Machine learning for the cluster reconstruction in the CALIFA calorimeter
-  at R3B},'' {\em {Nuclear Instruments and Methods in Physics Research Section
-  A: Accelerators, Spectrometers, Detectors and Associated Equipment}},
-  vol.~1082, p.~171048, 2026.
 
 \bibitem{lau1995optimization}
 K.~Lau and J.~Pyrlik, ``{Optimization of centroid-finding algorithms for
