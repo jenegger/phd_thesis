@@ -1,13 +1,12 @@
 \section{Analysis -- Total Interaction Cross Section $^{12}$C + $^{12}$C}\label{sec:analysis_cross_sec}
-This section will go through the  analysis step by step from the unpacking stage to the final results of the interaction cross sections. It will start with a short overview of the transmission method used for the cross section measurements. The next step is  the selection of clean incoming $^{12}$C isotopes. Following the identification of the carbon isotopes after the target -- for the measurement of the charge changing cross section and the isotope correction contribution -- and as final step the interaction cross section measurement. \newline
-All relevant detector related geometrical and efficiency corrections will be addressed and their influence to the final result and its uncertainty will be discussed.\\
-As outlined in the preceding sections, the S444 experiment served as a commissioning run in preparation for the upcoming S467 experimental campaign, which is focused on neutron-rich calcium isotopes. Our current analysis, however, is based on the $^{12}$C runs, for which the experimental setup was not fully optimized. The SOFIA (Studies On Fission with Aladin) setup is primarily designed and specialized for the detection and analysis of medium-to-heavy isotopes and their fragments. As a consequence, its performance in the low-Z region is limited by the detector threshold settings.\\
-For carbon isotopes, the detector signals lie only slightly above the applied thresholds, resulting in reduced and fluctuating detection efficiencies. This effect is particularly pronounced for the MWPCs, where the signal-to-threshold margin is minimal. These limitations complicate a precise determination of the $^{10}$C/$^{11}$C/$^{12}$C yield ratios. The different analysis strategies and approximations adopted to address these limitations will be discussed in detail in Section~\ref{sec:isotope_corr}, with further technical information provided in the corresponding appendices.
+Absolute cross sections of well-known systems such as $^{12}$C + $^{12}$C serve two key purposes. First, they provide an ideal benchmark for testing reaction theories at high precision. Second, they offer an excellent commissioning case for quantifying systematic uncertainties introduced by the experimental setup. Similar measurements have previously been performed at R3B using a different detector configuration with smaller acceptance but reduced background contributions~\cite{ponnath2024measurement,ponnath2023precise}. In contrast, the experiment discussed here employed a significantly larger acceptance but was operated with the detector setup in air, resulting in different background conditions.\\
+This section will go through the  analysis step by step from the unpacking stage to the final results of the interaction cross sections. It will start with a short overview of the transmission method used for the cross section measurements. The next step is  the selection of clean incoming $^{12}$C isotopes. Following the identification of the carbon isotopes after the target -- for the measurement of the charge changing cross section and the isotope correction contribution -- and as final step the derviation of total interaction cross sections. \newline
+All relevant detector related geometrical and efficiency corrections will be addressed and their influence to the error budget will be discussed.\\
+%For carbon isotopes, the detector signals lie only slightly above the applied thresholds, resulting in reduced and fluctuating detection efficiencies. This effect is particularly pronounced for the MWPCs, where the signal-to-threshold margin is minimal. These limitations complicate a precise determination of the $^{10}$C/$^{11}$C/$^{12}$C yield ratios. The different analysis strategies and approximations adopted to address these limitations will be discussed in detail in Section~\ref{sec:isotope_corr}, with further technical information provided in the corresponding appendices. %%TODO: maybe bring to summary and outlook
 
 \subsection{Cross Section Measurement via Transmission Method}\label{section:transmission_method}
-In its most generic form cross sections give a measure of the probability that a specific reaction will take place when two particles collide~\cite{bethge2007wiedemann}. It is expressed in units of area, with one barn defined as 1 b=10$^{-24}$ cm$^2$. Cross sections measured in scattering experiments, along with the corresponding energy and angular distributions of the reaction products, provide valuable insight into the underlying interaction dynamics between the projectile and target. Such measurements enable the extraction of fundamental quantities, including coupling constants, form factors, and structure functions.\newline
-In deep inelastic scattering processes involving multiple final-state channels, cross section measurements serve as a powerful tool to probe the parton distribution functions (PDFs), which describe the momentum distributions of quarks and gluons within nucleons. Furthermore, deviations from Standard Model predictions in the shape or magnitude of measured cross sections may indicate the presence of phenomena beyond the Standard Model, such as Supersymmetry or potential dark matter candidates.\newline
-The total cross section $\sigma_{tot}$ can be derived by looking at the relation between the number of incoming particles (N$_{1}$) and unreacted particles after the target ($N_{2}$). For an experiment with fixed target with thickness $z$ and volumetric number density $n$ the number of reacted particles in the infinitesimal thin target layer $dz$ can be expressed as:
+In its most generic form cross sections give a measure of the probability that a specific reaction will take place when a particle passes a target material~\cite{bethge2007wiedemann}. It is expressed in units of area, with one barn defined as 1 b = 10$^{-24}$ cm$^2$. Cross sections measured in scattering experiments, along with the corresponding energy and angular distributions of the reaction products, provide valuable insight into the underlying interaction dynamics between the projectile and target. Such measurements enable the extraction of fundamental quantities, including coupling constants, form factors, and structure functions.\newline
+The total interaction cross section $\sigma_{tot}$ can be derived by looking at the relation between the number of incoming particles (N$_{1}$) and unreacted particles after the target ($N_{2}$). For an experiment with fixed target with thickness $z$ and volumetric number density $n$ the number of reacted particles in the infinitesimal thin target layer $dz$ can be expressed as~\footnote{This assumption is valid only if the original projectile species cannot be regenerated through secondary reactions. For the $^{12}$C + $^{12}$C system, this condition is fulfilled.}:
 \begin{equation}
 \frac{dN_{2}}{dz} = -n \sigma_{tot} N_{2}
 \end{equation}
@@ -20,20 +19,20 @@ Where $n\cdot z$ can be summarized as $N_t$, the total number of scattering cent
 $N_{2} = \tilde{N_{2}} \cdot t_{setup}\cdot \epsilon_{setup}$\newline
 $N_{2}^E = \tilde{N_{2}^E} \cdot \epsilon_{setup}$ with $\frac{\tilde{N_{2}^E}}{N_{1}^E}$ the setup specific transmission factor $t_{setup}$ \newline
 \newline
-The final formula for the cross section for a so called transmission measurement is:
+The formula for the cross section $\sigma_{tot}$ for a transmission measurement is:
 \begin{equation}
 	\begin{split}
-\sigma = -\frac{1}{N_t} ln(\frac{N_{1}^E}{N_{2}^E} \cdot \frac{N_2}{N_1}) = -\frac{1}{N_t} ln(\frac{N_{1}^E}{\tilde{N_{2}^E} \cdot \epsilon_{setup}} \cdot \frac{\tilde{N_{2}} \cdot t_{setup} \cdot \epsilon_{setup}}{N_1}) \\
+\sigma_{tot} = -\frac{1}{N_t} ln(\frac{N_{1}^E}{N_{2}^E} \cdot \frac{N_2}{N_1}) = -\frac{1}{N_t} ln(\frac{N_{1}^E}{\tilde{N_{2}^E} \cdot \epsilon_{setup}} \cdot \frac{\tilde{N_{2}} \cdot t_{setup} \cdot \epsilon_{setup}}{N_1}) \\
 \text{With $\frac{\tilde{N_{2}^E}}{N_{1}^E} = t_{setup}$} \\
-\sigma = -\frac{1}{N_t} ln(\frac{1}{t_{setup}} \cdot \frac{\tilde{N_{2}} \cdot t_{setup}}{N_1}) = -\frac{1}{N_t} ln(\frac{\tilde{N_{2}}}{N_1})
+\sigma_{tot} = -\frac{1}{N_t} ln(\frac{1}{t_{setup}} \cdot \frac{\tilde{N_{2}} \cdot t_{setup}}{N_1}) = -\frac{1}{N_t} ln(\frac{\tilde{N_{2}}}{N_1})
 \label{eq:corr_cross}
 	\end{split}
 \end{equation}
-It should be emphasized that this represents a first-order approximation, as in Eq.~\ref{eq:corr_cross} the setup-specific detection efficiency $\epsilon_{setup}$ and transmission factor $t_{setup}$ are assumed to be identical for both the empty and target runs. This assumption enables the cancellation of these factors in the ratio, thereby simplifying the analysis.\newline
+It should be emphasized that this represents a first-order approximation, as in Eq.~\ref{eq:corr_cross} the setup-specific detection efficiency $\epsilon_{setup}$ and transmission factor $t_{setup}$ are assumed to be identical for both the empty and target runs. This assumption enables the cancellation of these factors in the ratio.\newline
 From the Eq.~\ref{eq:corr_cross} it is evident that for cross section measurements with the transmission method three observables have to be measured:\newline
 \begin{enumerate}
 \item[$\blacksquare$] \textbf{Number of scattering centers $\mathbf{N_t}$}\newline
-The number of scattering centers per unit area of the target is a target specific number. It depends from the target thickness and and its density. The values herefore are taken from~\cite{ponnath2023precise}\footnote{For the purpose of this work the target thicknesses were remeasured at GSI with a chromatic sensor giving 2D depth profiles of each target.}:
+The number of scattering centers per unit area of the target is a target specific number. It depends on the target thickness and and its density. The values herefore are taken from~\cite{ponnath2023precise}\footnote{For the purpose of this work the target thicknesses were remeasured at GSI with a chromatic sensor giving 2D depth profiles of each target.}:
 \begin{enumerate}
 \item Thin target:\newline 
 target thickness d = 0.5451 cm; $N_t = 5.0588795\cdot 10^{22}$; $\frac{\Delta N_t}{N_t} = 0.0648\%$
@@ -50,18 +49,17 @@ with $\rho$ the target density\footnote{$\rho = 1.851 g/cm^{3}$, from \cite{ponn
 \item[$\blacksquare$] \textbf{Number of incoming projectiles ($^{12}$C) $\mathbf{N_1}$}\newline
 For the measurement only events with well identified incoming $^{12}$C projectiles are chosen. Herefore strict cuts on the detectors upstream the target area are set. This strict event selection makes sure that we only consider events with single $^{12}$C within the $\pm 4\mu s$ event time window. This will be discussed in more detail in Section~\ref{subsec:event-sel}. 
 \item[$\blacksquare$] \textbf{Number of unreacted projectiles ($^{12}$C) $\mathbf{N_2}$ after the target}\newline
-Detectors downstream the target area are used to count the number of unreacted projectiles $^{12}$C. To reduce detector specific influences which could distort the result it is advisable to use only as few as necessary detectors for the clear identification of unreacted projectiles. Moreover detector specific efficiencies are canceled out by including both empty and target runs (only in 1st order, as there may be a position dependence) in the cross section calculation (see Eq.~\ref{eq:corr_cross}). For all downstream detectors used in this analysis it is critical to minimize any selection cuts and systematically check their effects on $N_2$.
+Detectors downstream the target area are used to count the number of unreacted projectiles $^{12}$C. To reduce detector specific influences which could distort the result it is advisable to use only as few as necessary detectors for the clear identification of unreacted projectiles and only those with the largest possible efficiency and acceptance. Moreover detector specific efficiencies are canceled out by including both empty and target runs (only in 1st order, as there may be a position dependence) in the cross section calculation (see Eq.~\ref{eq:corr_cross}). For all downstream detectors used in this analysis it is critical to minimize any selection cuts and systematically check their effects on $N_2$.
 \end{enumerate}
 \subsection{Event Selection}\label{subsec:event-sel}
-\begin{figure}[htpb]
-    \centering
-    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/SETUP_around_Target.png}
-    \caption{
-    Schematic layout of the R3B experimental setup for the S444 experiment. The beam comes from the left, passing through MWPC0, R3B MUSIC (ionization chamber), START detector (orange), and ROLU (green) before interacting in the target chamber. The setup is spatially referenced with z=0 at the end of the target chamber with the target center located at $z=-689.6$ mm. Measurement directions "Messel side" and "Wixhausen side" are also indicated for (left-right) orientation. Dimensions are given in millimeters. 
-    }
-    \label{fig:setup_target_region}
-\end{figure}
-
+%\begin{figure}[htpb]
+%    \centering
+%    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/SETUP_around_Target.png}
+%    \caption{
+%    Schematic layout of the R3B experimental setup for the S444 experiment. The beam comes from the left, passing through MWPC0, R3B MUSIC (ionization chamber), START detector (orange), and ROLU (green) before interacting in the target chamber. The setup is spatially referenced with z=0 at the end of the target chamber with the target center located at $z=-689.6$ mm. Measurement directions "Messel side" and "Wixhausen side" are also indicated for (left-right) orientation. Dimensions are given in millimeters. 
+%    }
+%    \label{fig:setup_target_region}
+%\end{figure}
 For event selection, all three upstream detectors are utilized: the MWPC0, the R3B MUSIC Ionization Chamber, and the start detector. 
 %This selection of correlated signals in these detectors already ensure that individual dead times of the different DAQ systems and the central trigger system are excluded for the dataset and do not have to be considered in the following analysis. 
 The use of correlated detector signals ensures that events affected by dead times in any of the sub-detector DAQ systems or in the central system are excluded from the analysis dataset.
@@ -77,13 +75,14 @@ To ensure a clean incoming event selection, the following prerequisites must be 
     \label{fig:r3bmusic_charge}
 \end{figure}
 In the S444 experiment the incoming beam was directly delivered by the SIS18 ring accelerator, which is operated in ultra-high vacuum. Due to the low material budget in this beam line and its narrow p/q acceptance the level of contamination is very low.\newline 
-For the charge identification of the incoming ion the R3B MUSIC ionization chamber is used which is positioned directly after the MWPC0 at the beam entrance in Cave C, see Fig.~\ref{fig:setup_target_region}. The R3B MUSIC detector measures anode-wise the energy loss of the passing-through ion which in the first order is proportional to the square of its charge ($\Delta E \sim Z^{2}$). Herfore the calibration parameters from the online analysis are used\footnote{These are generic parameter values used to the detector performance during the experiment phase.}. Fig.~\ref{fig:r3bmusic_charge} shows the measured charge distribution in R3B MUSIC. To select $Z = 6$ incoming ions the distribution is fitted with a Gaussian fit function. Only ions with an energy loss within the $\pm 1 \sigma$ range are accepted. Fig.~\ref{fig:r3bmusic_cuts} summarizes the $\pm 1 \sigma$ cuts on the R3B MUSIC charge for empty/target runs for all beam energies.   
-\begin{figure}
-\centering
-\includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/r3bmusic_charge_cuts.png}
-\caption{Strict $\pm 1 \sigma$ charge cuts with R3B MUSIC for incoming particle selection. Fixed predefined calibration parameters were used which do not compensate different gain settings between runs. This is in particular the case for the 400 AMeV beam energy runs.}
-\label{fig:r3bmusic_cuts}
-\end{figure}
+For the charge identification of the incoming ion the R3B MUSIC ionization chamber is used which is positioned directly after the MWPC0 at the beam entrance in Cave C, see Fig.~\ref{fig:setup_target_region}. The R3B MUSIC detector measures anode-wise the energy loss of the passing-through ions. Herfore the calibration parameters from the online analysis are used\footnote{These are generic parameter values used to the detector performance during the experiment phase.}. Fig.~\ref{fig:r3bmusic_charge} shows the measured charge distribution in R3B MUSIC. To select $Z = 6$ incoming ions the distribution is fitted with a Gaussian fit function. Only ions with an energy loss within the $\pm 1 \sigma$ range are accepted. 
+%Fig.~\ref{fig:r3bmusic_cuts} summarizes the $\pm 1 \sigma$ cuts on the R3B MUSIC charge for empty/target runs for all beam energies.   
+%\begin{figure}
+%\centering
+%\includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/r3bmusic_charge_cuts.png}
+%\caption{Strict $\pm 1 \sigma$ charge cuts with R3B MUSIC for incoming particle selection. Fixed predefined calibration parameters were used which do not compensate different gain settings between runs. This is in particular the case for the 400 AMeV beam energy runs.}
+%\label{fig:r3bmusic_cuts}
+%\end{figure}
 \item \textbf{Pileup rejection and TPat selection:}\newline
 The overall recording and merging of the data from various sub-detectors is one of the tasks of the data acquisition system. Whether an event is recorded or not depends on the pre-established trigger logic. Various detectors can send out triggers to the main DAQ when certain conditions are given (e.g. CALIFA can be configured to send out a trigger when a high-energy hit is recorded in the calorimeter). The different triggers are processed by the trigger logic and summarized as a defined trigger pattern, so called TPat, which is stored in a 16-bit mask for each event. Table \ref{tab:tpats} gives an overview of the trigger logic and the trigger patterns set in the S444 experiment. For this analysis events with \textit{Min. Bias} trigger are selected\footnote{This includes also \textit{Reaction} and \textit{Neutron} TPat since these patterns contain also \textit{Min. Bias} TPat as necessary condition.}.\newline 
 \begin{table}[h!]
@@ -103,9 +102,9 @@ Bit Position &TPat Name & Description \\
 \caption{List of TPats set for S444 experiment. As for the selected runs low beam rates ($< 10kHz$) were expected no dead time issues should arise for the in-beam detectors, therefore no downscaling of the \textit{Min. Bias} TPat was deployed.}
 \label{tab:tpats}
 \end{table}
-Since the TPat selection itself does not necessary set any pileup constraints it is important to analyze the signals of the detectors upstream carefully to insure yourself that only events with  one incoming $^{12}$C ion at a time get selected. Herefore events with incoming ions with charge $Z = 6 \pm 1\sigma$ are chosen, as discussed in the previous point. With this restrictive cut pileup events can be efficiently rejected (see also Appendix~\ref{app:r3bmusic_pileup}). \newline
-Moreover it is required that both left and right preamplifiers of the start detector have seen a coincident signal within a time-window of 1.391 ns, see Fig.~\ref{fig:start_good_event_sel}. The width of the time window was chosen based on the maximum signal rise time of the detector as well as the maximal propagation delay of the scintillation light to the oppositely positioned preamplifiers. The overall searching window of the start detector was set to 2 $\mu s$, see Fig.~\ref{fig:start_good_event_sel}.\newline
-For the MWPC0 which is mounted right at the beam entrance of Cave C no hit multiplicity cuts were applied considering its operating mode, which is designed for charge sharing between the readout pads. 
+%Since the TPat selection itself does not necessary set any pileup constraints it is important to analyze the signals of the detectors upstream carefully to insure yourself that only events with  one incoming $^{12}$C ion at a time get selected. Herefore events with incoming ions with charge $Z = 6 \pm 1\sigma$ are chosen, as discussed in the previous point. With this restrictive cut pileup events can be efficiently rejected (see also Appendix~\ref{app:r3bmusic_pileup}). \newline
+This required that both left and right photomultipliers of the start detector have seen a coincident signal within a time-window of 1.391 ns, see Fig.~\ref{fig:start_good_event_sel}. The width of the time window was chosen based on the maximum signal rise time of the detector as well as the maximal propagation delay of the scintillation light to the oppositely positioned preamplifiers. The overall searching window of the start detector was set to 2 $\mu s$, see Fig.~\ref{fig:start_good_event_sel}. In addition, a veto condition is applied such that any signal in one of the four ROLU quadrants rejects the event. This occurs when the incoming ion hits outside the $\pm$1~cm open window in both the $x$- and $y$-directions.\newline
+%For the MWPC0 which is mounted right at the beam entrance of Cave C no hit multiplicity cuts were applied considering its operating mode, which is designed for charge sharing between the readout pads. 
 \begin{figure}[ht]
 \centering
 \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/t_diff_start.pdf}
@@ -113,7 +112,7 @@ For the MWPC0 which is mounted right at the beam entrance of Cave C no hit multi
 \label{fig:start_good_event_sel}
 \end{figure}
 \item \textbf{Projectile's focus on the target region:}\newline
-To assure that the incoming $^{12}$C ion hits the target it is necessary to select only events where the projectile is focused to the target region. Therefore strict cuts on the MWPC0 $x$ and $y$ position are applied. This was achieved by fitting the $x$ and $y$ distribution of the MWPC0 by a Gaussian function. The selection of \textit{focused} incoming projectiles was then restricted to events with hits in MWPC0 within the $\pm 2\sigma$ region in the $x$ and $y$ position around the beam spot center, see Fig.~\ref{fig:mw0_xy_overview} and \ref{fig:mw0_cuts}.\newline
+To assure that the incoming $^{12}$C ion hits the target it is necessary to select only events where the projectile is focused to the target region. Beside the cut on ROLU strict cuts on the MWPC0 $x$ and $y$ position are applied. This was achieved by fitting the $x$ and $y$ distribution of the MWPC0 by a Gaussian function. The selection of \textit{focused} incoming projectiles was then restricted to events with hits in MWPC0 within the $\pm 2\sigma$ region in the $x$ and $y$ position around the beam spot center, see Fig.~\ref{fig:mw0_xy_overview} and \ref{fig:mw0_cuts}.\newline
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/mw0_xy_cut_2sigma.pdf}
@@ -126,7 +125,7 @@ To assure that the incoming $^{12}$C ion hits the target it is necessary to sele
 \caption{Overview of $\pm 2\sigma$ cuts in x and y in MWPC0 for empty/target runs.}
 \label{fig:mw0_cuts}
 \end{figure}
-The MWPC0 $x$-position and the available projectile angle in the $x$-$z$ plane from the R3B MUSIC is used to propagate the corresponding x-position on the target location to further check that the selected projectiles hit the target parallel to the $z$-position (= beam direction) and do only have a minimal incident angle, see Fig.~\ref{fig:x_pos_target}. 
+In addition the MWPC0 $x$-position and the available projectile angle in the $x$-$z$ plane from the R3B MUSIC is used to propagate the corresponding x-position on the target location to further check that the selected projectiles hit the target parallel to the $z$-position (= beam direction) and do only have a minimal incident angle, see Fig.~\ref{fig:x_pos_target}. 
 %This can also be seen as a consistency check whether the applied (predefined) calibration parameters are properly set.
 \begin{figure}[htpb]
     \centering
@@ -139,7 +138,7 @@ The MWPC0 $x$-position and the available projectile angle in the $x$-$z$ plane f
 \end{figure}
 \end{enumerate}
 \subsection{Charge Changing Cross Section Measurement}\label{subsec:cc_cs}
-The charge changing cross section refers to a measure of the probability that the incoming projectile will undergo a reaction inside the target that changes its charge state. To measure the charge changing cross section it can be referred to Eq.~\ref{eq:corr_cross} where in this case $N_2$ is the number of survived carbon isotopes, i.e. projectiles which did not change their charge state. For this measurement only the data from the double ionization chamber TWIN MUSIC (see Section~\ref{sec:ionisation_chambers}) needs to be read out and analyzed.\newline
+The charge changing cross section refers to a measure of the probability that the incoming projectile will undergo a reaction inside the target that changes its nuclear charge. To measure the charge changing cross section it can be referred to Eq.~\ref{eq:corr_cross} where in this case $N_2$ is the number of survived carbon isotopes, i.e. projectiles which did not change their charge. For this measurement only the data from the incoming beam and the TWIN MUSIC (see Section~\ref{sec:ionisation_chambers})are used.\newline
 While for the event selection before the target the cut conditions can be arbitrarily strict (it will only have an impact to the statistics and the derived statistical error), cuts on the downstream detectors need to be avoided if at all possible. Too selective cuts on the identification of $N_2$ can alter the result of the measurement.
 \subsubsection{TWIN MUSIC Calibration}
 For the analysis of data in TWIN MUSIC -- different to the upstream detectors, where calibrated data with default calibration parameters is used -- the so called \textit{mapped} raw level data is processed. In the mapped level TWIN MUSIC provides following information:
@@ -834,7 +833,6 @@ The S444 experiment -- although originally conceived as a commissioning run, dur
 The results for the total interaction and charge-changing cross sections obtained in this work are presented in Fig.~\ref{fig:final_res_cc_ti}, together with results from previous experiments (Ponnath et al.~\cite{ponnath2024measurement}) and theoretical predictions (Bertulani et al.~\cite{bertulani2010pauli,teixeira2022nuclear}). As a stringent consistency check, the extracted cross sections are shown for all three target thicknesses employed. Within uncertainties, the three independent measurements agree entirely, thereby demonstrating the robustness and reliability of the applied analysis methods.\newline
 The precise numerical values of the total interaction cross sections are summarized in Table~\ref{tab:fin_res}, including both systematic and statistical uncertainties. The statistical component dominates, especially for the thinnest targets, as expected. Nevertheless, the achieved precision is remarkable: with uncertainties reaching down to 0.39\%, the R3B setup enabled high-accuracy measurements of fundamental scattering observables.\newline
 Such precision is of considerable importance, as it provides stringent benchmarks for nuclear reaction models and thereby contributes directly to constraining key parameters of the nuclear Equation of State, in particular the slope parameter L of the symmetry energy. The success of this commissioning run thus underlines both the capability of the experimental setup and the scientific relevance of the present measurements.\newline
-
 \begin{figure}[h!]
     \centering
     \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/result_plot_phd_cross_section.png}
@@ -878,12 +876,9 @@ Beam Energy & \(^{12}\)C target & \(\sigma_I\) [mb] & \(\Delta\sigma_\text{stat.
 \caption{Measured interaction cross sections \(\sigma_I\) with statistical and systematic uncertainties for \(^{12}\)C targets of various thicknesses at different beam energies.}
 \label{tab:fin_res}
 \end{table}
-
-
 In Fig.~\ref{fig:final_res_cc_ti}, the resulting charge-changing cross sections and total interaction cross sections are displayed as red and blue data points, respectively. A direct comparison with previous measurements, in particular the recent results by Ponnath et al.~\cite{ponnath2024measurement,ponnath2023precise} (green data points), demonstrates significant agreement at 550 and 650 AMeV beam energy for the total interaction cross section. At 800 AMeV, the present results appear slightly quenched. This effect may be attributed to a reduced efficiency of MWPC3, which has been investigated in detail in Appendix~\ref{app:mwpcs_eff}. However, in the absence of redundant position-sensitive detectors, a potential efficiency loss could not be compensated for, such that no definitive conclusion can be drawn.\newline
 The largest deviation between this work and the results of Ref.~\cite{ponnath2024measurement} is observed at 400~AMeV beam energy. This specific setting was most affected by limited acceptance, both in the present experiment and even more so in Ref.~\cite{ponnath2024measurement}. Consequently, several acceptance corrections had to be applied, as outlined in this section. At the same time, the 400 AMeV run provided the most favorable conditions for charge identification with the TWIN-MUSIC detector, leading to excellent charge separation of the fragments. Therefore, no firm conclusion can be drawn on the origin of the difference. Nevertheless, both the present results and those of Ref.~\cite{ponnath2024measurement} remain consistent, within uncertainties, with the earlier measurements by Takechi et al.~\cite{takechi2009reaction} (purple data point at 370 MeV in Fig.~\ref{fig:final_res_cc_ti}).\newline
 Due to the enhanced value obtained at 400~AMeV the data points in this work do not reproduce the expected slope of the theoretical predictions shown in Fig.~\ref{fig:final_res_cc_ti}, represented by gray dots (Glauber calculations) and gray diamonds (including Coulomb repulsion and Pauli blocking). However, this study confirms the flattening of the total interaction cross section at higher beam energies ($ > 650$ AMeV), as already reported in Ref.~\cite{ponnath2024measurement}. This underlines the experimental challenge of measuring absolute cross sections on a precision level below 1\%.\newline
-
 Possible explanations for the observed quenching of the total interaction cross section in the present work, as well as in the previous measurements by Ponnath et al.~\cite{ponnath2024measurement}, have been discussed in that reference and are further considered here. One potential origin is the clusterization of carbon nuclei into $\alpha$-clusters. Such cluster structures were first predicted and experimentally confirmed in the 1950s, most notably through the identification of the so-called Hoyle state~\cite{hoyle1954nuclear,FREER20141}. These in-medium structural modifications, which are not yet incorporated into the reaction models employed in this work, could lead to a reduction of the total interaction cross section at higher beam energies.\newline
 
 %TODO: maybe add to summary or outlook
