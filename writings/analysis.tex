@@ -112,19 +112,19 @@ This required that both left and right photomultipliers of the start detector ha
 \label{fig:start_good_event_sel}
 \end{figure}
 \item \textbf{Projectile's focus on the target region:}\newline
-To assure that the incoming $^{12}$C ion hits the target it is necessary to select only events where the projectile is focused to the target region. Beside the cut on ROLU strict cuts on the MWPC0 $x$ and $y$ position are applied. This was achieved by fitting the $x$ and $y$ distribution of the MWPC0 by a Gaussian function. The selection of \textit{focused} incoming projectiles was then restricted to events with hits in MWPC0 within the $\pm 2\sigma$ region in the $x$ and $y$ position around the beam spot center, see Fig.~\ref{fig:mw0_xy_overview} and \ref{fig:mw0_cuts}.\newline
+To assure that the incoming $^{12}$C ion hits the target it is necessary to select only events where the projectile is focused to the target region. Beside the cut on ROLU strict cuts on the MWPC0 $x$ and $y$ position are applied. This was achieved by fitting the $x$ and $y$ distribution of the MWPC0 by a Gaussian function. The selection of \textit{focused} incoming projectiles was then restricted to events with hits in MWPC0 within the $\pm 2\sigma$ region in the $x$ and $y$ position around the beam spot center, see Fig.~\ref{fig:mw0_xy_overview}.\newline
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/mw0_xy_cut_2sigma.pdf}
 \caption{Reconstructed \(x\)-\(y\) position of incoming ions on MWPC0 without applying a charge selection on the R3B MUSIC detector. The position reconstruction was performed without enforcing any multiplicity cut on the number of hits in MWPC0. However, a strict selection of \(\pm2\sigma\) around the beam spot center was applied independently in \(x\) and \(y\), as indicated by the red rectangular region. A detailed description of the MWPC0 hit selection procedure is provided in Appendix~\ref{app:mw0_cuts}.}
 \label{fig:mw0_xy_overview}
 \end{figure}
-\begin{figure}
-\centering
-\includegraphics[width=\textwidth,keepaspectratio=true]{Figures/mwpc0_cutxy.png}
-\caption{Overview of $\pm 2\sigma$ cuts in x and y in MWPC0 for empty/target runs.}
-\label{fig:mw0_cuts}
-\end{figure}
+%\begin{figure}
+%\centering
+%\includegraphics[width=\textwidth,keepaspectratio=true]{Figures/mwpc0_cutxy.png}
+%\caption{Overview of $\pm 2\sigma$ cuts in x and y in MWPC0 for empty/target runs.}
+%\label{fig:mw0_cuts}
+%\end{figure}
 In addition the MWPC0 $x$-position and the available projectile angle in the $x$-$z$ plane from the R3B MUSIC is used to propagate the corresponding x-position on the target location to further check that the selected projectiles hit the target parallel to the $z$-position (= beam direction) and do only have a minimal incident angle, see Fig.~\ref{fig:x_pos_target}. 
 %This can also be seen as a consistency check whether the applied (predefined) calibration parameters are properly set.
 \begin{figure}[htpb]
@@ -145,23 +145,28 @@ For the analysis of data in TWIN MUSIC -- different to the upstream detectors, w
 \begin{itemize}
 \itemsep0em 
 \item \textbf{SectionID:} The detector is a double ionization chamber and as such divided into four parts (in beam perspective): section 1 -- right down; section 2 -- right up; section 3 -- left down; section 4 -- left up. For the S444 experiment only section 1 was operated and accordingly geometrically centered on the beam spot.
-\item \textbf{AnodeID:} Each section has 16 anodes for energy-loss readout and one reference anode (anodeID = 17).
-\item \textbf{Time:} Each hit in each anode gets assigned to a time. The drift time (in ns) of the electrons from the ionization process of the gas by the in-flying projectile (or the fragments of it) to the anode is calculated by subtracting the individual anode time by the time of the reference channel. The reference anode receives its clean signal from a constant fraction discriminator of the start detector.
-\item \textbf{Energy:} Each hit in each anode gets assigned to an energy. To reconstruct the charge of the passing charged particle anode-wise or detector-wise the parametrization formula: 
-\begin{equation}\label{eq:param_z}
-Z = a + b \cdot \sqrt(E) + c \cdot E
-\end{equation}
-is used with individual settings of the calibration parameters a, b and c. For this analysis $a$ and $b$ are set to zero, so that the parametrization formula is reduced to $ Z = c \cdot E $\footnote{In this analysis, no \(\beta\)-correction is applied to the energy loss \(\Delta E\) measured in the TWIN MUSIC detector. Such a correction is only required in analyses involving heavy fragments, where the relative difference in charge between neighboring isotopes (e.g., \(Z\) and \(Z \pm 1\)) becomes small, and the velocity dependence of energy loss significantly affects charge resolution, e.g. fission experiments with heavy fragments and broad \(\beta\)-range.}. 
+\item \textbf{AnodeID:} Each section has 16 anodes along the beam line for energy-loss readout and one reference anode (anodeID = 17).
+\item \textbf{Time:} Each hit in each anode gets assigned to a time. The drift time (in ns) of the electrons from the ionization process to the anode is calculated by subtracting the individual anode time by the time of the reference channel. The reference anode receives its clean signal from a constant fraction discriminator of the start detector.
+\item \textbf{Energy:} Each hit recorded in an anode is assigned a corresponding deposited energy. For the purpose of charged-particle identification in the ionisation chambers, we do not reconstruct the particle charge Z via the first-order relation Z$\sim\Delta E$. Since only carbon nuclei need to be identified, it is sufficient to work directly in the energy-loss ($\Delta E$) space. This avoids the explicit extraction of Z and thus eliminates the square-root transformation, while maintaining unambiguous carbon identification.
+%Each hit in each anode gets assigned to an energy. To reconstruct the charge of the passing charged particle anode-wise or detector-wise the parametrization formula: 
+%\begin{equation}\label{eq:param_z}
+%Z = a + b \cdot \sqrt(E) + c \cdot E
+%\end{equation}
+%is used with individual settings of the calibration parameters a, b and c. For this analysis $a$ and $b$ are set to zero, so that the parametrization formula is reduced to $ Z = c \cdot E $\footnote{In this analysis, no \(\beta\)-correction is applied to the energy loss \(\Delta E\) measured in the TWIN MUSIC detector. Such a correction is only required in analyses involving heavy fragments, where the relative difference in charge between neighboring isotopes (e.g., \(Z\) and \(Z \pm 1\)) becomes small, and the velocity dependence of energy loss significantly affects charge resolution, e.g. fission experiments with heavy fragments and broad \(\beta\)-range.}. 
 \end{itemize}
-
-The calibration of the TWIN MUSIC energy response was performed individually for each anode on a run-by-run basis. For the calibration step, only events in which all anodes -- including the reference anode -- registered exactly one hit were selected to ensure consistent signal conditions. The most prominent peak in the charge spectrum, corresponding to carbon fragments with charge \(Z = 6\), was fitted using a Gaussian function. The calibration for each anode was then achieved by determining a scaling factor that aligns the mean of its Gaussian fit with the reference position at \(Z = 6\); see Fig.~\ref{fig:calibration}.
-
-For the analysis of reaction fragments, the reconstructed charge \(\overline{Z}\) is finally determined from the calibrated energy signals according to:
+%The calibration of the TWIN MUSIC energy response was performed individually for each anode on a run-by-run basis. For the calibration step, only events in which all anodes -- including the reference anode -- registered exactly one hit were selected to ensure consistent signal conditions. The most prominent peak in the charge spectrum, corresponding to carbon fragments with charge \(Z = 6\), was fitted using a Gaussian function. The calibration for each anode was then achieved by determining a scaling factor that aligns the mean of its Gaussian fit with the reference position at \(Z = 6\); see Fig.~\ref{fig:calibration}.
+%
+%For the analysis of reaction fragments, the reconstructed charge \(\overline{Z}\) is finally determined from the calibrated energy signals according to:
+%\begin{equation}
+%\overline{Z} = \frac{1}{n} \sum_{i=1}^{n} c_i \cdot E_i,
+%\end{equation}
+%where \(E_i\) is the energy signal recorded by the \(i\)-th anode, \(c_i\) is its corresponding calibration factor, and \(n\) is the number of anodes with valid signals contributing to the event.
+The calibration of the TWIN MUSIC energy-loss response was performed independently for each anode and on a run-by-run basis. For the calibration procedure, only events in which all anodes -- including the reference anode -- registered exactly one hit were selected to ensure uniform and well-controlled signal conditions. For each anode, the most prominent peak in the energy-loss spectrum, corresponding to carbon fragments, was fitted with a Gaussian function. The mean values extracted from these Gaussian fits were then shifted such that all carbon peaks were aligned, as illustrated in Fig.~\ref{fig:calibration}.\\
+For the analysis of reaction fragments, the reconstructed mean energy loss \(\overline{\Delta E}\) is obtained from the calibrated anode signals according to:
 \begin{equation}
-\overline{Z} = \frac{1}{n} \sum_{i=1}^{n} c_i \cdot E_i,
+\overline{\Delta E} = \frac{1}{n} \sum_{i=1}^{n} c_i \cdot \Delta E_i,
 \end{equation}
-where \(E_i\) is the energy signal recorded by the \(i\)-th anode, \(c_i\) is its corresponding calibration factor, and \(n\) is the number of anodes with valid signals contributing to the event.
-
+where \(\Delta E_i\) is the energy loss signal recorded by the \(i\)-th anode, \(c_i\) is the corresponding calibration factor, and $n$ is the number of anodes with valid signals contributing to the event.
 \begin{figure}[ht]
      \centering
      \begin{subfigure}[t]{0.75\textwidth}
@@ -187,7 +192,7 @@ Raw, uncalibrated $\Delta E$ distributions from all 16 TWIN anodes, 550~AMeV thi
         \label{fig:calibration}
 \end{figure}
 \subsubsection{TWIN MUSIC Event Selection}
-As previously stated cuts on the downstream detectors are avoided. However, events which have hits in one or several anodes in TWIN MUSIC but no signal in the reference anode are discarded as a whole neither contributing to $N_1$ (incoming selected ions) nor to $N_2$ (unreacted ions). If no reference time from start CFD signal is available it is not possible to measure the drift time in the individual anodes which makes it not possible to distinguish between signal and noise hits for multi-hit anode events in TWIN MUSIC. The number of events affected by this cut is in the region of $10/10^5$. This is negligible to the number of incoming ions $N_1$ and should not have any dependence whether the projectile reacted or not.
+As previously stated cuts on the downstream detectors are avoided. However, events which have hits in one or several anodes in TWIN MUSIC but no signal in the reference anode are discarded as a whole neither contributing to $N_1$ (incoming selected ions) nor to $N_2$ (unreacted ions). If no reference time from start CFD signal is available it is not possible to measure the drift time in the individual anodes which makes it not possible to distinguish between signal and noise hits for multi-hit anode events in TWIN MUSIC. The number of events affected by this cut is in the region of $10/10^5$. This is negligible to the number of incoming ions $N_1$ and should not have any dependence whether the projectile reacted or not and therefore can be considered as a cut on the incoming beam.
 \begin{table}[h!]
 \centering
 \begin{subtable}[c]{1.\textwidth}
@@ -206,7 +211,7 @@ medium & 1224240{\footnotesize(*871*)} & 973221{\footnotesize(*66*)} & 1062810{\
 thick & 1329940{\footnotesize(*971*)} & 952467{\footnotesize(*74*)} & 1100960{\footnotesize(*73*)} & 900439{\footnotesize(*121*)} \\
 \hline
 \end{tabular}
-\caption{Number of clean selected incoming $^{12}$C ions. In brackets number of rejected events because of missing tref in TWIN MUSIC.}
+\caption{Number of clean selected incoming $^{12}$C ions. In brackets number of rejected events because of missing t$_{\text{ref}}$ in TWIN MUSIC.}
 \label{tab:incoming_ions}
 \end{subtable}
 \newline
@@ -226,7 +231,7 @@ medium & 1115685{\footnotesize(8.867\%)} & 884450{\footnotesize(9.121\%)} & 9665
 thick & 1124243{\footnotesize(15.467\%)} & 801157{\footnotesize(15.886\%)} & 925980{\footnotesize(15.893\%)} & 756105{\footnotesize(16.029\%)} \\
 \hline
 \end{tabular}
-\caption{Number of survived carbon isotopes after the target identified via 2D Gaussian fit with borders within 3.5$\sigma$ fit range. In brackets the percentage of projectiles with a charge state of Z < 6 after the target, relative to the total number $N_1$ of incoming $^{12}$C ions.}
+\caption{Number of survived carbon isotopes after the target identified via 2D Gaussian fit with borders within 3.5$\sigma$ fit range. In brackets the percentage of projectiles with charge  Z $\neq$ 6 after the target, relative to the total number $N_1$ of incoming $^{12}$C ions.}
 \label{tab:survived_ions}
 \end{subtable}
 \caption{Numbers of incoming projectiles $N_1$ and survived carbon isotopes $N_2$ for all energy and target combinations after the event selection.}
@@ -311,7 +316,7 @@ However, in the beam energy range considered here ($400 - 800$~AMeV), the energy
     %\includegraphics[width=\textwidth,keepaspectratio=true]{Figures/cccs_vs_sigma_cut.pdf} %%old version
     \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/cccs_vs_sigma_cut.png}
     \caption{
-    Estimate of the charge changing cross sections depending on the fit range applied on the Fig.~\ref{fig:twin_2d_gaus_cut} for the different target thicknesses and beam energies. The observed decrease in cross section values with increasing fit range is attributed to the energy dependence of the ionization energy loss. At higher fit ranges, the contribution from tails of the energy loss distribution of lighter fragments (e.g., Z = 5) becomes increasingly included in the integration window for heavier fragments (e.g., Z = 6), leading to an underestimation of the charge-changing cross section. This effect becomes more pronounced at higher beam energies, where the relative resolution decreases due to the flattening of the Bethe-Bloch curve, thereby enhancing the probability of misidentification between adjacent charge states.
+    Estimate of the charge changing cross sections depending on the fit range applied on the Fig.~\ref{fig:twin_2d_gaus_cut} for the different target thicknesses and beam energies. The observed decrease in cross section values with increasing fit range is attributed to the energy dependence of the ionization energy loss. At higher fit ranges, the contribution from tails of the energy loss distribution of lighter fragments (e.g., Z = 5) becomes increasingly included in the integration window for heavier fragments (e.g., Z = 6), leading to an underestimation of the charge-changing cross section. This effect becomes more pronounced at higher beam energies, where the relative resolution decreases due to the flattening of the Bethe-Bloch curve, thereby enhancing the probability of misidentification between adjacent nuclear charges.
      }
     \label{fig:cccs_vs_sigma_cut}
 \end{figure}
