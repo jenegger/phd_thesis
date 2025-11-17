@@ -48,7 +48,7 @@ Now that $\theta_{out}$ is known and the position outside the magnetic field of 
 \begin{equation}\label{eq:rho_glad}
 r = \frac{L_{eff}}{2\,\cdot sin\left(\frac{\theta_{in}+\theta_{out}}{2}\right)\,\cdot cos\delta}
 \end{equation}
-where $L_{eff}$ is the effective active width of the magnetic field of GLAD, which corresponds $L_{eff} \approx 2.06\,m$. This value could also be verified by extracting $L_{eff}$ from the formula for the magnetic rigidity $ B\cdot r = \gamma\beta \, m /q$ for empty target runs with known values of the B-field\footnote{For detector calibration, primarily for the ToFWall, we had several "empty sweep runs", with empty target and different B-field strength settings. Those runs were optimal to validate $L_{eff}$.}.\newline
+where $L_{eff}$ is the effective active width of the magnetic field of GLAD, which corresponds $L_{eff} \approx 2.06\,m$. This value could also be verified by extracting $L_{eff}$ from the formula for the magnetic rigidity $ B\cdot r = \gamma\beta \, m /q$ for empty target runs with known values of the B-field\footnote{For detector calibration, primarily for the ToF Wall, we had several "empty sweep runs", with empty target and different B-field strength settings. Those runs were optimal to validate $L_{eff}$.}.\newline
 A detailed derivation of Eq.~\ref{eq:rho_glad} can be found in appendix \ref{app:flightpath}.
 At this stage the full pathlength $\mathbf{L}$ form the Start detector to the ToFW can be determined:
 \begin{align*}
@@ -91,7 +91,7 @@ To estimate the time of flight resolution for events which hit the ToF Wall bar 
 \widetilde{ToF} &= \frac{\overline{L[i]}}{L[i]} \cdot ToF[i]
 \end{align*}
 $\overline{L[i]}$ is the mean pathlength, whereas $L[i]$ and $ToF[i]$ are event-wise selected.
-By reconstructing the fligh-path as described in Subsection~\ref{subsec:flightpath_reco} and employment of the mentioned time calibration steps the average time resolution $\sigma_t \approx 90\, ps$\footnote{To remove events with large angular straggling, a cut of $\pm 20\,mm$ on the beam spot for the $y$-position on the MWPC3 was applied.} was obtained. Although the achieved time resolution is lower than the intrinsic ToF-Wall performance of approximately 20 ps, the limitations arising from the absence of operational tracking detectors, the lack of an available GLAD field map, and the resulting constraints on trajectory reconstruction must be taken into account. Nevertheless, the obtained resolution is sufficient to reliably perform particle identification for light ions, such as carbon.
+By reconstructing the fligh-path as described in Subsection~\ref{subsec:flightpath_reco} and employment of the mentioned time calibration steps the average time resolution $\sigma_t \approx 90\, ps$\footnote{To remove events with large angular straggling, a cut of $\pm 20\,mm$ on the beam spot for the $y$-position on the MWPC3 was applied.} was obtained. Although the achieved time resolution is lower than the intrinsic ToF Wall performance of approximately 20 ps, the limitations arising from the absence of operational tracking detectors, the lack of an available GLAD field map, and the resulting constraints on trajectory reconstruction must be taken into account. Nevertheless, the obtained resolution is sufficient to reliably perform particle identification for light ions, such as carbon.
 
 
 \subsection{Event Selection}
@@ -434,7 +434,7 @@ In the S455 experiment, as proof of principle, for fission via quasi-free scatte
     \label{fig:overview_s455}
 \end{figure}
 The realization of the proposed experiment required a fine tuned  setup for the complete identification of the fission fragments and the determination of the neutrons emitted in coincidence. Moreover a  precise measurement of the momentum of the knocked out protons was required for a full characterization of the fissioning process.\newline
-The central detector used for the simultaneous charge measurement of the fission fragments was the TWIN-MUSIC detector, which, owing to its four-section geometry, enabled the detection of both fragments in coincidence (for more details see: Section~\ref{sec:ionisation_chambers}). The final energy/charge calibration employs many fine-tuning steps, similar to the description in Subsection~\ref{sec:twin_calib} to retrieve the final charges of the two fission products, as shown in Fig.~\ref{fig:charge_distr_s455}. 
+The central detector used for the simultaneous charge measurement of the fission fragments was the TWIN-MUSIC detector, which, owing to its four-section geometry, enabled the detection of both fragments in coincidence (for more details see: Section~\ref{sec:ionisation_chambers}). The final energy/charge calibration employs many fine-tuning steps, similar to the description in Subsection~\ref{subsec:carbon_id} to retrieve the final charges of the two fission products, as shown in Fig.~\ref{fig:charge_distr_s455}. 
 
 \begin{figure}[htpb]
     \centering
