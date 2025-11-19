@@ -68,7 +68,8 @@ To ensure a clean incoming event selection, the following prerequisites must be 
 \item \textbf{$^{12}$C identification of incoming projectile by upstream detectors:}\newline
 \begin{figure}[htpb]
     \centering
-    \includegraphics[width=\textwidth,height=9cm,keepaspectratio=true]{Figures/charge_val_r3b_start_mw0_cuts.pdf}
+    %\includegraphics[width=\textwidth,height=9cm,keepaspectratio=true]{Figures/charge_val_r3b_start_mw0_cuts.pdf}
+    \includegraphics[width=\textwidth,height=9cm,keepaspectratio=true]{Figures/r3bmusic_cut_nice_plot.pdf}
     \caption{
     Charge distribution in R3B MUSIC with predefined calibration parameters with already applied positional cuts on MWPC0 - positioned upstream to the ionization chamber and required coincident signal in the start detector. The rise beyond Z $\ge$ 7.2 originates from pile-up events. The sharp cut on the right at Z $\gtrapprox$ 7.35 is due to the limit of the electronics dynamic range. The fall off at Z $\lessapprox$ 4.8 is due to applied threshold settings on the detector side.
     }
@@ -103,12 +104,14 @@ Bit Position &TPat Name & Description \\
 \label{tab:tpats}
 \end{table}
 %Since the TPat selection itself does not necessary set any pileup constraints it is important to analyze the signals of the detectors upstream carefully to insure yourself that only events with  one incoming $^{12}$C ion at a time get selected. Herefore events with incoming ions with charge $Z = 6 \pm 1\sigma$ are chosen, as discussed in the previous point. With this restrictive cut pileup events can be efficiently rejected (see also Appendix~\ref{app:r3bmusic_pileup}). \newline
-This required that both left and right photomultipliers of the start detector have seen a coincident signal within a time-window of 1.391 ns, see Fig.~\ref{fig:start_good_event_sel}. The width of the time window was chosen based on the maximum signal rise time of the detector as well as the maximal propagation delay of the scintillation light to the oppositely positioned preamplifiers. The overall searching window of the start detector was set to 2 $\mu s$, see Fig.~\ref{fig:start_good_event_sel}. In addition, a veto condition is applied such that any signal in one of the four ROLU quadrants rejects the event. This occurs when the incoming ion hits outside the $\pm$1~cm open window in both the $x$- and $y$-directions.\newline
+This required that both left and right photomultipliers of the start detector have seen a coincident signal within a time-window of 1.391 ns, see Fig.~\ref{fig:start_good_event_sel}. The width of the time window was chosen based on the maximum signal rise time of the detector as well as the maximal propagation delay of the scintillation light to the oppositely positioned photomultipliers. The overall searching window of the start detector was set to 2 $\mu s$, see Fig.~\ref{fig:start_good_event_sel}. In addition, a veto condition is applied such that any signal in one of the four ROLU quadrants rejects the event. This occurs when the incoming ion hits outside the $\pm$1~cm open window in both the $x$- and $y$-directions.\newline
 %For the MWPC0 which is mounted right at the beam entrance of Cave C no hit multiplicity cuts were applied considering its operating mode, which is designed for charge sharing between the readout pads. 
 \begin{figure}[ht]
 \centering
-\includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/t_diff_start.pdf}
-\caption{$\Delta t_{right-left}$ between hits in the Start detector for events with exactly one hit on the left and right preamplifier and limiting the time difference in the range 0.555 ns to 1.946ns.}
+%\includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/t_diff_start.pdf}
+\includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/t_diff_start_with_cuts.pdf}
+%\caption{$\Delta t_{right-left}$ between hits in the Start detector for events with exactly one hit on the left and right preamplifier and limiting the time difference in the range 0.555 ns to 1.946ns.}
+\caption{Time difference $\Delta t_{\mathrm{right-left}}$ between hits in the Start detector for events with exactly one hit on both the left and right photomultipliers. The nominal search window of the Start detector was 2,$\mu$s, set to accommodate the maximum signal rise time and the maximal scintillation light propagation delay. For this analysis, the time difference was initially limited to the range $0.555\ \mathrm{ns} \leq \Delta t_{\mathrm{right-left}} \leq 1.946\ \mathrm{ns}$, and a further restricted window of $0.555\ \mathrm{ns} \leq \Delta t_{\mathrm{right-left}} \leq 0.95\ \mathrm{ns}$ (indicated by red dotted lines) was used to isolate a clean signal. Thick target run, 800 AMeV.}
 \label{fig:start_good_event_sel}
 \end{figure}
 \item \textbf{Projectile's focus on the target region:}\newline
@@ -129,10 +132,12 @@ In addition the MWPC0 $x$-position and the available projectile angle in the $x$
 %This can also be seen as a consistency check whether the applied (predefined) calibration parameters are properly set.
 \begin{figure}[htpb]
     \centering
-    %\includegraphics[width=\textwidth,height=9cm,keepaspectratio=true]{Figures/extrapolated_target_x_pos.pdf}
-    \includegraphics[width=\textwidth,height=9cm,keepaspectratio=true]{Figures/extrapolated_target_x_pos_label_xl.png}
+    %\includegraphics[width=\textwidth,height=9cm,keepaspectratio=true]{Figures/extrapolated_target_x_pos_label_xl.png}
+    %\includegraphics[width=\textwidth,height=9cm,keepaspectratio=true]{Figures/target_extrapolation_550_thin_manip.png}
+    \includegraphics[width=\textwidth,height=9cm,keepaspectratio=true]{Figures/target_extrap_libreoffice_550_thin.pdf}
     \caption{
-   	Propagated $x$-position on target location from measured x-value on MWPC0 and angle measurement from R3B MUSIC. The target area is 3 x 3 cm$^2$. In red the selected events with $\pm 2\sigma$ cut in x and y position in MWPC0 and  $\pm 1\sigma$ charge cut on R3B MUSIC, in blue no cut on incoming events. Thin target run, 550 AMeV.
+   	%Propagated $x$-position on target location from measured x-value on MWPC0 and angle measurement from R3B MUSIC. The target area is 3 x 3 cm$^2$. In red the selected events with $\pm 2\sigma$ cut in x and y position in MWPC0 and  $\pm 1\sigma$ charge cut on R3B MUSIC, in blue no cut on incoming events. Thin target run, 550 AMeV.
+	Selection of incoming beam particles based on reconstructed target coordinates. The $x$-position at the target is propagated from the measured $x$-coordinate in MWPC0 and the trajectory angle determined by the R3B MUSIC detector. The target area is $3 \times 3$\,cm$^2$, indicated by the black dotted lines representing its spatial boundaries in $x$. Events selected with cuts of $\pm 2\sigma$ in both $x$ and $y$ positions at MWPC0 and a $\pm 1\sigma$ charge selection in R3B MUSIC are shown in red, while all unfiltered incoming events are shown in blue. This clearly demonstrates that the selected incoming ions hit well the target. Thin target run, 550\,AMeV.
     }
     \label{fig:x_pos_target}
 \end{figure}
@@ -258,7 +263,8 @@ For each anodes with multiple hits select the hit with lowest drift time differe
 \begin{figure}[htpb]
     \centering
     %\includegraphics[width=\textwidth,keepaspectratio=true]{Figures/twim_up_down_calibrated.png}
-    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/charge_plot_cc_cs_gimp.png}
+    %\includegraphics[width=\textwidth,keepaspectratio=true]{Figures/charge_plot_cc_cs_gimp.png}
+    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/nice_2d_eloss_plot.pdf}
     \caption{
 %    Two dimensional Gaussian fit with 3.5$\sigma$ fit range on identified carbon isotopes in TWIN MUSIC. The horizontal and vertical side bars contain events where either the eight upstream anodes or downstream anodes have no hit entry. The cluster at $\overline{Z} \approx$ 4.5 corresponds to boron isotopes (Z = 5). The broad cluster observed for $\overline{Z} \leq 3.5$ originates from events in which the $^{12}$C ion undergoes fragmentation into multiple light charged particles. In such cases, the total energy loss of the resulting particle combinations is measured in the TWIN MUSIC, which does not permit their individual separation. 
 	Two-dimensional Gaussian fit with a 3.5$\sigma$ fit range applied to the identified carbon isotopes in TWIN MUSIC. The zoomed regions along the horizontal and vertical axes with the corresponding fit cuts illustrate events where either the eight downstream or eight upstream anodes registered no hit entries. The cluster at $\overline{Z} \approx$ 4.5 corresponds to boron isotopes (Z = 5). The broad cluster observed for $\overline{Z} \leq 3.5$ originates from events in which the $^{12}$C ion undergoes fragmentation into multiple light charged particles. In such cases, the total energy loss of the combined fragments is measured in TWIN MUSIC, preventing individual particle separation.
@@ -889,6 +895,32 @@ Possible explanations for the observed quenching of the total interaction cross 
 %TODO: maybe add to summary or outlook
 %Another possible explanation -- again pointing toward in-medium effects not yet accounted for in the present theoretical frameworks -- is the onset of inelastic reaction channels involving one- and two-pion production, which open at beam energies of approximately 280 and 530 AMeV, respectively. In-medium modifications, such as changes to the gluon density distribution within nucleons bound inside a dense nuclear environment, may significantly influence the contribution of these pion-production channels to the overall interaction cross section. \newline
 %To further investigate these potential in-medium effects, a systematic and comparative study of total interaction cross sections for nucleus-proton, nucleus-nucleus, and nucleon-nucleon systems is essential. Such an approach would allow the disentanglement and quantitative assessment of the various underlying mechanisms, ultimately advancing our understanding of medium-dependent nuclear reaction dynamics.\newline
-
-\newpage
+\begin{table}
+\centering
+%\begin{tabularx}{\textwidth}{lrrrrrrr}
+\begin{tabularx}{\textwidth}{lccccccc}
+\toprule
+target &  E [AMeV] &  Z $\neq$6[\%] &  Z=6, borders[\%] &  $c_{tref}$[\%] &  $c_{geo}$[\%] &  $c_{iso}$[\%] &  $c_{iso-raw}$[\%] \\
+\midrule
+   c\_54 &     400 &     5.5356 &     -0.0872 &  $\pm$0.0724 &  0.1075 &  0.4603 &      0.4125 \\
+ c\_1086 &     400 &     8.9593 &     -0.1039 &  $\pm$0.0711 &  0.1544 &  0.6971 &      0.6165 \\
+ c\_2198 &     400 &    15.5898 &     -0.1333 &   $\pm$0.073 &  0.2428 &  1.0830 &      0.9537 \\
+  empty &     400 &     1.9243 &     -0.0726 &  $\pm$0.0756 &  0.0619 &  0.1479 &      0.1106 \\
+   c\_54 &     550 &     5.8168 &     -0.0676 &   $\pm$0.007 &  0.0645 &  0.4632 &      0.4532 \\
+ c\_1086 &     550 &     9.1931 &     -0.0784 &  $\pm$0.0068 &  0.0733 &  0.7821 &      0.7347 \\
+ c\_2198 &     550 &    15.9742 &     -0.0959 &  $\pm$0.0078 &  0.1023 &  1.2638 &      1.1760 \\
+  empty &     550 &     2.2276 &     -0.0540 &  $\pm$0.0076 &  0.0506 &  0.2077 &      0.1719 \\
+   c\_54 &     650 &     5.7000 &     -0.0692 &  $\pm$0.0072 &  0.0315 &  0.3936 &      0.3888 \\
+ c\_1086 &     650 &     9.1249 &     -0.0810 &  $\pm$0.0076 &  0.0381 &  0.7130 &      0.6755 \\
+ c\_2198 &     650 &    15.9887 &     -0.1039 &  $\pm$0.0066 &  0.0585 &  1.1484 &      1.1087 \\
+  empty &     650 &     2.0548 &     -0.0551 &  $\pm$0.0091 &  0.0197 &  0.1396 &      0.1553 \\
+   c\_54 &     800 &     5.7489 &     -0.0385 &  $\pm$0.0082 &  0.0191 &  0.4008 &      0.3494 \\
+ c\_1086 &     800 &     9.1972 &     -0.0435 &  $\pm$0.0141 &  0.0193 &  0.6017 &      0.5367 \\
+ c\_2198 &     800 &    16.0838 &     -0.0596 &  $\pm$0.0134 &  0.0309 &  1.0648 &      0.9556 \\
+  empty &     800 &     2.0257 &     -0.0329 &  $\pm$0.0127 &  0.0136 &  0.1433 &      0.1294 \\
+\bottomrule
+\end{tabularx}
+\caption{Overview of reaction rates. Rates in columns \textit{Z$\neq$6}, \textit{Z=6, borders} and \textit{c$_{tref}$} refer to the number of incoming $^{12}$C ions. Columns \textit{c$_{geo}$}, \textit{c$_{iso}$}, and \textit{c$_{iso-raw}$} refer to the rate of survived carbon ions (1- “\textit{Z$\neq$6}")}
+\end{table}
+\clearpage
 
