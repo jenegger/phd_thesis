@@ -36,50 +36,51 @@ You're missing a field name---line 1328 of file main.bib
  :                  % Or the year you accessed it, or the last updated year if available on the site
 I'm skipping whatever remains of this entry
 Warning--empty journal in horvat2021evolution
+Warning--empty year in essick2102astrophysical
 Warning--empty journal in bassani2005encyclopedia
 Warning--empty journal in popescu2021review
 Warning--empty author in clas2018probing
 Warning--empty booktitle in fair_reinmann
 Warning--can't use both volume and number fields in bertini2011r3broot
-You've used 136 entries,
+You've used 141 entries,
             1876 wiz_defined-function locations,
-            1227 strings with 29813 characters,
-and the built_in function-call counts, 37311 in all, are:
-= -- 3577
-> -- 1872
+            1251 strings with 30834 characters,
+and the built_in function-call counts, 38857 in all, are:
+= -- 3718
+> -- 1965
 < -- 0
-+ -- 685
-- -- 549
-* -- 2574
-:= -- 5378
-add.period$ -- 166
-call.type$ -- 136
-change.case$ -- 116
++ -- 718
+- -- 577
+* -- 2688
+:= -- 5603
+add.period$ -- 171
+call.type$ -- 141
+change.case$ -- 121
 chr.to.int$ -- 0
-cite$ -- 142
-duplicate$ -- 1999
-empty$ -- 3191
-format.name$ -- 549
-if$ -- 9125
+cite$ -- 148
+duplicate$ -- 2086
+empty$ -- 3307
+format.name$ -- 577
+if$ -- 9499
 int.to.chr$ -- 0
-int.to.str$ -- 136
-missing$ -- 127
-newline$ -- 441
-num.names$ -- 130
-pop$ -- 427
+int.to.str$ -- 141
+missing$ -- 132
+newline$ -- 456
+num.names$ -- 135
+pop$ -- 440
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1478
+skip$ -- 1547
 stack$ -- 0
-substring$ -- 1747
-swap$ -- 939
+substring$ -- 1807
+swap$ -- 986
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 6
-while$ -- 309
-width$ -- 139
-write$ -- 1372
+warning$ -- 7
+while$ -- 320
+width$ -- 144
+write$ -- 1422
 (There were 7 error messages)
