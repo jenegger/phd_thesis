@@ -651,6 +651,13 @@ D.~Bertini, ``{R3BRoot, simulation and analysis framework for the R3B
   experiment at FAIR},'' in {\em Journal of Physics: Conference Series},
   vol.~331, p.~032036, IOP Publishing, 2011.
 
+\bibitem{JENEGGER2026171048}
+{T. Jenegger, N. Hartman, R. Gernhäuser, L. Fabbietti and L. Heinrich},
+  ``{Machine learning for the cluster reconstruction in the CALIFA calorimeter
+  at R3B},'' {\em {Nuclear Instruments and Methods in Physics Research Section
+  A: Accelerators, Spectrometers, Detectors and Associated Equipment}},
+  vol.~1082, p.~171048, 2026.
+
 \bibitem{Nielsen2016}
 F.~Nielsen, {\em {Hierarchical Clustering}}, pp.~195--211.
 \newblock Cham: Springer International Publishing, 2016.
@@ -688,13 +695,6 @@ P.-T. De~Boer, D.~P. Kroese, S.~Mannor, and R.~Y. Rubinstein, ``{A tutorial on
 D.~Newton, R.~Pasupathy, and F.~Yousefian, ``{Recent trends in stochastic
   gradient descent for machine learning and Big Data},'' in {\em 2018 Winter
   Simulation Conference (WSC)}, pp.~366--380, IEEE, 2018.
-
-\bibitem{JENEGGER2026171048}
-{T. Jenegger, N. Hartman, R. Gernhäuser, L. Fabbietti and L. Heinrich},
-  ``{Machine learning for the cluster reconstruction in the CALIFA calorimeter
-  at R3B},'' {\em {Nuclear Instruments and Methods in Physics Research Section
-  A: Accelerators, Spectrometers, Detectors and Associated Equipment}},
-  vol.~1082, p.~171048, 2026.
 
 \bibitem{battaglia2018relational}
 P.~W. Battaglia, J.~B. Hamrick, V.~Bapst, A.~Sanchez-Gonzalez, V.~Zambaldi,

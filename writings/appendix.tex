@@ -448,20 +448,18 @@ While a time-based selection algorithm for multi-hit anodes was used in both the
     \end{subfigure}\vspace{1em}
     \begin{subfigure}[t]{0.65\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{Figures/zero_charge_twim_active_area_xl.png}
+        %\includegraphics[width=\textwidth]{Figures/zero_charge_twim_active_area_xl.png}
+        \includegraphics[width=\textwidth]{Figures/zero_charge_twim_active_area.png}
         \caption{Rate of events without any signal in the TWIN MUSIC active area, normalized to the number of incoming ions $N_1$.}
         \label{sfig:rate_dead_twin_active}
     \end{subfigure}
-    \caption{Overview -- Events without signal in TWIN MUSIC.}
+    \caption{Overview -- Events without signal in TWIN MUSIC ((also no $t_{ref}$ signal).}
     \label{fig:mwpc23_proj_procedure}
 \end{figure}
 
 TWIN MUSIC registers a valid signal only when at least one anode detects ionization. Events where no anode responds may be attributed to dead time, during which the data acquisition (DAQ) or electronics is temporarily unavailable.
-
 To identify and quantify such occurrences, Fig.~\ref{sfig:mw1xy_zero_twin} presents the $x$-$y$ distribution measured by MWPC1 for events with no corresponding signal in TWIN MUSIC. The active region of TWIN MUSIC is clearly delineated, and the beam spot appears as a concentrated region inside the red rectangle. Events within this region likely correspond to ions traversing the detector while TWIN MUSIC was in dead time. The broader distribution outside the active area is well understood by the limited geometrical acceptance of TWIN MUSIC, discussed in detail in Section~\ref{sec:geo_corr}.
-
 To evaluate the dead time rate quantitatively, the number of events in the active area without a TWIN MUSIC signal, $N_1^{\text{active}}$, is normalized to the total number of incoming ions $N_1$. This ratio is shown for all target and empty runs in Fig.~\ref{sfig:rate_dead_twin_active}. The relative rates are largely consistent across different beam energies and do not exhibit dependence on target thickness, as expected. Since dead time is an intrinsic property of the detector and its readout system, it should be independent of target conditions.
-
 This observation also supports the expectation that the dead time rate does not depend on the fragment's charge. Given that the MWPC1 threshold is higher than that of TWIN MUSIC, events triggering MWPC1 are assumed to be reliably detectable by TWIN MUSIC under nominal conditions. Therefore, we can write:
 
 \begin{equation*}
@@ -470,7 +468,7 @@ r_{\text{dead time}} = \frac{N_1^{\text{active}}}{N_1} \approx \frac{N_2^{\text{
 
 where $N_2^{\text{active}}$ refers to the respective events with survived carbon fragments (Z = 6) with no corresponding signal in TWIN MUSIC.
 
-Although the dead time rates are relatively close across all energy settings, a systematic uncertainty must still be considered. This is estimated by computing the mean rate $\mu_{\text{energy}}$ across energy points and determining the corresponding standard deviation $\Delta_{\text{energy}}$. The average of these standard deviations, $\overline{\Delta_{\text{energy}}}$, is then used to estimate the uncertainty contribution.
+Although the dead time rates are relatively close across all energy settings, a systematic uncertainty must still be considered. This is estimated by computing the mean rate $\mu_{\text{energy}}$ across energy points and determining the corresponding standard deviation $\Delta_{\text{energy}}$. The average of these standard deviations for all beam energies, $\overline{\Delta_{\text{energy}}}$, is then used to estimate the uncertainty contribution.
 
 This uncertainty, denoted $\Delta^{\text{sys}}_{N_2}$, enters the total systematic error on the cross section measurement according to:
 
