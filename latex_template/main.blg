@@ -1,5 +1,5 @@
-This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
-Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: Abstract.aux
 A level-1 auxiliary file: Abstract_de.aux
@@ -35,6 +35,10 @@ You're missing a field name---line 1328 of file main.bib
  :   year = {2025}, 
  :                  % Or the year you accessed it, or the last updated year if available on the site
 I'm skipping whatever remains of this entry
+Repeated entry---line 1498 of file main.bib
+ : @article{roca2013electric
+ :                          ,
+I'm skipping whatever remains of this entry
 Warning--empty journal in horvat2021evolution
 Warning--empty year in essick2102astrophysical
 Warning--empty journal in bassani2005encyclopedia
@@ -42,45 +46,45 @@ Warning--empty journal in popescu2021review
 Warning--empty author in clas2018probing
 Warning--empty booktitle in fair_reinmann
 Warning--can't use both volume and number fields in bertini2011r3broot
-You've used 141 entries,
+You've used 142 entries,
             1876 wiz_defined-function locations,
-            1251 strings with 30834 characters,
-and the built_in function-call counts, 38857 in all, are:
-= -- 3718
-> -- 1965
+            1256 strings with 31089 characters,
+and the built_in function-call counts, 39266 in all, are:
+= -- 3751
+> -- 2000
 < -- 0
-+ -- 718
-- -- 577
-* -- 2688
-:= -- 5603
-add.period$ -- 171
-call.type$ -- 141
-change.case$ -- 121
++ -- 730
+- -- 588
+* -- 2721
+:= -- 5666
+add.period$ -- 172
+call.type$ -- 142
+change.case$ -- 122
 chr.to.int$ -- 0
-cite$ -- 148
-duplicate$ -- 2086
-empty$ -- 3307
-format.name$ -- 577
-if$ -- 9499
+cite$ -- 149
+duplicate$ -- 2107
+empty$ -- 3331
+format.name$ -- 588
+if$ -- 9595
 int.to.chr$ -- 0
-int.to.str$ -- 141
-missing$ -- 132
-newline$ -- 456
-num.names$ -- 135
-pop$ -- 440
+int.to.str$ -- 142
+missing$ -- 133
+newline$ -- 459
+num.names$ -- 136
+pop$ -- 442
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 1547
+skip$ -- 1566
 stack$ -- 0
-substring$ -- 1807
-swap$ -- 986
+substring$ -- 1819
+swap$ -- 999
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 7
-while$ -- 320
-width$ -- 144
-write$ -- 1422
-(There were 7 error messages)
+while$ -- 322
+width$ -- 145
+write$ -- 1433
+(There were 8 error messages)
