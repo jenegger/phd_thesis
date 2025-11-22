@@ -198,8 +198,11 @@ The information of azimuthal and polar angles of the two protons can be merged i
 
 \begin{figure}[htpb]
 	\begin{subfigure}[t]{.73\linewidth}
-    \includegraphics[width=\textwidth]{Figures/opang.png}
-	\caption{Opening angle distribution from S444 experimental data}
+    %\includegraphics[width=\textwidth]{Figures/opang.png}
+    %\includegraphics[width=\textwidth]{Figures/opang_p2p_with_cut_label.pdf}
+    \includegraphics[width=\textwidth]{Figures/opang_with_cut.png}
+	%\caption{Opening angle distribution from S444 experimental data.}
+	\caption{pening-angle distribution from the S444 experimental data. In blue the distribution without any angular selection, in red restricted to opening angles smaller than \(90^{\circ}\).}
 	\end{subfigure}
 	\hspace{2em}
 	\begin{subfigure}[t]{.75\linewidth}
@@ -326,14 +329,15 @@ T_{^{11}B^*} &= \frac{p_i^2}{2 \cdot M_{^{11}B}}
 \end{align*}
 with $p_i$ the inner momentum of the proton knocked out of the $^{12}C$ projectile, see Eq.~\ref{eq:miss_mom}.
 By inserting this into the  previous equation, one finally obtains for the one proton separation energy $S_p$:
-\begin{equation}
+\begin{equation}\label{eq:sep_energy}
 S_p = (\gamma - 1)\cdot m_p + \gamma \cdot (T_1+T_2) - \beta \cdot \gamma \cdot(p_1*cos(\theta_1) + p_2*cos(\theta_2)) + T_{^{11}B}
-\end{equation}\label{eq:sep_energy}
+\end{equation}
 Since no target-detector tracking system was available for the S444 experiment, the energies as well as the azimuthal ($\varphi$) and polar ($\theta$) angles of the two correlated protons are reconstructed just with the granularity of the CALIFA calorimeter. The calorimeter provides an energy resolution of $\frac{\Delta E}{E}(@100MeV) \lesssim 1 \%/\sqrt{E[\text{MeV}]}$, along with angular resolutions of approximately  $\Delta \varphi \approx \frac{6^{\circ}}{\sqrt{12}}$, and $\Delta \theta \approx \frac{2^{\circ}}{\sqrt{12}}$.
-The best way to visualize the separation energy $S_p$ is to plot it against the summed energy of the two protons in the $^{12}C$ rest frame as shown in Fig.~\ref{fig:sep_energy}. An indication of two vertical bumps is visible. They correspond to the two QFS-reaction types within the $CH_2$ target: the proton within the $^{12}C$ projectile can either scatter on the hydrogen (proton-like) part of on the carbon part of the plastic target. For the first case only the separation energy $S_p$ as derived in Eq.~\ref{eq:sep_energy} is necessary to remove the proton of the projectile within the $^{12}C$ nucleus. In the second case the QFS-reaction is between two protons both bound within a carbon nucleus -- the projectile carbon and the target carbon part. Herefore more energy is needed to free both protons from their nuclear bond. This corresponds to the left vertical structure in Fig.~\ref{fig:sep_energy}. It should be noted that the reconstructed one-proton separation energy $S_p$ is shifted with respect to the mean value of $\approx 16 MeV$. For a precise measurement the absolute position of the target and the reaction vertex would be needed. 
+The best way to visualize the separation energy $S_p$ is to plot it against the summed energy of the two protons in the $^{12}C$ rest frame as shown in Fig.~\ref{fig:sep_energy}. An indication of two vertical bumps is visible. They correspond to the two QFS-reaction types within the $CH_2$ target: the proton within the $^{12}C$ projectile can either scatter on the hydrogen (proton-like) part of on the carbon part of the plastic target. In the first case, only the separation energy \(S_{p}\), as defined in Eq.~\ref{eq:sep_energy}, is required to remove the proton from the \(^{12}\mathrm{C}\) projectile. This corresponds to approximately \(16\,\mathrm{MeV}\) (indicated by the right horizontal dotted line in Fig.~\ref{fig:sep_energy}). In the second case the QFS-reaction is between two protons both bound within a carbon nucleus -- the projectile carbon and the target carbon part. Herefore more energy is needed to free both protons from their nuclear bond. This corresponds to the left vertical structure in Fig.~\ref{fig:sep_energy}.
 \begin{figure}[htpb]
     \centering
-    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/sep_energy_vs_sum_energy.png}
+    %\includegraphics[width=\textwidth,keepaspectratio=true]{Figures/sep_energy_vs_sum_energy.png}
+    \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/sep_energy_vs_sum_energy_shifted.pdf}
     \caption{
 	Sum of the kinetic energies of the two correlated protons ($T_1/T_2$) versus the one proton separation energy $S_p$. Since this energy is needed to solve the proton from the nucleus' core, its value has conventionally a negative sign.  	 
     }
