@@ -44,9 +44,10 @@ Fig.~\ref{fig:hyp_function} shows the "hyperbolic squared secant" function with 
 The "hyperbolic squared secant" function is used to determine the x hit position as well as the y hit position for all MWPCs. Fig.~\ref{fig:x_mw23_default} shows the $x_{mw2}$ versus $x_{mw3}$ distribution of carbon isotopes for the 400 AMeV run with the thick target. The two correlated lines corresponding to the $^{12}$C and $^{11}$C isotopes can clearly be distinguished. The vertical line can be interpreted as amount of events where the incoming centered carbon fragment gets scattered by air or the detector material in place between MWPC2 and MWPC3. The horizontal wide spread line has no physical interpretation and can rather be explained by the \textit{cal-to-hit} step in MWPC2: For events where there is not a spatially constrained hit cluster but sparse hits the hyperbolic squared secant function may pick the wrong $Q_{max}$ and therefore wrongly reconstructs the x position in MWPC2. 
 \begin{figure}[htpb]
     \centering
-    \includegraphics[width=\textwidth,height=10cm,keepaspectratio=true]{Figures/mw23_default.png}
+    %\includegraphics[width=\textwidth,height=10cm,keepaspectratio=true]{Figures/mw23_default.png}
+    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/mw23_400_medium_default.pdf}
     \caption{
-   	 $x$-distribution in MWPC2 and MWPC3 for the 400 AMeV run with thick target. The green line acts as reference line for the isotope separation between $^{12}$C and $^{11}$C/$^{10}$C.
+   	 $x$-distribution in MWPC2 and MWPC3 for the 400 AMeV run with 1~cm target. The green line acts as reference line for the isotope separation between $^{12}$C and $^{11}$C/$^{10}$C. Correlation cut on $x$ MWPC1 and MWPC2 already applied.
      }
     \label{fig:x_mw23_default}
 \end{figure}
@@ -63,9 +64,10 @@ To overcome the issue with potentially wrong x- or y-position reconstruction in 
 Fig.~\ref{fig:mw23_own_clustering} shows the distribution of x in MWPC2 and MWPC3 using the coherent clustering reconstruction. This reconstruction method removes the uncorrelated horizontal line which was observed in Fig.~\ref{fig:x_mw23_default}. However the statistics are reduced by approximately $35\%$\footnote{Number of entries in the 2D plot for default reconstruction method: 533816, for the coherent clustering reconstruction: 346315 for the 400 AMeV run with thick target.}.
 \begin{figure}[htpb]
     \centering
-    \includegraphics[width=\textwidth,height=9cm,keepaspectratio=true]{Figures/mw23_own_clustering.png}
+    %\includegraphics[width=\textwidth,height=9cm,keepaspectratio=true]{Figures/mw23_own_clustering.png}
+    \includegraphics[width=\textwidth,height=8cm,keepaspectratio=true]{Figures/mw23_400_medium_coherent.pdf}
     \caption{
-   	 $x$-distribution in MWPC2 and MWPC3 using the coherent clustering reconstruction. Thick target run, beam energy 400 AMeV. The green line acts as reference line for the isotope separation between $^{12}$C and $^{11}$C/$^{10}$C.
+   	 $x$-distribution in MWPC2 and MWPC3 using the coherent clustering reconstruction for the 400 AMeV run with 1~cm target. The green line acts as reference line for the isotope separation between $^{12}$C and $^{11}$C/$^{10}$C. Correlation cut on $x$ MWPC1 and MWPC2 already applied.
      }
     \label{fig:mw23_own_clustering}
 \end{figure}

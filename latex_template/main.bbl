@@ -1,5 +1,24 @@
 \begin{thebibliography}{100}
 
+\bibitem{ponnath2024measurement}
+L.~Ponnath, T.~Aumann, C.~Bertulani, R.~Gernh{\"a}user, M.~Heil, T.~Almusidi,
+  H.~Alvarez-Pol, L.~Atar, L.~Atkins, Y.~Ayyad, {\em et~al.}, ``{Measurement of
+  nuclear interaction cross sections towards neutron-skin thickness
+  determination},'' {\em Physics Letters B}, vol.~855, p.~138780, 2024.
+
+\bibitem{JENEGGER2026171048}
+{T. Jenegger, N. Hartman, R. Gernhäuser, L. Fabbietti and L. Heinrich},
+  ``{Machine learning for the cluster reconstruction in the CALIFA calorimeter
+  at R3B},'' {\em {Nuclear Instruments and Methods in Physics Research Section
+  A: Accelerators, Spectrometers, Detectors and Associated Equipment}},
+  vol.~1082, p.~171048, 2026.
+
+\bibitem{morfouace2025asymmetric}
+P.~Morfouace, J.~Taieb, A.~Chatillon, L.~Audouin, G.~Blanchon, R.~Bernard,
+  N.~Dubray, N.~Pillet, D.~Regnier, H.~Alvarez-Pol, {\em et~al.}, ``{An
+  asymmetric fission island driven by shell effects in light fragments},'' {\em
+  Nature}, pp.~1--6, 2025.
+
 \bibitem{wimmer2010discovery}
 K.~Wimmer, T.~Kr{\"o}ll, R.~Kr{\"u}cken, V.~Bildstein, R.~Gernh{\"a}user,
   B.~Bastin, N.~Bree, J.~Diriken, P.~Van~Duppen, M.~Huyse, {\em et~al.},
@@ -290,12 +309,6 @@ A.~Ozawa, O.~Bochkarev, L.~Chulkov, D.~Cortina, H.~Geissel, M.~Hellstr{\"o}m,
   energies and determination of effective matter radii,'' {\em Nuclear Physics
   A}, vol.~691, no.~3-4, pp.~599--617, 2001.
 
-\bibitem{ponnath2024measurement}
-L.~Ponnath, T.~Aumann, C.~Bertulani, R.~Gernh{\"a}user, M.~Heil, T.~Almusidi,
-  H.~Alvarez-Pol, L.~Atar, L.~Atkins, Y.~Ayyad, {\em et~al.}, ``{Measurement of
-  nuclear interaction cross sections towards neutron-skin thickness
-  determination},'' {\em Physics Letters B}, vol.~855, p.~138780, 2024.
-
 \bibitem{hussein1991microscopic}
 M.~S. Hussein, R.~Rego, and C.~A. Bertulani, ``Microscopic theory of the total
   reaction cross section and application to stable and exotic nuclei,'' {\em
@@ -578,12 +591,6 @@ F.~Hoyle, ``On nuclear reactions occuring in very hot stars. i. the synthesis
 {M. Freer and H.O.U. Fynbo}, ``{The Hoyle state in 12C},'' {\em {Progress in
   Particle and Nuclear Physics}}, vol.~78, pp.~1--23, 2014.
 
-\bibitem{morfouace2025asymmetric}
-P.~Morfouace, J.~Taieb, A.~Chatillon, L.~Audouin, G.~Blanchon, R.~Bernard,
-  N.~Dubray, N.~Pillet, D.~Regnier, H.~Alvarez-Pol, {\em et~al.}, ``{An
-  asymmetric fission island driven by shell effects in light fragments},'' {\em
-  Nature}, pp.~1--6, 2025.
-
 \bibitem{bertini2013study}
 O.~Bertini, {\em {Study of 3 Lambda H and 4 Lambda H in the reaction of 6 Li+
   12 C at 2 A GeV}}.
@@ -655,13 +662,6 @@ M.~Lipi{\'n}ski, T.~W{\l}ostowski, J.~Serrano, and P.~Alvarez, ``{White rabbit:
 D.~Bertini, ``{R3BRoot, simulation and analysis framework for the R3B
   experiment at FAIR},'' in {\em Journal of Physics: Conference Series},
   vol.~331, p.~032036, IOP Publishing, 2011.
-
-\bibitem{JENEGGER2026171048}
-{T. Jenegger, N. Hartman, R. Gernhäuser, L. Fabbietti and L. Heinrich},
-  ``{Machine learning for the cluster reconstruction in the CALIFA calorimeter
-  at R3B},'' {\em {Nuclear Instruments and Methods in Physics Research Section
-  A: Accelerators, Spectrometers, Detectors and Associated Equipment}},
-  vol.~1082, p.~171048, 2026.
 
 \bibitem{Nielsen2016}
 F.~Nielsen, {\em {Hierarchical Clustering}}, pp.~195--211.
