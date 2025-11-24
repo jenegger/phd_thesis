@@ -281,10 +281,10 @@ f(x) = A e^{-\frac{1}{2}((\frac{x - \bar{x}}{\sigma_{x}})^2 +(\frac{y - \bar{y}}
 \label{eq:gauss_fit}
 \end{equation}
 where $x$ is the mean re-scaled energy loss of the first upstream anodes and $y$ the according eight downstream anodes.\\ 
-The number of surviving carbon isotopes -- for both empty and target runs -- is determined by as the integral of events within the ellipsoidal contour defined by the 2D Gaussian fit in the ($\overline{\Delta E_{\text{up}}}$,$\overline{\Delta E_{\text{down}}}$) plane (see Fig.~\ref{fig:twin_2d_gaus_cut}).
+The number of surviving carbon isotopes -- for both empty and target runs -- is determined by as the integral of events within the ellipsoidal contour defined by the 2D Gaussian fit in the ($\overline{\Delta E_{\text{up}}}$ , $\overline{\Delta E_{\text{down}}}$) plane (see Fig.~\ref{fig:twin_2d_gaus_cut}).
 Because the upstream and downstream anodes were read out by two independent MDPP modules with slightly different thresholds, some events appear only along one of the two histogram axes (i.e. events for which only the upstream or only the downstream anode produced a registered charge signal). To ensure that these valid carbon events are not lost, the selection is extended as follows:
 \begin{itemize}
-\item If both upstream and downstream anodes record a hit, the event is counted as a surviving carbon isotope when ($\overline{\Delta E_{\text{up}}}$,$\overline{\Delta E_{\text{down}}}$) lies inside the 2D Gaussian ellipsoid.
+\item If both upstream and downstream anodes record a hit, the event is counted as a surviving carbon isotope when ($\overline{\Delta E_{\text{up}}}$ , $\overline{\Delta E_{\text{down}}}$) lies inside the 2D Gaussian ellipsoid.
 \item If only one of the two anodes records a hit, the event is retained provided that its single recorded charge value lies within the corresponding 1D Gaussian projection of the fitted 2D distribution.
 \end{itemize}
 A raw estimate of the charge changing cross section, neglecting the influence of the geometrical acceptance of the TWIN MUSIC detector, can be derived from the raw event numbers using Eq.~\ref{eq:corr_cross}:
@@ -550,12 +550,26 @@ where $\text{Var}(\sigma_{iso,i})$ denotes the variance of the isotope cross sec
 \begin{equation}
 \bar{\sigma}_{iso,i} = \frac{\sum_i w_i \sigma_{iso,i}}{\sum_i w_i},
 \end{equation}
-where the summation over $i$ extends over the three target thicknesses. The resulting weighted means for each beam energy are shown in Fig.~\ref{fig:iso_corr_weighted_mean}. The error bars represent the standard error of the weighted mean, which is given by 
-%The uncertainty associated with the weighted mean is composed of two contributions. First, the largest uncertainty from histogram fitting (see Fig.~\ref{fig:example_histo_fit}) among the three input data points is added to the error bar. Second, the statistical uncertainty of the weighted mean is included, defined as
-
+where the summation over $i$ extends over the three target thicknesses. The resulting weighted means for each beam energy are shown in Fig.~\ref{fig:iso_corr_weighted_mean}. 
+%The error bars represent the standard error of the weighted mean, which is given by 
+The total uncertainty of the combined measurement consists of two contributions.
+First, the statistical uncertainty associated with the weighted mean is given by
 \begin{equation}
-\Delta_w = \sqrt{\frac{1}{\sum_i w_i}}.
+\Delta_w = \sqrt{\frac{1}{\sum_i w_i}}\,,
 \end{equation}
+Second, to account for the observed spread of the measurements, an additional systematic scatter term is estimated through the weighted sample variance:
+\begin{equation}
+s_w^2 = \frac{\sum_i w_i \left( x_i - \bar{x}_w \right)^2}{\sum_i w_i}\,,
+\end{equation}
+The final uncertainty on the combined result is obtained by adding both contributions
+in quadrature:
+\begin{equation}
+\Delta \bar{\sigma}_{iso} = \sqrt{\Delta_w^2 + s_w^2}\, .
+\end{equation}
+
+%\begin{equation}
+%\Delta_w = \sqrt{\frac{1}{\sum_i w_i}}.
+%\end{equation}
 
 \begin{figure}[h!]
     \centering
@@ -587,7 +601,7 @@ Deflections originating from Coulomb scattering are of the order of $\theta < 2$
 In contrast, the neutron removal (knockout) reaction leads to significantly larger angular deflections of the $^{11}$C fragment. For the estimation, it is assumed that the removed neutron carries a transverse momentum $p_{t}$ (with respect to the beam direction) sampled from the nucleon Fermi momentum distribution, with a typical magnitude of $p_t \approx 250 MeV/c$. By momentum conservation, the $^{11}$C fragment receives the same absolute transverse momentum, but in the opposite direction.
 Neglecting small binding-energy corrections, the longitudinal momentum of the $^{11}$C fragment at 400 AMeV beam energy is $ P_{frag} \approx 10.47\,GeV/c$ and the scattering angle can be approximated in this case by:
 \begin{equation}
-\theta  = \frac{p_t}{P_{frag}} \approx 24 mrad
+\theta  = \frac{p_t}{P_{frag}} \approx 24\, mrad
 \end{equation}
 %For a plausible range of $p_t$:
 %\begin{itemize}
@@ -759,7 +773,7 @@ Such precision is of considerable importance, as it provides stringent benchmark
 \begin{tabular}{|c|c|c|c|c|}
 \hline
 Beam Energy & \(^{12}\)C target & \(\sigma_I\) [mb] & \(\Delta\sigma_\text{stat.}\) [mb] & \(\Delta\sigma_\text{sys.}\) [mb] \\
-\text{[MeV/nucleon]} & & & & \\
+\text{[AMeV]} & & & & \\
 \hline
 \multirow{3}{*}{400} 
 & thin    & 786.5(64) & 5.59 & 3.08 \\
@@ -798,32 +812,60 @@ Possible explanations for the observed quenching of the total interaction cross 
 %TODO: maybe add to summary or outlook
 %Another possible explanation -- again pointing toward in-medium effects not yet accounted for in the present theoretical frameworks -- is the onset of inelastic reaction channels involving one- and two-pion production, which open at beam energies of approximately 280 and 530 AMeV, respectively. In-medium modifications, such as changes to the gluon density distribution within nucleons bound inside a dense nuclear environment, may significantly influence the contribution of these pion-production channels to the overall interaction cross section. \newline
 %To further investigate these potential in-medium effects, a systematic and comparative study of total interaction cross sections for nucleus-proton, nucleus-nucleus, and nucleon-nucleon systems is essential. Such an approach would allow the disentanglement and quantitative assessment of the various underlying mechanisms, ultimately advancing our understanding of medium-dependent nuclear reaction dynamics.\newline
+
+%old version, also with c_iso raw
+%\begin{table}
+%\centering
+%\begin{tabularx}{\textwidth}{lccccccc}
+%\toprule
+%target &  E [AMeV] &  Z $\neq$6[\%] &  Z=6, borders[\%] &  $c_{tref}$[\%] &  $c_{geo}$[\%] &  $c_{iso}$[\%] &  $c_{iso-raw}$[\%] \\
+%\midrule
+%   c\_54 &     400 &     5.5356 &     -0.0872 &  $\pm$0.0724 &  0.1075 &  0.4603 &      0.4125 \\
+% c\_1086 &     400 &     8.9593 &     -0.1039 &  $\pm$0.0711 &  0.1544 &  0.6971 &      0.6165 \\
+% c\_2198 &     400 &    15.5898 &     -0.1333 &   $\pm$0.073 &  0.2428 &  1.0830 &      0.9537 \\
+%  empty &     400 &     1.9243 &     -0.0726 &  $\pm$0.0756 &  0.0619 &  0.1479 &      0.1106 \\
+%   c\_54 &     550 &     5.8168 &     -0.0676 &   $\pm$0.007 &  0.0645 &  0.4632 &      0.4532 \\
+% c\_1086 &     550 &     9.1931 &     -0.0784 &  $\pm$0.0068 &  0.0733 &  0.7821 &      0.7347 \\
+% c\_2198 &     550 &    15.9742 &     -0.0959 &  $\pm$0.0078 &  0.1023 &  1.2638 &      1.1760 \\
+%  empty &     550 &     2.2276 &     -0.0540 &  $\pm$0.0076 &  0.0506 &  0.2077 &      0.1719 \\
+%   c\_54 &     650 &     5.7000 &     -0.0692 &  $\pm$0.0072 &  0.0315 &  0.3936 &      0.3888 \\
+% c\_1086 &     650 &     9.1249 &     -0.0810 &  $\pm$0.0076 &  0.0381 &  0.7130 &      0.6755 \\
+% c\_2198 &     650 &    15.9887 &     -0.1039 &  $\pm$0.0066 &  0.0585 &  1.1484 &      1.1087 \\
+%  empty &     650 &     2.0548 &     -0.0551 &  $\pm$0.0091 &  0.0197 &  0.1396 &      0.1553 \\
+%   c\_54 &     800 &     5.7489 &     -0.0385 &  $\pm$0.0082 &  0.0191 &  0.4008 &      0.3494 \\
+% c\_1086 &     800 &     9.1972 &     -0.0435 &  $\pm$0.0141 &  0.0193 &  0.6017 &      0.5367 \\
+% c\_2198 &     800 &    16.0838 &     -0.0596 &  $\pm$0.0134 &  0.0309 &  1.0648 &      0.9556 \\
+%  empty &     800 &     2.0257 &     -0.0329 &  $\pm$0.0127 &  0.0136 &  0.1433 &      0.1294 \\
+%\bottomrule
+%\end{tabularx}
+%\caption{Overview of reaction rates. Rates in columns \textit{Z$\neq$6}, \textit{Z=6, borders} and \textit{c$_{tref}$} refer to the number of incoming $^{12}$C ions. Columns \textit{c$_{geo}$}, \textit{c$_{iso}$}, and \textit{c$_{iso-raw}$} refer to the rate of survived carbon ions (1- “\textit{Z$\neq$6}")}
+%\label{tab:cs_contr}
+%\end{table}
 \begin{table}
 \centering
-%\begin{tabularx}{\textwidth}{lrrrrrrr}
-\begin{tabularx}{\textwidth}{lccccccc}
+\begin{tabularx}{\textwidth}{lcccccc}
 \toprule
-target &  E [AMeV] &  Z $\neq$6[\%] &  Z=6, borders[\%] &  $c_{tref}$[\%] &  $c_{geo}$[\%] &  $c_{iso}$[\%] &  $c_{iso-raw}$[\%] \\
+target &  E [AMeV] &  Z $\neq$6[\%] &  Z=6, borders[\%] &  $c_{tref}$[\%] &  $c_{geo}$[\%] &  $c_{iso}$[\%] \\
 \midrule
-   c\_54 &     400 &     5.5356 &     -0.0872 &  $\pm$0.0724 &  0.1075 &  0.4603 &      0.4125 \\
- c\_1086 &     400 &     8.9593 &     -0.1039 &  $\pm$0.0711 &  0.1544 &  0.6971 &      0.6165 \\
- c\_2198 &     400 &    15.5898 &     -0.1333 &   $\pm$0.073 &  0.2428 &  1.0830 &      0.9537 \\
-  empty &     400 &     1.9243 &     -0.0726 &  $\pm$0.0756 &  0.0619 &  0.1479 &      0.1106 \\
-   c\_54 &     550 &     5.8168 &     -0.0676 &   $\pm$0.007 &  0.0645 &  0.4632 &      0.4532 \\
- c\_1086 &     550 &     9.1931 &     -0.0784 &  $\pm$0.0068 &  0.0733 &  0.7821 &      0.7347 \\
- c\_2198 &     550 &    15.9742 &     -0.0959 &  $\pm$0.0078 &  0.1023 &  1.2638 &      1.1760 \\
-  empty &     550 &     2.2276 &     -0.0540 &  $\pm$0.0076 &  0.0506 &  0.2077 &      0.1719 \\
-   c\_54 &     650 &     5.7000 &     -0.0692 &  $\pm$0.0072 &  0.0315 &  0.3936 &      0.3888 \\
- c\_1086 &     650 &     9.1249 &     -0.0810 &  $\pm$0.0076 &  0.0381 &  0.7130 &      0.6755 \\
- c\_2198 &     650 &    15.9887 &     -0.1039 &  $\pm$0.0066 &  0.0585 &  1.1484 &      1.1087 \\
-  empty &     650 &     2.0548 &     -0.0551 &  $\pm$0.0091 &  0.0197 &  0.1396 &      0.1553 \\
-   c\_54 &     800 &     5.7489 &     -0.0385 &  $\pm$0.0082 &  0.0191 &  0.4008 &      0.3494 \\
- c\_1086 &     800 &     9.1972 &     -0.0435 &  $\pm$0.0141 &  0.0193 &  0.6017 &      0.5367 \\
- c\_2198 &     800 &    16.0838 &     -0.0596 &  $\pm$0.0134 &  0.0309 &  1.0648 &      0.9556 \\
-  empty &     800 &     2.0257 &     -0.0329 &  $\pm$0.0127 &  0.0136 &  0.1433 &      0.1294 \\
+   c\_54 &     400 &     5.5356 &     -0.0872 &  $\pm$0.0724 &  0.1075 &  0.4603 \\
+ c\_1086 &     400 &     8.9593 &     -0.1039 &  $\pm$0.0711 &  0.1544 &  0.6971 \\
+ c\_2198 &     400 &    15.5898 &     -0.1333 &   $\pm$0.073 &  0.2428 &  1.0830 \\
+  empty &     400 &     1.9243 &     -0.0726 &  $\pm$0.0756 &  0.0619 &  0.1479 \\
+   c\_54 &     550 &     5.8168 &     -0.0676 &   $\pm$0.007 &  0.0645 &  0.4632 \\
+ c\_1086 &     550 &     9.1931 &     -0.0784 &  $\pm$0.0068 &  0.0733 &  0.7821 \\
+ c\_2198 &     550 &    15.9742 &     -0.0959 &  $\pm$0.0078 &  0.1023 &  1.2638 \\
+  empty &     550 &     2.2276 &     -0.0540 &  $\pm$0.0076 &  0.0506 &  0.2077 \\
+   c\_54 &     650 &     5.7000 &     -0.0692 &  $\pm$0.0072 &  0.0315 &  0.3936 \\
+ c\_1086 &     650 &     9.1249 &     -0.0810 &  $\pm$0.0076 &  0.0381 &  0.7130 \\
+ c\_2198 &     650 &    15.9887 &     -0.1039 &  $\pm$0.0066 &  0.0585 &  1.1484 \\
+  empty &     650 &     2.0548 &     -0.0551 &  $\pm$0.0091 &  0.0197 &  0.1396 \\
+   c\_54 &     800 &     5.7489 &     -0.0385 &  $\pm$0.0082 &  0.0191 &  0.4008 \\
+ c\_1086 &     800 &     9.1972 &     -0.0435 &  $\pm$0.0141 &  0.0193 &  0.6017 \\
+ c\_2198 &     800 &    16.0838 &     -0.0596 &  $\pm$0.0134 &  0.0309 &  1.0648 \\
+  empty &     800 &     2.0257 &     -0.0329 &  $\pm$0.0127 &  0.0136 &  0.1433 \\
 \bottomrule
 \end{tabularx}
-\caption{Overview of reaction rates. Rates in columns \textit{Z$\neq$6}, \textit{Z=6, borders} and \textit{c$_{tref}$} refer to the number of incoming $^{12}$C ions. Columns \textit{c$_{geo}$}, \textit{c$_{iso}$}, and \textit{c$_{iso-raw}$} refer to the rate of survived carbon ions (1- “\textit{Z$\neq$6}")}
+\caption{Overview of reaction rates. Rates in columns \textit{Z$\neq$6}, \textit{Z=6, borders} and \textit{c$_{tref}$} refer to the number of incoming $^{12}$C ions. Columns \textit{c$_{geo}$} and \textit{c$_{iso}$} refer to the rate of survived carbon ions (1- “\textit{Z$\neq$6}")}
 \label{tab:cs_contr}
 \end{table}
 \clearpage
