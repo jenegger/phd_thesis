@@ -38,7 +38,7 @@
 \contentsline {subsection}{\numberline {4.4}Geometric Corrections}{72}{subsection.4.4}
 \contentsline {subsection}{\numberline {4.5}Isotope Correction}{78}{subsection.4.5}
 \contentsline {subsubsection}{\numberline {4.5.1}Distribution fitting}{81}{subsubsection.4.5.1}
-\contentsline {subsubsection}{\numberline {4.5.2}Acceptance Dependency}{86}{subsubsection.4.5.2}
+\contentsline {subsubsection}{\numberline {4.5.2}Acceptance Dependency}{85}{subsubsection.4.5.2}
 \contentsline {subsection}{\numberline {4.6}Statistical and Systematic Error Analysis}{88}{subsection.4.6}
 \contentsline {subsubsection}{\numberline {4.6.1}Charge-Changing Cross Section}{88}{subsubsection.4.6.1}
 \contentsline {subsubsection}{\numberline {4.6.2}Isotope Correction Contribution}{89}{subsubsection.4.6.2}
