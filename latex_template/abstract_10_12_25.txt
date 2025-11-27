@@ -1,0 +1,8 @@
+//Last year
+Abstract:
+The R3B (Reactions with Relativistic Radioactive ion Beams) experiment, a cornerstone of the NUSTAR collaboration at the FAIR research facility in Darmstadt, Germany, is designed to address a broad spectrum of fundamental questions in modern nuclear physics.
+In conjunction to the fragment separator – FRS- the R3B setup allows to make high precision studies on radioactive beams in inverse kinematics. With its large acceptance on the reaction products and the ability to do complete kinematic reconstruction offers the unique possibility for understanding the dynamics of nuclear reactions under extreme conditions as they occur in nucleosynthesis processes in astrophysical environments of significant interest such as supernovae and neutron stars.
+This presentation provides an overview of the experimental setup and its key detectors, as well as a summary of recent experimental campaigns conducted during the FAIR Phase-0 program. Furthermore, it highlights recent advancements and outlines the focus of the experimental studies within the FAIR Early Science Program. These studies will benefit significantly from the cutting-edge capabilities of the FAIR facility, particularly the state-of-the-art Super-FRS.
+
+
+
