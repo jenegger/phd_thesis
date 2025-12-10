@@ -34,20 +34,19 @@ While various models agree at saturation density ("natural packing density" of n
 \label{fig:eos_relations}
 \end{figure}
 
-In modeling the nuclear equation of state, it is common to perform a Taylor expansion of the energy per nucleon with respect to the isospin asymmetry parameter $\delta = \frac{n_n -n_p}{n_n + n_p}$ where $n_n$ and $n_p$ denote the neutron and proton number densities, respectively, at a fixed baryon density $n_B = n_n +n_p$. In this approach, the energy per nucleon is written as:
+In modeling the nuclear equation of state, it is common to perform a Taylor expansion of the energy per nucleon with respect to the isospin asymmetry parameter $\delta = \frac{n_n -n_p}{n_n + n_p}$ where $n_n$ and $n_p$ denote the neutron and proton number densities, respectively, at a fixed baryon density $n_B = n_n +n_p$. In this approach, the energy per nucleon is written as
 \begin{equation}\label{eq:eos}
-E(n_B,\delta)=E(n_B,0)+S(n_B)\delta^2+\mathcal{O}(\delta^4)
+E(n_B,\delta)=E(n_B,0)+S(n_B)\delta^2+\mathcal{O}(\delta^4)\, ,
 \end{equation}
 with $E(n_B,0)$ the energy per nucleon of symmetric nuclear matter ($n_n$ = $n_p$) as a function of baryon density. At nuclear saturation density, \(n_B \approx 0.16\,\mathrm{fm}^{-3}\), the energy per nucleon of symmetric nuclear matter is \(E(n_B,0) \approx -16\,\mathrm{MeV}\), indicating that in infinite nuclear matter each nucleon is bound by roughly \(16\,\mathrm{MeV}\) due to the strong interaction (excluding Coulomb, surface, and gravitational contributions).\\
-The second term on the right side of Eq.~\ref{eq:eos}  is called the asymmetry term. With the symmetry energy:
+The second term on the right side of Eq.~\ref{eq:eos}  is called the asymmetry term. With the symmetry energy
 \begin{equation}
-S(n_B) = \frac{1}{2} \left. \frac{\partial^2 E(n, \delta)}{\partial \delta^2} \right|_{\delta = 0}
+S(n_B) = \frac{1}{2} \left. \frac{\partial^2 E(n, \delta)}{\partial \delta^2} \right|_{\delta = 0} \, .
 \end{equation}
-
 This approach allows to isolate the contribution of the symmetry energy $S(n_B)$  which governs the leading-order dependence on isospin asymmetry.\newline
-To further understand how the symmetry energy evolves with density -- particularly in environments such as neutron stars -- $S(n_B) $ is itself often expanded around the nuclear saturation density $n_0$ in a separate Taylor series involving the slope $L$ and curvature $K_{sym}$ parameters:
+To further understand how the symmetry energy evolves with density -- particularly in environments such as neutron stars -- $S(n_B) $ is itself often expanded around the nuclear saturation density $n_0$ in a separate Taylor series involving the slope $L$ and curvature $K_{sym}$ parameters
 \begin{equation}\label{eq:sy_ene}
-S(n_B) = S_0 + L \left( \frac{n_B - n_0}{3n_0} \right) + \frac{1}{2} K_{\text{sym}} \left( \frac{n_B - n_0}{3n_0} \right)^2 + \mathcal{O}\left(\left( \frac{n_B - n_0}{3n_0}\right)^4 \right)
+S(n_B) = S_0 + L \left( \frac{n_B - n_0}{3n_0} \right) + \frac{1}{2} K_{\text{sym}} \left( \frac{n_B - n_0}{3n_0} \right)^2 + \mathcal{O}\left(\left( \frac{n_B - n_0}{3n_0}\right)^4 \right) \, .
 \end{equation}
 $S_0$ itself is constrained by experimental data at around $30-34$ MeV which is compatible to the theoretical predictions~\cite{roca2013electric,tsang2012constraints,lattimer2023constraints}. Both $L$ and $K$ are poorly constrained and according experimental data are limited. While the term with the curvature parameter $K$ enters quadratically, its contribution is small near to saturation density.\newline
 Whereas the slope parameter L is the dominating factor. Constraining L, which quantifies the "stiffness" of the symmetry energy -- how much the energy cost of isospin asymmetry increases as nuclear matter becomes denser -- is of high interest and would lead to a better understanding of nuclear matter and its interaction, especially when considering extreme astrophysical object such as neutron stars.\newline
@@ -69,7 +68,7 @@ It has been shown by the seminal work of X. Roca-Maza et al.~\cite{roca2011neutr
 \caption{Correlation between $\Delta r_{np}$ and parameter L, from analysis in~\cite{roca2011neutron} for the neutron skin of $^{208}$Pb. From various model calculations and the PREX measurement accuracy, the neutron skin thickness was constrained to $\Delta r_{np} = 0.195 \pm 0.057\,\mathrm{fm}$, which corresponds to a slope parameter of $L = 64 \pm 39\,\mathrm{MeV}$. Relativistic and non-relativistic models with different relativistic grounds are displayed. Figure adopted from~\cite{roca2011neutron}.}
 \label{fig:skin_thickness_vs_L}
 \end{figure}
-Recent advancements in experimental techniques, as highlighted by the groundbreaking work of T. Aumann, C.A. Bertulani et al.~\cite{aumann2017peeling}, have demonstrated that the neutron skin thickness is experimentally accessible and highly sensitive to the neutron-removal cross section for heavy, neutron-rich nuclei. The proposed experimental approach involves measuring the neutron-removal cross section $\sigma_{\Delta N}$ for the isotopic chain of Sn isotopes. These experimentally determined cross sections can then be directly compared with predictions from theoretical nuclear density distributions, typically derived from relativistic mean-field calculations, which exhibit a direct correlation with the slope parameter $L$, as presented in Fig.~\ref{fig:sub_nrem_vs_a} and Fig.~\ref{fig:sub_thickness_vs_l}. Aumann et al. have shown that with a 2\% experimental precision on the measured neutron-removal cross sections, combined with refined theoretical calculations, the slope parameter $L$ can be constrained to $\pm 10$ MeV. This level of precision would represent a substantial improvement over existing constraints and significantly advance our understanding of the nuclear Equation of State.\\
+Recent advancements in experimental techniques, as highlighted by the work of T. Aumann, C.A. Bertulani et al.~\cite{aumann2017peeling}, have demonstrated that the neutron skin thickness is experimentally accessible and highly sensitive to the neutron-removal cross section for heavy, neutron-rich nuclei. The proposed experimental approach involves measuring the neutron-removal cross section $\sigma_{\Delta N}$ for the isotopic chain of Sn isotopes. These experimentally determined cross sections can then be directly compared with predictions from theoretical nuclear density distributions, typically derived from relativistic mean-field calculations, which exhibit a direct correlation with the slope parameter $L$, as presented in Fig.~\ref{fig:sub_nrem_vs_a} and Fig.~\ref{fig:sub_thickness_vs_l}. Aumann et al. have shown that with a 2\% experimental precision on the measured neutron-removal cross sections, combined with refined theoretical calculations, the slope parameter $L$ can be constrained to $\pm 10$ MeV. This level of precision would represent a substantial improvement over existing constraints and significantly advance our understanding of the nuclear Equation of State.\\
 
 %\begin{figure}[H]
 %    \centering

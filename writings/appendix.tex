@@ -19,18 +19,18 @@ As detailed in Section~\ref{subsec:event-sel}, a stringent event selection crite
 
 For all MWPCs the standard  \textit{cal-to-hit} step  sorts the calibrated hits in the detector according to the calibrated charge deposited in the pads. The final position (in mm) is determined by selecting the hit with the highest charge deposition $Q_{max}$ and its left ($Q_L$) and right neighbor ($Q_R$) pads\footnote{In case no charge deposition in one or both neighbors the charge value is set to 1 respectively.}. These charge and position values are inserted in the "hyperbolic squared secant" function \cite{lau1995optimization} with the following charge distribution function:
 \[
-Q(x) = \frac{a_1}{\cosh^2\left(\frac{\pi (x - a_2)}{a_3}\right)}
+Q(x) = \frac{a_1}{\cosh^2\left(\frac{\pi (x - a_2)}{a_3}\right)} \, ,
 \]
 \vspace{-0.5em} % Reduces the space between equations
-where \(a_1\) is the amplitude of the distribution $Q_{max}$, \(a_2\) its centroid, and \(a_3\) derives as follows:
+where \(a_1\) is the amplitude of the distribution $Q_{max}$, \(a_2\) its centroid, and \(a_3\) derives as follows
 \[
-a_3 = \frac{\pi \omega}{\cosh^{-1}\left(0.5 \times \left(\sqrt{\frac{Q_{\text{max}}}{Q_L}} + \sqrt{\frac{Q_{\text{max}}}{Q_R}}\right)\right)}
+a_3 = \frac{\pi \omega}{\cosh^{-1}\left(0.5 \times \left(\sqrt{\frac{Q_{\text{max}}}{Q_L}} + \sqrt{\frac{Q_{\text{max}}}{Q_R}}\right)\right)} \, ,
 \]
 \vspace{-0.5em} % Reduces the space between equations
-\(\omega\) being the width of the pads. The centroid of the distribution, which is used as final hit position in the \textit{hit-}data level, can be deduced from:
+\(\omega\) being the width of the pads. The centroid of the distribution, which is used as final hit position in the \textit{hit-}data level, can be deduced from
 \vspace{-0.5em} % Reduces the space between equations
 \[
-a_2 = \frac{a_3}{\pi} \times \tanh^{-1}\left(\frac{\sqrt{\frac{Q_{\text{max}}}{Q_L}} - \sqrt{\frac{Q_{\text{max}}}{Q_R}}}{2 \sinh\left(\frac{\pi \omega}{a_3}\right)}\right)
+a_2 = \frac{a_3}{\pi} \times \tanh^{-1}\left(\frac{\sqrt{\frac{Q_{\text{max}}}{Q_L}} - \sqrt{\frac{Q_{\text{max}}}{Q_R}}}{2 \sinh\left(\frac{\pi \omega}{a_3}\right)}\right) \, .
 \]
 Fig.~\ref{fig:hyp_function} shows the "hyperbolic squared secant" function with the inserted values for $Q_{max}$, $Q_R$ and $Q_L$. 
 \begin{figure}[htpb]
@@ -125,7 +125,6 @@ Since the $\pm2\sigma$ position cuts were already chosen to be sufficiently tigh
 \section{MWPCs -- Efficiency Analysis}\label{app:mwpcs_eff}
 
 The efficiency analysis presented here is restricted to carbon isotopes (\(Z = 6\)), which were previously identified with the TWIN MUSIC detector. The efficiencies are determined according to
-
 \begin{equation}
 \varepsilon = \frac{N_{\text{MWPC}}}{N_{\text{TWIN MUSIC}}} \, ,
 \end{equation}
@@ -470,22 +469,18 @@ While a time-based selection algorithm for multi-hit anodes was used in both the
 TWIN MUSIC registers a valid signal only when at least one anode detects ionization. Events where no anode responds may be attributed to dead time, during which the data acquisition (DAQ) or electronics is temporarily unavailable.
 To identify and quantify such occurrences, Fig.~\ref{sfig:mw1xy_zero_twin} presents the $x$-$y$ distribution measured by MWPC1 for events with no corresponding signal in TWIN MUSIC. The active region of TWIN MUSIC is clearly delineated, and the beam spot appears as a concentrated region inside the red rectangle. Events within this region likely correspond to ions traversing the detector while TWIN MUSIC was in dead time. The broader distribution outside the active area is well understood by the limited geometrical acceptance of TWIN MUSIC, discussed in detail in Section~\ref{sec:geo_corr}.
 To evaluate the dead time rate quantitatively, the number of events in the active area without a TWIN MUSIC signal, $N_1^{\text{active}}$, is normalized to the total number of incoming ions $N_1$. This ratio is shown for all target and empty runs in Fig.~\ref{sfig:rate_dead_twin_active}. The relative rates are largely consistent across different beam energies and do not exhibit dependence on target thickness, as expected. Since dead time is an intrinsic property of the detector and its readout system, it should be independent of target conditions.
-This observation also supports the expectation that the dead time rate does not depend on the fragment's charge. Given that the MWPC1 threshold is higher than that of TWIN MUSIC, events triggering MWPC1 are assumed to be reliably detectable by TWIN MUSIC under nominal conditions. Therefore, we can write:
-
+This observation also supports the expectation that the dead time rate does not depend on the fragment's charge. Given that the MWPC1 threshold is higher than that of TWIN MUSIC, events triggering MWPC1 are assumed to be reliably detectable by TWIN MUSIC under nominal conditions. Therefore, we can write
 \begin{equation*}
-r_{\text{dead time}} = \frac{N_1^{\text{active}}}{N_1} \approx \frac{N_2^{\text{active}}}{N_2}
+r_{\text{dead time}} = \frac{N_1^{\text{active}}}{N_1} \approx \frac{N_2^{\text{active}}}{N_2} \, , 
 \end{equation*}
-
 where $N_2^{\text{active}}$ refers to the respective events with survived carbon fragments (Z = 6) with no corresponding signal in TWIN MUSIC.
-
 Although the dead time rates are relatively close across all energy settings, a systematic uncertainty must still be considered. This is estimated by computing the mean rate $\mu_{\text{energy}}$ across energy points and determining the corresponding standard deviation $\Delta_{\text{energy}}$. The average of these standard deviations for all beam energies, $\overline{\Delta_{\text{energy}}}$, is then used to estimate the uncertainty contribution.
 
-This uncertainty, denoted $\Delta^{\text{sys}}_{N_2}$, enters the total systematic error on the cross section measurement according to:
-
+This uncertainty, denoted $\Delta^{\text{sys}}_{N_2}$, enters the total systematic error on the cross section measurement according to
 \begin{gather*}
 \sigma = -\frac{1}{N_t} \ln\left(\frac{N_2^T}{N_1^T} \cdot \frac{N_1^E}{N_2^E} \right)\\
 \Rightarrow \left|\frac{\partial \sigma}{\partial N_2^T} \cdot \overline{\Delta_{\text{energy}}} \right| = \frac{1}{N_t} \cdot \overline{\Delta_{\text{energy}}} = \left|\frac{\partial \sigma}{\partial N_2^E} \cdot \overline{\Delta_{\text{energy}}} \right|\\
-\Rightarrow \Delta^{\text{sys}}_{N_2} = \sqrt{2} \cdot \frac{1}{N_t} \cdot \overline{\Delta_{\text{energy}}}
+\Rightarrow \Delta^{\text{sys}}_{N_2} = \sqrt{2} \cdot \frac{1}{N_t} \cdot \overline{\Delta_{\text{energy}}} \, .
 \end{gather*}
 
 As this systematic uncertainty depends only on the target thickness and not on $N_1$ or $N_2$, it is constant for each configuration:
@@ -704,37 +699,37 @@ Beam Energy & \(^{12}\)C target & \(\sigma_{iso}\) [mb] & \(\Delta\sigma_\text{s
         Flightpath reconstruction with reference positions $(z_0,x_0)$, $(z_1,x_1)$ and $(z_2,x_2)$. The GLAD magnet is tilted by $\alpha = 14^{\circ}$.}
     \label{fig:draw_flight}
 \end{figure}
-The first step in the radius and flightpath reconstruction is expressing the entrance point on the GLAD field $(z_1,x_1)$ and the exit point $(z_2,x_2)$ with the center of the circle path $(z_0,x_0)$ as reference, see Fig.~\ref{fig:draw_flight}:
+The first step in the radius and flightpath reconstruction is expressing the entrance point on the GLAD field $(z_1,x_1)$ and the exit point $(z_2,x_2)$ with the center of the circle path $(z_0,x_0)$ as reference, see Fig.~\ref{fig:draw_flight}
 \begin{align*}
-z_1 &= z_0 -r\,cos(90^{\circ}-\theta_i) = z_0 -r\,sin(\theta_i)\\
-x_1 &= x_0 + r\,sin(90^{\circ}-\theta_i) = x_0 + r\,cos(\theta_i)\\
+z_1 &= z_0 -r\,cos(90^{\circ}-\theta_i) = z_0 -r\,sin(\theta_i) \, ,\\
+x_1 &= x_0 + r\,sin(90^{\circ}-\theta_i) = x_0 + r\,cos(\theta_i) \, ,\\
 \hspace{1cm}
-z_2 &= z_0 + r\,cos(90^{\circ}-\theta_o) = z_0 + r\,sin(\theta_o)\\
-x_2 &= x_0 + r\,sin(90^{\circ}-\theta_o) = x_0 + r\,cos(\theta_o) 
+z_2 &= z_0 + r\,cos(90^{\circ}-\theta_o) = z_0 + r\,sin(\theta_o) \, ,\\
+x_2 &= x_0 + r\,sin(90^{\circ}-\theta_o) = x_0 + r\,cos(\theta_o) \, . 
 \end{align*}
-The slope $m_1$ of the intersection line between $(z_1,x_1)$ and $(z_2,x_2)$ is given by:
+The slope $m_1$ of the intersection line between $(z_1,x_1)$ and $(z_2,x_2)$ is given by
 \begin{align*}
-m_1 &= \frac{x_2-x_1}{z_2 -z_1} = \frac{cos(\theta_o) - cos(\theta_i)}{sin(\theta_o)+sin(\theta_i)}
+m_1 &= \frac{x_2-x_1}{z_2 -z_1} = \frac{cos(\theta_o) - cos(\theta_i)}{sin(\theta_o)+sin(\theta_i)} \, ,
 \end{align*}
-and with the distance between the two points given by:
+and with the distance between the two points given by
 \begin{align*}
-\Delta^2_{i/o} &= r^2 \, \left[(cos\theta_o - cos\theta_i)^2 + (sin\theta_o + sin\theta_i)^2 \right]\\
-	       &= 4r^2\,sin^2(\frac{\theta_i}{2} +\frac{\theta_o}{2} )\\
-\Rightarrow \Delta_{i/o} &= 2r\,sin(\frac{\theta_i}{2} +\frac{\theta_o}{2})
+\Delta^2_{i/o} &= r^2 \, \left[(cos\theta_o - cos\theta_i)^2 + (sin\theta_o + sin\theta_i)^2 \right] \, ,\\
+	       &= 4r^2\,sin^2(\frac{\theta_i}{2} +\frac{\theta_o}{2} ) \, ,\\
+\Rightarrow \Delta_{i/o} &= 2r\,sin(\frac{\theta_i}{2} +\frac{\theta_o}{2}) \, .
 \end{align*}
-To describe the distance between $(z_1,x_1)$ and $(z_2,x_2)$ with the given effective GLAD length $L_{eff}$ ($= 2.06\,m$) the tilting angle $\alpha$ (see Fig.~\ref{fig:draw_flight}) of GLAD in relation to the incoming beam line direction has to be considered. Consequential the angle $\delta$ between the trajectory connecting $(z_1,x_1)$ and $(z_2,x_2)$ and the line parallel to the GLAD magnet width $L_{eff}$ can be determined as:
+To describe the distance between $(z_1,x_1)$ and $(z_2,x_2)$ with the given effective GLAD length $L_{eff}$ ($= 2.06\,m$) the tilting angle $\alpha$ (see Fig.~\ref{fig:draw_flight}) of GLAD in relation to the incoming beam line direction has to be considered. Consequential the angle $\delta$ between the trajectory connecting $(z_1,x_1)$ and $(z_2,x_2)$ and the line parallel to the GLAD magnet width $L_{eff}$ can be determined as
 \begin{flalign*}
-tan(\delta) &= \left| \frac{m_1-m_2}{1+ m_1\cdot m_2} \right|
+tan(\delta) &= \left| \frac{m_1-m_2}{1+ m_1\cdot m_2} \right| \, , 
 \end{flalign*}
-with $m_2 = -tan(\alpha)$:
+with $m_2 = -tan(\alpha)$
 \begin{align*}
-\delta = atan \left( \frac{\frac{cos\theta_o - cos\theta_i}{sin\theta_o + sin\theta_i} + tan\alpha}{1-\frac{cos\theta_o - cos\theta_i}{sin\theta_o + sin\theta_i}\,\cdot\, tan\alpha} \right)
+\delta = atan \left( \frac{\frac{cos\theta_o - cos\theta_i}{sin\theta_o + sin\theta_i} + tan\alpha}{1-\frac{cos\theta_o - cos\theta_i}{sin\theta_o + sin\theta_i}\,\cdot\, tan\alpha} \right) \, .
 \end{align*}
-The final relation between $L_{eff}$ and the bending radius $r$ of the fragment within GLAD can be written as:
+The final relation between $L_{eff}$ and the bending radius $r$ of the fragment within GLAD can be written as
 \begin{equation}
 \begin{aligned}
-L_{eff} &= 2r\,sin(\frac{\theta_i}{2} + \frac{\theta_o}{2})\,\cdot\, cos\delta \\
-	&= 2r\,sin(\frac{\theta_i}{2} + \frac{\theta_o}{2})\,\cdot\,\frac{1}{\sqrt{\delta^2+1}}
+L_{eff} &= 2r\,sin(\frac{\theta_i}{2} + \frac{\theta_o}{2})\,\cdot\, cos\delta \, , \\
+	&= 2r\,sin(\frac{\theta_i}{2} + \frac{\theta_o}{2})\,\cdot\,\frac{1}{\sqrt{\delta^2+1}} \, .
 \end{aligned}
 \end{equation}
 \clearpage

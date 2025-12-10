@@ -28,9 +28,7 @@ Given the short interaction time characteristic of the high-energy regime, these
 \end{itemize}
 
 The accurate interpretation of such high-energy nuclear reactions necessitates a robust theoretical framework capable of addressing complex phenomena such as multiple scattering processes and nuclear transparency effects, particularly when dealing with complex nuclei. The Glauber model, originally formulated in the 1950s, provides an established and widely utilized framework for this purpose.\\
-
 Before introducing the fundamental concepts of scattering theory within the Glauber framework, the key integrated cross sections relevant for this work are briefly defined:
-
 \begin{itemize}
     \item \boldmath$\sigma_{\mathrm{el}}$\unboldmath{} -- \textit{Total elastic cross section}: The projectile remains in its ground state, and no nucleon is removed.
     
@@ -38,49 +36,35 @@ Before introducing the fundamental concepts of scattering theory within the Glau
     
     \item \boldmath$\sigma_{\mathrm{I}}$\unboldmath{} -- \textit{Total interaction cross section}: The projectile undergoes a transformation involving the removal of at least one nucleon.
 \end{itemize}
-
-Two additional composite cross sections are defined:
-
+Two additional composite cross sections are defined
 \begin{align}
-    \sigma_{\mathrm{R}} &= \sigma_{\mathrm{inel}} + \sigma_{\mathrm{I}} \quad \text{(Total reaction cross section)} \\
-    \sigma_{\mathrm{T}} &= \sigma_{\mathrm{el}} + \sigma_{\mathrm{R}} = \sigma_{\mathrm{el}} + \sigma_{\mathrm{inel}} + \sigma_{\mathrm{I}} \quad \text{(Total cross section)} \label{eq:tot_cs_def}
+    \sigma_{\mathrm{R}} &= \sigma_{\mathrm{inel}} + \sigma_{\mathrm{I}} \quad \text{(Total reaction cross section)} \, , \\
+    \sigma_{\mathrm{T}} &= \sigma_{\mathrm{el}} + \sigma_{\mathrm{R}} = \sigma_{\mathrm{el}} + \sigma_{\mathrm{inel}} + \sigma_{\mathrm{I}} \quad \text{(Total cross section)} \, . \label{eq:tot_cs_def}
 \end{align}
-
-At high beam energies ($E_{\mathrm{beam}} > 200$~AMeV), the contribution from inelastic nucleon-nucleon reaction channels is small. This allows the approximation:
+At high beam energies ($E_{\mathrm{beam}} > 200$~AMeV), the contribution from inelastic nucleon-nucleon reaction channels is small. This allows the approximation
 \begin{equation}
-    \sigma_{\mathrm{R}} \approx \sigma_{\mathrm{I}}.
+    \sigma_{\mathrm{R}} \approx \sigma_{\mathrm{I}} \, .
 \end{equation}
-
-The interaction cross section $\sigma_{\mathrm{I}}$ can be further decomposed according to the type of nucleon removed:
-
+The interaction cross section $\sigma_{\mathrm{I}}$ can be further decomposed according to the type of nucleon removed
 \begin{align}
-    \sigma_{\mathrm{I}} &= \sigma_{\Delta Z} + \sigma_{\Delta N}, 
+    \sigma_{\mathrm{I}} &= \sigma_{\Delta Z} + \sigma_{\Delta N} \, , 
 \end{align}
-
 where:
-
 \begin{itemize}
     \item \boldmath$\sigma_{\Delta Z}$\unboldmath{} -- \textit{Total charge-changing cross section}: At least one proton is removed from the projectile, such that $Z_i \neq Z_f$.
     
     \item \boldmath$\sigma_{\Delta N}$\unboldmath{} -- \textit{Total neutron-removal cross section}: At least one neutron is removed while the charge remains unchanged ($N_i \neq N_f$, $Z_i = Z_f$).
 \end{itemize}
-
 Here, the indices $i$ and $f$ denote the initial and final states of the projectile, respectively.\\
-
 Further details on the experimental determination of these cross sections are provided in Section~\ref{section:transmission_method}.\\
-
-
 The subsequent subsections will briefly introduce the main concepts and essential ingredients of scattering theory within the Glauber framework. A comprehensive and detailed theoretical derivation of the formalism, while foundational, falls outside the scope of this thesis. For a thorough introduction to these concepts, the reader is referred to the standard lecture by Glauber~\cite{glauber1959lectures} and other standard works~\cite{sitenko1990theory,lilley2013nuclear,bertulani2019introduction,obertelli2021modern}.\\
 
 \subsection{The Glauber model}\label{sec:glauber}
 The Glauber Model is a theoretical framework widely employed in high-energy nuclear and particle physics to describe elastic and inelastic scattering processes involving composite targets, such as nuclei. Originally formulated by Roy J.~Glauber, the model provides a quantum-mechanical description of multiple scattering in high-energy collisions and is particularly applicable in the regime where the de Broglie wavelength of the projectile is much smaller than the size of the target.\\
-
 The most general implementations of the Glauber Model incorporate the following key components:
 \begin{itemize}
     \item \textbf{Eikonal Approximation:} In the high-energy limit, the projectile is assumed to traverse the target along a straight-line trajectory, experiencing only small-angle deflections. This simplifies the scattering problem by reducing it to a phase-shift analysis of the incident wavefunction. A formal introduction to the eikonal approximation is provided in Subsection~\ref{sec:eol}.
-    
     \item \textbf{Multiple Scattering Formalism:} The total scattering amplitude is constructed by summing over all possible interactions between the projectile and the individual nucleons of the target. This involves integrating over the spatial distributions of the nucleons, which becomes computationally demanding for large nuclei. To address this, further simplifications are applied, leading to the so-called \textit{optical-limit approximation}, discussed in Subsection~\ref{sec:eol}.
-    
     \item \textbf{Impact Parameter Formalism:} The scattering cross section is expressed as an integral over the transverse distance (impact parameter) between the centers of the projectile and the target nucleus (see Fig.~\ref{fig:impact_par_glauber}). This semi-classical treatment enables a geometric interpretation of the scattering process and facilitates a probabilistic formulation of nuclear interactions.
 \end{itemize}
  \begin{figure}[htbp]
@@ -91,99 +75,93 @@ The most general implementations of the Glauber Model incorporate the following 
      \caption{Collision of nucleus A with nucleus B at an impact parameter b. Both probability approach (PA) and  eikonal optical-limit approach (EOL) it is assumed that both nuclei transverse on straight lines. The relative distance between the nucleons to scatter is given by b - $\text{b}_{\text{B}}$ + $\text{b}_{\text{A}}$}.
      \label{fig:impact_par_glauber}
  \end{figure}
-
 Two principal approaches are commonly used to derive cross sections within the Glauber framework:
-
 \begin{enumerate}
     \item \textbf{Probability Approach (PA):} In this semiclassical method, nucleon-nucleon interactions are treated as independent binary collisions. All combinatorial configurations of these interactions are considered, and the total reaction cross section is obtained by integrating over all possible impact parameters (see Fig.~\ref{fig:impact_par_glauber}). In this picture, nucleons are often approximated as \textit{billiard balls}~\cite{bertulani2019introduction}. The \textit{abrasion-ablation model}~\cite{hufner1975abrasion}, which can be extended to incorporate isospin-dependent nucleon-nucleon cross sections, is a widely used application of the probability approach, for instance in \textsc{Geant4} simulations~\cite{agostinelli2003geant4}. A comprehensive overview of the PA is provided in~\cite{schindler2017total} and more details in~\cite{bertulani2019introduction}.
-
     \item \textbf{Eikonal Optical Limit (EOL):} The present work focuses on the quantum-mechanical formulation known as the EOL approach. It is based on the time-independent Schr\"odinger equation, incorporating the eikonal wave approximation and the introduction of a complex optical potential. This results in a compact and analytically tractable expression for the scattering amplitude, making it particularly suitable for high-energy collisions involving extended targets.
 \end{enumerate}
 
 \subsection{Eikonal optical-limit approximation (EOL)}\label{sec:eol}
 The starting point for this discussion is the elastic scattering process, in which both the projectile and the target remain in their ground states, and no nucleons are removed from either system.
 A good description of the elastic scattering process allows us to later derive the reaction and the total cross section.\\
-Beginning with the quantum mechanical view from the time-independent Schr\"odinger equation as stationary treatment of the elastic scattering process:
+Beginning with the quantum mechanical view from the time-independent Schr\"odinger equation as stationary treatment of the elastic scattering process
 \begin{equation}\label{eq:schroedinger}
-H\psi_{\vec{k}}(\vec{r}) = E\psi_{\vec{k}}(\vec{r}),
+H\psi_{\vec{k}}(\vec{r}) = E\psi_{\vec{k}}(\vec{r}) \, ,
 \end{equation}
-given the Hamiltonian:
+given the Hamiltonian
 \begin{equation}\label{eq:hamiltonian}
-H = -\frac{\hbar^2}{2\mu} \vec{\nabla}^2 + V(\vec{r}).
+H = -\frac{\hbar^2}{2\mu} \vec{\nabla}^2 + V(\vec{r}) \, ,
 \end{equation}
 where $\mu = \frac{m_T \cdot m_P}{m_T+m_P}$ is the  reduced mass of the system, composed of the target nucleus with mass $m_T$ and the projectile with mass $m_P$ .
-The objective is to determine  the wavefunction $\psi_{\vec{k}}(\vec{r})$ that satisfies Eq.~\ref{eq:schroedinger}. This wavefunction consists of the sum of the incoming plane wave $\varphi_{\vec{k}}(\vec{r})$ and the outgoing scattered spherical wave $\psi^{sc}_{\vec{k}}(\vec{r})$, i.e.:
+The objective is to determine  the wavefunction $\psi_{\vec{k}}(\vec{r})$ that satisfies Eq.~\ref{eq:schroedinger}. This wavefunction consists of the sum of the incoming plane wave $\varphi_{\vec{k}}(\vec{r})$ and the outgoing scattered spherical wave $\psi^{sc}_{\vec{k}}(\vec{r})$, i.e.
 \begin{equation}\label{eq:tot_wave}
-\psi_{\vec{k}}(\vec{r}) = A [e^{ikr} + f(\theta) \frac{e^{ikr}}{r}] \equiv \varphi_{\vec{k}}(\vec{r}) + \psi_{\vec{k}}(\vec{r})
+\psi_{\vec{k}}(\vec{r}) = A [e^{ikr} + f(\theta) \frac{e^{ikr}}{r}] \equiv \varphi_{\vec{k}}(\vec{r}) + \psi_{\vec{k}}(\vec{r}) \, .
 \end{equation}
 The factor $f(\theta)$ in front of the outgoing spherical wave is called scattering amplitude. Assuming a spherical central potential the scattering amplitude depends on the polar angle $\theta$ only, the azimuthal angle $\varphi$ does not have to be considered. 
-The integral representation of the Schr\"odinger equation with the implementation of Green's operator G(E) is given by:
+The integral representation of the Schr\"odinger equation with the implementation of Green's operator G(E) is given by
 $$
-\left| \psi_{\vec{k}} \right\rangle = \left| \phi_{\vec{k}} \right\rangle + G_0(E)V(\vec{r}) \left| \phi_{\vec{k}} \right\rangle 
+\left| \psi_{\vec{k}} \right\rangle = \left| \phi_{\vec{k}} \right\rangle + G_0(E)V(\vec{r}) \left| \phi_{\vec{k}} \right\rangle,
 $$
-And following the derivation in Section 3.3 of Ref.~\cite{bertulani2019introduction} leads to following solution of the wavefunction:
+and following the derivation in Section 3.3 of Ref.~\cite{bertulani2019introduction} leads to following solution of the wavefunction
 \begin{equation}
-\psi_{\vec{k}}(\vec{r}) = \frac{1}{(2\pi)^{3/2}} \left[ e^{i\vec{k}\cdot \vec{r}} + \frac{e^{ikr}}{r} \left( -2\pi^2 \frac{2\mu}{\hbar^2} \right) \langle \varphi_{\vec{k}'} | V(\vec{r}) | \psi_{\vec{k}} \rangle \right] 
+\psi_{\vec{k}}(\vec{r}) = \frac{1}{(2\pi)^{3/2}} \left[ e^{i\vec{k}\cdot \vec{r}} + \frac{e^{ikr}}{r} \left( -2\pi^2 \frac{2\mu}{\hbar^2} \right) \langle \varphi_{\vec{k}'} | V(\vec{r}) | \psi_{\vec{k}} \rangle \right] \, ,
 \end{equation}
-
-which gives for the scattering amplitude $f(\theta)$:
+which gives for the scattering amplitude $f(\theta)$
 \begin{equation}\label{eq:sc_amp_pot}
 \begin{split}
 f(\theta) & = -2\pi^2 \left( \frac{2\mu}{\hbar^2} \right) \langle \varphi_{\vec{k}'} | V(\vec{r}) | \psi_{\vec{k}} \rangle \\
- & = -2\pi^2 \left( \frac{2\mu}{\hbar^2} \right) \int \varphi_{\vec{k}'}^*(\vec{r}) V(\vec{r}) \psi_{\vec{k}}(\vec{r}) d\vec{r}
+ & = -2\pi^2 \left( \frac{2\mu}{\hbar^2} \right) \int \varphi_{\vec{k}'}^*(\vec{r}) V(\vec{r}) \psi_{\vec{k}}(\vec{r}) d\vec{r} \, ,
 \end{split}
 \end{equation}
-
 with $\varphi_{\vec{k}'}$ the incoming wave and $\psi_{\vec{k}}$ the outgoing spherical wave accordingly, as in Eq.~\ref{eq:tot_wave}.\\
-The (differential) elastic scattering cross section can be derived from the scattering amplitude $f(\theta)$ via the conservation law of particle current\footnote{A derivation of this equation can be found in~\cite{mayer2013kernphysik}, Section 4.2}.
+The (differential) elastic scattering cross section can be derived from the scattering amplitude $f(\theta)$ via the conservation law of particle current\footnote{A derivation of this equation can be found in~\cite{mayer2013kernphysik}, Section 4.2}
 \begin{equation}\label{eq:el_scatt_cs}
-\left( \frac{\mathrm{d} \sigma_{el}}{\mathrm{d} \Omega} \right) = |f(\theta)|^2 \qquad \Rightarrow \qquad \sigma_{el} = \int \mathrm{d} \Omega \, |f(\theta)|^2 
+\left( \frac{\mathrm{d} \sigma_{el}}{\mathrm{d} \Omega} \right) = |f(\theta)|^2 \qquad \Rightarrow \qquad \sigma_{el} = \int \mathrm{d} \Omega \, |f(\theta)|^2 \, .
 \end{equation}
 
 \subsubsection{Eikonal Wave Approximation}
 The eikonal wave approximation can be applied when the incident particle's kinetic energy is much larger than the potential's strength ($ E >> V$) and the potential should vary slowly over the wavelength of the particle. This approximation is most accurate for scattering at small angles. Are those prerequisites given, then the eikonal wave approximation assumes that the scattered particle follows a nearly straight-line trajectory (like a classical particle). The wavefunction is approximated as a plane wave modulated by a phase factor. The term "eikonal" comes from the Greek word for "image" or "likeness," reflecting its origin in optics (ray optics).
-Following the derivation of Ref.~\cite{bertulani2019introduction} the solution for the wave function in~\ref{eq:schroedinger} is expressed as:
+Following the derivation of Ref.~\cite{bertulani2019introduction} the solution for the wave function in Eq.~\ref{eq:schroedinger} is expressed as
 \begin{equation}\label{eq:wave_sol}
-\psi_{\mathbf{k}}(\mathbf{r}) = e^{ikz} \varphi(\mathbf{c}, z)
+\psi_{\mathbf{k}}(\mathbf{r}) = e^{ikz} \varphi(\mathbf{c}, z) \, ,
 \end{equation}
 where $e^{ikz}$ is the plane wave in $z$ direction, $\varphi(\mathbf{c}, z)$ the distortion caused by the potential and $\mathbf{c}$ the space vector.
-Inserting the plane wave function from Eq.~\ref{eq:wave_sol} in the Schr\"odinger equation~\ref{eq:schroedinger} and omitting higher order derivative terms, due to the slowly varying potential over the particle's wave length (full derivation can be found in~\cite{bertulani2019introduction}) the distortion $\varphi(\mathbf{c}, z)$ can be simplified by:
+Inserting the plane wave function from Eq.~\ref{eq:wave_sol} in the Schr\"odinger equation~\ref{eq:schroedinger} and omitting higher order derivative terms, due to the slowly varying potential over the particle's wave length (full derivation can be found in~\cite{bertulani2019introduction}) the distortion $\varphi(\mathbf{c}, z)$ can be simplified by
 \begin{equation}
-\varphi(\mathbf{c}, z) = \exp \left\{ -\frac{i}{\hbar \nu} \int_{-\infty}^{z} V(\mathbf{c}, z') \, dz' \right\}
+\varphi(\mathbf{c}, z) = \exp \left\{ -\frac{i}{\hbar \nu} \int_{-\infty}^{z} V(\mathbf{c}, z') \, dz' \right\} \, ,
 \end{equation}
 where $\mathbf{c}$ is the space vector and $z$ the coordinate along the beam direction.  
-This is the aforementioned the phase factor, originating from the distortion due to the potential, called eikonal phase:
+This is the aforementioned the phase factor, originating from the distortion due to the potential, called eikonal phase
 \begin{equation}\label{eq:eikonal_phase}
-\chi(\vec{c}, z) = - \frac{1}{\hbar v} \int_{-\infty}^{z} V(\vec{c}, z') dz'
+\chi(\vec{c}, z) = - \frac{1}{\hbar v} \int_{-\infty}^{z} V(\vec{c}, z') dz' \, .
 \end{equation}
-Summarizing the eikonal wave function from Eq.~\ref{eq:wave_sol}:
+Summarizing the eikonal wave function from Eq.~\ref{eq:wave_sol}
 \begin{equation}
-\psi_k(\vec{r}) = e^{ikz+i\chi(\vec{c},z)}
+\psi_k(\vec{r}) = e^{ikz+i\chi(\vec{c},z)} \, .
 \end{equation}
-Upon simplification, see Section 8.6 in Ref.~\cite{bertulani2019introduction} we get for the scattering amplitude:
+Upon simplification, see Section 8.6 in Ref.~\cite{bertulani2019introduction} we get for the scattering amplitude
 \begin{equation}\label{eq:final_sc_amp}
-f(\theta) = -\frac{ik}{2\pi} \int \mathrm{d} \vec{c} \, e^{i \vec{q} \cdot \vec{c}} \left( e^{i \chi(\vec{c})} - 1 \right)
+f(\theta) = -\frac{ik}{2\pi} \int \mathrm{d} \vec{c} \, e^{i \vec{q} \cdot \vec{c}} \left( e^{i \chi(\vec{c})} - 1 \right) \, .
 \end{equation}
-And inserting this in Eq.~\ref{eq:el_scatt_cs} and following further simplification we finally get for the elastic cross section $\sigma_{el}$:
+And inserting this in Eq.~\ref{eq:el_scatt_cs} and following further simplification we finally get for the elastic cross section $\sigma_{el}$
 \begin{equation}
-\sigma_{el} = \int \left| e^{i \chi(\vec{c})} - 1 \right|^2 \, \mathrm{d} \vec{c}.
+\sigma_{el} = \int \left| e^{i \chi(\vec{c})} - 1 \right|^2 \, \mathrm{d} \vec{c} \, .
 \end{equation}
-Without derivation we present here the \textbf{optical theorem} which relates the scattering amplitude $f(\theta)$ at $\theta = 0$ to the total cross section (see Eq.~\ref{eq:tot_cs_def}):
+Without derivation we present here the \textbf{optical theorem} which relates the scattering amplitude $f(\theta)$ at $\theta = 0$ to the total cross section (see Eq.~\ref{eq:tot_cs_def})
 \begin{equation}
-\sigma_T = \frac{4\pi}{k} \, \text{Im} \left[ f(\theta = 0) \right]
+\sigma_T = \frac{4\pi}{k} \, \text{Im} \left[ f(\theta = 0) \right] \, .
 \end{equation}
 The optical theorem, formulated in the context of optics -- specifically for the scattering and absorption of light -- was later extended and applied to other wave phenomena, including quantum mechanical scattering of particles.\\
 The name stems from the fact that $\text{Im}\, f(0)$ is related to the imaginary part of the refractive index $n$, which the scattering potential has for the incident wave. We have $\text{Im}\, f(0) = \frac{k^2}{2\pi} \text{Im}\, n$. The imaginary part of the refractive index describes the absorption of the beam. The optical theorem is therefore an an expression of the relationship between absorption in the forward direction and the total cross section~\cite{mayer2013kernphysik}.
 The optical theorem can be derived using the fundamental principle of particle current conservation, see Section 6.4.3 in~\cite{sakurai2020modern}.\\
-From Eq.~\ref{eq:tot_cs_def}, the scattering amplitude (Eq.~\ref{eq:final_sc_amp}) and the aforementioned optical theorem relation we can summarize:
+From Eq.~\ref{eq:tot_cs_def}, the scattering amplitude (Eq.~\ref{eq:final_sc_amp}) and the aforementioned optical theorem relation we can summarize
 \begin{align}
-\sigma_{T} &=  2 \int \left(1 - \text{Re}\left[e^{i\chi(\vec{c})}\right]\right) d\vec{c} \\
-\sigma_{R} &= \sigma_{T} - \sigma{el}\\
-           &= \int \left(1 - \left|e^{i\chi(\vec{c})}\right|^2\right) d\vec{c} \label{eq:simga_reaction}
+\sigma_{T} &=  2 \int \left(1 - \text{Re}\left[e^{i\chi(\vec{c})}\right]\right) d\vec{c} \, , \\
+\sigma_{R} &= \sigma_{T} - \sigma{el} \\
+           &= \int \left(1 - \left|e^{i\chi(\vec{c})}\right|^2\right) d\vec{c} \label{eq:simga_reaction} \, .
 \end{align}
 
 \subsubsection{Optical potential and optical limit}
-%TODO: explain that Vol is simplified, only imaginary part, this is so for the total reaction cross section....
 
 In the following, we introduce the concept of the optical potential \( V(\vec{r}) \), as it appears in the Hamiltonian. 
 A rigorous theoretical understanding of this potential would ideally come from a derivation based on nucleon-nucleon (NN) interactions using a fully self-consistent many-body framework. 
@@ -195,12 +173,10 @@ There are two main approaches to construct the optical potential:
 \paragraph{1. Phenomenological Optical Potential}
 
 This approach uses an analogy to optics, where a complex index of refraction models both wave transmission and absorption. 
-Similarly, the nuclear optical potential is written as:
-
+Similarly, the nuclear optical potential is written as
 \begin{equation}
-V(r) = U(r) + iW(r)
+V(r) = U(r) + iW(r) \, .
 \end{equation}
-
 Here, the real part \( U(r) \) typically takes the form of a Woods-Saxon potential and governs elastic scattering. 
 The imaginary part \( W(r) \), responsible for absorption into non-elastic channels, is more difficult to model and is usually decomposed into volume, surface, and mixed components. 
 Detailed models can be found in Ref.~\cite{obertelli2021modern} and Ref.~\cite{mayer2013kernphysik}.
@@ -208,67 +184,49 @@ Detailed models can be found in Ref.~\cite{obertelli2021modern} and Ref.~\cite{m
 \paragraph{2. Microscopic Optical Potential and the Optical Limit}
 
 This approach starts from the interaction of a projectile nucleon with individual nucleons in the target. 
-The first-order optical potential is given by:
-
+The first-order optical potential is given by
 \begin{equation}
-V_{\text{opt}}(\vec{r}) = t_{pn} \, \rho_n(\vec{r}) + t_{pp} \, \rho_p(\vec{r})
+V_{\text{opt}}(\vec{r}) = t_{pn} \, \rho_n(\vec{r}) + t_{pp} \, \rho_p(\vec{r}) \, .
 \end{equation}
-
 Here, \( t_{pn} \) and \( t_{pp} \) are the transition matrix elements for proton-neutron and proton-proton interactions, and \( \rho_n(\vec{r}) \), \( \rho_p(\vec{r}) \) are the local neutron and proton densities in the target. 
-These elements are related to the scattering amplitude by:
-
+These elements are related to the scattering amplitude by
 \begin{equation}
-t_{pi} = \langle \varphi_{\vec{k}'} | V(\vec{r}) | \psi_{\vec{k}} \rangle = -\frac{\hbar^2}{2\mu} \cdot \frac{1}{2\pi^2} f_{pi}(\theta), \quad \text{with } i = \text{proton, neutron}
+t_{pi} = \langle \varphi_{\vec{k}'} | V(\vec{r}) | \psi_{\vec{k}} \rangle = -\frac{\hbar^2}{2\mu} \cdot \frac{1}{2\pi^2} f_{pi}(\theta), \quad \text{with } i = \text{proton, neutron} \, .
 \end{equation}
-
-To extend this to nucleus-nucleus scattering, the transition elements are often averaged over isospin, yielding an effective nucleon-nucleon matrix element:
-
+To extend this to nucleus-nucleus scattering, the transition elements are often averaged over isospin, yielding an effective nucleon-nucleon matrix element
 \begin{equation}
-t_{NN} \approx -i \, \frac{\hbar \nu}{2} \, \sigma_{NN}
+t_{NN} \approx -i \, \frac{\hbar \nu}{2} \, \sigma_{NN} \, .
 \end{equation}
-
-Taking into account the spatial distributions of nucleons in both the projectile and target nuclei, the point-like approximation must be replaced by an integral over their respective density profiles:
-
+Taking into account the spatial distributions of nucleons in both the projectile and target nuclei, the point-like approximation must be replaced by an integral over their respective density profiles
 \begin{equation}
-V_{\text{OL}}(\vec{b}) = -i \, \frac{\hbar \nu}{2} \, \sigma_{NN} \int \mathrm{d}^3 r \, \rho_P(\vec{r}) \, \rho_T(\vec{r} - \vec{b})
+V_{\text{OL}}(\vec{b}) = -i \, \frac{\hbar \nu}{2} \, \sigma_{NN} \int \mathrm{d}^3 r \, \rho_P(\vec{r}) \, \rho_T(\vec{r} - \vec{b}) \, .
 \end{equation}
-
 In this formulation, \( \vec{b} \) denotes the impact parameter, i.e., the transverse displacement between the centers of the projectile and target nuclei. 
 The resulting potential is often referred to as a \textit{double-folded optical potential} (see Ref.~\cite{obertelli2021modern}, Sec. 8.2.7).
-
-Substituting this potential into the eikonal phase expression, the total reaction cross section becomes:
-
+Substituting this potential into the eikonal phase expression, the total reaction cross section becomes
 \begin{equation}\label{eq:final_react_cs}
-\sigma_R = 2\pi \int \mathrm{d} \vec{b} \left[ 1 - \exp \left( -\sigma_{NN} \int \mathrm{d} z' \int \mathrm{d}^3 r \, \rho_P(\vec{r}) \, \rho_T(\vec{r} - \vec{b}) \right) \right]
+\sigma_R = 2\pi \int \mathrm{d} \vec{b} \left[ 1 - \exp \left( -\sigma_{NN} \int \mathrm{d} z' \int \mathrm{d}^3 r \, \rho_P(\vec{r}) \, \rho_T(\vec{r} - \vec{b}) \right) \right] \, .
 \end{equation}
-
 For completeness, we also include the expression for the \textit{charge-changing} cross section \( \sigma_{\Delta Z} \), which is of central importance to this work (see Section~\ref{subsec:cc_cs}). 
 In this case, the reaction is sensitive only to the removal of one or more protons from the projectile. 
-Accordingly, the full projectile density \( \rho_P(\vec{r}) \) is replaced by the proton density distribution \( \rho_P^p(\vec{r}) \):
-
+Accordingly, the full projectile density \( \rho_P(\vec{r}) \) is replaced by the proton density distribution \( \rho_P^p(\vec{r}) \)
 \begin{equation}\label{eq:final_cc_formula}
-\sigma_{\Delta Z} = 2\pi \int \mathrm{d} \vec{b} \left[ 1 - \exp \left( -\sigma_{NN} \int \mathrm{d} z' \int \mathrm{d}^3 r \, \rho_P^p(\vec{r}) \, \rho_T(\vec{r} - \vec{b}) \right) \right]
+\sigma_{\Delta Z} = 2\pi \int \mathrm{d} \vec{b} \left[ 1 - \exp \left( -\sigma_{NN} \int \mathrm{d} z' \int \mathrm{d}^3 r \, \rho_P^p(\vec{r}) \, \rho_T(\vec{r} - \vec{b}) \right) \right] \, .
 \end{equation}
-
 This expression differs from the total reaction cross section only by this substitution, which reflects the fact that the observable is sensitive specifically to proton-removal processes.
 
 
 \subsection{Input to the Glauber Model}
 
 As shown in Eq.~\ref{eq:final_react_cs}, the total reaction cross section depends only on the density distributions of the target and projectile, as well as on the isospin-averaged free nucleon-nucleon cross section, $\sigma_{NN}$.
-
 \begin{description}
 
 \item[Nucleon-Nucleon Cross Section]
-
-The isospin-averaged nucleon-nucleon cross section $\sigma_{NN}$ is computed based on the number of protons ($Z_P$, $Z_T$) and neutrons ($N_P$, $N_T$) in the projectile and target nuclei:
-
+The isospin-averaged nucleon-nucleon cross section $\sigma_{NN}$ is computed based on the number of protons ($Z_P$, $Z_T$) and neutrons ($N_P$, $N_T$) in the projectile and target nuclei
 \begin{equation}
-\sigma_{NN} = \frac{N_P N_T \sigma_{nn} + Z_P Z_T \sigma_{pp} + (Z_P N_T + N_P Z_T) \sigma_{np}}{A_P A_T}
+\sigma_{NN} = \frac{N_P N_T \sigma_{nn} + Z_P Z_T \sigma_{pp} + (Z_P N_T + N_P Z_T) \sigma_{np}}{A_P A_T} \, .
 \end{equation}
-
 Here, $\sigma_{nn}$, $\sigma_{pp}$, and $\sigma_{np}$ denote the neutron-neutron, proton-proton, and neutron-proton cross sections, respectively. Fig.~\ref{fig:nn_lukas} shows the corresponding experimental nucleon-nucleon cross section data, with $\sigma_{pp}$ plotted in red and $\sigma_{np}$ in black. The Coulomb contribution is omitted.
-
 At low energies, the effective $\sigma_{pp}$ cross section is reduced relative to $\sigma_{np}$, primarily due to Coulomb repulsion in the pp system. Additionally, neutron-proton scattering benefits from stronger interaction channels due to isospin coupling, which enhances the total cross section. At high energies, the distinction vanishes, and one can approximate $\sigma_{pp} = \sigma_{nn} = \sigma_{np}$.
 
 \begin{figure}[htbp]
@@ -313,33 +271,26 @@ At low energies, the effective $\sigma_{pp}$ cross section is reduced relative t
 
 The second essential input to the Glauber model is the nuclear density distribution of the projectile, \( \rho_P(\vec{r}) \), and the target, \( \rho_T(\vec{r}) \). The dependence of the nuclear radius on the mass number \( A \) was first established in early Rutherford scattering experiments, which demonstrated that it scales in first order as
 \begin{equation}
-R = r_0 A^{1/3}
+R = r_0 A^{1/3} \, ,
 \end{equation}
 where \( r_0 = (1.3 \pm 0.1)\,\text{fm} \), as reported in~\cite{pollard1935nuclear}. These experiments probe the distribution of protons via their electric charge. Assuming that protons and neutrons share an identical spatial distribution, the measured charge density serves as a valid proxy for the total nuclear density. This approximation holds well for stable nuclei such as \( ^{12}\text{C} \), which is investigated in this work.
-
 Nuclear charge radii are determined experimentally through high-energy electron scattering or through spectroscopy of muonic atoms. In the case of electron scattering, the differential cross section for an extended target such as a nucleus is expressed as
 \begin{equation}
-\left( \frac{d\sigma}{d\Omega} \right)_{\text{exp}} = \left( \frac{d\sigma}{d\Omega} \right)_{\text{Mott}} \cdot \left| F(q^2) \right|^2
+\left( \frac{d\sigma}{d\Omega} \right)_{\text{exp}} = \left( \frac{d\sigma}{d\Omega} \right)_{\text{Mott}} \cdot \left| F(q^2) \right|^2 \, ,
 \end{equation}
-where \( F(q^2) \) is the nuclear form factor and accounts for the finite size and internal structure of the nucleus. The Mott cross section includes relativistic and spin corrections to the Rutherford cross section\footnote{The asterisk denotes that the nuclear recoil is neglected in the given expression for electron-nucleus scattering.}:
+where \( F(q^2) \) is the nuclear form factor and accounts for the finite size and internal structure of the nucleus. The Mott cross section includes relativistic and spin corrections to the Rutherford cross section\footnote{The asterisk denotes that the nuclear recoil is neglected in the given expression for electron-nucleus scattering.}
 \begin{equation}
-\left( \frac{d\sigma}{d\Omega} \right)^{*}_{\text{Mott}} = \left( \frac{d\sigma}{d\Omega} \right)_{\text{Rutherford}} \cdot \left( 1 - \beta^2 \sin^2 \frac{\theta}{2} \right), \quad \beta = \frac{v}{c}
+\left( \frac{d\sigma}{d\Omega} \right)^{*}_{\text{Mott}} = \left( \frac{d\sigma}{d\Omega} \right)_{\text{Rutherford}} \cdot \left( 1 - \beta^2 \sin^2 \frac{\theta}{2} \right), \quad \beta = \frac{v}{c} \, .
 \end{equation}
-
-The form factor \( F(\mathbf{q}^2) \) is the Fourier transform of the spatial charge distribution:
+The form factor \( F(\mathbf{q}^2) \) is the Fourier transform of the spatial charge distribution
 \begin{equation}
 F(\mathbf{q}^2) = \int e^{i\mathbf{q}\cdot\mathbf{x}/\hbar} \rho(\mathbf{x}) \,\mathrm{d}^3x 
 \quad \Rightarrow \quad 
-\rho(r) = \frac{1}{(2\pi)^3} \int F(\mathbf{q}^2) e^{-i\mathbf{q}\cdot\mathbf{x}/\hbar} \,\mathrm{d}^3q 
+\rho(r) = \frac{1}{(2\pi)^3} \int F(\mathbf{q}^2) e^{-i\mathbf{q}\cdot\mathbf{x}/\hbar} \,\mathrm{d}^3q \, .
 \end{equation}
-
 Thus, by measuring the differential cross section and comparing it to the known Mott cross section, the form factor can be extracted. An inverse Fourier transform then allows the reconstruction of the nuclear charge density. In practice, however, the accessible range of momentum transfer \( \mathbf{q} \) is limited.
-
 A common approach is therefore to assume a parameterized functional form for \( \rho(r) \), and fit its parameters to best reproduce the experimental form factor. One frequently used choice is the Fermi distribution; see Section 2.1 of Ref.~\cite{mayer2013kernphysik}.
-
 An alternative phenomenological method is the Energy Density Functional (EDF) theory. In this approach, the nuclear Hamiltonian is expressed as a functional of the local one-body density. The parameters of this functional are determined by fitting to experimental observables, such as charge and matter radii. EDF methods are not explicitly based on nucleon-nucleon interactions but enable the derivation of nuclear density profiles and extrapolations to exotic nuclei. A detailed discussion of EDF can be found in Section 3.6 of Ref.~\cite{obertelli2021modern}.
-
-
 
 \end{description}
 
@@ -392,10 +343,7 @@ An alternative phenomenological method is the Energy Density Functional (EDF) th
 %
 %\end{description}
 
-
-
 The eikonal optical limit approximation provides a convenient framework for calculating reaction cross sections based on simplified assumptions about projectile-target interactions. However, this formalism neglects various dynamical effects, resulting in a systematic overestimation of reaction cross sections when compared to experimental data (see Fig.~\ref{fig:carbon12_interaction_cs}). To improve the agreement between theory and experiment, several correction mechanisms have been developed. These include in-medium effects, which effectively reduce the calculated cross sections. The most relevant corrections are briefly summarized below.
-
 \begin{figure}[htbp]
     \centering
     %\includegraphics[width=0.95\textwidth]{Figures/cs_vals_cal_exp.png}
@@ -410,57 +358,42 @@ The eikonal optical limit approximation provides a convenient framework for calc
 
 \item[Pauli Blocking]
 The Pauli exclusion principle, formulated by Wolfgang Pauli, prohibits identical fermions -- such as protons or neutrons -- from occupying the same quantum state. In the context of nuclear reactions, this principle implies that not all final states in inelastic collisions are accessible, particularly those involving nuclear excitation. Consequently, the available phase space is reduced, leading to a suppression of the total reaction cross section.
-
-This phenomenon, referred to as \textit{Pauli blocking}, becomes especially relevant at low incident energies. A detailed discussion can be found in Refs.~\cite{hussein1991microscopic, bertulani1986heavy, bertulani2001density, bertulani2010pauli}. A quantitative expression for the Pauli-blocked in-medium nucleon-nucleon cross section is given in Ref.~\cite{teixeira2022nuclear} as:
-
+This phenomenon, referred to as \textit{Pauli blocking}, becomes especially relevant at low incident energies. A detailed discussion can be found in Refs.~\cite{hussein1991microscopic, bertulani1986heavy, bertulani2001density, bertulani2010pauli}. A quantitative expression for the Pauli-blocked in-medium nucleon-nucleon cross section is given in Ref.~\cite{teixeira2022nuclear} as
 \begin{equation}\label{eq:pauli_blocked_cs}
 \sigma_{NN}^{\text{Pauli}}(E, \rho_P, \rho_T) = \sigma_{NN}^{\text{free}}(E)
 \cdot \frac{1}{1 + 1.892 \left( \frac{|\rho_P - \rho_T|}{\tilde{\rho} \rho_0} \right)^{2.75}}
 \cdot
 \begin{cases}
-1 - \frac{37.02 \tilde{\rho}^{2/3}}{E}, & \text{if } E > 46.27 \tilde{\rho}^{2/3}, \\
-\frac{E}{231.38 \tilde{\rho}^{2/3}}, & \text{if } E \leq 46.27 \tilde{\rho}^{2/3},
+1 - \frac{37.02 \tilde{\rho}^{2/3}}{E} \, , & \text{if } E > 46.27 \tilde{\rho}^{2/3}, \\
+\frac{E}{231.38 \tilde{\rho}^{2/3}} \, , & \text{if } E \leq 46.27 \tilde{\rho}^{2/3},
 \end{cases}
 \end{equation}
-
 with
 \[
-\tilde{\rho} = \frac{\rho_P + \rho_T}{\rho_0}, \quad \rho_0 = 0.16\,\mathrm{fm}^{-3}
+\tilde{\rho} = \frac{\rho_P + \rho_T}{\rho_0}, \quad \rho_0 = 0.16\,\mathrm{fm}^{-3} \, .
 \]
-
 To incorporate Pauli blocking into the Glauber model, the free-space nucleon-nucleon cross section $\sigma_{NN}^{\text{free}}$ must be replaced with the Pauli-suppressed cross section $\sigma_{NN}^{\text{Pauli}}$ in both cross section formulae Eq.~\ref{eq:final_react_cs} and Eq.~\ref{eq:final_cc_formula}. 
-
 \item[Coulomb Repulsion]
 For systems in which both the projectile and the target carry positive charge, such as in $^{12}$C + $^{12}$C collisions, Coulomb repulsion plays a significant role. The eikonal approximation assumes straight-line trajectories, which becomes invalid as the Coulomb force deflects the incoming projectile. This deflection reduces the probability of the nuclei reaching distances where strong nuclear interactions dominate, effectively suppressing the interaction cross section -- particularly at low beam energies where the kinetic energy is comparable to the Coulomb barrier.
-
-In the non-relativistic case, the distance of closest approach in a head-on collision can be calculated by setting the kinetic energy of the projectile equal to the repulsive Coulomb potential:
-
+In the non-relativistic case, the distance of closest approach in a head-on collision can be calculated by setting the kinetic energy of the projectile equal to the repulsive Coulomb potential
 \begin{equation}
-\frac{1}{2}mv^{2} = \frac{Z_T Z_P e^{2}}{r} \quad \Rightarrow \quad r_{\text{min}} = \frac{2 Z_T Z_P e^{2}}{m v^2}
+\frac{1}{2}mv^{2} = \frac{Z_T Z_P e^{2}}{r} \quad \Rightarrow \quad r_{\text{min}} = \frac{2 Z_T Z_P e^{2}}{m v^2} \, .
 \end{equation}
-
-In the relativistic center-of-mass frame, this becomes:
-
+In the relativistic center-of-mass frame, this becomes
 \begin{equation}
-r_{\text{min}} = \frac{Z_T Z_P e^{2}}{\gamma \mu v^2}
+r_{\text{min}} = \frac{Z_T Z_P e^{2}}{\gamma \mu v^2} \, ,
 \end{equation}
 with $\gamma$ being the Lorentz factor and $\mu$ the reduced mass of the system.
-The corrected impact parameter is then given as:
-
+The corrected impact parameter is then given as
 \begin{equation}
-b' = a_0 + \sqrt{a_{0}^2 + b^2}
+b' = a_0 + \sqrt{a_{0}^2 + b^2} \, ,
 \end{equation}
 where $a_0 = \frac{r_{min}}{2}$ is the half distance of closest approach. For more details see Ref.~\cite{teixeira2022nuclear}.
-
-%As a consequence, the lower limit of the impact parameter integration in the total reaction cross section (Eq.~\ref{eq:final_react_cs}) is modified from $b=0$ to $b'= r_{\text{min}}$.
-
 As a consequence, the lower limit of the integration over the impact parameter in the total reaction and charge changing cross section (Eq.~\ref{eq:final_react_cs} and Eq.~\ref{eq:final_cc_formula}) is modified from $b=0$ to $b'= r_{\text{min}}$.
 
 \item[Fermi Motion]
 In the basic Glauber model, nucleons are assumed to be at rest within the nuclei. However, nucleons in a bound system exhibit intrinsic motion. In the ground state, momenta up to the Fermi momentum ($p_F \approx 250\,\mathrm{MeV}/c$) are possible for medium to heavy nuclei. This motion alters the effective nucleon-nucleon collision energy and can, in principle, influence the reaction cross section.
-
 Ref.~\cite{teixeira2022nuclear} investigates this effect and finds that the correction to the total reaction cross section remains below 0.1\% for beam energies above 200\,AMeV. Therefore, Fermi motion can be neglected in the high-energy context of this work.
-
 However, in quasi-free scattering reactions, the internal momentum distribution of nucleons plays a significant role. This aspect will be discussed in the following section.
 
 \end{description}
@@ -471,7 +404,7 @@ However, in quasi-free scattering reactions, the internal momentum distribution 
 Quasi-free scattering (QFS) reactions, as a subset of direct reactions, are processes where a projectile nucleon interacts with a target nucleon via the strong nuclear force in a single and fast localized event at large momentum transfer which allows for a highly localized vertex. The relative kinetic energies of the participants, typically on the order of  $E_{kin}\gtrsim$ 100 AMeV, are high\footnote{Which is needed for the single nucleon-nucleon interaction. The \textit{de Broglie wavelength} of a 100 MeV proton corresponds to $\lambda \approx 2.79fm$ which is in the order of the proton diameter ($\approx 1.6 fm$).}.\newline
 In QFS experiments conducted in direct kinematics, a proton serves as the projectile, colliding with a nucleon or a cluster within the target nucleus. Conversely, in inverse kinematics, the nucleus of interest becomes the projectile, while a proton or proton-like particle is used as the target. Despite these differing setups, both approaches are fundamentally equivalent, differing only due to a Lorentz transformation of the reference frame.\newline
 As the name implies, QFS reactions are conceptually similar to free nucleon-nucleon scattering, with the primary approximation being that the influence of the residual nucleus is neglected to first order. This approximation simplifies the theoretical description of the process, allowing to treat the interaction as a two-body problem within a (only weakly interfering) nuclear environment.\newline
-The first experiments confirming the existence of quasi-free scattering processes were conducted at the University of California, Berkeley, in 1952 by O. Chamberlain and Emilio Segr\`e\~cite{chamberlain1952proton}. In their study, lithium nuclei were bombarded with 350 MeV protons, and coincident proton pairs were observed with an opening angle of approximately 90$^{\circ}$. That same year, J.B. Cladis, W.N. Hess, and B.J. Moyer published results on the scattering of 340 MeV protons on deuterium and carbon targets~\cite{cladis1952nucleon}, further substantiating the phenomenon.\newline
+The first experiments confirming the existence of quasi-free scattering processes were conducted at the University of California, Berkeley, in 1952 by O. Chamberlain and Emilio Segr\`e~\cite{chamberlain1952proton}. In their study, lithium nuclei were bombarded with 350 MeV protons, and coincident proton pairs were observed with an opening angle of approximately 90$^{\circ}$. That same year, J.B. Cladis, W.N. Hess, and B.J. Moyer published results on the scattering of 340 MeV protons on deuterium and carbon targets~\cite{cladis1952nucleon}, further substantiating the phenomenon.\newline
 In 1957, Tyr\'en, Maris, and Hillman designed an experiment aimed at fully characterizing proton-proton collisions within the quasi-free scattering framework~\cite{MARIS19581}. Their results validated the assumption of a direct and clean interaction between the projectile and the target nucleon, free from significant distortions caused by the surrounding nucleus. Furthermore, these experiments demonstrated that QFS reactions could serve as a powerful tool for probing nuclear structure and testing predictions of the shell model. Specifically, they enabled the study of key nuclear parameters such as spin-orbit splitting and energy differences between nuclear shells probing the shell evolution. \newline
 In QFS reactions, these parameters can be extracted by analyzing the reaction products, which include the two correlated outgoing protons, the residual nucleus, and any gamma rays emitted during de-excitation of the residual nucleus. The detailed measurements of these observables provide critical insights into the underlying nuclear structure and dynamics.\newline
 The experimental discoveries and theoretical insights from these early studies strongly pushed the advancements in the theoretical modeling of QFS reactions. These models have since become essential tools for understanding nucleon-nucleon interactions within the nuclear medium and for further investigations of nuclear structure and reaction mechanisms.\newline
@@ -486,42 +419,42 @@ A simplified picture, which however explains the essential kinematics of the QFS
     }
     \label{fig:sketch_qfs}
 \end{figure}
-As from standard textbooks (see~\cite[Chapter~6.2]{povh2013teilchen}) the energy-momentum conservation of the reaction can be expressed as:
+As from standard textbooks (see~\cite[Chapter~6.2]{povh2013teilchen}) the energy-momentum conservation of the reaction can be expressed as
 \begin{equation}\label{eq:four_mom_cons_qfs}
-P_A  +  P_0 = P_1 + P_2 +P_{A-1} 
+P_A  +  P_0 = P_1 + P_2 +P_{A-1} \, , 
 \end{equation}
 with $P_i$ the four momentum $(E_i,\mathbf{p_i})$.\newline
-In direct kinematics as presented in Fig.~\ref{fig:sketch_qfs} the separation energy  of the ejected nucleon for a certain final state of the nucleus A-1 is given by\footnote{In inverse kinematics the four-momentum vectors need to be boosted to the center of mass frame of the initial nucleus via Lorentz transformation.}:
+In direct kinematics as presented in Fig.~\ref{fig:sketch_qfs} the separation energy  of the ejected nucleon for a certain final state of the nucleus A-1 is given by\footnote{In inverse kinematics the four-momentum vectors need to be boosted to the center of mass frame of the initial nucleus via Lorentz transformation.}
 \begin{equation}
-S = T_0 -(T_1+T_2 +T_{A-1}); \; \text{with $T_i$ the kinetic energy of particle $i$} 
+S = T_0 -(T_1+T_2 +T_{A-1}); \; \text{with $T_i$ the kinetic energy of particle $i$} \, .
 \label{eq:sep_e}
 \end{equation}
 In the idealized shell model the separation energy equals to the (negative) energy of the nucleus' single-particle state. In the case where the final nucleus (A-1) (corresponding to a one-proton knockout) remains in its ground state, its total energy in the center-of-mass frame of the initial nucleus is given by
 \begin{equation}
-E_{A-1} = M_{A-1}c^{2} + T_{A-1},
+E_{A-1} = M_{A-1}c^{2} + T_{A-1} \, ,
 \end{equation}
 where \( M_{A-1} \) denotes the rest mass of the final nucleus and \( T_{A-1} \) its kinetic energy after the quasi-free nucleon-nucleon collision.\newline
-If a nucleon has been ejected from an inner shell resulting in a hole state, the final nucleus will be in an excited state:
+If a nucleon has been ejected from an inner shell resulting in a hole state, the final nucleus will be in an excited state
 \begin{equation}
-E^{*}_{A-1} =  M_{A-1}c^2  +T_{A-1} + E_{exe}
+E^{*}_{A-1} =  M_{A-1}c^2  +T_{A-1} + E_{exe} \, .
 \end{equation} 
 From the experimental point of view, $E_{exe}$ is directly accessible via gamma detection from the transition of the final nucleus from the excited to the ground state or via the detection of evaporated neutrons from higher excited states.\newline
 From momentum conservation follows that in the center-of-mass frame of the initial nucleus ($\mathbf{p_A} = 0$), the recoil momentum of the nucleus in final state $\mathbf{p_{A-1}}$ equals to $-\mathbf{p_i}$, the momentum of the initial nucleon inside the nucleus A pointing in opposite direction. \newline
-In addition the four-momentum of the inner nucleon can be deduced from momentum measurement of the initial and final state free nucleons:
+In addition the four-momentum of the inner nucleon can be deduced from momentum measurement of the initial and final state free nucleons
 \begin{equation}\label{eq:miss_mom}
-P_i \approx P_{miss} \equiv P_1 + P_2  - P_0
+P_i \approx P_{miss} \equiv P_1 + P_2  - P_0 \, ,
 \end{equation}
 where $P_{miss}$ is the so called "measured missing four-momentum of the reaction"~\cite{patsyuk2021unperturbed}\footnote{$P_{miss}$ is only equal to $P_i$ for the unperturbed QFS (no ISI/FSI) case.}.
 Thereupon, the separation energy measurement and the recoil momentum distribution fully describe the single particle state in the various shell levels. 
 In addition and as complementary method $\gamma$ rays can be measured in coincidence with the reaction and consequently exclusive cross section and momentum distribution measurements of the single particle states are accessible.\newline
-Considering the removal of a single nucleon from an initial nucleus state $\Psi^A_i$ with A nucleons and initial spin \textit{I} and final nucleus state  $\Psi^{A-1}_f$ with final spin $I_f$ an overlap function between initial and final state many-body wave function can be written as:
+Considering the removal of a single nucleon from an initial nucleus state $\Psi^A_i$ with A nucleons and initial spin \textit{I} and final nucleus state  $\Psi^{A-1}_f$ with final spin $I_f$ an overlap function between initial and final state many-body wave function can be written as
 \begin{equation}
-\langle \vec{r}, \Psi_f^{A^{-1}} | \Psi_i^A \rangle = \sum_j C_j^{if} \psi_j(\vec{r}), \quad with  |I - I_f| < j < |I + I_f|
+\langle \vec{r}, \Psi_f^{A^{-1}} | \Psi_i^A \rangle = \sum_j C_j^{if} \psi_j(\vec{r}), \quad with  |I - I_f| < j < |I + I_f| \, ,
 \end{equation}
 where $S_j^{if} = |C_j^{if}|^2$ is the commonly named spectroscopic factor, see Ref.~\cite[Sec.2.1]{hansen2003direct}. $S_j^{if}$ is summed over all final single particle states m (from $-j$ to $j$). It is unity for nucleon removal from a pure single particle state and in this picture equals (2j+1) when the nucleon was removed from a filled j-subshell.
-In realistic phenomenological models the spectroscopic factor is linked to the exclusive experimental cross section measurement of a single particle state $\sigma_{sp}(nlj)$ and the theoretical predicted one, as in Ref.~\cite{hansen2003direct}:
+In realistic phenomenological models the spectroscopic factor is linked to the exclusive experimental cross section measurement of a single particle state $\sigma_{sp}(nlj)$ and the theoretical predicted one, as in Ref.~\cite{hansen2003direct}
 \begin{equation}
-\sigma_{th}^{if} = \sum_j S_j^{if}\,\sigma_{sp}(nlj)
+\sigma_{th}^{if} = \sum_j S_j^{if}\,\sigma_{sp}(nlj) \, ,
 \end{equation}
 where $\sigma_{sp}$ are the theoretical cross sections for the normalized wave functions $\Psi_j$ of the final state nucleus A-1 with the appropriate quantum numbers.\newline
 From this considerations the spectroscopic factor can be used to probe the theoretical shell predictions. In past this was already done with direct QFS-reactions $(e,e'p)$. Results for the spectroscopic factor with data obtained at the NIKHEF facility are shown in Fig.~\ref{fig:spec_fac}. The substantial reduction of the spectroscopic factor with respect to the independent particle model (IPM) or mean field of $\approx 35\%$ indicates a substantial depletion of the single-particle states and inferring from this a refined model prediction has to be applied\footnote{The mean field potential does not consider spin-spin interaction $V_{ss}$, non central tensor-potential $V_T$ or spin-orbit interaction $V_{LS}$.}.\newline
@@ -535,7 +468,6 @@ While QFS-reaction with electrons $(e,e'p)$ in direct kinematics is a valuable m
 Summarizing, the QFS-reaction technique in inverse kinematics with exotic nuclei as in-flight projectiles and a proton-like target opens new possibilities to probe theoretical model predictions of exotic nuclei far off stability which haven't been accessible before.\newline
 For precise cross section measurements of the single particle states $\sigma_{sp}$ the kinematical characteristics of the QFS-reaction products have to be considered for correct identification of QFS-events and clear background subtraction. The following descriptions are already implicitly embedded within Eq.~\ref{eq:four_mom_cons_qfs}.\newline
 As starting point one compares the QFS-reaction of the two nucleons with the two dimensional non-central collision of free point-like particles in non-relativistic kinematics. Since both kinetic energy and momenta are conserved a  clear signature is expected: the opening angle of the scattered particles -- assuming they have the same rest mass -- is exactly 90$^{\circ}$. 
-
 However, at kinetic energies of 400 AMeV and more, relativistic effects affect the opening angle of the scattered particles\footnote{Relativistic considerations become relevant at velocities $ \beta \gtrapprox 0.1 c$. This corresponds to $\approx$ 4.5 MeV.}, see Fig.~\ref{fig:correlation_mrunmoy}. 
 \begin{figure}[h!]
     \centering
@@ -543,39 +475,33 @@ However, at kinetic energies of 400 AMeV and more, relativistic effects affect t
     \caption{Kinematical correlations between the polar scattering angles ($\theta_1$,$\theta_2$) of two protons undergoing elastic scattering, shown for beam energies of 10, 100, 300, 500, 700, 900, and 1000 MeV. The uppermost straight line corresponds to a beam energy of 10 MeV, where the opening angle between the two protons is approximately $90^{\circ}$, as expected in the non-relativistic regime. As the beam energy increases, relativistic effects cause a pronounced bending of the correlation curves. Courtesy: \textit{Mrunmoy Jena}.}
     \label{fig:correlation_mrunmoy}
 \end{figure}
-
-
 For the final description of the process it has to be considered that the projectile nucleon inside the nucleus has a non negligible momentum (see $P_i$ in Eq.~\ref{eq:miss_mom})  and in addition the separation energy $S_{p/n}$ has to be expended to remove the scattered nucleon of the nuclear potential of the projectile nucleus.\newline
-To account for the nucleon momentum the picture of the Fermi gas model where protons and neutrons freely move inside the nucleus' potential is applied. In the ground state of the nucleus the nucleons can reach a momentum up to the Fermi momentum $p_F$. Except for the light nuclei, the Fermi momentum is almost independent of A and amounts to $ p_f \approx 250$ MeV/c \footnote{For light nuclei like $ ^{12}C$, $p_F \approx 230$ MeV/c can be assumed~\cite{moniz1971nuclear}}. The mean quadratic momenta of the nucleons is related to the Fermi momentum by:
+To account for the nucleon momentum the picture of the Fermi gas model where protons and neutrons freely move inside the nucleus' potential is applied. In the ground state of the nucleus the nucleons can reach a momentum up to the Fermi momentum $p_F$. Except for the light nuclei, the Fermi momentum is almost independent of A and amounts to $ p_f \approx 250$ MeV/c \footnote{For light nuclei like $ ^{12}C$, $p_F \approx 230$ MeV/c can be assumed~\cite{moniz1971nuclear}}. The mean quadratic momenta of the nucleons is related to the Fermi momentum by
 \begin{equation}
-\langle \mathbf{p}^2 \rangle = \frac{3}{5}p^2_F \footnote{From the derivation of the mean kinetic energy of the nucleons $\langle E_{\text{kin}} \rangle = \frac{\int_0^{p_F} E_{\text{kin}} \, p^2 \, dp}{\int_0^{p_F} p^2 \, dp} = \frac{3}{5} \cdot \frac{p_F^2}{2M}$}
+\langle \mathbf{p}^2 \rangle = \frac{3}{5}p^2_F \footnote{From the derivation of the mean kinetic energy of the nucleons $\langle E_{\text{kin}} \rangle = \frac{\int_0^{p_F} E_{\text{kin}} \, p^2 \, dp}{\int_0^{p_F} p^2 \, dp} = \frac{3}{5} \cdot \frac{p_F^2}{2M}$} \, .
 \end{equation}
-The width of the momentum distribution of the nucleons is given in the Goldhaber model by:
+The width of the momentum distribution of the nucleons is given in the Goldhaber model by
 \begin{equation}
-\sigma^2 = \sigma_0^2 K(A-K)/(A-1), \, \text{with} \, \sigma_0 \approx 90 MeV/c
+\sigma^2 = \sigma_0^2 K(A-K)/(A-1), \, \text{with} \, \sigma_0 \approx 90\,\mathrm{MeV/c}\, ,
 \end{equation}
 where A is the mass number of the projectile nucleus and K the mass number of the fragment after scattering. For a detailed derivation and further readings see Ref.~\cite{goldhaber1974statistical} and~\cite{FESHBACH1973300}.
 In the impulse approximation, where we assume that the interaction between the projectile and target nucleons has approximately the same form as the interaction between two nucleons in free space, the inner momenta of the scattered nucleons smear out the angular correlations of the outgoing fragment -- which has the same momentum as the knocked out nucleon in the cms system of the nucleus but points in opposite direction -- as well as of the two nucleons involved in the scattering. As consequence the opening angle distribution of the two scattered nucleons gets broadened as well as the azimuthal angular correlation which for the assumption of zero nucleon momentum sharply peaked at $\Delta\varphi = 180^{\circ}$.\newline
-In view of the added nucleon momentum the kinematics get expanded from a two dimensional scattering reaction to a three dimensional process where the reaction plane is determined by the plane spanned by the momentum vector of the projectile nucleus $\mathbf{p}_A$ and the scattered nucleon after the reaction \footnote{For (p,2p) reactions there is an ambiguity which of the scattered protons $\mathbf{p}_1$ or $\mathbf{p}_2$ origin from the projectile nucleus or the proton like target.}. With the momentum measurement of the two correlated outgoing nucleons and the momentum of the incoming projectile nucleus it is possible to retrieve the internal momentum of the knocked out nucleon perpendicular to the reaction plane $Q_{\perp i}$ via the formula derived in Ref.~\cite{chulkov2005quasi}:
+In view of the added nucleon momentum the kinematics get expanded from a two dimensional scattering reaction to a three dimensional process where the reaction plane is determined by the plane spanned by the momentum vector of the projectile nucleus $\mathbf{p}_A$ and the scattered nucleon after the reaction \footnote{For (p,2p) reactions there is an ambiguity which of the scattered protons $\mathbf{p}_1$ or $\mathbf{p}_2$ origin from the projectile nucleus or the proton like target.}. With the momentum measurement of the two correlated outgoing nucleons and the momentum of the incoming projectile nucleus it is possible to retrieve the internal momentum of the knocked out nucleon perpendicular to the reaction plane $Q_{\perp i}$ via the formula derived in Ref.~\cite{chulkov2005quasi}
 \begin{equation}\label{eq:chulkov}
-Q_{\perp i} = sin(\theta_{1/2})\cdot sin(\varphi_{1/2} -\varphi_{2/1})\cdot\mathbf{p}_{2/1}
+Q_{\perp i} = sin(\theta_{1/2})\cdot sin(\varphi_{1/2} -\varphi_{2/1})\cdot\mathbf{p}_{2/1} \, .
 \end{equation}
 In case of (p,2p) reactions it is impossible to track back the origin of each nucleon - from the projectile nucleus or the proton-like target. Inferring from this there are two possible solutions for $Q_{\perp}$. The ambiguity can be resolved by incorporating the momentum of the fragment nucleus perpendicular to the reaction plane $Q_{\perp A-1}$. The fragment momentum vector should be of the same amount but point in opposite direction to $Q_{\perp i}$.\\
-
-Up to this point, the scattering process has been described analogously to free elastic scattering in relativistic kinematics, with the knocked-out nucleon assumed to possess a non-negligible initial momentum inside the nucleus. However, it must be noted that the ejected nucleon is an off-shell particle, bound within the nuclear potential. Its virtual mass \( \mu_i \) in the c.m.s. of the nucleus is given by:
+Up to this point, the scattering process has been described analogously to free elastic scattering in relativistic kinematics, with the knocked-out nucleon assumed to possess a non-negligible initial momentum inside the nucleus. However, it must be noted that the ejected nucleon is an off-shell particle, bound within the nuclear potential. Its virtual mass \( \mu_i \) in the c.m.s. of the nucleus is given by
 \begin{equation}
-\mu_i =  \sqrt{m_A^2 + m_{A-1}^2 - 2m_A\sqrt{m_{A-1}^2 + |\mathbf{p}_i|^2}}
+\mu_i =  \sqrt{m_A^2 + m_{A-1}^2 - 2m_A\sqrt{m_{A-1}^2 + |\mathbf{p}_i|^2}} \, ,
 \label{eq:virtual_mass}
 \end{equation}
-where \( m_A \) and \( m_{A-1} \) are the rest masses of the initial nucleus and the residual fragment after the quasi-free scattering, respectively, and \( \vec{p}_{i} \) denotes the momentum of the inner nucleon  in the c.m.s. of the nucleus, see also Eq.~\ref{eq:miss_mom}. From Eq.~\ref{eq:virtual_mass} follows:
+where \( m_A \) and \( m_{A-1} \) are the rest masses of the initial nucleus and the residual fragment after the quasi-free scattering, respectively, and \( \vec{p}_{i} \) denotes the momentum of the inner nucleon  in the c.m.s. of the nucleus, see also Eq.~\ref{eq:miss_mom}. From Eq.~\ref{eq:virtual_mass} follows
 \begin{equation}
-0 < \mu_i  < m_n
+0 < \mu_i  < m_n \, ,
 \end{equation}
 where $m_n$ is the mass of the appropriate free nucleon.
 To knock the bound nucleon out of the nucleus the separation energy has to be overcome which can be observed in the reduced opening angle of the two outgoing correlated nucleons.
-
-
-
 %From experimental point of view-> important to identify the QFS events.
 %In non rel. kinematics of free particles a really clean signature: two dim-colllision with coplanar nucleons = delta phi = 180 degr and an opening angle of 90 degr. \newline
 %When going to rel. energies -> 80 degrees of opening angle(400 AMeV). Is there a function to calculate the opening angle? The opening angle is smeared because of relativistic effects + inner momentum of the nucleon. \newline
@@ -621,37 +547,7 @@ Since pioneering experiments were made at JLab and Brookhaven via $(e,e'p)$ and 
     }
     \label{fig:src_pairs}
 \end{figure}
-
-
 \item[Fission via QFS]Fission induced via quasifree scattering (QFS) provides a powerful method to extract fission barriers on an event-by-event basis. The fundamental concept involves the knockout of a proton or neutron from an incoming exotic ion beam. By measuring the energy  and the angular distribution of the correlated emitted nucleons, it becomes possible to probe the excitation energy transferred to the fissioning system. In cases where deeply bound nucleons are knocked out, the resulting daughter nucleus either evaporates one or multiple neutrons or populates an excited state, followed by the fission process. The R3B setup is particularly well-suited for such investigations, as it enables full kinematic reconstruction of the reaction products and hence to pin down the complete reaction mechanism. This approach allows for the detailed exploration of the potential-energy surface and the fission dynamics across a broad range of fissility and excitation energies, taking advantage of relativistic radioactive beams.\newline
 The pilot experiment S455 was conducted in 2021 at R3B using a stable $^{238}$U beam incident on a liquid hydrogen target. The data collected from this experiment provide simultaneous information on several key fission observables, which can be used to constrain theoretical calculations. These calculations aim to describe both the static and dynamic properties of the fission process and enable comparisons with predictions from various theoretical frameworks, including phenomenological approaches, macroscopic-microscopic models, and fully microscopic statistical or time-dependent Hartree-Fock calculations.\newline
-
 \end{description}
 \newpage
-%A critical aspect of this experimental setup is the simultaneous measurement of the two outgoing fission fragments. This is achieved using a dedicated ionization chamber (TWIM-MUSIC) and advanced tracking detectors. The success of this methodology has already been demonstrated by promising results, see \cite{garcia2023study},\cite{grana2023fission} and figure \ref{fig:qfs_fission}, highlighting the potential of this technique in advancing our understanding of nuclear fission dynamics.\newline
-%\begin{figure}[htpb]
-%    \centering
-%    \begin{subfigure}[b]{0.3\textwidth}
-%    \includegraphics[width=\textwidth]{Figures/gabriel_1.png} 
-%    \end{subfigure}
-%    \begin{subfigure}[b]{0.3\textwidth}
-%    \includegraphics[width=\textwidth]{Figures/gabriel_2.png} 
-%    \end{subfigure}
-%    \begin{subfigure}[b]{0.3\textwidth}
-%    \includegraphics[width=\textwidth]{Figures/gabriel_3.png}
-%    \end{subfigure}
-%    \caption{(a) Polar angle correlations of the two protons from fission via QFS event. In (b)  the charge distribution for quasi-free (p,2p) fission reactions is selected while (c) displays the charge distribution for multi-nucleon knockout reactions of FSI. From Ref \cite{garcia2023study}, S455 Experiment in 2021 at R$^3$B, GSI.}
-%    \label{fig:qfs_fission}
-%\end{figure}
-%\newpage
-%The second part of the S455 experimental campaign employed a complementary and well-established method to investigate the fission process and its evolution: fission induced by Coulomb excitation (coulex-induced fission). This approach aimed at a precise characterization of fission yields and properties of 100 different neutron-deficient exotic isotopes, ranging from iridium (Z = 77) to thorium (Z = 90).\newline 
-%These isotopes were produced via the fragmentation of a relativistic  1 AGeV  $^{238}$U primary beam  and subsequently separated and identified individually using the GSI Fragment Separator (FRS). In the R$^3$B setup, the isotopes were directed onto a segmented lead target, where they were excited to a few MeV above their ground state energy, inducing the fission into two lighter fragments, which same as for the pilot fission via qfs experiment were identified and tracked within the dedicated R$^3$B detector setup.\newline
-%The systematic study of the data collected during ten days of experiment, revealed a transition toward increasingly asymmetric fission in neutron-deficient heavy nuclei. This marks the discovery of a new ``island of asymmetric fission'' in the nuclear chart, characterized by a surprising dominance of light fission fragments with atomic number Z = 36, corresponding to krypton, see Fig.~\ref{fig:asymmetric_fission_islands}.\newline 
-%\begin{figure}[ht]
-%    \centering
-%    \includegraphics[width=0.85\textwidth]{Figures/csm_NuclideChart_with_islands_Foto_PMorfouace_res_47948441f0.png}
-%    \caption[Asymmetric fission regions in the chart of nuclides]{Three-dimensional chart of nuclides illustrating the evolution of asymmetric fission, with asymmetry \( A \) shown as a color scale. The red circles indicate two distinct regions-so-called ``islands''-of asymmetric fission. The region in the upper right corresponds to the well-established asymmetric fission in the actinide range (atomic numbers \( Z = 89\text{--}103 \)), where the process is stabilized by the formation of a heavy fragment near xenon (\( Z = 54 \)). In contrast, the region in the lower left highlights the recently discovered asymmetric fission of lighter nuclei around mercury (\( Z = 80 \)), stabilized by the formation of a light fragment near krypton (\( Z = 36 \)). Black squares denote the valley of beta-stable isotopes. \textit{Image credit: Pierre Morfouace, CEA, DAM, DIF, Arpajon, France.}}
-%    \label{fig:asymmetric_fission_islands}
-%\end{figure}
-%The significance of this discovery was underscored by its publication in Nature under the title \textit{``An asymmetric fission island driven by shell effects in light fragments''}~\cite{morfouace2025asymmetric}. This high-impact publication represents a major milestone for the R$^3$B collaboration and a notable recognition of the scientific importance of the experiment.\newline
-%This discovery marks a first step toward identifying the extent of a newly observed region in the nuclear chart where asymmetric fission dominates. A series of follow-up experiments is planned at FAIR, which will begin operation in 2027 within the ``Early Science'' campaign. At the heart of these efforts is the new Superconducting Fragment Separator (Super-FRS) -- the successor of the currently operating FRS -- a major upgrade that will enable the selection and delivery of even rarer and more exotic isotopes. These advancements will be key to mapping this phenomenon in much greater detail and revealing fundamental aspects of nuclear matter under extreme conditions.\newline

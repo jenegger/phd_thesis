@@ -6,25 +6,25 @@ All relevant detector related geometrical and efficiency corrections will be add
 
 \subsection{Cross Section Measurement via Transmission Method}\label{section:transmission_method}
 In its most generic form cross sections give a measure of the probability that a specific reaction will take place when a particle passes a target material~\cite{bethge2007wiedemann}. It is expressed in units of area, with one barn defined as 1 b = 10$^{-24}$ cm$^2$. Cross sections measured in scattering experiments, along with the corresponding energy and angular distributions of the reaction products, provide valuable insight into the underlying interaction dynamics between the projectile and target. Such measurements enable the extraction of fundamental quantities, including coupling constants, form factors, and structure functions.\newline
-The total interaction cross section $\sigma_{tot}$ can be derived by looking at the relation between the number of incoming particles (N$_{1}$) and unreacted particles after the target ($N_{2}$). For an experiment with fixed target with thickness $z$ and volumetric number density $n$ the number of reacted particles in the infinitesimal thin target layer $dz$ can be expressed as~\footnote{This assumption is valid only if the original projectile species cannot be regenerated through secondary reactions. For the $^{12}$C + $^{12}$C system, this condition is fulfilled.}:
+The total interaction cross section $\sigma_{tot}$ can be derived by looking at the relation between the number of incoming particles (N$_{1}$) and unreacted particles after the target ($N_{2}$). For an experiment with fixed target with thickness $z$ and volumetric number density $n$ the number of reacted particles in the infinitesimal thin target layer $dz$ can be expressed as~\footnote{This assumption is valid only if the original projectile species cannot be regenerated through secondary reactions. For the $^{12}$C + $^{12}$C system, this condition is fulfilled.}
 \begin{equation}
-\frac{dN_{2}}{dz} = -n \sigma_{tot} N_{2}
+\frac{dN_{2}}{dz} = -n \sigma_{tot} N_{2} \, .
 \end{equation}
-Solving this differential equation for $N_{2}$ (with the condition $N_{2}$ = $N_{1}$ for $z=0$) discloses an exponential relation:
+Solving this differential equation for $N_{2}$ (with the condition $N_{2}$ = $N_{1}$ for $z=0$) discloses an exponential relation
 \begin{equation}
-N_{2} = N_{1}e^{-n z \sigma}  = N_{1}e^{-N_t\sigma}
+N_{2} = N_{1}e^{-n z \sigma}  = N_{1}e^{-N_t\sigma} \, ,
 \label{eq:cross_sec}
 \end{equation} 
-Where $n\cdot z$ can be summarized as $N_t$, the total number of scattering centers in the target per unit area. The relation $(N_{2}/N_{1})$, number of unreacted particles after the target versus number of incoming particles, is often called survival probability $P_{surv}$. For an idealistic experimental setup with full detector efficiency and no interactions in the setup material the cross section could simply be deduced from Eq.~\ref{eq:cross_sec}. To account for reactions of the projectile that occur within the setup material and first order detector specific distortions of output signals the survival probability $(N_{2}/N_{1})$ has to be divided by the survival probability for an empty target run $P^{E}_{surv}$ = $(N_{2}^E/N_{1}^E)$, where $N_{1}^E$ is the number of incoming particles and $N_{2}^E$ the number of unreacted particles after the target for an empty run respectively. Thereby the setup specific efficiency($\epsilon_{setup}$) and transmission factor($t_{setup}$) are canceled out to obtain the underlying number of unreacted particles after the target $\tilde{N_{2}}$:\newline
+where $n\cdot z$ can be summarized as $N_t$, the total number of scattering centers in the target per unit area. The relation $(N_{2}/N_{1})$, number of unreacted particles after the target versus number of incoming particles, is often called survival probability $P_{surv}$. For an idealistic experimental setup with full detector efficiency and no interactions in the setup material the cross section could simply be deduced from Eq.~\ref{eq:cross_sec}. To account for reactions of the projectile that occur within the setup material and first order detector specific distortions of output signals the survival probability $(N_{2}/N_{1})$ has to be divided by the survival probability for an empty target run $P^{E}_{surv}$ = $(N_{2}^E/N_{1}^E)$, where $N_{1}^E$ is the number of incoming particles and $N_{2}^E$ the number of unreacted particles after the target for an empty run respectively. Thereby the setup specific efficiency($\epsilon_{setup}$) and transmission factor($t_{setup}$) are canceled out to obtain the underlying number of unreacted particles after the target $\tilde{N_{2}}$:\newline
 $N_{2} = \tilde{N_{2}} \cdot t_{setup}\cdot \epsilon_{setup}$\newline
 $N_{2}^E = \tilde{N_{2}^E} \cdot \epsilon_{setup}$ with $\frac{\tilde{N_{2}^E}}{N_{1}^E}$ the setup specific transmission factor $t_{setup}$ \newline
 \newline
-The formula for the cross section $\sigma_{tot}$ for a transmission measurement is:
+The formula for the cross section $\sigma_{tot}$ for a transmission measurement is
 \begin{equation}
 	\begin{split}
-\sigma_{tot} = -\frac{1}{N_t} ln(\frac{N_{1}^E}{N_{2}^E} \cdot \frac{N_2}{N_1}) = -\frac{1}{N_t} ln(\frac{N_{1}^E}{\tilde{N_{2}^E} \cdot \epsilon_{setup}} \cdot \frac{\tilde{N_{2}} \cdot t_{setup} \cdot \epsilon_{setup}}{N_1}) \\
-\text{With $\frac{\tilde{N_{2}^E}}{N_{1}^E} = t_{setup}$} \\
-\sigma_{tot} = -\frac{1}{N_t} ln(\frac{1}{t_{setup}} \cdot \frac{\tilde{N_{2}} \cdot t_{setup}}{N_1}) = -\frac{1}{N_t} ln(\frac{\tilde{N_{2}}}{N_1})
+\sigma_{tot} = -\frac{1}{N_t} ln(\frac{N_{1}^E}{N_{2}^E} \cdot \frac{N_2}{N_1}) = -\frac{1}{N_t} ln(\frac{N_{1}^E}{\tilde{N_{2}^E} \cdot \epsilon_{setup}} \cdot \frac{\tilde{N_{2}} \cdot t_{setup} \cdot \epsilon_{setup}}{N_1}). \\
+\text{With $\frac{\tilde{N_{2}^E}}{N_{1}^E} = t_{setup}$} \, ,\\
+\sigma_{tot} = -\frac{1}{N_t} ln(\frac{1}{t_{setup}} \cdot \frac{\tilde{N_{2}} \cdot t_{setup}}{N_1}) = -\frac{1}{N_t} ln(\frac{\tilde{N_{2}}}{N_1}) \, .
 \label{eq:corr_cross}
 	\end{split}
 \end{equation}
@@ -41,9 +41,9 @@ target thickness d = 1.0793 cm; $N_t = 1.0016600\cdot 10^{23}$; $\frac{\Delta N_
 \item Thick target:\newline
 target thickness d =2.1928cm; $N_t = 2.0350598\cdot 10^{23}$; $\frac{\Delta N_t}{N_t} = 0.0322\%$
 \end{enumerate} 
-where $N_t$ was calculated by:
+where $N_t$ was calculated by
 \begin{equation}
-N_t = \frac{\rho \cdot d \cdot N_A}{M}
+N_t = \frac{\rho \cdot d \cdot N_A}{M} \, ,
 \end{equation}
 with $\rho$ the target density\footnote{$\rho = 1.851 g/cm^{3}$, from \cite{ponnath2023precise}}, $N_A$ the Avogadro constant ($6.02214076\cdot10^{23}\,mol^{-1}$) and $M$ the molar mass of the target (for carbon $M = 12.011\,g \cdot mol^{-1}$).
 \item[$\blacksquare$] \textbf{Number of incoming projectiles ($^{12}$C) $\mathbf{N_1}$}\newline
@@ -63,7 +63,7 @@ Detectors downstream the target area are used to count the number of unreacted p
 For event selection, all three upstream detectors are utilized: the MWPC0, the R3B MUSIC Ionization Chamber, and the start detector. 
 %This selection of correlated signals in these detectors already ensure that individual dead times of the different DAQ systems and the central trigger system are excluded for the dataset and do not have to be considered in the following analysis. 
 The use of correlated detector signals ensures that events affected by dead times in any of the sub-detector DAQ systems or in the central system are excluded from the analysis dataset.
-To ensure a clean incoming event selection, the following prerequisites must be met:
+To ensure a clean event selection, the following prerequisites must be met:
 \begin{enumerate}
 \item \textbf{$^{12}$C identification of incoming projectile by upstream detectors:}\newline
 \begin{figure}[htpb]
@@ -169,9 +169,9 @@ For the analysis of data in TWIN MUSIC -- different to the upstream detectors, w
 %\end{equation}
 %where \(E_i\) is the energy signal recorded by the \(i\)-th anode, \(c_i\) is its corresponding calibration factor, and \(n\) is the number of anodes with valid signals contributing to the event.
 The calibration of the TWIN MUSIC energy-loss response was performed independently for each anode and on a run-by-run basis. For the calibration procedure, only events in which all anodes -- including the reference anode -- registered exactly one hit were selected to ensure uniform and well-controlled signal conditions. For each anode, the most prominent peak in the energy-loss spectrum, corresponding to carbon fragments, was fitted with a Gaussian function. The mean values extracted from these Gaussian fits were then shifted such that all carbon peaks were aligned, as illustrated in Fig.~\ref{fig:calibration}.\\
-For the analysis of reaction fragments, the reconstructed mean energy loss \(\overline{\Delta E}\) is obtained from the calibrated anode signals according to:
+For the analysis of reaction fragments, the reconstructed mean energy loss \(\overline{\Delta E}\) is obtained from the calibrated anode signals according to
 \begin{equation}
-\overline{\Delta E} = \frac{1}{n} \sum_{i=1}^{n} c_i \cdot \Delta E_i,
+\overline{\Delta E} = \frac{1}{n} \sum_{i=1}^{n} c_i \cdot \Delta E_i \, ,
 \end{equation}
 where \(\Delta E_i\) is the energy loss signal recorded by the \(i\)-th anode, \(c_i\) is the corresponding calibration factor, and $n$ is the number of anodes with valid signals contributing to the event.
 \begin{figure}[ht]
@@ -252,7 +252,7 @@ The time based selection algorithm for multiple hit anodes works iteratively:\ne
 \begin{enumerate}
 \itemsep0em
 \item Get a good estimate of the mean drift time for the eight upstream anodes($t_{mean\_up}$) and the eight downstream anodes($t_{mean\_down}$)\footnote{For the case all eight downstream anodes have multiple hits, set $t_{mean\_down} = t_{mean\_up}$ and vice versa}, without considering anodes with multiple hits, typically originating from electronics noise.
-\item To determine the real hit for anodes with multiple hits compare the hit time with the according mean drift time ($t_{mean\_up}$ for any of the eight upstream anodes, $t_{mean\_down}$ for any of the eight downstream anodes). Calculate the absolute difference between mean drift time and each hit time:
+\item To determine the real hit for anodes with multiple hits compare the hit time with the according mean drift time ($t_{mean\_up}$ for any of the eight upstream anodes, $t_{mean\_down}$ for any of the eight downstream anodes). Calculate the absolute difference between mean drift time and each hit time
 \begin{equation}
 \Delta t = | \bar{t} - {t^i}_{drift}|; \, \text{i = anodeID (1-16) with} \quad \bar{t} = 
 \begin{cases}
@@ -276,22 +276,21 @@ The numbers displayed in the plot denote the fraction of surviving carbon isotop
     }
     \label{fig:twin_2d_gaus_cut}
 \end{figure}
-
-After selecting the appropriate hit for both single- and multi-hit anodes, the mean reconstructed energy loss is calculated separately for the eight upstream anodes ($\overline{\Delta E_{\text{up}}}$) and the eight downstream anodes ($\overline{\Delta E_{\text{down}}}$). To identify the surviving carbon isotopes, a two-dimensional Gaussian fit is then applied to the $\overline{\Delta E_{\text{up}}}$ versus $\overline{\Delta E_{\text{down}}}$ distribution, centered on the peak corresponding to the carbon isotopes (see Fig.~\ref{fig:twin_2d_gaus_cut}):
+After selecting the appropriate hit for both single- and multi-hit anodes, the mean reconstructed energy loss is calculated separately for the eight upstream anodes ($\overline{\Delta E_{\text{up}}}$) and the eight downstream anodes ($\overline{\Delta E_{\text{down}}}$). To identify the surviving carbon isotopes, a two-dimensional Gaussian fit is then applied to the $\overline{\Delta E_{\text{up}}}$ versus $\overline{\Delta E_{\text{down}}}$ distribution, centered on the peak corresponding to the carbon isotopes (see Fig.~\ref{fig:twin_2d_gaus_cut})
 \begin{equation}
-f(x) = A e^{-\frac{1}{2}((\frac{x - \bar{x}}{\sigma_{x}})^2 +(\frac{y - \bar{y}}{\sigma_{y}})^2)}
+f(x) = A e^{-\frac{1}{2}((\frac{x - \bar{x}}{\sigma_{x}})^2 +(\frac{y - \bar{y}}{\sigma_{y}})^2)} \, ,
 \label{eq:gauss_fit}
 \end{equation}
 where $x$ is the mean re-scaled energy loss of the first upstream anodes and $y$ the according eight downstream anodes.\\ 
-The number of surviving carbon isotopes -- for both empty and target runs -- is determined by as the integral of events within the ellipsoidal contour defined by the 2D Gaussian fit in the ($\overline{\Delta E_{\text{up}}}$ , $\overline{\Delta E_{\text{down}}}$) plane (see Fig.~\ref{fig:twin_2d_gaus_cut}).
+The number of surviving carbon isotopes -- for both empty and target runs -- is determined by the integral of events within the ellipsoidal contour defined by the 2D Gaussian fit in the ($\overline{\Delta E_{\text{up}}}$ , $\overline{\Delta E_{\text{down}}}$) plane (see Fig.~\ref{fig:twin_2d_gaus_cut}).
 Because the upstream and downstream anodes were read out by two independent MDPP modules with slightly different thresholds, some events appear only along one of the two histogram axes (i.e. events for which only the upstream or only the downstream anode produced a registered charge signal). To ensure that these valid carbon events are not lost, the selection is extended as follows:
 \begin{itemize}
 \item If both upstream and downstream anodes record a hit, the event is counted as a surviving carbon isotope when ($\overline{\Delta E_{\text{up}}}$ , $\overline{\Delta E_{\text{down}}}$) lies inside the 2D Gaussian ellipsoid.
 \item If only one of the two anodes records a hit, the event is retained provided that its single recorded charge value lies within the corresponding 1D Gaussian projection of the fitted 2D distribution.
 \end{itemize}
-A raw estimate of the charge changing cross section, neglecting the influence of the geometrical acceptance of the TWIN MUSIC detector, can be derived from the raw event numbers using Eq.~\ref{eq:corr_cross}:
+A raw estimate of the charge changing cross section, neglecting the influence of the geometrical acceptance of the TWIN MUSIC detector, can be derived from the raw event numbers using Eq.~\ref{eq:corr_cross}
 \begin{equation}\label{eq:cs_cc_show}
-    \sigma = -\frac{1}{N_t} \ln\left(\frac{N_1^E}{N_2^E} \cdot \frac{N_2}{N_1}\right),
+    \sigma = -\frac{1}{N_t} \ln\left(\frac{N_1^E}{N_2^E} \cdot \frac{N_2}{N_1}\right) \, ,
 \end{equation}
 where $N_2$ and $N_2^E$ are the numbers of surviving carbon isotopes determined for the target and corresponding empty-target measurement, respectively.\\
 Preliminary results are shown in Fig.~\ref{fig:cccs_gaus_with_errors}, where the fit range of the two-dimensional Gaussian was fixed to 3.5 standard deviations (SD) of the Gaussian fit. To determine an optimal and stable fit region, the charge-changing cross section was evaluated systematically for fit ranges between 1 and 5 SD for all beam energies and targets (Fig.~\ref{fig:cccs_vs_sigma_cut}). A broad plateau with minimal dependence of the extracted cross section is observed around 3.5 SD, which is therefore chosen as the standard selection range throughout the analysis.
@@ -315,9 +314,9 @@ Preliminary results are shown in Fig.~\ref{fig:cccs_gaus_with_errors}, where the
 
 %To get the optimal fit range on the two dimensional Gaussian fit on the reconstructed charges of the upstream anodes versus downstream anodes the charge changing cross section for all targets and all energies was systematically measured for $\sigma$-fit ranges between one and five $\sigma$, see Fig.~\ref{fig:cccs_vs_sigma_cut}. In the region around 3.5$\sigma$ the variation of the cross section is minimal.\newline
 %
-As shown in Fig.~\ref{fig:cccs_vs_sigma_cut}, the extracted cross sections decrease with increasing beam energy, particularly for large fit ranges. This behaviour is primarily attributed to the change in energy deposition characteristics at higher beam energies. The energy resolution of the TWIN MUSIC detector is  limited by statistical (Poissonian) fluctuations in ionisation, which scale as:
+As shown in Fig.~\ref{fig:cccs_vs_sigma_cut}, the extracted cross sections decrease with increasing beam energy, particularly for large fit ranges. This behaviour is primarily attributed to the change in energy deposition characteristics at higher beam energies. The energy resolution of the TWIN MUSIC detector is  limited by statistical (Poissonian) fluctuations in ionisation, which scale as
 \begin{equation*}
-\frac{\Delta E}{E} \propto \frac{1}{\sqrt{E}}
+\frac{\Delta E}{E} \propto \frac{1}{\sqrt{E}} \, .
 \end{equation*}
 Moreover, when the beam energy is varied from 400 to 800 AMeV, the measured energy loss in the detector follows an approximate $\frac{1}{\beta^2}$ dependence~\footnote{A detailed description of the energy loss of charged particles via ionisation is provided in Ref.~\cite{kolanoski2016teilchendetektoren}, Section 3.2.}. As a result the deposited energy decreases with increasing beam energy, leading to a degradation of the energy resolution at higher beam energies. This has as consequence that at higher beam energies and for wide fit ranges a non-negligible fraction of boron fragments (Z = 5) may be incorrectly identified as carbon isotopes (Z = 6), due to the diminished peak separation in the energy-loss spectra. This resulting overlap leads then to a systematic overestimation of survived carbon isotopes and thus to an underestimation of the charge changing cross section. This is clearly visible in Fig.~\ref{fig:cccs_vs_sigma_cut} for fit ranges larger than 4.5.\\
 
@@ -367,9 +366,9 @@ To reconstruct fragment tracks extending beyond the geometrical acceptance of th
     The flipped and measured distributions are compared on a bin-by-bin basis. As illustrated in Fig.~\ref{fig:geo_correction}, lower panel, the ratio between the two distributions drops significantly around $x \approx -20\,\text{mm}$, indicating the onset of acceptance loss. This reduced level persists down to approximately $x \approx -25\,\text{mm}$.
 
     \item \textbf{Calculation of the correction factor:}  
-    To estimate the number of missing hits due to limited acceptance, the bin contents of both the flipped and measured distributions are summed over the range from the edge of the active area of MWPC1 ($x = -110\,\text{mm}$) up to the observed acceptance drop (e.g. $x = -20\,\text{mm}$). The correction factor is then computed as:
+    To estimate the number of missing hits due to limited acceptance, the bin contents of both the flipped and measured distributions are summed over the range from the edge of the active area of MWPC1 ($x = -110\,\text{mm}$) up to the observed acceptance drop (e.g. $x = -20\,\text{mm}$). The correction factor is then computed as
     \begin{equation}
-        \text{geo}_{x} = 1 + \frac{\sum_{x = -110}^{-20} (h_{\text{flipped}}[x] - h_{\text{full}}[x])}{\sum_{x = -110}^{ +110} h_{\text{full}}[x]}
+        \text{geo}_{x} = 1 + \frac{\sum_{x = -110}^{-20} (h_{\text{flipped}}[x] - h_{\text{full}}[x])}{\sum_{x = -110}^{ +110} h_{\text{full}}[x]} \, ,
     \end{equation}
     where $h_{\text{full}}[x]$ is the bin-wise histogram content of the full measured histogram (blue histogram in Fig.~\ref{fig:geo_correction}) and $h_{\text{flipped}}[x]$ the according mirrored distribution (orange histogram in Fig.~\ref{fig:geo_correction}). 
 	The final value of $\text{geo}_x$ is taken as the average of the results obtained at the two boundaries of the acceptance-drop region ($x = -25\text{mm}$ and $x = -20\text{mm}$). The uncertainty ($\Delta x$ or $\Delta y$) is estimated from the spread between the minimum, maximum, and mean values in this interval.
@@ -377,9 +376,9 @@ To reconstruct fragment tracks extending beyond the geometrical acceptance of th
     \item \textbf{Application to the $y$-direction:}  
     The same procedure is applied independently to the $y$-distribution, yielding the corresponding correction factor $\text{geo\_corr}_y$.
 \end{enumerate}
-The final geometric correction factor, accounting for both spatial directions, is then given by:
+The final geometric correction factor, accounting for both spatial directions, is then given by
 \begin{equation}
-    \text{geo}_{xy} = \text{geo}_x \cdot \text{geo}_y
+    \text{geo}_{xy} = \text{geo}_x \cdot \text{geo}_y \, .
 \end{equation}
 \begin{figure}[htbp]
     \centering
@@ -396,26 +395,21 @@ The described correction procedure must be systematically applied to all target 
 \end{figure}
 An overview of the resulting correction factors $\text{geo}_{xy}$ is presented in Fig.~\ref{fig:geo_corrections_overview}, according to target thickness and beam energy. The error bars reflect the uncertainty in the estimated onset of acceptance loss in both the x- and y-distributions. Specifically, they are derived from the variation of the correction factor when shifting the integration bounds between, e.g., $x$=-25 mm and $x$=-20 mm (and analogously in $y$).
 
-Once computed, the geometric correction factors can be directly included in the calculation of the charge-changing cross section via Eq.~\ref{eq:corr_cross}. As they appear inside the logarithmic term, the multiplicative correction factors translate into additive contributions for full (geo$_{xy}^{\text{T}}$) and empty (geo$_{xy}^{\text{E}}$) target:
-
+Once computed, the geometric correction factors can be directly included in the calculation of the charge-changing cross section via Eq.~\ref{eq:corr_cross}. As they appear inside the logarithmic term, the multiplicative correction factors translate into additive contributions for full (geo$_{xy}^{\text{T}}$) and empty (geo$_{xy}^{\text{E}}$) target
 \begin{equation}
-\sigma_{\text{corr}} = -\frac{1}{N_t} \ln(\text{geo}_{xy}^{\text{T}}) + \frac{1}{N_t} \ln(\text{geo}_{xy}^{\text{E}})
+\sigma_{\text{corr}} = -\frac{1}{N_t} \ln(\text{geo}_{xy}^{\text{T}}) + \frac{1}{N_t} \ln(\text{geo}_{xy}^{\text{E}}) \, .
 \label{eq:geo_corr_sigma}
 \end{equation}
-
-
 The correction term $\sigma_{\text{corr}}$ accounts for the number of undetected carbon isotopes (Z = 6) after the target due to the limited geometric acceptance of the TWIN MUSIC.\\
-The aforementioned errors on the geometric correction factors are propagated to the charge changing cross section correction factor $\sigma_{\text{corr}}$ in Eq.~\ref{eq:geo_corr_sigma} as:
+The aforementioned errors on the geometric correction factors are propagated to the charge changing cross section correction factor $\sigma_{\text{corr}}$ in Eq.~\ref{eq:geo_corr_sigma} as
 \begin{equation}
-\Delta_{sys}\sigma_{\text{corr}} = \frac{1}{N_t} \cdot \sqrt{ \left(\frac{\Delta x^T}{\text{geo}_{x}^T} \right)^2 + \left(\frac{\Delta x^E}{\text{geo}_{x}^E} \right)^2 + \left(\frac{\Delta y^T}{\text{geo}_{y}^T} \right)^2 + \left(\frac{\Delta y^E}{\text{geo}_{y}^E} \right)^2 } 
+\Delta_{sys}\sigma_{\text{corr}} = \frac{1}{N_t} \cdot \sqrt{ \left(\frac{\Delta x^T}{\text{geo}_{x}^T} \right)^2 + \left(\frac{\Delta x^E}{\text{geo}_{x}^E} \right)^2 + \left(\frac{\Delta y^T}{\text{geo}_{y}^T} \right)^2 + \left(\frac{\Delta y^E}{\text{geo}_{y}^E} \right)^2 } \, , 
 \end{equation}
 where $\Delta x$ and $\Delta y$ are the factor's uncertainties within the acceptance-drop region. The superscripts $T/E$ refer to the target and empty runs accordingly. \\ 
-The negative correction term $\sigma_{\text{corr}}$ is then added to the preliminary estimate of the charge-changing cross section to yield the final result:
-
+The negative correction term $\sigma_{\text{corr}}$ is then added to the preliminary estimate of the charge-changing cross section to yield the final result
 \begin{equation}
-\sigma_{\text{cc}}^{\text{final}} = \sigma_{\text{cc}}^{\text{raw}} + \sigma_{\text{corr}}
+\sigma_{\text{cc}}^{\text{final}} = \sigma_{\text{cc}}^{\text{raw}} + \sigma_{\text{corr}} \, .
 \end{equation}
-
 Fig.~\ref{fig:cccs_gaus_with_errors} shows the raw estimates before applying geometric acceptance corrections, while the fully corrected charge-changing cross sections are presented in Fig.~\ref{fig:cccs_xy_corrected}.\\
 As expected significantly affected by the  geometric correction are runs with 400 and 550 AMeV beam energy whereas at beam energies of 650 and 800 AMeV the effect is exceptionally small since at high beam energies  the fragments after the target perceive a strong boost effect in beam direction which confines the distribution in the x-y-plane within the active area of the TWIN MUSIC.
 
@@ -431,7 +425,7 @@ As expected significantly affected by the  geometric correction are runs with 40
 For the determination of the total interaction cross section, it is necessary to identify not only the surviving carbon fragments, as done in Subsection~\ref{subsec:cc_cs} for the charge-changing cross section, but specifically the surviving $^{12}$C isotopes. This ensures that the number of neutrons in the projectile remains unchanged. Consequently, an unambiguous mass identification of the carbon isotopes is required.\\
 The R3B setup provides, in principle, full charge and mass identification of reaction fragments behind the target, utilizing tracking detectors (e.g., MWPCs), time-of-flight detectors (e.g., START, SofiaToF Wall), and charge measurement systems (e.g., TWIN MUSIC). These measurements are combined through the magnetic rigidity relation
 \begin{equation}\label{eq:mag_rig}
-B\cdot \rho = \frac{\gamma \cdot m \cdot v}{q}
+B\cdot \rho = \frac{\gamma \cdot m \cdot v}{q} \, ,
 \end{equation}
 where $B$ is the magnetic field component perpendicular to the particle trajectory, $\rho$ is the curvature radius of the trajectory in the magnetic field, $\gamma$ is the Lorentz factor, $v$ is the particle velocity. This relation allows extraction of the mass-to-charge ratio m/q and thus the isotope.\\
 However, in the present case, a direct mass determination using the standard R3B time-of-flight and tracking information was not feasible. The SofiaToF  Wall detector, optimized for nuclei with Z $\geq$ 20, exhibits substantially reduced efficiency for carbon (Z = 6), and downstream of GLAD only a single tracking detector (MWPC3) was available. As a result, the reconstruction of fragment velocity and full trajectory with sufficient precision could not be performed.\\
@@ -527,12 +521,12 @@ An example of the resulting combined fit is shown in Fig.~\ref{fig:example_histo
 \end{figure}
 The correction factor accounting for the isotopic composition of the carbon fragments is then defined as
 \begin{equation}
-    c_{\mathrm{iso}} \;=\; \frac{N_{12\mathrm{C}}}{N_{\mathrm{C}}},
+    c_{\mathrm{iso}} \;=\; \frac{N_{12\mathrm{C}}}{N_{\mathrm{C}}} \, ,
 \end{equation}
 where $N_{12\mathrm{C}}$ denotes the number of reconstructed $^{12}\mathrm{C}$ fragments obtained by integrating the Voigt profile and the Gaussian component from step (i) over the full range. The data distribution was fitted using a Gaussian to account for inelastic excitations of $^{12}$C (E$^*$ $\le$ S$_n$), together with a Voigt profile to describe the observed broading in the MWPCs. The resulting fit reproduces the observed peak shape, as shown in Fig.~\ref{fig:example_histo_fit}. The total number of reconstructed carbon fragments, $N_{\mathrm{C}}$, is determined by integrating the full combined fit, i.e.\ the sum of $N_{12\mathrm{C}}, N_{11\mathrm{C}}$, and $N_{10\mathrm{C}}$, over the same range.\newline
-The contribution of this isotopic correction to the total interaction cross section can be obtained by applying the logarithmic term used in the cross section calculation. Specifically, the isotopic correction cross section is given by:
+The contribution of this isotopic correction to the total interaction cross section can be obtained by applying the logarithmic term used in the cross section calculation. Specifically, the isotopic correction cross section is given by
 \begin{equation}
-\sigma_{\text{iso}} = -\frac{1}{N_t} \ln(c_{\text{iso}}^T) + -\frac{1}{N_t} \ln(c_{\text{iso}}^E)
+\sigma_{\text{iso}} = -\frac{1}{N_t} \ln(c_{\text{iso}}^T) + -\frac{1}{N_t} \ln(c_{\text{iso}}^E) \, ,
 \end{equation}
 where $c_{\text{iso}}^T$ and $c_{\text{iso}}^E$ are the isotopic correction factors for the target and empty runs, respectively, and $N_t$ is the number of target nuclei per unit area.
 \begin{figure}[htbp]
@@ -546,27 +540,27 @@ The observed differences in the contributions for the respective target thicknes
 However, no systematic shifts related to the target thickness is observed  in Fig.~\ref{fig:iso_corr_contribution}. This indicates that secondary scattering or reaction effects are negligible for the target thicknesses used in this experiment.\newline
 To account for systematic effects associated with detector response and target positioning, a weighted arithmetic mean was calculated for each beam energy, using the three data points obtained for the different target thicknesses. The weights are defined according to the variances, such that the weight assigned to data point $i$ is given by
 \begin{equation}
-w_i = \frac{1}{\text{Var}(\sigma_{iso,i})},
+w_i = \frac{1}{\text{Var}(\sigma_{iso,i})} \, ,
 \end{equation}
 where $\text{Var}(\sigma_{iso,i})$ denotes the variance of the isotope cross section contribution of data point $i$. The resulting weighted mean of the isotope cross section contribution is then defined as
 \begin{equation}
-\bar{\sigma}_{iso,i} = \frac{\sum_i w_i \sigma_{iso,i}}{\sum_i w_i},
+\bar{\sigma}_{iso,i} = \frac{\sum_i w_i \sigma_{iso,i}}{\sum_i w_i} \, ,
 \end{equation}
 where the summation over $i$ extends over the three target thicknesses. The resulting weighted means for each beam energy are shown in Fig.~\ref{fig:iso_corr_weighted_mean}. 
 %The error bars represent the standard error of the weighted mean, which is given by 
 The total uncertainty of the combined measurement consists of two contributions.
 First, the statistical uncertainty associated with the weighted mean is given by
 \begin{equation}
-\Delta_w = \sqrt{\frac{1}{\sum_i w_i}}\,,
+\Delta_w = \sqrt{\frac{1}{\sum_i w_i}} \, .
 \end{equation}
-Second, to account for the observed spread of the measurements, an additional systematic scatter term is estimated through the weighted sample variance:
+Second, to account for the observed spread of the measurements, an additional systematic scatter term is estimated through the weighted sample variance
 \begin{equation}
-s_w^2 = \frac{\sum_i w_i \left( x_i - \bar{x}_w \right)^2}{\sum_i w_i}\,,
+s_w^2 = \frac{\sum_i w_i \left( x_i - \bar{x}_w \right)^2}{\sum_i w_i} \, .
 \end{equation}
 The final uncertainty on the combined result is obtained by adding both contributions
-in quadrature:
+in quadrature
 \begin{equation}
-\Delta \bar{\sigma}_{iso} = \sqrt{\Delta_w^2 + s_w^2}\, .
+\Delta \bar{\sigma}_{iso} = \sqrt{\Delta_w^2 + s_w^2} \, .
 \end{equation}
 
 %\begin{equation}
@@ -600,10 +594,10 @@ Unreacted $^{12}$C fragments are only marginally influenced by angular stragglin
 %The here presented scattering angle $\theta$ is in the center-of-mass system. Translated to the lab system gives $\theta_{lab} = \frac{\theta_{cm}}{2}$~\footnote{This approximation is valid for two-body scattering where the interacting particles are of equal mass ($m_1 = m_2$). A detailed derivation is provided in Ref.~\cite{UTAustin:Scattering}.}, which means that the 
 %
 Deflections originating from Coulomb scattering are of the order of $\theta < 2$ mrad for beam energies of 400 AMeV. These values are very small in comparison to typical knockout or recoil deflections and decrease further with increasing beam energy. The size of these deflections supports the validity of the assumptions made within the Glauber framework for high-energy reactions, particularly in the context of the eikonal approximation. In this approach, the projectile is assumed to traverse the target along a straight-line trajectory, experiencing only small-angle deviations.\newline
-In contrast, the neutron removal (knockout) reaction leads to significantly larger angular deflections of the $^{11}$C fragment. For the estimation, it is assumed that the removed neutron carries a transverse momentum $p_{t}$ (with respect to the beam direction) sampled from the nucleon Fermi momentum distribution, with a typical magnitude of $p_t \approx 250 MeV/c$. By momentum conservation, the $^{11}$C fragment receives the same absolute transverse momentum, but in the opposite direction.
-Neglecting small binding-energy corrections, the longitudinal momentum of the $^{11}$C fragment at 400 AMeV beam energy is $ P_{frag} \approx 10.47\,GeV/c$ and the scattering angle can be approximated in this case by:
+In contrast, the neutron removal (knockout) reaction leads to significantly larger angular deflections of the $^{11}$C fragment. For the estimation, it is assumed that the removed neutron carries a transverse momentum $p_{t}$ (with respect to the beam direction) sampled from the nucleon Fermi momentum distribution, with a typical magnitude of $p_t \approx 250$ MeV/c. By momentum conservation, the $^{11}$C fragment receives the same absolute transverse momentum, but in the opposite direction.
+Neglecting small binding-energy corrections, the longitudinal momentum of the $^{11}$C fragment at 400 AMeV beam energy is $ P_{frag} \approx 10.47$ GeV/c and the scattering angle can be approximated in this case by
 \begin{equation}
-\theta  = \frac{p_t}{P_{frag}} \approx 24\, mrad
+\theta  = \frac{p_t}{P_{frag}} \approx 24\, \mathrm{mrad} \, .
 \end{equation}
 %For a plausible range of $p_t$:
 %\begin{itemize}
@@ -647,22 +641,20 @@ In summary, the large acceptance, particularly in the forward region, ensures th
 
 \subsection{Statistical and Systematic Error Analysis}\label{sec:err_analysis}
 All measurements presented in this Chapter, rely on the transmission method and the error analysis of those measurements are treated the same accordingly. The generic formula for the measurements was presented in Section~\ref{section:transmission_method}, Eq.~\ref{eq:cross_sec}.\newline
-For mutually independent quantities, the Gaussian error propagation for statistical and systematical uncertainties is given by:
+For mutually independent quantities, the Gaussian error propagation for statistical and systematical uncertainties is given by
 \begin{equation}
-\Delta_{stat./syst.}  = \sqrt{\sum_{i=1}^n \left( \frac{\partial f}{\partial x_i} \cdot \Delta_{x_i} \right)^2 }
+\Delta_{stat./syst.}  = \sqrt{\sum_{i=1}^n \left( \frac{\partial f}{\partial x_i} \cdot \Delta_{x_i} \right)^2 } \, ,
 \end{equation}
-\text{with:}
+\text{with}
 \begin{align*}
 	f(x_1,x_2,..,x_n) &\quad \text{the error prone cross section function,} \\
 	x_i  &\quad \text{the independent variables ($N_1$,$N_2$,$N_t$; see Eq.~\ref{eq:cross_sec}),} \\
-	\Delta_{x_i} &\quad \text{stat./syst. uncertainties associated to independent variable $x_i$}
+	\Delta_{x_i} &\quad \text{stat./syst. uncertainties associated to independent variable $x_i$.}
 \end{align*}
-
-
 Hereafter, the superscript $^E$ denotes quantities obtained from the empty-target runs, while the superscript $^T$ refers to those measured with the target in place.
-All three measurements presented in this section, the preliminary estimate charge changing cross section, the geometric correction factor geo$_{\text{xy}}$ and the isotope correction factor $c_{iso}$, finally contribute to the total interaction cross section:
+All three measurements presented in this section, the preliminary estimate charge changing cross section, the geometric correction factor geo$_{\text{xy}}$ and the isotope correction factor $c_{iso}$, finally contribute to the total interaction cross section
 \begin{equation}\label{eq:sigma_R}
-\sigma_R = -\frac{1}{N_t}ln\left(\frac{N^T_2}{N^T_1} \, \frac{N^E_1}{N^E_2} \cdot \frac{\text{geo}^T_{\text{xy}}}{\text{geo}^E_{\text{xy}}} \cdot \frac{c^T_{iso}}{c^E_{iso}}\right)
+\sigma_R = -\frac{1}{N_t}ln\left(\frac{N^T_2}{N^T_1} \, \frac{N^E_1}{N^E_2} \cdot \frac{\text{geo}^T_{\text{xy}}}{\text{geo}^E_{\text{xy}}} \cdot \frac{c^T_{iso}}{c^E_{iso}}\right) \, ,
 \end{equation}
 where $N_1$ are the number of incoming $^{12}C$ ions and $N_2$ are the number of survived carbon isotopes for target and empty runs respectively, as described in Section~\ref{subsec:carbon_id}.\\
 This expression is valid under the assumption that the detection efficiency of the TWIN MUSIC for carbon fragments, as well as the DAQ dead time, are identical in the full and empty target runs. Under this condition, the corresponding efficiency corrections cancel in the fracture term in Eq.~\ref{eq:sigma_R}.
@@ -672,18 +664,18 @@ This expression is valid under the assumption that the detection efficiency of t
 \textbf{Statistical Uncertainty} \\
 The statistical uncertainty associated with the charge-changing cross section, after applying geometry corrections, includes contributions from the standard error of binomially distributed variables.
 The charge-changing cross section is derived from survival probabilities of carbon isotopes.
-The survival probability $P_{\text{surv}|\text{cc}}$, defined as the probability of observing a carbon isotope in the final state, is based on $N_1$ independent trials with binary outcomes (survived or not). The survival probability $P_{\text{surv}|\text{cc}}$ is given by the ratio $N_2 / N_1$ and its uncertainty derived from binomial statistics:
+The survival probability $P_{\text{surv}|\text{cc}}$, defined as the probability of observing a carbon isotope in the final state, is based on $N_1$ independent trials with binary outcomes (survived or not). The survival probability $P_{\text{surv}|\text{cc}}$ is given by the ratio $N_2 / N_1$ and its uncertainty derived from binomial statistics
 \begin{equation}\label{eq:surv_prob}
-\Delta P_{\text{surv}|\text{cc}} = \sqrt{ \frac{P_{\text{surv}|\text{cc}} \cdot \left(1 - P_{\text{surv}|\text{cc}}\right)}{N_1} }
+\Delta P_{\text{surv}|\text{cc}} = \sqrt{ \frac{P_{\text{surv}|\text{cc}} \cdot \left(1 - P_{\text{surv}|\text{cc}}\right)}{N_1} } \, .
 \end{equation}
-The total statistical uncertainty is given by:
+The total statistical uncertainty is given by
 \begin{equation}
 \label{eq:stat_cc_}
-\Delta\sigma_{\text{stat}|\text{cc}} = \sqrt{\left(\frac{\partial \sigma_{\text{cc}}}{\partial P^{T}_{\text{surv}|\text{cc}}} \Delta P^{T}_{\text{surv}|\text{cc}}\right)^2 + \left(\frac{\partial \sigma_{\text{cc}}}{\partial P^{E}_{\text{surv}|\text{cc}}} \Delta P^{E}_{\text{surv}|\text{cc}}\right)^2}
+\Delta\sigma_{\text{stat}|\text{cc}} = \sqrt{\left(\frac{\partial \sigma_{\text{cc}}}{\partial P^{T}_{\text{surv}|\text{cc}}} \Delta P^{T}_{\text{surv}|\text{cc}}\right)^2 + \left(\frac{\partial \sigma_{\text{cc}}}{\partial P^{E}_{\text{surv}|\text{cc}}} \Delta P^{E}_{\text{surv}|\text{cc}}\right)^2} \, .
 \end{equation}
-By inserting Eq.~\ref{eq:surv_prob} in Eq.~\ref{eq:stat_cc_} we obtain:
+By inserting Eq.~\ref{eq:surv_prob} in Eq.~\ref{eq:stat_cc_} we obtain
 \begin{equation}
-\Delta\sigma_{\text{stat}|\text{cc}} = \sqrt{ \frac{1}{N_t^2} \left( \frac{1 - P^{T}_{\text{surv}|\text{cc}}}{P^{T}_{\text{surv}|\text{cc}} N^{T}_1} + \frac{1 - P^{E}_{\text{surv}|\text{cc}}}{P^{E}_{\text{surv}|\text{cc}} N^{E}_1} \right) }
+\Delta\sigma_{\text{stat}|\text{cc}} = \sqrt{ \frac{1}{N_t^2} \left( \frac{1 - P^{T}_{\text{surv}|\text{cc}}}{P^{T}_{\text{surv}|\text{cc}} N^{T}_1} + \frac{1 - P^{E}_{\text{surv}|\text{cc}}}{P^{E}_{\text{surv}|\text{cc}} N^{E}_1} \right) } \, .
 \end{equation}
 
 
@@ -695,27 +687,26 @@ The systematic uncertainty comprises the following contributions:
   \item Uncertainties in the geometrical correction factor $\text{geo}_{xy}$, see Section~\ref{sec:geo_corr}, contributing $\Delta_{\text{sys}}\sigma_{\text{corr}}$.
 \end{itemize}
 
-The total systematic uncertainty is then expressed as:
+The total systematic uncertainty is then expressed as
 \begin{equation}
-\Delta\sigma_{\text{sys}|\text{cc}} = \sqrt{ \left( \frac{\partial \sigma_{\text{cc}}}{\partial N_t} \Delta N_t \right)^2 + \left( \Delta^{\text{sys}}_{N_2} \right)^2 + \left( \Delta_{\text{sys}}\sigma_{\text{corr}} \right)^2 }
+\Delta\sigma_{\text{sys}|\text{cc}} = \sqrt{ \left( \frac{\partial \sigma_{\text{cc}}}{\partial N_t} \Delta N_t \right)^2 + \left( \Delta^{\text{sys}}_{N_2} \right)^2 + \left( \Delta_{\text{sys}}\sigma_{\text{corr}} \right)^2 } \, .
 \end{equation}
-
 
 \subsubsection{Isotope Correction Contribution}\label{sec:iso_corr}
 
 \textbf{Statistical Uncertainty} \\
 The statistical uncertainty of the isotope correction includes contributions from (i) the statistical uncertainty of the charge-changing cross section and (ii) the standard error associated with the binomial distribution describing the number of detected $^{12}$C isotopes relative to the total number of identified carbon fragments (i.e., the total number of entries in Fig.~\ref{fig:example_histo_fit}). The corresponding survival probability is defined as
 \begin{equation}
-P_{\text{surv}|^{12}\mathrm{C}} = \frac{N_{^{12}\mathrm{C}}}{N_C},
+P_{\text{surv}|^{12}\mathrm{C}} = \frac{N_{^{12}\mathrm{C}}}{N_C} \, ,
 \end{equation}
 where $N_{^{12}\mathrm{C}}$ is the number of detected $^{12}$C isotopes and $N_C$ the total number of identified carbon fragments.\\
 Analogous to the derivation of the statistical uncertainty of the charge-changing cross section, the statistical uncertainty of the survival probability is obtained as
 \begin{equation}
-\Delta\sigma_{\text{stat}|\:^{12}\mathrm{C}} = \sqrt{ \frac{1}{N_t^2} \left( \frac{1 - P^{T}_{\text{surv}|^{12}\mathrm{C}}}{P^{T}_{\text{surv}|^{12}\mathrm{C}} N^{T}_C} + \frac{1 - P^{E}_{\text{surv}|^{12}\mathrm{C}}}{P^{E}_{\text{surv}|^{12}\mathrm{C}} N^{E}_C} \right) }
+\Delta\sigma_{\text{stat}|\:^{12}\mathrm{C}} = \sqrt{ \frac{1}{N_t^2} \left( \frac{1 - P^{T}_{\text{surv}|^{12}\mathrm{C}}}{P^{T}_{\text{surv}|^{12}\mathrm{C}} N^{T}_C} + \frac{1 - P^{E}_{\text{surv}|^{12}\mathrm{C}}}{P^{E}_{\text{surv}|^{12}\mathrm{C}} N^{E}_C} \right) } \, .
 \end{equation}
-Combining with the charge-changing uncertainty yields the total statistical uncertainty of the isotope correction contribution:
+Combining with the charge-changing uncertainty yields the total statistical uncertainty of the isotope correction contribution
 \begin{equation}
-\Delta\sigma_{\text{stat}|\:\text{iso}} = \sqrt{ \frac{1}{N_t^2} \left( \frac{1 - P^{T}_{\text{surv}|cc}}{P^{T}_{\text{surv}|cc} N^{T}_1} + \frac{1 - P^{E}_{\text{surv}|cc}}{P^{E}_{\text{surv}|cc} N_1^E} \right) + \frac{1}{N_t^2} \left( \frac{1 - P^{T}_{\text{surv}|^{12}\mathrm{C}}}{P^{T}_{\text{surv}|^{12}\mathrm{C}} N_C} + \frac{1 - P^{E}_{\text{surv}|^{12}\mathrm{C}}}{P^{E}_{\text{surv}|^{12}\mathrm{C}} N^{E}_C} \right) }
+\Delta\sigma_{\text{stat}|\:\text{iso}} = \sqrt{ \frac{1}{N_t^2} \left( \frac{1 - P^{T}_{\text{surv}|cc}}{P^{T}_{\text{surv}|cc} N^{T}_1} + \frac{1 - P^{E}_{\text{surv}|cc}}{P^{E}_{\text{surv}|cc} N_1^E} \right) + \frac{1}{N_t^2} \left( \frac{1 - P^{T}_{\text{surv}|^{12}\mathrm{C}}}{P^{T}_{\text{surv}|^{12}\mathrm{C}} N_C} + \frac{1 - P^{E}_{\text{surv}|^{12}\mathrm{C}}}{P^{E}_{\text{surv}|^{12}\mathrm{C}} N^{E}_C} \right) } \, .
 \end{equation}
 
 \vskip 0.2in
@@ -736,14 +727,13 @@ The systematic uncertainty of the isotope cross section includes contributions f
     \item the uncertainty associated with the isotope ratio obtained from the fit of the $^{12}\mathrm{C}$ peak, $\Delta N_{^{12}\mathrm{C}}$, shown in Fig.~\ref{fig:example_histo_fit}. From this fit, the number of surviving $^{12}\mathrm{C}$ isotopes is extracted in order to determine the correction factor $c_{\text{iso}} = N_{^{12}\mathrm{C}} / N_{\mathrm{C}}$. The uncertainty $\Delta N_{^{12}\mathrm{C}}$ is derived from the propagated errors of the fitted peak parameters using the covariance matrix of the fit (see Section~\ref{sec:isotope_corr}).
 \end{enumerate}
 
-The total systematic uncertainty is therefore given by:
-
+The total systematic uncertainty is therefore given by
 \begin{equation}
 \Delta\sigma_{\text{sys}|\:\text{iso}} = \sqrt{
     \left( \frac{\partial \sigma_{cc}}{\partial N_t}\, \Delta N_t \right)^2
     + \left( \Delta^{\text{sys}}_{N_2} \right)^2
     + \left( \Delta_{\text{sys}} \sigma_{\text{corr}} \right)^2
-    + \frac{1}{N_t^2} \left( \frac{\Delta N_{^{12}\mathrm{C}}}{N_{^{12}\mathrm{C}}} \right)^2 }.
+    + \frac{1}{N_t^2} \left( \frac{\Delta N_{^{12}\mathrm{C}}}{N_{^{12}\mathrm{C}}} \right)^2 } \, .
 \end{equation}
 
 \subsubsection{Total Interaction Cross Section}
@@ -867,7 +857,7 @@ target &  E [AMeV] &  Z $\neq$6[\%] &  Z=6, borders[\%] &  $c_{tref}$[\%] &  $c_
   empty &     800 &     2.0257 &     -0.0329 &  $\pm$0.0127 &  0.0136 &  0.1433 \\
 \bottomrule
 \end{tabularx}
-\caption{Overview of reaction rates. Rates in columns \textit{Z$\neq$6}, \textit{Z=6, borders} and \textit{c$_{tref}$} refer to the number of incoming $^{12}$C ions. Columns \textit{c$_{geo}$} and \textit{c$_{iso}$} refer to the rate of survived carbon ions (1- “\textit{Z$\neq$6}")}
+\caption{Overview of reaction rates. Rates in columns \textit{Z$\neq$6}, \textit{Z=6, borders} and \textit{c$_{tref}$} refer to the number of incoming $^{12}$C ions. Columns \textit{c$_{geo}$} and \textit{c$_{iso}$} refer to the rate of survived carbon ions (1 - “\textit{Z$\neq$6}")}
 \label{tab:cs_contr}
 \end{table}
 \clearpage
