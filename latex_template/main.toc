@@ -33,8 +33,8 @@
 \contentsline {subsection}{\numberline {4.2}Event Selection}{57}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Charge Changing Cross Section Measurement}{61}{subsection.4.3}
 \contentsline {subsubsection}{\numberline {4.3.1}TWIN MUSIC Calibration}{62}{subsubsection.4.3.1}
-\contentsline {subsubsection}{\numberline {4.3.2}TWIN MUSIC Event Selection}{63}{subsubsection.4.3.2}
-\contentsline {subsubsection}{\numberline {4.3.3}Carbon Identification}{63}{subsubsection.4.3.3}
+\contentsline {subsubsection}{\numberline {4.3.2}TWIN MUSIC Event Selection}{64}{subsubsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3}Carbon Identification}{64}{subsubsection.4.3.3}
 \contentsline {subsection}{\numberline {4.4}Geometric Corrections}{71}{subsection.4.4}
 \contentsline {subsection}{\numberline {4.5}Isotope Correction}{77}{subsection.4.5}
 \contentsline {subsubsection}{\numberline {4.5.1}Distribution fitting}{80}{subsubsection.4.5.1}
@@ -46,7 +46,7 @@
 \contentsline {subsection}{\numberline {4.7} Results and Discussion}{90}{subsection.4.7}
 \contentsline {section}{\numberline {5}Exclusive Analysis -- Quasi-Free Scattering Reactions}{94}{section.5}
 \contentsline {subsection}{\numberline {5.1}Setup-Calibration \& Fragment Tracking}{94}{subsection.5.1}
-\contentsline {subsubsection}{\numberline {5.1.1}Flight-Path Reconstruction}{95}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Flight Path Reconstruction}{95}{subsubsection.5.1.1}
 \contentsline {subsubsection}{\numberline {5.1.2}Time of Flight Calibration}{98}{subsubsection.5.1.2}
 \contentsline {subsection}{\numberline {5.2}Event Selection}{99}{subsection.5.2}
 \contentsline {subsection}{\numberline {5.3}Fragment Identification}{99}{subsection.5.3}
@@ -80,5 +80,5 @@
 \contentsline {section}{\numberline {G}Charge changing cross sections}{158}{Appendix.1.G}
 \contentsline {section}{\numberline {H}Carbon isotopes fitting}{159}{Appendix.1.H}
 \contentsline {section}{\numberline {I}Isotope correction contributions}{162}{Appendix.1.I}
-\contentsline {section}{\numberline {J}Flight-Path Reconstruction}{162}{Appendix.1.J}
+\contentsline {section}{\numberline {J}Flight Path Reconstruction}{162}{Appendix.1.J}
 \contentsline {section}{References}{166}{section*.96}

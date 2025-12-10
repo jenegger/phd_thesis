@@ -11,8 +11,8 @@ As outlined in the introduction, the exclusive analysis presented in this work r
 A fundamental prerequisite is the proper calibration of the relevant detectors. For all detectors involved in the experiment -- except for the SOFIA (Study On FIssion with Aladin) Time-of-Flight Wall -- the calibration parameters provided by the respective detector expert groups were adopted.
 This subsection therefore focuses on the calibration procedure of the SOFIA ToF Wall and describes in detail the reconstruction algorithm for the reaction fragment's flight path.
 
-\subsubsection{Flight-Path Reconstruction}\label{subsec:flightpath_reco}
-For accurate flightpath reconstruction, all available tracking detectors -- specifically, the MWPCs, see also Section~\ref{sec_mwpcs} , used in the S444 experiment -- located between the entrance of Cave C and the ToF Wall are utilized.\\
+\subsubsection{Flight Path Reconstruction}\label{subsec:flightpath_reco}
+For accurate flight path reconstruction, all available tracking detectors -- specifically, the MWPCs, see also Section~\ref{sec_mwpcs} , used in the S444 experiment -- located between the entrance of Cave C and the ToF Wall are utilized.\\
 In this analysis, all angles are defined within the $z$-$x$ plane, where the $z$-axis corresponds to the beam direction. Deflections in the $y$-direction are not taken into account. Due to a lack of operational tracking detectors the tracking of the incoming beam onto the target did not allow for a sufficient precise reconstruction of the vertex in the 3 $\times$ 3 cm target. The scattering angle $\theta_{in}$ between the target and the entrance of GLAD is determined from the measured particle positions in MWPC1 and MWPC2. Since only one tracking detector downstream to GLAD, the MWPC3, was installed for the S444 experiment no angle of the deflected fragment/beam $\theta_{out}$ could be directly extracted. Herefore an advanced tracking algorithm was developed, motivated from Ref.~\cite{bertini2013study} (Sec. 3.4), the following steps describe the logics chain: 
 \begin{itemize}
 \item Measure the scattering angle after target, $\theta_{in}$, and draw an extended line from the target position through the effective magnetic field of GLAD.  
@@ -28,7 +28,7 @@ In this analysis, all angles are defined within the $z$-$x$ plane, where the $z$
 		\centering
         %\includegraphics[width=\textwidth]{Figures/kick_point_algorithm.png}
         \includegraphics[width=\textwidth]{Figures/best_flightpath_reco.png}
-        \caption{Flightpath reconstruction with $L_{eff}$ being the effective active width of the magnetic field of GLAD}
+        \caption{Flight path reconstruction with $L_{eff}$ being the effective active width of the magnetic field of GLAD}
         \label{fig:sub1_reco_path}
     \end{subfigure}
     %\hfill % Optional: adds horizontal space between the figures
@@ -40,7 +40,7 @@ In this analysis, all angles are defined within the $z$-$x$ plane, where the $z$
         \label{fig:sub2_reco_path}
     \end{subfigure}
 
-    \caption{Flightpath tracking and reconstruction of the fragment/beam after the target.}
+    \caption{Flight path tracking and reconstruction of the fragment/beam after the target.}
     \label{fig:reco_path}
 \end{figure}
 
@@ -49,16 +49,16 @@ Now that $\theta_{out}$ is known and the position outside the magnetic field of 
 r = \frac{L_{eff}}{2\,\cdot sin\left(\frac{\theta_{in}+\theta_{out}}{2}\right)\,\cdot cos\delta} \, ,
 \end{equation}
 where $L_{eff}$ is the effective active width of the magnetic field of GLAD, which corresponds $L_{eff} \approx 2.06\,m$. This value could also be verified by extracting $L_{eff}$ from the formula for the magnetic rigidity $ B\cdot r = \gamma\beta \, m /q$ for empty target runs with known values of the B-field\footnote{For detector calibration, primarily for the ToF Wall, we had several "empty sweep runs", with empty target and different B-field strength settings. Those runs were optimal to validate $L_{eff}$.}.\newline
-A detailed derivation of Eq.~\ref{eq:rho_glad} can be found in appendix \ref{app:flightpath}.
-At this stage the full pathlength $\mathbf{L}$ form the Start detector to the ToFW can be determined
+A detailed derivation of Eq.~\ref{eq:rho_glad} can be found in Appendix~\ref{app:flightpath}.
+At this stage the full path length $\mathbf{L}$ form the Start detector to the ToFW can be determined
 \begin{align*}
 \boldsymbol{L} &\boldsymbol{= l_{ST}+l_{in}+l_{GLAD} + l_{out}} \, .
 \end{align*}
 
 \begin{description}
-\item $\mathbf{l_{ST}}$ \textit{From Start to the target:} For this path section a straight flightpath parallel to the z-coordinate is assumed. The pathlength is taken from the position measurements of the Start detector and the target accordingly ($ l_{ST} = 118.3\,cm$). 
-\item $\mathbf{l_{in}}$ \textit{Target to GLAD entrance point:} For the exact position assignment of $(z_1,x_1)$ both MWPC1 and MWPC2 position measurements have been calibrated with empty target runs by including an offset value in order to center the x-position in both detectors around zero. From the position measurement of the central position of GLAD, its tilting angle $\alpha$ and $L_{eff}$ the intersection point $(z_1,x_1)$ of the fragment trajectory before GLAD and the "effective GLAD magnetic field rectangle" can be determined and accordingly the flightpath section $l_{in}$.
-\item $\mathbf{{l_{GLAD}}}$ \textit{Arc trajectory within GLAD:} This flightpath passage is determined by reconstructing $(z_1,x_1)$ and $(z_2,x_2)$, as it has been described in the previous section. Hence the magnetic bending radius can be determined, see Eq.~\ref{eq:rho_glad}, and finally the arc trajectory ${l_{GLAD}}$ with
+\item $\mathbf{l_{ST}}$ \textit{From Start to the target:} For this path section a straight flight path parallel to the z-coordinate is assumed. The path length is taken from the position measurements of the Start detector and the target accordingly ($ l_{ST} = 118.3\,cm$). 
+\item $\mathbf{l_{in}}$ \textit{Target to GLAD entrance point:} For the exact position assignment of $(z_1,x_1)$ both MWPC1 and MWPC2 position measurements have been calibrated with empty target runs by including an offset value in order to center the x-position in both detectors around zero. From the position measurement of the central position of GLAD, its tilting angle $\alpha$ and $L_{eff}$ the intersection point $(z_1,x_1)$ of the fragment trajectory before GLAD and the "effective GLAD magnetic field rectangle" can be determined and accordingly the flight path section $l_{in}$.
+\item $\mathbf{{l_{GLAD}}}$ \textit{Arc trajectory within GLAD:} This flight path passage is determined by reconstructing $(z_1,x_1)$ and $(z_2,x_2)$, as it has been described in the previous section. Hence the magnetic bending radius can be determined, see Eq.~\ref{eq:rho_glad}, and finally the arc trajectory ${l_{GLAD}}$ with
 \begin{equation}\label{eq:arc}
 l_{GLAD} = r \cdot \omega\qquad \text{with}\qquad \omega = 2\cdot asin(t_{1/2}{(2\cdot r)}) \, , 
 \end{equation}
@@ -90,7 +90,7 @@ To estimate the time of flight resolution for events which hit the ToF Wall bar 
 %\widetilde{ToF} &= \frac{\overline{L[i]}}{\frac{L[i]}{ToF[i]}}
 \widetilde{ToF} &= \frac{\overline{L[i]}}{L[i]} \cdot ToF[i] \, .
 \end{align*}
-$\overline{L[i]}$ is the mean pathlength, whereas $L[i]$ and $ToF[i]$ are event-wise selected.
+$\overline{L[i]}$ is the mean path length, whereas $L[i]$ and $ToF[i]$ are event-wise selected.
 By reconstructing the fligh-path as described in Subsection~\ref{subsec:flightpath_reco} and employment of the mentioned time calibration steps the average time resolution $\sigma_t \approx 90\, ps$\footnote{To remove events with large angular straggling, a cut of $\pm 20\,mm$ on the beam spot for the $y$-position on the MWPC3 was applied.} was obtained. Although the achieved time resolution is lower than the intrinsic ToF Wall performance of approximately 20 ps, the limitations arising from the absence of operational tracking detectors, the lack of an available GLAD field map, and the resulting constraints on trajectory reconstruction must be taken into account. Nevertheless, the obtained resolution is sufficient to reliably perform particle identification for light ions, such as carbon.
 
 
@@ -108,7 +108,7 @@ However, for the identification of fragments downstream of the target, various d
 \item One hit scintillation bar in ToF Wall with signal from both up/down PMTs.
 \end{itemize}
 \subsection{Fragment Identification}\label{sec:frag_ident}
-The first step for the identification of the QFS-reaction channel $^{12}C(p,2p)^{11}B$ is the identification of the fragment $^{11}B$ according to Eq.~\ref{eq:mag_rig}. From the flightpath reconstruction and the ToF measurement as described in previous sections the bending radius $r$, the particle velocity $\beta$ and the Lorentz factor $\gamma$ are obtained whereas the charge of the fragment $q$ is measured by the energy loss ($\Delta E \sim Z^2$) in the TWIN MUSIC detector.\newline
+The first step for the identification of the QFS-reaction channel $^{12}C(p,2p)^{11}B$ is the identification of the fragment $^{11}B$ according to Eq.~\ref{eq:mag_rig}. From the flight path reconstruction and the ToF measurement as described in previous sections the bending radius $r$, the particle velocity $\beta$ and the Lorentz factor $\gamma$ are obtained whereas the charge of the fragment $q$ is measured by the energy loss ($\Delta E \sim Z^2$) in the TWIN MUSIC detector.\newline
 The measured values for $\frac{A}{q}$ and $q$ are shown in Fig.~\ref{fig:a_q_vs_q} where the fragment of interest $^{11}B$ is expected to be at $\frac{A}{q} = 11/5 \approx 2.2$ and $q = 5$.\\
 An intriguing feature is the distinct cluster observed at $Z \approx 8.5$ and $\frac{A}{q} \approx 2$, which corresponds to pileup events. These occur when two ion signals arrive within a short time window in the TWIN MUSIC detector, preventing them from being resolved as separate events and instead being reconstructed as a single signal\footnote{For instance, if two carbon ions ($Z = 6$) interact simultaneously, the total energy loss within TWIN MUSIC is approximately twice that of a single ion. Since the energy loss follows the relation $\Delta E \sim Z^2$, the reconstructed charge is given by $\sqrt(2)\,Z_{carbon} \approx 8.5 $.}.
 %Moreover attention should be paid that it seems to be there a cut from analyis side at $Z \approx 4$. This is actually not the case. The TWIN MUSIC was optimized for the subsequent experimental run S467 with $Ca$ isotopes and herefore the charge measurement was optimized for $Z\approx 20$. Everything below $Z \approx 4$ was below the signal threshold of TWIN MUSIC.

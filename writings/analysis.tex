@@ -169,28 +169,23 @@ For the analysis of data in TWIN MUSIC -- different to the upstream detectors, w
 %\end{equation}
 %where \(E_i\) is the energy signal recorded by the \(i\)-th anode, \(c_i\) is its corresponding calibration factor, and \(n\) is the number of anodes with valid signals contributing to the event.
 The calibration of the TWIN MUSIC energy-loss response was performed independently for each anode and on a run-by-run basis. For the calibration procedure, only events in which all anodes -- including the reference anode -- registered exactly one hit were selected to ensure uniform and well-controlled signal conditions. For each anode, the most prominent peak in the energy-loss spectrum, corresponding to carbon fragments, was fitted with a Gaussian function. The mean values extracted from these Gaussian fits were then shifted such that all carbon peaks were aligned, as illustrated in Fig.~\ref{fig:calibration}.\\
-For the analysis of reaction fragments, the reconstructed mean energy loss \(\overline{\Delta E}\) is obtained from the calibrated anode signals according to
-\begin{equation}
-\overline{\Delta E} = \frac{1}{n} \sum_{i=1}^{n} c_i \cdot \Delta E_i \, ,
-\end{equation}
-where \(\Delta E_i\) is the energy loss signal recorded by the \(i\)-th anode, \(c_i\) is the corresponding calibration factor, and $n$ is the number of anodes with valid signals contributing to the event.
-\begin{figure}[ht]
+\begin{figure}[H]
      \centering
      \begin{subfigure}[t]{0.75\textwidth}
          \centering
          \includegraphics[width=\textwidth]{Figures/twim_raw_550_target.png}
          \caption{
 Raw, uncalibrated $\Delta E$ distributions from all 16 TWIN anodes, 550~AMeV thick target run. Upstream anodes are shown in color, downstream in gray. No charge selection (R3B MUSIC) or position cut (MWPC0) was applied, leading to the extended high-energy tail from pileup events. The cut-off at 8192~a.u.\ marks the digitizer’s dynamic range, while the drop around 1500~a.u.\ stems from electronic thresholds. The last six anodes have a slightly different amplification.
-	 }
+     }
          \label{fig:raw_twim}
      \end{subfigure}
      \hfill
      \begin{subfigure}[t]{0.75\textwidth}
          \centering
          \includegraphics[width=\textwidth]{Figures/twim_cal_550_target.png}
-         \caption{Calibrated energy-loss ($\Delta E$) distributions for all 16 TWIN 
-  anodes after applying selection cuts on R3B MUSIC and MWPC0. Gaussian fits to 
-  the raw spectra were used to align the peaks, ensuring a consistent energy scale 
+         \caption{Calibrated energy-loss ($\Delta E$) distributions for all 16 TWIN
+  anodes after applying selection cuts on R3B MUSIC and MWPC0. Gaussian fits to
+  the raw spectra were used to align the peaks, ensuring a consistent energy scale
   across all channels.}
          \label{fig:cal_twim_one}
      \end{subfigure}
@@ -198,6 +193,35 @@ Raw, uncalibrated $\Delta E$ distributions from all 16 TWIN anodes, 550~AMeV thi
         \caption{Fitting procedure in TWIN MUSIC.}
         \label{fig:calibration}
 \end{figure}
+For the analysis of reaction fragments, the reconstructed mean energy loss \(\overline{\Delta E}\) is obtained from the calibrated anode signals according to
+\begin{equation}
+\overline{\Delta E} = \frac{1}{n} \sum_{i=1}^{n} c_i \cdot \Delta E_i \, ,
+\end{equation}
+where \(\Delta E_i\) is the energy loss signal recorded by the \(i\)-th anode, \(c_i\) is the corresponding calibration factor, and $n$ is the number of anodes with valid signals contributing to the event.
+%\begin{figure}[ht]
+%     \centering
+%     \begin{subfigure}[t]{0.75\textwidth}
+%         \centering
+%         \includegraphics[width=\textwidth]{Figures/twim_raw_550_target.png}
+%         \caption{
+%Raw, uncalibrated $\Delta E$ distributions from all 16 TWIN anodes, 550~AMeV thick target run. Upstream anodes are shown in color, downstream in gray. No charge selection (R3B MUSIC) or position cut (MWPC0) was applied, leading to the extended high-energy tail from pileup events. The cut-off at 8192~a.u.\ marks the digitizer’s dynamic range, while the drop around 1500~a.u.\ stems from electronic thresholds. The last six anodes have a slightly different amplification.
+%	 }
+%         \label{fig:raw_twim}
+%     \end{subfigure}
+%     \hfill
+%     \begin{subfigure}[t]{0.75\textwidth}
+%         \centering
+%         \includegraphics[width=\textwidth]{Figures/twim_cal_550_target.png}
+%         \caption{Calibrated energy-loss ($\Delta E$) distributions for all 16 TWIN 
+%  anodes after applying selection cuts on R3B MUSIC and MWPC0. Gaussian fits to 
+%  the raw spectra were used to align the peaks, ensuring a consistent energy scale 
+%  across all channels.}
+%         \label{fig:cal_twim_one}
+%     \end{subfigure}
+%     \hfill
+%        \caption{Fitting procedure in TWIN MUSIC.}
+%        \label{fig:calibration}
+%\end{figure}
 \subsubsection{TWIN MUSIC Event Selection}
 As previously stated cuts on the downstream detectors are avoided. However, events which have hits in one or several anodes in TWIN MUSIC but no signal in the reference anode are discarded as a whole neither contributing to $N_1$ (incoming selected ions) nor to $N_2$ (unreacted ions). If no reference time from start CFD signal is available it is not possible to measure the drift time in the individual anodes which makes it not possible to distinguish between signal and noise hits for multi-hit anode events in TWIN MUSIC. The number of events affected by this cut is in the region of $10/10^5$. This is negligible to the number of incoming ions $N_1$ and should not have any dependence whether the projectile reacted or not and therefore can be considered as a cut on the incoming beam.
 \begin{table}[h!]
@@ -837,7 +861,7 @@ Possible explanations for the observed quenching of the total interaction cross 
 \centering
 \begin{tabularx}{\textwidth}{lcccccc}
 \toprule
-target &  E [AMeV] &  Z $\neq$6[\%] &  Z=6, borders[\%] &  $c_{tref}$[\%] &  $c_{geo}$[\%] &  $c_{iso}$[\%] \\
+target &  E [AMeV] &  Z $\neq$ 6[\%] &  Z = 6, borders [\%] &  $c_{tref}$ [\%] &  $c_{geo}$ [\%] &  $c_{iso}$ [\%] \\
 \midrule
    c\_54 &     400 &     5.5356 &     -0.0872 &  $\pm$0.0724 &  0.1075 &  0.4603 \\
  c\_1086 &     400 &     8.9593 &     -0.1039 &  $\pm$0.0711 &  0.1544 &  0.6971 \\
@@ -857,7 +881,7 @@ target &  E [AMeV] &  Z $\neq$6[\%] &  Z=6, borders[\%] &  $c_{tref}$[\%] &  $c_
   empty &     800 &     2.0257 &     -0.0329 &  $\pm$0.0127 &  0.0136 &  0.1433 \\
 \bottomrule
 \end{tabularx}
-\caption{Overview of reaction rates. Rates in columns \textit{Z$\neq$6}, \textit{Z=6, borders} and \textit{c$_{tref}$} refer to the number of incoming $^{12}$C ions. Columns \textit{c$_{geo}$} and \textit{c$_{iso}$} refer to the rate of survived carbon ions (1 - “\textit{Z$\neq$6}")}
+\caption{Overview of reaction rates. Rates in columns \textit{Z $\neq$ 6}, \textit{Z = 6, borders} and \textit{c$_{tref}$} refer to the number of incoming $^{12}$C ions. Columns \textit{c$_{geo}$} and \textit{c$_{iso}$} refer to the rate of survived carbon ions (1 - “\textit{Z $\neq$ 6}")}
 \label{tab:cs_contr}
 \end{table}
 \clearpage
