@@ -483,6 +483,31 @@ J.-F. Martin, J.~Ta{\"\i}eb, G.~Boutoux, A.~Chatillon, T.~Gorbinet,
   Coulomb-induced fission of U 234, 235 and Np 237, 238},'' {\em Physical
   Review C}, vol.~104, no.~4, p.~044602, 2021.
 
+\bibitem{bendel2014entwicklung}
+M.~Bendel, {\em Entwicklung einer neuartigen Nachweismethode hochenergetischer
+  Teilchen im CALIFA-Kalorimeter}.
+\newblock PhD thesis, Technische Universit{\"a}t M{\"u}nchen, 2014.
+
+\bibitem{Bendel:98055}
+M.~Bendel, {\em {E}ntwicklung einer neuartigen {N}achweismethode
+  hochenergetischer {T}eilchen im {CALIFA}-{K}alorimeter}.
+\newblock Dr., Technische Universit{\"a}t M{\"u}nchen, M{\"u}nchen, 2014.
+\newblock Technische Universit{\"a}t M{\"u}nchen, Diss., 2014.
+
+\bibitem{winkel2011implementierung}
+M.~Winkel, {\em {Implementierung und Erprobung einer digitalen Pulsformanalyse
+  zur Auslese von Kalorimetern}}.
+\newblock PhD thesis, Diplomarbeit, 2011.
+
+\bibitem{winkel2016komplexe}
+M.~O. Winkel, {\em {Komplexe Pulsformalgorithmen und Teilchenidentifikation zur
+  Echtzeit-Implementierung in CALIFA}}.
+\newblock PhD thesis, Technische Universit{\"a}t M{\"u}nchen, 2016.
+
+\bibitem{pklenze}
+K.~Philipp, {\em {Gamma detection with CALIFA}}.
+\newblock PhD thesis, Technische Universit{\"a}t M{\"u}nchen, 2024.
+
 \bibitem{tdr:barrel}
 ``Technical report for the design, construction and commissioning of the califa
   barrel.''
@@ -495,23 +520,12 @@ J.-F. Martin, J.~Ta{\"\i}eb, G.~Boutoux, A.~Chatillon, T.~Gorbinet,
   \url{https://edms.cern.ch/ui/file/1833748/2/TDR_R3B_CALIFA_ENDCAP_public.pdf}.
 \newblock Accessed: 2024-09-24.
 
-\bibitem{Bendel:98055}
-M.~Bendel, {\em {E}ntwicklung einer neuartigen {N}achweismethode
-  hochenergetischer {T}eilchen im {CALIFA}-{K}alorimeter}.
-\newblock Dr., Technische Universit{\"a}t M{\"u}nchen, M{\"u}nchen, 2014.
-\newblock Technische Universit{\"a}t M{\"u}nchen, Diss., 2014.
-
 \bibitem{grana2023fission}
 J.~Gra{\~n}a-Gonz{\'a}lez, J.~Rodr{\'\i}guez-S{\'a}nchez, J.~Benlliure,
   G.~Garc{\'\i}a-Jim{\'e}nez, H.~Alvarez-Pol, D.~Cortina-Gil, L.~Atar,
   L.~Audouin, G.~Authelet, A.~Besteiro, {\em et~al.}, ``{Fission studies in
   inverse kinematics with the R3B setup},'' in {\em EPJ Web of Conferences},
   vol.~290, p.~02015, EDP Sciences, 2023.
-
-\bibitem{bendel2014entwicklung}
-M.~Bendel, {\em Entwicklung einer neuartigen Nachweismethode hochenergetischer
-  Teilchen im CALIFA-Kalorimeter}.
-\newblock PhD thesis, Technische Universit{\"a}t M{\"u}nchen, 2014.
 
 \bibitem{murray1961scintillation}
 R.~Murray and A.~Meyer, ``{Scintillation response of activated inorganic
@@ -532,20 +546,6 @@ A.~Syntfeld-Kazuch, L.~Swiderski, W.~Czarnacki, M.~Gierlik, W.~Klamra,
   M.~Moszynski, and P.~Schotanus, ``{Non-proportionality and energy resolution
   of CsI (Tl)},'' {\em IEEE Transactions on Nuclear Science}, vol.~54, no.~5,
   pp.~1836--1841, 2007.
-
-\bibitem{winkel2011implementierung}
-M.~Winkel, {\em {Implementierung und Erprobung einer digitalen Pulsformanalyse
-  zur Auslese von Kalorimetern}}.
-\newblock PhD thesis, Diplomarbeit, 2011.
-
-\bibitem{winkel2016komplexe}
-M.~O. Winkel, {\em {Komplexe Pulsformalgorithmen und Teilchenidentifikation zur
-  Echtzeit-Implementierung in CALIFA}}.
-\newblock PhD thesis, Technische Universit{\"a}t M{\"u}nchen, 2016.
-
-\bibitem{pklenze}
-K.~Philipp, {\em {Gamma detection with CALIFA}}.
-\newblock PhD thesis, Technische Universit{\"a}t M{\"u}nchen, 2024.
 
 \bibitem{bail2011time}
 A.~Bail, J.~Taieb, A.~Chatillon, G.~Belier, B.~Laurent, and E.~Pellereau,
