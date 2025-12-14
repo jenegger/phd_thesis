@@ -39,13 +39,13 @@ target thickness d = 0.5451 cm; $N_t = 5.0588795\cdot 10^{22}$; $\frac{\Delta N_
 \item Medium target:\newline
 target thickness d = 1.0793 cm; $N_t = 1.0016600\cdot 10^{23}$; $\frac{\Delta N_t}{N_t} = 0.2620\%$,
 \item Thick target:\newline
-target thickness d =2.1928cm; $N_t = 2.0350598\cdot 10^{23}$; $\frac{\Delta N_t}{N_t} = 0.0322\%$,
+target thickness d = 2.1928 cm; $N_t = 2.0350598\cdot 10^{23}$; $\frac{\Delta N_t}{N_t} = 0.0322\%$,
 \end{enumerate} 
 where $N_t$ was calculated by
 \begin{equation}
 N_t = \frac{\rho \cdot d \cdot N_A}{M} \, ,
 \end{equation}
-with $\rho$ the target density\footnote{$\rho = 1.851 g/cm^{3}$, from \cite{ponnath2023precise}}, $N_A$ the Avogadro constant ($6.02214076\cdot10^{23}\,mol^{-1}$) and $M$ the molar mass of the target (for carbon $M = 12.011\,g \cdot mol^{-1}$).
+with $\rho$ the target density\footnote{$\rho = 1.851 g/cm^{3}$, from \cite{ponnath2023precise}}, $N_A$ the Avogadro constant ($6.02214076\cdot10^{23}\,\text{mol}^{-1}$) and $M$ the molar mass of the target (for carbon $M = 12.011\,g \cdot \text{mol}^{-1}$).
 \item[$\blacksquare$] \textbf{Number of incoming projectiles ($^{12}$C) $\mathbf{N_1}$}\newline
 For the measurement only events with well identified incoming $^{12}$C projectiles are chosen. Herefore strict cuts on the detectors upstream the target area are set. This strict event selection makes sure that we only consider events with single $^{12}$C within the $\pm 4\mu s$ event time window. This will be discussed in more detail in Section~\ref{subsec:event-sel}. 
 \item[$\blacksquare$] \textbf{Number of intact projectiles ($^{12}$C) $\mathbf{N_2}$ after the target}\newline
@@ -105,7 +105,7 @@ Bit Position &TPat Name & Description \\
 \label{tab:tpats}
 \end{table}
 %Since the TPat selection itself does not necessary set any pileup constraints it is important to analyze the signals of the detectors upstream carefully to insure yourself that only events with  one incoming $^{12}$C ion at a time get selected. Herefore events with incoming ions with charge $Z = 6 \pm 1\sigma$ are chosen, as discussed in the previous point. With this restrictive cut pileup events can be efficiently rejected (see also Appendix~\ref{app:r3bmusic_pileup}). \newline
-This required that both left and right photomultipliers of the start detector have seen a coincident signal within a time-window of 1.391 ns, see Fig.~\ref{fig:start_good_event_sel}. The width of the time window was chosen based on the maximum signal rise time of the detector as well as the maximal propagation delay of the scintillation light to the oppositely positioned photomultipliers. The overall searching window of the start detector was set to 2 $\mu s$, see Fig.~\ref{fig:start_good_event_sel}. In addition, a veto condition is applied such that any signal in one of the four ROLU quadrants rejects the event. This occurs when the incoming ion hits outside the $\pm$1~cm open window in both the $x$- and $y$-directions.\newline
+This required that both left and right photomultipliers of the start detector have seen a coincident signal within a time-window of 1.391 ns, see Fig.~\ref{fig:start_good_event_sel}. The width of the time window was chosen based on the maximum signal rise time of the detector as well as the maximal propagation delay of the scintillation light to the oppositely positioned photomultipliers. The overall searching window of the start detector was set to 2 $\mu$s, see Fig.~\ref{fig:start_good_event_sel}. In addition, a veto condition is applied such that any signal in one of the four ROLU quadrants rejects the event. This occurs when the incoming ion hits outside the $\pm$1~cm open window in both the $x$- and $y$-directions.\newline
 %For the MWPC0 which is mounted right at the beam entrance of Cave C no hit multiplicity cuts were applied considering its operating mode, which is designed for charge sharing between the readout pads. 
 \begin{figure}[ht]
 \centering
@@ -884,7 +884,7 @@ target &  E [AMeV] &  Z $\neq$ 6[\%] &  Z = 6, borders [\%] &  $c_{tref}$ [\%] &
   empty &     800 &     2.0257 &     -0.0329 &  $\pm$0.0127 &  0.0136 &  0.1433 \\
 \bottomrule
 \end{tabularx}
-\caption{Overview of reaction rates. Rates in columns \textit{Z $\neq$ 6}, \textit{Z = 6, borders} and \textit{c$_{tref}$} refer to the number of incoming $^{12}$C ions. Columns \textit{c$_{geo}$} and \textit{c$_{iso}$} refer to the rate of survived carbon ions (1 - “\textit{Z $\neq$ 6}")}
+\caption{Overview of reaction rates. Rates in columns \textit{Z $\neq$ 6}, \textit{Z = 6, borders} and \textit{c$_{tref}$} refer to the number of incoming $^{12}$C ions. Columns \textit{c$_{geo}$} and \textit{c$_{iso}$} refer to the rate of survived carbon ions (1 - "\textit{Z $\neq$ 6}")}
 \label{tab:cs_contr}
 \end{table}
 \clearpage
