@@ -101,7 +101,7 @@ Bit Position &TPat Name & Description \\
 9 & NeuLAND & Hit in NeuLAND - off-spill \\
 \hline\hline
 \end{tabular}
-\caption{List of TPats set for S444 experiment. As for the selected runs low beam rates ($< 10kHz$) were expected no dead time issues should arise for the in-beam detectors, therefore no downscaling of the \textit{Min. Bias} TPat was deployed.}
+\caption{List of TPats set for S444 experiment. As for the selected runs low beam rates ($< 10\,\mathrm{kHz}$) were expected no dead time issues should arise for the in-beam detectors, therefore no downscaling of the \textit{Min. Bias} TPat was deployed.}
 \label{tab:tpats}
 \end{table}
 %Since the TPat selection itself does not necessary set any pileup constraints it is important to analyze the signals of the detectors upstream carefully to insure yourself that only events with  one incoming $^{12}$C ion at a time get selected. Herefore events with incoming ions with charge $Z = 6 \pm 1\sigma$ are chosen, as discussed in the previous point. With this restrictive cut pileup events can be efficiently rejected (see also Appendix~\ref{app:r3bmusic_pileup}). \newline
@@ -117,7 +117,7 @@ This required that both left and right photomultipliers of the start detector ha
 \end{figure}
 \item \textbf{Projectile's focus on the target region}\newline
 To assure that the incoming $^{12}$C ion hits the target it is necessary to select only events where the projectile is focused to the target region. Beside the cut on ROLU strict cuts on the MWPC0 $x$ and $y$ position are applied. This was achieved by fitting the $x$ and $y$ distribution of the MWPC0 by a Gaussian function. The selection of \textit{focused} incoming projectiles was then restricted to events with hits in MWPC0 within the $\pm 2\sigma$ region in the $x$ and $y$ position around the beam spot center, see Fig.~\ref{fig:mw0_xy_overview}.\newline
-\begin{figure}[b]
+\begin{figure}[htb]
 \centering
 \includegraphics[width=\textwidth,keepaspectratio=true]{Figures/mw0_xy_cut_2sigma.pdf}
 %\caption{Reconstructed \(x\)-\(y\) position of incoming ions on MWPC0 without applying a charge selection on the R3B MUSIC detector. The position reconstruction was performed without enforcing any multiplicity cut on the number of hits in MWPC0. However, a strict selection of \(\pm2\sigma\) around the beam spot center was applied independently in \(x\) and \(y\), as indicated by the red rectangular region. A detailed description of the MWPC0 hit selection procedure is provided in Appendix~\ref{app:mw0_cuts}.}
