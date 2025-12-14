@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.24)  14 DEC 2025 16:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.24)  14 DEC 2025 18:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2066,6 +2066,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [60 <./Figures/t_diff_start_with_cuts.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2075,6 +2078,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [61 <./Figures/mw0_xy_cut_2sigma.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2100,6 +2106,10 @@ Package pdftex.def Info: Figures/twim_cal_550_target.png  used on input line 18
 Underfull \hbox (badness 10000) in paragraph at lines 171--195
 
  []
+
+
+Underfull \vbox (badness 7379) has occurred while \output is active []
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -4201,7 +4211,7 @@ xlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/tex
 mf/fonts/type1/public/tex-gyre/qhvr.pfb></usr/share/texmf/fonts/type1/public/te
 x-gyre/qtmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/zapfding/uzdr.pf
 b>
-Output written on main.pdf (190 pages, 27672453 bytes).
+Output written on main.pdf (190 pages, 27672488 bytes).
 PDF statistics:
  4005 PDF objects out of 4296 (max. 8388607)
  2462 compressed objects within 25 object streams

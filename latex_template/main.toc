@@ -31,7 +31,7 @@
 \contentsline {section}{\numberline {4}Analysis -- Total Interaction Cross Section $^{12}$C + $^{12}$C}{55}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Cross Section Measurement via Transmission Method}{55}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Event Selection}{58}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Charge Changing Cross Section Measurement}{61}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.3}Charge Changing Cross Section Measurement}{62}{subsection.4.3}%
 \contentsline {subsubsection}{\numberline {4.3.1}TWIN MUSIC Calibration}{63}{subsubsection.4.3.1}%
 \contentsline {subsubsection}{\numberline {4.3.2}TWIN MUSIC Event Selection}{65}{subsubsection.4.3.2}%
 \contentsline {subsubsection}{\numberline {4.3.3}Carbon Identification}{65}{subsubsection.4.3.3}%

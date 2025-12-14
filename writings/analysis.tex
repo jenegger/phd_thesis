@@ -32,14 +32,14 @@ It should be emphasized that this represents a first-order approximation, as in 
 From the Eq.~\ref{eq:corr_cross} it is evident that for cross section measurements with the transmission method three observables have to be measured:\newline
 \begin{enumerate}
 \item[$\blacksquare$] \textbf{Number of scattering centers $\mathbf{N_t}$}\newline
-The number of scattering centers per unit area of the target is a target specific number. It depends on the target thickness and and its density. The values herefore are taken from~\cite{ponnath2023precise}\footnote{For the purpose of this work the target thicknesses were remeasured at GSI with a chromatic sensor giving 2D depth profiles of each target.}:
+The number of scattering centers per unit area of the target is a target specific number. It depends on the target thickness and and its density. The values herefore are taken from~\cite{ponnath2023precise}\footnote{For the purpose of this work the target thicknesses were remeasured at GSI with a chromatic sensor giving 2D depth profiles of each target.}
 \begin{enumerate}
 \item Thin target:\newline 
-target thickness d = 0.5451 cm; $N_t = 5.0588795\cdot 10^{22}$; $\frac{\Delta N_t}{N_t} = 0.0648\%$
+target thickness d = 0.5451 cm; $N_t = 5.0588795\cdot 10^{22}$; $\frac{\Delta N_t}{N_t} = 0.0648\%$,
 \item Medium target:\newline
-target thickness d = 1.0793 cm; $N_t = 1.0016600\cdot 10^{23}$; $\frac{\Delta N_t}{N_t} = 0.2620\%$
+target thickness d = 1.0793 cm; $N_t = 1.0016600\cdot 10^{23}$; $\frac{\Delta N_t}{N_t} = 0.2620\%$,
 \item Thick target:\newline
-target thickness d =2.1928cm; $N_t = 2.0350598\cdot 10^{23}$; $\frac{\Delta N_t}{N_t} = 0.0322\%$
+target thickness d =2.1928cm; $N_t = 2.0350598\cdot 10^{23}$; $\frac{\Delta N_t}{N_t} = 0.0322\%$,
 \end{enumerate} 
 where $N_t$ was calculated by
 \begin{equation}
@@ -63,9 +63,9 @@ Detectors downstream the target area are used to count the number of intact proj
 For event selection, all three upstream detectors are utilized: the MWPC0, the R3B MUSIC Ionization Chamber, and the start detector. 
 %This selection of correlated signals in these detectors already ensure that individual dead times of the different DAQ systems and the central trigger system are excluded for the dataset and do not have to be considered in the following analysis. 
 The use of correlated detector signals ensures that events affected by dead times in any of the sub-detector DAQ systems or in the central system are excluded from the analysis dataset.
-To ensure a clean event selection, the following prerequisites must be met:
+To ensure a clean event selection, the following prerequisites must be met
 \begin{enumerate}
-\item \textbf{$^{12}$C identification of incoming projectile by upstream detectors:}\newline
+\item \textbf{$^{12}$C identification of incoming projectile by upstream detectors}\newline
 \begin{figure}[htpb]
     \centering
     %\includegraphics[width=\textwidth,height=9cm,keepaspectratio=true]{Figures/charge_val_r3b_start_mw0_cuts.pdf}
@@ -85,7 +85,7 @@ For the charge identification of the incoming ion the R3B MUSIC ionization chamb
 %\caption{Strict $\pm 1 \sigma$ charge cuts with R3B MUSIC for incoming particle selection. Fixed predefined calibration parameters were used which do not compensate different gain settings between runs. This is in particular the case for the 400 AMeV beam energy runs.}
 %\label{fig:r3bmusic_cuts}
 %\end{figure}
-\item \textbf{Pileup rejection and TPat selection:}\newline
+\item \textbf{Pileup rejection and TPat selection}\newline
 The overall recording and merging of the data from various sub-detectors is one of the tasks of the data acquisition system. Whether an event is recorded or not depends on the pre-established trigger logic. Various detectors can send out triggers to the main DAQ when certain conditions are given (e.g. CALIFA can be configured to send out a trigger when a high-energy hit is recorded in the calorimeter). The different triggers are processed by the trigger logic and summarized as a defined trigger pattern, so called TPat, which is stored in a 16-bit mask for each event. Table \ref{tab:tpats} gives an overview of the trigger logic and the trigger patterns set in the S444 experiment. For this analysis events with \textit{Min. Bias} trigger are selected\footnote{This includes also \textit{Reaction} and \textit{Neutron} TPat since these patterns contain also \textit{Min. Bias} TPat as necessary condition.}.\newline 
 \begin{table}[h!]
 \centering
@@ -115,7 +115,7 @@ This required that both left and right photomultipliers of the start detector ha
 \caption{Time difference $\Delta t_{\mathrm{right-left}}$ between hits in the Start detector for events with exactly one hit on both the left and right photomultipliers. The nominal search window of the Start detector was 2,$\mu$s, set to accommodate the maximum signal rise time and the maximal scintillation light propagation delay. For this analysis, the time difference was initially limited to the range $0.555\ \mathrm{ns} \leq \Delta t_{\mathrm{right-left}} \leq 1.946\ \mathrm{ns}$, and a further restricted window of $0.555\ \mathrm{ns} \leq \Delta t_{\mathrm{right-left}} \leq 0.95\ \mathrm{ns}$ (indicated by red vertical lines) was used to isolate a clean signal. The negligible relative loss of events at larger time differences, on the order of $10^{-4}$, demonstrates the high pile-up rejection efficiency achieved by the cut applied to the R3B MUSIC charge distribution. Thick target run, 800 AMeV.}
 \label{fig:start_good_event_sel}
 \end{figure}
-\item \textbf{Projectile's focus on the target region:}\newline
+\item \textbf{Projectile's focus on the target region}\newline
 To assure that the incoming $^{12}$C ion hits the target it is necessary to select only events where the projectile is focused to the target region. Beside the cut on ROLU strict cuts on the MWPC0 $x$ and $y$ position are applied. This was achieved by fitting the $x$ and $y$ distribution of the MWPC0 by a Gaussian function. The selection of \textit{focused} incoming projectiles was then restricted to events with hits in MWPC0 within the $\pm 2\sigma$ region in the $x$ and $y$ position around the beam spot center, see Fig.~\ref{fig:mw0_xy_overview}.\newline
 \begin{figure}
 \centering
@@ -132,7 +132,7 @@ To assure that the incoming $^{12}$C ion hits the target it is necessary to sele
 %\end{figure}
 In addition the MWPC0 $x$-position and the available projectile angle in the $x$-$z$ plane from the R3B MUSIC is used to propagate the corresponding x-position on the target location to further check that the selected projectiles hit the target parallel to the $z$-position (= beam direction) and do only have a minimal incident angle, see Fig.~\ref{fig:x_pos_target}. 
 %This can also be seen as a consistency check whether the applied (predefined) calibration parameters are properly set.
-\begin{figure}[htpb]
+\begin{figure}[H]
     \centering
     %\includegraphics[width=\textwidth,height=9cm,keepaspectratio=true]{Figures/extrapolated_target_x_pos_label_xl.png}
     %\includegraphics[width=\textwidth,height=9cm,keepaspectratio=true]{Figures/target_extrapolation_550_thin_manip.png}
@@ -481,7 +481,7 @@ The horizontal and vertical bands around $x \approx 0$ and $y \approx 0$ arise f
     \label{fig:mwpc23_clustering}
 \end{figure}
 
-Despite the improvements, both reconstruction methods reveal a truncation of the correlation plot at low $x$ values in MWPC2. As discussed in detail in Section~\ref{sec:geo_corr}, this cutoff originates from the limited geometric acceptance of the TWIN MUSIC detector. Since lighter reaction fragments such as $^{11}$C and $^{10}$C exhibit a broader momentum distribution compared to the intact $^{12}$C beam particles, they are more affected by the acceptance limitations. Consequently, extracting isotope ratios directly from the uncorrected 2D correlation (e.g., Fig~\ref{sfig:mw23x_coh}) would introduce a systematic bias.
+Despite these improvements, both reconstruction methods reveal a truncation of the correlation plot at low $x$ values in MWPC2. As discussed in detail in Section~\ref{sec:geo_corr}, this cutoff originates from the limited geometric acceptance of the TWIN MUSIC detector. Since lighter reaction fragments such as $^{11}$C and $^{10}$C exhibit a broader momentum distribution compared to the intact $^{12}$C beam particles, they are more affected by the acceptance limitations. Consequently, extracting isotope ratios directly from the uncorrected 2D correlation (e.g., Fig~\ref{sfig:mw23x_coh}) would introduce a systematic bias.
 
 To mitigate this effect, a dedicated procedure was implemented:
 
@@ -605,7 +605,7 @@ in quadrature
 
 \subsubsection{Acceptance Dependency}
 The large geometrical acceptance of the TWIN MUSIC detector system (although somewhat limited in the outermost region on one side, see Section~\ref{sec:geo_corr}), together with the MWPC detectors located upstream of GLAD as well as MWPC3 placed downstream, enables a detailed investigation of the isotope-correction contribution as a function of the fragment scattering angle with respect to the target position.\newline
-Unreacted $^{12}$C fragments are only marginally influenced by angular straggling due to multiple scattering with the target electrons. A second component arises from the elastic Coulomb scattering on the target nuclei. 
+Intact $^{12}$C fragments are only marginally influenced by angular straggling due to multiple scattering with the target electrons. A second component arises from the elastic Coulomb scattering on the target nuclei. 
 %Their transverse deviation can be estimated within a semiclassical framework by employing the Rutherford scattering formula for two point-like charges, expressed as~\footnote{A full derivation of the here presented Rutherford scattering formula can be found in Chapter 3, Ref.~\cite{safko2002classical}.} :
 %\begin{equation}
 %\theta = 2 \arctan\left(\frac{Z_1 Z_2 e^2}{4\pi \varepsilon_0 \cdot E_{rel} \cdot b}\right)
